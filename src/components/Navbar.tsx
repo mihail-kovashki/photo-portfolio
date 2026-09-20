@@ -48,7 +48,7 @@ export function Navbar({ onOpenGear, activeSeries, onSelectSeries, seriesList = 
             <span className="text-[11px] tracking-widest text-zinc-400 font-mono flex items-center gap-1.5">
               <span>FUJIFILM X-T5</span>
               <span className="text-zinc-600">/</span>
-              <span className="text-zinc-400">23mm F1.4</span>
+              <span className="text-zinc-400">Fujinon Glass</span>
             </span>
           </div>
         </div>

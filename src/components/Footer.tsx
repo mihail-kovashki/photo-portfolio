@@ -22,7 +22,7 @@ export function Footer() {
         <div className="hidden md:flex items-center gap-2 text-zinc-600">
           <span>FUJIFILM X-T5</span>
           <span>·</span>
-          <span>XF 23mm F1.4 R LM WR</span>
+          <span>Fujinon Optics</span>
           <span>·</span>
           <span>Lightroom Classic</span>
         </div>

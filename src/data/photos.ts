@@ -27,7 +27,7 @@ export interface Photo {
 export const photos: Photo[] = [
   {
     "id": "hokkaido-2025-dscf2592",
-    "series": "Hokkaido 2025",
+    "series": "Hokkaido 25",
     "fileNumber": "DSCF2592",
     "displayUrl": "/photos/display/hokkaido-2025-dscf2592.jpg",
     "thumbUrl": "/photos/thumb/hokkaido-2025-dscf2592.jpg",
@@ -47,7 +47,7 @@ export const photos: Photo[] = [
   },
   {
     "id": "hokkaido-2025-dscf2621",
-    "series": "Hokkaido 2025",
+    "series": "Hokkaido 25",
     "fileNumber": "DSCF2621",
     "displayUrl": "/photos/display/hokkaido-2025-dscf2621.jpg",
     "thumbUrl": "/photos/thumb/hokkaido-2025-dscf2621.jpg",
@@ -67,7 +67,7 @@ export const photos: Photo[] = [
   },
   {
     "id": "hokkaido-2025-dscf2732",
-    "series": "Hokkaido 2025",
+    "series": "Hokkaido 25",
     "fileNumber": "DSCF2732",
     "displayUrl": "/photos/display/hokkaido-2025-dscf2732.jpg",
     "thumbUrl": "/photos/thumb/hokkaido-2025-dscf2732.jpg",
@@ -87,7 +87,7 @@ export const photos: Photo[] = [
   },
   {
     "id": "hokkaido-2025-dscf2792",
-    "series": "Hokkaido 2025",
+    "series": "Hokkaido 25",
     "fileNumber": "DSCF2792",
     "displayUrl": "/photos/display/hokkaido-2025-dscf2792.jpg",
     "thumbUrl": "/photos/thumb/hokkaido-2025-dscf2792.jpg",
@@ -107,7 +107,7 @@ export const photos: Photo[] = [
   },
   {
     "id": "hokkaido-2025-dscf2836",
-    "series": "Hokkaido 2025",
+    "series": "Hokkaido 25",
     "fileNumber": "DSCF2836",
     "displayUrl": "/photos/display/hokkaido-2025-dscf2836.jpg",
     "thumbUrl": "/photos/thumb/hokkaido-2025-dscf2836.jpg",
@@ -127,7 +127,7 @@ export const photos: Photo[] = [
   },
   {
     "id": "hokkaido-2025-dscf2972",
-    "series": "Hokkaido 2025",
+    "series": "Hokkaido 25",
     "fileNumber": "DSCF2972",
     "displayUrl": "/photos/display/hokkaido-2025-dscf2972.jpg",
     "thumbUrl": "/photos/thumb/hokkaido-2025-dscf2972.jpg",
@@ -147,7 +147,7 @@ export const photos: Photo[] = [
   },
   {
     "id": "korea-2025-dscf2059.jpg",
-    "series": "Korea 2025",
+    "series": "Seoul 25",
     "fileNumber": "DSCF2059",
     "displayUrl": "/photos/display/korea-2025-dscf2059.jpg.jpg",
     "thumbUrl": "/photos/thumb/korea-2025-dscf2059.jpg.jpg",
@@ -167,7 +167,7 @@ export const photos: Photo[] = [
   },
   {
     "id": "korea-2025-dscf2110",
-    "series": "Korea 2025",
+    "series": "Seoul 25",
     "fileNumber": "DSCF2110",
     "displayUrl": "/photos/display/korea-2025-dscf2110.jpg",
     "thumbUrl": "/photos/thumb/korea-2025-dscf2110.jpg",
@@ -187,7 +187,7 @@ export const photos: Photo[] = [
   },
   {
     "id": "korea-2025-dscf2175",
-    "series": "Korea 2025",
+    "series": "Seoul 25",
     "fileNumber": "DSCF2175",
     "displayUrl": "/photos/display/korea-2025-dscf2175.jpg",
     "thumbUrl": "/photos/thumb/korea-2025-dscf2175.jpg",
@@ -207,7 +207,7 @@ export const photos: Photo[] = [
   },
   {
     "id": "korea-2025-dscf2220",
-    "series": "Korea 2025",
+    "series": "Seoul 25",
     "fileNumber": "DSCF2220",
     "displayUrl": "/photos/display/korea-2025-dscf2220.jpg",
     "thumbUrl": "/photos/thumb/korea-2025-dscf2220.jpg",
@@ -227,7 +227,7 @@ export const photos: Photo[] = [
   },
   {
     "id": "korea-2025-dscf2267",
-    "series": "Korea 2025",
+    "series": "Seoul 25",
     "fileNumber": "DSCF2267",
     "displayUrl": "/photos/display/korea-2025-dscf2267.jpg",
     "thumbUrl": "/photos/thumb/korea-2025-dscf2267.jpg",
@@ -247,7 +247,7 @@ export const photos: Photo[] = [
   },
   {
     "id": "korea-2025-dscf2316",
-    "series": "Korea 2025",
+    "series": "Seoul 25",
     "fileNumber": "DSCF2316",
     "displayUrl": "/photos/display/korea-2025-dscf2316.jpg",
     "thumbUrl": "/photos/thumb/korea-2025-dscf2316.jpg",
@@ -555,12 +555,12 @@ export const seriesList = [
   },
   {
     "id": "hokkaido-2025",
-    "name": "Hokkaido 2025",
+    "name": "Hokkaido 25",
     "count": 6
   },
   {
     "id": "korea-2025",
-    "name": "Korea 2025",
+    "name": "Seoul 25",
     "count": 6
   },
   {

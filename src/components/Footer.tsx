@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUp, Camera } from "lucide-react";
+import { ArrowUp, Instagram } from "lucide-react";
 
 export function Footer() {
   const scrollToTop = () => {
@@ -15,16 +15,24 @@ export function Footer() {
           <div className="flex items-center justify-center w-6 h-6 rounded-full bg-white/5 border border-white/10">
             <span className="w-2 h-2 rounded-full bg-[#d93829]" />
           </div>
-          <span>© {new Date().getFullYear()} Mihail Kovashki. All photographs original.</span>
+          <span>© {new Date().getFullYear()} Mihail Kovashki (MiKo). All photographs original.</span>
         </div>
 
-        {/* Center Camera Specs */}
-        <div className="hidden md:flex items-center gap-2 text-zinc-600">
-          <span>FUJIFILM X-T5</span>
-          <span>·</span>
-          <span>Fujinon Optics</span>
-          <span>·</span>
-          <span>Lightroom Classic</span>
+        {/* Center: Instagram & Hardware specs */}
+        <div className="flex items-center gap-4 text-zinc-400">
+          <a
+            href="https://www.instagram.com/mi_ko.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 hover:text-white transition-colors group"
+          >
+            <Instagram className="w-3.5 h-3.5 text-zinc-500 group-hover:text-[#e1306c] transition-colors" />
+            <span>@mi_ko.jpg</span>
+          </a>
+          <span className="hidden md:inline text-zinc-700">·</span>
+          <span className="hidden md:inline text-zinc-500">FUJIFILM X-T5</span>
+          <span className="hidden md:inline text-zinc-700">·</span>
+          <span className="hidden md:inline text-zinc-500">Fujinon Glass</span>
         </div>
 
         {/* Right scroll to top */}

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Camera, Aperture, Layers, Cpu } from "lucide-react";
+import { X, Camera, Aperture, Layers, Cpu, Instagram } from "lucide-react";
 
 interface GearModalProps {
   isOpen: boolean;
@@ -19,7 +19,7 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
           transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-          className="relative w-full max-w-3xl bg-[#121215] border border-white/10 rounded-2xl shadow-2xl overflow-hidden p-6 sm:p-8"
+          className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-[#121215] border border-white/10 rounded-2xl shadow-2xl p-6 sm:p-8"
         >
           {/* Header */}
           <div className="flex items-center justify-between pb-6 border-b border-white/10">
@@ -44,7 +44,8 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
           {/* Body Content */}
           <div className="mt-6 space-y-6 text-sm text-zinc-300">
             {/* Primary Hardware */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Camera Body */}
               <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5">
                 <div className="flex items-center gap-2 text-xs font-mono text-[#d93829] mb-1.5 uppercase tracking-wider">
                   <Camera className="w-3.5 h-3.5" />
@@ -56,25 +57,39 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
                 </p>
               </div>
 
+              {/* Fast Prime 23mm */}
               <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5">
                 <div className="flex items-center gap-2 text-xs font-mono text-[#e59866] mb-1.5 uppercase tracking-wider">
                   <Aperture className="w-3.5 h-3.5" />
                   <span>Fast Prime</span>
                 </div>
-                <h4 className="text-base font-semibold text-white font-mono">XF 23mm F1.4</h4>
+                <h4 className="text-base font-semibold text-white font-mono">FUJINON XF23mmF1.4 R LM WR</h4>
                 <p className="text-xs text-zinc-400 mt-1 leading-relaxed">
-                  35mm equivalent linear-motor prime. Exceptional microcontrast and smooth rendering at ƒ/1.4.
+                  35mm full-frame equivalent. High-speed linear motor with exceptional microcontrast and smooth rendering at ƒ/1.4.
                 </p>
               </div>
 
+              {/* Compact Prime 35mm */}
+              <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                <div className="flex items-center gap-2 text-xs font-mono text-[#e59866] mb-1.5 uppercase tracking-wider">
+                  <Aperture className="w-3.5 h-3.5" />
+                  <span>Compact Prime</span>
+                </div>
+                <h4 className="text-base font-semibold text-white font-mono">FUJINON XF35mmF2 R WR</h4>
+                <p className="text-xs text-zinc-400 mt-1 leading-relaxed">
+                  53mm full-frame equivalent. Weather-sealed, featherlight (170g), and razor-sharp with silent inner stepping-motor AF.
+                </p>
+              </div>
+
+              {/* Telephoto Zoom */}
               <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5">
                 <div className="flex items-center gap-2 text-xs font-mono text-[#e59866] mb-1.5 uppercase tracking-wider">
                   <Aperture className="w-3.5 h-3.5" />
                   <span>Telephoto Zoom</span>
                 </div>
-                <h4 className="text-base font-semibold text-white font-mono">XF 70-300mm OIS</h4>
+                <h4 className="text-base font-semibold text-white font-mono">FUJINON XF70-300mmF4-5.6 R LM OIS WR</h4>
                 <p className="text-xs text-zinc-400 mt-1 leading-relaxed">
-                  105-450mm equivalent range with optical stabilization for landscape compression and distant detail.
+                  105-450mm equivalent reach with 5.5 stops of optical stabilization for landscape compression and distant detail.
                 </p>
               </div>
             </div>
@@ -83,10 +98,10 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
             <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5">
               <div className="flex items-center gap-2 text-xs font-mono text-zinc-400 mb-2 uppercase tracking-wider">
                 <Layers className="w-3.5 h-3.5 text-zinc-300" />
-                <span>Color Craft & Editing</span>
+                <span>Color Craft & Philosophy</span>
               </div>
               <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-light">
-                Photographs are captured in RAW, leaning into available ambient light and natural tonal gradients. The color grading is developed in Lightroom Classic on the foundation of Fujifilm&apos;s Reala Ace profile for faithful, nuanced color rendering.
+                Photographs are captured either as straight-out-of-camera (SOOC) JPEGs using custom in-camera recipes (Kodak Portra 800 v3, Copenhagen Negative, Reggie&apos;s Portra), or in RAW developed in Lightroom Classic with tonal curves founded on Fujifilm&apos;s Reala Ace profile for faithful, nuanced color.
               </p>
             </div>
 
@@ -99,11 +114,21 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
             </div>
           </div>
 
-          {/* Footer */}
-          <div className="mt-8 pt-4 border-t border-white/10 flex justify-end">
+          {/* Footer with Creator Link */}
+          <div className="mt-8 pt-4 border-t border-white/10 flex flex-col-reverse sm:flex-row items-center justify-between gap-4">
+            <a
+              href="https://www.instagram.com/mi_ko.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-white transition-colors group"
+            >
+              <Instagram className="w-3.5 h-3.5 text-zinc-500 group-hover:text-[#e1306c] transition-colors" />
+              <span>Follow MiKo on Instagram <span className="text-zinc-500 group-hover:text-zinc-400">(@mi_ko.jpg)</span></span>
+            </a>
+
             <button
               onClick={onClose}
-              className="px-5 py-2 rounded-full text-xs font-mono bg-white text-zinc-950 font-medium hover:bg-zinc-200 transition-colors"
+              className="w-full sm:w-auto px-5 py-2 rounded-full text-xs font-mono bg-white text-zinc-950 font-medium hover:bg-zinc-200 transition-colors"
             >
               Close
             </button>

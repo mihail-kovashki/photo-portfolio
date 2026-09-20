@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Camera } from "lucide-react";
+import { Camera, Instagram } from "lucide-react";
 
 interface SeriesItem {
   id: string;
@@ -42,12 +42,17 @@ export function Navbar({ onOpenGear, activeSeries, onSelectSeries, seriesList = 
             <span className="w-2.5 h-2.5 rounded-full bg-[#d93829] shadow-[0_0_8px_#d93829]" />
           </div>
           <div className="flex flex-col">
-            <span className="text-sm font-semibold tracking-wider uppercase text-zinc-100 font-mono">
-              Mihail Kovashki
-            </span>
+            <div className="flex items-center gap-1.5">
+              <span className="text-sm font-semibold tracking-wider uppercase text-zinc-100 font-mono">
+                Mihail Kovashki
+              </span>
+              <span className="text-[10px] font-mono text-zinc-500 font-normal">
+                / miko
+              </span>
+            </div>
             <span className="text-[11px] tracking-widest text-zinc-400 font-mono flex items-center gap-1.5">
               <span>FUJIFILM X-T5</span>
-              <span className="text-zinc-600">/</span>
+              <span className="text-zinc-600">·</span>
               <span className="text-zinc-400">Fujinon Glass</span>
             </span>
           </div>
@@ -72,8 +77,21 @@ export function Navbar({ onOpenGear, activeSeries, onSelectSeries, seriesList = 
           </nav>
         )}
 
-        {/* Gear & Craft Action */}
+        {/* Action Cluster: Instagram & Gear */}
         <div className="flex items-center gap-2">
+          {/* Subtle Instagram link */}
+          <a
+            href="https://www.instagram.com/mi_ko.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram @mi_ko.jpg"
+            className="flex items-center gap-1.5 text-xs font-mono px-3 py-1.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-zinc-400 hover:text-white transition-all duration-200 group"
+          >
+            <Instagram className="w-3.5 h-3.5 text-zinc-400 group-hover:text-[#e1306c] transition-colors" />
+            <span className="hidden sm:inline">@mi_ko.jpg</span>
+          </a>
+
+          {/* Camera & Setup */}
           <button
             onClick={onOpenGear}
             className="flex items-center gap-2 text-xs font-mono px-3.5 py-1.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-zinc-300 hover:text-white transition-colors"

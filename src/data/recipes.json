@@ -1,0 +1,144 @@
+[
+  {
+    "id": "kodak-portra-400-v1",
+    "name": "Kodak Portra 400",
+    "baseFilmSim": "Classic Chrome",
+    "wbShift": [
+      1,
+      -2
+    ],
+    "notes": "Fuji X Weekly classic recipe"
+  },
+  {
+    "id": "kodak-portra-400-v2",
+    "name": "Kodak Portra 400 (Warm)",
+    "baseFilmSim": "Classic Chrome",
+    "wbShift": [
+      2,
+      -5
+    ],
+    "notes": "Fuji X Weekly warm variant"
+  },
+  {
+    "id": "kodak-tri-x-400",
+    "name": "Kodak Tri-X 400",
+    "baseFilmSim": "Acros",
+    "wbShift": [
+      0,
+      0
+    ],
+    "notes": "High contrast gritty B&W"
+  },
+  {
+    "id": "kodak-gold-200",
+    "name": "Kodak Gold 200",
+    "baseFilmSim": "Classic Chrome",
+    "wbShift": [
+      3,
+      -4
+    ],
+    "notes": "Golden daylight tones"
+  },
+  {
+    "id": "pacific-blues",
+    "name": "Pacific Blues",
+    "baseFilmSim": "Classic Neg",
+    "wbShift": [
+      1,
+      -3
+    ],
+    "notes": "Deep greens, rich cyan-blues"
+  },
+  {
+    "id": "cinestill-800t",
+    "name": "CineStill 800T",
+    "baseFilmSim": "Classic Chrome",
+    "wbShift": [
+      3,
+      -5
+    ],
+    "notes": "Tungsten street & neon aesthetic"
+  },
+  {
+    "id": "kodachrome-64",
+    "name": "Kodachrome 64",
+    "baseFilmSim": "Classic Chrome",
+    "wbShift": [
+      2,
+      -4
+    ],
+    "notes": "Vintage saturated slide tones"
+  },
+  {
+    "id": "bright-summer",
+    "name": "Bright Summer",
+    "baseFilmSim": "Astia",
+    "wbShift": [
+      1,
+      -2
+    ],
+    "notes": "Airy, soft, radiant highlights"
+  },
+  {
+    "id": "nostalgic-color",
+    "name": "Nostalgic Color",
+    "baseFilmSim": "Nostalgic Neg",
+    "wbShift": [
+      1,
+      -2
+    ],
+    "notes": "Subtle amber wash in highlights"
+  },
+  {
+    "id": "superia-xtra-400",
+    "name": "Fujicolor Superia 400",
+    "baseFilmSim": "Classic Neg",
+    "wbShift": [
+      0,
+      -2
+    ],
+    "notes": "Everyday drugstore film aesthetic"
+  },
+  {
+    "id": "reala-ace-natural",
+    "name": "Reala Ace",
+    "baseFilmSim": "Reala Ace",
+    "wbShift": [
+      0,
+      0
+    ],
+    "notes": "Fujifilm faithful SOOC natural color"
+  },
+  {
+    "id": "provia-standard",
+    "name": "Provia",
+    "baseFilmSim": "Provia",
+    "wbShift": [
+      0,
+      0
+    ],
+    "notes": "Fujifilm standard SOOC"
+  },
+  {
+    "id": "custom-classic-chrome-r3-b-2",
+    "name": "TODO: Name this recipe (Classic Chrome R:+3 B:-2)",
+    "baseFilmSim": "Classic Chrome",
+    "wbShift": [
+      3,
+      -2
+    ],
+    "userCustom": true,
+    "firstSeen": "2026-09-20"
+  },
+  {
+    "id": "custom-eterna-bleach-bypass-r2-b-4",
+    "name": "TODO: Name this recipe (Eterna Bleach Bypass R:+2 B:-4)",
+    "baseFilmSim": "Eterna Bleach Bypass",
+    "wbShift": [
+      2,
+      -4
+    ],
+    "userCustom": true,
+    "firstSeen": "2026-09-20"
+  }
+]

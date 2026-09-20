@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Maximize2, Aperture } from "lucide-react";
+import { Maximize2 } from "lucide-react";
 import type { Photo } from "@/data/photos";
 
 interface PhotoCardProps {
@@ -13,7 +13,8 @@ interface PhotoCardProps {
 }
 
 export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: PhotoCardProps) {
-  const isAcros = photo.filmRecipe.toLowerCase().includes("acros");
+  const displayTitle = photo.title || photo.series;
+  const subtitle = photo.title ? `${photo.series} · ${photo.fileNumber}` : photo.fileNumber;
 
   if (layoutMode === "story") {
     return (
@@ -32,7 +33,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
         >
           <Image
             src={photo.thumbUrl}
-            alt={photo.title}
+            alt={photo.title || `${photo.series} ${photo.fileNumber}`}
             fill
             placeholder="blur"
             blurDataURL={photo.blurDataUrl}
@@ -40,18 +41,14 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
             className="object-cover transition-all duration-700 group-hover:scale-105"
           />
 
-          {/* Film Simulation Badge in Top Corner */}
-          <div className="absolute top-4 left-4 z-10">
-            <span
-              className={`text-[10px] font-mono tracking-widest uppercase px-2.5 py-1 rounded-md backdrop-blur-md border ${
-                isAcros
-                  ? "bg-black/70 text-zinc-200 border-white/20"
-                  : "bg-black/60 text-zinc-100 border-white/10"
-              }`}
-            >
-              {photo.filmRecipe}
-            </span>
-          </div>
+          {/* Profile / Raw Edit Badge */}
+          {photo.profile && (
+            <div className="absolute top-4 left-4 z-10">
+              <span className="text-[10px] font-mono tracking-wider uppercase px-2.5 py-1 rounded-md backdrop-blur-md bg-black/60 text-zinc-200 border border-white/10">
+                {photo.profile}
+              </span>
+            </div>
+          )}
 
           {/* Expand icon on hover */}
           <div className="absolute top-4 right-4 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -68,10 +65,10 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
         <div className="mt-4 px-2 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-white/5 pb-4">
           <div>
             <h3 className="text-xl sm:text-2xl font-serif tracking-tight text-white group-hover:text-zinc-200 transition-colors">
-              {photo.title}
+              {displayTitle}
             </h3>
             <p className="text-xs font-mono text-zinc-400 mt-1">
-              {photo.series} · {photo.dateTaken}
+              {subtitle} · {photo.dateTaken}
             </p>
           </div>
 
@@ -108,7 +105,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
         >
           <Image
             src={photo.thumbUrl}
-            alt={photo.title}
+            alt={photo.title || `${photo.series} ${photo.fileNumber}`}
             fill
             placeholder="blur"
             blurDataURL={photo.blurDataUrl}
@@ -116,18 +113,14 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
             className="object-cover"
           />
 
-          {/* Film Simulation Badge */}
-          <div className="absolute top-3 left-3 z-10">
-            <span
-              className={`text-[9px] font-mono tracking-wider uppercase px-2 py-0.5 rounded backdrop-blur-md border ${
-                isAcros
-                  ? "bg-black/75 text-zinc-200 border-white/20"
-                  : "bg-black/60 text-zinc-200 border-white/10"
-              }`}
-            >
-              {photo.filmRecipe}
-            </span>
-          </div>
+          {/* Profile / Raw Edit Badge */}
+          {photo.profile && (
+            <div className="absolute top-3 left-3 z-10">
+              <span className="text-[9px] font-mono tracking-wider uppercase px-2 py-0.5 rounded backdrop-blur-md bg-black/60 text-zinc-300 border border-white/10">
+                {photo.profile}
+              </span>
+            </div>
+          )}
 
           {/* Hover Expand Icon */}
           <div className="absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -137,13 +130,13 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
           </div>
 
           {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
             <div className="transform translate-y-0 sm:translate-y-2 sm:group-hover:translate-y-0 transition-transform duration-300">
               <h4 className="text-base font-serif text-white tracking-wide">
-                {photo.title}
+                {displayTitle}
               </h4>
               <div className="flex items-center justify-between text-[11px] font-mono text-zinc-300 mt-1">
-                <span>{photo.series}</span>
+                <span>{subtitle}</span>
                 <span className="text-zinc-400">
                   {photo.aperture} · {photo.shutterSpeed}
                 </span>

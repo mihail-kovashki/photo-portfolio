@@ -56,6 +56,9 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
 
   if (!photo) return null;
 
+  const displayTitle = photo.title || photo.series;
+  const subtitle = photo.title ? `${photo.series} · ${photo.fileNumber}` : photo.fileNumber;
+
   return (
     <AnimatePresence>
       <motion.div
@@ -147,7 +150,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
           >
             <Image
               src={photo.displayUrl}
-              alt={photo.title}
+              alt={photo.title || `${photo.series} ${photo.fileNumber}`}
               fill
               priority
               placeholder="blur"
@@ -172,15 +175,17 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                 {/* Title & Series */}
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-[10px] font-mono tracking-widest uppercase px-2 py-0.5 rounded bg-white/10 text-zinc-300">
-                      {photo.filmRecipe}
-                    </span>
+                    {photo.profile && (
+                      <span className="text-[10px] font-mono tracking-wider uppercase px-2 py-0.5 rounded bg-white/10 text-zinc-300">
+                        {photo.profile}
+                      </span>
+                    )}
                     <span className="text-xs font-mono text-zinc-400">
-                      {photo.series}
+                      {photo.series} · {subtitle}
                     </span>
                   </div>
                   <h2 className="text-xl sm:text-2xl font-serif text-white tracking-tight">
-                    {photo.title}
+                    {displayTitle}
                   </h2>
                 </div>
 

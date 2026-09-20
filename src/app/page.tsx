@@ -8,7 +8,7 @@ import { PhotoGrid } from "@/components/PhotoGrid";
 import { Lightbox } from "@/components/Lightbox";
 import { GearModal } from "@/components/GearModal";
 import { Footer } from "@/components/Footer";
-import { photos, type Photo } from "@/data/photos";
+import { photos, seriesList, type Photo } from "@/data/photos";
 
 export default function Home() {
   const [activeSeries, setActiveSeries] = useState<string>("all");
@@ -16,27 +16,12 @@ export default function Home() {
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
   const [isGearOpen, setIsGearOpen] = useState(false);
 
-  // Series Counts
-  const counts = useMemo(() => {
-    return {
-      all: photos.length,
-      hokkaido: photos.filter((p) => p.series === "Hokkaido 2025").length,
-      korea: photos.filter((p) => p.series === "Korea 2025").length,
-    };
-  }, []);
-
   // Filtered photos
   const filteredPhotos = useMemo(() => {
-    return photos.filter((photo) => {
-      // Filter by series
-      if (activeSeries === "hokkaido" && photo.series !== "Hokkaido 2025") {
-        return false;
-      }
-      if (activeSeries === "korea" && photo.series !== "Korea 2025") {
-        return false;
-      }
-      return true;
-    });
+    if (activeSeries === "all") return photos;
+    const target = seriesList.find((s) => s.id === activeSeries);
+    if (!target) return photos;
+    return photos.filter((photo) => photo.series === target.name);
   }, [activeSeries]);
 
   return (
@@ -46,9 +31,8 @@ export default function Home() {
         <Navbar
           onOpenGear={() => setIsGearOpen(true)}
           activeSeries={activeSeries}
-          onSelectSeries={(seriesId) => {
-            setActiveSeries(seriesId);
-          }}
+          onSelectSeries={setActiveSeries}
+          seriesList={seriesList}
         />
 
         {/* Hero & Camera Introduction */}
@@ -58,7 +42,7 @@ export default function Home() {
         <SeriesFilter
           activeSeries={activeSeries}
           onSelectSeries={setActiveSeries}
-          counts={counts}
+          seriesList={seriesList}
           layoutMode={layoutMode}
           onToggleLayout={setLayoutMode}
         />

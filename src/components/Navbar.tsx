@@ -1,15 +1,22 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Camera, Sliders, ArrowUpRight } from "lucide-react";
+import { Camera } from "lucide-react";
+
+interface SeriesItem {
+  id: string;
+  name: string;
+  count: number;
+}
 
 interface NavbarProps {
   onOpenGear: () => void;
   activeSeries: string;
   onSelectSeries: (seriesId: string) => void;
+  seriesList?: SeriesItem[];
 }
 
-export function Navbar({ onOpenGear, activeSeries, onSelectSeries }: NavbarProps) {
+export function Navbar({ onOpenGear, activeSeries, onSelectSeries, seriesList = [] }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -32,7 +39,6 @@ export function Navbar({ onOpenGear, activeSeries, onSelectSeries }: NavbarProps
         {/* Brand & Photographer Signature */}
         <div className="flex items-center gap-3">
           <div className="relative flex items-center justify-center w-8 h-8 rounded-full bg-white/5 border border-white/15">
-            {/* Fuji classic red accent dot */}
             <span className="w-2.5 h-2.5 rounded-full bg-[#d93829] shadow-[0_0_8px_#d93829]" />
           </div>
           <div className="flex flex-col">
@@ -47,39 +53,24 @@ export function Navbar({ onOpenGear, activeSeries, onSelectSeries }: NavbarProps
           </div>
         </div>
 
-        {/* Series Quick Filter on Desktop */}
-        <nav className="hidden md:flex items-center gap-1 bg-white/5 p-1 rounded-full border border-white/10 text-xs font-mono">
-          <button
-            onClick={() => onSelectSeries("all")}
-            className={`px-3.5 py-1.5 rounded-full transition-all duration-200 ${
-              activeSeries === "all"
-                ? "bg-white text-zinc-950 font-semibold shadow-sm"
-                : "text-zinc-400 hover:text-white"
-            }`}
-          >
-            All Works
-          </button>
-          <button
-            onClick={() => onSelectSeries("hokkaido")}
-            className={`px-3.5 py-1.5 rounded-full transition-all duration-200 ${
-              activeSeries === "hokkaido"
-                ? "bg-white text-zinc-950 font-semibold shadow-sm"
-                : "text-zinc-400 hover:text-white"
-            }`}
-          >
-            Hokkaido 2025
-          </button>
-          <button
-            onClick={() => onSelectSeries("korea")}
-            className={`px-3.5 py-1.5 rounded-full transition-all duration-200 ${
-              activeSeries === "korea"
-                ? "bg-white text-zinc-950 font-semibold shadow-sm"
-                : "text-zinc-400 hover:text-white"
-            }`}
-          >
-            Korea 2025
-          </button>
-        </nav>
+        {/* Dynamic Series Quick Filter on Desktop (up to 4 items) */}
+        {seriesList.length > 0 && (
+          <nav className="hidden md:flex items-center gap-1 bg-white/5 p-1 rounded-full border border-white/10 text-xs font-mono">
+            {seriesList.slice(0, 4).map((item) => (
+              <button
+                key={item.id}
+                onClick={() => onSelectSeries(item.id)}
+                className={`px-3.5 py-1.5 rounded-full transition-all duration-200 ${
+                  activeSeries === item.id
+                    ? "bg-white text-zinc-950 font-semibold shadow-sm"
+                    : "text-zinc-400 hover:text-white"
+                }`}
+              >
+                {item.name}
+              </button>
+            ))}
+          </nav>
+        )}
 
         {/* Gear & Craft Action */}
         <div className="flex items-center gap-2">

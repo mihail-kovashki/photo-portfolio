@@ -3,32 +3,12 @@ import path from 'path';
 import { execSync } from 'child_process';
 import exifr from 'exifr';
 
-const HOKKAIDO_DIR = '/Users/mihail/Desktop/Untitled Export/Hokkaido 2025';
-const KOREA_DIR = '/Users/mihail/Desktop/Untitled Export/Korea 2025';
-
 const PUBLIC_PHOTOS_DIR = path.resolve('public/photos');
 const DISPLAY_DIR = path.join(PUBLIC_PHOTOS_DIR, 'display');
 const THUMB_DIR = path.join(PUBLIC_PHOTOS_DIR, 'thumb');
 
 fs.mkdirSync(DISPLAY_DIR, { recursive: true });
 fs.mkdirSync(THUMB_DIR, { recursive: true });
-
-// Curated selection: title and profile are completely optional
-const selectedFiles = [
-  { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2592.jpg', featured: true },
-  { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2621.jpg', featured: false },
-  { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2732.jpg', featured: true },
-  { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2792.jpg', featured: false },
-  { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2836.jpg', featured: true },
-  { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2972.jpg', featured: false },
-  
-  { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2059.JPG', featured: true },
-  { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2110.jpg', featured: false },
-  { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2175.jpg', featured: true },
-  { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2220.jpg', featured: false },
-  { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2267.jpg', featured: true },
-  { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2316.jpg', featured: false },
-];
 
 function formatExposureTime(sec) {
   if (!sec) return '1/250s';
@@ -43,11 +23,11 @@ function formatFNumber(f) {
   return Number.isInteger(rounded) ? `ƒ/${rounded}.0` : `ƒ/${rounded}`;
 }
 
-async function processPhoto(item, index) {
-  const inputPath = path.join(item.dir, item.file);
-  const ext = path.extname(item.file).toLowerCase();
-  const baseName = path.basename(item.file, ext).toLowerCase();
-  const id = `${item.series.toLowerCase().replace(/\s+/g, '-')}-${baseName}`;
+async function processSinglePhoto({ inputPath, seriesName, profileName = 'Reala Ace · RAW Edit' }) {
+  const file = path.basename(inputPath);
+  const ext = path.extname(file).toLowerCase();
+  const baseName = path.basename(file, ext).toLowerCase();
+  const id = `${seriesName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${baseName}`;
   const displayFileName = `${id}.jpg`;
   const thumbFileName = `${id}.jpg`;
 
@@ -55,9 +35,9 @@ async function processPhoto(item, index) {
   const thumbPath = path.join(THUMB_DIR, thumbFileName);
   const tinyPath = `/tmp/tiny-${id}.jpg`;
 
-  console.log(`Processing [${index + 1}/${selectedFiles.length}]: ${item.file} -> ${id}`);
+  console.log(`Processing: ${file} -> ${id}`);
 
-  // Sips resizing (only if not already generated to save time)
+  // Sips resizing
   if (!fs.existsSync(displayPath)) {
     execSync(`sips -Z 2048 "${inputPath}" --out "${displayPath}" > /dev/null 2>&1`);
   }
@@ -82,7 +62,7 @@ async function processPhoto(item, index) {
   try {
     exif = (await exifr.parse(inputPath, true)) || {};
   } catch (err) {
-    console.warn(`Could not read EXIF for ${item.file}:`, err.message);
+    console.warn(`Could not read EXIF for ${file}:`, err.message);
   }
 
   const camera = exif.Model ? `FUJIFILM ${exif.Model.replace(/^FUJIFILM\s*/i, '')}` : 'FUJIFILM X-T5';
@@ -100,13 +80,10 @@ async function processPhoto(item, index) {
     dateTaken = exif.CreateDate.toISOString().split('T')[0];
   }
 
-  // Profile: default to "Reala Ace · RAW Edit" or custom override if provided
-  const profile = item.profile || 'Reala Ace · RAW Edit';
-
-  const result = {
+  return {
     id,
-    series: item.series,
-    fileNumber: path.basename(item.file, path.extname(item.file)),
+    series: seriesName,
+    fileNumber: path.basename(file, path.extname(file)),
     displayUrl: `/photos/display/${displayFileName}`,
     thumbUrl: `/photos/thumb/${thumbFileName}`,
     width,
@@ -119,25 +96,33 @@ async function processPhoto(item, index) {
     shutterSpeed,
     iso,
     focalLength,
-    profile,
+    profile: profileName,
     dateTaken,
-    featured: item.featured || false,
+    featured: false,
   };
-
-  // Only include title if explicitly provided
-  if (item.title) {
-    result.title = item.title;
-  }
-
-  return result;
 }
 
-async function run() {
-  const results = [];
-  for (let i = 0; i < selectedFiles.length; i++) {
-    const photo = await processPhoto(selectedFiles[i], i);
-    results.push(photo);
+function writePhotosFile(allPhotos) {
+  // Deduplicate by ID
+  const uniqueMap = new Map();
+  for (const p of allPhotos) {
+    uniqueMap.set(p.id, p);
   }
+  const photosArray = Array.from(uniqueMap.values());
+
+  const seriesCounts = {};
+  for (const p of photosArray) {
+    seriesCounts[p.series] = (seriesCounts[p.series] || 0) + 1;
+  }
+
+  const seriesList = [
+    { id: 'all', name: 'All Works', count: photosArray.length },
+    ...Object.entries(seriesCounts).map(([name, count]) => ({
+      id: name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+      name,
+      count
+    }))
+  ];
 
   const fileContent = `// Auto-generated by scripts/ingest.mjs
 // Titles are optional: if omitted, the UI displays clean series & camera details.
@@ -146,7 +131,7 @@ async function run() {
 export interface Photo {
   id: string;
   title?: string;
-  series: 'Hokkaido 2025' | 'Korea 2025' | string;
+  series: string;
   fileNumber: string;
   displayUrl: string;
   thumbUrl: string;
@@ -165,18 +150,85 @@ export interface Photo {
   featured: boolean;
 }
 
-export const photos: Photo[] = ${JSON.stringify(results, null, 2)};
+export const photos: Photo[] = ${JSON.stringify(photosArray, null, 2)};
 
-export const seriesList = [
-  { id: 'all', name: 'All Works', count: photos.length },
-  { id: 'hokkaido', name: 'Hokkaido 2025', count: photos.filter(p => p.series === 'Hokkaido 2025').length },
-  { id: 'korea', name: 'Korea 2025', count: photos.filter(p => p.series === 'Korea 2025').length },
-];
+export const seriesList = ${JSON.stringify(seriesList, null, 2)};
 `;
 
   fs.mkdirSync(path.resolve('src/data'), { recursive: true });
   fs.writeFileSync(path.resolve('src/data/photos.ts'), fileContent);
-  console.log(`\nSuccessfully processed ${results.length} photos and updated src/data/photos.ts!`);
+  console.log(`\nSuccessfully updated src/data/photos.ts with ${photosArray.length} photos across ${Object.keys(seriesCounts).length} series!`);
+}
+
+async function run() {
+  const args = process.argv.slice(2);
+
+  // If a directory is passed: node scripts/ingest.mjs <dir> [series-name]
+  if (args.length > 0) {
+    const targetDir = path.resolve(args[0]);
+    if (!fs.existsSync(targetDir)) {
+      console.error(`Directory not found: ${targetDir}`);
+      process.exit(1);
+    }
+
+    const seriesName = args[1] || path.basename(targetDir);
+    console.log(`\n--- Ingesting photos from: ${targetDir} as Series: "${seriesName}" ---`);
+
+    // Load existing photos if available
+    let existingPhotos = [];
+    try {
+      const dataModule = await import('../src/data/photos.ts');
+      existingPhotos = dataModule.photos || [];
+    } catch {}
+
+    const files = fs.readdirSync(targetDir).filter(f => /\.(jpe?g|png)$/i.test(f));
+    if (files.length === 0) {
+      console.log(`No images found in ${targetDir}`);
+      return;
+    }
+
+    const newPhotos = [];
+    for (const file of files) {
+      const p = await processSinglePhoto({
+        inputPath: path.join(targetDir, file),
+        seriesName,
+      });
+      newPhotos.push(p);
+    }
+
+    writePhotosFile([...existingPhotos, ...newPhotos]);
+    return;
+  }
+
+  // Default: Process baseline Hokkaido & Korea selection if photos.ts is fresh
+  const HOKKAIDO_DIR = '/Users/mihail/Desktop/Untitled Export/Hokkaido 2025';
+  const KOREA_DIR = '/Users/mihail/Desktop/Untitled Export/Korea 2025';
+
+  const defaultList = [
+    { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2592.jpg' },
+    { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2621.jpg' },
+    { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2732.jpg' },
+    { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2792.jpg' },
+    { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2836.jpg' },
+    { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2972.jpg' },
+    { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2059.JPG' },
+    { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2110.jpg' },
+    { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2175.jpg' },
+    { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2220.jpg' },
+    { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2267.jpg' },
+    { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2316.jpg' },
+  ];
+
+  const results = [];
+  for (const item of defaultList) {
+    const p = await processSinglePhoto({
+      inputPath: path.join(item.dir, item.file),
+      seriesName: item.series,
+    });
+    results.push(p);
+  }
+
+  writePhotosFile(results);
 }
 
 run().catch(console.error);

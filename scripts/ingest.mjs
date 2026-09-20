@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import os from 'os';
 import { execSync } from 'child_process';
 import exifr from 'exifr';
 
@@ -23,6 +24,28 @@ function formatFNumber(f) {
   return Number.isInteger(rounded) ? `ƒ/${rounded}.0` : `ƒ/${rounded}`;
 }
 
+function resolveUserPath(inputPath) {
+  if (inputPath.startsWith('~')) {
+    return path.join(os.homedir(), inputPath.slice(1));
+  }
+  return path.resolve(inputPath);
+}
+
+function loadExistingPhotos() {
+  const filePath = path.resolve('src/data/photos.ts');
+  if (!fs.existsSync(filePath)) return [];
+  const content = fs.readFileSync(filePath, 'utf8');
+  const match = content.match(/export const photos: Photo\[\] = (\[[\s\S]*?\]);/);
+  if (match) {
+    try {
+      return JSON.parse(match[1]);
+    } catch (err) {
+      console.warn('Failed to parse existing photos from photos.ts:', err.message);
+    }
+  }
+  return [];
+}
+
 async function processSinglePhoto({ inputPath, seriesName, profileName = 'Reala Ace · RAW Edit' }) {
   const file = path.basename(inputPath);
   const ext = path.extname(file).toLowerCase();
@@ -37,7 +60,7 @@ async function processSinglePhoto({ inputPath, seriesName, profileName = 'Reala 
 
   console.log(`Processing: ${file} -> ${id}`);
 
-  // Sips resizing
+  // Sips resizing (only if not already generated to save time)
   if (!fs.existsSync(displayPath)) {
     execSync(`sips -Z 2048 "${inputPath}" --out "${displayPath}" > /dev/null 2>&1`);
   }
@@ -165,7 +188,9 @@ async function run() {
 
   // If a directory is passed: node scripts/ingest.mjs <dir> [series-name]
   if (args.length > 0) {
-    const targetDir = path.resolve(args[0]);
+    const rawPath = args[0];
+    const targetDir = resolveUserPath(rawPath);
+
     if (!fs.existsSync(targetDir)) {
       console.error(`Directory not found: ${targetDir}`);
       process.exit(1);
@@ -174,12 +199,9 @@ async function run() {
     const seriesName = args[1] || path.basename(targetDir);
     console.log(`\n--- Ingesting photos from: ${targetDir} as Series: "${seriesName}" ---`);
 
-    // Load existing photos if available
-    let existingPhotos = [];
-    try {
-      const dataModule = await import('../src/data/photos.ts');
-      existingPhotos = dataModule.photos || [];
-    } catch {}
+    // Load existing photos reliably by parsing photos.ts
+    const existingPhotos = loadExistingPhotos();
+    console.log(`Found ${existingPhotos.length} existing photos in library.`);
 
     const files = fs.readdirSync(targetDir).filter(f => /\.(jpe?g|png)$/i.test(f));
     if (files.length === 0) {
@@ -200,9 +222,9 @@ async function run() {
     return;
   }
 
-  // Default: Process baseline Hokkaido & Korea selection if photos.ts is fresh
-  const HOKKAIDO_DIR = '/Users/mihail/Desktop/Untitled Export/Hokkaido 2025';
-  const KOREA_DIR = '/Users/mihail/Desktop/Untitled Export/Korea 2025';
+  // Default: Process baseline Hokkaido & Korea selection
+  const HOKKAIDO_DIR = resolveUserPath('~/Desktop/Untitled Export/Hokkaido 2025');
+  const KOREA_DIR = resolveUserPath('~/Desktop/Untitled Export/Korea 2025');
 
   const defaultList = [
     { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2592.jpg' },
@@ -219,6 +241,7 @@ async function run() {
     { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2316.jpg' },
   ];
 
+  const existingPhotos = loadExistingPhotos();
   const results = [];
   for (const item of defaultList) {
     const p = await processSinglePhoto({
@@ -228,7 +251,7 @@ async function run() {
     results.push(p);
   }
 
-  writePhotosFile(results);
+  writePhotosFile([...existingPhotos, ...results]);
 }
 
 run().catch(console.error);

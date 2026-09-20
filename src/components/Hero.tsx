@@ -23,12 +23,12 @@ export function Hero() {
 
         {/* Editorial Heading */}
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif tracking-tight text-white max-w-4xl leading-[1.1] mb-6">
-          Visual Notes from <span className="italic font-normal text-[#f4f4f5]/80">Hokkaido</span> & <span className="italic font-normal text-[#f4f4f5]/80">Seoul</span>
+          Visual Notes from <span className="italic font-normal text-[#f4f4f5]/80">Travels</span> & <span className="italic font-normal text-[#f4f4f5]/80">Cities</span>
         </h1>
 
         {/* Narrative Description */}
         <p className="text-base sm:text-lg text-zinc-400 max-w-2xl font-sans font-light leading-relaxed mb-8">
-          A personal photographic journal captured across Hokkaido and Korea. Shot on the Fujifilm X-T5 with Fujinon optics, developed from RAW in Lightroom on the Reala Ace color foundation.
+          A personal photographic journal by Mihail Kovashki (MiKo). Captured on the Fujifilm X-T5 with Fujinon primes &amp; zoom, balancing custom in-camera film recipes with nuanced RAW grading.
         </p>
 
         {/* Camera Spec Ticker */}
@@ -47,7 +47,7 @@ export function Hero() {
           </div>
           <div className="flex flex-col items-center justify-center p-3 rounded-xl bg-white/[0.02] border border-white/5">
             <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-500 mb-1">Color Craft</span>
-            <span className="text-xs sm:text-sm font-mono font-medium text-zinc-200">Reala Ace / RAW</span>
+            <span className="text-xs sm:text-sm font-mono font-medium text-zinc-200">Recipes &amp; RAW</span>
           </div>
         </div>
       </motion.div>

@@ -19,11 +19,11 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Mihail Kovashki · Fujifilm X-T5 Chronicles",
-  description: "Visual stories from Hokkaido and Korea captured with the Fujifilm X-T5 & Fujinon XF optics.",
+  title: "Mihail Kovashki (MiKo) · Fujifilm Photography",
+  description: "Visual stories and personal photographic chronicles by Mihail Kovashki (MiKo) captured with the Fujifilm X-T5 & Fujinon XF optics.",
   openGraph: {
-    title: "Mihail Kovashki · Fujifilm Photography",
-    description: "Visual chronicles from Hokkaido & Korea · X-T5 & Fujinon Optics",
+    title: "Mihail Kovashki (MiKo) · Fujifilm Photography",
+    description: "Visual chronicles across East Asia & Europe · X-T5 & Fujinon Optics",
     type: "website",
   },
 };

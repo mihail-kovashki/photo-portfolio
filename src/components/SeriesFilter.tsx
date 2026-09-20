@@ -2,10 +2,16 @@
 
 import { LayoutGrid, GalleryVerticalEnd } from "lucide-react";
 
+export interface SeriesItem {
+  id: string;
+  name: string;
+  count: number;
+}
+
 interface SeriesFilterProps {
   activeSeries: string;
   onSelectSeries: (id: string) => void;
-  counts: { all: number; hokkaido: number; korea: number };
+  seriesList: SeriesItem[];
   layoutMode: "masonry" | "story";
   onToggleLayout: (mode: "masonry" | "story") => void;
 }
@@ -13,62 +19,37 @@ interface SeriesFilterProps {
 export function SeriesFilter({
   activeSeries,
   onSelectSeries,
-  counts,
+  seriesList,
   layoutMode,
   onToggleLayout,
 }: SeriesFilterProps) {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-8 sm:mb-12">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-white/10">
-        {/* Series Tabs */}
+        {/* Dynamic Series Tabs */}
         <div className="flex items-center gap-2 overflow-x-auto pb-2 sm:pb-0 scrollbar-none">
-          <button
-            onClick={() => onSelectSeries("all")}
-            className={`px-4 py-2 rounded-full text-xs font-mono whitespace-nowrap transition-all duration-200 flex items-center gap-2 ${
-              activeSeries === "all"
-                ? "bg-white text-zinc-950 font-semibold shadow-md"
-                : "bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white border border-white/5"
-            }`}
-          >
-            <span>All Works</span>
-            <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${
-              activeSeries === "all" ? "bg-zinc-200 text-zinc-900" : "bg-white/10 text-zinc-400"
-            }`}>
-              {counts.all}
-            </span>
-          </button>
-
-          <button
-            onClick={() => onSelectSeries("hokkaido")}
-            className={`px-4 py-2 rounded-full text-xs font-mono whitespace-nowrap transition-all duration-200 flex items-center gap-2 ${
-              activeSeries === "hokkaido"
-                ? "bg-white text-zinc-950 font-semibold shadow-md"
-                : "bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white border border-white/5"
-            }`}
-          >
-            <span>Hokkaido 2025</span>
-            <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${
-              activeSeries === "hokkaido" ? "bg-zinc-200 text-zinc-900" : "bg-white/10 text-zinc-400"
-            }`}>
-              {counts.hokkaido}
-            </span>
-          </button>
-
-          <button
-            onClick={() => onSelectSeries("korea")}
-            className={`px-4 py-2 rounded-full text-xs font-mono whitespace-nowrap transition-all duration-200 flex items-center gap-2 ${
-              activeSeries === "korea"
-                ? "bg-white text-zinc-950 font-semibold shadow-md"
-                : "bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white border border-white/5"
-            }`}
-          >
-            <span>Korea 2025</span>
-            <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${
-              activeSeries === "korea" ? "bg-zinc-200 text-zinc-900" : "bg-white/10 text-zinc-400"
-            }`}>
-              {counts.korea}
-            </span>
-          </button>
+          {seriesList.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => onSelectSeries(item.id)}
+              className={`px-4 py-2 rounded-full text-xs font-mono whitespace-nowrap transition-all duration-200 flex items-center gap-2 ${
+                activeSeries === item.id
+                  ? "bg-white text-zinc-950 font-semibold shadow-md"
+                  : "bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white border border-white/5"
+              }`}
+            >
+              <span>{item.name}</span>
+              <span
+                className={`text-[10px] px-1.5 py-0.5 rounded-full ${
+                  activeSeries === item.id
+                    ? "bg-zinc-200 text-zinc-900"
+                    : "bg-white/10 text-zinc-400"
+                }`}
+              >
+                {item.count}
+              </span>
+            </button>
+          ))}
         </div>
 
         {/* Layout Mode Switcher & Camera Indicator */}

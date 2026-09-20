@@ -12,16 +12,37 @@ const RECIPES_FILE = path.resolve("src/data/recipes.json");
 fs.mkdirSync(DISPLAY_DIR, { recursive: true });
 fs.mkdirSync(THUMB_DIR, { recursive: true });
 
-function formatExposureTime(sec) {
-  if (!sec) return "1/250s";
-  if (sec >= 1) return `${Math.round(sec * 10) / 10}s`;
-  const denom = Math.round(1 / sec);
-  return `1/${denom}s`;
+function formatExposureTime(val) {
+  if (!val) return "1/250s";
+  if (typeof val === "string") {
+    const s = val.trim();
+    if (s.includes("/")) {
+      return s.endsWith("s") ? s : `${s}s`;
+    }
+    const num = parseFloat(s);
+    if (!isNaN(num)) val = num;
+  }
+  if (typeof val === "number") {
+    if (val >= 1) return `${Math.round(val * 10) / 10}s`;
+    const denom = Math.round(1 / val);
+    return `1/${denom}s`;
+  }
+  return `${val}s`;
+}
+
+function formatFocalLength(fl, fl35) {
+  const target = fl || fl35;
+  if (!target) return "23mm";
+  if (typeof target === "number") return `${Math.round(target)}mm`;
+  const m = String(target).match(/(\d+(\.\d+)?)/);
+  return m ? `${Math.round(parseFloat(m[1]))}mm` : "23mm";
 }
 
 function formatFNumber(f) {
   if (!f) return "ƒ/--";
-  const rounded = Math.round(f * 10) / 10;
+  const num = typeof f === "number" ? f : parseFloat(String(f).replace(/^[fƒ\/]\s*/i, ""));
+  if (isNaN(num)) return `ƒ/${f}`;
+  const rounded = Math.round(num * 10) / 10;
   return Number.isInteger(rounded) ? `ƒ/${rounded}.0` : `ƒ/${rounded}`;
 }
 
@@ -188,9 +209,7 @@ async function processSinglePhoto({ inputPath, seriesName, profileOverride = nul
   const aperture = formatFNumber(tags.FNumber);
   const shutterSpeed = formatExposureTime(tags.ExposureTime);
   const iso = tags.ISO ? `ISO ${tags.ISO}` : "ISO 125";
-  const focalLength = tags.FocalLength
-    ? `${Math.round(tags.FocalLength)}mm`
-    : (tags.FocalLengthIn35mmFormat ? `${Math.round(tags.FocalLengthIn35mmFormat)}mm` : "23mm");
+  const focalLength = formatFocalLength(tags.FocalLength, tags.FocalLengthIn35mmFormat);
 
   let profile = profileOverride;
   let recipeDetails = undefined;

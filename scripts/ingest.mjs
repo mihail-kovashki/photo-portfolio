@@ -1,56 +1,73 @@
-import fs from 'fs';
-import path from 'path';
-import os from 'os';
-import { execSync } from 'child_process';
-import exifr from 'exifr';
+import fs from "fs";
+import path from "path";
+import os from "os";
+import { execSync } from "child_process";
+import exifr from "exifr";
 
-const PUBLIC_PHOTOS_DIR = path.resolve('public/photos');
-const DISPLAY_DIR = path.join(PUBLIC_PHOTOS_DIR, 'display');
-const THUMB_DIR = path.join(PUBLIC_PHOTOS_DIR, 'thumb');
+const PUBLIC_PHOTOS_DIR = path.resolve("public/photos");
+const DISPLAY_DIR = path.join(PUBLIC_PHOTOS_DIR, "display");
+const THUMB_DIR = path.join(PUBLIC_PHOTOS_DIR, "thumb");
 
 fs.mkdirSync(DISPLAY_DIR, { recursive: true });
 fs.mkdirSync(THUMB_DIR, { recursive: true });
 
 function formatExposureTime(sec) {
-  if (!sec) return '1/250s';
+  if (!sec) return "1/250s";
   if (sec >= 1) return `${Math.round(sec * 10) / 10}s`;
   const denom = Math.round(1 / sec);
   return `1/${denom}s`;
 }
 
 function formatFNumber(f) {
-  if (!f) return 'ƒ/1.4';
+  if (!f) return "ƒ/--";
   const rounded = Math.round(f * 10) / 10;
   return Number.isInteger(rounded) ? `ƒ/${rounded}.0` : `ƒ/${rounded}`;
 }
 
+function formatLensModel(lensModel, focalLength) {
+  if (!lensModel) {
+    return focalLength ? `Fujinon Lens (${Math.round(focalLength)}mm)` : "Fujinon Lens";
+  }
+  let cleaned = lensModel.trim();
+  // Standardize common Fujinon designations if EXIF has generic strings
+  if (/^23\.0\s*mm\s*f\/1\.4/i.test(cleaned)) {
+    return "XF23mmF1.4 R LM WR";
+  }
+  if (/^70-300mm/i.test(cleaned)) {
+    return "XF70-300mmF4-5.6 R LM OIS WR";
+  }
+  // Remove redundant manufacturer prefixes (e.g. FUJIFILM LENS XF... -> XF...)
+  cleaned = cleaned.replace(/^(FUJIFILM|FUJINON)(\s+LENS)?\s+/i, "");
+  return cleaned;
+}
+
 function resolveUserPath(inputPath) {
-  if (inputPath.startsWith('~')) {
+  if (inputPath.startsWith("~")) {
     return path.join(os.homedir(), inputPath.slice(1));
   }
   return path.resolve(inputPath);
 }
 
 function loadExistingPhotos() {
-  const filePath = path.resolve('src/data/photos.ts');
+  const filePath = path.resolve("src/data/photos.ts");
   if (!fs.existsSync(filePath)) return [];
-  const content = fs.readFileSync(filePath, 'utf8');
+  const content = fs.readFileSync(filePath, "utf8");
   const match = content.match(/export const photos: Photo\[\] = (\[[\s\S]*?\]);/);
   if (match) {
     try {
       return JSON.parse(match[1]);
     } catch (err) {
-      console.warn('Failed to parse existing photos from photos.ts:', err.message);
+      console.warn("Failed to parse existing photos from photos.ts:", err.message);
     }
   }
   return [];
 }
 
-async function processSinglePhoto({ inputPath, seriesName, profileName = 'Reala Ace · RAW Edit' }) {
+async function processSinglePhoto({ inputPath, seriesName, profileName = "Reala Ace · RAW Edit", lensOverride = null }) {
   const file = path.basename(inputPath);
   const ext = path.extname(file).toLowerCase();
   const baseName = path.basename(file, ext).toLowerCase();
-  const id = `${seriesName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${baseName}`;
+  const id = `${seriesName.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-${baseName}`;
   const displayFileName = `${id}.jpg`;
   const thumbFileName = `${id}.jpg`;
 
@@ -69,7 +86,7 @@ async function processSinglePhoto({ inputPath, seriesName, profileName = 'Reala 
   }
   execSync(`sips -Z 20 "${inputPath}" --out "${tinyPath}" > /dev/null 2>&1`);
 
-  const blurDataUrl = 'data:image/jpeg;base64,' + fs.readFileSync(tinyPath).toString('base64');
+  const blurDataUrl = "data:image/jpeg;base64," + fs.readFileSync(tinyPath).toString("base64");
   try { fs.unlinkSync(tinyPath); } catch {}
 
   // Parse dimensions with sips
@@ -88,19 +105,18 @@ async function processSinglePhoto({ inputPath, seriesName, profileName = 'Reala 
     console.warn(`Could not read EXIF for ${file}:`, err.message);
   }
 
-  const camera = exif.Model ? `FUJIFILM ${exif.Model.replace(/^FUJIFILM\s*/i, '')}` : 'FUJIFILM X-T5';
-  let lens = exif.LensModel || 'XF23mmF1.4 R LM WR';
-  if (lens.includes('23.0 mm f/1.4')) {
-    lens = 'XF23mmF1.4 R LM WR';
-  }
-  const aperture = formatFNumber(exif.FNumber || 1.4);
-  const shutterSpeed = formatExposureTime(exif.ExposureTime || 0.004);
-  const iso = exif.ISO ? `ISO ${exif.ISO}` : 'ISO 125';
-  const focalLength = exif.FocalLength ? `${Math.round(exif.FocalLength)}mm` : '23mm';
+  const camera = exif.Model ? `FUJIFILM ${exif.Model.replace(/^FUJIFILM\s*/i, "")}` : "FUJIFILM X-T5";
+  const lens = lensOverride || formatLensModel(exif.LensModel, exif.FocalLength);
+  const aperture = formatFNumber(exif.FNumber);
+  const shutterSpeed = formatExposureTime(exif.ExposureTime);
+  const iso = exif.ISO ? `ISO ${exif.ISO}` : "ISO 125";
+  const focalLength = exif.FocalLength
+    ? `${Math.round(exif.FocalLength)}mm`
+    : (exif.FocalLengthIn35mmFormat ? `${Math.round(exif.FocalLengthIn35mmFormat)}mm` : "23mm");
 
-  let dateTaken = '2025';
+  let dateTaken = "2025";
   if (exif.CreateDate instanceof Date && !isNaN(exif.CreateDate.getTime())) {
-    dateTaken = exif.CreateDate.toISOString().split('T')[0];
+    dateTaken = exif.CreateDate.toISOString().split("T")[0];
   }
 
   return {
@@ -139,9 +155,9 @@ function writePhotosFile(allPhotos) {
   }
 
   const seriesList = [
-    { id: 'all', name: 'All Works', count: photosArray.length },
+    { id: "all", name: "All Works", count: photosArray.length },
     ...Object.entries(seriesCounts).map(([name, count]) => ({
-      id: name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+      id: name.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
       name,
       count
     }))
@@ -178,17 +194,30 @@ export const photos: Photo[] = ${JSON.stringify(photosArray, null, 2)};
 export const seriesList = ${JSON.stringify(seriesList, null, 2)};
 `;
 
-  fs.mkdirSync(path.resolve('src/data'), { recursive: true });
-  fs.writeFileSync(path.resolve('src/data/photos.ts'), fileContent);
+  fs.mkdirSync(path.resolve("src/data"), { recursive: true });
+  fs.writeFileSync(path.resolve("src/data/photos.ts"), fileContent);
   console.log(`\nSuccessfully updated src/data/photos.ts with ${photosArray.length} photos across ${Object.keys(seriesCounts).length} series!`);
 }
 
 async function run() {
-  const args = process.argv.slice(2);
+  const rawArgs = process.argv.slice(2);
+  let lensOverride = null;
+  let profileOverride = "Reala Ace · RAW Edit";
+  const positionalArgs = [];
 
-  // If a directory is passed: node scripts/ingest.mjs <dir> [series-name]
-  if (args.length > 0) {
-    const rawPath = args[0];
+  for (const arg of rawArgs) {
+    if (arg.startsWith("--lens=")) {
+      lensOverride = arg.slice(7).replace(/^['"]|['"]$/g, "");
+    } else if (arg.startsWith("--profile=")) {
+      profileOverride = arg.slice(10).replace(/^['"]|['"]$/g, "");
+    } else {
+      positionalArgs.push(arg);
+    }
+  }
+
+  // If a directory is passed: node scripts/ingest.mjs <dir> [series-name] [--lens="..."] [--profile="..."]
+  if (positionalArgs.length > 0) {
+    const rawPath = positionalArgs[0];
     const targetDir = resolveUserPath(rawPath);
 
     if (!fs.existsSync(targetDir)) {
@@ -196,8 +225,9 @@ async function run() {
       process.exit(1);
     }
 
-    const seriesName = args[1] || path.basename(targetDir);
+    const seriesName = positionalArgs[1] || path.basename(targetDir);
     console.log(`\n--- Ingesting photos from: ${targetDir} as Series: "${seriesName}" ---`);
+    if (lensOverride) console.log(`Lens Override: ${lensOverride}`);
 
     // Load existing photos reliably by parsing photos.ts
     const existingPhotos = loadExistingPhotos();
@@ -214,6 +244,8 @@ async function run() {
       const p = await processSinglePhoto({
         inputPath: path.join(targetDir, file),
         seriesName,
+        profileName: profileOverride,
+        lensOverride,
       });
       newPhotos.push(p);
     }
@@ -223,22 +255,22 @@ async function run() {
   }
 
   // Default: Process baseline Hokkaido & Korea selection
-  const HOKKAIDO_DIR = resolveUserPath('~/Desktop/Untitled Export/Hokkaido 2025');
-  const KOREA_DIR = resolveUserPath('~/Desktop/Untitled Export/Korea 2025');
+  const HOKKAIDO_DIR = resolveUserPath("~/Desktop/Untitled Export/Hokkaido 2025");
+  const KOREA_DIR = resolveUserPath("~/Desktop/Untitled Export/Korea 2025");
 
   const defaultList = [
-    { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2592.jpg' },
-    { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2621.jpg' },
-    { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2732.jpg' },
-    { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2792.jpg' },
-    { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2836.jpg' },
-    { series: 'Hokkaido 2025', dir: HOKKAIDO_DIR, file: 'DSCF2972.jpg' },
-    { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2059.JPG' },
-    { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2110.jpg' },
-    { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2175.jpg' },
-    { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2220.jpg' },
-    { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2267.jpg' },
-    { series: 'Korea 2025', dir: KOREA_DIR, file: 'DSCF2316.jpg' },
+    { series: "Hokkaido 2025", dir: HOKKAIDO_DIR, file: "DSCF2592.jpg" },
+    { series: "Hokkaido 2025", dir: HOKKAIDO_DIR, file: "DSCF2621.jpg" },
+    { series: "Hokkaido 2025", dir: HOKKAIDO_DIR, file: "DSCF2732.jpg" },
+    { series: "Hokkaido 2025", dir: HOKKAIDO_DIR, file: "DSCF2792.jpg" },
+    { series: "Hokkaido 2025", dir: HOKKAIDO_DIR, file: "DSCF2836.jpg" },
+    { series: "Hokkaido 2025", dir: HOKKAIDO_DIR, file: "DSCF2972.jpg" },
+    { series: "Korea 2025", dir: KOREA_DIR, file: "DSCF2059.JPG" },
+    { series: "Korea 2025", dir: KOREA_DIR, file: "DSCF2110.jpg" },
+    { series: "Korea 2025", dir: KOREA_DIR, file: "DSCF2175.jpg" },
+    { series: "Korea 2025", dir: KOREA_DIR, file: "DSCF2220.jpg" },
+    { series: "Korea 2025", dir: KOREA_DIR, file: "DSCF2267.jpg" },
+    { series: "Korea 2025", dir: KOREA_DIR, file: "DSCF2316.jpg" },
   ];
 
   const existingPhotos = loadExistingPhotos();

@@ -20,10 +20,10 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Mihail Kovashki · Fujifilm X-T5 Chronicles",
-  description: "Visual stories from Hokkaido and Korea captured with the Fujifilm X-T5 & Fujinon XF 23mm F1.4.",
+  description: "Visual stories from Hokkaido and Korea captured with the Fujifilm X-T5 & Fujinon XF optics.",
   openGraph: {
     title: "Mihail Kovashki · Fujifilm Photography",
-    description: "Visual chronicles from Hokkaido & Korea · X-T5 & 23mm F1.4",
+    description: "Visual chronicles from Hokkaido & Korea · X-T5 & Fujinon Optics",
     type: "website",
   },
 };

@@ -197,6 +197,9 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                   </div>
                   <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/40 border border-white/5">
                     <span>{photo.lens}</span>
+                    {photo.focalLength && !photo.lens.includes(photo.focalLength) && (
+                      <span className="text-zinc-400">({photo.focalLength})</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/40 border border-white/5">
                     <Aperture className="w-3.5 h-3.5 text-[#e59866]" />

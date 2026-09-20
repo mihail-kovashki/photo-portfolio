@@ -1,144 +1,191 @@
 [
   {
+    "id": "kodak-portra-800-v3",
+    "name": "Kodak Portra 800 v3",
+    "filmSimulation": "Classic Chrome",
+    "dynamicRange": "DR400",
+    "highlight": -2,
+    "shadow": -0.5,
+    "color": 3,
+    "noiseReduction": -4,
+    "sharpening": -2,
+    "clarity": -3,
+    "grainEffect": "Strong, Large",
+    "colorChromeEffect": "Strong",
+    "colorChromeFXBlue": "Off",
+    "whiteBalance": "6600K",
+    "wbShift": [
+      -1,
+      -3
+    ],
+    "source": "Fuji X Weekly"
+  },
+  {
+    "id": "reggies-portra",
+    "name": "Reggie's Portra",
+    "filmSimulation": "Classic Chrome",
+    "dynamicRange": "DR400",
+    "highlight": -1,
+    "shadow": -1,
+    "color": 2,
+    "noiseReduction": -4,
+    "sharpening": -2,
+    "clarity": 0,
+    "grainEffect": "Weak, Small",
+    "colorChromeEffect": "Strong",
+    "colorChromeFXBlue": "Weak",
+    "whiteBalance": "Auto",
+    "wbShift": [
+      2,
+      -4
+    ],
+    "source": "Fuji X Weekly / Reggie Ballesteros"
+  },
+  {
+    "id": "copenhagen-negative",
+    "name": "Copenhagen Negative",
+    "filmSimulation": "Classic Negative",
+    "dynamicRange": "DR400",
+    "highlight": 2.5,
+    "shadow": -2,
+    "color": 4,
+    "noiseReduction": -4,
+    "sharpening": -2,
+    "clarity": -3,
+    "grainEffect": "Strong, Small",
+    "colorChromeEffect": "Weak",
+    "colorChromeFXBlue": "Strong",
+    "whiteBalance": "5700K",
+    "wbShift": [
+      1,
+      1
+    ],
+    "source": "Fuji X Weekly"
+  },
+  {
+    "id": "classic-color",
+    "name": "Classic Color",
+    "filmSimulation": "Classic Chrome",
+    "dynamicRange": "DR400",
+    "highlight": -0.5,
+    "shadow": -2,
+    "color": 3,
+    "noiseReduction": -4,
+    "sharpening": -2,
+    "clarity": -2,
+    "grainEffect": "Strong, Small",
+    "colorChromeEffect": "Strong",
+    "colorChromeFXBlue": "Weak",
+    "whiteBalance": "5300K",
+    "wbShift": [
+      0,
+      -6
+    ],
+    "source": "Fuji X Weekly"
+  },
+  {
+    "id": "fluorescent-night",
+    "name": "Fluorescent Night",
+    "filmSimulation": "Nostalgic Neg",
+    "dynamicRange": "DR200",
+    "highlight": -1,
+    "shadow": -1.5,
+    "color": 4,
+    "noiseReduction": -4,
+    "sharpening": -2,
+    "clarity": -3,
+    "grainEffect": "Strong, Small",
+    "colorChromeEffect": "Strong",
+    "colorChromeFXBlue": "Weak",
+    "whiteBalance": "Day White Fluorescent",
+    "wbShift": [
+      -7,
+      -1
+    ],
+    "source": "Fuji X Weekly"
+  },
+  {
     "id": "kodak-portra-400-v1",
     "name": "Kodak Portra 400",
-    "baseFilmSim": "Classic Chrome",
+    "filmSimulation": "Classic Chrome",
+    "dynamicRange": "DR400",
+    "highlight": -1,
+    "shadow": -2,
+    "color": 2,
+    "noiseReduction": -4,
+    "sharpening": -2,
+    "clarity": -2,
+    "grainEffect": "Weak, Small",
+    "colorChromeEffect": "Strong",
+    "colorChromeFXBlue": "Weak",
+    "whiteBalance": "Auto",
     "wbShift": [
       1,
       -2
     ],
-    "notes": "Fuji X Weekly classic recipe"
-  },
-  {
-    "id": "kodak-portra-400-v2",
-    "name": "Kodak Portra 400 (Warm)",
-    "baseFilmSim": "Classic Chrome",
-    "wbShift": [
-      2,
-      -5
-    ],
-    "notes": "Fuji X Weekly warm variant"
-  },
-  {
-    "id": "kodak-tri-x-400",
-    "name": "Kodak Tri-X 400",
-    "baseFilmSim": "Acros",
-    "wbShift": [
-      0,
-      0
-    ],
-    "notes": "High contrast gritty B&W"
-  },
-  {
-    "id": "kodak-gold-200",
-    "name": "Kodak Gold 200",
-    "baseFilmSim": "Classic Chrome",
-    "wbShift": [
-      3,
-      -4
-    ],
-    "notes": "Golden daylight tones"
+    "source": "Fuji X Weekly"
   },
   {
     "id": "pacific-blues",
     "name": "Pacific Blues",
-    "baseFilmSim": "Classic Neg",
+    "filmSimulation": "Classic Negative",
+    "dynamicRange": "DR400",
+    "highlight": 1,
+    "shadow": -2,
+    "color": 4,
+    "noiseReduction": -4,
+    "sharpening": -2,
+    "clarity": -2,
+    "grainEffect": "Strong, Small",
+    "colorChromeEffect": "Strong",
+    "colorChromeFXBlue": "Strong",
+    "whiteBalance": "Auto",
     "wbShift": [
       1,
       -3
     ],
-    "notes": "Deep greens, rich cyan-blues"
+    "source": "Fuji X Weekly"
   },
   {
     "id": "cinestill-800t",
     "name": "CineStill 800T",
-    "baseFilmSim": "Classic Chrome",
+    "filmSimulation": "Classic Chrome",
+    "dynamicRange": "DR400",
+    "highlight": -1,
+    "shadow": -2,
+    "color": 3,
+    "noiseReduction": -4,
+    "sharpening": -2,
+    "clarity": -3,
+    "grainEffect": "Strong, Large",
+    "colorChromeEffect": "Strong",
+    "colorChromeFXBlue": "Off",
+    "whiteBalance": "3200K",
     "wbShift": [
       3,
       -5
     ],
-    "notes": "Tungsten street & neon aesthetic"
+    "source": "Fuji X Weekly"
   },
   {
-    "id": "kodachrome-64",
-    "name": "Kodachrome 64",
-    "baseFilmSim": "Classic Chrome",
-    "wbShift": [
-      2,
-      -4
-    ],
-    "notes": "Vintage saturated slide tones"
-  },
-  {
-    "id": "bright-summer",
-    "name": "Bright Summer",
-    "baseFilmSim": "Astia",
-    "wbShift": [
-      1,
-      -2
-    ],
-    "notes": "Airy, soft, radiant highlights"
-  },
-  {
-    "id": "nostalgic-color",
-    "name": "Nostalgic Color",
-    "baseFilmSim": "Nostalgic Neg",
-    "wbShift": [
-      1,
-      -2
-    ],
-    "notes": "Subtle amber wash in highlights"
-  },
-  {
-    "id": "superia-xtra-400",
-    "name": "Fujicolor Superia 400",
-    "baseFilmSim": "Classic Neg",
-    "wbShift": [
-      0,
-      -2
-    ],
-    "notes": "Everyday drugstore film aesthetic"
-  },
-  {
-    "id": "reala-ace-natural",
-    "name": "Reala Ace",
-    "baseFilmSim": "Reala Ace",
+    "id": "kodak-tri-x-400",
+    "name": "Kodak Tri-X 400",
+    "filmSimulation": "Acros",
+    "dynamicRange": "DR400",
+    "highlight": 1,
+    "shadow": 2,
+    "color": 0,
+    "noiseReduction": -4,
+    "sharpening": 0,
+    "clarity": 1,
+    "grainEffect": "Strong, Large",
+    "colorChromeEffect": "Off",
+    "colorChromeFXBlue": "Off",
+    "whiteBalance": "Auto",
     "wbShift": [
       0,
       0
     ],
-    "notes": "Fujifilm faithful SOOC natural color"
-  },
-  {
-    "id": "provia-standard",
-    "name": "Provia",
-    "baseFilmSim": "Provia",
-    "wbShift": [
-      0,
-      0
-    ],
-    "notes": "Fujifilm standard SOOC"
-  },
-  {
-    "id": "custom-classic-chrome-r3-b-2",
-    "name": "TODO: Name this recipe (Classic Chrome R:+3 B:-2)",
-    "baseFilmSim": "Classic Chrome",
-    "wbShift": [
-      3,
-      -2
-    ],
-    "userCustom": true,
-    "firstSeen": "2026-09-20"
-  },
-  {
-    "id": "custom-eterna-bleach-bypass-r2-b-4",
-    "name": "TODO: Name this recipe (Eterna Bleach Bypass R:+2 B:-4)",
-    "baseFilmSim": "Eterna Bleach Bypass",
-    "wbShift": [
-      2,
-      -4
-    ],
-    "userCustom": true,
-    "firstSeen": "2026-09-20"
+    "source": "Fuji X Weekly"
   }
 ]

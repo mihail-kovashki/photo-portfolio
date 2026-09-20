@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Camera, Aperture, Layers, Sparkles, Cpu } from "lucide-react";
+import { X, Camera, Aperture, Layers, Cpu } from "lucide-react";
 
 interface GearModalProps {
   isOpen: boolean;
@@ -72,10 +72,10 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
             <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5">
               <div className="flex items-center gap-2 text-xs font-mono text-zinc-400 mb-2 uppercase tracking-wider">
                 <Layers className="w-3.5 h-3.5 text-zinc-300" />
-                <span>Creative Discipline</span>
+                <span>Color Craft & Editing</span>
               </div>
               <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-light">
-                Shooting with a single fixed focal length forces intentional composition and movement. All photographs are captured handheld, leaning into available ambient light, textured shadows, and the organic grain structure of Fujifilm film simulations.
+                Photographs are captured in RAW, leaning into available ambient light and natural tonal gradients. The color grading is developed in Lightroom Classic on the foundation of Fujifilm&apos;s Reala Ace profile for faithful, nuanced color rendering.
               </p>
             </div>
 

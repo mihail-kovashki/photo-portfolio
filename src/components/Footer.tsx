@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUp, Instagram } from "lucide-react";
+import { ArrowUp, Instagram, Mail } from "lucide-react";
 
 export function Footer() {
   const scrollToTop = () => {
@@ -18,8 +18,8 @@ export function Footer() {
           <span>© {new Date().getFullYear()} Mihail Kovashki (MiKo). All photographs original.</span>
         </div>
 
-        {/* Center: Instagram & Hardware specs */}
-        <div className="flex items-center gap-4 text-zinc-400">
+        {/* Center: Social & Contact */}
+        <div className="flex flex-wrap items-center justify-center gap-4 text-zinc-400">
           <a
             href="https://www.instagram.com/mi_ko.jpg"
             target="_blank"
@@ -29,10 +29,17 @@ export function Footer() {
             <Instagram className="w-3.5 h-3.5 text-zinc-500 group-hover:text-[#e1306c] transition-colors" />
             <span>@mi_ko.jpg</span>
           </a>
-          <span className="hidden md:inline text-zinc-700">·</span>
-          <span className="hidden md:inline text-zinc-500">FUJIFILM X-T5</span>
-          <span className="hidden md:inline text-zinc-700">·</span>
-          <span className="hidden md:inline text-zinc-500">Fujinon Glass</span>
+          <span className="text-zinc-700">·</span>
+          <a
+            href="mailto:mihail.kovashki@proton.me"
+            className="flex items-center gap-1.5 hover:text-white transition-colors group"
+            title="Get in touch via Proton Mail"
+          >
+            <Mail className="w-3.5 h-3.5 text-zinc-500 group-hover:text-[#6d4aff] transition-colors" />
+            <span>mihail.kovashki@proton.me</span>
+          </a>
+          <span className="hidden lg:inline text-zinc-700">·</span>
+          <span className="hidden lg:inline text-zinc-500">FUJIFILM X-T5</span>
         </div>
 
         {/* Right scroll to top */}

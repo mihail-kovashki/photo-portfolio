@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Camera, Aperture, Layers, Cpu, Instagram } from "lucide-react";
+import { X, Camera, Aperture, Layers, Cpu, Instagram, Mail } from "lucide-react";
 
 interface GearModalProps {
   isOpen: boolean;
@@ -114,17 +114,28 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
             </div>
           </div>
 
-          {/* Footer with Creator Link */}
+          {/* Footer with Creator & Contact Links */}
           <div className="mt-8 pt-4 border-t border-white/10 flex flex-col-reverse sm:flex-row items-center justify-between gap-4">
-            <a
-              href="https://www.instagram.com/mi_ko.jpg"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-white transition-colors group"
-            >
-              <Instagram className="w-3.5 h-3.5 text-zinc-500 group-hover:text-[#e1306c] transition-colors" />
-              <span>Follow MiKo on Instagram <span className="text-zinc-500 group-hover:text-zinc-400">(@mi_ko.jpg)</span></span>
-            </a>
+            <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-zinc-400">
+              <a
+                href="https://www.instagram.com/mi_ko.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 hover:text-white transition-colors group"
+              >
+                <Instagram className="w-3.5 h-3.5 text-zinc-500 group-hover:text-[#e1306c] transition-colors" />
+                <span>@mi_ko.jpg</span>
+              </a>
+              <span className="text-zinc-700">·</span>
+              <a
+                href="mailto:mihail.kovashki@proton.me"
+                className="flex items-center gap-1.5 hover:text-white transition-colors group"
+                title="Get in touch via Proton Mail"
+              >
+                <Mail className="w-3.5 h-3.5 text-zinc-500 group-hover:text-[#6d4aff] transition-colors" />
+                <span>mihail.kovashki@proton.me</span>
+              </a>
+            </div>
 
             <button
               onClick={onClose}

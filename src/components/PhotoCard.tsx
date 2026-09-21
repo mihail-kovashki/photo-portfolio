@@ -14,7 +14,6 @@ interface PhotoCardProps {
 
 export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: PhotoCardProps) {
   const displayTitle = photo.title || photo.series;
-  const subtitle = photo.title ? `${photo.series} · ${photo.fileNumber}` : photo.fileNumber;
 
   if (layoutMode === "story") {
     return (
@@ -68,7 +67,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
               {displayTitle}
             </h3>
             <p className="text-xs font-mono text-zinc-400 mt-1">
-              {subtitle} · {photo.dateTaken}
+              {photo.title ? `${photo.series} · ` : ""}{photo.dateTaken} · {photo.lens}
             </p>
           </div>
 
@@ -136,9 +135,9 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
                 {displayTitle}
               </h4>
               <div className="flex items-center justify-between text-[11px] font-mono text-zinc-300 mt-1">
-                <span>{subtitle}</span>
-                <span className="text-zinc-400">
-                  {photo.aperture} · {photo.shutterSpeed}
+                <span className="text-zinc-400 font-medium">{photo.focalLength || photo.lens.replace(/^FUJINON\s+/i, "")}</span>
+                <span className="text-zinc-300">
+                  {photo.aperture} · {photo.shutterSpeed} · {photo.iso}
                 </span>
               </div>
             </div>

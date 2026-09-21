@@ -57,7 +57,6 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
   if (!photo) return null;
 
   const displayTitle = photo.title || photo.series;
-  const subtitle = photo.title ? `${photo.series} · ${photo.fileNumber}` : photo.fileNumber;
 
   return (
     <AnimatePresence>
@@ -182,7 +181,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                         </span>
                       )}
                       <span className="text-xs font-mono text-zinc-400">
-                        {photo.series} · {subtitle}
+                        {photo.title ? photo.series : photo.dateTaken}
                       </span>
                     </div>
                     <h2 className="text-xl sm:text-2xl font-serif text-white tracking-tight">

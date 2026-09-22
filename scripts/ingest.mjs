@@ -95,6 +95,16 @@ function parseSharpness(val) {
   return m ? parseInt(m[1], 10) : 0;
 }
 
+
+function slugify(text) {
+  return String(text)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 function resolveUserPath(inputPath) {
   if (inputPath.startsWith("~")) {
     return path.join(os.homedir(), inputPath.slice(1));
@@ -149,7 +159,7 @@ function matchOrRecordRecipe(recipeDetails) {
   // 2. Uncataloged custom recipe -> Record complete spec into recipes.json
   const rSign = wbShift[0] >= 0 ? `+${wbShift[0]}` : `${wbShift[0]}`;
   const bSign = wbShift[1] >= 0 ? `+${wbShift[1]}` : `${wbShift[1]}`;
-  const newId = `custom-${filmSimulation.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-r${wbShift[0]}-b${wbShift[1]}`;
+  const newId = `custom-${slugify(filmSimulation)}-r${wbShift[0]}-b${wbShift[1]}`;
 
   const newEntry = {
     id: newId,
@@ -171,7 +181,7 @@ async function processSinglePhoto({ inputPath, seriesName, profileOverride = nul
   const ext = path.extname(file);
   // Remove extension safely regardless of case
   const baseName = path.basename(file, ext).toLowerCase().replace(/\.(jpe?g|png)$/i, "");
-  const id = `${seriesName.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-${baseName}`;
+  const id = `${slugify(seriesName)}-${baseName}`;
   const displayFileName = `${id}.jpg`;
   const thumbFileName = `${id}.jpg`;
 
@@ -356,7 +366,7 @@ function writePhotosFile(allPhotos) {
   const seriesList = [
     { id: "all", name: "All Works", count: photosArray.length },
     ...Object.entries(seriesCounts).map(([name, count]) => ({
-      id: name.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+      id: slugify(name),
       name,
       count
     }))

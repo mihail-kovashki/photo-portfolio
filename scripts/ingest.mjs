@@ -207,12 +207,22 @@ async function processSinglePhoto({ inputPath, seriesName, profileOverride = nul
   const dimOutput = execSync(`sips -g pixelWidth -g pixelHeight "${displayPath}"`).toString();
   const widthMatch = dimOutput.match(/pixelWidth:\s*(\d+)/);
   const heightMatch = dimOutput.match(/pixelHeight:\s*(\d+)/);
-  const width = widthMatch ? parseInt(widthMatch[1], 10) : 2048;
-  const height = heightMatch ? parseInt(heightMatch[1], 10) : 1365;
-  const aspectRatio = Math.round((width / height) * 1000) / 1000;
+  let width = widthMatch ? parseInt(widthMatch[1], 10) : 2048;
+  let height = heightMatch ? parseInt(heightMatch[1], 10) : 1365;
 
   // Read full EXIF with exiftool
   const tags = await exiftool.read(inputPath);
+
+  // Check EXIF orientation (5, 6, 7, 8 denote 90/270 degree rotation, requiring width/height swap for visual aspect ratio)
+  const isRotated = tags.Orientation === 5 || tags.Orientation === 6 || tags.Orientation === 7 || tags.Orientation === 8 ||
+    String(tags.Orientation).includes("90") || String(tags.Orientation).includes("270");
+
+  if (isRotated && width > height) {
+    const temp = width;
+    width = height;
+    height = temp;
+  }
+  const aspectRatio = Math.round((width / height) * 1000) / 1000;
 
   const camera = tags.Model ? `FUJIFILM ${String(tags.Model).replace(/^FUJIFILM\s*/i, "")}` : "FUJIFILM X-T5";
   const lens = lensOverride || formatLensModel(tags.LensModel, tags.FocalLength);

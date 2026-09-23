@@ -31,9 +31,10 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
           style={{ aspectRatio: photo.aspectRatio }}
         >
           <Image
-            src={photo.thumbUrl}
+            src={photo.displayUrl}
             alt={photo.title || `${photo.series} ${photo.fileNumber}`}
             fill
+            priority={index < 2}
             placeholder="blur"
             blurDataURL={photo.blurDataUrl}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"

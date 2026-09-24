@@ -597,7 +597,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
         )}
 
         {/* Main Image Stage Wrapper */}
-        <div className="relative max-w-6xl max-h-[82vh] w-[92vw] h-[82vh] flex items-center justify-center overflow-hidden">
+        <div className="relative max-w-6xl md:max-w-7xl lg:max-w-[1400px] 2xl:max-w-[1850px] max-h-[74vh] sm:max-h-[84vh] md:max-h-[86vh] 2xl:max-h-[88vh] w-[92vw] 2xl:w-[90vw] h-[74vh] sm:h-[84vh] md:h-[86vh] 2xl:h-[88vh] landscape-stage-wrapper flex items-center justify-center overflow-hidden">
           <AnimatePresence initial={false} custom={direction}>
             <motion.div
               key={photo.id}
@@ -626,7 +626,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                   if (hasNext) handleNext();
                 }
               }}
-              className={`absolute inset-0 flex items-center justify-center p-2 ${
+              className={`absolute inset-x-0 top-0 bottom-12 sm:bottom-0 landscape-compact-stage flex items-center justify-center p-2 ${
                 isZoomed
                   ? isPanning
                     ? "cursor-grabbing"
@@ -665,7 +665,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                   alt={photo.title || `${photo.series} ${photo.fileNumber}`}
                   fill
                   priority
-                  sizes="(max-width: 1400px) 100vw, 1400px"
+                  sizes="(max-width: 1400px) 100vw, (max-width: 2200px) 1850px, 2048px"
                   className="object-contain rounded-lg shadow-2xl pointer-events-none select-none"
                   draggable={false}
                 />
@@ -682,39 +682,57 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 30 }}
               transition={{ duration: 0.25 }}
-              className="absolute bottom-0 left-0 right-0 z-40 p-4 sm:p-6 bg-gradient-to-t from-black via-black/80 to-transparent pointer-events-auto"
+              className="absolute bottom-0 left-0 right-0 z-40 p-2.5 sm:p-6 pb-3 sm:pb-6 landscape-compact-drawer bg-gradient-to-t from-black via-black/80 to-transparent pointer-events-auto"
             >
-              <div className="relative max-w-4xl mx-auto flex flex-col gap-3 p-4 sm:p-5 rounded-2xl bg-white/[0.04] backdrop-blur-xl border border-white/10">
+              <div className="relative max-w-4xl mx-auto flex flex-col gap-2 sm:gap-3 p-3 sm:p-5 landscape-compact-card rounded-xl sm:rounded-2xl bg-white/[0.04] backdrop-blur-xl border border-white/10">
                 {/* Close Info Button */}
                 <button
                   onClick={() => setShowInfo(false)}
-                  className="absolute top-3 right-3 sm:top-4 sm:right-4 p-1.5 sm:p-2 rounded-full bg-white/5 hover:bg-white/15 text-zinc-400 hover:text-white border border-white/5 hover:border-white/10 transition-colors"
+                  className="absolute top-2.5 right-2.5 sm:top-4 sm:right-4 p-1.5 sm:p-2 rounded-full bg-white/5 hover:bg-white/15 text-zinc-400 hover:text-white border border-white/5 hover:border-white/10 transition-colors"
                   title="Hide Info (Press 'i')"
                   aria-label="Hide info panel"
                 >
                   <X className="w-3.5 h-3.5" />
                 </button>
 
-                <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pr-8 md:pr-10">
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-2.5 sm:gap-4 pr-7 sm:pr-10">
                   {/* Title & Series */}
                   <div>
-                    <div className="flex items-center gap-2 mb-1">
+                    <div className="flex items-center gap-1.5 sm:gap-2 mb-0.5 sm:mb-1 landscape-compact-meta">
                       {photo.profile && (
-                        <span className="text-[10px] font-mono tracking-wider uppercase px-2 py-0.5 rounded bg-white/10 text-zinc-300">
+                        <span className="text-[9px] sm:text-[10px] font-mono tracking-wider uppercase px-1.5 sm:px-2 py-0.5 rounded bg-white/10 text-zinc-300 landscape-compact-profile">
                           {photo.profile}
                         </span>
                       )}
-                      <span className="text-xs font-mono text-zinc-400">
+                      <span className="text-[11px] sm:text-xs font-mono text-zinc-400">
                         {photo.title ? photo.series : photo.dateTaken}
                       </span>
                     </div>
-                    <h2 className="text-xl sm:text-2xl font-serif text-white tracking-tight">
+                    <h2 className="text-lg sm:text-2xl landscape-compact-title font-serif text-white tracking-tight">
                       {displayTitle}
                     </h2>
                   </div>
 
-                  {/* Fujifilm Hardware & Exposure Strip */}
-                  <div className="flex items-center flex-wrap gap-2 text-xs font-mono text-zinc-300">
+                  {/* Mobile & Landscape-Phone Compact Hardware & Exposure Strip */}
+                  <div className="hud-compact-only landscape-compact-pills items-center flex-wrap gap-1 text-[10px] font-mono text-zinc-300">
+                    <div className="flex items-center gap-1 px-2 py-0.5 rounded-md bg-black/40 border border-white/5">
+                      <Camera className="w-2.5 h-2.5 text-[#d93829] shrink-0" />
+                      <span>{photo.camera.replace("FUJIFILM ", "")}</span>
+                      <span className="text-zinc-600">·</span>
+                      <span>{photo.lens.replace(/^FUJINON\s+/i, "").replace(/\s+R\s+LM\s+OIS\s+WR$/i, "").replace(/\s+R\s+LM\s+WR$/i, "").replace(/\s+R\s+WR$/i, "")}</span>
+                    </div>
+                    <div className="flex items-center gap-1 px-2 py-0.5 rounded-md bg-black/40 border border-white/5">
+                      <Aperture className="w-2.5 h-2.5 text-[#e59866] shrink-0" />
+                      <span className="text-white font-semibold">{photo.aperture}</span>
+                      <span className="text-zinc-600">·</span>
+                      <span>{photo.shutterSpeed}</span>
+                      <span className="text-zinc-600">·</span>
+                      <span>{photo.iso}</span>
+                    </div>
+                  </div>
+
+                  {/* Desktop & Large Tablet Full Hardware & Exposure Strip */}
+                  <div className="hud-expanded-only items-center flex-wrap gap-2 text-xs font-mono text-zinc-300">
                     <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/40 border border-white/5">
                       <Camera className="w-3.5 h-3.5 text-[#d93829]" />
                       <span>{photo.camera}</span>
@@ -742,8 +760,8 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
 
                 {/* Recipe Dial Settings (SOOC JPEGs) */}
                 {photo.recipeDetails && (
-                  <div className="pt-2.5 border-t border-white/5 flex flex-wrap items-center gap-x-3.5 gap-y-1 text-[11px] font-mono text-zinc-400">
-                    <span className="text-[#e59866] uppercase tracking-wider text-[9px] font-semibold">Recipe:</span>
+                  <div className="pt-2 sm:pt-2.5 landscape-compact-recipe border-t border-white/5 flex flex-wrap items-center gap-x-2.5 sm:gap-x-3.5 gap-y-0.5 sm:gap-y-1 text-[9.5px] sm:text-[11px] font-mono text-zinc-400">
+                    <span className="text-[#e59866] uppercase tracking-wider text-[8px] sm:text-[9px] font-semibold">Recipe:</span>
                     <span>DR: <span className="text-zinc-200">{photo.recipeDetails.dynamicRange}</span></span>
                     <span>Tone: <span className="text-zinc-200">H{photo.recipeDetails.highlight !== undefined && photo.recipeDetails.highlight >= 0 ? '+' : ''}{photo.recipeDetails.highlight} / S{photo.recipeDetails.shadow !== undefined && photo.recipeDetails.shadow >= 0 ? '+' : ''}{photo.recipeDetails.shadow}</span></span>
                     <span>Color: <span className="text-zinc-200">{photo.recipeDetails.color !== undefined && photo.recipeDetails.color >= 0 ? '+' : ''}{photo.recipeDetails.color}</span></span>

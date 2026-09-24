@@ -328,14 +328,28 @@ async function processSinglePhoto({ inputPath, seriesName, profileOverride = nul
     }
   }
 
-  let dateTaken = "2025";
+  let dateTaken = "";
   if (tags.DateTimeOriginal) {
     try {
-      const d = new Date(tags.DateTimeOriginal.rawValue || tags.DateTimeOriginal);
-      if (!isNaN(d.getTime())) {
-        dateTaken = d.toISOString().split("T")[0];
+      const dt = tags.DateTimeOriginal;
+      if (dt.year && dt.month && dt.day) {
+        const y = dt.year;
+        const m = String(dt.month).padStart(2, "0");
+        const d = String(dt.day).padStart(2, "0");
+        dateTaken = ;
+      } else if (typeof dt.toDate === "function") {
+        dateTaken = dt.toDate().toISOString().split("T")[0];
+      } else {
+        const raw = dt.rawValue || String(dt);
+        const match = raw.match(/^(\d{4})[:\-](\d{2})[:\-](\d{2})/);
+        if (match) {
+          dateTaken = ;
+        }
       }
     } catch {}
+  }
+  if (!dateTaken) {
+    dateTaken = new Date().toISOString().split("T")[0];
   }
 
   return {

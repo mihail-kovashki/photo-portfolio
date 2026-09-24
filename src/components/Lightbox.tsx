@@ -15,6 +15,7 @@ import {
   RotateCcw
 } from "lucide-react";
 import type { Photo } from "@/data/photos";
+import { formatSeasonYear } from "@/lib/utils";
 
 interface LightboxProps {
   photo: Photo | null;
@@ -705,7 +706,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                         </span>
                       )}
                       <span className="text-[11px] sm:text-xs font-mono text-zinc-400">
-                        {photo.title ? photo.series : photo.dateTaken}
+                        {photo.title ? `${photo.series} · ${formatSeasonYear(photo.dateTaken)}` : formatSeasonYear(photo.dateTaken)}
                       </span>
                     </div>
                     <h2 className="text-lg sm:text-2xl landscape-compact-title font-serif text-white tracking-tight">

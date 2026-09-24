@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Maximize2 } from "lucide-react";
 import type { Photo } from "@/data/photos";
+import { formatSeasonYear } from "@/lib/utils";
 
 interface PhotoCardProps {
   photo: Photo;
@@ -68,7 +69,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
               {displayTitle}
             </h3>
             <p className="text-xs font-mono text-zinc-400 mt-1">
-              {photo.title ? `${photo.series} · ` : ""}{photo.dateTaken} · {photo.lens}
+              {photo.title ? `${photo.series} · ` : ""}{formatSeasonYear(photo.dateTaken)} · {photo.lens}
             </p>
           </div>
 

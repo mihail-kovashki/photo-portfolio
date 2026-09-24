@@ -580,7 +580,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-02",
     "featured": false
   },
   {
@@ -620,7 +620,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-02",
     "featured": false
   },
   {
@@ -660,7 +660,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-02",
     "featured": false
   },
   {
@@ -700,7 +700,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-02",
     "featured": false
   },
   {
@@ -740,7 +740,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-02",
     "featured": false
   },
   {
@@ -780,7 +780,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-02",
     "featured": false
   },
   {
@@ -820,7 +820,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-02",
     "featured": false
   },
   {
@@ -860,7 +860,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-02",
     "featured": false
   },
   {
@@ -900,7 +900,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-02",
     "featured": false
   },
   {
@@ -940,7 +940,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-02",
     "featured": false
   },
   {
@@ -980,7 +980,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-02",
     "featured": false
   },
   {
@@ -1020,7 +1020,7 @@ export const photos: Photo[] = [
       "iso": "ISO 6400",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-02",
     "featured": false
   },
   {
@@ -1060,7 +1060,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-02",
     "featured": false
   },
   {
@@ -1100,7 +1100,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1140,7 +1140,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1180,7 +1180,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1220,7 +1220,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1260,7 +1260,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1300,7 +1300,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1340,7 +1340,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1380,7 +1380,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1420,7 +1420,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1460,7 +1460,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1500,7 +1500,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1540,7 +1540,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1580,7 +1580,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1620,7 +1620,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1660,7 +1660,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1700,7 +1700,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1740,7 +1740,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1780,7 +1780,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1820,7 +1820,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1860,7 +1860,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1900,7 +1900,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1940,7 +1940,7 @@ export const photos: Photo[] = [
       "iso": "ISO 125",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -1980,7 +1980,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -2020,7 +2020,7 @@ export const photos: Photo[] = [
       "iso": "ISO 800",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-03",
     "featured": false
   },
   {
@@ -2060,7 +2060,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -2100,7 +2100,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-05",
     "featured": false
   },
   {
@@ -2140,7 +2140,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "-0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-05",
     "featured": false
   },
   {
@@ -2180,7 +2180,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "-0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-05",
     "featured": false
   },
   {
@@ -2220,7 +2220,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-05",
     "featured": false
   },
   {
@@ -2260,7 +2260,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-05",
     "featured": false
   },
   {
@@ -2300,7 +2300,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-05",
     "featured": false
   },
   {
@@ -2340,7 +2340,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-05",
     "featured": false
   },
   {
@@ -2380,7 +2380,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-05",
     "featured": false
   },
   {
@@ -2420,7 +2420,7 @@ export const photos: Photo[] = [
       "iso": "ISO 1600",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-05",
     "featured": false
   },
   {
@@ -2460,7 +2460,7 @@ export const photos: Photo[] = [
       "iso": "ISO 2000",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-05",
     "featured": false
   },
   {
@@ -2500,7 +2500,7 @@ export const photos: Photo[] = [
       "iso": "ISO 2500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-05",
     "featured": false
   },
   {
@@ -2540,7 +2540,7 @@ export const photos: Photo[] = [
       "iso": "ISO 800",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-05",
     "featured": false
   },
   {
@@ -2580,7 +2580,7 @@ export const photos: Photo[] = [
       "iso": "ISO 1000",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-05",
     "featured": false
   },
   {
@@ -2620,7 +2620,7 @@ export const photos: Photo[] = [
       "iso": "ISO 320",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-05",
     "featured": false
   },
   {
@@ -2660,7 +2660,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-06",
     "featured": false
   },
   {
@@ -2700,7 +2700,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-06",
     "featured": false
   },
   {
@@ -2740,7 +2740,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-06",
     "featured": false
   },
   {
@@ -2780,7 +2780,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-06",
     "featured": false
   },
   {
@@ -2820,7 +2820,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-06",
     "featured": false
   },
   {
@@ -2860,7 +2860,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "-0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-06",
     "featured": false
   },
   {
@@ -2900,7 +2900,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-06",
     "featured": false
   },
   {
@@ -2940,7 +2940,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-06",
     "featured": false
   },
   {
@@ -2980,7 +2980,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-06",
     "featured": false
   },
   {
@@ -3020,7 +3020,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-08",
     "featured": false
   },
   {
@@ -3060,7 +3060,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-08",
     "featured": false
   },
   {
@@ -3100,7 +3100,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-08",
     "featured": false
   },
   {
@@ -3140,7 +3140,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-08",
     "featured": false
   },
   {
@@ -3180,7 +3180,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3220,7 +3220,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3260,7 +3260,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3300,7 +3300,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3340,7 +3340,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3380,7 +3380,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3420,7 +3420,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3460,7 +3460,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3500,7 +3500,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3540,7 +3540,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3580,7 +3580,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "-0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3620,7 +3620,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3660,7 +3660,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3700,7 +3700,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3740,7 +3740,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3780,7 +3780,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3820,7 +3820,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3860,7 +3860,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3900,7 +3900,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3940,7 +3940,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -3980,7 +3980,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -4020,7 +4020,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -4060,7 +4060,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -4100,7 +4100,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -4140,7 +4140,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -4180,7 +4180,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -4220,7 +4220,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -4260,7 +4260,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-04",
     "featured": false
   },
   {
@@ -4300,7 +4300,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4340,7 +4340,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4380,7 +4380,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4420,7 +4420,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4460,7 +4460,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4500,7 +4500,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4540,7 +4540,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4580,7 +4580,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4620,7 +4620,7 @@ export const photos: Photo[] = [
       "iso": "ISO 640",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4660,7 +4660,7 @@ export const photos: Photo[] = [
       "iso": "ISO 400",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4700,7 +4700,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4740,7 +4740,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4780,7 +4780,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4820,7 +4820,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4860,7 +4860,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4900,7 +4900,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4940,7 +4940,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -4980,7 +4980,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -5020,7 +5020,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   },
   {
@@ -5060,7 +5060,7 @@ export const photos: Photo[] = [
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2025",
+    "dateTaken": "2026-07-07",
     "featured": false
   }
 ];

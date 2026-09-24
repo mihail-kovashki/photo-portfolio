@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Camera, Aperture, Layers, Cpu, Instagram, Mail } from "lucide-react";
 
@@ -9,6 +10,35 @@ interface GearModalProps {
 }
 
 export function GearModal({ isOpen, onClose }: GearModalProps) {
+  // Lock background scroll when modal is open, preserving scroll position
+  useEffect(() => {
+    if (!isOpen || typeof window === "undefined") return;
+
+    const scrollY = window.scrollY;
+    const originalHtmlOverflow = document.documentElement.style.overflow;
+    const originalBodyOverflow = document.body.style.overflow;
+    const originalBodyPaddingRight = document.body.style.paddingRight;
+
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    if (scrollbarWidth > 0) {
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
+
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.documentElement.style.overflow = originalHtmlOverflow;
+      document.body.style.overflow = originalBodyOverflow;
+      document.body.style.paddingRight = originalBodyPaddingRight;
+
+      const prevBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = "auto";
+      window.scrollTo({ top: scrollY, behavior: "instant" });
+      document.documentElement.style.scrollBehavior = prevBehavior;
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (

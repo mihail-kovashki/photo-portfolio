@@ -97,6 +97,19 @@ body {
   }
 }
 
+/* Input device type helpers: coarse (touchscreens: phones/tablets) vs fine (mouse/trackpad: desktop/laptop) */
+@media (pointer: coarse) {
+  .pointer-fine-only {
+    display: none !important;
+  }
+}
+
+@media (pointer: fine) {
+  .pointer-coarse-only {
+    display: none !important;
+  }
+}
+
 /* Landscape phones & short viewports (height <= 550px) */
 @media (max-height: 550px) {
   .landscape-compact-drawer {

@@ -528,7 +528,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
           </div>
         </div>
 
-        {/* First-time Desktop Zoom Hint (ephemeral, disappears after 3.5s or on zoom) */}
+        {/* First-time Zoom Hint (ephemeral, disappears after 3.5s or on zoom) */}
         <AnimatePresence>
           {showDesktopHint && !isZoomed && (
             <motion.div
@@ -536,10 +536,11 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.3 }}
-              className="hidden md:flex absolute top-20 left-1/2 -translate-x-1/2 z-40 items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/70 backdrop-blur-md border border-white/10 text-xs font-mono text-zinc-400 pointer-events-none select-none shadow-lg"
+              className="flex absolute top-14 sm:top-20 left-1/2 -translate-x-1/2 z-40 items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/70 backdrop-blur-md border border-white/10 text-xs font-mono text-zinc-400 pointer-events-none select-none shadow-lg"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#e59866] animate-pulse" />
-              <span>Double-click to zoom</span>
+              <span className="pointer-fine-only">Double-click to zoom</span>
+              <span className="pointer-coarse-only">Pinch or double-tap to zoom</span>
             </motion.div>
           )}
         </AnimatePresence>
@@ -551,7 +552,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              className="absolute top-20 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/80 backdrop-blur-md border border-white/20 text-xs font-mono text-white shadow-xl cursor-pointer hover:bg-black/95 transition-colors"
+              className="absolute top-14 sm:top-20 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/80 backdrop-blur-md border border-white/20 text-xs font-mono text-white shadow-xl cursor-pointer hover:bg-black/95 transition-colors"
               onClick={() => {
                 setScale(1);
                 setPosition({ x: 0, y: 0 });
@@ -561,10 +562,10 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
               title="Click or double-tap to reset zoom"
             >
               <RotateCcw className="w-3.5 h-3.5 text-[#e59866]" />
-              {/* Mobile label: compact */}
-              <span className="sm:hidden">{Math.round(scale * 10) / 10}× · Tap to reset</span>
-              {/* Desktop label: rich control legend */}
-              <span className="hidden sm:inline-flex items-center gap-2">
+              {/* Touchscreen label: compact & touch-accurate */}
+              <span className="pointer-coarse-only">{Math.round(scale * 10) / 10}× · Tap to reset</span>
+              {/* Desktop (Mouse/Trackpad) label: rich control legend */}
+              <span className="pointer-fine-only inline-flex items-center gap-2">
                 <span className="text-[#e59866] font-semibold">{Math.round(scale * 10) / 10}×</span>
                 <span className="text-zinc-600">·</span>
                 <span>Scroll to zoom</span>

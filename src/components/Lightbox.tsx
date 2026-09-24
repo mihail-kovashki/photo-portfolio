@@ -715,7 +715,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                   </div>
 
                   {/* Mobile & Landscape-Phone Compact Hardware & Exposure Strip */}
-                  <div className="hud-compact-only landscape-compact-pills items-center flex-wrap gap-1 text-[10px] font-mono text-zinc-300">
+                  <div className="hud-compact-only landscape-compact-pills flex items-center flex-wrap gap-1 text-[10px] font-mono text-zinc-300">
                     <div className="flex items-center gap-1 px-2 py-0.5 rounded-md bg-black/40 border border-white/5">
                       <Camera className="w-2.5 h-2.5 text-[#d93829] shrink-0" />
                       <span>{photo.camera.replace("FUJIFILM ", "")}</span>
@@ -733,7 +733,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                   </div>
 
                   {/* Desktop & Large Tablet Full Hardware & Exposure Strip */}
-                  <div className="hud-expanded-only items-center flex-wrap gap-2 text-xs font-mono text-zinc-300">
+                  <div className="hud-expanded-only flex items-center flex-wrap gap-2 text-xs font-mono text-zinc-300">
                     <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/40 border border-white/5">
                       <Camera className="w-3.5 h-3.5 text-[#d93829]" />
                       <span>{photo.camera}</span>

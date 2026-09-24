@@ -77,17 +77,18 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Responsive HUD adaptation: compact on phones (both portrait and landscape) or short viewports */
-@media (max-width: 639px), (max-height: 550px) {
-  .hud-compact-only {
-    display: flex !important;
-  }
-  .hud-expanded-only {
-    display: none !important;
-  }
+/* Responsive HUD adaptation:
+   Default: compact on phones (portrait & landscape) or short viewports.
+   Expanded: desktop & tablet viewports with adequate height.
+*/
+.hud-compact-only {
+  display: flex !important;
+}
+.hud-expanded-only {
+  display: none !important;
 }
 
-@media (min-width: 640px) and (min-height: 551px) {
+@media (min-width: 640px) and (height > 550px) {
   .hud-compact-only {
     display: none !important;
   }

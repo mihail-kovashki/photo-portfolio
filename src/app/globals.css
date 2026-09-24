@@ -76,3 +76,94 @@ body {
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* Responsive HUD adaptation: compact on phones (both portrait and landscape) or short viewports */
+@media (max-width: 639px), (max-height: 550px) {
+  .hud-compact-only {
+    display: flex !important;
+  }
+  .hud-expanded-only {
+    display: none !important;
+  }
+}
+
+@media (min-width: 640px) and (min-height: 551px) {
+  .hud-compact-only {
+    display: none !important;
+  }
+  .hud-expanded-only {
+    display: flex !important;
+  }
+}
+
+/* Landscape phones & short viewports (height <= 550px) */
+@media (max-height: 550px) {
+  .landscape-compact-drawer {
+    padding: 0.35rem 0.5rem !important;
+    padding-bottom: 0.35rem !important;
+  }
+
+  .landscape-compact-card {
+    padding: 0.35rem 0.65rem !important;
+    gap: 0.2rem !important;
+    border-radius: 0.75rem !important;
+  }
+
+  .landscape-compact-title {
+    font-size: 0.95rem !important;
+    line-height: 1.25rem !important;
+  }
+
+  .landscape-compact-meta {
+    font-size: 0.6rem !important;
+    margin-bottom: 0 !important;
+    gap: 0.35rem !important;
+  }
+
+  .landscape-compact-meta span {
+    font-size: 0.6rem !important;
+  }
+
+  .landscape-compact-profile {
+    font-size: 0.52rem !important;
+    padding: 0.1rem 0.35rem !important;
+    letter-spacing: 0.04em !important;
+    border-radius: 0.25rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .landscape-compact-pills {
+    font-size: 0.58rem !important;
+  }
+
+  .landscape-compact-pills > div {
+    padding: 0.12rem 0.35rem !important;
+  }
+
+  .landscape-compact-recipe {
+    font-size: 0.55rem !important;
+    padding-top: 0.2rem !important;
+    gap-x: 0.5rem !important;
+    gap-y: 0 !important;
+  }
+
+  .landscape-compact-recipe span {
+    font-size: 0.55rem !important;
+  }
+
+  .landscape-compact-stage {
+    bottom: 0 !important;
+    max-height: 88vh !important;
+  }
+
+  .landscape-stage-wrapper {
+    height: 88vh !important;
+    max-height: 88vh !important;
+  }
+
+  .landscape-compact-card button[aria-label="Hide info panel"] {
+    top: 0.3rem !important;
+    right: 0.35rem !important;
+    padding: 0.2rem !important;
+  }
+}

@@ -123,16 +123,16 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
             </div>
           )}
 
-          {/* Hover Expand Icon */}
-          <div className="absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          {/* Hover Expand Icon (Desktop only) */}
+          <div className="hidden sm:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div className="p-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white">
               <Maximize2 className="w-3.5 h-3.5" />
             </div>
           </div>
 
-          {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-            <div className="transform translate-y-0 sm:translate-y-2 sm:group-hover:translate-y-0 transition-transform duration-300">
+          {/* Overlay gradient (Desktop hover only) */}
+          <div className="hidden sm:flex absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex-col justify-end p-4">
+            <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
               <h4 className="text-base font-serif text-white tracking-wide">
                 {displayTitle}
               </h4>
@@ -144,6 +144,24 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Mobile Editorial Caption (Underneath photo: 100% clean, undimmed image) */}
+      <div className="sm:hidden mt-2.5 px-1 pb-1">
+        <div className="flex items-baseline justify-between gap-2">
+          <h4 className="text-sm font-serif text-zinc-100 tracking-wide truncate">
+            {displayTitle}
+          </h4>
+          <span className="text-[10px] font-mono text-zinc-400 shrink-0">
+            {photo.focalLength || photo.lens.replace(/^FUJINON\s+/i, "")}
+          </span>
+        </div>
+        <div className="flex items-center justify-between text-[11px] font-mono text-zinc-500 mt-0.5">
+          <span>{photo.title ? `${photo.series} · ` : ""}{formatSeasonYear(photo.dateTaken)}</span>
+          <span className="text-zinc-400">
+            {photo.aperture} · {photo.shutterSpeed} · {photo.iso}
+          </span>
         </div>
       </div>
     </motion.div>

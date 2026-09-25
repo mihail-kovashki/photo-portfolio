@@ -62,6 +62,16 @@ body {
   background: #3f3f46;
 }
 
+/* Utility to completely hide scrollbar while preserving scrolling */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Glassmorphism effects */
 .glass-panel {
   background: rgba(18, 18, 21, 0.75);

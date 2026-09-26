@@ -108,7 +108,7 @@ export function SeriesFilter({
       : undefined;
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-6 sm:mb-10">
+    <div id="gallery" className="max-w-7xl mx-auto px-4 sm:px-6 mb-6 sm:mb-10 scroll-mt-24">
       <div className="flex items-center justify-between gap-4 pb-3 sm:pb-5 border-b border-white/10">
         {/* Dynamic Series Tabs with Click-and-Drag Mouse Scroll & Fade Affordance */}
         <div

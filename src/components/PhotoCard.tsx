@@ -19,16 +19,16 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
   if (layoutMode === "story") {
     return (
       <motion.article
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 28 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
-        transition={{ duration: 0.7, delay: 0.1 }}
-        className="max-w-5xl mx-auto mb-20 sm:mb-28 group"
+        viewport={{ once: true, margin: "-60px" }}
+        transition={{ duration: 0.6, delay: 0.05 }}
+        className="max-w-5xl mx-auto mb-10 sm:mb-14 group"
       >
         {/* Story Photo Image */}
         <div
           onClick={() => onOpen(photo)}
-          className="relative w-full overflow-hidden rounded-2xl cursor-pointer bg-zinc-900 border border-white/5 shadow-2xl transition-transform duration-500 group-hover:scale-[1.01]"
+          className="relative w-full overflow-hidden rounded-2xl cursor-pointer bg-zinc-900 border border-white/5 shadow-2xl transition-transform duration-500 group-hover:scale-[1.008]"
           style={{ aspectRatio: photo.aspectRatio }}
         >
           <Image
@@ -39,7 +39,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
             placeholder="blur"
             blurDataURL={photo.blurDataUrl}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-            className="object-cover transition-all duration-700 group-hover:scale-105"
+            className="object-cover transition-all duration-700 group-hover:scale-[1.02]"
           />
 
           {/* Profile / Raw Edit Badge */}
@@ -57,27 +57,24 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
               <Maximize2 className="w-4 h-4" />
             </div>
           </div>
-
-          {/* Subtle bottom vignette */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </div>
 
         {/* Story Caption & Technical Specs Drawer */}
-        <div className="mt-4 px-2 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-white/5 pb-4">
-          <div>
-            <h3 className="text-xl sm:text-2xl font-serif tracking-tight text-white group-hover:text-zinc-200 transition-colors">
+        <div className="mt-3.5 px-1.5 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5 sm:gap-4">
+          <div className="flex items-baseline gap-3 flex-wrap">
+            <h3 className="text-base sm:text-lg font-serif tracking-wide text-zinc-100 group-hover:text-white transition-colors">
               {displayTitle}
             </h3>
-            <p className="text-xs font-mono text-zinc-400 mt-1">
-              {photo.title ? `${photo.series} · ` : ""}{formatSeasonYear(photo.dateTaken)} · {photo.lens}
-            </p>
+            <span className="text-xs font-mono text-zinc-500">
+              {photo.title ? `${photo.series} · ` : ""}{formatSeasonYear(photo.dateTaken)}
+            </span>
           </div>
 
-          {/* Camera Settings Strip */}
-          <div className="flex items-center gap-3 text-xs font-mono text-zinc-400 bg-white/[0.03] px-3.5 py-1.5 rounded-full border border-white/5 self-start sm:self-auto">
-            <span>{photo.camera}</span>
+          {/* Technical Specs Strip in refined mono */}
+          <div className="flex items-center gap-2 text-xs font-mono text-zinc-400">
+            <span>{photo.focalLength || photo.lens.replace(/^FUJINON\s+/i, "")}</span>
             <span className="text-zinc-600">·</span>
-            <span className="text-zinc-200 font-semibold">{photo.aperture}</span>
+            <span className="text-zinc-300">{photo.aperture}</span>
             <span className="text-zinc-600">·</span>
             <span>{photo.shutterSpeed}</span>
             <span className="text-zinc-600">·</span>

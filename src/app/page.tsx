@@ -110,7 +110,7 @@ export default function Home() {
         />
 
         {/* Hero & Camera Introduction */}
-        <Hero />
+        <Hero onSelectSeries={setActiveSeries} />
 
         {/* Series and View Controls */}
         <SeriesFilter

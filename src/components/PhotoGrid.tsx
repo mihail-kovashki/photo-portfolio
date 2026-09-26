@@ -20,7 +20,7 @@ export function PhotoGrid({ photos, onOpenPhoto, layoutMode }: PhotoGridProps) {
 
   if (layoutMode === "story") {
     return (
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-4 sm:pb-16">
         {photos.map((photo, index) => (
           <PhotoCard
             key={photo.id}
@@ -35,7 +35,7 @@ export function PhotoGrid({ photos, onOpenPhoto, layoutMode }: PhotoGridProps) {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-20">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-4 sm:pb-20">
       <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
         {photos.map((photo, index) => (
           <PhotoCard

@@ -83,7 +83,7 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
                 </div>
                 <h4 className="text-base font-semibold text-white font-mono">Fujifilm X-T5</h4>
                 <p className="text-xs text-zinc-400 mt-1 leading-relaxed">
-                  40.2 MP X-Trans CMOS 5 HR sensor with classic tactile dials for ISO, shutter speed, and exposure compensation.
+                  What drew me in is how the retro look comes with real hands-on function—adjusting physical dials by feel. Paired with Fujifilm&apos;s full suite of film simulations, it makes color and shooting feel like an intentional, personal craft.
                 </p>
               </div>
 
@@ -95,7 +95,7 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
                 </div>
                 <h4 className="text-base font-semibold text-white font-mono">FUJINON XF23mmF1.4 R LM WR</h4>
                 <p className="text-xs text-zinc-400 mt-1 leading-relaxed">
-                  35mm full-frame equivalent. High-speed linear motor with exceptional microcontrast and smooth rendering at ƒ/1.4.
+                  My default everyday carry and the lens mounted on the camera most of the time. The 35mm field of view is wide enough for street context without feeling distorted, and the ƒ/1.4 aperture means I never have to pack it away when dusk turns into night.
                 </p>
               </div>
 
@@ -107,7 +107,7 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
                 </div>
                 <h4 className="text-base font-semibold text-white font-mono">FUJINON XF35mmF2 R WR</h4>
                 <p className="text-xs text-zinc-400 mt-1 leading-relaxed">
-                  53mm full-frame equivalent. Weather-sealed, featherlight (170g), and razor-sharp with silent inner stepping-motor AF.
+                  Tiny, discreet, and practically weightless. When I want a lighter setup for walking all day, this is what goes on. The tighter 50mm-equivalent field of view naturally pushes me to slow down and isolate quieter details.
                 </p>
               </div>
 
@@ -119,7 +119,7 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
                 </div>
                 <h4 className="text-base font-semibold text-white font-mono">FUJINON XF70-300mmF4-5.6 R LM OIS WR</h4>
                 <p className="text-xs text-zinc-400 mt-1 leading-relaxed">
-                  105-450mm equivalent reach with 5.5 stops of optical stabilization for landscape compression and distant detail.
+                  Rarely in my bag for everyday walks, but whenever it makes the trip, it totally changes perspective—compressing distance and letting me isolate scenes that would otherwise be way out of reach.
                 </p>
               </div>
             </div>
@@ -131,15 +131,40 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
                 <span>Color Craft & Philosophy</span>
               </div>
               <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-light">
-                Photographs are captured either as straight-out-of-camera (SOOC) JPEGs using custom in-camera recipes (Kodak Portra 800 v3, Copenhagen Negative, Reggie&apos;s Portra), or in RAW developed in Lightroom Classic with tonal curves founded on Fujifilm&apos;s Reala Ace profile for faithful, nuanced color.
+                Most of my work begins as RAW developed in Lightroom Classic, always using Fujifilm&apos;s film simulations as the creative baseline—choosing whichever profile fits the mood of the scene. Lately, I&apos;ve also been leaning more into straight-out-of-camera (SOOC) JPEGs using custom film recipes, which grounds the process and keeps me present in the moment.
               </p>
             </div>
 
-            {/* Software Engineer Note */}
-            <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 flex items-start gap-3">
-              <Cpu className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-              <div className="text-xs text-zinc-400 leading-relaxed">
-                <span className="font-semibold text-zinc-200">Engineer&apos;s Web Architecture:</span> Built with Next.js App Router, zero-cost edge hosting, automatic responsive image sizing, and instant base64 blur-up previews to eliminate layout shift (CLS = 0).
+            {/* Web Architecture & Stack */}
+            <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+              <div className="flex items-center gap-2 text-xs font-mono text-zinc-400 mb-2 uppercase tracking-wider">
+                <Cpu className="w-3.5 h-3.5 text-emerald-400" />
+                <span>Web Architecture & Stack</span>
+              </div>
+              <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-light mb-3">
+                Designed and built from scratch by me rather than using a pre-made template. Focused on fast global delivery, zero layout shift, and fluid gesture mechanics for high-resolution images.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 border-t border-white/5 text-xs">
+                <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/5">
+                  <span className="font-mono text-[10px] text-zinc-500 uppercase tracking-wider block mb-0.5">Framework</span>
+                  <div className="font-medium text-zinc-200">Next.js 16 & React 19</div>
+                  <div className="text-[11px] text-zinc-400 mt-0.5">App Router, TypeScript, Turbopack</div>
+                </div>
+                <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/5">
+                  <span className="font-mono text-[10px] text-zinc-500 uppercase tracking-wider block mb-0.5">Motion & UI</span>
+                  <div className="font-medium text-zinc-200">Framer Motion & Tailwind</div>
+                  <div className="text-[11px] text-zinc-400 mt-0.5">Spring physics, gestures, responsive grid</div>
+                </div>
+                <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/5">
+                  <span className="font-mono text-[10px] text-zinc-500 uppercase tracking-wider block mb-0.5">Performance</span>
+                  <div className="font-medium text-zinc-200">Zero CLS Image Pipeline</div>
+                  <div className="text-[11px] text-zinc-400 mt-0.5">Precomputed ratios & blur previews</div>
+                </div>
+                <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/5">
+                  <span className="font-mono text-[10px] text-zinc-500 uppercase tracking-wider block mb-0.5">Infrastructure</span>
+                  <div className="font-medium text-zinc-200">Vercel Edge Network</div>
+                  <div className="text-[11px] text-zinc-400 mt-0.5">Global edge caching & fast cold starts</div>
+                </div>
               </div>
             </div>
           </div>

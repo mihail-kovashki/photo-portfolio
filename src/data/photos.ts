@@ -123,3 +123,22 @@ export function coverPhoto(list: Photo[]): Photo | undefined {
   const landscape = list.filter((p) => p.aspectRatio > 1);
   return landscape.find((p) => p.featured) ?? landscape[0] ?? list[0];
 }
+
+export interface Trip extends SeriesItem {
+  /** The collection name without its year suffix: "Prague 26" -> "Prague". */
+  place: string;
+  /** Earliest photo date (YYYY-MM-DD), when EXIF has one. */
+  startDate?: string;
+}
+
+/** Collections as trips, oldest first. A place can appear more than once, one per trip. */
+export const trips: Trip[] = seriesList
+  .filter((s) => s.id !== ALL_SERIES_ID)
+  .map((s) => {
+    const dates = photosInSeries(s.id)
+      .map((p) => p.dateTaken)
+      .filter((d): d is string => Boolean(d))
+      .sort();
+    return { ...s, place: s.name.replace(/\s+\d{2,4}$/, ""), startDate: dates[0] };
+  })
+  .sort((a, b) => (a.startDate ?? "").localeCompare(b.startDate ?? ""));

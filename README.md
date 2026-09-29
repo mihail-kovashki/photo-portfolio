@@ -1,172 +1,72 @@
-# Mihail Kovashki (MiKo) · Photography Portfolio
+# Mihail Kovashki (MiKo) · Photography
 
-> An editorial, magazine-grade photography portfolio and personal visual journal. Showcasing street scenes, landscapes, and quiet moments captured across East Asia and Europe on the **Fujifilm X-T5** and **Fujinon XF** optics.
+A photo journal of my travels: street scenes, landscapes and quiet moments, mostly shot on a Fujifilm X-T5. Some photos are RAW edits in Lightroom, others come straight out of camera with a Fujifilm film simulation recipe, and the site shows the recipe behind those.
 
----
+Live at [miko-photo.vercel.app](https://miko-photo.vercel.app) · Instagram [@mi_ko.jpg](https://instagram.com/mi_ko.jpg)
 
-## ✨ Overview & Creative Philosophy
+I built it myself as a hobby project rather than using a template or a site builder.
 
-This project is built as a bespoke digital exhibition rather than a generic photo grid. It bridges fine-art photography with modern frontend engineering craft, pairing an analog darkroom aesthetic with physical, spring-damped micro-interactions.
+## What's in it
 
-- **Photographer:** Mihail Kovashki ([@mi_ko.jpg](https://instagram.com/mi_ko.jpg))
-- **Camera System:** FUJIFILM X-T5 (40.2MP X-Trans CMOS 5 HR)
-- **Primary Optics:** Fujinon XF23mmF1.4 R LM WR · Fujinon XF35mmF2 R WR
-- **Locations Featured:** Prague, Seoul, Hokkaido, Český Krumlov, Sokcho, Kutná Hora
+- Collections by trip, each with its own page (`/prague-26`) and link preview
+- A grid view and a single-column story view
+- A lightbox with swipe, pinch/scroll zoom, keyboard navigation and shareable links (`?photo=<id>`)
+- Camera settings for every photo and, for straight-out-of-camera shots, the full recipe: film simulation, dynamic range, tone, colour, grain, colour chrome and white balance shift
 
----
+## How it's built
 
-## 🎨 Design & Engineering Highlights
+- Next.js 16 (App Router), React 19, TypeScript
+- Tailwind CSS 4 and Framer Motion
+- Every page is pre-rendered at build time and served as static files from Vercel; there's no server or database
+- Photos are processed offline by an ingest script, not by an image service at request time
 
-### 1. Kinetic Editorial Typography
-- **Spring-Damped Destination Flipper:** Smooth mechanical reel transitions cycling through travel archives with custom spring physics and kinetic motion-blur.
-- **Zero Layout Shifts:** Fixed-height letterbox container preventing vertical jitter across words of varying lengths while accommodating Playfair Display's italics and diacritics.
-- **Monograph Scale Hierarchy:** A subdued premise (*"Visual Notes from"*) stepping back to give center stage to the monumental destination title.
+### Photo data
 
-### 2. Optical Lens Spotlight
-- **Photographic Light Physics:** A mouse-reactive ambient spotlight that follows the cursor with organic spring lag, mimicking light passing through vintage coated glass.
-- **Analog Palette:** Blends signature Fujifilm red (`#d93829`) into warm 3200K darkroom amber with a soft specular center.
-- **Feathered Elliptical Vignette Mask:** GPU-composited CSS alpha masking (`mask-image: radial-gradient(ellipse ...)`) ensuring the light softly dissolves before touching any component boundary—eliminating hard box edges.
+| File | Written by | Holds |
+| --- | --- | --- |
+| `src/data/photos.json` | the ingest script | EXIF, recipe and image data. Don't edit by hand |
+| `src/data/curation.ts` | me | titles, featured and hidden photos, display order |
+| `src/data/recipes.json` | both | known recipes; ingest adds a `TODO` entry when it sees an unfamiliar one |
+| `src/data/photos.ts` | — | merges the above into the photo list and collections |
 
-### 3. Interactive Floating Photo Peeks
-- **Cursor-Tracking Contact Sheet:** Hovering over the active destination reveals an understated, frosted-glass miniature photo slide that glides with the cursor.
-- **Randomized Archive Sampling:** Automatically draws a fresh random frame from that specific series on every hover.
-- **Seamless Navigation:** Clicking the destination smoothly filters the gallery and scrolls directly to the collection.
+Keeping curation separate means re-ingesting a folder never wipes editorial choices. An unknown photo id in `curation.ts` produces a warning at build time, and a photo's id is in the URL when it's open on the site.
 
-### 4. Dual Curated Gallery Modes
-- **Masonry Mosaic (`Grid`):** Multi-column responsive layout preserving native aspect ratios, featuring mobile-optimized inline captions and undimmed thumbnail previews.
-- **Editorial Story Mode (`Story`):** Single-column photobook flow with full-width high-resolution exports and inline EXIF technical metadata (`focal length · aperture · shutter speed · ISO`).
+## Running it
 
-### 5. High-Precision Photographic Lightbox
-- **Touch & Swipe Gestures:** Zero-flicker touch navigation with inertia tracking.
-- **Deep Zoom Inspection:** Desktop click-to-zoom for 1:1 pixel inspection of 40MP details.
-- **EXIF & Film Simulation Drawer:** Live readout of camera parameters and custom Fujifilm simulation recipes (highlight/shadow curves, grain roughness, color chrome effect, white balance shifts).
-- **Deep-Linked URL State:** Synchronizes open photos with the browser history (`?photo=[id]`), allowing direct link sharing and native back/forward button navigation.
-
-### 6. Tactile Collection Tabs
-- **Drag-to-Scroll UX:** Horizontal series filter supporting click-and-drag mouse physics alongside standard touch and mouse-wheel scrolling.
-- **Scroll Affordance Fade:** Dynamic CSS linear-gradient edge masks that visually dissolve when content is cut off, solving the classic UI *"illusion of completeness"*.
-
----
-
-## 🛠 Tech Stack
-
-- **Framework:** [Next.js 16](https://nextjs.org/) (App Router, Turbopack)
-- **Language:** [TypeScript](https://www.typescriptlang.org/)
-- **Core Library:** [React 19](https://react.dev/)
-- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
-- **Animation & Motion:** [Framer Motion v12](https://www.framer.com/motion/)
-- **Typography:** [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) (Editorial Serif), [Geist & Geist Mono](https://vercel.com/font)
-- **Icons:** [Lucide React](https://lucide.dev/)
-- **Image Pipeline:** `sharp` (resize, encode, strip metadata), `exiftool-vendored` (EXIF & recipe read)
-
----
-
-## 📂 Project Structure
-
-```text
-photo-portfolio/
-├── public/
-│   └── photos/
-│       ├── display/      # 2048px long-edge exports, content-hashed filenames
-│       └── thumb/        # 800px thumbnails, content-hashed filenames
-├── scripts/
-│   ├── ingest.mjs        # CLI: EXIF and recipe extraction, writes src/data/photos.json
-│   └── lib/images.mjs    # sharp: rotate, resize, strip metadata, hash, blur placeholder
-├── src/
-│   ├── app/
-│   │   ├── globals.css   # Tailored theme tokens & film-grain shaders
-│   │   ├── layout.tsx    # Root layout, fonts, site-wide metadata
-│   │   ├── [[...series]]/page.tsx  # "/" and one pre-rendered page per collection, with share images
-│   │   ├── sitemap.ts / robots.ts
-│   ├── components/
-│   │   ├── Gallery.tsx       # Client app: collection and open photo both live in the URL
-│   │   ├── Hero.tsx          # Kinetic flipper, optical spotlight & photo peeks
-│   │   ├── Lightbox.tsx      # Fullscreen swipe & zoom inspection modal
-│   │   ├── Navbar.tsx        # Masthead navigation & series switcher
-│   │   ├── PhotoCard.tsx     # Adaptive card for Grid & Story modes
-│   │   ├── PhotoGrid.tsx     # Masonry column coordinator
-│   │   ├── SeriesFilter.tsx  # Drag-and-scroll collection pills with fade masks
-│   │   └── GearModal.tsx     # Camera gear & creative philosophy drawer
-│   └── data/
-│       ├── photos.json   # Generated by ingest: EXIF, recipe and image data. Don't hand-edit
-│       ├── curation.ts   # Hand-written: titles, featured, hidden, display order
-│       ├── photos.ts     # Merges the two into the photo list and collections
-│       └── site.ts       # Site URL (SITE_URL or the Vercel production domain) and titles
-└── package.json
-```
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js 20+
-- npm or pnpm
-
-### Installation
+Requires Node.js 20.9 or later.
 
 ```bash
-git clone https://github.com/your-username/photo-portfolio.git
+git clone https://github.com/mihail-kovashki/photo-portfolio.git
 cd photo-portfolio
 npm install
-```
-
-### Development Server
-
-Run the development server:
-
-```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the portfolio.
+`npm run build` followed by `npm run start` serves the production build locally.
 
-### Building for Production
-
-Create an optimized static production bundle:
+## Adding photos
 
 ```bash
-npm run build
-npm run start
-```
+# Add or update every JPEG in a folder as a collection (defaults to the folder name)
+npm run ingest -- "/path/to/export" "Prague 26"
 
----
-
-## 📸 Ingestion Pipeline
-
-The ingest script reads a folder of exported JPEGs, extracts EXIF camera parameters and Fujifilm recipe tags, and writes them to `src/data/photos.json`. Values the EXIF doesn't have are left out rather than guessed, and the site shows only what is known. For each photo it renders a 2048px display image, an 800px thumbnail and a ~300-byte blur placeholder with `sharp`:
-
-- EXIF orientation is baked into the pixels, then **all source metadata is stripped** (GPS, camera and lens serials, MakerNotes, XMP). Only Artist and Copyright are written back.
-- JPEGs are encoded with mozjpeg at quality 80.
-- Filenames carry a content hash (`<id>.<hash>.jpg`) because `/photos/*` is served `immutable` for a year: a re-edited photo gets a new URL, and older variants of the same id are deleted.
-
-Re-render from the camera JPEG or the Lightroom export, not from a file already in `public/photos`, to avoid compressing twice.
-
-```bash
-# Add or update every JPEG in a folder as a named series
-npm run ingest -- "/path/to/exported/photos" "Prague 26"
-
-# Optional overrides:
-npm run ingest -- "/path/to/exported/photos" "Seoul 25" --lens="XF23mmF1.4 R LM WR"
+# Override the lens or profile if EXIF lacks them
+npm run ingest -- "/path/to/export" "Seoul 25" --lens="XF23mmF1.4 R LM WR"
 
 # Re-render and re-read photos already on the site, matched by file number (DSCF1234).
-# Ids and series stay the same; files not already on the site are skipped.
+# Ids and collections stay the same; files not already on the site are skipped.
 npm run ingest -- --refresh "/path/to/Prague export" "/path/to/Kutna Hora export"
 ```
 
-### Curation
+For each photo the script (`scripts/ingest.mjs`, image work in `scripts/lib/images.mjs`):
 
-`photos.json` belongs to the ingest script. Editorial choices go in [`src/data/curation.ts`](src/data/curation.ts), which ingest never touches:
+- reads EXIF and Fujifilm MakerNotes with ExifTool; values EXIF doesn't have are left out rather than guessed
+- renders a 2048px display image, an 800px thumbnail and a ~300-byte blur placeholder with sharp (mozjpeg, quality 80)
+- applies the EXIF rotation to the pixels, then strips all metadata except artist and copyright, so no GPS or camera serial numbers are published
+- puts a content hash in each filename, because `/photos/*` is cached for a year and an edited photo needs a new URL
 
-- `photoCuration`: per-photo `title`, `featured` and `hidden`.
-- `photoOrder`: photo ids in display order. Listed photos come first; the rest follow in ingest order. Collections appear in the order of their first photo.
+Always ingest from the camera JPEG or the Lightroom export, not from files already in `public/photos`, so photos aren't compressed twice.
 
-A photo's id is in the URL when it's open on the site (`?photo=prague-26-dscf7159`). Unknown ids in `curation.ts` produce a warning at build time.
+## Photographs
 
----
-
-## 📄 License & Copyright
-
-- **Code:** Licensed under the [MIT License](LICENSE).
-- **Photographs:** © Mihail Kovashki. All photographs are personal works and copyrighted. All rights reserved. Unauthorized reproduction, distribution, or commercial use is strictly prohibited.
+All photographs are © Mihail Kovashki, all rights reserved. Please don't reuse them without asking.

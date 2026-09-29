@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Camera, Aperture, Layers, Cpu, Instagram, Mail } from "lucide-react";
+import { useBodyScrollLock, useDialogFocus } from "@/lib/dialog";
 
 interface GearModalProps {
   isOpen: boolean;
@@ -10,46 +11,46 @@ interface GearModalProps {
 }
 
 export function GearModal({ isOpen, onClose }: GearModalProps) {
+  const dialogRef = useRef<HTMLDivElement>(null);
+
   // Lock background scroll when modal is open, preserving scroll position
+  useBodyScrollLock(isOpen);
+  useDialogFocus(dialogRef, isOpen);
+
   useEffect(() => {
-    if (!isOpen || typeof window === "undefined") return;
-
-    const scrollY = window.scrollY;
-    const originalHtmlOverflow = document.documentElement.style.overflow;
-    const originalBodyOverflow = document.body.style.overflow;
-    const originalBodyPaddingRight = document.body.style.paddingRight;
-
-    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-    if (scrollbarWidth > 0) {
-      document.body.style.paddingRight = `${scrollbarWidth}px`;
-    }
-
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.overflow = "hidden";
-
-    return () => {
-      document.documentElement.style.overflow = originalHtmlOverflow;
-      document.body.style.overflow = originalBodyOverflow;
-      document.body.style.paddingRight = originalBodyPaddingRight;
-
-      const prevBehavior = document.documentElement.style.scrollBehavior;
-      document.documentElement.style.scrollBehavior = "auto";
-      window.scrollTo({ top: scrollY, behavior: "instant" });
-      document.documentElement.style.scrollBehavior = prevBehavior;
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
     };
-  }, [isOpen]);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, onClose]);
 
-  if (!isOpen) return null;
-
+  // Conditional render inside AnimatePresence so the closing animation can play
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md">
+      {isOpen && (
+      <motion.div
+        key="gear-backdrop"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.2 }}
+        onClick={onClose}
+        className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md"
+      >
         <motion.div
+          ref={dialogRef}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="gear-modal-title"
+          tabIndex={-1}
+          onClick={(e) => e.stopPropagation()}
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
           transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-          className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-[#121215] border border-white/10 rounded-2xl shadow-2xl p-6 sm:p-8"
+          className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-[#121215] border border-white/10 rounded-2xl shadow-2xl p-6 sm:p-8 outline-none"
         >
           {/* Header */}
           <div className="flex items-center justify-between pb-6 border-b border-white/10">
@@ -58,13 +59,14 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
                 <Camera className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-xl font-serif text-white tracking-tight">Camera & Craft</h3>
+                <h3 id="gear-modal-title" className="text-xl font-serif text-white tracking-tight">Camera & Craft</h3>
                 <p className="text-xs font-mono text-zinc-400">The Fujifilm X-System Setup</p>
               </div>
             </div>
 
             <button
               onClick={onClose}
+              aria-label="Close"
               className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white transition-colors border border-white/10"
             >
               <X className="w-4 h-4" />
@@ -200,7 +202,8 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
             </button>
           </div>
         </motion.div>
-      </div>
+      </motion.div>
+      )}
     </AnimatePresence>
   );
 }

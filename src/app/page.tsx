@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect, useCallback } from "react";
+import { useState, useMemo, useCallback, useSyncExternalStore } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { SeriesFilter } from "@/components/SeriesFilter";
@@ -10,11 +10,42 @@ import { GearModal } from "@/components/GearModal";
 import { Footer } from "@/components/Footer";
 import { photos, seriesList, type Photo } from "@/data/photos";
 
+// The open photo lives in the URL (?photo=id), so shared links, reloads and the
+// browser's back/forward buttons all agree. pushState/replaceState don't fire
+// popstate, so our own URL changes announce themselves with this event.
+const URL_CHANGE_EVENT = "photo-url-change";
+
+function subscribeToUrl(onChange: () => void) {
+  window.addEventListener("popstate", onChange);
+  window.addEventListener(URL_CHANGE_EVENT, onChange);
+  return () => {
+    window.removeEventListener("popstate", onChange);
+    window.removeEventListener(URL_CHANGE_EVENT, onChange);
+  };
+}
+
+const getPhotoParam = () => new URLSearchParams(window.location.search).get("photo");
+const getServerPhotoParam = () => null;
+
+function setPhotoParam(photoId: string | null, mode: "push" | "replace", state: object) {
+  const url = new URL(window.location.href);
+  if (photoId) url.searchParams.set("photo", photoId);
+  else url.searchParams.delete("photo");
+  if (mode === "push") window.history.pushState(state, "", url.toString());
+  else window.history.replaceState(state, "", url.toString());
+  window.dispatchEvent(new Event(URL_CHANGE_EVENT));
+}
+
 export default function Home() {
   const [activeSeries, setActiveSeries] = useState<string>("all");
   const [layoutMode, setLayoutMode] = useState<"masonry" | "story">("masonry");
-  const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
   const [isGearOpen, setIsGearOpen] = useState(false);
+
+  const selectedPhotoId = useSyncExternalStore(subscribeToUrl, getPhotoParam, getServerPhotoParam);
+  const selectedPhoto = useMemo(
+    () => photos.find((p) => p.id === selectedPhotoId) ?? null,
+    [selectedPhotoId]
+  );
 
   // Filtered photos based on active series
   const filteredPhotos = useMemo(() => {
@@ -24,78 +55,28 @@ export default function Home() {
     return photos.filter((photo) => photo.series === target.name);
   }, [activeSeries]);
 
-  // Open photo: pushes history entry & updates URL with ?photo=id for shareability
+  // A shared or back-navigated photo may sit outside the active filter; browse all then
+  const lightboxPhotos =
+    selectedPhoto && !filteredPhotos.includes(selectedPhoto) ? photos : filteredPhotos;
+
+  // Open photo: pushes a history entry so Back closes the lightbox
   const handleOpenPhoto = useCallback((photo: Photo) => {
-    setSelectedPhoto(photo);
-    if (typeof window !== "undefined") {
-      const url = new URL(window.location.href);
-      url.searchParams.set("photo", photo.id);
-      window.history.pushState(
-        { lightbox: true, openedFromGrid: true, photoId: photo.id },
-        "",
-        url.toString()
-      );
-    }
+    setPhotoParam(photo.id, "push", { lightbox: true, openedFromGrid: true });
   }, []);
 
   // Navigate between photos: replaces history state without cluttering back button stack
   const handleNavigatePhoto = useCallback((photo: Photo) => {
-    setSelectedPhoto(photo);
-    if (typeof window !== "undefined") {
-      const url = new URL(window.location.href);
-      url.searchParams.set("photo", photo.id);
-      const openedFromGrid = window.history.state?.openedFromGrid ?? false;
-      window.history.replaceState(
-        { lightbox: true, openedFromGrid, photoId: photo.id },
-        "",
-        url.toString()
-      );
-    }
+    const openedFromGrid = window.history.state?.openedFromGrid ?? false;
+    setPhotoParam(photo.id, "replace", { lightbox: true, openedFromGrid });
   }, []);
 
   // Close photo: pops history stack if entered via pushState, or cleans up URL
   const handleClosePhoto = useCallback(() => {
-    if (typeof window !== "undefined" && window.history.state?.openedFromGrid) {
+    if (window.history.state?.openedFromGrid) {
       window.history.back();
     } else {
-      setSelectedPhoto(null);
-      if (typeof window !== "undefined") {
-        const url = new URL(window.location.href);
-        url.searchParams.delete("photo");
-        window.history.replaceState({}, "", url.toString());
-      }
+      setPhotoParam(null, "replace", {});
     }
-  }, []);
-
-  // Handle native browser back/forward buttons & URL sharing (?photo=id)
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    // 1. Initial mount: check if URL contains ?photo=id for direct sharing
-    const params = new URLSearchParams(window.location.search);
-    const initialPhotoId = params.get("photo");
-    if (initialPhotoId) {
-      const found = photos.find((p) => p.id === initialPhotoId);
-      if (found) {
-        setSelectedPhoto(found);
-        window.history.replaceState({ lightbox: true, photoId: found.id }, "", window.location.href);
-      }
-    }
-
-    // 2. Listen to browser Back / Forward events (popstate)
-    const handlePopState = () => {
-      const currentParams = new URLSearchParams(window.location.search);
-      const photoId = currentParams.get("photo");
-      if (photoId) {
-        const target = photos.find((p) => p.id === photoId);
-        setSelectedPhoto(target || null);
-      } else {
-        setSelectedPhoto(null);
-      }
-    };
-
-    window.addEventListener("popstate", handlePopState);
-    return () => window.removeEventListener("popstate", handlePopState);
   }, []);
 
   return (
@@ -132,7 +113,7 @@ export default function Home() {
       {/* Touch & Gesture Enabled Lightbox with Browser History Integration */}
       <Lightbox
         photo={selectedPhoto}
-        photos={filteredPhotos}
+        photos={lightboxPhotos}
         onClose={handleClosePhoto}
         onNavigate={handleNavigatePhoto}
       />

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useLayoutEffect, useRef, useCallback } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 import {
@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import type { Photo } from "@/data/photos";
 import { formatSeasonYear } from "@/lib/utils";
+import { useBodyScrollLock, useDialogFocus } from "@/lib/dialog";
 
 interface LightboxProps {
   photo: Photo | null;
@@ -52,39 +53,17 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
   const [showInfo, setShowInfo] = useState(true);
   const [showDesktopHint, setShowDesktopHint] = useState(false);
 
+  const isOpen = photo !== null;
+  const photoId = photo?.id;
+  const dialogRef = useRef<HTMLDivElement>(null);
+
   // Lock background body scroll & remove scrollbar when Lightbox is open, preserving exact scroll position
-  useEffect(() => {
-    if (!photo || typeof window === "undefined") return;
-
-    const scrollY = window.scrollY;
-    const originalHtmlOverflow = document.documentElement.style.overflow;
-    const originalBodyOverflow = document.body.style.overflow;
-    const originalBodyPaddingRight = document.body.style.paddingRight;
-
-    // Compensate for scrollbar width on desktop to prevent background layout shift
-    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-    if (scrollbarWidth > 0) {
-      document.body.style.paddingRight = `${scrollbarWidth}px`;
-    }
-
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.overflow = "hidden";
-
-    return () => {
-      document.documentElement.style.overflow = originalHtmlOverflow;
-      document.body.style.overflow = originalBodyOverflow;
-      document.body.style.paddingRight = originalBodyPaddingRight;
-
-      const prevBehavior = document.documentElement.style.scrollBehavior;
-      document.documentElement.style.scrollBehavior = "auto";
-      window.scrollTo({ top: scrollY, behavior: "instant" });
-      document.documentElement.style.scrollBehavior = prevBehavior;
-    };
-  }, [Boolean(photo)]);
+  useBodyScrollLock(isOpen);
+  useDialogFocus(dialogRef, isOpen);
 
   // First-time ephemeral zoom hint for desktop: only triggers when a photo is actually open
   useEffect(() => {
-    if (!photo || typeof window === "undefined") return;
+    if (!photoId) return;
     try {
       const hasSeen = sessionStorage.getItem("lightbox_zoom_hint_seen");
       if (!hasSeen) {
@@ -96,7 +75,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
         return () => clearTimeout(timer);
       }
     } catch {}
-  }, [photo?.id]);
+  }, [photoId]);
 
   // Pinch-to-zoom & pan state
   const [scale, setScale] = useState(1);
@@ -104,11 +83,25 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
   const [isPinching, setIsPinching] = useState(false);
   const [isPanning, setIsPanning] = useState(false);
 
-  // Synchronous refs to prevent stale closures during rapid touch events
-  const scaleRef = useRef(scale);
-  scaleRef.current = scale;
-  const positionRef = useRef(position);
-  positionRef.current = position;
+  // Synchronous refs to prevent stale closures during rapid touch events.
+  // Always updated together with state through applyZoom.
+  const scaleRef = useRef(1);
+  const positionRef = useRef({ x: 0, y: 0 });
+
+  const applyZoom = useCallback((nextScale: number, nextPosition = positionRef.current) => {
+    scaleRef.current = nextScale;
+    positionRef.current = nextPosition;
+    setScale(nextScale);
+    setPosition(nextPosition);
+  }, []);
+
+  const resetZoom = useCallback(() => applyZoom(1, { x: 0, y: 0 }), [applyZoom]);
+
+  // Zoom state can also be reset during render (below), which must not touch refs
+  useLayoutEffect(() => {
+    scaleRef.current = scale;
+    positionRef.current = position;
+  }, [scale, position]);
 
   const isZoomed = scale > 1.05;
 
@@ -140,15 +133,15 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
     hasMoved: boolean;
   } | null>(null);
 
-  // Reset zoom on photo change
-  useEffect(() => {
+  // Reset zoom on photo change (adjusting state during render, not in an effect)
+  const [zoomPhotoId, setZoomPhotoId] = useState(photoId);
+  if (zoomPhotoId !== photoId) {
+    setZoomPhotoId(photoId);
     setScale(1);
     setPosition({ x: 0, y: 0 });
-    scaleRef.current = 1;
-    positionRef.current = { x: 0, y: 0 };
     setIsPinching(false);
     setIsPanning(false);
-  }, [photo?.id]);
+  }
 
   const [direction, setDirection] = useState(0);
 
@@ -191,10 +184,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
     const currentScale = scaleRef.current;
     if (currentScale > 1.05) {
       // When already in zoom mode (via pinch or prior double tap), double-tap resets back to 1.0x (full view)
-      setScale(1);
-      setPosition({ x: 0, y: 0 });
-      scaleRef.current = 1;
-      positionRef.current = { x: 0, y: 0 };
+      resetZoom();
     } else {
       // When at normal view, double-tap zooms in (2.5x) smoothly focused on the tapped point
       const targetScale = 2.5;
@@ -205,16 +195,13 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
       const offsetX = Math.min(Math.max((centerX - clientX) * 1.5, -maxPanX), maxPanX);
       const offsetY = Math.min(Math.max((centerY - clientY) * 1.5, -maxPanY), maxPanY);
 
-      setScale(targetScale);
-      setPosition({ x: offsetX, y: offsetY });
+      applyZoom(targetScale, { x: offsetX, y: offsetY });
       setShowDesktopHint(false);
       try {
         sessionStorage.setItem("lightbox_zoom_hint_seen", "true");
       } catch {}
-      scaleRef.current = targetScale;
-      positionRef.current = { x: offsetX, y: offsetY };
     }
-  }, []);
+  }, [applyZoom, resetZoom]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     if (e.touches.length === 2) {
@@ -262,8 +249,6 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
       const currentDist = Math.hypot(t2.clientX - t1.clientX, t2.clientY - t1.clientY);
       const factor = currentDist / pinchStartRef.current.dist;
       const newScale = Math.min(Math.max(pinchStartRef.current.startScale * factor, 0.9), 4.5);
-      setScale(newScale);
-      scaleRef.current = newScale;
 
       const currentMidX = (t1.clientX + t2.clientX) / 2;
       const currentMidY = (t1.clientY + t2.clientY) / 2;
@@ -276,8 +261,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
         x: Math.min(Math.max(pinchStartRef.current.startPosX + dx, -maxPanX), maxPanX),
         y: Math.min(Math.max(pinchStartRef.current.startPosY + dy, -maxPanY), maxPanY),
       };
-      setPosition(newPos);
-      positionRef.current = newPos;
+      applyZoom(newScale, newPos);
     } else if (e.touches.length === 1 && panStartRef.current && scaleRef.current > 1.05) {
       e.preventDefault();
       const touch = e.touches[0];
@@ -290,8 +274,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
         x: Math.min(Math.max(panStartRef.current.startPosX + dx, -maxPanX), maxPanX),
         y: Math.min(Math.max(panStartRef.current.startPosY + dy, -maxPanY), maxPanY),
       };
-      setPosition(newPos);
-      positionRef.current = newPos;
+      applyZoom(scaleRef.current, newPos);
     }
   };
 
@@ -307,13 +290,9 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
       // Only snap scale boundaries if the user was actively pinching
       if (wasPinching) {
         if (scaleRef.current < 1.05) {
-          setScale(1);
-          setPosition({ x: 0, y: 0 });
-          scaleRef.current = 1;
-          positionRef.current = { x: 0, y: 0 };
+          resetZoom();
         } else if (scaleRef.current > 4) {
-          setScale(4);
-          scaleRef.current = 4;
+          applyZoom(4);
         }
       }
 
@@ -392,8 +371,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
         x: Math.min(Math.max(mousePanStartRef.current.startPosX + dx, -maxPanX), maxPanX),
         y: Math.min(Math.max(mousePanStartRef.current.startPosY + dy, -maxPanY), maxPanY),
       };
-      setPosition(newPos);
-      positionRef.current = newPos;
+      applyZoom(scaleRef.current, newPos);
     };
 
     const handleMouseUp = () => {
@@ -410,7 +388,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
   };
 
   // Scroll wheel & trackpad pinch zooming
-  const handleWheel = (e: React.WheelEvent) => {
+  const handleWheel = useCallback((e: WheelEvent) => {
     // Allow zoom via trackpad pinch (ctrlKey/metaKey) OR mouse wheel when already zoomed in
     const isPinchGesture = e.ctrlKey || e.metaKey;
     const isAlreadyZoomed = scaleRef.current > 1.05;
@@ -428,10 +406,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
     const targetScale = Math.min(Math.max(currentScale + zoomFactor, 1), 4.5);
 
     if (targetScale <= 1.05) {
-      setScale(1);
-      setPosition({ x: 0, y: 0 });
-      scaleRef.current = 1;
-      positionRef.current = { x: 0, y: 0 };
+      resetZoom();
     } else {
       // Smooth zoom centered towards mouse cursor position
       const ratio = targetScale / currentScale;
@@ -448,22 +423,26 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
         y: Math.min(Math.max(positionRef.current.y - mouseRelY * (ratio - 1), -maxPanY), maxPanY),
       };
 
-      setScale(targetScale);
-      setPosition(newPos);
-      scaleRef.current = targetScale;
-      positionRef.current = newPos;
+      applyZoom(targetScale, newPos);
     }
-  };
+  }, [applyZoom, resetZoom]);
 
-  // Keyboard navigation
+  // React registers wheel listeners as passive, where preventDefault() is ignored and
+  // a trackpad pinch would zoom the whole page. A native listener can opt out.
   useEffect(() => {
+    const dialog = dialogRef.current;
+    if (!isOpen || !dialog) return;
+    dialog.addEventListener("wheel", handleWheel, { passive: false });
+    return () => dialog.removeEventListener("wheel", handleWheel);
+  }, [isOpen, handleWheel]);
+
+  // Keyboard navigation (only while open: the listener is global)
+  useEffect(() => {
+    if (!isOpen) return;
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         if (scaleRef.current > 1.05) {
-          setScale(1);
-          setPosition({ x: 0, y: 0 });
-          scaleRef.current = 1;
-          positionRef.current = { x: 0, y: 0 };
+          resetZoom();
         } else {
           onClose();
         }
@@ -477,22 +456,26 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [handlePrev, handleNext, onClose]);
+  }, [isOpen, handlePrev, handleNext, onClose, resetZoom]);
 
+  const displayTitle = photo ? photo.title || photo.series : "";
 
-  if (!photo) return null;
-
-  const displayTitle = photo.title || photo.series;
-
+  // The early return lives inside AnimatePresence so the closing fade can play
   return (
     <AnimatePresence>
+      {photo && (
       <motion.div
+        key="lightbox"
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label={`${displayTitle}, photo ${currentIndex + 1} of ${photos.length}`}
+        tabIndex={-1}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.2 }}
-        className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-2xl touch-none select-none overflow-hidden"
-        onWheel={handleWheel}
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-2xl touch-none select-none overflow-hidden outline-none"
       >
         {/* Top Control Bar */}
         <div className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between p-4 sm:p-6 bg-gradient-to-b from-black/80 via-black/40 to-transparent">
@@ -509,6 +492,8 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
           <div className="flex items-center gap-2">
             <button
               onClick={() => setShowInfo(!showInfo)}
+              aria-label="Photo details"
+              aria-pressed={showInfo}
               className={`p-2.5 rounded-full border transition-colors ${
                 showInfo
                   ? "bg-white text-zinc-950 border-white"
@@ -520,6 +505,8 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
             </button>
             <button
               onClick={onClose}
+              data-autofocus
+              aria-label="Close"
               className="p-2.5 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 text-white transition-colors"
               title="Close (Escape)"
             >
@@ -548,17 +535,14 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
         {/* Floating Zoom Indicator & Reset Control */}
         <AnimatePresence>
           {isZoomed && (
-            <motion.div
+            <motion.button
+              type="button"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               className="absolute top-14 sm:top-20 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/80 backdrop-blur-md border border-white/20 text-xs font-mono text-white shadow-xl cursor-pointer hover:bg-black/95 transition-colors"
-              onClick={() => {
-                setScale(1);
-                setPosition({ x: 0, y: 0 });
-                scaleRef.current = 1;
-                positionRef.current = { x: 0, y: 0 };
-              }}
+              onClick={resetZoom}
+              aria-label="Reset zoom"
               title="Click or double-tap to reset zoom"
             >
               <RotateCcw className="w-3.5 h-3.5 text-[#e59866]" />
@@ -572,7 +556,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                 <span className="text-zinc-600">·</span>
                 <span className="text-zinc-300 underline decoration-white/20 underline-offset-2">Click to reset</span>
               </span>
-            </motion.div>
+            </motion.button>
           )}
         </AnimatePresence>
 
@@ -580,6 +564,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
         {hasPrev && !isZoomed && (
           <button
             onClick={handlePrev}
+            aria-label="Previous photo"
             className="hidden md:flex absolute left-6 top-1/2 -translate-y-1/2 z-40 p-3 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 text-white transition-all duration-200 hover:scale-110"
             title="Previous (Left Arrow)"
           >
@@ -591,6 +576,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
         {hasNext && !isZoomed && (
           <button
             onClick={handleNext}
+            aria-label="Next photo"
             className="hidden md:flex absolute right-6 top-1/2 -translate-y-1/2 z-40 p-3 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 text-white transition-all duration-200 hover:scale-110"
             title="Next (Right Arrow)"
           >
@@ -789,6 +775,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
           )}
         </AnimatePresence>
       </motion.div>
+      )}
     </AnimatePresence>
   );
 }

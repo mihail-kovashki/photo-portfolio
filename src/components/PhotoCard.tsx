@@ -13,8 +13,25 @@ interface PhotoCardProps {
   layoutMode?: "masonry" | "story";
 }
 
+// Cards contain block content, so they are buttons by role rather than <button>
+const FOCUS_RING =
+  "outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-4 focus-visible:ring-offset-[#09090b]";
+
 export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: PhotoCardProps) {
   const displayTitle = photo.title || photo.series;
+  const season = formatSeasonYear(photo.dateTaken);
+  const openProps = {
+    role: "button",
+    tabIndex: 0,
+    "aria-label": `Open ${[displayTitle, season].filter(Boolean).join(", ")}`,
+    onClick: () => onOpen(photo),
+    onKeyDown: (e: React.KeyboardEvent) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        onOpen(photo);
+      }
+    },
+  };
 
   if (layoutMode === "story") {
     return (
@@ -27,8 +44,8 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
       >
         {/* Story Photo Image */}
         <div
-          onClick={() => onOpen(photo)}
-          className="relative w-full overflow-hidden rounded-2xl cursor-pointer bg-zinc-900 border border-white/5 shadow-2xl transition-transform duration-500 group-hover:scale-[1.008]"
+          {...openProps}
+          className={`${FOCUS_RING} relative w-full overflow-hidden rounded-2xl cursor-pointer bg-zinc-900 border border-white/5 shadow-2xl transition-transform duration-500 group-hover:scale-[1.008]`}
           style={{ aspectRatio: photo.aspectRatio }}
         >
           <Image
@@ -66,7 +83,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
               {displayTitle}
             </h3>
             <span className="text-xs font-mono text-zinc-500">
-              {photo.title ? `${photo.series} · ` : ""}{formatSeasonYear(photo.dateTaken)}
+              {photo.title ? `${photo.series} · ` : ""}{season}
             </span>
           </div>
 
@@ -92,8 +109,8 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
-      className="break-inside-avoid mb-6 group cursor-pointer"
-      onClick={() => onOpen(photo)}
+      {...openProps}
+      className={`${FOCUS_RING} break-inside-avoid mb-6 group cursor-pointer rounded-xl`}
     >
       <div className="relative w-full overflow-hidden rounded-xl bg-zinc-900 border border-white/5 shadow-xl transition-all duration-500 group-hover:border-white/20 group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
         {/* Aspect Ratio Container */}
@@ -155,7 +172,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
           </span>
         </div>
         <div className="flex items-center justify-between text-[11px] font-mono text-zinc-500 mt-0.5">
-          <span>{photo.title ? `${photo.series} · ` : ""}{formatSeasonYear(photo.dateTaken)}</span>
+          <span>{photo.title ? `${photo.series} · ` : ""}{season}</span>
           <span className="text-zinc-400">
             {photo.aperture} · {photo.shutterSpeed} · {photo.iso}
           </span>

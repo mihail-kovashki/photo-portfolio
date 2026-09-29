@@ -139,15 +139,20 @@ function matchOrRecordRecipe(recipeDetails) {
 
   const { filmSimulation, wbShift } = recipeDetails;
 
-  // 1. Look for matching recipe in table (exact or within ±1 shift tolerance)
-  let match = recipes.find(r => {
-    if (!r.filmSimulation && !r.baseFilmSim) return false;
-    const sim = (r.filmSimulation || r.baseFilmSim).toLowerCase();
-    const simMatch = sim === filmSimulation.toLowerCase();
-    const rShift = Array.isArray(r.wbShift) ? r.wbShift : [0, 0];
-    const wbMatch = Math.abs(rShift[0] - wbShift[0]) <= 1 && Math.abs(rShift[1] - wbShift[1]) <= 1;
-    return simMatch && wbMatch;
-  });
+  // 1. Look for matching recipe in table: an exact WB shift wins, otherwise the
+  //    closest one within ±1 (two recipes on one simulation can sit 1 step apart)
+  const match = recipes
+    .filter(r => {
+      if (!r.filmSimulation && !r.baseFilmSim) return false;
+      const sim = (r.filmSimulation || r.baseFilmSim).toLowerCase();
+      return sim === filmSimulation.toLowerCase();
+    })
+    .map(r => {
+      const rShift = Array.isArray(r.wbShift) ? r.wbShift : [0, 0];
+      return { r, dist: Math.max(Math.abs(rShift[0] - wbShift[0]), Math.abs(rShift[1] - wbShift[1])) };
+    })
+    .filter(c => c.dist <= 1)
+    .sort((a, b) => a.dist - b.dist)[0]?.r;
 
   if (match) {
     if (match.name.startsWith("TODO:")) {
@@ -336,14 +341,14 @@ async function processSinglePhoto({ inputPath, seriesName, profileOverride = nul
         const y = dt.year;
         const m = String(dt.month).padStart(2, "0");
         const d = String(dt.day).padStart(2, "0");
-        dateTaken = ;
+        dateTaken = `${y}-${m}-${d}`;
       } else if (typeof dt.toDate === "function") {
         dateTaken = dt.toDate().toISOString().split("T")[0];
       } else {
         const raw = dt.rawValue || String(dt);
         const match = raw.match(/^(\d{4})[:\-](\d{2})[:\-](\d{2})/);
         if (match) {
-          dateTaken = ;
+          dateTaken = `${match[1]}-${match[2]}-${match[3]}`;
         }
       }
     } catch {}

@@ -24,7 +24,7 @@
     "id": "reggies-portra",
     "name": "Reggie's Portra",
     "filmSimulation": "Classic Chrome",
-    "dynamicRange": "DR400",
+    "dynamicRange": "Auto",
     "highlight": -1,
     "shadow": -1,
     "color": 2,

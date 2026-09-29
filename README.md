@@ -57,7 +57,7 @@ This project is built as a bespoke digital exhibition rather than a generic phot
 - **Animation & Motion:** [Framer Motion v12](https://www.framer.com/motion/)
 - **Typography:** [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) (Editorial Serif), [Geist & Geist Mono](https://vercel.com/font)
 - **Icons:** [Lucide React](https://lucide.dev/)
-- **EXIF Pipeline:** `exiftool-vendored`, `exifr`
+- **Image Pipeline:** `sharp` (resize, encode, strip metadata), `exiftool-vendored` (EXIF & recipe read)
 
 ---
 
@@ -67,10 +67,11 @@ This project is built as a bespoke digital exhibition rather than a generic phot
 photo-portfolio/
 ├── public/
 │   └── photos/
-│       ├── display/      # 2048px optimized high-resolution web exports
-│       └── thumb/        # 600px lightweight thumbnails
+│       ├── display/      # 2048px long-edge exports, content-hashed filenames
+│       └── thumb/        # 800px thumbnails, content-hashed filenames
 ├── scripts/
-│   └── ingest.mjs        # Automated CLI for EXIF extraction & image processing
+│   ├── ingest.mjs        # CLI: EXIF and recipe extraction, writes src/data/photos.ts
+│   └── lib/images.mjs    # sharp: rotate, resize, strip metadata, hash, blur placeholder
 ├── src/
 │   ├── app/
 │   │   ├── globals.css   # Tailored theme tokens & film-grain shaders
@@ -129,7 +130,13 @@ npm run start
 
 ## 📸 Ingestion Pipeline
 
-The project includes an automated ingestion pipeline that reads raw photo exports, extracts complete EXIF camera parameters and Fujifilm custom recipe tags, generates WebP/JPEG thumbnails, computes blur placeholders, and writes type-safe data to `src/data/photos.ts`:
+The ingest script reads a folder of exported JPEGs, extracts EXIF camera parameters and Fujifilm recipe tags, and writes typed data to `src/data/photos.ts`. For each photo it renders a 2048px display image, an 800px thumbnail and a ~300-byte blur placeholder with `sharp`:
+
+- EXIF orientation is baked into the pixels, then **all source metadata is stripped** (GPS, camera and lens serials, MakerNotes, XMP). Only Artist and Copyright are written back.
+- JPEGs are encoded with mozjpeg at quality 80.
+- Filenames carry a content hash (`<id>.<hash>.jpg`) because `/photos/*` is served `immutable` for a year: a re-edited photo gets a new URL, and older variants of the same id are deleted.
+
+Re-render from the camera JPEG or the Lightroom export, not from a file already in `public/photos`, to avoid compressing twice.
 
 ```bash
 # Ingest photos from a folder as a named series

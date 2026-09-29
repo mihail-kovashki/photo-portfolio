@@ -1,16 +1,10 @@
 import fs from "fs";
 import path from "path";
 import os from "os";
-import { execSync } from "child_process";
 import { exiftool } from "exiftool-vendored";
+import { renderPhotoImages } from "./lib/images.mjs";
 
-const PUBLIC_PHOTOS_DIR = path.resolve("public/photos");
-const DISPLAY_DIR = path.join(PUBLIC_PHOTOS_DIR, "display");
-const THUMB_DIR = path.join(PUBLIC_PHOTOS_DIR, "thumb");
 const RECIPES_FILE = path.resolve("src/data/recipes.json");
-
-fs.mkdirSync(DISPLAY_DIR, { recursive: true });
-fs.mkdirSync(THUMB_DIR, { recursive: true });
 
 function formatExposureTime(val) {
   if (!val) return "1/250s";
@@ -187,47 +181,13 @@ async function processSinglePhoto({ inputPath, seriesName, profileOverride = nul
   // Remove extension safely regardless of case
   const baseName = path.basename(file, ext).toLowerCase().replace(/\.(jpe?g|png)$/i, "");
   const id = `${slugify(seriesName)}-${baseName}`;
-  const displayFileName = `${id}.jpg`;
-  const thumbFileName = `${id}.jpg`;
-
-  const displayPath = path.join(DISPLAY_DIR, displayFileName);
-  const thumbPath = path.join(THUMB_DIR, thumbFileName);
-  const tinyPath = `/tmp/tiny-${id}.jpg`;
 
   console.log(`Processing: ${file} -> ${id}`);
 
-  // Resize with sips
-  if (!fs.existsSync(displayPath)) {
-    execSync(`sips -Z 2048 "${inputPath}" --out "${displayPath}" > /dev/null 2>&1`);
-  }
-  if (!fs.existsSync(thumbPath)) {
-    execSync(`sips -Z 800 "${inputPath}" --out "${thumbPath}" > /dev/null 2>&1`);
-  }
-  execSync(`sips -Z 20 "${inputPath}" --out "${tinyPath}" > /dev/null 2>&1`);
-
-  const blurDataUrl = "data:image/jpeg;base64," + fs.readFileSync(tinyPath).toString("base64");
-  try { fs.unlinkSync(tinyPath); } catch {}
-
-  // Parse dimensions with sips
-  const dimOutput = execSync(`sips -g pixelWidth -g pixelHeight "${displayPath}"`).toString();
-  const widthMatch = dimOutput.match(/pixelWidth:\s*(\d+)/);
-  const heightMatch = dimOutput.match(/pixelHeight:\s*(\d+)/);
-  let width = widthMatch ? parseInt(widthMatch[1], 10) : 2048;
-  let height = heightMatch ? parseInt(heightMatch[1], 10) : 1365;
+  const images = await renderPhotoImages(inputPath, id);
 
   // Read full EXIF with exiftool
   const tags = await exiftool.read(inputPath);
-
-  // Check EXIF orientation (5, 6, 7, 8 denote 90/270 degree rotation, requiring width/height swap for visual aspect ratio)
-  const isRotated = tags.Orientation === 5 || tags.Orientation === 6 || tags.Orientation === 7 || tags.Orientation === 8 ||
-    String(tags.Orientation).includes("90") || String(tags.Orientation).includes("270");
-
-  if (isRotated && width > height) {
-    const temp = width;
-    width = height;
-    height = temp;
-  }
-  const aspectRatio = Math.round((width / height) * 1000) / 1000;
 
   const camera = tags.Model ? `FUJIFILM ${String(tags.Model).replace(/^FUJIFILM\s*/i, "")}` : "FUJIFILM X-T5";
   const lens = lensOverride || formatLensModel(tags.LensModel, tags.FocalLength);
@@ -361,12 +321,7 @@ async function processSinglePhoto({ inputPath, seriesName, profileOverride = nul
     id,
     series: seriesName,
     fileNumber: path.basename(file, ext).toUpperCase(),
-    displayUrl: `/photos/display/${displayFileName}`,
-    thumbUrl: `/photos/thumb/${thumbFileName}`,
-    width,
-    height,
-    aspectRatio,
-    blurDataUrl,
+    ...images,
     camera,
     lens,
     aperture,

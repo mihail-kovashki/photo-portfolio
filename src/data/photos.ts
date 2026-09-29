@@ -92,7 +92,34 @@ for (const p of photos) {
   seriesCounts.set(p.series, (seriesCounts.get(p.series) ?? 0) + 1);
 }
 
+export const ALL_SERIES_ID = "all";
+
 export const seriesList: SeriesItem[] = [
-  { id: "all", name: "All Works", count: photos.length },
+  { id: ALL_SERIES_ID, name: "All Works", count: photos.length },
   ...[...seriesCounts].map(([name, count]) => ({ id: slugify(name), name, count })),
 ];
+
+/** The collection for a URL path segment, or undefined when there is none. */
+export function findSeries(seriesId: string): SeriesItem | undefined {
+  return seriesList.find((s) => s.id === seriesId);
+}
+
+export function photosInSeries(seriesId: string): Photo[] {
+  const series = findSeries(seriesId);
+  if (!series || series.id === ALL_SERIES_ID) return photos;
+  return photos.filter((p) => p.series === series.name);
+}
+
+/** Path for a collection: "/" for everything, "/prague-26" for one collection. */
+export function seriesPath(seriesId: string): string {
+  return seriesId === ALL_SERIES_ID ? "/" : `/${seriesId}`;
+}
+
+/**
+ * The frame that represents a collection in link previews. Share cards are wide, so
+ * prefer landscape: a featured one first, then the first in display order.
+ */
+export function coverPhoto(list: Photo[]): Photo | undefined {
+  const landscape = list.filter((p) => p.aspectRatio > 1);
+  return landscape.find((p) => p.featured) ?? landscape[0] ?? list[0];
+}

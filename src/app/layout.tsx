@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/data/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,13 +20,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Mihail Kovashki (MiKo) · Fujifilm Photography",
-  description: "Visual stories and personal photographic chronicles by Mihail Kovashki (MiKo) captured with the Fujifilm X-T5 & Fujinon XF optics.",
-  openGraph: {
-    title: "Mihail Kovashki (MiKo) · Fujifilm Photography",
-    description: "Visual chronicles across East Asia & Europe · X-T5 & Fujinon Optics",
-    type: "website",
-  },
+  metadataBase: new URL(SITE_URL),
+  title: SITE_NAME,
+  description: SITE_DESCRIPTION,
 };
 
 export default function RootLayout({

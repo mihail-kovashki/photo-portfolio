@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useCallback, useSyncExternalStore } from "react";
+import { useState, useMemo, useCallback, useEffect, useSyncExternalStore } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { SeriesFilter } from "@/components/SeriesFilter";
@@ -8,12 +8,22 @@ import { PhotoGrid } from "@/components/PhotoGrid";
 import { Lightbox } from "@/components/Lightbox";
 import { GearModal } from "@/components/GearModal";
 import { Footer } from "@/components/Footer";
-import { photos, seriesList, type Photo } from "@/data/photos";
+import {
+  photos,
+  seriesList,
+  photosInSeries,
+  findSeries,
+  seriesPath,
+  ALL_SERIES_ID,
+  type Photo,
+} from "@/data/photos";
+import { collectionTitle } from "@/data/site";
 
-// The open photo lives in the URL (?photo=id), so shared links, reloads and the
-// browser's back/forward buttons all agree. pushState/replaceState don't fire
-// popstate, so our own URL changes announce themselves with this event.
-const URL_CHANGE_EVENT = "photo-url-change";
+// The active collection (/prague-26) and the open photo (?photo=id) live in the URL,
+// so shared links, reloads and the browser's back/forward buttons all agree.
+// pushState/replaceState don't fire popstate, so our own URL changes announce
+// themselves with this event. Next.js syncs its router with both calls.
+const URL_CHANGE_EVENT = "gallery-url-change";
 
 function subscribeToUrl(onChange: () => void) {
   window.addEventListener("popstate", onChange);
@@ -27,17 +37,31 @@ function subscribeToUrl(onChange: () => void) {
 const getPhotoParam = () => new URLSearchParams(window.location.search).get("photo");
 const getServerPhotoParam = () => null;
 
-function setPhotoParam(photoId: string | null, mode: "push" | "replace", state: object) {
-  const url = new URL(window.location.href);
-  if (photoId) url.searchParams.set("photo", photoId);
-  else url.searchParams.delete("photo");
+const getSeriesFromPath = () => {
+  const segment = window.location.pathname.split("/").filter(Boolean)[0];
+  return segment && findSeries(segment) ? segment : ALL_SERIES_ID;
+};
+
+function updateUrl(url: URL, mode: "push" | "replace", state: object) {
   if (mode === "push") window.history.pushState(state, "", url.toString());
   else window.history.replaceState(state, "", url.toString());
   window.dispatchEvent(new Event(URL_CHANGE_EVENT));
 }
 
-export default function Home() {
-  const [activeSeries, setActiveSeries] = useState<string>("all");
+function setPhotoParam(photoId: string | null, mode: "push" | "replace", state: object) {
+  const url = new URL(window.location.href);
+  if (photoId) url.searchParams.set("photo", photoId);
+  else url.searchParams.delete("photo");
+  updateUrl(url, mode, state);
+}
+
+interface GalleryProps {
+  /** The collection this page was rendered for; the URL takes over after hydration. */
+  initialSeries: string;
+}
+
+export function Gallery({ initialSeries }: GalleryProps) {
+  const activeSeries = useSyncExternalStore(subscribeToUrl, getSeriesFromPath, () => initialSeries);
   const [layoutMode, setLayoutMode] = useState<"masonry" | "story">("masonry");
   const [isGearOpen, setIsGearOpen] = useState(false);
 
@@ -47,12 +71,18 @@ export default function Home() {
     [selectedPhotoId]
   );
 
-  // Filtered photos based on active series
-  const filteredPhotos = useMemo(() => {
-    if (activeSeries === "all") return photos;
-    const target = seriesList.find((s) => s.id === activeSeries);
-    if (!target) return photos;
-    return photos.filter((photo) => photo.series === target.name);
+  const filteredPhotos = useMemo(() => photosInSeries(activeSeries), [activeSeries]);
+
+  // Each collection is its own page (/prague-26): switching pushes a history entry
+  const handleSelectSeries = useCallback((seriesId: string) => {
+    const url = new URL(seriesPath(seriesId), window.location.origin);
+    if (url.pathname === window.location.pathname) return;
+    updateUrl(url, "push", {});
+  }, []);
+
+  // Metadata only sets the title on load; keep it in step with in-page switches
+  useEffect(() => {
+    document.title = collectionTitle(activeSeries);
   }, [activeSeries]);
 
   // A shared or back-navigated photo may sit outside the active filter; browse all then
@@ -86,17 +116,17 @@ export default function Home() {
         <Navbar
           onOpenGear={() => setIsGearOpen(true)}
           activeSeries={activeSeries}
-          onSelectSeries={setActiveSeries}
+          onSelectSeries={handleSelectSeries}
           seriesList={seriesList}
         />
 
         {/* Hero & Camera Introduction */}
-        <Hero onSelectSeries={setActiveSeries} />
+        <Hero onSelectSeries={handleSelectSeries} />
 
         {/* Series and View Controls */}
         <SeriesFilter
           activeSeries={activeSeries}
-          onSelectSeries={setActiveSeries}
+          onSelectSeries={handleSelectSeries}
           seriesList={seriesList}
           layoutMode={layoutMode}
           onToggleLayout={setLayoutMode}

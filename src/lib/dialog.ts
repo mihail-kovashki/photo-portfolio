@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, type RefObject } from "react";
+import { useEffect, useLayoutEffect, type RefObject } from "react";
 
 const FOCUSABLE =
   'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
@@ -8,9 +8,11 @@ const FOCUSABLE =
 /**
  * Locks page scroll while a dialog is open, compensating for the scrollbar width so
  * the page behind doesn't shift, and restores the exact scroll position on close.
+ * A layout effect: removing the scrollbar widens the viewport, so it must happen
+ * before anything in the dialog is measured (the photo morph) or painted.
  */
 export function useBodyScrollLock(active: boolean) {
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!active) return;
 
     const scrollY = window.scrollY;

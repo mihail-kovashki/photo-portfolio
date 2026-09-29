@@ -18,6 +18,7 @@ import {
   type Photo,
 } from "@/data/photos";
 import { collectionTitle } from "@/data/site";
+import { captureMorphOrigin } from "@/lib/photoMorph";
 
 // The active collection (/prague-26) and the open photo (?photo=id) live in the URL,
 // so shared links, reloads and the browser's back/forward buttons all agree.
@@ -91,6 +92,7 @@ export function Gallery({ initialSeries }: GalleryProps) {
 
   // Open photo: pushes a history entry so Back closes the lightbox
   const handleOpenPhoto = useCallback((photo: Photo) => {
+    captureMorphOrigin(photo.id);
     setPhotoParam(photo.id, "push", { lightbox: true, openedFromGrid: true });
   }, []);
 

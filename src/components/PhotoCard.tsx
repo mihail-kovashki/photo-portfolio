@@ -47,6 +47,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
         {/* Story Photo Image */}
         <div
           {...openProps}
+          data-photo-thumb={photo.id}
           className={`${FOCUS_RING} relative w-full overflow-hidden rounded-2xl cursor-pointer bg-zinc-900 border border-white/5 shadow-2xl transition-transform duration-500 group-hover:scale-[1.008]`}
           style={{ aspectRatio: photo.aspectRatio }}
         >
@@ -112,7 +113,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
       {...openProps}
       className={`${FOCUS_RING} break-inside-avoid mb-6 group cursor-pointer rounded-xl`}
     >
-      <div className="relative w-full overflow-hidden rounded-xl bg-zinc-900 border border-white/5 shadow-xl transition-all duration-500 group-hover:border-white/20 group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
+      <div data-photo-thumb={photo.id} className="relative w-full overflow-hidden rounded-xl bg-zinc-900 border border-white/5 shadow-xl transition-all duration-500 group-hover:border-white/20 group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
         {/* Aspect Ratio Container */}
         <div
           className="relative w-full overflow-hidden transition-transform duration-700 ease-out group-hover:scale-105"

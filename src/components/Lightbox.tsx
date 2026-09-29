@@ -17,6 +17,7 @@ import {
 import type { Photo, RecipeDetails } from "@/data/photos";
 import { formatSeasonYear, shortLensName, exposureSummary } from "@/lib/utils";
 import { useBodyScrollLock, useDialogFocus } from "@/lib/dialog";
+import { morphIntoLightbox, morphIntoGrid } from "@/lib/photoMorph";
 
 interface LightboxProps {
   photo: Photo | null;
@@ -83,6 +84,18 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
   // Lock background body scroll & remove scrollbar when Lightbox is open, preserving exact scroll position
   useBodyScrollLock(isOpen);
   useDialogFocus(dialogRef, isOpen);
+
+  // Thumbnail <-> lightbox morph. Opening runs before paint so the real image never
+  // flashes; closing runs after the scroll lock is released so the grid is back in place.
+  const shownPhotoRef = useRef<Photo | null>(null);
+  useLayoutEffect(() => {
+    if (photo && !shownPhotoRef.current) morphIntoLightbox(photo.id, photo.aspectRatio);
+  }, [photo]);
+  useEffect(() => {
+    const previous = shownPhotoRef.current;
+    if (!photo && previous) morphIntoGrid(previous.id, previous.aspectRatio);
+    shownPhotoRef.current = photo;
+  }, [photo]);
 
   // First-time ephemeral zoom hint for desktop: only triggers when a photo is actually open
   useEffect(() => {
@@ -674,6 +687,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                 <Image
                   src={photo.displayUrl}
                   alt={photo.title || `${photo.series} ${photo.fileNumber}`}
+                  data-lightbox-image={photo.id}
                   fill
                   priority
                   sizes="(max-width: 1400px) 100vw, (max-width: 2200px) 1850px, 2048px"

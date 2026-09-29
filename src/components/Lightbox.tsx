@@ -14,8 +14,8 @@ import {
   Zap,
   RotateCcw
 } from "lucide-react";
-import type { Photo } from "@/data/photos";
-import { formatSeasonYear } from "@/lib/utils";
+import type { Photo, RecipeDetails } from "@/data/photos";
+import { formatSeasonYear, shortLensName, exposureSummary } from "@/lib/utils";
 import { useBodyScrollLock, useDialogFocus } from "@/lib/dialog";
 
 interface LightboxProps {
@@ -48,6 +48,29 @@ const slideVariants: Variants = {
     },
   }),
 };
+
+const signed = (n: number) => (n > 0 ? `+${n}` : `${n}`);
+
+// Recipe dial settings in display order; unknown values and defaults not worth showing are skipped
+function recipeSettings(recipe: RecipeDetails): [string, string][] {
+  const tone =
+    recipe.highlight !== undefined && recipe.shadow !== undefined
+      ? `H${signed(recipe.highlight)} / S${signed(recipe.shadow)}`
+      : undefined;
+  const settings: [string, string | undefined][] = [
+    ["DR", recipe.dynamicRange],
+    ["Tone", tone],
+    ["Color", recipe.color !== undefined ? signed(recipe.color) : undefined],
+    ["Grain", recipe.grainEffect],
+    ["Chrome", recipe.colorChromeEffect],
+    ["FX Blue", recipe.colorChromeFXBlue !== "Off" ? recipe.colorChromeFXBlue : undefined],
+    ["WB", recipe.whiteBalance],
+    ["Clarity", recipe.clarity ? String(recipe.clarity) : undefined],
+    ["NR", recipe.noiseReduction !== undefined ? String(recipe.noiseReduction) : undefined],
+    ["Exp", recipe.exposureCompensation !== "0 EV" ? recipe.exposureCompensation : undefined],
+  ];
+  return settings.filter((entry): entry is [string, string] => entry[1] !== undefined);
+}
 
 export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) {
   const [showInfo, setShowInfo] = useState(true);
@@ -703,46 +726,56 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
 
                   {/* Mobile & Landscape-Phone Compact Hardware & Exposure Strip */}
                   <div className="hud-compact-only landscape-compact-pills flex items-center flex-wrap gap-1 text-[10px] font-mono text-zinc-300">
-                    <div className="flex items-center gap-1 px-2 py-0.5 rounded-md bg-black/40 border border-white/5">
-                      <Camera className="w-2.5 h-2.5 text-[#d93829] shrink-0" />
-                      <span>{photo.camera.replace("FUJIFILM ", "")}</span>
-                      <span className="text-zinc-600">·</span>
-                      <span>{photo.lens.replace(/^FUJINON\s+/i, "").replace(/\s+R\s+LM\s+OIS\s+WR$/i, "").replace(/\s+R\s+LM\s+WR$/i, "").replace(/\s+R\s+WR$/i, "")}</span>
-                    </div>
-                    <div className="flex items-center gap-1 px-2 py-0.5 rounded-md bg-black/40 border border-white/5">
-                      <Aperture className="w-2.5 h-2.5 text-[#e59866] shrink-0" />
-                      <span className="text-white font-semibold">{photo.aperture}</span>
-                      <span className="text-zinc-600">·</span>
-                      <span>{photo.shutterSpeed}</span>
-                      <span className="text-zinc-600">·</span>
-                      <span>{photo.iso}</span>
-                    </div>
+                    {(photo.camera || photo.lens) && (
+                      <div className="flex items-center gap-1 px-2 py-0.5 rounded-md bg-black/40 border border-white/5">
+                        <Camera className="w-2.5 h-2.5 text-[#d93829] shrink-0" />
+                        <span>
+                          {[photo.camera?.replace("FUJIFILM ", ""), shortLensName(photo.lens)].filter(Boolean).join(" · ")}
+                        </span>
+                      </div>
+                    )}
+                    {exposureSummary(photo) && (
+                      <div className="flex items-center gap-1 px-2 py-0.5 rounded-md bg-black/40 border border-white/5">
+                        <Aperture className="w-2.5 h-2.5 text-[#e59866] shrink-0" />
+                        <span>{exposureSummary(photo)}</span>
+                      </div>
+                    )}
                   </div>
 
                   {/* Desktop & Large Tablet Full Hardware & Exposure Strip */}
                   <div className="hud-expanded-only flex items-center flex-wrap gap-2 text-xs font-mono text-zinc-300">
-                    <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/40 border border-white/5">
-                      <Camera className="w-3.5 h-3.5 text-[#d93829]" />
-                      <span>{photo.camera}</span>
-                    </div>
-                    <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/40 border border-white/5">
-                      <span>{photo.lens}</span>
-                      {photo.focalLength && !photo.lens.includes(photo.focalLength) && (
-                        <span className="text-zinc-400">({photo.focalLength})</span>
-                      )}
-                    </div>
-                    <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/40 border border-white/5">
-                      <Aperture className="w-3.5 h-3.5 text-[#e59866]" />
-                      <span className="text-white font-semibold">{photo.aperture}</span>
-                    </div>
-                    <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/40 border border-white/5">
-                      <Clock className="w-3.5 h-3.5 text-zinc-400" />
-                      <span>{photo.shutterSpeed}</span>
-                    </div>
-                    <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/40 border border-white/5">
-                      <Zap className="w-3.5 h-3.5 text-zinc-400" />
-                      <span>{photo.iso}</span>
-                    </div>
+                    {photo.camera && (
+                      <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/40 border border-white/5">
+                        <Camera className="w-3.5 h-3.5 text-[#d93829]" />
+                        <span>{photo.camera}</span>
+                      </div>
+                    )}
+                    {photo.lens && (
+                      <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/40 border border-white/5">
+                        <span>{photo.lens}</span>
+                        {photo.focalLength && !photo.lens.includes(photo.focalLength) && (
+                          <span className="text-zinc-400">({photo.focalLength})</span>
+                        )}
+                      </div>
+                    )}
+                    {photo.aperture && (
+                      <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/40 border border-white/5">
+                        <Aperture className="w-3.5 h-3.5 text-[#e59866]" />
+                        <span className="text-white font-semibold">{photo.aperture}</span>
+                      </div>
+                    )}
+                    {photo.shutterSpeed && (
+                      <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/40 border border-white/5">
+                        <Clock className="w-3.5 h-3.5 text-zinc-400" />
+                        <span>{photo.shutterSpeed}</span>
+                      </div>
+                    )}
+                    {photo.iso && (
+                      <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/40 border border-white/5">
+                        <Zap className="w-3.5 h-3.5 text-zinc-400" />
+                        <span>{photo.iso}</span>
+                      </div>
+                    )}
                   </div>
                 </div>
 
@@ -750,24 +783,11 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                 {photo.recipeDetails && (
                   <div className="pt-2 sm:pt-2.5 landscape-compact-recipe border-t border-white/5 flex flex-wrap items-center gap-x-2.5 sm:gap-x-3.5 gap-y-0.5 sm:gap-y-1 text-[9.5px] sm:text-[11px] font-mono text-zinc-400">
                     <span className="text-[#e59866] uppercase tracking-wider text-[8px] sm:text-[9px] font-semibold">Recipe:</span>
-                    <span>DR: <span className="text-zinc-200">{photo.recipeDetails.dynamicRange}</span></span>
-                    <span>Tone: <span className="text-zinc-200">H{photo.recipeDetails.highlight !== undefined && photo.recipeDetails.highlight >= 0 ? '+' : ''}{photo.recipeDetails.highlight} / S{photo.recipeDetails.shadow !== undefined && photo.recipeDetails.shadow >= 0 ? '+' : ''}{photo.recipeDetails.shadow}</span></span>
-                    <span>Color: <span className="text-zinc-200">{photo.recipeDetails.color !== undefined && photo.recipeDetails.color >= 0 ? '+' : ''}{photo.recipeDetails.color}</span></span>
-                    <span>Grain: <span className="text-zinc-200">{photo.recipeDetails.grainEffect}</span></span>
-                    <span>Chrome: <span className="text-zinc-200">{photo.recipeDetails.colorChromeEffect}</span></span>
-                    {photo.recipeDetails.colorChromeFXBlue && photo.recipeDetails.colorChromeFXBlue !== 'Off' && (
-                      <span>FX Blue: <span className="text-zinc-200">{photo.recipeDetails.colorChromeFXBlue}</span></span>
-                    )}
-                    <span>WB: <span className="text-zinc-200">{photo.recipeDetails.whiteBalance}</span></span>
-                    {photo.recipeDetails.clarity !== 0 && photo.recipeDetails.clarity !== undefined && (
-                      <span>Clarity: <span className="text-zinc-200">{photo.recipeDetails.clarity}</span></span>
-                    )}
-                    {photo.recipeDetails.noiseReduction !== undefined && (
-                      <span>NR: <span className="text-zinc-200">{photo.recipeDetails.noiseReduction}</span></span>
-                    )}
-                    {photo.recipeDetails.exposureCompensation && photo.recipeDetails.exposureCompensation !== '0 EV' && (
-                      <span>Exp: <span className="text-zinc-200">{photo.recipeDetails.exposureCompensation}</span></span>
-                    )}
+                    {recipeSettings(photo.recipeDetails).map(([label, value]) => (
+                      <span key={label}>
+                        {label}: <span className="text-zinc-200">{value}</span>
+                      </span>
+                    ))}
                   </div>
                 )}
               </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Maximize2 } from "lucide-react";
 import type { Photo } from "@/data/photos";
-import { formatSeasonYear } from "@/lib/utils";
+import { formatSeasonYear, focalOrLens, exposureSummary } from "@/lib/utils";
 
 interface PhotoCardProps {
   photo: Photo;
@@ -20,6 +20,8 @@ const FOCUS_RING =
 export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: PhotoCardProps) {
   const displayTitle = photo.title || photo.series;
   const season = formatSeasonYear(photo.dateTaken);
+  const focal = focalOrLens(photo);
+  const exposure = exposureSummary(photo);
   const openProps = {
     role: "button",
     tabIndex: 0,
@@ -89,13 +91,19 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
 
           {/* Technical Specs Strip in refined mono */}
           <div className="flex items-center gap-2 text-xs font-mono text-zinc-400">
-            <span>{photo.focalLength || photo.lens.replace(/^FUJINON\s+/i, "")}</span>
-            <span className="text-zinc-600">·</span>
-            <span className="text-zinc-300">{photo.aperture}</span>
-            <span className="text-zinc-600">·</span>
-            <span>{photo.shutterSpeed}</span>
-            <span className="text-zinc-600">·</span>
-            <span>{photo.iso}</span>
+            {[
+              { key: "focal", value: focal },
+              { key: "aperture", value: photo.aperture, className: "text-zinc-300" },
+              { key: "shutter", value: photo.shutterSpeed },
+              { key: "iso", value: photo.iso },
+            ]
+              .filter((part) => part.value)
+              .map((part, i) => (
+                <span key={part.key} className="flex items-center gap-2">
+                  {i > 0 && <span className="text-zinc-600">·</span>}
+                  <span className={part.className}>{part.value}</span>
+                </span>
+              ))}
           </div>
         </div>
       </motion.article>
@@ -151,9 +159,9 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
                 {displayTitle}
               </h4>
               <div className="flex items-center justify-between text-[11px] font-mono text-zinc-300 mt-1">
-                <span className="text-zinc-400 font-medium">{photo.focalLength || photo.lens.replace(/^FUJINON\s+/i, "")}</span>
+                <span className="text-zinc-400 font-medium">{focal}</span>
                 <span className="text-zinc-300">
-                  {photo.aperture} · {photo.shutterSpeed} · {photo.iso}
+                  {exposure}
                 </span>
               </div>
             </div>
@@ -168,13 +176,13 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
             {displayTitle}
           </h4>
           <span className="text-[10px] font-mono text-zinc-400 shrink-0">
-            {photo.focalLength || photo.lens.replace(/^FUJINON\s+/i, "")}
+            {focal}
           </span>
         </div>
         <div className="flex items-center justify-between text-[11px] font-mono text-zinc-500 mt-0.5">
           <span>{photo.title ? `${photo.series} · ` : ""}{season}</span>
           <span className="text-zinc-400">
-            {photo.aperture} · {photo.shutterSpeed} · {photo.iso}
+            {exposure}
           </span>
         </div>
       </div>

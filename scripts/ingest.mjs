@@ -5,45 +5,55 @@ import { exiftool } from "exiftool-vendored";
 import { renderPhotoImages } from "./lib/images.mjs";
 
 const RECIPES_FILE = path.resolve("src/data/recipes.json");
+// Generated data only. Titles, featured, hidden and order live in src/data/curation.ts,
+// which this script never touches, so re-ingesting can't wipe them.
+const PHOTOS_FILE = path.resolve("src/data/photos.json");
+
+const USAGE = `Usage:
+  npm run ingest -- <folder> ["Series Name"] [--lens="..."] [--profile="..."]
+      Add or update every JPEG in <folder> as the given series (default: folder name).
+
+  npm run ingest -- --refresh <folder> [<folder>...]
+      Re-render images and re-read EXIF for photos already in the library, matched by
+      file number (DSCF1234). Keeps each photo's id and series; other files are skipped.
+      Use the camera JPEG or Lightroom export as the source, never public/photos.`;
+
+// Formatters return undefined when EXIF lacks the value: the site shows only what is known.
 
 function formatExposureTime(val) {
-  if (!val) return "1/250s";
+  if (val === undefined || val === null || val === "") return undefined;
   if (typeof val === "string") {
     const s = val.trim();
     if (s.includes("/")) {
       return s.endsWith("s") ? s : `${s}s`;
     }
     const num = parseFloat(s);
-    if (!isNaN(num)) val = num;
+    if (isNaN(num)) return undefined;
+    val = num;
   }
-  if (typeof val === "number") {
-    if (val >= 1) return `${Math.round(val * 10) / 10}s`;
-    const denom = Math.round(1 / val);
-    return `1/${denom}s`;
-  }
-  return `${val}s`;
+  if (typeof val !== "number" || val <= 0) return undefined;
+  if (val >= 1) return `${Math.round(val * 10) / 10}s`;
+  return `1/${Math.round(1 / val)}s`;
 }
 
 function formatFocalLength(fl, fl35) {
   const target = fl || fl35;
-  if (!target) return "23mm";
+  if (!target) return undefined;
   if (typeof target === "number") return `${Math.round(target)}mm`;
   const m = String(target).match(/(\d+(\.\d+)?)/);
-  return m ? `${Math.round(parseFloat(m[1]))}mm` : "23mm";
+  return m ? `${Math.round(parseFloat(m[1]))}mm` : undefined;
 }
 
 function formatFNumber(f) {
-  if (!f) return "ƒ/--";
+  if (!f) return undefined;
   const num = typeof f === "number" ? f : parseFloat(String(f).replace(/^[fƒ\/]\s*/i, ""));
-  if (isNaN(num)) return `ƒ/${f}`;
+  if (isNaN(num)) return undefined;
   const rounded = Math.round(num * 10) / 10;
   return Number.isInteger(rounded) ? `ƒ/${rounded}.0` : `ƒ/${rounded}`;
 }
 
-function formatLensModel(lensModel, focalLength) {
-  if (!lensModel) {
-    return focalLength ? `Fujinon Lens (${Math.round(focalLength)}mm)` : "Fujinon Lens";
-  }
+function formatLensModel(lensModel) {
+  if (!lensModel) return undefined;
   let cleaned = String(lensModel).trim();
   if (/^23\.0\s*mm\s*f\/1\.4/i.test(cleaned)) {
     return "XF23mmF1.4 R LM WR";
@@ -58,22 +68,30 @@ function formatLensModel(lensModel, focalLength) {
   return cleaned;
 }
 
+function formatExposureCompensation(ec) {
+  if (ec === undefined || ec === null || ec === "") return undefined;
+  const num = typeof ec === "number" ? ec : parseFloat(String(ec));
+  if (isNaN(num)) return undefined;
+  if (num === 0) return "0 EV";
+  return `${num > 0 ? "+" : ""}${Math.round(num * 100) / 100} EV`;
+}
+
 function parseTone(val) {
-  if (val === undefined || val === null) return 0;
+  if (val === undefined || val === null) return undefined;
   if (typeof val === "number") return val;
   const m = String(val).match(/([+-]?\d+(\.\d+)?)/);
-  return m ? parseFloat(m[1]) : 0;
+  return m ? parseFloat(m[1]) : undefined;
 }
 
 function parseColor(val) {
-  if (val === undefined || val === null) return 0;
+  if (val === undefined || val === null) return undefined;
   if (typeof val === "number") return val;
   const m = String(val).match(/([+-]?\d+)/);
-  return m ? parseInt(m[1], 10) : 0;
+  return m ? parseInt(m[1], 10) : undefined;
 }
 
 function parseSharpness(val) {
-  if (val === undefined || val === null) return 0;
+  if (val === undefined || val === null) return undefined;
   if (typeof val === "number") return val;
   const s = String(val).toLowerCase();
   if (s.includes("softest")) return -4;
@@ -86,14 +104,41 @@ function parseSharpness(val) {
   if (s.includes("hard")) return 2;
   if (s.includes("normal")) return 0;
   const m = s.match(/([+-]?\d+)/);
-  return m ? parseInt(m[1], 10) : 0;
+  return m ? parseInt(m[1], 10) : undefined;
 }
 
+function formatDynamicRange(tags) {
+  if (tags.DevelopmentDynamicRange) return `DR${tags.DevelopmentDynamicRange}`;
+  // DR Auto: the camera records the value it picked, e.g. AutoDynamicRange "200%"
+  if (String(tags.DynamicRangeSetting ?? "").toLowerCase() === "auto") {
+    const picked = String(tags.AutoDynamicRange ?? "").match(/\d+/)?.[0];
+    return picked ? `Auto (DR${picked})` : "Auto";
+  }
+  if (typeof tags.DynamicRange === "number") return `DR${tags.DynamicRange}`;
+  const s = String(tags.DynamicRange ?? "");
+  if (s.includes("400")) return "DR400";
+  if (s.includes("200")) return "DR200";
+  if (s.includes("100")) return "DR100";
+  return undefined;
+}
+
+function formatDateTaken(dt) {
+  if (!dt) return undefined;
+  try {
+    if (dt.year && dt.month && dt.day) {
+      return `${dt.year}-${String(dt.month).padStart(2, "0")}-${String(dt.day).padStart(2, "0")}`;
+    }
+    // EXIF writes "YYYY:MM:DD HH:MM:SS", which new Date() can't parse
+    const match = String(dt.rawValue || dt).match(/^(\d{4})[:\-](\d{2})[:\-](\d{2})/);
+    if (match) return `${match[1]}-${match[2]}-${match[3]}`;
+  } catch {}
+  return undefined;
+}
 
 function slugify(text) {
   return String(text)
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[̀-ͯ]/g, "")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
@@ -106,19 +151,23 @@ function resolveUserPath(inputPath) {
   return path.resolve(inputPath);
 }
 
-function loadExistingPhotos() {
-  const filePath = path.resolve("src/data/photos.ts");
-  if (!fs.existsSync(filePath)) return [];
-  const content = fs.readFileSync(filePath, "utf8");
-  const match = content.match(/export const photos: Photo\[\] = (\[[\s\S]*?\]);/);
-  if (match) {
-    try {
-      return JSON.parse(match[1]);
-    } catch (err) {
-      console.warn("Failed to parse existing photos from photos.ts:", err.message);
-    }
-  }
-  return [];
+function fileNumberOf(fileName) {
+  return path.basename(fileName, path.extname(fileName)).toUpperCase();
+}
+
+function listImages(dir) {
+  return fs.readdirSync(dir).filter((f) => /\.(jpe?g|png)$/i.test(f));
+}
+
+function loadPhotos() {
+  if (!fs.existsSync(PHOTOS_FILE)) return [];
+  return JSON.parse(fs.readFileSync(PHOTOS_FILE, "utf8"));
+}
+
+function savePhotos(photos) {
+  fs.writeFileSync(PHOTOS_FILE, JSON.stringify(photos, null, 2) + "\n");
+  const series = new Set(photos.map((p) => p.series));
+  console.log(`\nWrote src/data/photos.json: ${photos.length} photos across ${series.size} series.`);
 }
 
 function matchOrRecordRecipe(recipeDetails) {
@@ -127,11 +176,12 @@ function matchOrRecordRecipe(recipeDetails) {
     if (fs.existsSync(RECIPES_FILE)) {
       recipes = JSON.parse(fs.readFileSync(RECIPES_FILE, "utf8"));
     }
-  } catch (e) {
+  } catch {
     recipes = [];
   }
 
-  const { filmSimulation, wbShift } = recipeDetails;
+  const { filmSimulation } = recipeDetails;
+  const wbShift = recipeDetails.wbShift ?? [0, 0];
 
   // 1. Look for matching recipe in table: an exact WB shift wins, otherwise the
   //    closest one within ±1 (two recipes on one simulation can sit 1 step apart)
@@ -175,332 +225,199 @@ function matchOrRecordRecipe(recipeDetails) {
   return { profile: `${filmSimulation} · Custom Recipe`, recipe: newEntry };
 }
 
-async function processSinglePhoto({ inputPath, seriesName, profileOverride = null, lensOverride = null }) {
-  const file = path.basename(inputPath);
-  const ext = path.extname(file);
-  // Remove extension safely regardless of case
-  const baseName = path.basename(file, ext).toLowerCase().replace(/\.(jpe?g|png)$/i, "");
-  const id = `${slugify(seriesName)}-${baseName}`;
+const CAMERA_PROFILE_NAMES = {
+  "reala ace": "Reala Ace",
+  "classic chrome": "Classic Chrome",
+  "classic neg.": "Classic Neg",
+  "classic neg": "Classic Neg",
+  "nostalgic neg": "Nostalgic Neg",
+  "provia": "Provia",
+  "velvia": "Velvia",
+  "astia": "Astia",
+  "eterna": "Eterna",
+  "acros": "Acros",
+  "pro neg. hi": "PRO Neg. Hi",
+  "pro neg. std": "PRO Neg. Std",
+  "adobe standard": "RAW Edit",
+  "adobe color": "RAW Edit",
+  "embedded": "RAW Edit"
+};
 
-  console.log(`Processing: ${file} -> ${id}`);
+// Lightroom edit (XMP CameraProfile), SOOC JPEG (Fujifilm MakerNotes), or unknown
+function readProfile(tags) {
+  if (tags.CameraProfile) {
+    const rawProfile = String(tags.CameraProfile)
+      .replace(/^Camera\s+/i, "")
+      .replace(/\s+v\d+$/i, "")
+      .replace(/\/Standard/i, "")
+      .trim();
+    const normalized = CAMERA_PROFILE_NAMES[rawProfile.toLowerCase()] || (rawProfile ? `${rawProfile} · RAW Edit` : "RAW Edit");
+    return { profile: normalized.endsWith("RAW Edit") ? normalized : `${normalized} · RAW Edit` };
+  }
+
+  if (!tags.FilmMode) return {};
+
+  const filmSim = String(tags.FilmMode).trim();
+
+  // White balance & shifts
+  let wb = tags.WhiteBalance ? String(tags.WhiteBalance) : undefined;
+  if (tags.ColorTemperature) wb = `${tags.ColorTemperature}K`;
+  let wbShift;
+  let wbShiftStr = "";
+  const m = String(tags.WhiteBalanceFineTune ?? "").match(/Red\s+([+-]?\d+),\s*Blue\s+([+-]?\d+)/i);
+  if (m) {
+    const r = Math.round(parseInt(m[1], 10) / 20);
+    const b = Math.round(parseInt(m[2], 10) / 20);
+    wbShift = [r, b];
+    wbShiftStr = ` (R:${r >= 0 ? "+" + r : r}, B:${b >= 0 ? "+" + b : b})`;
+  }
+
+  const grainRoughness = tags.GrainEffectRoughness ? String(tags.GrainEffectRoughness) : undefined;
+  const recipeDetails = {
+    filmSimulation: filmSim,
+    dynamicRange: formatDynamicRange(tags),
+    highlight: parseTone(tags.HighlightTone),
+    shadow: parseTone(tags.ShadowTone),
+    color: parseColor(tags.Saturation),
+    noiseReduction: parseColor(tags.NoiseReduction),
+    sharpening: parseSharpness(tags.Sharpness),
+    clarity: typeof tags.Clarity === "number" ? tags.Clarity : undefined,
+    grainEffect: grainRoughness && grainRoughness !== "Off"
+      ? [grainRoughness, tags.GrainEffectSize].filter(Boolean).join(", ")
+      : grainRoughness,
+    colorChromeEffect: tags.ColorChromeEffect,
+    colorChromeFXBlue: tags.ColorChromeFXBlue,
+    whiteBalance: wb ? `${wb}${wbShiftStr}` : undefined,
+    wbShift,
+    iso: tags.ISO ? `ISO ${tags.ISO}` : undefined,
+    exposureCompensation: formatExposureCompensation(tags.ExposureCompensation),
+  };
+
+  return { profile: matchOrRecordRecipe(recipeDetails).profile, recipeDetails };
+}
+
+async function processSinglePhoto({ inputPath, id, seriesName, profileOverride = null, lensOverride = null }) {
+  console.log(`Processing: ${path.basename(inputPath)} -> ${id}`);
 
   const images = await renderPhotoImages(inputPath, id);
-
-  // Read full EXIF with exiftool
   const tags = await exiftool.read(inputPath);
-
-  const camera = tags.Model ? `FUJIFILM ${String(tags.Model).replace(/^FUJIFILM\s*/i, "")}` : "FUJIFILM X-T5";
-  const lens = lensOverride || formatLensModel(tags.LensModel, tags.FocalLength);
-  const aperture = formatFNumber(tags.FNumber);
-  const shutterSpeed = formatExposureTime(tags.ExposureTime);
-  const iso = tags.ISO ? `ISO ${tags.ISO}` : "ISO 125";
-  const focalLength = formatFocalLength(tags.FocalLength, tags.FocalLengthIn35mmFormat);
-
-  let profile = profileOverride;
-  let recipeDetails = undefined;
-
-  if (!profile) {
-    // 1. Check if edited in Lightroom (XMP CameraProfile)
-    if (tags.CameraProfile) {
-      const rawProfile = String(tags.CameraProfile)
-        .replace(/^Camera\s+/i, "")
-        .replace(/\s+v\d+$/i, "")
-        .replace(/\/Standard/i, "")
-        .trim();
-
-      const nameMap = {
-        "reala ace": "Reala Ace",
-        "classic chrome": "Classic Chrome",
-        "classic neg.": "Classic Neg",
-        "classic neg": "Classic Neg",
-        "nostalgic neg": "Nostalgic Neg",
-        "provia": "Provia",
-        "velvia": "Velvia",
-        "astia": "Astia",
-        "eterna": "Eterna",
-        "acros": "Acros",
-        "pro neg. hi": "PRO Neg. Hi",
-        "pro neg. std": "PRO Neg. Std",
-        "adobe standard": "RAW Edit",
-        "adobe color": "RAW Edit",
-        "embedded": "RAW Edit"
-      };
-
-      const normalized = nameMap[rawProfile.toLowerCase()] || (rawProfile ? `${rawProfile} · RAW Edit` : "RAW Edit");
-      profile = normalized.endsWith("RAW Edit") ? normalized : `${normalized} · RAW Edit`;
-    } 
-    // 2. SOOC JPEG with Fujifilm MakerNotes
-    else if (tags.FilmMode) {
-      const filmSim = String(tags.FilmMode).trim();
-      
-      // White balance & shifts
-      let wb = tags.WhiteBalance || "Auto";
-      if (tags.ColorTemperature) wb = `${tags.ColorTemperature}K`;
-      let wbShift = [0, 0];
-      let wbShiftStr = "";
-      if (tags.WhiteBalanceFineTune) {
-        const m = String(tags.WhiteBalanceFineTune).match(/Red\s+([+-]?\d+),\s*Blue\s+([+-]?\d+)/i);
-        if (m) {
-          const r = Math.round(parseInt(m[1], 10) / 20);
-          const b = Math.round(parseInt(m[2], 10) / 20);
-          wbShift = [r, b];
-          wbShiftStr = ` (R:${r >= 0 ? "+" + r : r}, B:${b >= 0 ? "+" + b : b})`;
-        }
-      }
-
-      // Dynamic Range
-      let dr = "DR100";
-      if (tags.DevelopmentDynamicRange) dr = `DR${tags.DevelopmentDynamicRange}`;
-      else if (typeof tags.DynamicRange === "number") dr = `DR${tags.DynamicRange}`;
-      else if (tags.DynamicRange && String(tags.DynamicRange).includes("400")) dr = "DR400";
-      else if (tags.DynamicRange && String(tags.DynamicRange).includes("200")) dr = "DR200";
-
-      let ecStr = "0 EV";
-      if (tags.ExposureCompensation !== undefined && tags.ExposureCompensation !== null) {
-        const ec = tags.ExposureCompensation;
-        if (typeof ec === "number") {
-          ecStr = (ec > 0 ? `+${ec}` : `${ec}`) + " EV";
-        } else {
-          const s = String(ec).trim();
-          ecStr = (s.startsWith("+") || s.startsWith("-") ? s : `+${s}`) + " EV";
-        }
-      }
-
-      recipeDetails = {
-        filmSimulation: filmSim,
-        dynamicRange: dr,
-        highlight: parseTone(tags.HighlightTone),
-        shadow: parseTone(tags.ShadowTone),
-        color: parseColor(tags.Saturation),
-        noiseReduction: parseColor(tags.NoiseReduction),
-        sharpening: parseSharpness(tags.Sharpness),
-        clarity: typeof tags.Clarity === "number" ? tags.Clarity : 0,
-        grainEffect: (tags.GrainEffectRoughness && tags.GrainEffectRoughness !== "Off")
-          ? `${tags.GrainEffectRoughness}, ${tags.GrainEffectSize || "Small"}`
-          : "Off",
-        colorChromeEffect: tags.ColorChromeEffect || "Off",
-        colorChromeFXBlue: tags.ColorChromeFXBlue || "Off",
-        whiteBalance: `${wb}${wbShiftStr}`,
-        wbShift,
-        iso: tags.ISO ? `ISO ${tags.ISO}` : "ISO 125",
-        exposureCompensation: ecStr
-      };
-
-      const res = matchOrRecordRecipe(recipeDetails);
-      profile = res.profile;
-    } else {
-      profile = "Reala Ace · RAW Edit";
-    }
-  }
-
-  let dateTaken = "";
-  if (tags.DateTimeOriginal) {
-    try {
-      const dt = tags.DateTimeOriginal;
-      if (dt.year && dt.month && dt.day) {
-        const y = dt.year;
-        const m = String(dt.month).padStart(2, "0");
-        const d = String(dt.day).padStart(2, "0");
-        dateTaken = `${y}-${m}-${d}`;
-      } else if (typeof dt.toDate === "function") {
-        dateTaken = dt.toDate().toISOString().split("T")[0];
-      } else {
-        const raw = dt.rawValue || String(dt);
-        const match = raw.match(/^(\d{4})[:\-](\d{2})[:\-](\d{2})/);
-        if (match) {
-          dateTaken = `${match[1]}-${match[2]}-${match[3]}`;
-        }
-      }
-    } catch {}
-  }
-  if (!dateTaken) {
-    dateTaken = new Date().toISOString().split("T")[0];
-  }
+  const { profile, recipeDetails } = profileOverride ? { profile: profileOverride } : readProfile(tags);
 
   return {
     id,
     series: seriesName,
-    fileNumber: path.basename(file, ext).toUpperCase(),
+    fileNumber: fileNumberOf(inputPath),
     ...images,
-    camera,
-    lens,
-    aperture,
-    shutterSpeed,
-    iso,
-    focalLength,
+    camera: tags.Model ? `FUJIFILM ${String(tags.Model).replace(/^FUJIFILM\s*/i, "")}` : undefined,
+    lens: lensOverride || formatLensModel(tags.LensModel),
+    aperture: formatFNumber(tags.FNumber),
+    shutterSpeed: formatExposureTime(tags.ExposureTime),
+    iso: tags.ISO ? `ISO ${tags.ISO}` : undefined,
+    focalLength: formatFocalLength(tags.FocalLength, tags.FocalLengthIn35mmFormat),
     profile,
     recipeDetails,
-    dateTaken,
-    featured: false,
+    dateTaken: formatDateTaken(tags.DateTimeOriginal),
   };
 }
 
-function writePhotosFile(allPhotos) {
-  const uniqueMap = new Map();
-  for (const p of allPhotos) {
-    uniqueMap.set(p.id, p);
-  }
-  const photosArray = Array.from(uniqueMap.values());
-
-  const seriesCounts = {};
-  for (const p of photosArray) {
-    seriesCounts[p.series] = (seriesCounts[p.series] || 0) + 1;
+async function ingestFolder(targetDir, seriesName, overrides) {
+  const files = listImages(targetDir);
+  if (files.length === 0) {
+    console.log(`No images found in ${targetDir}`);
+    return;
   }
 
-  const seriesList = [
-    { id: "all", name: "All Works", count: photosArray.length },
-    ...Object.entries(seriesCounts).map(([name, count]) => ({
-      id: slugify(name),
-      name,
-      count
-    }))
-  ];
+  console.log(`\n--- Ingesting ${files.length} photos from ${targetDir} as "${seriesName}" ---`);
+  const photos = loadPhotos();
+  const byId = new Map(photos.map((p) => [p.id, p]));
 
-  const fileContent = `// Auto-generated by scripts/ingest.mjs
-// Accurate EXIF-based lens, simulation, and recipe metadata.
+  for (const file of files) {
+    const id = `${slugify(seriesName)}-${fileNumberOf(file).toLowerCase()}`;
+    const photo = await processSinglePhoto({ inputPath: path.join(targetDir, file), id, seriesName, ...overrides });
+    if (byId.has(id)) {
+      photos[photos.indexOf(byId.get(id))] = photo;
+    } else {
+      photos.push(photo);
+    }
+    byId.set(id, photo);
+  }
 
-export interface RecipeDetails {
-  filmSimulation: string;
-  dynamicRange?: string;
-  highlight?: number;
-  shadow?: number;
-  color?: number;
-  noiseReduction?: number;
-  sharpening?: number;
-  clarity?: number;
-  grainEffect?: string;
-  colorChromeEffect?: string;
-  colorChromeFXBlue?: string;
-  whiteBalance?: string;
-  wbShift?: [number, number];
-  iso?: string;
-  exposureCompensation?: string;
+  savePhotos(photos);
 }
 
-export interface Photo {
-  id: string;
-  title?: string;
-  series: string;
-  fileNumber: string;
-  displayUrl: string;
-  thumbUrl: string;
-  width: number;
-  height: number;
-  aspectRatio: number;
-  blurDataUrl: string;
-  camera: string;
-  lens: string;
-  aperture: string;
-  shutterSpeed: string;
-  iso: string;
-  focalLength: string;
-  profile?: string;
-  recipeDetails?: RecipeDetails;
-  dateTaken: string;
-  featured: boolean;
-}
+async function refreshFromFolders(dirs) {
+  const photos = loadPhotos();
+  const sources = new Map();
+  for (const dir of dirs) {
+    for (const file of listImages(dir)) {
+      const fileNumber = fileNumberOf(file);
+      sources.set(fileNumber, [...(sources.get(fileNumber) ?? []), path.join(dir, file)]);
+    }
+  }
 
-export const photos: Photo[] = ${JSON.stringify(photosArray, null, 2)};
+  const missing = [];
+  const ambiguous = [];
+  for (const [i, existing] of photos.entries()) {
+    const candidates = sources.get(existing.fileNumber) ?? [];
+    if (candidates.length === 0) {
+      missing.push(existing.id);
+      continue;
+    }
+    // The camera counter wraps at 9999, so one file number can exist in two folders
+    if (candidates.length > 1) {
+      ambiguous.push(`${existing.id}: ${candidates.join(", ")}`);
+      continue;
+    }
+    photos[i] = await processSinglePhoto({ inputPath: candidates[0], id: existing.id, seriesName: existing.series });
+  }
 
-export const seriesList = ${JSON.stringify(seriesList, null, 2)};
-`;
-
-  fs.mkdirSync(path.resolve("src/data"), { recursive: true });
-  fs.writeFileSync(path.resolve("src/data/photos.ts"), fileContent);
-  console.log(`\nSuccessfully updated src/data/photos.ts with ${photosArray.length} photos across ${Object.keys(seriesCounts).length} series!`);
+  savePhotos(photos);
+  if (missing.length > 0) {
+    console.log(`No source found for ${missing.length} photo(s), left unchanged:\n  ${missing.join("\n  ")}`);
+  }
+  if (ambiguous.length > 0) {
+    console.log(`Several sources for ${ambiguous.length} photo(s), left unchanged:\n  ${ambiguous.join("\n  ")}`);
+  }
 }
 
 async function run() {
+  const overrides = {};
+  const positional = [];
+  let refresh = false;
+
+  for (const arg of process.argv.slice(2)) {
+    if (arg.startsWith("--lens=")) overrides.lensOverride = arg.slice(7).replace(/^['"]|['"]$/g, "");
+    else if (arg.startsWith("--profile=")) overrides.profileOverride = arg.slice(10).replace(/^['"]|['"]$/g, "");
+    else if (arg === "--refresh") refresh = true;
+    else positional.push(arg);
+  }
+
+  if (positional.length === 0) {
+    console.log(USAGE);
+    process.exitCode = 1;
+    return;
+  }
+
+  const dirs = (refresh ? positional : positional.slice(0, 1)).map(resolveUserPath);
+  const notFound = dirs.filter((d) => !fs.existsSync(d));
+  if (notFound.length > 0) {
+    console.error(`Directory not found: ${notFound.join(", ")}`);
+    process.exitCode = 1;
+    return;
+  }
+
   try {
-    const rawArgs = process.argv.slice(2);
-    let lensOverride = null;
-    let profileOverride = null;
-    const positionalArgs = [];
-
-    for (const arg of rawArgs) {
-      if (arg.startsWith("--lens=")) {
-        lensOverride = arg.slice(7).replace(/^['"]|['"]$/g, "");
-      } else if (arg.startsWith("--profile=")) {
-        profileOverride = arg.slice(10).replace(/^['"]|['"]$/g, "");
-      } else {
-        positionalArgs.push(arg);
-      }
+    if (refresh) {
+      await refreshFromFolders(dirs);
+    } else {
+      await ingestFolder(dirs[0], positional[1] || path.basename(dirs[0]), overrides);
     }
-
-    if (positionalArgs.length > 0) {
-      const rawPath = positionalArgs[0];
-      const targetDir = resolveUserPath(rawPath);
-
-      if (!fs.existsSync(targetDir)) {
-        console.error(`Directory not found: ${targetDir}`);
-        process.exit(1);
-      }
-
-      const seriesName = positionalArgs[1] || path.basename(targetDir);
-      console.log(`\n--- Ingesting photos from: ${targetDir} as Series: "${seriesName}" ---`);
-      if (lensOverride) console.log(`Lens Override: ${lensOverride}`);
-      if (profileOverride) console.log(`Profile Override: ${profileOverride}`);
-
-      const existingPhotos = loadExistingPhotos();
-      console.log(`Found ${existingPhotos.length} existing photos in library.`);
-
-      const files = fs.readdirSync(targetDir).filter(f => /\.(jpe?g|png)$/i.test(f));
-      if (files.length === 0) {
-        console.log(`No images found in ${targetDir}`);
-        return;
-      }
-
-      const newPhotos = [];
-      for (const file of files) {
-        const p = await processSinglePhoto({
-          inputPath: path.join(targetDir, file),
-          seriesName,
-          profileOverride,
-          lensOverride,
-        });
-        newPhotos.push(p);
-      }
-
-      writePhotosFile([...existingPhotos, ...newPhotos]);
-      return;
-    }
-
-    // Default: Process baseline Hokkaido, Seoul, & Sokcho selection
-    const HOKKAIDO_DIR = resolveUserPath("~/Desktop/Untitled Export/Hokkaido 2025");
-    const KOREA_DIR = resolveUserPath("~/Desktop/Untitled Export/Korea 2025");
-    const SOKCHO_DIR = resolveUserPath("~/Desktop/Untitled Export/Sokcho 25 Photos");
-
-    const defaultList = [
-      { series: "Hokkaido 25", dir: HOKKAIDO_DIR, file: "DSCF2592.jpg" },
-      { series: "Hokkaido 25", dir: HOKKAIDO_DIR, file: "DSCF2621.jpg" },
-      { series: "Hokkaido 25", dir: HOKKAIDO_DIR, file: "DSCF2732.jpg" },
-      { series: "Hokkaido 25", dir: HOKKAIDO_DIR, file: "DSCF2792.jpg" },
-      { series: "Hokkaido 25", dir: HOKKAIDO_DIR, file: "DSCF2836.jpg" },
-      { series: "Hokkaido 25", dir: HOKKAIDO_DIR, file: "DSCF2972.jpg" },
-      { series: "Seoul 25", dir: KOREA_DIR, file: "DSCF2059.JPG" },
-      { series: "Seoul 25", dir: KOREA_DIR, file: "DSCF2110.jpg" },
-      { series: "Seoul 25", dir: KOREA_DIR, file: "DSCF2175.jpg" },
-      { series: "Seoul 25", dir: KOREA_DIR, file: "DSCF2220.jpg" },
-      { series: "Seoul 25", dir: KOREA_DIR, file: "DSCF2267.jpg" },
-      { series: "Seoul 25", dir: KOREA_DIR, file: "DSCF2316.jpg" },
-    ];
-
-    const existingPhotos = loadExistingPhotos();
-    const results = [];
-    for (const item of defaultList) {
-      if (fs.existsSync(path.join(item.dir, item.file))) {
-        const p = await processSinglePhoto({
-          inputPath: path.join(item.dir, item.file),
-          seriesName: item.series,
-        });
-        results.push(p);
-      }
-    }
-
-    writePhotosFile([...existingPhotos, ...results]);
   } finally {
     await exiftool.end();
   }
 }
 
-run().catch(console.error);
+run().catch((err) => {
+  console.error(err);
+  process.exitCode = 1;
+});

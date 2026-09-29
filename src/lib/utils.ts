@@ -21,3 +21,30 @@ export function formatSeasonYear(dateStr?: string): string {
 
   return `${season} ${year}`;
 }
+
+interface ExposureFields {
+  lens?: string;
+  focalLength?: string;
+  aperture?: string;
+  shutterSpeed?: string;
+  iso?: string;
+}
+
+/** "FUJINON XF70-300mmF4-5.6 R LM OIS WR" -> "XF70-300mmF4-5.6" */
+export function shortLensName(lens?: string): string | undefined {
+  return lens
+    ?.replace(/^FUJINON\s+/i, "")
+    .replace(/\s+R\s+LM\s+OIS\s+WR$/i, "")
+    .replace(/\s+R\s+LM\s+WR$/i, "")
+    .replace(/\s+R\s+WR$/i, "");
+}
+
+/** Focal length, or the lens name when EXIF has no focal length. */
+export function focalOrLens(photo: ExposureFields): string | undefined {
+  return photo.focalLength || photo.lens?.replace(/^FUJINON\s+/i, "");
+}
+
+/** "ƒ/5.6 · 1/250s · ISO 500", skipping values EXIF didn't have. */
+export function exposureSummary(photo: ExposureFields): string {
+  return [photo.aperture, photo.shutterSpeed, photo.iso].filter(Boolean).join(" · ");
+}

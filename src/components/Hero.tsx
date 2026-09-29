@@ -170,7 +170,7 @@ export function Hero({ onSelectSeries }: HeroProps) {
                 {currentPlace.name}
               </span>
               <span className="tracking-wider text-zinc-500">
-                {previewPhoto.aperture} · {previewPhoto.focalLength}
+                {[previewPhoto.aperture, previewPhoto.focalLength].filter(Boolean).join(" · ")}
               </span>
             </div>
           </motion.div>

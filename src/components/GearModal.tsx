@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Camera, Aperture, Layers, Cpu, Instagram, Mail } from "lucide-react";
+import { X, Camera, Aperture, Layers, Cpu, Github, Instagram, Mail } from "lucide-react";
 import { useBodyScrollLock, useDialogFocus } from "@/lib/dialog";
 
 interface GearModalProps {
@@ -144,7 +144,7 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
                 <span>Web Architecture & Stack</span>
               </div>
               <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-light mb-3">
-                Designed and built from scratch by me rather than using a pre-made template. Focused on fast global delivery, zero layout shift, and fluid gesture mechanics for high-resolution images.
+                Designed and built from scratch by me rather than using a pre-made template. Focused on fast delivery, a layout that doesn&apos;t jump while photos load, and fluid gestures for high-resolution images.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 border-t border-white/5 text-xs">
                 <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/5">
@@ -159,15 +159,24 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
                 </div>
                 <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/5">
                   <span className="font-mono text-[10px] text-zinc-500 uppercase tracking-wider block mb-0.5">Performance</span>
-                  <div className="font-medium text-zinc-200">Zero CLS Image Pipeline</div>
-                  <div className="text-[11px] text-zinc-400 mt-0.5">Precomputed ratios & blur previews</div>
+                  <div className="font-medium text-zinc-200">Stable Image Layout</div>
+                  <div className="text-[11px] text-zinc-400 mt-0.5">Sizes known before load, so nothing jumps</div>
                 </div>
                 <div className="p-2.5 rounded-lg bg-white/[0.02] border border-white/5">
                   <span className="font-mono text-[10px] text-zinc-500 uppercase tracking-wider block mb-0.5">Infrastructure</span>
-                  <div className="font-medium text-zinc-200">Vercel Edge Network</div>
-                  <div className="text-[11px] text-zinc-400 mt-0.5">Global edge caching & fast cold starts</div>
+                  <div className="font-medium text-zinc-200">Static Site on Vercel</div>
+                  <div className="text-[11px] text-zinc-400 mt-0.5">Pre-rendered pages, edge-cached images</div>
                 </div>
               </div>
+              <a
+                href="https://github.com/mihail-kovashki/photo-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center gap-1.5 text-xs font-mono text-zinc-400 hover:text-white transition-colors"
+              >
+                <Github className="w-3.5 h-3.5" />
+                <span>Source on GitHub</span>
+              </a>
             </div>
           </div>
 

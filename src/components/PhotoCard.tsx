@@ -61,14 +61,6 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
             className="object-cover transition-all duration-700 group-hover:scale-[1.02]"
           />
 
-          {/* Profile / Raw Edit Badge */}
-          {photo.profile && (
-            <div className="absolute top-4 left-4 z-10">
-              <span className="text-[10px] font-mono tracking-wider uppercase px-2.5 py-1 rounded-md backdrop-blur-md bg-black/60 text-zinc-200 border border-white/10">
-                {photo.profile}
-              </span>
-            </div>
-          )}
 
           {/* Expand icon on hover */}
           <div className="absolute top-4 right-4 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -136,14 +128,6 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
             className="object-cover"
           />
 
-          {/* Profile / Raw Edit Badge */}
-          {photo.profile && (
-            <div className="absolute top-3 left-3 z-10">
-              <span className="text-[9px] font-mono tracking-wider uppercase px-2 py-0.5 rounded backdrop-blur-md bg-black/60 text-zinc-300 border border-white/10">
-                {photo.profile}
-              </span>
-            </div>
-          )}
 
           {/* Hover Expand Icon (Desktop only) */}
           <div className="hidden sm:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

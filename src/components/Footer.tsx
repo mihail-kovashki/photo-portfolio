@@ -41,18 +41,11 @@ export function Footer() {
             </button>
           </div>
 
-          {/* Camera System Badge with Signature Red Accent Dot */}
-          <div className="flex items-center gap-2 text-zinc-400 text-xs">
+          {/* Copyright with Signature Red Accent Dot */}
+          <div className="flex items-center gap-2 text-[11px] text-zinc-500 tracking-wide">
             <span className="w-2 h-2 rounded-full bg-[#d93829] shadow-[0_0_8px_rgba(217,56,41,0.6)]" />
-            <span>FUJIFILM X-T5 · Fujinon Optics</span>
+            <span>© {new Date().getFullYear()} Mihail Kovashki</span>
           </div>
-
-          {/* Balanced Colophon / Copyright */}
-          <p className="text-[11px] text-zinc-500 tracking-wide leading-relaxed">
-            © {new Date().getFullYear()} Mihail Kovashki (MiKo)
-            <br />
-            <span className="text-zinc-600">All photographs original.</span>
-          </p>
         </div>
 
         {/* Desktop Layout (>= sm): 3-Column Editorial Bar */}
@@ -60,7 +53,7 @@ export function Footer() {
           {/* Left: Copyright */}
           <div className="flex items-center gap-2.5">
             <span className="w-2 h-2 rounded-full bg-[#d93829] shadow-[0_0_8px_rgba(217,56,41,0.6)]" />
-            <span>© {new Date().getFullYear()} Mihail Kovashki (MiKo). All photographs original.</span>
+            <span>© {new Date().getFullYear()} Mihail Kovashki</span>
           </div>
 
           {/* Center: Social & Contact */}
@@ -83,8 +76,6 @@ export function Footer() {
               <Mail className="w-3.5 h-3.5 text-zinc-500 group-hover:text-[#6d4aff] transition-colors" />
               <span>mihail.kovashki@proton.me</span>
             </a>
-            <span className="hidden lg:inline text-zinc-700">·</span>
-            <span className="hidden lg:inline text-zinc-500">FUJIFILM X-T5</span>
           </div>
 
           {/* Right: Scroll to top */}

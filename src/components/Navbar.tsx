@@ -111,10 +111,10 @@ export function Navbar({ onOpenGear, activeSeries, onSelectSeries, seriesList = 
                 / miko
               </span>
             </div>
-            <span className="text-[11px] tracking-widest text-zinc-400 font-mono flex items-center gap-1.5 whitespace-nowrap">
-              <span>FUJIFILM X-T5</span>
+            <span className="text-[11px] tracking-widest uppercase text-zinc-400 font-mono flex items-center gap-1.5 whitespace-nowrap">
+              <span>Photo journal</span>
               <span className="hidden xl:inline text-zinc-600">·</span>
-              <span className="hidden xl:inline text-zinc-400">Fujinon Glass</span>
+              <span className="hidden xl:inline text-zinc-400">Film recipes</span>
             </span>
           </div>
         </div>

@@ -9,9 +9,9 @@ export const SITE_URL =
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
     : "https://miko-photo.vercel.app");
 
-export const SITE_NAME = "Mihail Kovashki (MiKo) · Fujifilm Photography";
+export const SITE_NAME = "Mihail Kovashki (MiKo) · Photography";
 export const SITE_DESCRIPTION =
-  "Visual stories and personal photographic chronicles by Mihail Kovashki (MiKo) captured with the Fujifilm X-T5 & Fujinon XF optics.";
+  "The photo journal of Mihail Kovashki (MiKo): street scenes, landscapes and quiet moments from travels, with the Fujifilm film recipes behind the shots.";
 
 /** Page title for a collection id; the site name for everything. */
 export function collectionTitle(seriesId: string): string {

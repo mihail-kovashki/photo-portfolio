@@ -7,19 +7,9 @@ const nextConfig: NextConfig = {
   },
   images: {
     // Disable runtime image optimization since all photos are already pre-scaled
-    // (display: 2048px, thumb: 600px) and compressed offline during ingestion.
+    // (display: 2048px, thumb: 800px) and compressed offline during ingestion.
     // This avoids consuming Vercel's free-tier limit of 1,000 image optimizations/mo.
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-      {
-        protocol: "https",
-        hostname: "cdn.sanity.io",
-      }
-    ],
   },
   // Aggressive immutable caching for static photography assets
   async headers() {

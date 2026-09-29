@@ -1,10 +1,3 @@
-import { type ClassValue, clsx } from "clsx"
-import { twMerge } from "tailwind-merge"
-
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
-}
-
 /**
  * Formats an ISO date string (e.g. "2026-07-02" or "2025-09-28") into an evocative Season + Year string,
  * such as "Summer 2026" or "Autumn 2025".

@@ -187,5 +187,28 @@
       0
     ],
     "source": "Fuji X Weekly"
+  },
+  {
+    "id": "amber-negative",
+    "name": "Amber Negative",
+    "filmSimulation": "Classic Negative",
+    "dynamicRange": "DR200",
+    "highlight": -1.5,
+    "shadow": 0,
+    "color": 3,
+    "noiseReduction": -2,
+    "sharpening": 2,
+    "clarity": 0,
+    "grainEffect": "Off",
+    "colorChromeEffect": "Off",
+    "colorChromeFXBlue": "Off",
+    "whiteBalance": "Auto",
+    "wbShift": [
+      2,
+      -4
+    ],
+    "source": "Custom, tested at Children's Grand Park, Seoul",
+    "userCustom": true,
+    "firstSeen": "2025-09-06"
   }
 ]

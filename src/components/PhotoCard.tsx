@@ -1,7 +1,8 @@
 "use client";
 
+import { useRef, useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
 import { Maximize2 } from "lucide-react";
 import type { Photo } from "@/data/photos";
 import { formatSeasonYear, focalOrLens, exposureSummary } from "@/lib/utils";
@@ -11,6 +12,56 @@ interface PhotoCardProps {
   index: number;
   onOpen: (photo: Photo) => void;
   layoutMode?: "masonry" | "story";
+}
+
+// A photo "develops" out of its blurred preview once it has loaded and is on screen.
+// When a row develops together it sweeps left to right: the delay follows the column
+// the card actually sits in, so it holds whatever order or hiding curation.ts applies.
+const DEVELOP_COLUMN_DELAY_MS = 90;
+
+function setDevelopDelay(el: HTMLElement) {
+  const grid = el.closest<HTMLElement>("[data-photo-grid]");
+  if (!grid) return;
+  const g = grid.getBoundingClientRect();
+  const r = el.getBoundingClientRect();
+  if (!r.width) return;
+  const columns = Math.max(1, Math.round(g.width / r.width));
+  const column = Math.min(columns - 1, Math.max(0, Math.floor((r.left + r.width / 2 - g.left) / (g.width / columns))));
+  el.style.setProperty("--develop-delay", `${column * DEVELOP_COLUMN_DELAY_MS}ms`);
+}
+
+interface DevelopingImageProps {
+  src: string;
+  alt: string;
+  blurDataURL: string;
+  sizes: string;
+  priority?: boolean;
+  className?: string;
+}
+
+function DevelopingImage({ src, alt, blurDataURL, sizes, priority, className }: DevelopingImageProps) {
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const inView = useInView(wrapperRef, { once: true, amount: 0.15 });
+  const [loaded, setLoaded] = useState(false);
+
+  return (
+    <div ref={wrapperRef} className="photo-develop absolute inset-0" data-developed={loaded && inView}>
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        priority={priority}
+        placeholder="blur"
+        blurDataURL={blurDataURL}
+        sizes={sizes}
+        className={className}
+        onLoad={() => {
+          if (wrapperRef.current) setDevelopDelay(wrapperRef.current);
+          setLoaded(true);
+        }}
+      />
+    </div>
+  );
 }
 
 // Cards contain block content, so they are buttons by role rather than <button>
@@ -37,13 +88,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
 
   if (layoutMode === "story") {
     return (
-      <motion.article
-        initial={{ opacity: 0, y: 28 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.6, delay: 0.05 }}
-        className="max-w-5xl mx-auto mb-10 sm:mb-14 group"
-      >
+      <article className="max-w-5xl mx-auto mb-10 sm:mb-14 group">
         {/* Story Photo Image */}
         <div
           {...openProps}
@@ -51,12 +96,10 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
           className={`${FOCUS_RING} relative w-full overflow-hidden rounded-2xl cursor-pointer bg-zinc-900 border border-white/5 shadow-2xl transition-transform duration-500 group-hover:scale-[1.008]`}
           style={{ aspectRatio: photo.aspectRatio }}
         >
-          <Image
+          <DevelopingImage
             src={photo.displayUrl}
             alt={photo.title || `${photo.series} ${photo.fileNumber}`}
-            fill
             priority={index < 2}
-            placeholder="blur"
             blurDataURL={photo.blurDataUrl}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
             className="object-cover transition-all duration-700 group-hover:scale-[1.02]"
@@ -99,17 +142,13 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
               ))}
           </div>
         </div>
-      </motion.article>
+      </article>
     );
   }
 
   // Masonry Grid View
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
+    <div
       {...openProps}
       className={`${FOCUS_RING} break-inside-avoid mb-6 group cursor-pointer rounded-xl`}
     >
@@ -119,11 +158,9 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
           className="relative w-full overflow-hidden transition-transform duration-700 ease-out group-hover:scale-105"
           style={{ aspectRatio: photo.aspectRatio }}
         >
-          <Image
+          <DevelopingImage
             src={photo.thumbUrl}
             alt={photo.title || `${photo.series} ${photo.fileNumber}`}
-            fill
-            placeholder="blur"
             blurDataURL={photo.blurDataUrl}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover"
@@ -171,6 +208,6 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
           </span>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

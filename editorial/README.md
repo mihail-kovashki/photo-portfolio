@@ -113,6 +113,7 @@ bulk keyword rewrite.
 | `black-and-white` | Vietnam 2024 (St. Joseph's), Korea 2024 (Yeosu swimmer) | Two frames so far |
 | `sun-in-frame` | Many sunsets and sunrises | Currently part of `golden-hour`; useful mainly for filtering |
 | `markets` | Madeira (Funchal market), Vietnam (Hanoi Old Quarter), Hokkaido (Otaru glass shops) | Close to three trips, but mostly a frame or two each |
+| `waterfalls` | Seoraksan (Biryong, Towangseong), probably Madeira, Hokkaido, Vietnam | DSCF3618 fits no tag today |
 | `boats` | Vietnam (Ha Long, Ninh Binh), Copenhagen, Hokkaido (Otaru) | Might be a chapter rather than a tag |
 
 ### Log

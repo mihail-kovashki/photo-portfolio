@@ -64,6 +64,11 @@ function DevelopingImage({ src, alt, blurDataURL, sizes, priority, className }: 
   );
 }
 
+// Hover lifts the print instead of zooming the photo, so the crop is never altered.
+// The lift itself is motion-safe; border and shadow still respond with reduced motion.
+const HOVER_LIFT =
+  "transition-[translate,box-shadow,border-color] duration-300 ease-out group-hover:border-white/20 group-hover:shadow-[0_18px_40px_rgba(0,0,0,0.75)] motion-safe:group-hover:-translate-y-1";
+
 // Cards contain block content, so they are buttons by role rather than <button>
 const FOCUS_RING =
   "outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-4 focus-visible:ring-offset-[#09090b]";
@@ -93,7 +98,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
         <div
           {...openProps}
           data-photo-thumb={photo.id}
-          className={`${FOCUS_RING} relative w-full overflow-hidden rounded-2xl cursor-pointer bg-zinc-900 border border-white/5 shadow-2xl transition-transform duration-500 group-hover:scale-[1.008]`}
+          className={`${FOCUS_RING} relative w-full overflow-hidden rounded-2xl cursor-pointer bg-zinc-900 border border-white/5 shadow-2xl ${HOVER_LIFT}`}
           style={{ aspectRatio: photo.aspectRatio }}
         >
           <DevelopingImage
@@ -102,7 +107,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
             priority={index < 2}
             blurDataURL={photo.blurDataUrl}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-            className="object-cover transition-all duration-700 group-hover:scale-[1.02]"
+            className="object-cover"
           />
 
 
@@ -152,12 +157,9 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
       {...openProps}
       className={`${FOCUS_RING} break-inside-avoid mb-6 group cursor-pointer rounded-xl`}
     >
-      <div data-photo-thumb={photo.id} className="relative w-full overflow-hidden rounded-xl bg-zinc-900 border border-white/5 shadow-xl transition-all duration-500 group-hover:border-white/20 group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
+      <div data-photo-thumb={photo.id} className={`relative w-full overflow-hidden rounded-xl bg-zinc-900 border border-white/5 shadow-xl ${HOVER_LIFT}`}>
         {/* Aspect Ratio Container */}
-        <div
-          className="relative w-full overflow-hidden transition-transform duration-700 ease-out group-hover:scale-105"
-          style={{ aspectRatio: photo.aspectRatio }}
-        >
+        <div className="relative w-full overflow-hidden" style={{ aspectRatio: photo.aspectRatio }}>
           <DevelopingImage
             src={photo.thumbUrl}
             alt={photo.title || `${photo.series} ${photo.fileNumber}`}
@@ -175,8 +177,8 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
           </div>
 
           {/* Overlay gradient (Desktop hover only) */}
-          <div className="hidden sm:flex absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex-col justify-end p-4">
-            <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+          <div className="hidden sm:flex absolute inset-x-0 bottom-0 h-2/5 min-h-24 bg-gradient-to-t from-black/60 via-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex-col justify-end p-4 [text-shadow:0_1px_8px_rgba(0,0,0,0.6)]">
+            <div className="translate-y-2 group-hover:translate-y-0 transition-transform duration-300 ease-out">
               <h4 className="text-base font-serif text-white tracking-wide">
                 {displayTitle}
               </h4>

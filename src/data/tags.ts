@@ -89,9 +89,9 @@ export const tags: Tag[] = [
     id: "new-architecture",
     facet: "subject",
     name: "New architecture",
-    description: "Modern buildings as the subject.",
-    appliesWhen: "A modern building is the point of the frame, judged on form and light rather than fame.",
-    examples: ["Malmö library and Turning Torso", "Copenhagen harbour", "Seoul museums", "Hill of the Buddha"],
+    description: "Modern buildings and towers as the subject.",
+    appliesWhen: "A modern building or tower is the point of the frame, judged on form and light rather than fame.",
+    examples: ["Malmö library and Turning Torso", "Lotte Tower and N Seoul Tower", "Seoul museums", "Hill of the Buddha"],
   },
   {
     id: "waterfront",

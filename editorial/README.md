@@ -40,6 +40,42 @@ the Madeira one starts with a day in Charleroi), so every pass starts by mapping
 - The site's input is a folder of finished JPEGs with those keywords, plus the text here.
   Lightroom exports and Google Photos downloads both produce it.
 
+## Judging finished photos
+
+The editorial pass works on finished exports, not raw material, so it judges them
+differently from culling (`taste.md`):
+
+- **Judge what the viewer sees.** The edit is part of the photo: colour, contrast and
+  exposure count as shown. The crop is final; no credit for what a crop could do.
+  Near-duplicates can differ by their edit as well as the moment.
+- **Everything here already passed a first filter** when I chose to export it. Ratings
+  are relative to that: a 2 means "less strong here", not "bad".
+- **5★ is measured against the portfolio, not the session.** Several in a great session
+  are fine, none in a weak one. Check each against the existing 5★ frames; the home page
+  (20–30 photos) is the natural ceiling.
+- **Stars rank frames; the sequence decides roles.** A frame can hold a position its
+  stars alone wouldn't give it: a wide establishing shot can open a chapter at 3★, and a
+  quiet favourite can close one.
+- **One establishing shot per chapter, at most.** Wide city views rarely earn a 4 on
+  their own (everyone's phone takes them), but one can say "here's where we are" before
+  the tighter frames.
+- **Near-duplicate runs collapse to one pick,** plus a real variation only if it adds a
+  different moment, framing or light.
+
+## Chapters and selection
+
+- **Fewer, fuller chapters.** A chapter has about five photos or more; a place has three
+  to five chapters. A smaller set folds into a neighbour, decided by location or by one
+  continuous walk (Seoul: the Wall joined Gwanghwamun, the flower field joined the evening
+  in Anguk). Tiny sections also read badly on the site.
+- **My override beats the stars, and it's recorded.** A frame I want in stays at its
+  rating as a frame, but gets its place because I chose it, noted as my pick (Seoul: the
+  2★ "People of the palace" cover).
+- **Stragglers are parked, not dropped.** Good photos that fit no chapter go on the
+  place's parked list; enough of them can become an "Around <place>" chapter later.
+  Deliberate drops (a great memory, a weak photo) are logged separately so they aren't
+  reconsidered by accident.
+
 ## Tags
 
 The vocabulary is [`src/data/tags.ts`](../src/data/tags.ts): 22 tags, 16 for subject and
@@ -72,3 +108,5 @@ bulk keyword rewrite.
 
 - 2026-09-30: v1, 22 tags, from a survey of 8 albums (1,368 photos, 2024–2026).
   `parks-and-gardens` added after review.
+- 2026-09-30: `new-architecture` now includes towers when they're the subject (Lotte Tower,
+  N Seoul Tower; later the Sapporo TV tower).

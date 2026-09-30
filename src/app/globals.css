@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 :root {
+  /* Height Story mode keeps free for the fixed header and a photo's caption */
+  --story-reserve: 11rem;
   --background: #09090b;
   --foreground: #f4f4f5;
   --card: #121215;
@@ -70,6 +72,14 @@ body {
 .scrollbar-none {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Very short screens (phones in landscape): reserve room for the header only, so the
+   photo fills the height and its caption sits a short scroll below */
+@media (max-height: 500px) {
+  :root {
+    --story-reserve: 4.5rem;
+  }
 }
 
 /* Photo "developing": a card's image resolves from its blurred preview once it has

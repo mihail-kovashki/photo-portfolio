@@ -69,6 +69,14 @@ function DevelopingImage({ src, alt, blurDataURL, sizes, priority, className }: 
 const HOVER_LIFT =
   "transition-[translate,box-shadow,border-color] duration-300 ease-out group-hover:border-white/20 group-hover:shadow-[0_18px_40px_rgba(0,0,0,0.75)] motion-safe:group-hover:-translate-y-1";
 
+// Story mode sizes each photo so the whole frame and its caption fit on screen: height
+// is capped at the viewport minus room for the fixed header and the caption
+// (--story-reserve, smaller on very short screens; see globals.css), and width follows
+// the photo's proportions (never wider than 64rem or the column).
+function storyWidth(aspectRatio: number) {
+  return `min(64rem, 100%, calc((100svh - var(--story-reserve)) * ${aspectRatio}))`;
+}
+
 // Cards contain block content, so they are buttons by role rather than <button>
 const FOCUS_RING =
   "outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-4 focus-visible:ring-offset-[#09090b]";
@@ -93,7 +101,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
 
   if (layoutMode === "story") {
     return (
-      <article className="max-w-5xl mx-auto mb-10 sm:mb-14 group">
+      <article className="mx-auto mb-10 sm:mb-14 group" style={{ width: storyWidth(photo.aspectRatio) }}>
         {/* Story Photo Image */}
         <div
           {...openProps}
@@ -120,7 +128,8 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
         </div>
 
         {/* Story Caption & Technical Specs Drawer */}
-        <div className="mt-3.5 px-1.5 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5 sm:gap-4">
+        {/* Wraps: on narrow (portrait) photos the specs drop below the title */}
+        <div className="mt-3.5 px-1.5 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
           <div className="flex items-baseline gap-3 flex-wrap">
             <h3 className="text-base sm:text-lg font-serif tracking-wide text-zinc-100 group-hover:text-white transition-colors">
               {displayTitle}
@@ -131,7 +140,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
           </div>
 
           {/* Technical Specs Strip in refined mono */}
-          <div className="flex items-center gap-2 text-xs font-mono text-zinc-400">
+          <div className="flex items-center gap-2 text-xs font-mono text-zinc-400 whitespace-nowrap">
             {[
               { key: "focal", value: focal },
               { key: "aperture", value: photo.aperture, className: "text-zinc-300" },

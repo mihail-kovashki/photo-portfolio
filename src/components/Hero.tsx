@@ -8,7 +8,9 @@ import { preferredScrollBehavior } from "@/lib/utils";
 // Departure-board flipper: the hero names a trip and flips through the others once,
 // oldest to newest, then settles back on the latest. Hovering starts another pass;
 // clicking opens that trip's collection.
-const FLIP_INTERVAL_MS = 4000;
+const FLIP_INTERVAL_MS = 2500;
+// The first flip comes sooner, while visitors are still at the top of the page
+const FIRST_FLIP_DELAY_MS = 1500;
 const RESTART_DELAY_MS = 600;
 
 const latestIndex = trips.length - 1;
@@ -22,7 +24,7 @@ export function Hero({ onSelectSeries }: HeroProps) {
   const [index, setIndex] = useState(latestIndex);
   // Flips left in the current pass. A full pass visits every trip and ends on the latest.
   const [flipsLeft, setFlipsLeft] = useState(trips.length);
-  const [nextDelay, setNextDelay] = useState(FLIP_INTERVAL_MS);
+  const [nextDelay, setNextDelay] = useState(FIRST_FLIP_DELAY_MS);
 
   useEffect(() => {
     if (reduceMotion || flipsLeft === 0 || trips.length < 2) return;

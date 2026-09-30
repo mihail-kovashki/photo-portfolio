@@ -3,6 +3,7 @@
 
 import generated from "./photos.json";
 import { photoCuration, photoOrder } from "./curation";
+import { findCollection, type Chapter } from "./collections";
 
 export interface RecipeDetails {
   filmSimulation: string;
@@ -42,6 +43,11 @@ export interface GeneratedPhoto {
   profile?: string;
   recipeDetails?: RecipeDetails;
   dateTaken?: string;
+  /** Editorial keywords from the file: site|place|<id> and site|tag|<id>. */
+  place?: string;
+  tags?: string[];
+  /** Star rating from the file (1–5). */
+  rating?: number;
 }
 
 export interface Photo extends GeneratedPhoto {
@@ -81,7 +87,8 @@ export const photos: Photo[] = generatedPhotos
   .map((p) => ({
     ...p,
     title: photoCuration[p.id]?.title,
-    featured: photoCuration[p.id]?.featured ?? false,
+    // 5★ means portfolio hero; curation.ts can still override either way
+    featured: photoCuration[p.id]?.featured ?? p.rating === 5,
   }))
   // Stable sort: listed photos first in their listed order, the rest keep ingest order
   .sort((a, b) => (orderIndex.get(a.id) ?? unlisted) - (orderIndex.get(b.id) ?? unlisted));
@@ -107,7 +114,39 @@ export function findSeries(seriesId: string): SeriesItem | undefined {
 export function photosInSeries(seriesId: string): Photo[] {
   const series = findSeries(seriesId);
   if (!series || series.id === ALL_SERIES_ID) return photos;
-  return photos.filter((p) => p.series === series.name);
+  const inSeries = photos.filter((p) => p.series === series.name);
+  const chapters = chaptersFor(seriesId);
+  if (!chapters) return inSeries;
+  // A place with a collection shows its chapters in order; anything outside them follows
+  const ordered = chapters.flatMap((c) => c.photos);
+  return [...ordered, ...inSeries.filter((p) => !ordered.includes(p))];
+}
+
+export interface ResolvedChapter extends Omit<Chapter, "photos"> {
+  photos: Photo[];
+}
+
+const chapterCache = new Map<string, ResolvedChapter[] | undefined>();
+
+/** A place's chapters with their photos resolved, or undefined if it has no collection. */
+export function chaptersFor(seriesId: string): ResolvedChapter[] | undefined {
+  if (chapterCache.has(seriesId)) return chapterCache.get(seriesId);
+  const collection = findCollection(seriesId);
+  const series = findSeries(seriesId);
+  let resolved: ResolvedChapter[] | undefined;
+  if (collection && series) {
+    const byFile = new Map(photos.filter((p) => p.series === series.name).map((p) => [p.fileNumber, p]));
+    resolved = collection.chapters.map((c) => ({
+      ...c,
+      photos: c.photos.map((f) => byFile.get(f)).filter((p): p is Photo => Boolean(p)),
+    }));
+    const missing = collection.chapters.flatMap((c) => c.photos).filter((f) => !byFile.has(f));
+    if (missing.length > 0) {
+      console.warn(`collections/${seriesId}: photos not in the library (re-ingest?): ${missing.join(", ")}`);
+    }
+  }
+  chapterCache.set(seriesId, resolved);
+  return resolved;
 }
 
 /** Path for a collection: "/" for everything, "/prague-26" for one collection. */

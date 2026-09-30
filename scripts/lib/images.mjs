@@ -65,6 +65,13 @@ async function renderBlurDataUrl(inputPath) {
   return `data:image/jpeg;base64,${data.toString("base64")}`;
 }
 
+/** Deletes every rendered variant of a photo, for photos leaving the library. */
+export function removePhotoImages(id) {
+  for (const dir of [DISPLAY_DIR, THUMB_DIR]) {
+    if (fs.existsSync(dir)) removeStaleVariants(dir, id, null);
+  }
+}
+
 /**
  * Renders the display image, thumbnail and blur placeholder for one photo, removes
  * any older variants of the same id, and returns the fields photos.ts stores.

@@ -13,6 +13,7 @@ import {
   photos,
   seriesList,
   photosInSeries,
+  chaptersFor,
   findSeries,
   seriesPath,
   ALL_SERIES_ID,
@@ -74,6 +75,7 @@ export function Gallery({ initialSeries }: GalleryProps) {
   );
 
   const filteredPhotos = useMemo(() => photosInSeries(activeSeries), [activeSeries]);
+  const chapters = useMemo(() => chaptersFor(activeSeries), [activeSeries]);
 
   // Each collection is its own page (/prague-26): switching pushes a history entry
   const handleSelectSeries = useCallback((seriesId: string) => {
@@ -141,6 +143,7 @@ export function Gallery({ initialSeries }: GalleryProps) {
           {/* Dynamic Photo Gallery */}
           <PhotoGrid
             photos={filteredPhotos}
+            chapters={chapters}
             onOpenPhoto={handleOpenPhoto}
             layoutMode={layoutMode}
           />

@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import os from "os";
 import { exiftool } from "exiftool-vendored";
-import { renderPhotoImages } from "./lib/images.mjs";
+import { renderPhotoImages, removePhotoImages } from "./lib/images.mjs";
 
 const RECIPES_FILE = path.resolve("src/data/recipes.json");
 // Generated data only. Titles, featured, hidden and order live in src/data/curation.ts,
@@ -12,6 +12,11 @@ const PHOTOS_FILE = path.resolve("src/data/photos.json");
 const USAGE = `Usage:
   npm run ingest -- <folder> ["Series Name"] [--lens="..."] [--profile="..."]
       Add or update every JPEG in <folder> as the given series (default: folder name).
+
+  npm run ingest -- <folder> ["Series Name"] --keyworded
+      Editorial mode: ingest only the photos carrying a site|place keyword, and make them
+      the series' complete set, removing any earlier photos of that series. The place
+      keyword must match the series id (e.g. site|place|seoul-25 for "Seoul 25").
 
   npm run ingest -- --refresh <folder> [<folder>...]
       Re-render images and re-read EXIF for photos already in the library, matched by
@@ -296,12 +301,31 @@ function readProfile(tags) {
   return { profile: matchOrRecordRecipe(recipeDetails).profile, recipeDetails };
 }
 
+// Tag ids from the vocabulary, so a keyword typo is reported instead of becoming a tag
+const KNOWN_TAG_IDS = new Set(
+  [...fs.readFileSync(path.resolve("src/data/tags.ts"), "utf8").matchAll(/id: "([a-z-]+)"/g)].map((m) => m[1])
+);
+
+// Editorial keywords: site|place|<id> and site|tag|<id> (Lightroom's hierarchical keywords)
+function readSiteKeywords(tags, file) {
+  const raw = tags.HierarchicalSubject ?? [];
+  const keywords = (Array.isArray(raw) ? raw : [raw]).map(String);
+  const place = keywords.find((k) => k.startsWith("site|place|"))?.split("|")[2];
+  const siteTags = keywords.filter((k) => k.startsWith("site|tag|")).map((k) => k.split("|")[2]);
+  for (const t of siteTags) {
+    if (!KNOWN_TAG_IDS.has(t)) console.warn(`⚠️  ${file}: unknown tag "${t}" (not in src/data/tags.ts)`);
+  }
+  return { place, tags: siteTags.length > 0 ? siteTags : undefined };
+}
+
 async function processSinglePhoto({ inputPath, id, seriesName, profileOverride = null, lensOverride = null }) {
   console.log(`Processing: ${path.basename(inputPath)} -> ${id}`);
 
   const images = await renderPhotoImages(inputPath, id);
   const tags = await exiftool.read(inputPath);
   const { profile, recipeDetails } = profileOverride ? { profile: profileOverride } : readProfile(tags);
+  const { place, tags: siteTags } = readSiteKeywords(tags, path.basename(inputPath));
+  const rating = typeof tags.Rating === "number" && tags.Rating > 0 ? tags.Rating : undefined;
 
   return {
     id,
@@ -317,18 +341,51 @@ async function processSinglePhoto({ inputPath, id, seriesName, profileOverride =
     profile,
     recipeDetails,
     dateTaken: formatDateTaken(tags.DateTimeOriginal),
+    place,
+    tags: siteTags,
+    rating,
   };
 }
 
-async function ingestFolder(targetDir, seriesName, overrides) {
-  const files = listImages(targetDir);
+async function ingestFolder(targetDir, seriesName, overrides, keyworded) {
+  let files = listImages(targetDir);
+  const seriesId = slugify(seriesName);
+
+  if (keyworded) {
+    // Only photos the editorial pass selected: those carrying a site|place keyword
+    const selected = [];
+    for (const file of files) {
+      const { place } = readSiteKeywords(await exiftool.read(path.join(targetDir, file)), file);
+      if (!place) continue;
+      if (place !== seriesId) {
+        console.warn(`⚠️  ${file}: place keyword "${place}" doesn't match series "${seriesId}"; skipped`);
+        continue;
+      }
+      selected.push(file);
+    }
+    console.log(`Keyworded: ${selected.length} of ${files.length} photos carry site|place|${seriesId}`);
+    files = selected;
+  }
+
   if (files.length === 0) {
-    console.log(`No images found in ${targetDir}`);
+    console.log(`No images to ingest from ${targetDir}`);
     return;
   }
 
   console.log(`\n--- Ingesting ${files.length} photos from ${targetDir} as "${seriesName}" ---`);
-  const photos = loadPhotos();
+  let photos = loadPhotos();
+
+  if (keyworded) {
+    // The keyworded files are the series' complete set: drop anything else in it
+    const keep = new Set(files.map((f) => `${seriesId}-${fileNumberOf(f).toLowerCase()}`));
+    const leaving = photos.filter((p) => slugify(p.series) === seriesId && !keep.has(p.id));
+    for (const p of leaving) {
+      removePhotoImages(p.id);
+      console.log(`Removed: ${p.id}`);
+    }
+    photos = photos.filter((p) => !leaving.includes(p));
+  }
+
   const byId = new Map(photos.map((p) => [p.id, p]));
 
   for (const file of files) {
@@ -384,11 +441,13 @@ async function run() {
   const overrides = {};
   const positional = [];
   let refresh = false;
+  let keyworded = false;
 
   for (const arg of process.argv.slice(2)) {
     if (arg.startsWith("--lens=")) overrides.lensOverride = arg.slice(7).replace(/^['"]|['"]$/g, "");
     else if (arg.startsWith("--profile=")) overrides.profileOverride = arg.slice(10).replace(/^['"]|['"]$/g, "");
     else if (arg === "--refresh") refresh = true;
+    else if (arg === "--keyworded") keyworded = true;
     else positional.push(arg);
   }
 
@@ -410,7 +469,7 @@ async function run() {
     if (refresh) {
       await refreshFromFolders(dirs);
     } else {
-      await ingestFolder(dirs[0], positional[1] || path.basename(dirs[0]), overrides);
+      await ingestFolder(dirs[0], positional[1] || path.basename(dirs[0]), overrides, keyworded);
     }
   } finally {
     await exiftool.end();

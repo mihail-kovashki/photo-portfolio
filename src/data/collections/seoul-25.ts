@@ -1,13 +1,19 @@
 import type { PlaceCollection } from "./types";
 
 // Approved 2026-09-30: the first place through the editorial pass. Chapter names are
-// working names; rename freely.
+// working names; rename freely. Achasan opens as the strongest chapter (and the city
+// from above); the rest runs river, palaces, square, evening walk.
 export const seoul25: PlaceCollection = {
   id: "seoul-25",
   name: "Seoul",
   trip: "Seoul · Autumn 2025",
   source: "Seoul 25",
   chapters: [
+    {
+      id: "sunset-from-achasan",
+      name: "Sunset from Achasan",
+      photos: ["DSCF2299", "DSCF2306", "DSCF2307", "DSCF2314", "DSCF2330", "DSCF2334", "DSCF2369", "DSCF2347", "DSCF2392"],
+    },
     {
       id: "along-the-han",
       name: "Along the Han",
@@ -27,11 +33,6 @@ export const seoul25: PlaceCollection = {
       id: "an-evening-in-anguk",
       name: "An evening in Anguk",
       photos: ["DSCF2216", "DSCF2224", "DSCF2232", "DSCF2236", "DSCF2243", "DSCF2244", "DSCF2246", "DSCF2248"],
-    },
-    {
-      id: "sunset-from-achasan",
-      name: "Sunset from Achasan",
-      photos: ["DSCF2299", "DSCF2306", "DSCF2307", "DSCF2314", "DSCF2330", "DSCF2334", "DSCF2369", "DSCF2347", "DSCF2392"],
     },
   ],
   notes: {

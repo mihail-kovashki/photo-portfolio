@@ -75,6 +75,10 @@ differently from culling (`taste.md`):
   to five chapters. A smaller set folds into a neighbour, decided by location or by one
   continuous walk (Seoul: the Wall joined Gwanghwamun, the flower field joined the evening
   in Anguk). Tiny sections also read badly on the site.
+- **Open with the strongest chapter, then order for the story, not the calendar.** The
+  chapters' stars guide which one leads (Seoul: Achasan, averaging 4.1 with two 5★, had
+  come last by date); the rest follow whatever reads best, which is often but not always
+  the order of the days.
 - **My override beats the stars, and it's recorded.** A frame I want in stays at its
   rating as a frame, but gets its place because I chose it, noted as my pick (Seoul: the
   2★ "People of the palace" cover).

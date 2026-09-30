@@ -1,10 +1,11 @@
 "use client";
 
 import { ArrowUp, Instagram, Mail } from "lucide-react";
+import { preferredScrollBehavior } from "@/lib/utils";
 
 export function Footer() {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: preferredScrollBehavior() });
   };
 
   return (

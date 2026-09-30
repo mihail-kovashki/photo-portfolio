@@ -89,11 +89,6 @@ body {
   transform: none;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .photo-develop {
-    transition: none;
-  }
-}
 
 /* Glassmorphism effects */
 .glass-panel {
@@ -212,5 +207,24 @@ body {
     top: 0.3rem !important;
     right: 0.35rem !important;
     padding: 0.2rem !important;
+  }
+}
+
+/* Reduced motion: with the OS setting on, CSS transitions and animations finish at
+   once and scrolling jumps instead of gliding. Framer Motion follows the same setting
+   through <MotionConfig reducedMotion="user">; the photo morph and hero flipper check
+   it themselves. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }

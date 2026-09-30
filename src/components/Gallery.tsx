@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useCallback, useEffect, useSyncExternalStore } from "react";
+import { MotionConfig } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { SeriesFilter } from "@/components/SeriesFilter";
@@ -111,53 +112,57 @@ export function Gallery({ initialSeries }: GalleryProps) {
     }
   }, []);
 
+  // reducedMotion="user": with the OS "reduce motion" setting on, Framer Motion skips
+  // movement (slides, springs, scale) and keeps simple fades
   return (
-    <div className="relative min-h-screen bg-[#09090b] text-[#f4f4f5] flex flex-col justify-between">
-      <div>
-        {/* Navigation Masthead */}
-        <Navbar
-          onOpenGear={() => setIsGearOpen(true)}
-          activeSeries={activeSeries}
-          onSelectSeries={handleSelectSeries}
-          seriesList={seriesList}
+    <MotionConfig reducedMotion="user">
+      <div className="relative min-h-screen bg-[#09090b] text-[#f4f4f5] flex flex-col justify-between">
+        <div>
+          {/* Navigation Masthead */}
+          <Navbar
+            onOpenGear={() => setIsGearOpen(true)}
+            activeSeries={activeSeries}
+            onSelectSeries={handleSelectSeries}
+            seriesList={seriesList}
+          />
+
+          {/* Hero & Camera Introduction */}
+          <Hero onSelectSeries={handleSelectSeries} />
+
+          {/* Series and View Controls */}
+          <SeriesFilter
+            activeSeries={activeSeries}
+            onSelectSeries={handleSelectSeries}
+            seriesList={seriesList}
+            layoutMode={layoutMode}
+            onToggleLayout={setLayoutMode}
+          />
+
+          {/* Dynamic Photo Gallery */}
+          <PhotoGrid
+            photos={filteredPhotos}
+            onOpenPhoto={handleOpenPhoto}
+            layoutMode={layoutMode}
+          />
+        </div>
+
+        {/* Touch & Gesture Enabled Lightbox with Browser History Integration */}
+        <Lightbox
+          photo={selectedPhoto}
+          photos={lightboxPhotos}
+          onClose={handleClosePhoto}
+          onNavigate={handleNavigatePhoto}
         />
 
-        {/* Hero & Camera Introduction */}
-        <Hero onSelectSeries={handleSelectSeries} />
-
-        {/* Series and View Controls */}
-        <SeriesFilter
-          activeSeries={activeSeries}
-          onSelectSeries={handleSelectSeries}
-          seriesList={seriesList}
-          layoutMode={layoutMode}
-          onToggleLayout={setLayoutMode}
+        {/* Camera Gear & Philosophy Modal */}
+        <GearModal
+          isOpen={isGearOpen}
+          onClose={() => setIsGearOpen(false)}
         />
 
-        {/* Dynamic Photo Gallery */}
-        <PhotoGrid
-          photos={filteredPhotos}
-          onOpenPhoto={handleOpenPhoto}
-          layoutMode={layoutMode}
-        />
+        {/* Editorial Minimal Footer */}
+        <Footer />
       </div>
-
-      {/* Touch & Gesture Enabled Lightbox with Browser History Integration */}
-      <Lightbox
-        photo={selectedPhoto}
-        photos={lightboxPhotos}
-        onClose={handleClosePhoto}
-        onNavigate={handleNavigatePhoto}
-      />
-
-      {/* Camera Gear & Philosophy Modal */}
-      <GearModal
-        isOpen={isGearOpen}
-        onClose={() => setIsGearOpen(false)}
-      />
-
-      {/* Editorial Minimal Footer */}
-      <Footer />
-    </div>
+    </MotionConfig>
   );
 }

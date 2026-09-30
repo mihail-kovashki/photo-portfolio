@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { trips } from "@/data/photos";
+import { preferredScrollBehavior } from "@/lib/utils";
 
 // Departure-board flipper: the hero names a trip and flips through the others once,
 // oldest to newest, then settles back on the latest. Hovering starts another pass;
@@ -44,7 +45,7 @@ export function Hero({ onSelectSeries }: HeroProps) {
   const handleTripClick = () => {
     if (!trip) return;
     onSelectSeries?.(trip.id);
-    document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("gallery")?.scrollIntoView({ behavior: preferredScrollBehavior() });
   };
 
   return (

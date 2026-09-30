@@ -48,3 +48,8 @@ export function focalOrLens(photo: ExposureFields): string | undefined {
 export function exposureSummary(photo: ExposureFields): string {
   return [photo.aperture, photo.shutterSpeed, photo.iso].filter(Boolean).join(" · ");
 }
+
+/** "smooth" unless the visitor has asked the OS to reduce motion. */
+export function preferredScrollBehavior(): ScrollBehavior {
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+}

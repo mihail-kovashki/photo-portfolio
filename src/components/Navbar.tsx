@@ -196,7 +196,7 @@ export function Navbar({ onOpenGear, activeSeries, onSelectSeries, seriesList = 
               </button>
 
               {isMoreOpen && (
-                <div className="absolute top-full right-0 mt-2 w-52 py-1.5 bg-[#121215]/95 backdrop-blur-xl border border-white/15 rounded-2xl shadow-2xl z-50 animate-in fade-in zoom-in-95 duration-150">
+                <div className="absolute top-full right-0 mt-2 w-52 py-1.5 bg-[#121215]/95 backdrop-blur-xl border border-white/15 rounded-2xl shadow-2xl z-50">
                   <div className="px-3.5 py-1 text-[10px] uppercase tracking-wider text-zinc-500 font-mono border-b border-white/5 mb-1">
                     Other Collections
                   </div>

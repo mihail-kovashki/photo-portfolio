@@ -1,6 +1,5 @@
 "use client";
 
-import { useMemo, useSyncExternalStore } from "react";
 import { PhotoCard } from "./PhotoCard";
 import type { Photo, ResolvedChapter } from "@/data/photos";
 
@@ -35,48 +34,64 @@ function PhotoSet({ photos, onOpenPhoto, layoutMode, startIndex = 0 }: PhotoSetP
   return <MasonrySet photos={photos} onOpenPhoto={onOpenPhoto} startIndex={startIndex} />;
 }
 
-// Tailwind's sm and lg breakpoints: 1, 2 or 3 columns.
-const COLUMN_QUERIES = ["(min-width: 1024px)", "(min-width: 640px)"];
-
-function columnCount() {
-  if (window.matchMedia(COLUMN_QUERIES[0]).matches) return 3;
-  if (window.matchMedia(COLUMN_QUERIES[1]).matches) return 2;
-  return 1;
-}
-
-function subscribeColumns(onChange: () => void) {
-  const lists = COLUMN_QUERIES.map((q) => window.matchMedia(q));
-  lists.forEach((l) => l.addEventListener("change", onChange));
-  return () => lists.forEach((l) => l.removeEventListener("change", onChange));
+interface Placement {
+  column: number;
+  /** Sum of 1/aspectRatio of the photos above in the column: their height in column widths. */
+  above: number;
+  /** How many photos are above in the column, for the gaps between them. */
+  count: number;
 }
 
 /**
- * Deals photos into explicit columns, each to the shortest column so far, so the
- * sequence reads across rows. CSS columns would read down each column instead.
+ * Deals photos into columns, each to the shortest column so far, so a sequence reads
+ * across rows. Returns each photo's placement and the CSS height of the tallest column.
  */
-function toColumns(photos: Photo[], count: number) {
-  const columns = Array.from({ length: count }, () => ({ height: 0, items: [] as { photo: Photo; i: number }[] }));
-  photos.forEach((photo, i) => {
-    const shortest = columns.reduce((a, b) => (b.height < a.height - 0.01 ? b : a));
-    shortest.items.push({ photo, i });
-    shortest.height += 1 / photo.aspectRatio;
+function deal(photos: Photo[], columns: number) {
+  const heights = Array<number>(columns).fill(0);
+  const counts = Array<number>(columns).fill(0);
+  const placements: Placement[] = photos.map((photo) => {
+    const column = heights.reduce((best, h, c) => (h < heights[best] - 0.01 ? c : best), 0);
+    const placement = { column, above: heights[column], count: counts[column] };
+    heights[column] += 1 / photo.aspectRatio;
+    counts[column] += 1;
+    return placement;
   });
-  return columns.map((c) => c.items);
+  const height = `max(${heights.map((h, c) => `calc(var(--col) * ${h.toFixed(4)} + ${counts[c]} * var(--gap))`).join(", ")})`;
+  return { placements, height };
 }
 
+// Two columns from sm, three from lg. The photos stay in sequence in the page, so tab
+// order and screen readers follow it; CSS places each one (see .masonry in globals.css).
+// Both layouts are computed here so the server renders the right one at any width.
 function MasonrySet({ photos, onOpenPhoto, startIndex }: Omit<PhotoSetProps, "layoutMode"> & { startIndex: number }) {
-  // The server renders three columns; small screens re-deal after hydration.
-  const count = useSyncExternalStore(subscribeColumns, columnCount, () => 3);
-  const columns = useMemo(() => toColumns(photos, count), [photos, count]);
+  const two = deal(photos, 2);
+  const three = deal(photos, 3);
   return (
-    <div data-photo-grid className="flex gap-6 items-start">
-      {columns.map((column, c) => (
-        <div key={c} className="flex-1 min-w-0">
-          {column.map(({ photo, i }) => (
-            <PhotoCard key={photo.id} photo={photo} index={startIndex + i} onOpen={onOpenPhoto} layoutMode="masonry" />
-          ))}
-        </div>
-      ))}
+    <div className="masonry">
+      <div
+        data-photo-grid
+        className="masonry-grid"
+        style={{ "--height-2": two.height, "--height-3": three.height } as React.CSSProperties}
+      >
+        {photos.map((photo, i) => (
+          <div
+            key={photo.id}
+            className="masonry-item"
+            style={
+              {
+                "--column-2": two.placements[i].column,
+                "--above-2": two.placements[i].above.toFixed(4),
+                "--count-2": two.placements[i].count,
+                "--column-3": three.placements[i].column,
+                "--above-3": three.placements[i].above.toFixed(4),
+                "--count-3": three.placements[i].count,
+              } as React.CSSProperties
+            }
+          >
+            <PhotoCard photo={photo} index={startIndex + i} onOpen={onOpenPhoto} layoutMode="masonry" />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

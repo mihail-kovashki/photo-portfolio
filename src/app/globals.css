@@ -82,6 +82,40 @@ body {
   }
 }
 
+/* Masonry grid (PhotoGrid): photos stay in sequence in the page and are placed into
+   columns here, from positions PhotoGrid computes for two and three columns. --col is
+   one column's width; a photo's top is the heights of the photos above it plus the
+   gaps between them. On phones it's a plain single column. */
+.masonry {
+  container-type: inline-size;
+  --gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .masonry-grid {
+    --col: calc((100cqw - var(--gap)) / 2);
+    position: relative;
+    height: var(--height-2);
+  }
+  .masonry-item {
+    position: absolute;
+    width: var(--col);
+    left: calc(var(--column-2) * (var(--col) + var(--gap)));
+    top: calc(var(--above-2) * var(--col) + var(--count-2) * var(--gap));
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-grid {
+    --col: calc((100cqw - 2 * var(--gap)) / 3);
+    height: var(--height-3);
+  }
+  .masonry-item {
+    left: calc(var(--column-3) * (var(--col) + var(--gap)));
+    top: calc(var(--above-3) * var(--col) + var(--count-3) * var(--gap));
+  }
+}
+
 /* Photo "developing": a card's image resolves from its blurred preview once it has
    loaded and is on screen. The slight scale hides the blur's soft edge inside the frame.
    --develop-delay is set per card from its grid column, for a left-to-right sweep. */

@@ -31,14 +31,21 @@ the Madeira one starts with a day in Charleroi), so every pass starts by mapping
 
 ## Where the data lives
 
-- **Per-photo facts are keywords** in the photo files (Lightroom keywords, or written
-  with ExifTool for back-catalogue JPEGs that never went through Lightroom):
-  `site/place/<place>`, `site/chapter/<chapter>`, `site/tag/<tag-id>`. Keywords are a
-  portable standard (XMP/IPTC), so they survive leaving Lightroom.
-- **Words and order live in this repo** as plain text: chapter names, trip and place
-  notes, captions, sequence.
-- The site's input is a folder of finished JPEGs with those keywords, plus the text here.
-  Lightroom exports and Google Photos downloads both produce it.
+- **Per-photo facts live in the photo files,** as Lightroom-style hierarchical keywords
+  (`XMP-lr:HierarchicalSubject`, mirrored as plain keywords in `XMP-dc:Subject`) and the
+  standard star rating (`XMP-xmp:Rating`):
+  - `site|place|<place-id>`, where the place id includes the trip year: `seoul-25`
+  - `site|tag|<tag-id>`, from [`src/data/tags.ts`](../src/data/tags.ts)
+  Lightroom writes these on export; for back-catalogue JPEGs that never went through
+  Lightroom, ExifTool writes them. Keywords are a portable standard (XMP/IPTC), so they
+  survive leaving Lightroom.
+- **Words and order live in this repo,** one file per place in
+  [`src/data/collections/`](../src/data/collections/): chapter names and text, the photos
+  in each chapter in display order, notes on my overrides, the parked list, and
+  deliberate drops. Chapter membership lives only here: it's part of the sequence, and
+  keeping it in the files too would let the two copies drift apart.
+- The site's input is a folder of finished JPEGs with those keywords, plus the files
+  here. Lightroom exports and Google Photos downloads both produce it.
 
 ## Judging finished photos
 

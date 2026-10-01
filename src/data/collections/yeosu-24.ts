@@ -11,7 +11,7 @@ export const yeosu24: PlaceCollection = {
     {
       id: "yeosu-by-dusk",
       name: "Yeosu by dusk",
-      photos: ["DSCF4871", "DSCF4890", "DSCF4893", "DSCF4927", "DSCF4953", "DSCF4964"],
+      photos: ["DSCF4890", "DSCF4893", "DSCF4927", "DSCF4953", "DSCF4964"],
     },
     {
       id: "yeosu-by-day",
@@ -24,7 +24,14 @@ export const yeosu24: PlaceCollection = {
       photos: ["DSCF5017", "DSCF5027", "DSCF5014", "DSCF5032", "DSCF5034"],
     },
   ],
+  notes: {
+    DSCF4890: "Out of focus on the sign, but creatively so; the YEOSU sign is the welcome.",
+    DSCF5014: "Blurred leaves at the corners are a blemish, noted; the frame stays for its mood.",
+    DSCF5017: "Sensor dust in the sky: clone it out and re-export (edit queue).",
+    DSCF5034: "Sensor dust in the sky: clone it out and re-export (edit queue).",
+  },
   dropped: [
+    { what: "DSCF4871", note: "Second pass: shot through the cable car glass, reflections and blur across the frame." },
     { what: "The swimmer (DSCF5048, five edits)", note: "Busan, 24 May. I was having fun with edits; not for the site for now." },
   ],
 };

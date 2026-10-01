@@ -75,10 +75,18 @@ differently from culling (`taste.md`):
   to five chapters. A smaller set folds into a neighbour, decided by location or by one
   continuous walk (Seoul: the Wall joined Gwanghwamun, the flower field joined the evening
   in Anguk). Tiny sections also read badly on the site.
-- **Open with the strongest chapter, then order for the story, not the calendar.** The
-  chapters' stars guide which one leads (Seoul: Achasan, averaging 4.1 with two 5★, had
-  come last by date); the rest follow whatever reads best, which is often but not always
-  the order of the days.
+- **Order: weigh the story against the best photo.** Neither always wins; it depends on
+  how strong the story is and how far the best photos stand above the rest. The same
+  question applies to the chapters of a place and to the photos in a chapter.
+  - **The story wins** when the sequence is the point: one evening as the light changes,
+    one walk, an arrival. Keep it in order, as long as the opening photo can hold the
+    first screen (Seoul 24 runs from the light on Namsan to Yeouido after sunset; Yeosu
+    by dusk runs from sunset to night).
+  - **The best photo wins** when the days or scenes are unrelated, or when one chapter
+    clearly outclasses the rest (Seoul 25: Achasan, averaging 4.1 with two 5★, had come
+    last by date).
+  - Either way, the opener should say where we are, and the closer matters as much as
+    the opener: a strong frame buried in the middle of a weak run is the thing to fix.
 - **A city opens with the city.** On a city page, people expect the city first, so the
   chapter that shows it leads even if a more specific one scores higher; the specific
   places follow (Sapporo: the city before the Hill of the Buddha).
@@ -90,11 +98,60 @@ differently from culling (`taste.md`):
   Deliberate drops (a great memory, a weak photo) are logged separately so they aren't
   reconsidered by accident.
 
+## Running a pass
+
+Added 2026-10-01, after the first four albums were chosen from contact sheets alone. At
+thumbnail size soft focus doesn't show (Hokkaido's 3184 was "largely out of focus" and
+still got proposed for 5★), so no rating above 2★ comes from a thumbnail any more. The
+images come from [`scripts/review.mjs`](../scripts/review.mjs).
+
+1. **Instagram first.** Find the trip's posts: which frames I published, which fronted a
+   post, how I grouped them. That is the best evidence of what I think matters.
+2. **Map the album** to trip and places from contact sheets and dates (`review.mjs
+   sheets`). Ask me about anything I'd know and the files don't.
+3. **First look, from contact sheets** at 600px per photo, nine to a sheet (`review.mjs
+   sheets`). Group near-duplicates, give 1★ to clear rejects and 2★ to the plainly
+   unremarkable. Everything else is a candidate. No higher stars yet. Tested on Korea
+   2024's known problems: 450px missed shooting through glass and an intruding
+   foreground, which 600px shows; 900px added nothing more; dust and soft focus never
+   show on a sheet, which is what step 4 is for.
+4. **Close look at every candidate** (`review.mjs view`, 1568px), and a 100% crop of the
+   export where the photo is meant to be sharp (`review.mjs crop`): the person, the
+   building, the flower, not the centre of the frame. For each candidate record:
+   - **focus**: `sharp`, `soft-intended` (shallow focus that is clearly the point) or
+     `soft` (a miss, shake or motion blur), with where it was checked;
+   - **technical**: tilt, noise, halos, clipped highlights, banding, edit artefacts;
+   - **critique**: what works and what doesn't, plainly. Be critical; I want to get
+     better, and analysis must not talk a weak photo up;
+   - the rating.
+   A `soft` frame can still be chosen, but only knowingly: it's flagged to me.
+
+   **Flaws and what they cost.** I'm not at the level where every flaw makes a frame
+   trash, so a set is filled with photos that have small imperfections, and the
+   imperfections are noted for me to improve on. Separate three kinds:
+   - **Disqualifying:** the flaw is the photo. Reflections or blur from glass across the
+     whole frame (Yeosu 4871), a missed subject with nothing else to hold it.
+   - **A blemish:** an intruding foreground, a busy scene, a softness that has its own
+     charm. It costs a star at most and never removes a frame on its own. Say what still
+     works: busy can still carry great light and small human moments (Seoul 24 6381), and
+     out of focus can be creative (the YEOSU sign, 4890).
+   - **Fixable in the edit:** sensor dust, a tilt, a crop. Never a reason to drop; it goes
+     on the edit queue in the project's vault note, and the fixed export replaces it.
+5. **Select and present**: chapters, order, names, under the rules above. Judge the page as
+   a viewer meets it: what opens, what closes, whether names say something, whether a
+   chapter repeats itself.
+6. **Write the pass log** (below), then the keywords, then ingest.
+
 ## Pass logs
 
 Each place's pass is written up in [`passes/`](passes/): Claude's rating for every photo
 considered, a line on each selected photo, the near-duplicate runs and which frame won,
 and the notable drops. The collection file holds only the result.
+
+From the second pass on, a log also has a ratings file next to it
+(`<album>.ratings.json`): every candidate with its rating, focus, technical notes and
+critique, so the reasoning can be checked photo by photo. The first-pass logs stay as
+they were, for comparison; the re-runs live in [`passes/v2/`](passes/v2/).
 
 ## Tags
 

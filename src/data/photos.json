@@ -6512,31 +6512,6 @@
     "rating": 4
   },
   {
-    "id": "seoul-24-dscf6358",
-    "series": "Seoul 24",
-    "fileNumber": "DSCF6358",
-    "displayUrl": "/photos/display/seoul-24-dscf6358.355c37ad.jpg",
-    "thumbUrl": "/photos/thumb/seoul-24-dscf6358.552769a9.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgQF/8QAHxAAAQMFAQEBAAAAAAAAAAAAAQIDEQAEBRIhE0Ex/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAWEQEBAQAAAAAAAAAAAAAAAAARADH/2gAMAwEAAhEDEQA/AEb1+1bNzbsodJElKB0mjVxlle69bNaRP5seVmYr1zDhLmScQ+gSUx2PmsHtUrYu0rIOSdMfdBUw2S5f/9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF70-300mmF4-5.6 R LM OIS WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/750s",
-    "iso": "ISO 125",
-    "focalLength": "70mm",
-    "profile": "Provia · RAW Edit",
-    "dateTaken": "2024-06-03",
-    "place": "seoul-24",
-    "tags": [
-      "waterfront",
-      "golden-hour"
-    ],
-    "rating": 3
-  },
-  {
     "id": "seoul-24-dscf6363",
     "series": "Seoul 24",
     "fileNumber": "DSCF6363",
@@ -6615,32 +6590,6 @@
     "rating": 3
   },
   {
-    "id": "seoul-24-dscf6387",
-    "series": "Seoul 24",
-    "fileNumber": "DSCF6387",
-    "displayUrl": "/photos/display/seoul-24-dscf6387.9c4c9155.jpg",
-    "thumbUrl": "/photos/thumb/seoul-24-dscf6387.4c308517.jpg",
-    "width": 2048,
-    "height": 1536,
-    "aspectRatio": 1.333,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAMABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBv/EACAQAAEEAgEFAAAAAAAAAAAAAAECAwQRAAUSITEyM8H/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABgRAAMBAQAAAAAAAAAAAAAAAAABETES/9oADAMBAAIRAxEAPwAgP650HqxQA9hUPmUkva2FxWJsYqvxQkqIzGiZJBsPKvGufLVXJ9ZrtgjulO1MP//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF70-300mmF4-5.6 R LM OIS WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/200s",
-    "iso": "ISO 125",
-    "focalLength": "70mm",
-    "profile": "Provia · RAW Edit",
-    "dateTaken": "2024-06-03",
-    "place": "seoul-24",
-    "tags": [
-      "people",
-      "waterfront",
-      "golden-hour"
-    ],
-    "rating": 3
-  },
-  {
     "id": "seoul-24-dscf6390",
     "series": "Seoul 24",
     "fileNumber": "DSCF6390",
@@ -6689,7 +6638,7 @@
       "waterfront",
       "golden-hour"
     ],
-    "rating": 3
+    "rating": 4
   },
   {
     "id": "seoul-24-dscf6416",
@@ -6790,33 +6739,7 @@
       "new-architecture",
       "golden-hour"
     ],
-    "rating": 3
-  },
-  {
-    "id": "yeosu-24-dscf4871",
-    "series": "Yeosu 24",
-    "fileNumber": "DSCF4871",
-    "displayUrl": "/photos/display/yeosu-24-dscf4871.7472d8ec.jpg",
-    "thumbUrl": "/photos/thumb/yeosu-24-dscf4871.30c2406b.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwX/xAAiEAACAQMCBwAAAAAAAAAAAAABAgMABAUREhUhIjFBUWH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABkRAAIDAQAAAAAAAAAAAAAAAAABAhExEv/aAAwDAQACEQMRAD8AS3zOPVgsjMB72ECiuM5ihO4Qll15Hb3qHxGCVAs8auPtT5BamQlFYL46hQcLesp3WH//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/8.0",
-    "shutterSpeed": "1/40s",
-    "iso": "ISO 125",
-    "focalLength": "23mm",
-    "profile": "RAW Edit",
-    "dateTaken": "2024-05-21",
-    "place": "yeosu-24",
-    "tags": [
-      "waterfront",
-      "city-from-above",
-      "golden-hour"
-    ],
-    "rating": 3
+    "rating": 4
   },
   {
     "id": "yeosu-24-dscf4890",
@@ -6993,7 +6916,7 @@
     "tags": [
       "flowers"
     ],
-    "rating": 2
+    "rating": 3
   },
   {
     "id": "yeosu-24-dscf4993",
@@ -7066,7 +6989,7 @@
     "tags": [
       "flowers"
     ],
-    "rating": 2
+    "rating": 3
   },
   {
     "id": "yeosu-24-dscf5014",

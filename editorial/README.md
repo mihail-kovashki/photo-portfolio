@@ -87,6 +87,12 @@ differently from culling (`taste.md`):
   Deliberate drops (a great memory, a weak photo) are logged separately so they aren't
   reconsidered by accident.
 
+## Pass logs
+
+Each place's pass is written up in [`passes/`](passes/): Claude's rating for every photo
+considered, a line on each selected photo, the near-duplicate runs and which frame won,
+and the notable drops. The collection file holds only the result.
+
 ## Tags
 
 The vocabulary is [`src/data/tags.ts`](../src/data/tags.ts): 22 tags, 16 for subject and
@@ -110,7 +116,7 @@ bulk keyword rewrite.
 
 | Candidate | Seen in | Notes |
 | --- | --- | --- |
-| `black-and-white` | Vietnam 2024 (St. Joseph's), Korea 2024 (Yeosu swimmer) | Two frames so far |
+| `black-and-white` | Vietnam 2024 (St. Joseph's) | One frame so far; the Korea 2024 swimmer (Busan, not Yeosu) was play, not for the site |
 | `sun-in-frame` | Many sunsets and sunrises | Currently part of `golden-hour`; useful mainly for filtering |
 | `markets` | Madeira (Funchal market), Vietnam (Hanoi Old Quarter), Hokkaido (Otaru glass shops) | Close to three trips, but mostly a frame or two each |
 | `waterfalls` | Seoraksan (Biryong, Towangseong), probably Madeira, Hokkaido, Vietnam | DSCF3618 fits no tag today |

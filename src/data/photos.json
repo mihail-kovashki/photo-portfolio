@@ -9195,5 +9195,53 @@
       "mountains"
     ],
     "rating": 3
+  },
+  {
+    "id": "cape-kamui-25-dscf2664",
+    "series": "Cape Kamui 25",
+    "fileNumber": "DSCF2664",
+    "displayUrl": "/photos/display/cape-kamui-25-dscf2664.ede107be.jpg",
+    "thumbUrl": "/photos/thumb/cape-kamui-25-dscf2664.17cfcea0.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwUG/8QAIhAAAgECBQUAAAAAAAAAAAAAAQIDABEEBRIxcRUyQlFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAZEQEAAgMAAAAAAAAAAAAAAAABAAMRIlH/2gAMAwEAAhEDEQA/AK3VcLFZWnI5U065jEygrJcHYgVkpkDdkeonwub/AG3vihSWVVASUaRtc0l+HYk2vjP/2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/8.0",
+    "shutterSpeed": "1/4400s",
+    "iso": "ISO 1600",
+    "focalLength": "23mm",
+    "profile": "Reala Ace · RAW Edit",
+    "dateTaken": "2025-09-29",
+    "place": "cape-kamui-25",
+    "tags": [
+      "coast"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "cape-kamui-25-dscf2707",
+    "series": "Cape Kamui 25",
+    "fileNumber": "DSCF2707",
+    "displayUrl": "/photos/display/cape-kamui-25-dscf2707.2a607988.jpg",
+    "thumbUrl": "/photos/thumb/cape-kamui-25-dscf2707.093fd092.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFBv/EACQQAAEDAwEJAAAAAAAAAAAAAAEAAgQDESExExQVQUNSkaHR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQADAAAAAAAAAAAAAAAAAAAAE2H/2gAMAwEAAhEDEQA/AKvFKGWmS2/MId9jnq38rJOkkPFqRONcC3opls1waBsjp3D4l0IXT//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/850s",
+    "iso": "ISO 125",
+    "focalLength": "23mm",
+    "profile": "Reala Ace · RAW Edit",
+    "dateTaken": "2025-09-29",
+    "place": "cape-kamui-25",
+    "tags": [
+      "coast"
+    ],
+    "rating": 2
   }
 ]

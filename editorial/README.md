@@ -79,6 +79,9 @@ differently from culling (`taste.md`):
   chapters' stars guide which one leads (Seoul: Achasan, averaging 4.1 with two 5★, had
   come last by date); the rest follow whatever reads best, which is often but not always
   the order of the days.
+- **A city opens with the city.** On a city page, people expect the city first, so the
+  chapter that shows it leads even if a more specific one scores higher; the specific
+  places follow (Sapporo: the city before the Hill of the Buddha).
 - **My override beats the stars, and it's recorded.** A frame I want in stays at its
   rating as a frame, but gets its place because I chose it, noted as my pick (Seoul: the
   2★ "People of the palace" cover).

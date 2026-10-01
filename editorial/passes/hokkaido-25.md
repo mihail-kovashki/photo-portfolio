@@ -39,15 +39,18 @@ Claude proposed 5★ candidates: 3184 (the umbrella under the arch), 3182 (the p
 rain), 3035 (the lone tree) and 2612 (Sapporo at blue hour). I said "Don't mark anything
 as 5 for now."
 
-## The selection (82)
+## The selection (84)
 
-### Sapporo (38, five chapters)
+### Sapporo (38, five chapters, in site order: the city, then the Buddha, Jingu, Jozankei, Shiroi Koibito)
 
-- **Hill of the Buddha** (7, average 3.6), the strongest, so it opens. The Buddha in its
+- **Hill of the Buddha** (7, average 3.6): the highest on stars, and Claude first opened
+  with it. I moved the city first: "I think you overvalued the buddha photos a bit, maybe
+  your'e more of a monotonal fan", and on a city page people expect the city before the
+  more specific places. The Buddha in its
   ring of lavender walls (3165), seen down the concrete tunnel (3172, 3170), the
   forecourt and pool in the rain (3176, 3182), a figure with an umbrella under the arch
   (3184), and the moai on the hill (3192).
-- **From the tower to after dark** (12). Opens on the TV tower at pink dusk (2847),
+- **From the tower to after dark** (12), which opens the page. Starts on the TV tower at pink dusk (2847),
   because I asked for the tower as this chapter's main subject. Then the clock tower
   (2596), the street to the Red Brick Office (2597), the city from JR Tower (2605) and at
   blue hour (2612), and the night: the ginkgo avenue (2618), the café window (2621), the
@@ -69,9 +72,12 @@ as 5 for now."
   (2774), the stone storehouse (2778), the music box hall (2780), glass (2784), the lamp
   shop (2786, 4★), a street (2792) and the vending machine under red ivy (2795).
 
-### Cape Kamui (7, no chapters)
+### Cape Kamui (9, no chapters)
 
-The ridge and coastline (2650, 2667), pampas grass along the coast (2666, 4★), people on
+Opens with my pick 2707 (the cape and lighthouse behind the wooden fence, 2★ from
+Claude) and closes with my pick 2664 (the railing and pampas along the ridge, 3★).
+Hokkaido is properly posted on my Instagram; next time, check the posts before choosing.
+In between: the ridge and coastline (2650, 2667), pampas grass along the coast (2666, 4★), people on
 the ridge path to the lighthouse (2674, 4★), the sea stacks (2685), Shimamui (2709), and
 a couple at the railing (2715).
 

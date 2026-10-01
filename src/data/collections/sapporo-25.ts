@@ -1,7 +1,8 @@
 import type { PlaceCollection } from "./types";
 
 // Approved 2026-10-01. The base for the trip, 28 Sep to 1 Oct. Jozankei and the Hill of the Buddha are
-// day trips but within Sapporo, so they're chapters here. The Buddha opens as the strongest.
+// day trips but within Sapporo, so they're chapters here. The city opens, as people would expect, then the more
+// specific places. (The Buddha scored highest on stars; I think Claude overvalued it.)
 export const sapporo25: PlaceCollection = {
   id: "sapporo-25",
   name: "Sapporo",
@@ -9,14 +10,14 @@ export const sapporo25: PlaceCollection = {
   source: "Hokkaido 25",
   chapters: [
     {
-      id: "hill-of-the-buddha",
-      name: "Hill of the Buddha",
-      photos: ["DSCF3165", "DSCF3172", "DSCF3170", "DSCF3176", "DSCF3182", "DSCF3184", "DSCF3192"],
-    },
-    {
       id: "from-the-tower-to-after-dark",
       name: "From the tower to after dark",
       photos: ["DSCF2847", "DSCF2596", "DSCF2597", "DSCF2605", "DSCF2612", "DSCF2618", "DSCF2621", "DSCF2623", "DSCF2632", "DSCF2631", "DSCF2636", "DSCF2639"],
+    },
+    {
+      id: "hill-of-the-buddha",
+      name: "Hill of the Buddha",
+      photos: ["DSCF3165", "DSCF3172", "DSCF3170", "DSCF3176", "DSCF3182", "DSCF3184", "DSCF3192"],
     },
     {
       id: "hokkaido-jingu",

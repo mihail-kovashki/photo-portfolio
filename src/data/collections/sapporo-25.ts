@@ -12,12 +12,12 @@ export const sapporo25: PlaceCollection = {
     {
       id: "from-the-tower-to-after-dark",
       name: "From the tower to after dark",
-      photos: ["DSCF2847", "DSCF2596", "DSCF2597", "DSCF2605", "DSCF2612", "DSCF2618", "DSCF2621", "DSCF2623", "DSCF2632", "DSCF2631", "DSCF2636", "DSCF2639"],
+      photos: ["DSCF2847", "DSCF2596", "DSCF2597", "DSCF2605", "DSCF2612", "DSCF2618", "DSCF2628", "DSCF2623", "DSCF2632", "DSCF2631", "DSCF2636", "DSCF2641"],
     },
     {
       id: "hill-of-the-buddha",
       name: "Hill of the Buddha",
-      photos: ["DSCF3165", "DSCF3172", "DSCF3170", "DSCF3176", "DSCF3182", "DSCF3184", "DSCF3192"],
+      photos: ["DSCF3165", "DSCF3172", "DSCF3176", "DSCF3182", "DSCF3184", "DSCF3192"],
     },
     {
       id: "hokkaido-jingu",
@@ -32,13 +32,16 @@ export const sapporo25: PlaceCollection = {
     {
       id: "shiroi-koibito-park",
       name: "Shiroi Koibito Park",
-      photos: ["DSCF2811", "DSCF2825", "DSCF2829", "DSCF2836", "DSCF2840", "DSCF2816", "DSCF3236", "DSCF3254"],
+      photos: ["DSCF2811", "DSCF2825", "DSCF2829", "DSCF2836", "DSCF2840", "DSCF3244", "DSCF3254"],
     },
   ],
   notes: {
     DSCF2847: "My ask: the TV tower as the main subject of the city chapter. Odori at pink dusk, 29 Sep.",
   },
   dropped: [
+    { what: "DSCF2639, DSCF2621", note: "Second pass: 2641 (posted) is the same Susukino corner with people; 2628, the tower lit at night, replaces the café window." },
+    { what: "DSCF3170", note: "Second pass: the Buddha behind folding chairs and a shopping trolley." },
+    { what: "DSCF2816, DSCF3236", note: "Second pass: a generic rose (3244 is the better flower, my pick), and a twin of 2825." },
     { what: "DSCF2592 (Odori, the TV tower over red flowers)", note: "Was on the old page, picked at random; DSCF2847 replaces it as the TV tower frame." },
   ],
 };

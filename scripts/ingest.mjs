@@ -156,12 +156,17 @@ function resolveUserPath(inputPath) {
   return path.resolve(inputPath);
 }
 
-// The camera number (DSCF1234), plus Lightroom's copy suffix (DSCF1234-2) for a second
-// edit of a frame. Google Photos downloads can carry a date prefix (20240521-DSCF4871.JPG),
-// which isn't part of the number. Names without a camera number are used whole.
+// The camera number (DSCF1234), plus a copy suffix for a second edit of a frame:
+// Lightroom's DSCF1234-2, or Google Photos' DSCF1234(1), which becomes DSCF1234-1 so it
+// stays URL-safe (Lightroom's copies start at -2, so the two can't collide). Google Photos
+// downloads can also carry a date prefix (20240521-DSCF4871.JPG), which isn't part of the
+// number. Names without a camera number are used whole.
 function fileNumberOf(fileName) {
   const base = path.basename(fileName, path.extname(fileName)).toUpperCase();
-  return base.match(/DSCF\d+(?:-\d+)?/)?.[0] ?? base;
+  const m = base.match(/(DSCF\d+)(?:-(\d+)|\((\d+)\))?/);
+  if (!m) return base;
+  const copy = m[2] ?? m[3];
+  return copy ? `${m[1]}-${copy}` : m[1];
 }
 
 function listImages(dir) {

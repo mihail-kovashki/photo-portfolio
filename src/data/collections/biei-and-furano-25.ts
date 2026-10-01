@@ -11,12 +11,12 @@ export const bieiAndFurano25: PlaceCollection = {
     {
       id: "shikisai-no-oka",
       name: "Shikisai-no-oka",
-      photos: ["DSCF2931", "DSCF2938", "DSCF2991", "DSCF3000", "DSCF3005", "DSCF3010", "DSCF2972", "DSCF2940", "DSCF3035"],
+      photos: ["DSCF2932", "DSCF2938", "DSCF2991", "DSCF3000", "DSCF3005", "DSCF3010", "DSCF2972", "DSCF2940", "DSCF3035"],
     },
     {
       id: "the-blue-pond",
       name: "The Blue Pond",
-      photos: ["DSCF2859", "DSCF2909", "DSCF2856", "DSCF2900", "DSCF2918"],
+      photos: ["DSCF2909", "DSCF2861", "DSCF2859", "DSCF2891", "DSCF2895"],
     },
     {
       id: "farm-tomita",

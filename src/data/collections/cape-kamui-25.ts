@@ -7,7 +7,7 @@ export const capeKamui25: PlaceCollection = {
   name: "Cape Kamui",
   trip: "Hokkaido · Autumn 2025",
   source: "Hokkaido 25",
-  photos: ["DSCF2707", "DSCF2650", "DSCF2666", "DSCF2674", "DSCF2667", "DSCF2685", "DSCF2709", "DSCF2715", "DSCF2664"],
+  photos: ["DSCF2707", "DSCF2650", "DSCF2666", "DSCF2674", "DSCF2667", "DSCF2685", "DSCF2709", "DSCF2695", "DSCF2715", "DSCF2664"],
   notes: {
     DSCF2707: "My pick, and it opens: the cape and its lighthouse behind the wooden fence. 2★ as a frame.",
     DSCF2664: "My pick to close: the railing and pampas grass along the ridge to the lighthouse.",

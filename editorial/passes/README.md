@@ -1,6 +1,6 @@
 # Pass logs
 
-One file per place: how its editorial pass went and why the selection is what it is.
+One file per place (or per album, when one album became several places): how its editorial pass went and why the selection is what it is.
 The collection file in `src/data/collections/` holds only the result (order, overrides,
 drops); `taste.md` in lr-agent holds only where I corrected Claude. This is the reasoning
 in between, written at the end of each pass.

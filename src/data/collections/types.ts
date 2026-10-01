@@ -20,7 +20,10 @@ export interface PlaceCollection {
   trip: string;
   /** Source folder under ~/Pictures/portfolio-source/. */
   source: string;
-  chapters: Chapter[];
+  /** Chapters in display order. Leave out for a place without chapters and use `photos`. */
+  chapters?: Chapter[];
+  /** File numbers in display order, for a place without chapters. */
+  photos?: string[];
   /** Why a frame holds its place despite its stars, keyed by file number. */
   notes?: Record<string, string>;
   /** Good photos that fit no chapter yet; may become an "Around <place>" set later. */

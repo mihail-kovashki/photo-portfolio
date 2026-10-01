@@ -90,6 +90,11 @@ differently from culling (`taste.md`):
 - **A city opens with the city.** On a city page, people expect the city first, so the
   chapter that shows it leads even if a more specific one scores higher; the specific
   places follow (Sapporo: the city before the Hill of the Buddha).
+- **Chapter names say where we are.** The site's space is limited, so a name places the
+  viewer ("Gwanghwamun and the Wall"); wit belongs in Instagram captions and, later, in
+  page text.
+- **A toss-up keeps both, for now.** When I can't say which of two frames I prefer, both
+  go in and the collection file notes it; living with the page decides.
 - **My override beats the stars, and it's recorded.** A frame I want in stays at its
   rating as a frame, but gets its place because I chose it, noted as my pick (Seoul: the
   2★ "People of the palace" cover).

@@ -4483,7 +4483,7 @@
       "people",
       "golden-hour"
     ],
-    "rating": 4
+    "rating": 3
   },
   {
     "id": "seoul-25-dscf2148",
@@ -4758,7 +4758,7 @@
       "people",
       "blue-hour"
     ],
-    "rating": 4
+    "rating": 3
   },
   {
     "id": "seoul-25-dscf2212",
@@ -4810,32 +4810,6 @@
       "blue-hour"
     ],
     "rating": 4
-  },
-  {
-    "id": "seoul-25-dscf2216",
-    "series": "Seoul 25",
-    "fileNumber": "DSCF2216",
-    "displayUrl": "/photos/display/seoul-25-dscf2216.d065fdb5.jpg",
-    "thumbUrl": "/photos/thumb/seoul-25-dscf2216.358a9b94.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEC/8QAIBAAAgEEAQUAAAAAAAAAAAAAAQIDAAQREgUxM3GR0f/EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECAxESFP/aAAwDAQACEQMRAD8AEt5fLdbxwRKgHaI3HvOa3LzN+i6LDDrkkkoVPigWcjvlmbJ161BNIVJLnIPypOm1PAtYn//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/1.4",
-    "shutterSpeed": "1/35s",
-    "iso": "ISO 640",
-    "focalLength": "23mm",
-    "profile": "Reala Ace · RAW Edit",
-    "dateTaken": "2025-09-13",
-    "place": "seoul-25",
-    "tags": [
-      "flowers",
-      "mountains",
-      "blue-hour"
-    ],
-    "rating": 3
   },
   {
     "id": "seoul-25-dscf2224",
@@ -4937,31 +4911,6 @@
       "blue-hour"
     ],
     "rating": 4
-  },
-  {
-    "id": "seoul-25-dscf2244",
-    "series": "Seoul 25",
-    "fileNumber": "DSCF2244",
-    "displayUrl": "/photos/display/seoul-25-dscf2244.27dcb468.jpg",
-    "thumbUrl": "/photos/thumb/seoul-25-dscf2244.a95b9edc.jpg",
-    "width": 1638,
-    "height": 2048,
-    "aspectRatio": 0.8,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAA0DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFBv/EAB4QAAICAwEAAwAAAAAAAAAAAAECAxEABEESBRMU/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAQADAQAAAAAAAAAAAAAAAAEAAiES/9oADAMBAAIRAxEAPwDH/nkim9RgnyLNcF48ms2wPs8sb6BhwI8kjrEAWdSgsXV9GU9OLZ+P11hkjMvQUwS6GxeNn//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/1.4",
-    "shutterSpeed": "1/35s",
-    "iso": "ISO 2500",
-    "focalLength": "23mm",
-    "profile": "Reala Ace · RAW Edit",
-    "dateTaken": "2025-09-13",
-    "place": "seoul-25",
-    "tags": [
-      "streets",
-      "night"
-    ],
-    "rating": 3
   },
   {
     "id": "seoul-25-dscf2246",
@@ -5142,32 +5091,6 @@
     "rating": 3
   },
   {
-    "id": "seoul-25-dscf2306",
-    "series": "Seoul 25",
-    "fileNumber": "DSCF2306",
-    "displayUrl": "/photos/display/seoul-25-dscf2306.8458955b.jpg",
-    "thumbUrl": "/photos/thumb/seoul-25-dscf2306.936442aa.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQMEBv/EAB8QAAICAgEFAAAAAAAAAAAAAAECAAMEEQUGMUFxwf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAITUf/aAAwDAQACEQMRAD8Apo5jEsxUuXHRiy7Ki0Er7ib+oMBaiy1oX8KX18mBMLdoqNpOa4f/2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/4.0",
-    "shutterSpeed": "1/550s",
-    "iso": "ISO 125",
-    "focalLength": "23mm",
-    "profile": "Reala Ace · RAW Edit",
-    "dateTaken": "2025-09-21",
-    "place": "seoul-25",
-    "tags": [
-      "city-from-above",
-      "waterfront",
-      "golden-hour"
-    ],
-    "rating": 4
-  },
-  {
     "id": "seoul-25-dscf2307",
     "series": "Seoul 25",
     "fileNumber": "DSCF2307",
@@ -5344,7 +5267,7 @@
       "people",
       "city-from-above"
     ],
-    "rating": 4
+    "rating": 3
   },
   {
     "id": "seoraksan-25-dscf3359",
@@ -9166,5 +9089,156 @@
       "coast"
     ],
     "rating": 2
+  },
+  {
+    "id": "seoul-25-dscf2150",
+    "series": "Seoul 25",
+    "fileNumber": "DSCF2150",
+    "displayUrl": "/photos/display/seoul-25-dscf2150.2e002aa1.jpg",
+    "thumbUrl": "/photos/thumb/seoul-25-dscf2150.e4af8964.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQb/xAAfEAEBAAICAQUAAAAAAAAAAAABAgMRAAUSFTFRYZH/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEREjH/2gAMAwEAAhEDEQA/AD3urmMQYzFjkRJ2iKfntw/LODJlu43M1Skm9B8cpfSMPibuA+qrh89ZNjXkTtdCuw3wcvRqj//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/2.2",
+    "shutterSpeed": "1/200s",
+    "iso": "ISO 125",
+    "focalLength": "23mm",
+    "profile": "Reala Ace · RAW Edit",
+    "dateTaken": "2025-09-13",
+    "place": "seoul-25",
+    "tags": [
+      "palaces-and-castles",
+      "forests-and-trees"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "seoul-25-dscf2194",
+    "series": "Seoul 25",
+    "fileNumber": "DSCF2194",
+    "displayUrl": "/photos/display/seoul-25-dscf2194.91de2975.jpg",
+    "thumbUrl": "/photos/thumb/seoul-25-dscf2194.8c4e02ee.jpg",
+    "width": 1638,
+    "height": 2048,
+    "aspectRatio": 0.8,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAA0DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEFBv/EACAQAAEDBAIDAAAAAAAAAAAAAAIAAREDBAUyFZFRY7H/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABcRAQADAAAAAAAAAAAAAAAAAAACEhT/2gAMAwEAAhEDEQA/AKnO42o0E1zTZvU6ByWHNpK4IH8FTKfiyA3MNqHSR3TzqHSNKaxf/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/1.8",
+    "shutterSpeed": "1/120s",
+    "iso": "ISO 125",
+    "focalLength": "23mm",
+    "profile": "Reala Ace · RAW Edit",
+    "dateTaken": "2025-09-13",
+    "place": "seoul-25",
+    "tags": [
+      "palaces-and-castles"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "seoul-25-dscf2217",
+    "series": "Seoul 25",
+    "fileNumber": "DSCF2217",
+    "displayUrl": "/photos/display/seoul-25-dscf2217.809ce658.jpg",
+    "thumbUrl": "/photos/thumb/seoul-25-dscf2217.b71f586b.jpg",
+    "width": 1638,
+    "height": 2048,
+    "aspectRatio": 0.8,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAA0DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAIBAAAQQCAQUAAAAAAAAAAAAAAQACAwQREiEFFFJxwf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECERP/2gAMAwEAAhEDEQA/ANVQ9PMTSLUQz5Ox8RNy7V7h2sc+oJAdjh3pDRW3FgGwYpTW3B/ByjaRTo//2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/1.4",
+    "shutterSpeed": "1/35s",
+    "iso": "ISO 800",
+    "focalLength": "23mm",
+    "profile": "Reala Ace · RAW Edit",
+    "dateTaken": "2025-09-13",
+    "place": "seoul-25",
+    "tags": [
+      "flowers",
+      "mountains",
+      "blue-hour"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "seoul-25-dscf2245",
+    "series": "Seoul 25",
+    "fileNumber": "DSCF2245",
+    "displayUrl": "/photos/display/seoul-25-dscf2245.221a1c07.jpg",
+    "thumbUrl": "/photos/thumb/seoul-25-dscf2245.58aad5c8.jpg",
+    "width": 1638,
+    "height": 2048,
+    "aspectRatio": 0.8,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAA0DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFBv/EACEQAAIBAwMFAAAAAAAAAAAAAAEDAgAEERIhQQUTMTJh/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAQADAQAAAAAAAAAAAAAAAAEAAyES/9oADAMBAAIRAxEAPwDJG1ZB2pW+kajg8U+mzZdQ7oXKQPIolspjXSin3nEx8ZxnmqlpZ3fTkBQiHA7gg4x8oCxDY3Gz/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/1.4",
+    "shutterSpeed": "1/35s",
+    "iso": "ISO 2500",
+    "focalLength": "23mm",
+    "profile": "Reala Ace · RAW Edit",
+    "dateTaken": "2025-09-13",
+    "place": "seoul-25",
+    "tags": [
+      "streets",
+      "night",
+      "people"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "seoul-25-dscf2250",
+    "series": "Seoul 25",
+    "fileNumber": "DSCF2250",
+    "displayUrl": "/photos/display/seoul-25-dscf2250.1e0b0dfe.jpg",
+    "thumbUrl": "/photos/thumb/seoul-25-dscf2250.4a0740c4.jpg",
+    "width": 1638,
+    "height": 2048,
+    "aspectRatio": 0.8,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAA0DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQIE/8QAIBAAAgICAgIDAAAAAAAAAAAAAQIDEQAEEzEFFCFBsf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGhEAAgIDAAAAAAAAAAAAAAAAAEEBAxESIf/aAAwDAQACEQMRAD8AAl0E2kjngUJyE2Bf5mOfW4WpxJdkUE6rH/H6zwC13uNq+h8ZHlH5ZlPuIAOgE6yeLEh9OZZ//9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/1.4",
+    "shutterSpeed": "1/35s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Reala Ace · RAW Edit",
+    "dateTaken": "2025-09-13",
+    "place": "seoul-25",
+    "tags": [
+      "streets",
+      "night"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "seoul-25-dscf2269",
+    "series": "Seoul 25",
+    "fileNumber": "DSCF2269",
+    "displayUrl": "/photos/display/seoul-25-dscf2269.4eded0a9.jpg",
+    "thumbUrl": "/photos/thumb/seoul-25-dscf2269.af43def2.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQG/8QAIxAAAgEDAgcBAAAAAAAAAAAAAQIEAAMFERITITFRU6Gx0f/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAZEQEAAgMAAAAAAAAAAAAAAAABABECMUH/2gAMAwEAAhEDEQA/AL8a2OvHYLwZtNdFUn4KG7Ixy3WG5+R8TflZKJk5UVw8aQynt1+0bZOQWJ4zeqKsl3EsOT//2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/1000s",
+    "iso": "ISO 125",
+    "focalLength": "23mm",
+    "profile": "Reala Ace · RAW Edit",
+    "dateTaken": "2025-09-14",
+    "place": "seoul-25",
+    "tags": [
+      "waterfront",
+      "golden-hour"
+    ],
+    "rating": 4
   }
 ]

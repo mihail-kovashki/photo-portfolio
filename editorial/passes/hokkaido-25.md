@@ -44,9 +44,9 @@ as 5 for now."
 ### Sapporo (38, five chapters, in site order: the city, then the Buddha, Jingu, Jozankei, Shiroi Koibito)
 
 - **Hill of the Buddha** (7, average 3.6): the highest on stars, and Claude first opened
-  with it. I moved the city first: "I think you overvalued the buddha photos a bit, maybe
-  your'e more of a monotonal fan", and on a city page people expect the city before the
-  more specific places. The Buddha in its
+  with it. I moved the city first, since on a city page people expect the city before the
+  more specific places. The set's ratings also ran slightly high (3184 especially; see
+  `taste.md`); that's about these frames, not about single-tone photos. The Buddha in its
   ring of lavender walls (3165), seen down the concrete tunnel (3172, 3170), the
   forecourt and pool in the rain (3176, 3182), a figure with an umbrella under the arch
   (3184), and the moai on the hill (3192).

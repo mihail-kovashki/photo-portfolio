@@ -2,7 +2,7 @@ import type { PlaceCollection } from "./types";
 
 // Approved 2026-10-01. The base for the trip, 28 Sep to 1 Oct. Jozankei and the Hill of the Buddha are
 // day trips but within Sapporo, so they're chapters here. The city opens, as people would expect, then the more
-// specific places. (The Buddha scored highest on stars; I think Claude overvalued it.)
+// specific places. (The Buddha scored highest on stars, a little high.)
 export const sapporo25: PlaceCollection = {
   id: "sapporo-25",
   name: "Sapporo",

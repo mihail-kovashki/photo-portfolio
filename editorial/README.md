@@ -212,8 +212,8 @@ or collection updates the files, so a later change is an edit plus a re-run.
 
 ## Tags
 
-The vocabulary is [`src/data/tags.ts`](../src/data/tags.ts): 23 tags, 17 for subject and
-6 for light and weather, with a description and an "applies when" for each.
+The vocabulary is [`src/data/tags.ts`](../src/data/tags.ts): 24 tags, 17 for subject and
+7 for light, weather and treatment, with a description and an "applies when" for each.
 
 - **Names are plain and consistent** (`looking-up`, `blue-hour`). Personality goes into
   chapter names and page text, not tag ids.
@@ -233,7 +233,6 @@ bulk keyword rewrite.
 
 | Candidate | Seen in | Notes |
 | --- | --- | --- |
-| `black-and-white` | Vietnam 2024 (St. Joseph's) | One frame so far; the Korea 2024 swimmer (Busan, not Yeosu) was play, not for the site |
 | `sun-in-frame` | Many sunsets and sunrises | Currently part of `golden-hour`; useful mainly for filtering |
 | `markets` | Madeira (Funchal market, 9700), Vietnam (Hanoi Old Quarter), Hokkaido (Otaru glass shops) | Three trips, but a frame or two each; not yet worth a page |
 | `waterfalls` | Seoraksan (Biryong, Towangseong), Madeira (Véu da Noiva, 0083), probably Hokkaido, Vietnam | DSCF3618 fits no tag today |
@@ -247,3 +246,5 @@ bulk keyword rewrite.
   N Seoul Tower; later the Sapporo TV tower).
 - 2026-10-02: `animals` added early, ahead of the three-trip rule, because it's an obvious
   tag to have (Madeira 2025's cat, 9771; the parked Hanoi cat, 7554).
+- 2026-10-02: `black-and-white` added early, for the same reason: St Joseph's in Hanoi (7508)
+  and the Ny Carlsberg Glyptotek chapter in Copenhagen 2024.

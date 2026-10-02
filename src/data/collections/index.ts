@@ -15,6 +15,8 @@ import { saoVicente25 } from "./sao-vicente-25";
 import { larano25 } from "./larano-25";
 import { picoRuivo25 } from "./pico-ruivo-25";
 import { fanal25 } from "./fanal-25";
+import { copenhagen24 } from "./copenhagen-24";
+import { malmo24 } from "./malmo-24";
 
 export type { Chapter, PlaceCollection } from "./types";
 
@@ -36,6 +38,8 @@ export const collections: Record<string, PlaceCollection> = {
   [larano25.id]: larano25,
   [picoRuivo25.id]: picoRuivo25,
   [fanal25.id]: fanal25,
+  [copenhagen24.id]: copenhagen24,
+  [malmo24.id]: malmo24,
 };
 
 export function findCollection(seriesId: string): PlaceCollection | undefined {

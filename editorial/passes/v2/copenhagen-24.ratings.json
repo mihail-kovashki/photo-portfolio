@@ -1,0 +1,481 @@
+{
+ "album": "Copenhagen 2024",
+ "places": [
+  "copenhagen-24",
+  "malmo-24"
+ ],
+ "pass": 2,
+ "date": "2026-10-02",
+ "method": "Fresh 600px contact sheets for all 62 files (9 sheets); a shortlist of 53 viewed at 1000px; 100% crops on 20 subjects (four to an image); proposed top frames checked against the site’s 5★ sheet (none proposed). Instagram first: six posts matched by dHash in the browser and by eye. After review: five black-and-white Glyptotek frames added to the folder (the 12 Nov post), judged at 1000px with 100% crops on four subjects.",
+ "instagram": {
+  "LOOKING UP / Copenhagen (26 Sep 2024)": [
+   "6804",
+   "6547",
+   "6818",
+   "6897",
+   "6784",
+   "6789",
+   "6933"
+  ],
+  "The streets of old Malmö (30 Oct)": [
+   "7029",
+   "7028",
+   "7011",
+   "7036",
+   "7033",
+   "7031",
+   "7123"
+  ],
+  "Under the trees (1 Nov)": [
+   "7115",
+   "7073",
+   "7046",
+   "7043",
+   "7080"
+  ],
+  "just some cool things in the middle (5 Nov)": [
+   "7110",
+   "7067",
+   "7090"
+  ],
+  "Malmö, no caption (8 Nov)": [
+   "7097",
+   "7098",
+   "7099"
+  ],
+  "shadows and light while exploring Copenhagen (12 Nov)": [
+   "6775",
+   "6779",
+   "6771",
+   "6776"
+  ]
+ },
+ "frames": [
+  {
+   "n": "6537",
+   "v2": 3,
+   "focus": "sharp",
+   "critique": "bridge band under the row of houses, from the boat; layered, says where we are. Flat sky, muted edit; pair of people under the arch small. Establishing candidate.",
+   "focusAt": "the lion head"
+  },
+  {
+   "n": "6539",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) Christiansborg backlit against a big cloudscape; the tower is a silhouette, the frame mostly sky."
+  },
+  {
+   "n": "6541",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) Bridge pier and a green lamp post; plain."
+  },
+  {
+   "n": "6547",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Christiansborg tower against bright cloud; posted (Looking up). Tree at left heavy and dark; tower reads well. "
+  },
+  {
+   "n": "6576",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "Royal Playhouse: half water, half sky, the building small in the middle, Scandic sign. A record."
+  },
+  {
+   "n": "6590",
+   "v2": 3,
+   "focus": "sharp",
+   "critique": "Boathouses with three rowers in a red-and-white boat: the people make it. Roofs repeat nicely; too much sky and water, centred band.",
+   "focusAt": "the rower"
+  },
+  {
+   "n": "6594",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Orange warehouse, grey hut, dry grass, rusty quay, warm reflection: horizontal bands of colour. Clutter at both edges (lamp post right, railing and 40 sign left)."
+  },
+  {
+   "n": "6597",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "The 1862 warehouse: orange brick with patina, strong colour and texture; sky top third. White building cut at right edge. A facade portrait, nicely edited."
+  },
+  {
+   "n": "6606",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) The Opera far off across open water; mostly sky and water."
+  },
+  {
+   "n": "6620",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) Building on the shore behind the boat wake; flat."
+  },
+  {
+   "n": "6638",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Copenhill smoking behind Nyholm, flag, heavy grey sky. Specific to Copenhagen; water takes the lower 40% with nothing in it."
+  },
+  {
+   "n": "6641",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Nyholm and the Amager chimneys, speedboat crossing: the boat is the moment. Twin of 6638 by place; pick one (6638 for Copenhill, 6641 for life)."
+  },
+  {
+   "n": "6668",
+   "v2": 3,
+   "focus": "sharp",
+   "critique": "The new blocks on Papirøen with sunbathers on the harbour steps: the people give it scale and a story. Grey sky suits it. Vans and site clutter at the left edge.",
+   "focusAt": "the sunbathers"
+  },
+  {
+   "n": "6692",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Our Saviour's spiral from the boat. Tower superb; six power/tram wires cross the sky, a crane at left, railing posts at the bottom. The wires are the blemish (not fixable easily)."
+  },
+  {
+   "n": "6719",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) Boat wake toward Christiansborg; a record."
+  },
+  {
+   "n": "6726",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) Down a canal under a flat sky; plain."
+  },
+  {
+   "n": "6728",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "Christiansborg tower from below, a beige canopy filling the bottom with a lamp. Canopy dominates; 6547 is the better Christiansborg."
+  },
+  {
+   "n": "6771 (1)",
+   "v2": 3,
+   "focus": "sharp",
+   "focusAt": "the statue through the arch",
+   "critique": "The Glyptotek from the upper floor: two brick arches over a marble floor, the checkerboard and a sculpture glimpsed through the second. Posted. A good graphic idea; the dark wedge at the left edge and the flat grey wall above weigh on it. (Black and white, Lightroom for Android export at 1707×2560: enough for the site’s 2048px display size.)"
+  },
+  {
+   "n": "6772",
+   "v2": 3,
+   "focus": "sharp",
+   "focusAt": "the couple on the stairs",
+   "critique": "The skylit street between the Glyptotek’s old and new wings, a couple coming down the stairs past the veiled statue. Not posted. The people give scale; a near-twin of 6776, kept as the variation with a moment in it. (Black and white, Lightroom for Android export at 1707×2560: enough for the site’s 2048px display size.)"
+  },
+  {
+   "n": "6775",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the skylight ribs",
+   "critique": "Looking straight up the skylight: ribs, raking light striping the white wall, the brick wall in shadow. The post’s cover. Close to abstract, the strongest use of light in the set. (Black and white, Lightroom for Android export at 1707×2560: enough for the site’s 2048px display size.)"
+  },
+  {
+   "n": "6776",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the veiled statue",
+   "critique": "The same street empty: stairs leading to the veiled statue, light falling down the white wall, the arches receding on the right. Posted. Quiet and a little eerie; the cleaner of the two. (Black and white, Lightroom for Android export at 1707×2560: enough for the site’s 2048px display size.)"
+  },
+  {
+   "n": "6779 (1)",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the nearest statues",
+   "critique": "The sculpture corridor: white marble figures on plinths along a checkerboard floor, arches on the left, spotlights receding. Posted. Classic perspective, strong tones; the obvious opener. (Black and white, Lightroom for Android export at 1707×2560: enough for the site’s 2048px display size.)"
+  },
+  {
+   "n": "6783",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "City Hall full facade and tower against clean blue; half the frame is empty sky, a lamp post cut at bottom right. Twin of 6784."
+  },
+  {
+   "n": "6784",
+   "v2": 3,
+   "focus": "sharp",
+   "critique": "City Hall tower, posted: tighter than 6783, warm low light on brick and copper, clean blue. A well-made tower portrait; small mast at the roof's left. Wins over 6783. Revised from 4 to 3 after Rosenborg (6897).",
+   "focusAt": "the clock face"
+  },
+  {
+   "n": "6789",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "Palace Hotel tower, posted in Looking up. The BESA DIGITAL and Starbucks banners sit at eye level of the frame and the top half is empty sky. Kept off unless Mihail overrides. Selected after review on Mihail’s call, last in Towers and spires."
+  },
+  {
+   "n": "6794",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Brick building with a pediment in warm evening light behind a birch, flowers in front, a woman reading on the grass. Gentle and layered; the dark foreground is a bit heavy. (Probably the Royal Library garden.)"
+  },
+  {
+   "n": "6797",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) The harbour toward Cirkelbroen, mostly water."
+  },
+  {
+   "n": "6800",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "The Black Diamond on a diagonal, warm buildings reflected at the bottom against cool blue. Graphic, simple, good use of the hour.",
+   "focusAt": "the open window, a touch soft at 100%, fine at display size"
+  },
+  {
+   "n": "6803",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Cirkelbroen in low sun, a small boat of friends passing under the masts and cables, brick warehouse behind. Line, colour and a human moment; the masts are cut at top (the left one by design). Strong.",
+   "focusAt": "the people in the boat"
+  },
+  {
+   "n": "6804",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Christian's Church spire framed between two glass blocks, cyclists on the quay, warm light. The Looking up cover. Old between new, says Copenhagen. Dark tree mass in the middle.",
+   "focusAt": "the cyclists on the quay"
+  },
+  {
+   "n": "6810",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) The harbour from a bridge at dusk; plain."
+  },
+  {
+   "n": "6811",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Christianshavn canal from the bridge, a restaurant boat full of diners, still water. Top half is empty sky; pleasant, generic."
+  },
+  {
+   "n": "6813",
+   "v2": 3,
+   "focus": "sharp",
+   "critique": "Red half-timbered house in Christianshavn, a couple on the quay edge. Strong red; cars across the bottom and a cut boat roof hurt. The couple saves it.",
+   "focusAt": "the couple"
+  },
+  {
+   "n": "6816",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Christianshavn canal, a man steering a small boat toward the camera between moored boats and masts, evening sun in the trees. The canal picture of the set; beats 6811. Plain sky top 40%, a boat cut at bottom right.",
+   "focusAt": "the man steering"
+  },
+  {
+   "n": "6818",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Our Saviour's spire lit gold against deep blue, posted. The light is the photo. Wires at top-left and a hanging street lamp at right are blemishes. Beats 6692.",
+   "focusAt": "the gilded balustrade"
+  },
+  {
+   "n": "6897",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Rosenborg tower and gable, posted. Brick and copper in hard clean light, well placed in the frame. Solid architecture frame.",
+   "focusAt": "the copper lantern"
+  },
+  {
+   "n": "6933",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "The Marble Church from below: copper dome, gilt inscription, columns, deep blue sky. Posted. Strong looking-up frame; the left edge cuts the facade.",
+   "focusAt": "the inscription"
+  },
+  {
+   "n": "6976",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "St Johannes from below: scaffolding up the right side, the big window blown to white. 6979 wins."
+  },
+  {
+   "n": "6979",
+   "v2": 3,
+   "focus": "sharp",
+   "critique": "St Johannes gable and tower on a landscape diagonal, trefoil and glass window, clean blue. Graphic and colourful; bottom edge cuts the window. Opens Malmö well if a church opens it.",
+   "focusAt": "the clock"
+  },
+  {
+   "n": "6995",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "St Petri, gothic brick and two spires; trees fill both lower corners, the right one a big green mass. Decent record of the church, not more."
+  },
+  {
+   "n": "7011",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Street corner with a café, people at tables, a bike, a walking couple, signs. Posted (old Malmö). Busy, but sunny everyday Malmö; the lower third is empty cobbles and a tram rail."
+  },
+  {
+   "n": "7016",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Long half-timbered house with a gas lamp and cobbles near Lilla Torg; people at the far end. Good texture; the lower half is shadowed cobbles, the lamp splits the frame."
+  },
+  {
+   "n": "7028",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Yellow house, green doors with a carved fan, a rose bush, sharp raking shadow. Posted. Colour harmony (ochre, bottle green, red tile) and light; simple and well seen.",
+   "focusAt": "the carved door"
+  },
+  {
+   "n": "7029",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "The orange house with the blue door at 12:44, dappled shadow, dormers and the brick neighbour's balconies. Posted. Same house as 7123."
+  },
+  {
+   "n": "7031",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Long old-town street, a lamp post in front, a man walking toward me, a pram behind, shadow stripes on the paving. Posted. Depth and colour; the lamp post is heavy and the lower third is empty paving."
+  },
+  {
+   "n": "7033",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "A window with a red cat figurine on the sill. Posted. A quiet detail that needs the carousel around it; on its own page it's a filler."
+  },
+  {
+   "n": "7036",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Blue Alfa Romeo Spider on fan-pattern cobbles. Posted. The car is lovely; the grey van parked behind it is the blemish, and half the frame is cobbles."
+  },
+  {
+   "n": "7043",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "A great tree arching over Kungsparken's lawn, a woman reading by the water, people in the distance. Posted (Under the trees). Framing works; the bottom third is dark shade."
+  },
+  {
+   "n": "7045",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "The moat in Kungsparken: tree walls on both sides, an autumn-turning tree at right, a footbridge and a tiny windmill far off, people on a pontoon. Pleasant; a long strip of lawn in front adds little."
+  },
+  {
+   "n": "7046",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Avenue of old trees with dappled light, a bench and a pram. Posted (Under the trees). Depth and calm; the lower third is bare path."
+  },
+  {
+   "n": "7051",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "The library's old castle building (Slottet): round brick tower with a conical slate roof against pale sky. Clean, but 40% empty sky above."
+  },
+  {
+   "n": "7052",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "Library hall with the column, shelves and 790–799 signs in front. The signs and shelves clutter it; 7053/7058 show the window better."
+  },
+  {
+   "n": "7053",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Library glass wall on a vertical, the column at right, shelves stepping down, birds in the sky. Height reads well; the stone wall at right is dead space."
+  },
+  {
+   "n": "7055",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "The glass wall in landscape, two columns, people at desks. Fine but static; 7061 its twin."
+  },
+  {
+   "n": "7058",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "The glass wall dead centre, the red-domed pavilion framed in the middle pane, a man walking across, round sofas in front. Symmetry plus the walker: the library's frame.",
+   "focusAt": "the walker (slight motion in the stride)"
+  },
+  {
+   "n": "7061",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) Library glass wall, landscape; twin of 7055."
+  },
+  {
+   "n": "7062",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "The library's glass block reflecting the old castle building in its panes. A good idea; the light is flat and the stone wall at left takes a quarter of the frame."
+  },
+  {
+   "n": "7067",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Turning Torso over Slottsparken and the museum, a pontoon and a red buoy on the moat. Posted. Places Malmö at once; the top half is empty blue, the tower is small."
+  },
+  {
+   "n": "7073",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "A bench between two pines facing the Kungsparken fountain, long shadows across the path. Posted (Under the trees). Framed by the trunks, quiet, well seen; the best of the three fountain frames.",
+   "focusAt": "the bench"
+  },
+  {
+   "n": "7080",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "The fountain seen through hanging branches, autumn-tinged trees behind. Posted. Good framing; the lower half is plain water."
+  },
+  {
+   "n": "7090",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "The fountain with gulls wheeling over it, posted. The birds give it life; a tower block at the left edge and a flat bottom half of water. Second fountain frame at most."
+  },
+  {
+   "n": "7097",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Houseboats on the canal from the bank, a red kayak between them, a tree framing the top left and a slope of dry grass in front. Posted. Warm; the grass slope and the fence post at right are a lot of foreground."
+  },
+  {
+   "n": "7098",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Turning Torso over a wooden houseboat, a red kayak passing, framed by oak leaves. Posted. The Malmö picture: old-fashioned houseboat, the tower, a person. The leaves at top are dark and heavy.",
+   "focusAt": "the kayaker and the tower"
+  },
+  {
+   "n": "7099",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "The Torso over the marina, masts on both sides, white yachts in front. Posted. Clean and bright; the yachts crowd the bottom half."
+  },
+  {
+   "n": "7110",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Slottsmöllan across a wide lawn, a few people sitting, big pale sky. Posted. Calm and simple; the mill is small and the lawn takes half the frame."
+  },
+  {
+   "n": "7115",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Pines over the pond in Kungsparken, two people sitting at the water, late warm light. The cover of 'Under the trees'. Lovely light; the railing curving across the front and the busy canopy cost it. Raised to 4 on Mihail’s call after review: one of the better frames in its chapter.",
+   "focusAt": "the two people at the water"
+  },
+  {
+   "n": "7123",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "The same house at 17:11 in soft light: bikes, chairs and mums in front, the iron bracket at top right. Posted. Warmer and calmer than 7029, the bikes make the foreground. Pick over 7029 (toss-up for Mihail: both were posted).",
+   "focusAt": "the bikes"
+  }
+ ]
+}

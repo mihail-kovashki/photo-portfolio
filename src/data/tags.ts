@@ -207,6 +207,14 @@ export const tags: Tag[] = [
     appliesWhen: "Seasonal colour is the point of the frame.",
     examples: ["Seoraksan maples", "Jozankei"],
   },
+  {
+    id: "black-and-white",
+    facet: "light",
+    name: "Black and white",
+    description: "Frames edited in black and white, where tone and shape do the work.",
+    appliesWhen: "The finished photo is black and white.",
+    examples: ["St. Joseph's, Hanoi", "Ny Carlsberg Glyptotek, Copenhagen"],
+  },
 ];
 
 export function findTag(id: string): Tag | undefined {

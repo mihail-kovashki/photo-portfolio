@@ -3,7 +3,8 @@
 
 import generated from "./photos.json";
 import { photoCuration, photoOrder } from "./curation";
-import { findCollection, type Chapter } from "./collections";
+import { findCollection, findPlace, type Chapter } from "./collections";
+import { formatSeasonYear } from "@/lib/utils";
 
 export interface RecipeDetails {
   filmSimulation: string;
@@ -53,6 +54,8 @@ export interface GeneratedPhoto {
 export interface Photo extends GeneratedPhoto {
   title?: string;
   featured: boolean;
+  /** The place's display name, without the year: "Seoul", not "Seoul 25". */
+  placeName: string;
 }
 
 export interface SeriesItem {
@@ -68,6 +71,13 @@ function slugify(text: string) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+const YEAR_SUFFIX = /\s+\d{2,4}$/;
+
+/** Display name for a series: its place's name, or the series name without the year. */
+function placeNameFor(series: string): string {
+  return findPlace(slugify(series))?.name ?? series.replace(YEAR_SUFFIX, "");
 }
 
 const generatedPhotos = generated as GeneratedPhoto[];
@@ -89,6 +99,7 @@ export const photos: Photo[] = generatedPhotos
     title: photoCuration[p.id]?.title,
     // 5★ means portfolio hero; curation.ts can still override either way
     featured: photoCuration[p.id]?.featured ?? p.rating === 5,
+    placeName: placeNameFor(p.series),
   }))
   // Stable sort: listed photos first in their listed order, the rest keep ingest order
   .sort((a, b) => (orderIndex.get(a.id) ?? unlisted) - (orderIndex.get(b.id) ?? unlisted));
@@ -171,21 +182,77 @@ export function coverPhoto(list: Photo[]): Photo | undefined {
   return landscape.find((p) => p.featured) ?? landscape[0] ?? list[0];
 }
 
-export interface Trip extends SeriesItem {
-  /** The collection name without its year suffix: "Prague 26" -> "Prague". */
+export interface Place extends SeriesItem {
+  /** Display name, without the year: "Funchal". */
   place: string;
+  /** The trip it belongs to, as written in its collection: "Madeira · Spring 2025". */
+  trip: string;
   /** Earliest photo date (YYYY-MM-DD), when EXIF has one. */
   startDate?: string;
 }
 
-/** Collections as trips, oldest first. A place can appear more than once, one per trip. */
-export const trips: Trip[] = seriesList
+/** Every place, oldest first. A place name can appear more than once, one per trip. */
+export const places: Place[] = seriesList
   .filter((s) => s.id !== ALL_SERIES_ID)
   .map((s) => {
     const dates = photosInSeries(s.id)
       .map((p) => p.dateTaken)
       .filter((d): d is string => Boolean(d))
       .sort();
-    return { ...s, place: s.name.replace(/\s+\d{2,4}$/, ""), startDate: dates[0] };
+    const place = placeNameFor(s.name);
+    const trip = findPlace(s.id)?.trip ?? `${place} · ${formatSeasonYear(dates[0])}`;
+    return { ...s, place, trip, startDate: dates[0] };
   })
   .sort((a, b) => (a.startDate ?? "").localeCompare(b.startDate ?? ""));
+
+export interface Trip {
+  id: string;
+  /** "Madeira" in "Madeira · Spring 2025". */
+  name: string;
+  /** "Spring" in "Madeira · Spring 2025". */
+  season: string;
+  year: string;
+  /** Its places in the order they were shot. */
+  places: Place[];
+  count: number;
+}
+
+/** Trips, newest first, each with its places. Places with the same trip label form one trip. */
+const placesByTrip = new Map<string, Place[]>();
+for (const p of places) placesByTrip.set(p.trip, [...(placesByTrip.get(p.trip) ?? []), p]);
+
+export const trips: Trip[] = [...placesByTrip]
+  .map(([label, tripPlaces]) => {
+    const [name, when = ""] = label.split(" · ");
+    const [, season = when, year = tripPlaces[0].startDate?.slice(0, 4) ?? ""] =
+      when.match(/^(.*?)\s*(\d{4})$/) ?? [];
+    return {
+      id: slugify(label),
+      name,
+      season,
+      year,
+      places: tripPlaces,
+      count: tripPlaces.reduce((sum, p) => sum + p.count, 0),
+    };
+  })
+  .reverse();
+
+export function findPlaceItem(seriesId: string): Place | undefined {
+  return places.find((p) => p.id === seriesId);
+}
+
+export function tripOf(seriesId: string): Trip | undefined {
+  return trips.find((t) => t.places.some((p) => p.id === seriesId));
+}
+
+/**
+ * Where a place sits, for titles and descriptions: "Madeira · Spring 2025", or just
+ * "Autumn 2025" when the trip is named after the place (Seoul in Seoul).
+ */
+export function placeContext(seriesId: string): string {
+  const place = findPlaceItem(seriesId);
+  const trip = tripOf(seriesId);
+  if (!place || !trip) return "";
+  const when = [trip.season, trip.year].filter(Boolean).join(" ");
+  return trip.name === place.place ? when : `${trip.name} · ${when}`;
+}

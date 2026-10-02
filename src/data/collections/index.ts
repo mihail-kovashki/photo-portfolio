@@ -41,3 +41,18 @@ export const collections: Record<string, PlaceCollection> = {
 export function findCollection(seriesId: string): PlaceCollection | undefined {
   return collections[seriesId];
 }
+
+/**
+ * Places not yet through the editorial pass: just enough to name them and file them
+ * under their trip. A place moves out of here when it gets its collection file.
+ */
+const unreviewedPlaces: Record<string, Pick<PlaceCollection, "name" | "trip">> = {
+  "prague-26": { name: "Prague", trip: "Czechia · Summer 2026" },
+  "kutna-hora-26": { name: "Kutná Hora", trip: "Czechia · Summer 2026" },
+  "cesky-krumlov-26": { name: "Český Krumlov", trip: "Czechia · Summer 2026" },
+};
+
+/** A place's display name and trip, whether or not it has been through the pass. */
+export function findPlace(seriesId: string): Pick<PlaceCollection, "name" | "trip"> | undefined {
+  return collections[seriesId] ?? unreviewedPlaces[seriesId];
+}

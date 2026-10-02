@@ -1,4 +1,4 @@
-import { findSeries, ALL_SERIES_ID } from "./photos";
+import { findPlaceItem, placeContext } from "./photos";
 
 // Absolute base URL for share images, canonical links and the sitemap.
 // SITE_URL overrides; on Vercel the production domain (custom domain once connected)
@@ -13,8 +13,9 @@ export const SITE_NAME = "Mihail Kovashki (MiKo) · Photography";
 export const SITE_DESCRIPTION =
   "The photo journal of Mihail Kovashki (MiKo): street scenes, landscapes and quiet moments from travels, with the Fujifilm film recipes behind the shots.";
 
-/** Page title for a collection id; the site name for everything. */
+/** Page title for a place id ("Funchal · Madeira · Spring 2025 · Mihail Kovashki"); the site name for everything. */
 export function collectionTitle(seriesId: string): string {
-  const series = findSeries(seriesId);
-  return !series || series.id === ALL_SERIES_ID ? SITE_NAME : `${series.name} · Mihail Kovashki`;
+  const place = findPlaceItem(seriesId);
+  if (!place) return SITE_NAME;
+  return [place.place, placeContext(seriesId), "Mihail Kovashki"].filter(Boolean).join(" · ");
 }

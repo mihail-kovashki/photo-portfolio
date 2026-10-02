@@ -1,29 +1,30 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
-import { LayoutGrid, GalleryVerticalEnd } from "lucide-react";
-
-export interface SeriesItem {
-  id: string;
-  name: string;
-  count: number;
-}
+import { LayoutGrid, GalleryVerticalEnd, ChevronDown } from "lucide-react";
+import { trips, tripOf, ALL_SERIES_ID } from "@/data/photos";
 
 interface SeriesFilterProps {
   activeSeries: string;
   onSelectSeries: (id: string) => void;
-  seriesList: SeriesItem[];
+  /** Opens the index of every trip. */
+  onOpenTrips: () => void;
   layoutMode: "masonry" | "story";
   onToggleLayout: (mode: "masonry" | "story") => void;
 }
 
+// The pills are the places of one trip: the active place's, or on the home page the
+// latest. Everything else is a tap away in the trip index.
 export function SeriesFilter({
   activeSeries,
   onSelectSeries,
-  seriesList,
+  onOpenTrips,
   layoutMode,
   onToggleLayout,
 }: SeriesFilterProps) {
+  const isHome = activeSeries === ALL_SERIES_ID;
+  const trip = tripOf(activeSeries) ?? trips[0];
+
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isMouseDown, setIsMouseDown] = useState(false);
   const isDraggingRef = useRef(false);
@@ -59,7 +60,18 @@ export function SeriesFilter({
       window.removeEventListener("resize", updateScrollAffordance);
       resizeObserver.disconnect();
     };
-  }, [updateScrollAffordance, seriesList]);
+  }, [updateScrollAffordance, trip]);
+
+  // A trip with more places than fit: bring the active one into view
+  useEffect(() => {
+    const el = scrollRef.current;
+    const active = el?.querySelector<HTMLElement>("[aria-current]");
+    if (!el || !active) return;
+    const left = active.offsetLeft - el.offsetLeft;
+    if (left < el.scrollLeft || left + active.offsetWidth > el.scrollLeft + el.clientWidth) {
+      el.scrollLeft = left - (el.clientWidth - active.offsetWidth) / 2;
+    }
+  }, [activeSeries]);
 
   const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!scrollRef.current || e.button !== 0) return;
@@ -109,8 +121,42 @@ export function SeriesFilter({
 
   return (
     <div id="gallery" className="max-w-7xl mx-auto px-4 sm:px-6 mb-6 sm:mb-10 scroll-mt-24">
+      {/* Where you are, and the way to everywhere else */}
+      <div className="flex items-center justify-between gap-3 mb-2.5 sm:mb-3">
+        <p className="min-w-0 truncate font-mono text-[11px] uppercase tracking-[0.12em] text-zinc-500">
+          {isHome ? (
+            <span>Latest trip</span>
+          ) : (
+            <button
+              type="button"
+              onClick={() => onSelectSeries(ALL_SERIES_ID)}
+              className="uppercase hover:text-white transition-colors"
+            >
+              All works
+            </button>
+          )}
+          {trip && (
+            <>
+              <span className="mx-2 text-zinc-700">/</span>
+              <span className="text-zinc-300 normal-case tracking-normal">
+                {trip.year} · {trip.name}
+              </span>
+            </>
+          )}
+        </p>
+        <button
+          type="button"
+          onClick={onOpenTrips}
+          aria-haspopup="dialog"
+          className="shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-mono bg-white/5 hover:bg-white/10 border border-white/10 text-zinc-300 hover:text-white transition-colors"
+        >
+          <span>All trips</span>
+          <ChevronDown className="w-3.5 h-3.5" />
+        </button>
+      </div>
+
       <div className="flex items-center justify-between gap-4 pb-3 sm:pb-5 border-b border-white/10">
-        {/* Dynamic Series Tabs with Click-and-Drag Mouse Scroll & Fade Affordance */}
+        {/* The trip's places: click-and-drag mouse scroll and a fade where there's more */}
         <div
           ref={scrollRef}
           onMouseDown={handleMouseDown}
@@ -128,32 +174,34 @@ export function SeriesFilter({
             isMouseDown ? "cursor-grabbing select-none" : "cursor-grab"
           }`}
         >
-          {seriesList.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => {
-                if (!isDraggingRef.current) {
-                  onSelectSeries(item.id);
-                }
-              }}
-              className={`px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs font-mono whitespace-nowrap transition-all duration-200 flex items-center gap-2 shrink-0 select-none ${
-                activeSeries === item.id
-                  ? "bg-white text-zinc-950 font-semibold shadow-md"
-                  : "bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white border border-white/5"
-              }`}
-            >
-              <span>{item.name}</span>
-              <span
-                className={`text-[10px] px-1.5 py-0.5 rounded-full ${
-                  activeSeries === item.id
-                    ? "bg-zinc-200 text-zinc-900"
-                    : "bg-white/10 text-zinc-400"
+          {trip?.places.map((item) => {
+            const isActive = activeSeries === item.id;
+            return (
+              <button
+                key={item.id}
+                onClick={() => {
+                  if (!isDraggingRef.current) {
+                    onSelectSeries(item.id);
+                  }
+                }}
+                aria-current={isActive ? "page" : undefined}
+                className={`px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs font-mono whitespace-nowrap transition-all duration-200 flex items-center gap-2 shrink-0 select-none ${
+                  isActive
+                    ? "bg-white text-zinc-950 font-semibold shadow-md"
+                    : "bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white border border-white/5"
                 }`}
               >
-                {item.count}
-              </span>
-            </button>
-          ))}
+                <span>{item.place}</span>
+                <span
+                  className={`text-[10px] px-1.5 py-0.5 rounded-full ${
+                    isActive ? "bg-zinc-200 text-zinc-900" : "bg-white/10 text-zinc-400"
+                  }`}
+                >
+                  {item.count}
+                </span>
+              </button>
+            );
+          })}
         </div>
 
         {/* Layout Mode Switcher (Desktop & Tablet only) */}

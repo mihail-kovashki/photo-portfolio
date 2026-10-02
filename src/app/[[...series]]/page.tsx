@@ -7,10 +7,11 @@ import {
   photosInSeries,
   coverPhoto,
   seriesPath,
+  findPlaceItem,
+  placeContext,
   ALL_SERIES_ID,
 } from "@/data/photos";
 import { collectionTitle, SITE_DESCRIPTION } from "@/data/site";
-import { formatSeasonYear } from "@/lib/utils";
 
 // "/" shows everything, "/prague-26" one collection. All pages are pre-rendered;
 // any other path is a 404.
@@ -34,16 +35,15 @@ async function resolveSeriesId(params: Params): Promise<string> {
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const seriesId = await resolveSeriesId(params);
-  const series = findSeries(seriesId);
+  const place = findPlaceItem(seriesId);
   const list = photosInSeries(seriesId);
   const cover = coverPhoto(list);
   const title = collectionTitle(seriesId);
 
-  const seasons = [...new Set(list.map((p) => formatSeasonYear(p.dateTaken)).filter(Boolean))];
-  const description =
-    seriesId === ALL_SERIES_ID || !series
-      ? SITE_DESCRIPTION
-      : `${list.length} photographs: ${series.name}${seasons.length === 1 ? `, ${seasons[0]}` : ""}.`;
+  const context = placeContext(seriesId);
+  const description = place
+    ? `${list.length} photographs from ${place.place}${context ? `, ${context}` : ""}.`
+    : SITE_DESCRIPTION;
 
   return {
     title,

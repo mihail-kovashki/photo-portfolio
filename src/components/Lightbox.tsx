@@ -494,7 +494,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, handlePrev, handleNext, onClose, resetZoom]);
 
-  const displayTitle = photo ? photo.title || photo.series : "";
+  const displayTitle = photo ? photo.title || photo.placeName : "";
 
   // The early return lives inside AnimatePresence so the closing fade can play
   return (
@@ -521,7 +521,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
             <span>/</span>
             <span>{photos.length}</span>
             <span className="hidden sm:inline text-zinc-600">·</span>
-            <span className="hidden sm:inline text-zinc-400">{photo.series}</span>
+            <span className="hidden sm:inline text-zinc-400">{photo.placeName}</span>
           </div>
 
           {/* Action Buttons */}
@@ -686,7 +686,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
               >
                 <Image
                   src={photo.displayUrl}
-                  alt={photo.title || `${photo.series} ${photo.fileNumber}`}
+                  alt={photo.title || `${photo.placeName} ${photo.fileNumber}`}
                   data-lightbox-image={photo.id}
                   fill
                   priority
@@ -730,7 +730,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                         </span>
                       )}
                       <span className="text-[11px] sm:text-xs font-mono text-zinc-400">
-                        {photo.title ? `${photo.series} · ${formatSeasonYear(photo.dateTaken)}` : formatSeasonYear(photo.dateTaken)}
+                        {photo.title ? `${photo.placeName} · ${formatSeasonYear(photo.dateTaken)}` : formatSeasonYear(photo.dateTaken)}
                       </span>
                     </div>
                     <h2 className="text-lg sm:text-2xl landscape-compact-title font-serif text-white tracking-tight">

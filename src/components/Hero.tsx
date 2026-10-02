@@ -2,18 +2,18 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
-import { trips } from "@/data/photos";
+import { places } from "@/data/photos";
 import { preferredScrollBehavior } from "@/lib/utils";
 
-// Departure-board flipper: the hero names a trip and flips through the others once,
+// Departure-board flipper: the hero names a place and flips through the others once,
 // oldest to newest, then settles back on the latest. Hovering starts another pass;
-// clicking opens that trip's collection.
+// clicking opens that place.
 const FLIP_INTERVAL_MS = 2500;
 // The first flip comes sooner, while visitors are still at the top of the page
 const FIRST_FLIP_DELAY_MS = 1500;
 const RESTART_DELAY_MS = 600;
 
-const latestIndex = trips.length - 1;
+const latestIndex = places.length - 1;
 
 interface HeroProps {
   onSelectSeries?: (seriesId: string) => void;
@@ -22,14 +22,14 @@ interface HeroProps {
 export function Hero({ onSelectSeries }: HeroProps) {
   const reduceMotion = useReducedMotion();
   const [index, setIndex] = useState(latestIndex);
-  // Flips left in the current pass. A full pass visits every trip and ends on the latest.
-  const [flipsLeft, setFlipsLeft] = useState(trips.length);
+  // Flips left in the current pass. A full pass visits every place and ends on the latest.
+  const [flipsLeft, setFlipsLeft] = useState(places.length);
   const [nextDelay, setNextDelay] = useState(FIRST_FLIP_DELAY_MS);
 
   useEffect(() => {
-    if (reduceMotion || flipsLeft === 0 || trips.length < 2) return;
+    if (reduceMotion || flipsLeft === 0 || places.length < 2) return;
     const timer = setTimeout(() => {
-      setIndex((i) => (i + 1) % trips.length);
+      setIndex((i) => (i + 1) % places.length);
       setFlipsLeft((n) => n - 1);
       setNextDelay(FLIP_INTERVAL_MS);
     }, nextDelay);
@@ -39,14 +39,14 @@ export function Hero({ onSelectSeries }: HeroProps) {
   const restartPass = () => {
     if (flipsLeft > 0) return;
     setNextDelay(RESTART_DELAY_MS);
-    setFlipsLeft(trips.length);
+    setFlipsLeft(places.length);
   };
 
-  const trip = trips[index];
+  const place = places[index];
 
-  const handleTripClick = () => {
-    if (!trip) return;
-    onSelectSeries?.(trip.id);
+  const handlePlaceClick = () => {
+    if (!place) return;
+    onSelectSeries?.(place.id);
     document.getElementById("gallery")?.scrollIntoView({ behavior: preferredScrollBehavior() });
   };
 
@@ -66,17 +66,17 @@ export function Hero({ onSelectSeries }: HeroProps) {
           </span>
 
           {/* Monumental Hero Subject (Destination Flipper) */}
-          {trip && (
+          {place && (
             <span className="block mt-1 sm:mt-2 text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-tight text-white leading-[1.15]">
               <button
                 type="button"
-                onClick={handleTripClick}
+                onClick={handlePlaceClick}
                 onMouseEnter={restartPass}
                 className="inline-block h-[1.38em] overflow-hidden relative cursor-pointer px-3 sm:px-5 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-white/60"
               >
                 <AnimatePresence mode="popLayout" initial={false}>
                   <motion.span
-                    key={trip.id}
+                    key={place.id}
                     initial={{ y: "110%", opacity: 0, filter: "blur(6px)" }}
                     animate={{ y: "0%", opacity: 1, filter: "blur(0px)" }}
                     exit={{ y: "-110%", opacity: 0, filter: "blur(6px)" }}
@@ -87,7 +87,7 @@ export function Hero({ onSelectSeries }: HeroProps) {
                     }}
                     className="block italic font-normal text-white hover:text-zinc-300 transition-colors whitespace-nowrap px-1"
                   >
-                    {trip.place}
+                    {place.place}
                   </motion.span>
                 </AnimatePresence>
               </button>

@@ -82,7 +82,7 @@ const FOCUS_RING =
   "outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-4 focus-visible:ring-offset-[#09090b]";
 
 export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: PhotoCardProps) {
-  const displayTitle = photo.title || photo.series;
+  const displayTitle = photo.title || photo.placeName;
   const season = formatSeasonYear(photo.dateTaken);
   const focal = focalOrLens(photo);
   const exposure = exposureSummary(photo);
@@ -111,7 +111,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
         >
           <DevelopingImage
             src={photo.displayUrl}
-            alt={photo.title || `${photo.series} ${photo.fileNumber}`}
+            alt={photo.title || `${photo.placeName} ${photo.fileNumber}`}
             priority={index < 2}
             blurDataURL={photo.blurDataUrl}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
@@ -135,7 +135,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
               {displayTitle}
             </h3>
             <span className="text-xs font-mono text-zinc-500">
-              {photo.title ? `${photo.series} · ` : ""}{season}
+              {photo.title ? `${photo.placeName} · ` : ""}{season}
             </span>
           </div>
 
@@ -171,7 +171,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
         <div className="relative w-full overflow-hidden" style={{ aspectRatio: photo.aspectRatio }}>
           <DevelopingImage
             src={photo.thumbUrl}
-            alt={photo.title || `${photo.series} ${photo.fileNumber}`}
+            alt={photo.title || `${photo.placeName} ${photo.fileNumber}`}
             blurDataURL={photo.blurDataUrl}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover"
@@ -213,7 +213,7 @@ export function PhotoCard({ photo, index, onOpen, layoutMode = "masonry" }: Phot
           </span>
         </div>
         <div className="flex items-center justify-between text-[11px] font-mono text-zinc-500 mt-0.5">
-          <span>{photo.title ? `${photo.series} · ` : ""}{season}</span>
+          <span>{photo.title ? `${photo.placeName} · ` : ""}{season}</span>
           <span className="text-zinc-400">
             {exposure}
           </span>

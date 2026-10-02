@@ -8,10 +8,10 @@ import { SeriesFilter } from "@/components/SeriesFilter";
 import { PhotoGrid } from "@/components/PhotoGrid";
 import { Lightbox } from "@/components/Lightbox";
 import { GearModal } from "@/components/GearModal";
+import { TripIndex } from "@/components/TripIndex";
 import { Footer } from "@/components/Footer";
 import {
   photos,
-  seriesList,
   photosInSeries,
   chaptersFor,
   findSeries,
@@ -21,6 +21,7 @@ import {
 } from "@/data/photos";
 import { collectionTitle } from "@/data/site";
 import { captureMorphOrigin } from "@/lib/photoMorph";
+import { preferredScrollBehavior } from "@/lib/utils";
 
 // The active collection (/prague-26) and the open photo (?photo=id) live in the URL,
 // so shared links, reloads and the browser's back/forward buttons all agree.
@@ -67,6 +68,7 @@ export function Gallery({ initialSeries }: GalleryProps) {
   const activeSeries = useSyncExternalStore(subscribeToUrl, getSeriesFromPath, () => initialSeries);
   const [layoutMode, setLayoutMode] = useState<"masonry" | "story">("masonry");
   const [isGearOpen, setIsGearOpen] = useState(false);
+  const [isTripsOpen, setIsTripsOpen] = useState(false);
 
   const selectedPhotoId = useSyncExternalStore(subscribeToUrl, getPhotoParam, getServerPhotoParam);
   const selectedPhoto = useMemo(
@@ -83,6 +85,17 @@ export function Gallery({ initialSeries }: GalleryProps) {
     if (url.pathname === window.location.pathname) return;
     updateUrl(url, "push", {});
   }, []);
+
+  // From the trip index: a new place starts at its first photos, wherever the page was
+  const handleSelectTripPlace = useCallback(
+    (seriesId: string) => {
+      handleSelectSeries(seriesId);
+      requestAnimationFrame(() => {
+        document.getElementById("gallery")?.scrollIntoView({ behavior: preferredScrollBehavior() });
+      });
+    },
+    [handleSelectSeries]
+  );
 
   // Metadata only sets the title on load; keep it in step with in-page switches
   useEffect(() => {
@@ -125,7 +138,7 @@ export function Gallery({ initialSeries }: GalleryProps) {
             onOpenGear={() => setIsGearOpen(true)}
             activeSeries={activeSeries}
             onSelectSeries={handleSelectSeries}
-            seriesList={seriesList}
+            onOpenTrips={() => setIsTripsOpen(true)}
           />
 
           {/* Hero & Camera Introduction */}
@@ -135,7 +148,7 @@ export function Gallery({ initialSeries }: GalleryProps) {
           <SeriesFilter
             activeSeries={activeSeries}
             onSelectSeries={handleSelectSeries}
-            seriesList={seriesList}
+            onOpenTrips={() => setIsTripsOpen(true)}
             layoutMode={layoutMode}
             onToggleLayout={setLayoutMode}
           />
@@ -161,6 +174,14 @@ export function Gallery({ initialSeries }: GalleryProps) {
         <GearModal
           isOpen={isGearOpen}
           onClose={() => setIsGearOpen(false)}
+        />
+
+        {/* Every trip and place, grouped by year */}
+        <TripIndex
+          isOpen={isTripsOpen}
+          onClose={() => setIsTripsOpen(false)}
+          activeSeries={activeSeries}
+          onSelectSeries={handleSelectTripPlace}
         />
 
         {/* Editorial Minimal Footer */}

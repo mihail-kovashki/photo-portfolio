@@ -4,11 +4,12 @@ import { useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import { trips, photos, ALL_SERIES_ID, type Trip } from "@/data/photos";
-import { useBodyScrollLock, useDialogFocus } from "@/lib/dialog";
+import { useBodyScrollLock, useDialogFocus, useSwipeToClose } from "@/lib/dialog";
 
 interface TripIndexProps {
   isOpen: boolean;
-  onClose: () => void;
+  /** Closes the sheet, then runs `then` (see useHistorySheet). */
+  onClose: (then?: () => void) => void;
   activeSeries: string;
   onSelectSeries: (seriesId: string) => void;
 }
@@ -30,6 +31,7 @@ export function TripIndex({ isOpen, onClose, activeSeries, onSelectSeries }: Tri
   const listRef = useRef<HTMLDivElement>(null);
   useBodyScrollLock(isOpen);
   useDialogFocus(dialogRef, isOpen);
+  const swipe = useSwipeToClose(isOpen, () => onClose());
 
   // Open on the current trip: with years of trips, the current one can be far down
   useEffect(() => {
@@ -50,10 +52,7 @@ export function TripIndex({ isOpen, onClose, activeSeries, onSelectSeries }: Tri
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, onClose]);
 
-  const select = (seriesId: string) => {
-    onClose();
-    onSelectSeries(seriesId);
-  };
+  const select = (seriesId: string) => onClose(() => onSelectSeries(seriesId));
 
   const pill = (isActive: boolean) =>
     `px-3 py-1.5 rounded-full text-xs font-mono whitespace-nowrap transition-colors flex items-center gap-2 ${
@@ -71,7 +70,7 @@ export function TripIndex({ isOpen, onClose, activeSeries, onSelectSeries }: Tri
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
-          onClick={onClose}
+          onClick={() => onClose()}
           className="fixed inset-0 z-50 flex items-end sm:items-start sm:justify-center sm:pt-20 sm:px-6 bg-black/70 sm:bg-black/50 backdrop-blur-sm"
         >
           <motion.div
@@ -83,32 +82,36 @@ export function TripIndex({ isOpen, onClose, activeSeries, onSelectSeries }: Tri
             onClick={(e) => e.stopPropagation()}
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 24 }}
+            exit={swipe.exit ?? { opacity: 0, y: 24 }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+            {...swipe.sheetProps}
             className="w-full sm:max-w-xl max-h-[80vh] flex flex-col rounded-t-2xl sm:rounded-2xl bg-[#121215] border border-white/15 shadow-2xl outline-none"
           >
-            <div className="sm:hidden mx-auto mt-2 h-1 w-10 rounded-full bg-white/20" />
-            <div className="flex items-center justify-between gap-3 px-5 pt-3 sm:pt-5 pb-3 border-b border-white/10">
-              <h2 id="trip-index-title" className="font-serif text-xl text-white tracking-tight">
-                Trips
-              </h2>
-              <div className="flex items-center gap-2">
-                <button
-                  type="button"
-                  onClick={() => select(ALL_SERIES_ID)}
-                  className={pill(activeSeries === ALL_SERIES_ID)}
-                >
-                  <span>All works</span>
-                  <span className="text-[10px] opacity-60">{photos.length}</span>
-                </button>
-                <button
-                  type="button"
-                  onClick={onClose}
-                  aria-label="Close"
-                  className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white transition-colors border border-white/10"
-                >
-                  <X className="w-4 h-4" />
-                </button>
+            {/* Handle and title: on phones, drag down from here to close */}
+            <div {...swipe.handleProps} className="shrink-0">
+              <div className="sm:hidden mx-auto mt-2 h-1 w-10 rounded-full bg-white/20" />
+              <div className="flex items-center justify-between gap-3 px-5 pt-3 sm:pt-5 pb-3 border-b border-white/10">
+                <h2 id="trip-index-title" className="font-serif text-xl text-white tracking-tight">
+                  Trips
+                </h2>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => select(ALL_SERIES_ID)}
+                    className={pill(activeSeries === ALL_SERIES_ID)}
+                  >
+                    <span>All works</span>
+                    <span className="text-[10px] opacity-60">{photos.length}</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => onClose()}
+                    aria-label="Close"
+                    className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white transition-colors border border-white/10"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                </div>
               </div>
             </div>
 

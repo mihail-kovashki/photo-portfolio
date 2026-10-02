@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useLayoutEffect, type RefObject } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState, type RefObject } from "react";
+import { animate, useDragControls, useMotionValue, type PanInfo } from "framer-motion";
 
 const FOCUSABLE =
   'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
@@ -89,4 +90,115 @@ export function useDialogFocus(containerRef: RefObject<HTMLElement | null>, acti
       previouslyFocused?.focus?.({ preventScroll: true });
     };
   }, [containerRef, active]);
+}
+
+/**
+ * Gives a sheet its own history entry while it's open, so Back (and the back gesture on
+ * phones) closes the sheet instead of leaving the page. Call `open` as the sheet opens
+ * and close only through `close`, which steps back out of the entry and runs `then`
+ * once it's gone; that's the moment to navigate or scroll.
+ */
+export function useHistorySheet(isOpen: boolean, onClose: () => void) {
+  const onCloseRef = useRef(onClose);
+  const thenRef = useRef<(() => void) | null>(null);
+  // Marks this opening's entry, so a sheet only counts its own entry as "still open"
+  const keyRef = useRef("");
+  const restorationRef = useRef<ScrollRestoration>("auto");
+  useLayoutEffect(() => {
+    onCloseRef.current = onClose;
+  });
+
+  const open = useCallback(() => {
+    // Leaving the entry would otherwise restore the scroll position it was opened at
+    restorationRef.current = window.history.scrollRestoration;
+    window.history.scrollRestoration = "manual";
+    keyRef.current = `${Date.now()}-${Math.random()}`;
+    window.history.pushState({ ...window.history.state, sheet: keyRef.current }, "", window.location.href);
+  }, []);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handlePopState = () => {
+      if (window.history.state?.sheet === keyRef.current) return;
+      window.history.scrollRestoration = restorationRef.current;
+      onCloseRef.current();
+      const then = thenRef.current;
+      thenRef.current = null;
+      then?.();
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [isOpen]);
+
+  const close = useCallback((then?: () => void) => {
+    if (keyRef.current && window.history.state?.sheet === keyRef.current) {
+      thenRef.current = then ?? null;
+      window.history.back();
+    } else {
+      onCloseRef.current();
+      then?.();
+    }
+  }, []);
+
+  return { open, close };
+}
+
+/**
+ * A reload while a sheet is open keeps its entry's marker though the sheet is gone.
+ * Clears it on page load. Called once, by the page.
+ */
+export function useClearStaleSheetEntry() {
+  useEffect(() => {
+    const state = window.history.state;
+    if (state?.sheet) window.history.replaceState({ ...state, sheet: undefined }, "", window.location.href);
+  }, []);
+}
+
+const SWIPE_CLOSE_DISTANCE = 100;
+const SWIPE_CLOSE_VELOCITY = 500;
+
+const SWIPE_EXIT = { duration: 0.2, ease: "easeIn" } as const;
+
+/**
+ * Swipe down to close a bottom sheet, from its handle area only so the list inside
+ * still scrolls. Phones only (below sm), where the sheet is a bottom sheet. Spread
+ * `sheetProps` on the motion element and `handleProps` on the handle area, and use
+ * `exit` (when set) in place of the sheet's usual exit.
+ */
+export function useSwipeToClose(isOpen: boolean, close: () => void) {
+  const controls = useDragControls();
+  const y = useMotionValue(0);
+  const [swiped, setSwiped] = useState(false);
+  const [wasOpen, setWasOpen] = useState(isOpen);
+  if (isOpen !== wasOpen) {
+    setWasOpen(isOpen);
+    if (isOpen) setSwiped(false);
+  }
+
+  const sheetProps = {
+    style: { y },
+    drag: "y" as const,
+    dragControls: controls,
+    dragListener: false,
+    dragConstraints: { top: 0, bottom: 0 },
+    dragElastic: { top: 0, bottom: 1 },
+    onDragEnd: (_: unknown, info: PanInfo) => {
+      if (info.offset.y < SWIPE_CLOSE_DISTANCE && info.velocity.y < SWIPE_CLOSE_VELOCITY) return;
+      // Carry on down from where the finger let go. Left alone, the drag springs the
+      // sheet back to full height while the close waits on history, and it flashes.
+      setSwiped(true);
+      animate(y, window.innerHeight, SWIPE_EXIT);
+      close();
+    },
+  };
+  const exit = swiped ? { y: window.innerHeight, transition: SWIPE_EXIT } : undefined;
+  const handleProps = {
+    onPointerDown: (e: React.PointerEvent) => {
+      if (window.matchMedia("(min-width: 640px)").matches) return;
+      if ((e.target as HTMLElement).closest("button")) return;
+      controls.start(e);
+    },
+    style: { touchAction: "none" } as React.CSSProperties,
+  };
+  return { sheetProps, handleProps, exit };
 }

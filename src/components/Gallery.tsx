@@ -22,6 +22,7 @@ import {
 import { collectionTitle } from "@/data/site";
 import { captureMorphOrigin } from "@/lib/photoMorph";
 import { preferredScrollBehavior } from "@/lib/utils";
+import { useHistorySheet, useClearStaleSheetEntry } from "@/lib/dialog";
 
 // The active collection (/prague-26) and the open photo (?photo=id) live in the URL,
 // so shared links, reloads and the browser's back/forward buttons all agree.
@@ -69,6 +70,12 @@ export function Gallery({ initialSeries }: GalleryProps) {
   const [layoutMode, setLayoutMode] = useState<"masonry" | "story">("masonry");
   const [isGearOpen, setIsGearOpen] = useState(false);
   const [isTripsOpen, setIsTripsOpen] = useState(false);
+  useClearStaleSheetEntry();
+  const tripsSheet = useHistorySheet(isTripsOpen, () => setIsTripsOpen(false));
+  const openTrips = useCallback(() => {
+    setIsTripsOpen(true);
+    tripsSheet.open();
+  }, [tripsSheet]);
 
   const selectedPhotoId = useSyncExternalStore(subscribeToUrl, getPhotoParam, getServerPhotoParam);
   const selectedPhoto = useMemo(
@@ -138,7 +145,7 @@ export function Gallery({ initialSeries }: GalleryProps) {
             onOpenGear={() => setIsGearOpen(true)}
             activeSeries={activeSeries}
             onSelectSeries={handleSelectSeries}
-            onOpenTrips={() => setIsTripsOpen(true)}
+            onOpenTrips={openTrips}
           />
 
           {/* Hero & Camera Introduction */}
@@ -148,7 +155,7 @@ export function Gallery({ initialSeries }: GalleryProps) {
           <SeriesFilter
             activeSeries={activeSeries}
             onSelectSeries={handleSelectSeries}
-            onOpenTrips={() => setIsTripsOpen(true)}
+            onOpenTrips={openTrips}
             layoutMode={layoutMode}
             onToggleLayout={setLayoutMode}
           />
@@ -179,7 +186,7 @@ export function Gallery({ initialSeries }: GalleryProps) {
         {/* Every trip and place, grouped by year */}
         <TripIndex
           isOpen={isTripsOpen}
-          onClose={() => setIsTripsOpen(false)}
+          onClose={tripsSheet.close}
           activeSeries={activeSeries}
           onSelectSeries={handleSelectTripPlace}
         />

@@ -177,7 +177,7 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
 
 **Sessions.** Images stay in the conversation, so a long session gets expensive fast and
 drags finished albums along: one album per session, started with the `editorial-pass`
-skill (`.claude/skills/`). A large album (more than about 150 photos, or several places)
+skill (kept local in `.claude/skills/`, which is gitignored). A large album (more than about 150 photos, or several places)
 splits in two:
 - **Session A:** steps 1–3. Ends with the first-look file and a handoff in the album's
   section of the vault note.

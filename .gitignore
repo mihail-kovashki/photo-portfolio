@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local AI tooling config (skills, launch configs, settings); not published
+.claude/

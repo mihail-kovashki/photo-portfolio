@@ -120,6 +120,19 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
    2024's known problems: 450px missed shooting through glass and an intruding
    foreground, which 600px shows; 900px added nothing more; dust and soft focus never
    show on a sheet, which is what step 4 is for.
+
+   Save the result as `passes/v2/<album>.firstlook.json`, so the close look can start in
+   another session without redoing the sheets (Vietnam's first look was lost that way):
+   ```
+   {"album": "Vietnam 2024", "date": "2026-10-02",
+    "places": {"hanoi-24": "24–25 Nov, Hanoi"},
+    "rejects": {"1": ["7979"], "2": ["7470", "8174"]},
+    "groups": [["8038", "8010", "8015", "8031"]],
+    "shortlist": ["7469", "7489-Enhanced-NR", "8038"],
+    "notes": {"7489-Enhanced-NR": "keyword this copy, not the original"}}
+   ```
+   `groups` are near-twin runs, the likely winner first; `shortlist` uses the names
+   `review.mjs` takes, and `review.mjs view <folder> <out> --shortlist <file>` reads it.
 4. **Close look at the shortlist** (`review.mjs view`, 1000px): about 1.5× the final set,
    chosen generously from the sheets, since photos that only show their worth up close
    are the main risk of a tight list. Then 100% crops, four to an image (`review.mjs
@@ -133,6 +146,12 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
      better, and analysis must not talk a weak photo up;
    - the rating.
    A `soft` frame can still be chosen, but only knowingly: it's flagged to me.
+
+   **Write as you look.** Note each frame's verdict, and where its crop should go, while
+   the image is in view, in batches of eight or so. Images drop out of a long session's
+   context, and a crop aimed later from memory misses its subject (Vietnam: 7489, 7554).
+   Any proposed 5★ is then checked against the site's current ones on one sheet
+   (`review.mjs fives`).
 
    **Flaws and what they cost.** I'm not at the level where every flaw makes a frame
    trash, so a set is filled with photos that have small imperfections, and the
@@ -148,11 +167,26 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
 5. **Select and present**: chapters, order, names, under the rules above. Judge the page as
    a viewer meets it: what opens, what closes, whether names say something, whether a
    chapter repeats itself.
-6. **Write the pass log** (below), then the keywords, then ingest.
+6. **Write the pass log** (below) and stop for my review.
+7. **After I approve:** collection files in `src/data/collections/` (registered in
+   `index.ts`), then the tags file `passes/v2/<album>.tags.json` (format in the header of
+   [`scripts/keyword.mjs`](../scripts/keyword.mjs)). Run `keyword.mjs` without `--write`
+   first and show me the tags: they're the one thing I haven't seen in the log. Then
+   `--write`, `npm run ingest -- "<source folder>" "<Place 24>" --keyworded` once per
+   place, check that every chapter entry was ingested, commit, push, and update the vault.
 
-**Cost.** Images stay in the conversation, so a long session gets expensive fast: run
-each album's pass in a fresh session, starting from the README, the pass logs and the
-vault notes. Measured on the second passes, the 1568px views cost far more than anything
+**Sessions.** Images stay in the conversation, so a long session gets expensive fast and
+drags finished albums along: one album per session, started with the `editorial-pass`
+skill (`.claude/skills/`). A large album (more than about 150 photos, or several places)
+splits in two:
+- **Session A:** steps 1–3. Ends with the first-look file and a handoff in the album's
+  section of the vault note.
+- **Session B:** steps 4–7, starting from the first-look file. Stops for my review after
+  step 6; step 7 can follow in the same session.
+
+A small album runs as one session.
+
+**Cost.** Measured on the second passes, the 1568px views cost far more than anything
 else and caught nothing that 1000px wouldn't; Instagram fingerprints cost almost nothing
 and changed the most selections. (Changed 2026-10-02; the earlier passes used 1568px views
 and 1000px crops.)
@@ -167,6 +201,10 @@ From the second pass on, a log also has a ratings file next to it
 (`<album>.ratings.json`): every candidate with its rating, focus, technical notes and
 critique, so the reasoning can be checked photo by photo. The first-pass logs stay as
 they were, for comparison; the re-runs live in [`passes/v2/`](passes/v2/).
+
+Since Vietnam, an album also leaves `<album>.firstlook.json` (step 3) and
+`<album>.tags.json` (step 7) beside them. Re-running `keyword.mjs` on a changed tags file
+or collection updates the files, so a later change is an edit plus a re-run.
 
 ## Tags
 

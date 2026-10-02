@@ -6,14 +6,19 @@
 //       600px is the first-look size: it shows glass reflections and intruding foreground,
 //       which 450px missed; dust and soft focus need `view` and `crop` at any size.
 //   node scripts/review.mjs view <folder> <out> <n> [<n>...]
+//   node scripts/review.mjs view <folder> <out> --shortlist <album>.firstlook.json
 //       One image per photo at 1000px on the long edge, for judging the frame. Enough to
-//       see distractions, glass and near-twins; focus is the crop's job.
+//       see distractions, glass and near-twins; focus is the crop's job. --shortlist reads
+//       the numbers from the first look's file instead of the command line.
 //   node scripts/review.mjs crop <folder> <out> <n>@<x>,<y> [...]
 //       A 500px window at 100% of the export, centred on x,y (fractions of width and
 //       height), for judging focus where the photo is meant to be sharp. Four crops per
 //       output image, labelled, to keep a pass cheap.
 //   node scripts/review.mjs chapters <folder> <selection.json> <out>
 //       One sheet per chapter: {"ratings": {"6390": 4}, "sets": [[id, name, [n...]]]}.
+//   node scripts/review.mjs fives <out>
+//       Every 5★ photo on the site, on one sheet, from the site's own display images:
+//       the bar a proposed 5★ is measured against (editorial/README.md).
 //
 // <n> is the camera number without "DSCF" (6390), with any copy suffix (6390-2, 2726(1)).
 
@@ -137,6 +142,23 @@ async function crop(folder, out, specs) {
   }
 }
 
+async function fives(out) {
+  const photos = JSON.parse(fs.readFileSync(path.resolve("src/data/photos.json"), "utf8"));
+  const items = photos
+    .filter((p) => p.rating === 5)
+    .map((p) => ({ file: path.join("public", p.displayUrl), text: `${p.series}  ${p.fileNumber.replace(/^DSCF/, "")}` }));
+  if (items.length === 0) return console.log("No 5★ photos on the site yet.");
+  const name = path.join(out, "fives.jpg");
+  await grid(items, name, { cols: 3, cell: 560 });
+  console.log(name, items.length);
+}
+
+function shortlistFrom(file) {
+  const { shortlist } = JSON.parse(fs.readFileSync(file, "utf8"));
+  if (!Array.isArray(shortlist) || shortlist.length === 0) throw new Error(`No "shortlist" array in ${file}`);
+  return shortlist.map(String);
+}
+
 async function chapters(folder, selectionFile, out) {
   const files = index(folder);
   const { ratings = {}, sets } = JSON.parse(fs.readFileSync(selectionFile, "utf8"));
@@ -156,10 +178,14 @@ try {
     await sheets(folder, rest[0]);
   } else if (cmd === "view") {
     fs.mkdirSync(rest[0], { recursive: true });
-    await view(folder, rest[0], rest.slice(1));
+    const nums = rest[1] === "--shortlist" ? shortlistFrom(rest[2]) : rest.slice(1);
+    await view(folder, rest[0], nums);
   } else if (cmd === "crop") {
     fs.mkdirSync(rest[0], { recursive: true });
     await crop(folder, rest[0], rest.slice(1));
+  } else if (cmd === "fives") {
+    fs.mkdirSync(folder, { recursive: true });
+    await fives(folder);
   } else if (cmd === "chapters") {
     fs.mkdirSync(rest[1], { recursive: true });
     await chapters(folder, rest[0], rest[1]);

@@ -1,6 +1,7 @@
 "use client";
 
 import { PhotoCard } from "./PhotoCard";
+import { ChapterBar, chapterSectionId } from "./ChapterBar";
 import type { Photo, ResolvedChapter } from "@/data/photos";
 
 type LayoutMode = "masonry" | "story";
@@ -140,13 +141,14 @@ export function PhotoGrid({ photos, onOpenPhoto, layoutMode, chapters }: PhotoGr
   );
   return (
     <div className={container}>
+      {chapters.length > 1 && <ChapterBar chapters={chapters} />}
       {chapters.map((chapter, i) => {
         const offset = offsets[i];
         return (
           <section
             key={chapter.id}
-            id={`chapter-${chapter.id}`}
-            className={`scroll-mt-24 ${i > 0 ? "mt-14 sm:mt-20 pt-8 sm:pt-10 border-t border-white/10" : ""}`}
+            id={chapterSectionId(chapter)}
+            className={`scroll-mt-[8rem] ${i > 0 ? "mt-14 sm:mt-20 pt-8 sm:pt-10 border-t border-white/10" : ""}`}
           >
             <ChapterHeader chapter={chapter} number={i + 1} />
             <PhotoSet photos={chapter.photos} onOpenPhoto={onOpenPhoto} layoutMode={layoutMode} startIndex={offset} />

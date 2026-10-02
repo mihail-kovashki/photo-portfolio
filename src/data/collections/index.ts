@@ -7,6 +7,9 @@ import { bieiAndFurano25 } from "./biei-and-furano-25";
 import { capeKamui25 } from "./cape-kamui-25";
 import { otaru25 } from "./otaru-25";
 import { sapporo25 } from "./sapporo-25";
+import { hanoi24 } from "./hanoi-24";
+import { haLongBay24 } from "./ha-long-bay-24";
+import { tamCoc24 } from "./tam-coc-24";
 
 export type { Chapter, PlaceCollection } from "./types";
 
@@ -20,6 +23,9 @@ export const collections: Record<string, PlaceCollection> = {
   [capeKamui25.id]: capeKamui25,
   [otaru25.id]: otaru25,
   [sapporo25.id]: sapporo25,
+  [hanoi24.id]: hanoi24,
+  [haLongBay24.id]: haLongBay24,
+  [tamCoc24.id]: tamCoc24,
 };
 
 export function findCollection(seriesId: string): PlaceCollection | undefined {

@@ -98,6 +98,10 @@ differently from culling (`taste.md`):
 - **My override beats the stars, and it's recorded.** A frame I want in stays at its
   rating as a frame, but gets its place because I chose it, noted as my pick (Seoul: the
   2★ "People of the palace" cover).
+- **People I travel with are in a photo, never its subject.** Seen from behind, in
+  silhouette, or too small to recognise is fine; portraits and frames where a recognisable
+  face is the point stay out (Madeira: 9762 and 0021 out, 9858's profile skipped). I ask
+  them before their frames go live, and the pass log lists those frames.
 - **Stragglers are parked, not dropped.** Good photos that fit no chapter go on the
   place's parked list; enough of them can become an "Around <place>" chapter later.
   Deliberate drops (a great memory, a weak photo) are logged separately so they aren't
@@ -208,7 +212,7 @@ or collection updates the files, so a later change is an edit plus a re-run.
 
 ## Tags
 
-The vocabulary is [`src/data/tags.ts`](../src/data/tags.ts): 22 tags, 16 for subject and
+The vocabulary is [`src/data/tags.ts`](../src/data/tags.ts): 23 tags, 17 for subject and
 6 for light and weather, with a description and an "applies when" for each.
 
 - **Names are plain and consistent** (`looking-up`, `blue-hour`). Personality goes into
@@ -231,8 +235,8 @@ bulk keyword rewrite.
 | --- | --- | --- |
 | `black-and-white` | Vietnam 2024 (St. Joseph's) | One frame so far; the Korea 2024 swimmer (Busan, not Yeosu) was play, not for the site |
 | `sun-in-frame` | Many sunsets and sunrises | Currently part of `golden-hour`; useful mainly for filtering |
-| `markets` | Madeira (Funchal market), Vietnam (Hanoi Old Quarter), Hokkaido (Otaru glass shops) | Close to three trips, but mostly a frame or two each |
-| `waterfalls` | Seoraksan (Biryong, Towangseong), probably Madeira, Hokkaido, Vietnam | DSCF3618 fits no tag today |
+| `markets` | Madeira (Funchal market, 9700), Vietnam (Hanoi Old Quarter), Hokkaido (Otaru glass shops) | Three trips, but a frame or two each; not yet worth a page |
+| `waterfalls` | Seoraksan (Biryong, Towangseong), Madeira (Véu da Noiva, 0083), probably Hokkaido, Vietnam | DSCF3618 fits no tag today |
 | `boats` | Vietnam (Ha Long, Ninh Binh), Copenhagen, Hokkaido (Otaru) | Might be a chapter rather than a tag |
 
 ### Log
@@ -241,3 +245,5 @@ bulk keyword rewrite.
   `parks-and-gardens` added after review.
 - 2026-09-30: `new-architecture` now includes towers when they're the subject (Lotte Tower,
   N Seoul Tower; later the Sapporo TV tower).
+- 2026-10-02: `animals` added early, ahead of the three-trip rule, because it's an obvious
+  tag to have (Madeira 2025's cat, 9771; the parked Hanoi cat, 7554).

@@ -1,0 +1,704 @@
+{
+ "album": "Madeira 2025",
+ "places": [
+  "funchal-25",
+  "sao-vicente-25",
+  "larano-25",
+  "pico-ruivo-25",
+  "fanal-25"
+ ],
+ "pass": 2,
+ "date": "2026-10-02",
+ "method": "Session B, from madeira-25.firstlook.json: the 103-frame shortlist at 1000px, 100% crops on 58 subjects and skies (four to an image), the proposed 5★ against the site's six. Ratings below 3 from the first look are in that file, not repeated here.",
+ "frames": [
+  {
+   "n": "9650",
+   "v2": 3,
+   "focus": "sharp",
+   "focusAt": "the mural",
+   "critique": "Charleroi: Le Chat (Geluck) mural \"8 MAI\" on glass facade, old tower reflected in glass, two walkers below. Witty, very Belgian; reflection adds layer. Busy bottom edge. Slight perspective lean ok."
+  },
+  {
+   "n": "9653",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "Charleroi: Le Tonnelier corner, boarded door, brick. Record of decline; flat light, Coca-Cola sign, parking sign right edge. Neat verticals."
+  },
+  {
+   "n": "9656",
+   "v2": 3,
+   "focus": "sharp",
+   "focusAt": "the dome",
+   "critique": "Charleroi: Basilique Saint-Christophe dome, square, family walking. Clean establishing frame, blue sky; lot of empty paving bottom third."
+  },
+  {
+   "n": "9657",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Charleroi: Saint-Christophe interior, gold mosaic apse, stained glass, chairs. Rich colour; banner left edge and lamp top intrude, chairs crowd the bottom."
+  },
+  {
+   "n": "9659",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "Charleroi: Taverne Sainte Barbe, belfry behind. Pleasant record; Duvel sign. Plain."
+  },
+  {
+   "n": "9660",
+   "v2": 3,
+   "focus": "sharp",
+   "focusAt": "the clock",
+   "critique": "Charleroi: town hall belfry over Place Charles II, young tree foreground. Clean, verticals good; empty square, half sky. Establishing."
+  },
+  {
+   "n": "9674",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Funchal Zona Velha: painted door (matryoshka-like figure) with e-scooter, plant pot. Street-art door project; scooter is the joke and the clutter. Nice colour."
+  },
+  {
+   "n": "9676",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Funchal: jacaranda over café terrace, Fortaleza de São Tiago yellow walls, sea. Lovely colour (purple/yellow/blue); busy diners, planter foreground and pink bollard bottom-right cut."
+  },
+  {
+   "n": "9680",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Funchal: cobbled steps up between yellow walls to a flower/banana mural, STOP sign, lamp. Strong leading lines and colour; the STOP sign sits at the vanishing point (blemish, or the joke). Dark wall left a bit heavy."
+  },
+  {
+   "n": "9684",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "Funchal seafront: white Fiat Panda parked in front of pergola/sea, woman on bench. Deadpan, half sky empty; car is the subject and it's not interesting enough. Parking sign centre."
+  },
+  {
+   "n": "9685",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Funchal: Igreja do Colégio (or similar) white baroque facade looking up, black basalt trim, statue niche, tree left. Good contrast, white facade holds detail. Corner crop a bit arbitrary; lamp bottom."
+  },
+  {
+   "n": "9686",
+   "v2": 3,
+   "focus": "sharp",
+   "focusAt": "the sunbathers",
+   "critique": "Funchal: lido from above, blue loungers on sunbaked platform, sea filling 2/3. Graphic, sunbathers small; strong sea texture. Cloud bank flat. Railings bottom-left busy."
+  },
+  {
+   "n": "9689",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Funchal: pergola framing sea, #JACKSONANDME frog sculpture, shadows on calçada. Clean, graphic, calm; a bit empty, the sculpture too small to matter."
+  },
+  {
+   "n": "9690",
+   "v2": 3,
+   "focus": "sharp",
+   "focusAt": "the blossom",
+   "critique": "Funchal: steep cobbled street, jacaranda in bloom right, red scooter, cars, city on hills beyond. Good depth and colour; dark wall left heavy, parked cars clutter. Best of the jacaranda streets?"
+  },
+  {
+   "n": "9691",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Funchal: looking between yellow walls down to café under jacaranda, sea and tetrapods beyond. Nice framing, colour; hydrant and person cut bottom-right; walls take a lot. Pair with 9676 (same place?)."
+  },
+  {
+   "n": "9692",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "Funchal: flags (Madeira, Portugal, EU) on poles above fortress wall, red hibiscus. Colourful but cluttered; crates bottom-left, flags limp."
+  },
+  {
+   "n": "9694",
+   "v2": 3,
+   "focus": "sharp",
+   "focusAt": "the people on the lido",
+   "critique": "Funchal: Fortaleza de São Tiago from the shore, swimmers on the lido platform, dark basalt wall left, sea. Good establishing seafront frame, human scale; heavy dark wall left third, flat cloud. Landscape."
+  },
+  {
+   "n": "9698",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "Funchal: Largo by Mercado dos Lavradores, orange-flowering tree (African tulip), café crowd, heads cut bottom-left, orange flower intruding right. Busy; the tree is lovely but the foreground heads ruin the bottom."
+  },
+  {
+   "n": "9700",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the papayas in the crates",
+   "critique": "Funchal Mercado dos Lavradores from above: fruit and veg crates around a tree trunk, black/white calçada pattern, shoppers. Rich colour, pattern, life; top-down works. Tree trunk splits frame but anchors it. Umbrella edges right. Best market frame."
+  },
+  {
+   "n": "9702",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "Funchal: indoor gallery/market arcade, hanging plants, \"Welcome\" sign. Pleasant symmetry, but cluttered with signage; a record."
+  },
+  {
+   "n": "9704",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Funchal: Avenida Arriaga area square, calçada meander pattern, lamp post with red flowers, white building, walkers. Bright, colourful, the pattern carries; cluttered bottom (bollards, road)."
+  },
+  {
+   "n": "9708",
+   "v2": 3,
+   "focus": "sharp",
+   "focusAt": "the woman in red",
+   "critique": "Funchal: Praça do Município, Igreja do Colégio, checkerboard calçada, woman in red walking in. Clean establishing city frame; woman in red is a nice accent. Cars and taxi clutter. Landscape."
+  },
+  {
+   "n": "9709",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Funchal: Praça do Município fountain, scalloped calçada waves filling foreground, cypresses. Graphic pattern; good. Fountain a bit dark. Twin role with 9708 — one or both?"
+  },
+  {
+   "n": "9713",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Funchal: Jardim Municipal, jacaranda over flowerbeds, bench, path. Pleasant, colourful; mossy path heavy at bottom, busy."
+  },
+  {
+   "n": "9714",
+   "v2": 3,
+   "focus": "sharp",
+   "focusAt": "the bud",
+   "critique": "Jardim Municipal: red salvia close-up, shallow depth, layers of red. Saturated, pleasing; generic flower frame. Wins its run (9714/9720/9715/9721)."
+  },
+  {
+   "n": "9717",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Jardim Municipal: flowerbeds with cineraria, tree trunk left, photographer (older woman) with camera left. Rich, layered; busy, no single subject. The photographer is a nice touch but small. Landscape."
+  },
+  {
+   "n": "9718",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Funchal: looking up at jacaranda canopy over peeling old houses, palm. Purple against cloud; dense, a bit chaotic. Different from street jacarandas. 4:5."
+  },
+  {
+   "n": "9719",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the walker in pink",
+   "critique": "Funchal Avenida Arriaga: jacaranda over café umbrellas, Golden Gate building, woman in pink walking across the calçada in the foreground. Layered, colour echo (pink/purple), the walker makes it. Neat. Best jacaranda frame."
+  },
+  {
+   "n": "9724",
+   "v2": 3,
+   "focus": "sharp",
+   "focusAt": "the flag",
+   "critique": "Funchal: Palácio de São Lourenço round tower, Portuguese flag, bare frangipani, low angle. Clean, bright; tree in front a bit messy but adds texture."
+  },
+  {
+   "n": "9727",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Funchal seafront: yellow bus and taxi frame the colourful \"Funchal\" letters sign, palms, tourists. Fun, bright, a bit busy; flag pole right. Street record with humour."
+  },
+  {
+   "n": "9731",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Funchal: Avenida Arriaga under jacarandas, people walking, yellow taxis. Nice colour; bottom 1/3 empty pale paving. Wins over 9730. Overlaps 9719 in subject."
+  },
+  {
+   "n": "9732",
+   "v2": 3,
+   "focus": "sharp",
+   "focusAt": "the hillside",
+   "critique": "Funchal: Praia Formosa / Zona Velha beach of pebbles, town on the hill, breakwater, cloud. Establishing of Funchal from the beach; pebbles bottom 1/3 a bit heavy. Clean horizon. Good opener candidate."
+  },
+  {
+   "n": "9739",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "São Vicente area: steep green peak over a yellow house, banana plants, blue sky. Shows scale of the mountains; foreground clutter (gate post, bush) bottom. Tilted-feeling but verticals of house ok."
+  },
+  {
+   "n": "9742",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the houses, mid right",
+   "critique": "Serra de Água valley from above: terraced slopes, road snaking up the gorge into cloud, houses, green bridge. Big, deep, very Madeira. Busy foreground road/bridge at bottom-right a small blemish. Strong establishing for the valley."
+  },
+  {
+   "n": "9752",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "São Vicente: orange roofs foreground, hillside chapel (white tower) on the slope, cloud. Pleasant, layered; the chapel small. Foreground roofs a bit messy."
+  },
+  {
+   "n": "9756",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "São Vicente: terraced village on hillside below clouded peaks, landscape. Even light, good detail; flatter than 9763. Group 9763/9756/9757."
+  },
+  {
+   "n": "9757",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "São Vicente: valley vertical, road and terraces, peak in cloud cap. Good depth; lots of grey cloud top. Group."
+  },
+  {
+   "n": "9758",
+   "v2": 3,
+   "focus": "soft",
+   "focusAt": "the agapanthus in front is out of focus at any size; focus went to the valley",
+   "critique": "São Vicente: the valley opening to the sea between two dark slopes, town at the mouth, agapanthus in front right. Strong V framing, calm grey sea; agapanthus anchors foreground (soft? check). Overcast flat sky."
+  },
+  {
+   "n": "9762",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Capela de Nossa Senhora de Fátima(?) clock tower at dusk, string lights, woman (companion) walking toward camera, face clearly readable. Nice light and tower; but the companion's face reads — per rule, out unless they agree. Pole right intrudes."
+  },
+  {
+   "n": "9763",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the church",
+   "critique": "São Vicente: terraced village in sun under clouded peaks, landscape, light patches. Best of the trio: side light makes the terraces; good layering."
+  },
+  {
+   "n": "9767",
+   "v2": 3,
+   "focus": "sharp",
+   "focusAt": "the left flower",
+   "critique": "São Vicente (chapel garden?): two agapanthus heads against dark blurred forest. Clean subject separation, nice blue; a pair works. Generic but well done."
+  },
+  {
+   "n": "9771",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the cat's eyes",
+   "critique": "São Vicente: tabby cat peering under a crossed wooden fence, eyes on camera. Great framing by the X, warm eyes; a real moment. Grass bright. Fits \"around\" more than a chapter."
+  },
+  {
+   "n": "9773",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "sky checked for dust: clean",
+   "posted": true,
+   "critique": "(posted) São Vicente coast at dusk: dark cliff left with road gallery, boulder beach, warm horizon, layered cloud. Moody, balanced; shadows heavy but fine. Pair of 9776."
+  },
+  {
+   "n": "9776",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the peak's ridge; some dusk noise",
+   "posted": true,
+   "critique": "(posted, cover of \"Coastal mood\") São Vicente coast road at dusk: pointed peak, surf, empty road and lamp posts right, pastel cloud. Strong, cinematic; road adds story. Clean."
+  },
+  {
+   "n": "0083",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the waterfall",
+   "critique": "Véu da Noiva waterfall falling down the sea cliff, coastline receding, teal surf. Classic view done well, good depth; flat grey sky. Waterfall small but clear."
+  },
+  {
+   "n": "0096",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the swimmers",
+   "critique": "Seixal natural pool from above: two swimmers in dark still water, waves crashing beyond the basalt wall, nasturtiums in the foreground. Great contrast calm/rough, tiny swimmers give scale. Foreground greenery maybe too much."
+  },
+  {
+   "n": "0102",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the waterfall and roofs",
+   "critique": "Seixal: village roofs, the coast and huge green cliffs, Véu da Noiva thread visible, silver sea. Grand, layered, establishing; railing at bottom intrudes (blemish)."
+  },
+  {
+   "n": "0274",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the canopy, as sharp as fog allows",
+   "critique": "Fanal: lone til tree in thick fog, others ghostly behind. Atmospheric, the tree's shape carries; bottom 1/3 dull ground. Wins over 0283?"
+  },
+  {
+   "n": "0283",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the trunk",
+   "critique": "Fanal: the til tree in fog, landscape, two small hikers right, fence. Stronger shape than 0274 (full crown, spread), hikers add scale; fence posts right a slight blemish. Not a twin of 0274 really: different tree/framing — both can stay."
+  },
+  {
+   "n": "0344",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the right trunk",
+   "critique": "Fanal: inside the grove, gnarled mossy trees receding into fog, red earth. Layered depth, the archetypal Fanal; left trunk frames. Very good."
+  },
+  {
+   "n": "9785",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Porto da Cruz: Penha de Águia? no — the small headland with the pool, rocky beach, surf, houses, cloud. Pleasant establishing; white wall bottom-left intrudes."
+  },
+  {
+   "n": "9792",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Larano: trail on the ridge with a hiker group, cliffs and sea. Shows the trail, scale; harsh light, group small and cluttered. Bottom-right rock."
+  },
+  {
+   "n": "9797",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the cliff and surf",
+   "posted": true,
+   "critique": "(posted) Larano: cliffs dropping to deep blue sea, headland beyond, purple thistles front-left, vertical. Big sky (top half cloud); vivid. Winner over 9798?"
+  },
+  {
+   "n": "9798",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Larano: same view horizontal, more sea and cliff, less sky. Arguably better balance than 9797, but 9797 was posted. Near-twin: one only. Keep 9797 (posted) unless toss-up."
+  },
+  {
+   "n": "9800",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the hiker's backpack",
+   "posted": true,
+   "critique": "(posted) Larano: companion in orange jacket from behind on the trail, yellow flowers, cliffs and headland beyond. Classic, colour accent, path leads in. OK under people rule (from behind). Vignette visible."
+  },
+  {
+   "n": "9806",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the surf",
+   "critique": "Larano: cliff face in sidelight, pink/ochre rock, sea and surf below, vertical. Better light than 9797: texture of the cliff; dark foreground bottom 1/5."
+  },
+  {
+   "n": "9807",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "Larano: tangle of branches over a fern slope. Texture, nice green, but no subject; chaotic."
+  },
+  {
+   "n": "9817",
+   "v2": 5,
+   "focus": "sharp",
+   "focusAt": "the surf around the rocks",
+   "posted": true,
+   "critique": "(posted, cover of \"Cliffside cruising\") Larano: cliff plunging to sparkling sea, rocks with surf, dark leaves framing right, moody vignette edit. Strong graphic diagonal, drama; best Larano frame. Dark-leaf frame right might read as intrusion, but it works as depth."
+  },
+  {
+   "n": "9825",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Larano: companion from behind photographing the cliff with phone, orange jacket, blue sky. People rule: from behind, ok. Story frame; companion big in the frame, the back and backpack dominate. Branch top-left/right."
+  },
+  {
+   "n": "9830",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Larano: green forested slope to coast, distant sea stacks, haze. Layered, calm; similar to 9858 without the person. Wins over 9836."
+  },
+  {
+   "n": "9838",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Larano: man (companion? or me?) on the trail with rope railing, red-ochre cliff and sea. Shows the trail drama; harsh noon light, deep blue sky clean. Person from 3/4 back, face hidden by hood: ok."
+  },
+  {
+   "n": "9848",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Larano: trail lined with yellow daisies, wide-angle low, mountains. Nice foreground colour; generic. Fence post left."
+  },
+  {
+   "n": "9857",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the flower spikes",
+   "critique": "Larano: Pride of Madeira (Echium) spikes in a mass on the slope, the trail cutting the cliff behind, sea right edge. Distinctive plant, rich texture, good depth."
+  },
+  {
+   "n": "9858",
+   "v2": 4,
+   "focus": "not checked at 100%",
+   "critique": "Larano: man in profile (hood, sunglasses, beard) on the cliff edge, coastline and stacks behind. Strong composition, but his profile reads: face is part of the point. Per rule: borderline; ask. Otherwise a 4."
+  },
+  {
+   "n": "9866",
+   "v2": 3,
+   "focus": "soft",
+   "focusAt": "the companion's hat and shirt are soft, the coast behind is sharper: focus went past her",
+   "critique": "Larano: companion sitting from behind in orange top and hat, camera on strap, looking down the coast; yellow daisies right. Shallow focus on the person? check. Strong storytelling, colour; rule ok (from behind). Group winner over 9868/9858? It's the people version."
+  },
+  {
+   "n": "9868",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "sky checked for dust: clean",
+   "posted": true,
+   "critique": "(posted) Larano: the coast view without people, vertical, half sky blue, rock right, daisies bottom. Clean classic; sky top 40% empty blue. Kept as posted; 9866 is the companion version. Both? They're the same view: pick one in main + one variation since the person adds a moment."
+  },
+  {
+   "n": "9888",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the town, with distance haze",
+   "critique": "Larano: view toward Porto da Cruz and Penha de Águia, deep blue bay, green ridges, landscape. The establishing shot of the walk: where we are. Foreground bushes bottom right a bit messy; overcast top."
+  },
+  {
+   "n": "9897",
+   "v2": 3,
+   "focus": "sharp",
+   "focusAt": "the blossom",
+   "critique": "Larano: peach blossom branch against deep blue sea, bokeh trees. Pretty, clean; a detail frame. Slightly calendar."
+  },
+  {
+   "n": "9909",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the village",
+   "posted": true,
+   "critique": "(posted) Porto da Cruz under Penha de Águia, the bay and sea stack, village. Strong establishing; overcast flat sky; fern foreground bottom left."
+  },
+  {
+   "n": "9912",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Porto da Cruz: dirt path along the shore toward the sea stack, walkers, flowers, channel right. Nice leading line, people small; wins over 9913. A bit busy."
+  },
+  {
+   "n": "9915",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "posted": true,
+   "critique": "(posted) Porto da Cruz pebble beach, green hills, surf. Flat grey sky, heavy pebbles; posted in \"Coastal mood\" but weaker than 9909. 3."
+  },
+  {
+   "n": "9921",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "sky clean, cloud edge fine",
+   "critique": "Pico Ruivo area: dark ridges rising out of a sea of clouds, clear blue sky, radar dome on Pico do Arieiro. Clean, graphic; the sea of clouds is the point. Bush bottom-left intrudes slightly. Afternoon light flat on the rock."
+  },
+  {
+   "n": "9963",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the branches",
+   "posted": true,
+   "critique": "(posted) Pico Ruivo: white dead tree against cloud-filled gorge, lit ridges, sea of clouds to horizon. Excellent layering; bottom 40% dark heather is heavy (vignetted). Group winner over 9965/9978."
+  },
+  {
+   "n": "9968",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the branches",
+   "posted": true,
+   "critique": "(posted, cover of white trees) Pico Ruivo: lone white tree lit against dark shadowed cliff, red-lit crags above, heather foreground. Spotlit subject, strong. Foreground heather bottom-right out of focus, big."
+  },
+  {
+   "n": "9970",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Pico Ruivo: landscape, white tree in front of ridge, sea of clouds left. Overlaps 9963; less drama, tree off-balance. Variation at most."
+  },
+  {
+   "n": "9976",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the branches",
+   "posted": true,
+   "critique": "(posted) Pico Ruivo: ghostly white tree in a beam of side light against dark scree, a fallen white trunk lower left. Most painterly of the set; dark, moody. Check focus on branches."
+  },
+  {
+   "n": "9978",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Pico Ruivo: white tree in sun over cloud-filled gorge, vertical, lots of empty blue sky. Twin of 9963 but sky-heavy; 9963 wins."
+  },
+  {
+   "n": "9979",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "posted": true,
+   "critique": "(posted) Pico Ruivo: stone steps of the trail past a dry-stone wall, white tree, low sun. Path story; contrasty, big pale sky. Posted. 3."
+  },
+  {
+   "n": "9980",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "posted": true,
+   "critique": "(posted) Pico Ruivo: sunstar behind ridge, backlit wind-bent tree, purple and green flare across frame, house at top. The flare is large; I'd call it a blemish that's become the point in the post, but on the site it reads as a technical flaw. 3."
+  },
+  {
+   "n": "9987",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the rest house",
+   "critique": "Pico Ruivo: the rest house (Casa de Abrigo) on its crag above a sea of clouds, low sun on the slope. Clear \"where we are\"; half frame blue sky, foreground shadowed heather."
+  },
+  {
+   "n": "9994",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Pico Ruivo: summit ridge with tents (orange) on the col, sea of clouds, yellow broom foreground. Story (camping on the summit) but half blank sky; tents small."
+  },
+  {
+   "n": "9998",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the roofs",
+   "critique": "Pico Ruivo: rest house tucked under the summit, sea of clouds filling left half, landscape. Clean, clear where we are; low sun on the ridge. Better than 9987? Different: this is the wide."
+  },
+  {
+   "n": "0001",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Pico Ruivo: crepuscular rays over dark ridges, Pico do Arieiro plateau beyond, person (companion) photographing at bottom-left, green flare blob. Flare is a blemish; the rays are good. Companion small, from behind: ok."
+  },
+  {
+   "n": "0002",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Pico Ruivo: ridges and sea of clouds, vertical, blank blue top 35%. Pleasant, but the same idea as 9998, less light."
+  },
+  {
+   "n": "0008",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the rock face",
+   "critique": "Pico Ruivo: jagged ridges with cloud spilling through valleys, warm light on rock, landscape. Rich texture, depth; rocky foreground bottom-left busy."
+  },
+  {
+   "n": "0009",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the figure; the rays are haze",
+   "critique": "Pico Ruivo: man in hood sitting from behind on rocks facing sun rays streaming across the valleys and peaks. Light rays are spectacular; the figure gives scale and mood. Rule ok (from behind). Strong candidate."
+  },
+  {
+   "n": "0023",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the crags; noise in the shadows",
+   "critique": "Pico Ruivo at sunset: sea of clouds flowing between dark peaks, orange horizon, warm side light on crags. Painterly, the cloud motion is the point. A guard wire crosses the bottom-right corner (blemish; clone?)."
+  },
+  {
+   "n": "0024",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the yellow jacket",
+   "posted": true,
+   "critique": "(posted) Pico Ruivo: companion in yellow jacket on the edge, looking down into the red-lit crags, ocean of cloud at horizon. Yellow pops, scale; face too small to recognise: ok. Sky blank."
+  },
+  {
+   "n": "0029",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Pico Ruivo sunset: silhouettes of the crowd on the summit ridge, sun in haze, sea of clouds. Story of the crowd; bottom 40% black, guide ropes visible. 0031 better."
+  },
+  {
+   "n": "0031",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the silhouettes",
+   "critique": "Pico Ruivo sunset: silhouettes lined up on the ridge, sun low over Paul da Serra, cloud sea right. Cleaner composition than 0029, more cloud sea; bottom 1/3 black. Wins the silhouette run."
+  },
+  {
+   "n": "0033",
+   "v2": 5,
+   "focus": "sharp",
+   "focusAt": "the cloud sea",
+   "posted": true,
+   "critique": "(posted, cover of \"Sky on fire\") Pico Ruivo: sun in the cloud bank over Paul da Serra, sea of clouds, dark peaks foreground, a ridge 'island'. Rich gradient, layered; sun blown (expected). Strong."
+  },
+  {
+   "n": "0036",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Pico Ruivo sunset: the crowd from behind watching the sun, sun flare, guide rope. Human story, warm; heads/backs dominate, busy. Ok, strangers from behind. Not as clean as 0031."
+  },
+  {
+   "n": "0037",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the ridge edge",
+   "critique": "Pico Ruivo after sunset: peaks emerging from flowing cloud, warm horizon, cold blue cloud. Calm, painterly; dark bottom-right spire. Overlaps 0047/0049."
+  },
+  {
+   "n": "0045",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "sky checked for dust: clean",
+   "posted": true,
+   "critique": "(posted) Pico Ruivo: sun touching the horizon, orange band, cloud sea, dark islands of ridge, deep foreground silhouette. Clean, classic; bottom 1/3 black. Twin-ish with 0033 (0033 has more light on the clouds). Both posted. Pick one main + maybe both."
+  },
+  {
+   "n": "0047",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "sky checked for dust: clean",
+   "posted": true,
+   "critique": "(posted) Pico Ruivo dusk: peaks as islands in the cloud sea, pink-orange horizon, spire bottom right. Serene, strong; very similar to 0037/0049. Wins the run with 0049 as the variation? 0049 has more drama (spire, cloud flow)."
+  },
+  {
+   "n": "0049",
+   "v2": 5,
+   "focus": "sharp",
+   "focusAt": "the needle; dusk noise",
+   "critique": "Pico Ruivo dusk: cloud river flowing between peaks, lone needle in the cloud, pink sky band. The best of the dusk run: the needle and the flow make it. Foreground rocks bottom dark."
+  },
+  {
+   "n": "0059",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Pico Ruivo summit at blue hour: trig pillar with people, hiker in pink on the steps, rocky knoll, cloud sea. The summit itself; half the frame flat blue sky, railings. Good record, 3."
+  },
+  {
+   "n": "0065",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the trunk; blue-hour noise",
+   "critique": "Pico Ruivo walk down: twisted silver dead trunk in the foreground leading to the rest house and the cloud sea, blue hour. Strong foreground-to-background; well-composed."
+  },
+  {
+   "n": "0067",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Pico Ruivo: companion from behind filming the tents on the ridge at dusk, pink sky. Story and colour; the figure is dark and central, path sign clutter. Rule ok."
+  },
+  {
+   "n": "0071",
+   "v2": 3,
+   "focus": "soft",
+   "focusAt": "the tree is mushy at 100% in the low light",
+   "critique": "Pico Ruivo: wind-bent tree on bare scree, rock castle behind, blue hour. Nice shape, mood; underexposed; soft? check."
+  },
+  {
+   "n": "0075",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Pico Ruivo: tree silhouette against cloud sea at dusk, dark heather bottom half. Calm; bottom half black, tree small. 3."
+  },
+  {
+   "n": "0076",
+   "v2": 4,
+   "focus": "sharp",
+   "focusAt": "the branches; visible noise in the sky",
+   "critique": "Pico Ruivo blue hour: bare tree silhouetted against purple sky on the slope, cloud sea bottom right. Graphic, cool palette, a tree with character. Phone? (aspect 3:4 — different camera?)."
+  },
+  {
+   "n": "0082",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Pico Ruivo: last light, layered ridge silhouettes, orange band over the cloud sea. Pretty; bottom half black. Closer for the chapter perhaps."
+  }
+ ]
+}

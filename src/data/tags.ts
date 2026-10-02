@@ -149,6 +149,14 @@ export const tags: Tag[] = [
     appliesWhen: "People give the frame its scale or story. Not portraits, and not people who just happen to be there.",
     examples: ["Madeira hikers", "Han River couples", "Pico sunrise silhouettes", "Ha Long rowers"],
   },
+  {
+    id: "animals",
+    facet: "subject",
+    name: "Animals",
+    description: "Cats, birds and other animals met along the way.",
+    appliesWhen: "An animal is the subject of the frame, not a speck in a landscape.",
+    examples: ["The São Vicente cat", "The Hanoi cat on the tiles"],
+  },
 
   // Light and weather
   {

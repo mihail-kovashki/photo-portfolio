@@ -21,7 +21,6 @@ import {
 } from "@/data/photos";
 import { collectionTitle } from "@/data/site";
 import { captureMorphOrigin } from "@/lib/photoMorph";
-import { preferredScrollBehavior } from "@/lib/utils";
 import { useHistorySheet, useClearStaleSheetEntry } from "@/lib/dialog";
 
 // The active collection (/prague-26) and the open photo (?photo=id) live in the URL,
@@ -93,12 +92,15 @@ export function Gallery({ initialSeries }: GalleryProps) {
     updateUrl(url, "push", {});
   }, []);
 
-  // From the trip index: a new place starts at its first photos, wherever the page was
-  const handleSelectTripPlace = useCallback(
+  // From the header or the trip index: a new page starts at its start, wherever the old
+  // one was scrolled to. Home starts at the very top, a place at its first photos. An
+  // instant jump, since a smooth one would scroll through the new page's photos.
+  const handleNavigate = useCallback(
     (seriesId: string) => {
       handleSelectSeries(seriesId);
       requestAnimationFrame(() => {
-        document.getElementById("gallery")?.scrollIntoView({ behavior: preferredScrollBehavior() });
+        if (seriesId === ALL_SERIES_ID) window.scrollTo({ top: 0, behavior: "instant" });
+        else document.getElementById("gallery")?.scrollIntoView({ behavior: "instant" });
       });
     },
     [handleSelectSeries]
@@ -144,7 +146,7 @@ export function Gallery({ initialSeries }: GalleryProps) {
           <Navbar
             onOpenGear={() => setIsGearOpen(true)}
             activeSeries={activeSeries}
-            onSelectSeries={handleSelectSeries}
+            onSelectSeries={handleNavigate}
             onOpenTrips={openTrips}
           />
 
@@ -188,7 +190,7 @@ export function Gallery({ initialSeries }: GalleryProps) {
           isOpen={isTripsOpen}
           onClose={tripsSheet.close}
           activeSeries={activeSeries}
-          onSelectSeries={handleSelectTripPlace}
+          onSelectSeries={handleNavigate}
         />
 
         {/* Editorial Minimal Footer */}

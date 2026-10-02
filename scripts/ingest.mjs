@@ -381,6 +381,19 @@ async function ingestFolder(targetDir, seriesName, overrides, keyworded) {
     return;
   }
 
+  // Two files with one camera number (DSCF7489.JPG and DSCF7489-Enhanced-NR.JPG) would
+  // overwrite each other's photo. Stop and let me choose which edit goes on the site.
+  const byNumber = new Map();
+  for (const file of files) {
+    const n = fileNumberOf(file);
+    byNumber.set(n, [...(byNumber.get(n) ?? []), file]);
+  }
+  const clashes = [...byNumber.values()].filter((group) => group.length > 1);
+  if (clashes.length > 0) {
+    for (const group of clashes) console.error(`❌ Same photo number: ${group.join(", ")}`);
+    throw new Error("Keep one file per photo number (with --keyworded, keyword only one of them).");
+  }
+
   console.log(`\n--- Ingesting ${files.length} photos from ${targetDir} as "${seriesName}" ---`);
   let photos = loadPhotos();
 

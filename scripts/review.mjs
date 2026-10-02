@@ -6,10 +6,12 @@
 //       600px is the first-look size: it shows glass reflections and intruding foreground,
 //       which 450px missed; dust and soft focus need `view` and `crop` at any size.
 //   node scripts/review.mjs view <folder> <out> <n> [<n>...]
-//       One image per photo at 1568px on the long edge, for judging the frame.
+//       One image per photo at 1000px on the long edge, for judging the frame. Enough to
+//       see distractions, glass and near-twins; focus is the crop's job.
 //   node scripts/review.mjs crop <folder> <out> <n>@<x>,<y> [...]
-//       A 1000px square at 100% of the export, centred on x,y (fractions of width and
-//       height), for judging focus where the photo is meant to be sharp.
+//       A 500px window at 100% of the export, centred on x,y (fractions of width and
+//       height), for judging focus where the photo is meant to be sharp. Four crops per
+//       output image, labelled, to keep a pass cheap.
 //   node scripts/review.mjs chapters <folder> <selection.json> <out>
 //       One sheet per chapter: {"ratings": {"6390": 4}, "sets": [[id, name, [n...]]]}.
 //
@@ -20,8 +22,8 @@ import path from "path";
 import sharp from "sharp";
 import { exiftool } from "exiftool-vendored";
 
-const VIEW_EDGE = 1568;
-const CROP_SIZE = 1000;
+const VIEW_EDGE = 1000;
+const CROP_SIZE = 500;
 
 function keyOf(fileName) {
   const base = path.basename(fileName, path.extname(fileName)).toUpperCase();
@@ -105,17 +107,33 @@ async function view(folder, out, nums) {
 
 async function crop(folder, out, specs) {
   const files = index(folder);
+  const tiles = [];
   for (const spec of specs) {
     const [n, at] = spec.split("@");
     const [fx, fy] = (at ?? "0.5,0.5").split(",").map(Number);
-    const img = sharp(find(files, n)).rotate();
-    const { data, info } = await img.toBuffer({ resolveWithObject: true });
+    const { data, info } = await sharp(find(files, n)).rotate().toBuffer({ resolveWithObject: true });
     const size = Math.min(CROP_SIZE, info.width, info.height);
     const left = Math.round(Math.min(Math.max(fx * info.width - size / 2, 0), info.width - size));
     const top = Math.round(Math.min(Math.max(fy * info.height - size / 2, 0), info.height - size));
-    const name = path.join(out, `${n}_crop_${Math.round(fx * 100)}-${Math.round(fy * 100)}.jpg`);
-    await sharp(data).extract({ left, top, width: size, height: size }).jpeg({ quality: 92 }).toFile(name);
-    console.log(name, `${info.width}x${info.height}`);
+    const tile = await sharp(data).extract({ left, top, width: size, height: size }).resize(CROP_SIZE, CROP_SIZE).toBuffer();
+    tiles.push({ tile, text: `${n} @${fx},${fy}` });
+  }
+  const L = 28;
+  for (let p = 0; p * 4 < tiles.length; p++) {
+    const group = tiles.slice(p * 4, p * 4 + 4);
+    const comps = [];
+    for (const [k, { tile, text }] of group.entries()) {
+      const x = (k % 2) * CROP_SIZE, y = Math.floor(k / 2) * (CROP_SIZE + L);
+      comps.push({ input: tile, left: x, top: y });
+      comps.push({ input: label(text, CROP_SIZE), left: x, top: y + CROP_SIZE });
+    }
+    const rows = Math.ceil(group.length / 2);
+    const name = path.join(out, `crops_${String(p + 1).padStart(2, "0")}.jpg`);
+    await sharp({ create: { width: 2 * CROP_SIZE, height: rows * (CROP_SIZE + L), channels: 3, background: "#000" } })
+      .composite(comps)
+      .jpeg({ quality: 92 })
+      .toFile(name);
+    console.log(name, group.map((g) => g.text).join(" | "));
   }
 }
 

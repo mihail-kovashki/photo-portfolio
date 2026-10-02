@@ -120,9 +120,12 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
    2024's known problems: 450px missed shooting through glass and an intruding
    foreground, which 600px shows; 900px added nothing more; dust and soft focus never
    show on a sheet, which is what step 4 is for.
-4. **Close look at every candidate** (`review.mjs view`, 1568px), and a 100% crop of the
-   export where the photo is meant to be sharp (`review.mjs crop`): the person, the
-   building, the flower, not the centre of the frame. For each candidate record:
+4. **Close look at the shortlist** (`review.mjs view`, 1000px): about 1.5× the final set,
+   chosen generously from the sheets, since photos that only show their worth up close
+   are the main risk of a tight list. Then 100% crops, four to an image (`review.mjs
+   crop`), where the photo is meant to be sharp: the person, the building, the flower,
+   not the centre of the frame. Spot-check smooth skies for dust. For each candidate
+   record:
    - **focus**: `sharp`, `soft-intended` (shallow focus that is clearly the point) or
      `soft` (a miss, shake or motion blur), with where it was checked;
    - **technical**: tilt, noise, halos, clipped highlights, banding, edit artefacts;
@@ -146,6 +149,13 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
    a viewer meets it: what opens, what closes, whether names say something, whether a
    chapter repeats itself.
 6. **Write the pass log** (below), then the keywords, then ingest.
+
+**Cost.** Images stay in the conversation, so a long session gets expensive fast: run
+each album's pass in a fresh session, starting from the README, the pass logs and the
+vault notes. Measured on the second passes, the 1568px views cost far more than anything
+else and caught nothing that 1000px wouldn't; Instagram fingerprints cost almost nothing
+and changed the most selections. (Changed 2026-10-02; the earlier passes used 1568px views
+and 1000px crops.)
 
 ## Pass logs
 

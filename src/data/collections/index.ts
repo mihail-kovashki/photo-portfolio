@@ -17,6 +17,7 @@ import { picoRuivo25 } from "./pico-ruivo-25";
 import { fanal25 } from "./fanal-25";
 import { copenhagen24 } from "./copenhagen-24";
 import { malmo24 } from "./malmo-24";
+import { suwon25 } from "./suwon-25";
 
 export type { Chapter, PlaceCollection } from "./types";
 
@@ -40,6 +41,7 @@ export const collections: Record<string, PlaceCollection> = {
   [fanal25.id]: fanal25,
   [copenhagen24.id]: copenhagen24,
   [malmo24.id]: malmo24,
+  [suwon25.id]: suwon25,
 };
 
 export function findCollection(seriesId: string): PlaceCollection | undefined {

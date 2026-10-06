@@ -9,7 +9,8 @@
 //
 //   {
 //     "source": "Vietnam 2024",                       // folder under ~/Pictures/portfolio-source/
-//     "ratings": "vietnam-24.ratings.json",           // next to the tags file
+//     "ratings": "vietnam-24.ratings.json",           // next to the tags file; a list when a place
+//                                                     // grew in a later pass (later files win)
 //     "places": ["hanoi-24", "ha-long-bay-24"],       // collection ids
 //     "files": {"DSCF7489": "20241124-DSCF7489-Enhanced-NR.JPG"},   // only where a number has two files
 //     "tags": {"DSCF7496": ["waterfront"], ...}
@@ -50,8 +51,10 @@ function numberOf(name) {
 }
 
 const stars = {};
-for (const f of JSON.parse(fs.readFileSync(path.join(path.dirname(tagsFile), spec.ratings), "utf8")).frames) {
-  stars[numberOf(f.n)] = f.v2;
+for (const r of [spec.ratings].flat()) {
+  for (const f of JSON.parse(fs.readFileSync(path.join(path.dirname(tagsFile), r), "utf8")).frames) {
+    stars[numberOf(f.n)] = f.v2;
+  }
 }
 
 const files = fs.readdirSync(dir).filter((f) => /\.jpe?g$/i.test(f));

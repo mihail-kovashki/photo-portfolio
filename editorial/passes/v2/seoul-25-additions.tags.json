@@ -1,0 +1,328 @@
+{
+  "source": "Seoul 25",
+  "ratings": [
+    "seoul-25.ratings.json",
+    "seoul-25-additions.ratings.json"
+  ],
+  "places": [
+    "seoul-25",
+    "suwon-25"
+  ],
+  "tags": {
+    "DSCF2062": [
+      "new-architecture",
+      "waterfront",
+      "golden-hour"
+    ],
+    "DSCF2063": [
+      "waterfront",
+      "skyline",
+      "golden-hour"
+    ],
+    "DSCF2071": [
+      "waterfront",
+      "people",
+      "golden-hour"
+    ],
+    "DSCF2148": [
+      "palaces-and-castles",
+      "people"
+    ],
+    "DSCF2149": [
+      "looking-up",
+      "palaces-and-castles"
+    ],
+    "DSCF2150": [
+      "palaces-and-castles",
+      "forests-and-trees"
+    ],
+    "DSCF2161": [
+      "palaces-and-castles",
+      "people"
+    ],
+    "DSCF2164": [
+      "palaces-and-castles",
+      "people"
+    ],
+    "DSCF2177": [
+      "new-architecture",
+      "people"
+    ],
+    "DSCF2181": [
+      "people",
+      "streets"
+    ],
+    "DSCF2188": [
+      "palaces-and-castles"
+    ],
+    "DSCF2190": [
+      "palaces-and-castles"
+    ],
+    "DSCF2194": [
+      "palaces-and-castles"
+    ],
+    "DSCF2195": [
+      "palaces-and-castles",
+      "people"
+    ],
+    "DSCF2200": [
+      "palaces-and-castles",
+      "people",
+      "blue-hour"
+    ],
+    "DSCF2209": [
+      "palaces-and-castles",
+      "people",
+      "blue-hour"
+    ],
+    "DSCF2212": [
+      "palaces-and-castles",
+      "blue-hour"
+    ],
+    "DSCF2213": [
+      "palaces-and-castles",
+      "streets",
+      "blue-hour"
+    ],
+    "DSCF2217": [
+      "flowers",
+      "mountains",
+      "blue-hour"
+    ],
+    "DSCF2224": [
+      "flowers",
+      "new-architecture",
+      "blue-hour"
+    ],
+    "DSCF2232": [
+      "parks-and-gardens",
+      "blue-hour"
+    ],
+    "DSCF2236": [
+      "streets",
+      "blue-hour"
+    ],
+    "DSCF2243": [
+      "new-architecture",
+      "blue-hour"
+    ],
+    "DSCF2245": [
+      "streets",
+      "night",
+      "people"
+    ],
+    "DSCF2246": [
+      "streets",
+      "people",
+      "night"
+    ],
+    "DSCF2248": [
+      "streets",
+      "night"
+    ],
+    "DSCF2250": [
+      "streets",
+      "night"
+    ],
+    "DSCF2267": [
+      "people",
+      "waterfront",
+      "golden-hour"
+    ],
+    "DSCF2269": [
+      "waterfront",
+      "golden-hour"
+    ],
+    "DSCF2278": [
+      "waterfront",
+      "forests-and-trees",
+      "golden-hour"
+    ],
+    "DSCF2283": [
+      "skyline",
+      "blue-hour"
+    ],
+    "DSCF2294": [
+      "waterfront",
+      "forests-and-trees",
+      "blue-hour"
+    ],
+    "DSCF2299": [
+      "city-from-above"
+    ],
+    "DSCF2307": [
+      "forests-and-trees",
+      "golden-hour"
+    ],
+    "DSCF2314": [
+      "forests-and-trees",
+      "city-from-above",
+      "golden-hour"
+    ],
+    "DSCF2330": [
+      "city-from-above",
+      "golden-hour"
+    ],
+    "DSCF2334": [
+      "skyline",
+      "new-architecture",
+      "golden-hour"
+    ],
+    "DSCF2347": [
+      "skyline",
+      "new-architecture",
+      "golden-hour"
+    ],
+    "DSCF2369": [
+      "skyline",
+      "new-architecture",
+      "golden-hour"
+    ],
+    "DSCF2392": [
+      "people",
+      "city-from-above"
+    ],
+    "DSCF2401": [
+      "palaces-and-castles",
+      "looking-up"
+    ],
+    "DSCF2419": [
+      "palaces-and-castles",
+      "waterfront"
+    ],
+    "DSCF2430": [
+      "palaces-and-castles",
+      "parks-and-gardens"
+    ],
+    "DSCF2431": [
+      "palaces-and-castles",
+      "waterfront"
+    ],
+    "DSCF2435": [
+      "palaces-and-castles",
+      "city-from-above"
+    ],
+    "DSCF2436": [
+      "palaces-and-castles",
+      "city-from-above"
+    ],
+    "DSCF2434": [
+      "palaces-and-castles",
+      "autumn"
+    ],
+    "DSCF2450": [
+      "palaces-and-castles",
+      "looking-up"
+    ],
+    "DSCF2454": [
+      "palaces-and-castles",
+      "looking-up"
+    ],
+    "DSCF2458": [
+      "palaces-and-castles",
+      "forests-and-trees"
+    ],
+    "DSCF2445": [
+      "churches",
+      "city-from-above"
+    ],
+    "DSCF2463": [
+      "churches",
+      "streets",
+      "people"
+    ],
+    "DSCF2589": [
+      "waterfront",
+      "people",
+      "night"
+    ],
+    "DSCF2501": [
+      "waterfront",
+      "people",
+      "night"
+    ],
+    "DSCF2546": [
+      "waterfront",
+      "night"
+    ],
+    "DSCF2557": [
+      "waterfront",
+      "people",
+      "night"
+    ],
+    "DSCF2566": [
+      "waterfront",
+      "people",
+      "night"
+    ],
+    "DSCF2508": [
+      "waterfront",
+      "people",
+      "night"
+    ],
+    "DSCF2529": [
+      "waterfront",
+      "night"
+    ],
+    "DSCF3271": [
+      "parks-and-gardens",
+      "autumn",
+      "people"
+    ],
+    "DSCF3292": [
+      "parks-and-gardens",
+      "people",
+      "autumn"
+    ],
+    "DSCF3309": [
+      "parks-and-gardens",
+      "new-architecture",
+      "autumn"
+    ],
+    "DSCF3322": [
+      "parks-and-gardens",
+      "skyline",
+      "people"
+    ],
+    "DSCF3317": [
+      "parks-and-gardens",
+      "people"
+    ],
+    "DSCF3329": [
+      "palaces-and-castles",
+      "city-from-above",
+      "golden-hour"
+    ],
+    "DSCF3335": [
+      "city-from-above",
+      "golden-hour"
+    ],
+    "DSCF3339": [
+      "streets",
+      "golden-hour"
+    ],
+    "DSCF3340": [
+      "city-from-above",
+      "mountains",
+      "golden-hour"
+    ],
+    "DSCF3350": [
+      "people",
+      "blue-hour"
+    ],
+    "DSCF3351": [
+      "skyline",
+      "blue-hour"
+    ],
+    "DSCF3355": [
+      "streets",
+      "people",
+      "blue-hour"
+    ],
+    "DSCF3358": [
+      "streets",
+      "people",
+      "night"
+    ]
+  }
+}

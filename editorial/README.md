@@ -207,7 +207,10 @@ critique, so the reasoning can be checked photo by photo. The first-pass logs st
 they were, for comparison; the re-runs live in [`passes/v2/`](passes/v2/).
 
 Since Vietnam, an album also leaves `<album>.firstlook.json` (step 3) and
-`<album>.tags.json` (step 7) beside them. Re-running `keyword.mjs` on a changed tags file
+`<album>.tags.json` (step 7) beside them. Frames added to an album that already has a pass
+get their own files (`seoul-25-additions.*`); the tags file then covers every place they
+touch, old frames included, with `"ratings"` as a list of both ratings files, since
+`keyword.mjs` strips the keywords from any file of a listed place it isn't given. Re-running `keyword.mjs` on a changed tags file
 or collection updates the files, so a later change is an edit plus a re-run.
 
 ## Tags
@@ -236,6 +239,7 @@ bulk keyword rewrite.
 | `sun-in-frame` | Many sunsets and sunrises | Currently part of `golden-hour`; useful mainly for filtering |
 | `markets` | Madeira (Funchal market, 9700), Vietnam (Hanoi Old Quarter), Hokkaido (Otaru glass shops) | Three trips, but a frame or two each; not yet worth a page |
 | `waterfalls` | Seoraksan (Biryong, Towangseong), Madeira (Véu da Noiva, 0083), probably Hokkaido, Vietnam | DSCF3618 fits no tag today |
+| `fireworks` | Seoul 2025 (the festival from Seoraeseom, 2589) | An event, one trip so far |
 | `boats` | Vietnam (Ha Long, Ninh Binh), Copenhagen, Hokkaido (Otaru) | Might be a chapter rather than a tag |
 
 ### Log

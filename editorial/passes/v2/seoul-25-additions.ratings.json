@@ -1,0 +1,789 @@
+{
+ "album": "Seoul 25 (additions)",
+ "places": [
+  "suwon-25",
+  "seoul-25"
+ ],
+ "pass": 2,
+ "date": "2026-10-06",
+ "method": "Only the 124 frames added to the Seoul 25 folder (22 Sep Suwon, 27 Sep fireworks, 19 Oct Olympic Park and Naksan). 600px sheets for all; 66 at 1000px; 100% crops on 24 subjects plus two sky dust checks; 2589 checked against the site's 5★ sheet. Instagram: one post (Seoul Fireworks Festival) matched by dHash in the browser and by eye.",
+ "instagram": {
+  "Seoul Fireworks Festival (DPJdegxE9sD)": [
+   "2589 cover (5 bits)",
+   "2501 (7)",
+   "2557 (12, checked by eye)",
+   "2509 (9, a vertical crop of the landscape, checked by eye)"
+  ]
+ },
+ "frames": [
+  {
+   "n": "2397",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Starfield library. Book towers stacked in the atrium, painted globes overhead, two small figures on the stairs for scale. Busy by nature but ordered by the verticals; strong colour. Starbucks logo and shop names (MAJESTY, ROGERS) small at mid-right/bottom.",
+   "focusAt": "the two people on the stairs"
+  },
+  {
+   "n": "2398",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2397"
+  },
+  {
+   "n": "2399",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2401",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Janganmun through the arch of the outer gate. The arch frames the roof well, the sign 長安門 reads, the stone wall gives weight. Grey sky flattens it; the road and the shop through the far arch bottom-right are a small distraction.",
+   "focusAt": "the 安 of the sign"
+  },
+  {
+   "n": "2403",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2404",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "The path on the wall's slope, pine left, flags along the top. A nice S-curve; flat grey light, and the lit bollards look like litter. Supporting."
+  },
+  {
+   "n": "2405",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "From the wall: the mound, a hanok, the town and a hill, with the wall walk curving right. Places us (the wall in its town); grey sky takes 40% of the frame. Establishing at most."
+  },
+  {
+   "n": "2406",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2409",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2417",
+   "v2": 1,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2418",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Hwahongmun vertical, tight on the pavilion and the falls. Clean, sign readable, but central and static; the 2419 wide is the better frame. Group loser."
+  },
+  {
+   "n": "2419",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Hwahongmun wide: the floodgate pavilion over seven arches, water pouring, Dongbukgakru up on the hill right. The best \"this is Hwaseong\" frame; the sky is plain white.",
+   "focusAt": "the signboard"
+  },
+  {
+   "n": "2420",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2419"
+  },
+  {
+   "n": "2421",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Seobuk... (Dongbuk) watchtower on the wall above a curving park path; bicycle and banner bottom right. Nice layering of path, slope and wall; lamp post and banner clutter the bottom."
+  },
+  {
+   "n": "2422",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Yongyeon pond from above: the round island with two pines, willows, the town and mountains behind. Graphic island; the town is busy. Variation to the pond group if the pond needs a wide."
+  },
+  {
+   "n": "2425",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2426",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2427",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Banghwasuryujeong over Yongyeon pond, island right, willows. Pavilion small but well placed top-left, reflections; the bottom-left bush is a lump. Pond group: 2430 vs 2427 close."
+  },
+  {
+   "n": "2429",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2427"
+  },
+  {
+   "n": "2430",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Same, framed by hanging willow right, island centre. More atmosphere (the willow curtain), pavilion clearer against sky. Pond group winner by a hair; the sky is blank. Toss-up with 2427 → pick 2430."
+  },
+  {
+   "n": "2431",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "The stream running back to Hwahongmun under a willow. Quiet leading line, the gate small at the end; modern buildings behind the gate."
+  },
+  {
+   "n": "2432",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2427"
+  },
+  {
+   "n": "2434",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Silver grass in the foreground, the Dongbuk gongsimdon/tower on the crest. Seasonal texture and depth, grey moody sky works here.",
+   "focusAt": "the tower's windows"
+  },
+  {
+   "n": "2435",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "From the wall: the wall snakes to the pavilion, the pond and willows, the city behind. The best establishing frame of Hwaseong-in-Suwon; parked bikes and a person on the path, busy town. Establishing role."
+  },
+  {
+   "n": "2436",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Parapet leading down the frame, the wall and pines curving away, towers. Strong foreground leading line, nice; half sky, flat."
+  },
+  {
+   "n": "2437",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2438",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2439",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2441",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2442",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2443",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2445"
+  },
+  {
+   "n": "2444",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2445"
+  },
+  {
+   "n": "2445",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "The cathedral (Buksu-dong? to confirm) rising over the low-rise town. A surprise of Gothic in Suwon; dull sky and cluttered houses below. Variety frame."
+  },
+  {
+   "n": "2448",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2450",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Haenggung eave corner: dancheong in green/red, the japsang figures on the ridge against the sky, the red wall below. Clean, colourful, well composed.",
+   "focusAt": "the roof figure"
+  },
+  {
+   "n": "2453",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Haenggung rooflines: the dancheong eave sweeping under two white gables. Lovely colour and layering, but it competes with 2450 and is less clean (the gables crowd the frame). Pick one; 2450 wins."
+  },
+  {
+   "n": "2454",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Looking up at a roof corner: carved end tiles (the 壽 character), black-and-white bracket ends with flower motifs, red/peach stripes. Graphic, a detail nobody else takes. Sky blown white but it reads as a backdrop.",
+   "focusAt": "the carved end tile"
+  },
+  {
+   "n": "2455",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "Courtyard pond with a pine, sandy ground, a lantern post. Pleasant but plain; nothing holds the eye. Out."
+  },
+  {
+   "n": "2456",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2455"
+  },
+  {
+   "n": "2458",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Gate under a pine: tiled roof, a pink wall seen through the doorway, sandy ramp. Nice nested frame; the plastic sheeting at the bottom right of the wall and the \"Watch out\" sign are small blemishes."
+  },
+  {
+   "n": "2459",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2462",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Haenggung-dong street: a cyclist, women walking, the church tower at the end. Ordinary street life, the traffic cone and planter benches are busy. Supporting at best."
+  },
+  {
+   "n": "2463",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "The brick Methodist church tower with a delivery rider passing. The rider gives it life; dull sky, signs. Pair with 2462: 2463 is the stronger, more specific."
+  },
+  {
+   "n": "2464",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2475",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Before/early in the show: the park, people waiting, a tent mast, the first pink burst small behind the bridge, towers right. Sets the scene (the crowd on the grass, the distance); a couple on a blanket at right are recognisable-ish strangers, a man stands at the left edge. Opener role only."
+  },
+  {
+   "n": "2484",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "A gold chrysanthemum shell framed by the tent's mast and cable. The framing is a nice idea, but the mast slashes across the burst and the second shell is cut off right. Variety frame."
+  },
+  {
+   "n": "2496",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Blue bursts behind the bridge, silhouettes. Half the frame is empty black sky above; blue is a different colour from the rest. Top-heavy."
+  },
+  {
+   "n": "2497",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Pink edit of the same moment; group loser to 2501."
+  },
+  {
+   "n": "2498",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2501"
+  },
+  {
+   "n": "2499",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2501"
+  },
+  {
+   "n": "2501",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "(posted) Violet bursts arching over the bridge, magenta water, a row of silhouettes, one phone screen glowing. Colour and composition sing; the pinks of 2497 are the same moment in another edit. Group winner (posted).",
+   "focusAt": "silhouettes and water"
+  },
+  {
+   "n": "2502",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2501"
+  },
+  {
+   "n": "2508",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Landscape of the same peak: twin pink bursts framed by the arch, a flare low under the bridge, a row of silhouettes. The landscape has the full bridge and is more balanced; a real variation (framing), not just an edit. Crop @0.45,0.3.",
+   "focusAt": "the sparks"
+  },
+  {
+   "n": "2509",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(posted, as a vertical crop) Red version a few seconds later, landscape. Near-twin of 2508 in red; one of the two. 2508 is cleaner."
+  },
+  {
+   "n": "2522",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2529",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "A single orange-white peony high in the sky, a second one bursting through the arch, smoke glowing red. The best \"single shell\" frame: clean, separation, nice negative space.",
+   "focusAt": "the shell"
+  },
+  {
+   "n": "2535",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2541",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Gold willow shells, smaller ones low behind the bridge; the crowd is just heads at the bottom edge (cut). Pretty but the bottom edge is awkward; less strong than 2546/2550."
+  },
+  {
+   "n": "2543",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2546"
+  },
+  {
+   "n": "2545",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2546"
+  },
+  {
+   "n": "2546",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Two blue-white peonies fully open above the arch, two more blooming under the bridge, smoke between. Crisp shapes, symmetry.",
+   "focusAt": "the left shell"
+  },
+  {
+   "n": "2549",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2550"
+  },
+  {
+   "n": "2550",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "White peonies falling behind/through the arch, pink water. Lovely \"curtain\" through the bridge; silhouettes cut at the bottom; similar palette to 2546. Toss-up with 2546; 2546 has cleaner shapes."
+  },
+  {
+   "n": "2551",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2550"
+  },
+  {
+   "n": "2552",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2546"
+  },
+  {
+   "n": "2557",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "(posted) Blue-green ring shells with copper cores, vertical, blue water, silhouettes. A distinct colour in the set; the bridge is lit cool too. Sky above is empty but holds.",
+   "focusAt": "the left shell"
+  },
+  {
+   "n": "2559",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2557"
+  },
+  {
+   "n": "2566",
+   "v2": 4,
+   "focus": "soft-intended",
+   "critique": "Multicolour pink peonies, fountains under the bridge, smoke drifting right, silhouettes with two phones up. The richest colour of the night, and the phones add a human note.",
+   "focusAt": "the shell: the sparks streak during the exposure"
+  },
+  {
+   "n": "2567",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2566"
+  },
+  {
+   "n": "2574",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Gold twin peonies, bigger crowd in the foreground, people's backs fill the lower third. Nice, but the crowd gets heavy and it repeats 2589's warm tone without the finale's punch."
+  },
+  {
+   "n": "2578",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2589"
+  },
+  {
+   "n": "2580",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "2585",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 2589"
+  },
+  {
+   "n": "2589",
+   "v2": 5,
+   "focus": "sharp",
+   "critique": "(posted, the cover) The finale: the whole sky glowing orange behind the arch, the water gold, a row of silhouettes. The definitive frame of the night: simple, bold, one colour. Check vs the site's 5★.",
+   "focusAt": "silhouettes against the glow"
+  },
+  {
+   "n": "2590",
+   "v2": 4,
+   "focus": "not checked at 100%",
+   "critique": "Same finale a moment later, slightly wider bursts. Near-twin; 2589 wins (posted, better spacing of the silhouettes)."
+  },
+  {
+   "n": "3271",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "The kochia hill: rows of round bushes turning red among the green, a path up to a pavilion, people posing. Strong pattern, a seasonal signature of Olympic Park; grey sky.",
+   "focusAt": "the bushes"
+  },
+  {
+   "n": "3274",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Kochia from above with apartment blocks and the arena roof. Says \"this is in the city\", but mostly green bushes (less red) and the buildings are dull. Variation only if the chapter wants context."
+  },
+  {
+   "n": "3275",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Cosmos and zinnias, a white stone post, trees. Colourful, but the post sits awkwardly and focus/depth to check."
+  },
+  {
+   "n": "3278",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) orange cosmos slope and pavilion; 3275 and 3286 cover the flowers better"
+  },
+  {
+   "n": "3281",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 3278"
+  },
+  {
+   "n": "3286",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Low through zinnias to the pavilion on the cosmos hill. Nice low angle, but the foreground is a muddle of stems, people at the left edge."
+  },
+  {
+   "n": "3288",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) a tiled roof over fallen leaves; odd, unclear what it is"
+  },
+  {
+   "n": "3291",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Path toward Lotte Tower among yellowing trees, runners. Places us; the paving takes the bottom half; signboard and kiosk mid."
+  },
+  {
+   "n": "3292",
+   "v2": 3,
+   "focus": "sharp",
+   "critique": "The path toward Lotte Tower with a family cycling in: a father with a child on the back, a boy, a woman behind, yellow trees. Gives the chapter the movement it lacked; the paving takes the bottom half and the signboard sits mid-right. Twin of 3291 (no cyclists), which it beats. Added after review, replacing 3301 and 3313.",
+   "focusAt": "the father and child on the bike"
+  },
+  {
+   "n": "3293",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "3295",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "3296",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) a walker on the stone path below the mound; plain"
+  },
+  {
+   "n": "3297",
+   "v2": 1,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "3299",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "3300",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "3301",
+   "v2": 3,
+   "focus": "sharp",
+   "critique": "An avenue of chestnut trees in yellow, leaves on the ground, walkers small at the end. The autumn frame of the set; the painted path markings bottom-left are a small blemish. After review: 3★, Mihail's call (\"no way that's a 4-star\").",
+   "focusAt": "the leaves"
+  },
+  {
+   "n": "3302",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Looking up into yellow-green horse-chestnut leaves. Pleasant texture, generic."
+  },
+  {
+   "n": "3305",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "A tree's roots spreading over fallen leaves, the grass mound of the earthen wall behind. Good foreground/background, colour is muted; the sky is a white wedge."
+  },
+  {
+   "n": "3308",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Lotte Tower over the lawn under big clouds, people small. Lower half is plain grass; the sky is the frame. 3309 does it better."
+  },
+  {
+   "n": "3309",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Same view with a foreground carpet of brown leaves and a tree canopy framing left. Autumn + city in one frame, good depth.",
+   "focusAt": "the tower"
+  },
+  {
+   "n": "3310",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 3309"
+  },
+  {
+   "n": "3311",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 3313"
+  },
+  {
+   "n": "3313",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "The lone tree (나홀로나무) on its grass hill, two tall towers behind, clouds, people scattered. The park's icon; shade band across the bottom anchors it.",
+   "focusAt": "the tree"
+  },
+  {
+   "n": "3314",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 3313"
+  },
+  {
+   "n": "3315",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Lotte Tower, the rolling lawn, round office building right, shade foreground. Pleasant and airy but a third tower frame; one of 3309/3315."
+  },
+  {
+   "n": "3317",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "A couple on a blanket from behind, looking toward the lone tree, a child walking past. The human moment of the morning, and the lone tree reads behind them. Strangers from behind, fine.",
+   "focusAt": "the couple"
+  },
+  {
+   "n": "3318",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Old pines propped on crutches, path leading in, big clouds. Nice light and the crutches are a Korean-park detail; the path bottom-left is dull."
+  },
+  {
+   "n": "3321",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "3322",
+   "v2": 4,
+   "focus": "not checked at 100%",
+   "critique": "The path along the earthen wall (Mongchontoseong) with runners, the city skyline behind. Good line and the city context; lots of people, middling. After review: raised to 4★ on Mihail's call; the stronger Olympic Park frame."
+  },
+  {
+   "n": "3323",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Lotte Tower above the Olympic gate from the wall, pines, rope fence, paving. Clear city view; the paving and rope across the bottom third are a weak foreground."
+  },
+  {
+   "n": "3326",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 3329"
+  },
+  {
+   "n": "3327",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 3329"
+  },
+  {
+   "n": "3329",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Fountain grass glowing in the foreground, people on the path, Heunginjimun (Dongdaemun) with its half-moon ongseong below, the city behind. Places us precisely, nice depth; the Hotel Dongdaemun sign and a grey tower are busy. Opener.",
+   "focusAt": "Heunginjimun"
+  },
+  {
+   "n": "3334",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "3335",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Ihwa's hillside houses stacked up in low warm light, the wall's stone in the foreground. The light is lovely; the soft stone lump bottom-left is heavy, but it says \"on the wall\"."
+  },
+  {
+   "n": "3336",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "3337",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) first-look reject"
+  },
+  {
+   "n": "3339",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "The sun setting between a tree and a café terrace, railings and a lamp in the foreground, people on the stairs below. Warm, layered, a real place; a bit cluttered at the bottom.",
+   "focusAt": "the man on the terrace"
+  },
+  {
+   "n": "3340",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "The sun going down over the city, Inwangsan and Bukhansan ridges, warm clouds. A classic, well exposed; generic as a type (sunset over a city).",
+   "focusAt": "the rooftops"
+  },
+  {
+   "n": "3343",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 3344"
+  },
+  {
+   "n": "3344",
+   "v2": 4,
+   "focus": "not checked at 100%",
+   "critique": "Bukhansan under pink-lit clouds, the city at its feet. Soft and calm; the mountain is small, most of the frame is sky. Pairs with 3340 (same minute, other direction): pick one, or both as \"toward the sun / away from it\"."
+  },
+  {
+   "n": "3345",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) near-twin of 3340"
+  },
+  {
+   "n": "3349",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "The wall walk down toward Bukhansan, people walking, an older woman in a floral jacket in the foreground (from behind). Nice depth and evening sky; she's big in the frame (if she's someone you know, from behind is fine by the rule)."
+  },
+  {
+   "n": "3350",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Blue hour: the wall lit gold, people strolling along it, the path curving away under a lamp. The best \"the Wall at night\" frame; the person at left edge is cut and faces camera (small).",
+   "focusAt": "the people at the wall; the sky is noisy at 100%"
+  },
+  {
+   "n": "3351",
+   "v2": 4,
+   "focus": "sharp",
+   "critique": "Dusk over the city, N Seoul Tower on Namsan, pink sky, first lights. A strong city closer; the foreground trees are a dark mass.",
+   "focusAt": "the office blocks"
+  },
+  {
+   "n": "3354",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Lit wooden stairs down through pines, a couple walking. Nice night colour; the lamp post right and the green cast. Parked."
+  },
+  {
+   "n": "3355",
+   "v2": 4,
+   "focus": "not checked at 100%",
+   "critique": "A telephone pole with a knot of wires and CCTV against a pink-blue dusk, people waiting under the streetlight, bollards and planters. Very Seoul; busy by design."
+  },
+  {
+   "n": "3356",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "Lit street corner, wires, pink sky; empty and quiet, the car right. 3355 has the people; one of the two."
+  },
+  {
+   "n": "3358",
+   "v2": 3,
+   "focus": "sharp",
+   "critique": "Ivy-covered 7-Eleven at night, a couple on the bench looking at a phone (not kissing; small). KFC sign right. A fun night closer; brands are the subject.",
+   "focusAt": "the couple on the bench"
+  }
+ ]
+}

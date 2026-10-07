@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { places } from "@/data/photos";
 import { preferredScrollBehavior } from "@/lib/utils";
+import { useIntroPlaying } from "@/lib/intro";
 
 // Departure-board flipper: the hero names a place and flips through the others once,
 // oldest to newest, then settles back on the latest. Hovering starts another pass;
@@ -21,20 +22,22 @@ interface HeroProps {
 
 export function Hero({ onSelectSeries }: HeroProps) {
   const reduceMotion = useReducedMotion();
+  // Hold the first pass until the opening animation hands over, so it's seen from the start
+  const introPlaying = useIntroPlaying();
   const [index, setIndex] = useState(latestIndex);
   // Flips left in the current pass. A full pass visits every place and ends on the latest.
   const [flipsLeft, setFlipsLeft] = useState(places.length);
   const [nextDelay, setNextDelay] = useState(FIRST_FLIP_DELAY_MS);
 
   useEffect(() => {
-    if (reduceMotion || flipsLeft === 0 || places.length < 2) return;
+    if (reduceMotion || introPlaying || flipsLeft === 0 || places.length < 2) return;
     const timer = setTimeout(() => {
       setIndex((i) => (i + 1) % places.length);
       setFlipsLeft((n) => n - 1);
       setNextDelay(FLIP_INTERVAL_MS);
     }, nextDelay);
     return () => clearTimeout(timer);
-  }, [reduceMotion, flipsLeft, nextDelay]);
+  }, [reduceMotion, introPlaying, flipsLeft, nextDelay]);
 
   const restartPass = () => {
     if (flipsLeft > 0) return;

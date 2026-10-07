@@ -254,6 +254,30 @@ body {
   }
 }
 
+/* Opening animation (src/lib/intro.ts): hidden unless the inline script chose to play
+   it on this load. An overlay intro also holds the page still underneath. */
+html:not([data-intro="play"]) .intro-root {
+  display: none;
+}
+
+html[data-intro="play"]:has(.intro-overlay) {
+  overflow: hidden;
+}
+
+/* Photo wall: the line under "Scroll to enter" runs downwards, like a hint to follow */
+.intro-scroll-cue {
+  animation: intro-scroll-cue 1.8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+@keyframes intro-scroll-cue {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(200%);
+  }
+}
+
 /* Reduced motion: with the OS setting on, CSS transitions and animations finish at
    once and scrolling jumps instead of gliding. Framer Motion follows the same setting
    through <MotionConfig reducedMotion="user">; the photo morph and hero flipper check

@@ -4,6 +4,7 @@ import { useState, useMemo, useCallback, useEffect, useSyncExternalStore } from 
 import { MotionConfig } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { Intro } from "@/components/Intro";
 import { SeriesFilter } from "@/components/SeriesFilter";
 import { PhotoGrid } from "@/components/PhotoGrid";
 import { Lightbox } from "@/components/Lightbox";
@@ -149,6 +150,9 @@ export function Gallery({ initialSeries }: GalleryProps) {
             onSelectSeries={handleNavigate}
             onOpenTrips={openTrips}
           />
+
+          {/* Opening animation, once per session on the home page */}
+          <Intro />
 
           {/* Hero & Camera Introduction */}
           <Hero onSelectSeries={handleSelectSeries} />

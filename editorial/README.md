@@ -102,6 +102,13 @@ differently from culling (`taste.md`):
   silhouette, or too small to recognise is fine; portraits and frames where a recognisable
   face is the point stay out (Madeira: 9762 and 0021 out, 9858's profile skipped). I ask
   them before their frames go live, and the pass log lists those frames.
+- **Everyone else is assumed a stranger; the pass doesn't stop to ask.** Whether someone
+  in frame is a companion is not a mapping question and never holds up a session. Treat
+  them as strangers, carry on, and list every frame with a recognisable person under
+  "People" in the pass log, marked "assumed stranger, check", so I confirm at review. The
+  one exception: someone clearly posing for the camera (facing it, placed, the subject) may
+  be asked about at mapping, since it decides whether the frame can be a candidate at all.
+  If I'm not around to answer, assume a stranger and flag it the same way.
 - **Stragglers are parked, not dropped.** Good photos that fit no chapter go on the
   place's parked list; enough of them can become an "Around <place>" chapter later.
   Deliberate drops (a great memory, a weak photo) are logged separately so they aren't
@@ -143,7 +150,8 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
 1. **Instagram first.** Find the trip's posts: which frames I published, which fronted a
    post, how I grouped them. That is the best evidence of what I think matters.
 2. **Map the album** to trip and places from contact sheets and dates (`review.mjs
-   sheets`). Ask me about anything I'd know and the files don't.
+   sheets`). Ask me about anything I'd know and the files don't, except who's in frame:
+   that waits for the log's "People" section (see the people rules above).
 3. **First look, from contact sheets** at 600px per photo, nine to a sheet (`review.mjs
    sheets`). Group near-duplicates, give 1★ to clear rejects and 2★ to the plainly
    unremarkable. Everything else is a candidate. No higher stars yet. Tested on Korea

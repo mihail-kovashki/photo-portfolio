@@ -43,11 +43,13 @@ export function Navbar({ onOpenGear, activeSeries, onSelectSeries, onOpenTrips }
     }`;
 
   return (
+    // The divider is always there, transparent at the top, so scrolling only fades its
+    // colour in. Adding the border on scroll made it start at the text colour and flash
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-40 border-b transition-[background-color,border-color,box-shadow,padding,backdrop-filter] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
         scrolled
-          ? "bg-[#09090b]/80 backdrop-blur-md border-b border-white/10 py-3 shadow-2xl"
-          : "bg-transparent py-5"
+          ? "bg-[#09090b]/80 backdrop-blur-md border-white/10 py-3 shadow-2xl"
+          : "bg-transparent border-transparent py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-2 sm:gap-4">

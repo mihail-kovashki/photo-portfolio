@@ -276,6 +276,35 @@ model any image larger than 2000px on the long edge downscaled to that, so `revi
 keeps every output within it. The test of the change: re-cull Prague's Malá Strana days
 and see whether it finds the frames I remember.
 
+## Comparing two runs
+
+Added 2026-10-08, after Prague's blind second run. When a place has been through the pass
+twice (a re-run under new rules, or a later pass after the site changed), the two are
+compared on one page rather than across JSON files and image tabs:
+
+```
+node scripts/compare.mjs serve editorial/passes/v2/<album>.compare.json
+```
+
+(the `compare` entry in `.claude/launch.json` starts it in the browser pane). The page shows
+both runs' chapters side by side, the themes, a grid of every rating that moved, the twin
+pairs that went the other way, and a card per frame with both critiques, its first-look
+history in each run and a line on why it moved.
+
+- **`<album>.compare.json` holds the judgement**, written by Claude after the second run's
+  log is committed: which runs and files, a `why` for every frame on either page (and any
+  that moved a star without making one), chapter-pair notes, themes, twin pairs, questions,
+  and the review quotes from the first run. The format is the Prague file; the script
+  computes everything else (shared, out, in, the grid) from the ratings and first-look files.
+- **Frames looked at after the comparison** (`seenNow`) are labelled as not blind and
+  never count as part of either run.
+- **My notes save as I type** to `<album>.compare.notes.json` beside it, keyed by section
+  (`frame:6659`, `theme:held-pile`, `twin:6942-6944`, `chapter:<slug>`, `question:<slug>`,
+  `grid`, `page`), each a `note`, a `question` for Claude or a `decision`. The next session
+  reads them to write the log's "After my review" and answers the questions there. A note
+  whose section has gone from the page is shown at the top, never dropped, so slugs in the
+  compare file shouldn't be renamed once notes exist.
+
 ## Pass logs
 
 Each place's pass is written up in [`passes/`](passes/): Claude's rating for every photo

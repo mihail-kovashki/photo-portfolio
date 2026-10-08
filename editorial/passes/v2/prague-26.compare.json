@@ -1,0 +1,819 @@
+{
+ "album": "Czechia 2026: Prague",
+ "place": "prague-26",
+ "title": "Prague, two runs",
+ "kicker": "Czechia · Summer 2026 · editorial pass · run 1 against run 2",
+ "lede": "Run 1 is the pass you reviewed and put on the site: 54 frames in six chapters. Run 2 started again from the 449 selects, blind to run 1 and with taste.md's new rules on critique, light and composition, and proposed 51. This page puts every frame from either page next to both critiques, its first-look history and a note on why it moved.",
+ "source": "Czechia 26/selects/Prague",
+ "notes": "prague-26.compare.notes.json",
+ "runs": [
+  {
+   "id": "1",
+   "label": "Run 1",
+   "ratings": "prague-26.ratings.json",
+   "firstlook": "prague-26.firstlook.json",
+   "log": "prague-26.md",
+   "ratingNote": "after your review"
+  },
+  {
+   "id": "2",
+   "label": "Run 2",
+   "ratings": "prague-26.run2.ratings.json",
+   "firstlook": "prague-26.run2.firstlook.json",
+   "log": "prague-26.run2.md",
+   "ratingNote": "its own, before review",
+   "chapters": [
+    {
+     "name": "On the Vltava",
+     "photos": [
+      "7436",
+      "7428",
+      "6925",
+      "6944",
+      "7226",
+      "7258",
+      "7253"
+     ]
+    },
+    {
+     "name": "The castle and Hradčany",
+     "photos": [
+      "6674",
+      "6638",
+      "6706",
+      "6682",
+      "6597",
+      "6733",
+      "6568",
+      "6811",
+      "7669"
+     ]
+    },
+    {
+     "name": "Malá Strana and Kampa",
+     "photos": [
+      "6762",
+      "7393",
+      "6836",
+      "6835",
+      "6832",
+      "6849",
+      "6851",
+      "6853",
+      "6852",
+      "6958",
+      "6964"
+     ]
+    },
+    {
+     "name": "Vrtba Garden",
+     "photos": [
+      "7378",
+      "7360",
+      "7361",
+      "7368",
+      "7366"
+     ]
+    },
+    {
+     "name": "The Old Town",
+     "photos": [
+      "7133",
+      "7134",
+      "7159",
+      "6874",
+      "6885",
+      "6888",
+      "6871",
+      "6868",
+      "7274",
+      "7282"
+     ]
+    },
+    {
+     "name": "Vinohrady and Žižkov",
+     "photos": [
+      "6416",
+      "6386",
+      "6463",
+      "6442",
+      "6500",
+      "6502",
+      "6509",
+      "6528",
+      "6511"
+     ]
+    }
+   ]
+  }
+ ],
+ "howto": [
+  [
+   "Ratings",
+   "Run 1’s ratings are after your review (6853, 7400, 6897 and others carry your call). Run 2’s are its own, before review."
+  ],
+  [
+   "Not blind",
+   "Amber tags mark frames run 2 could have known about: the re-read picks, the re-cull recoveries, taste.md’s named frames, 7226’s dust."
+  ],
+  [
+   "Seen now",
+   "Twelve approved frames were only looked at after the comparison was committed. Their verdicts are labelled and not part of run 2."
+  ],
+  [
+   "Notes",
+   "Every section has a note box. Notes save as you type into the repo, next to the pass. Mark each as a note, a question for Claude, or a decision."
+  ]
+ ],
+ "extraStats": [
+  {
+   "value": "12",
+   "label": "approved frames run 2 never saw at size"
+  }
+ ],
+ "chapterPairs": [
+  {
+   "slug": "on-the-vltava",
+   "a": "On the Vltava",
+   "b": "On the Vltava",
+   "note": "Holds. Same opener (7436), same closer (7253), 7226 and 7258 in both. Run 2 swapped 6942 for its twin 6944, added the people on the parapet (7428) and the castle at dusk (6925), and lost the daylight sun (6844), the night embankment (6949), the penguins (6846) and the ICM (6927). Run 2 opens the page with it; run 1 had it fourth."
+  },
+  {
+   "slug": "the-castle-and-hradcany",
+   "a": "The Castle and Hradčany",
+   "b": "The castle and Hradčany",
+   "note": "Holds as a place, shrinks from 14 to 9. Run 2 kept only the posted frames that are built on rhythm (6674) and replaced the straight records (6659, 6585, 6649, 6654, 6704) with interiors run 1 held in reserve (6638, 6597) and the two tower views it considers graphic (6706, 6682). It lost both tower wides, 6688 on stars and 6683 unseen. 7669 for 7665 reverses your review."
+  },
+  {
+   "slug": "mala-strana-and-kampa",
+   "a": "Malá Strana",
+   "b": "Malá Strana and Kampa",
+   "note": "The big change: 6 → 11. Run 1's Malá Strana was a short day chapter you called the weak one; run 2 makes it one walk from noon into night: the lanes (6762, 6836, 6835), Kampa's last sun (6849, 6851, 6853, 6852) and the night (6958, 6964). Three of the eleven aren't blind (6762, 6958, 6964)."
+  },
+  {
+   "slug": "vrtba-garden",
+   "a": "Wallenstein and Vrtba gardens",
+   "b": "Vrtba Garden",
+   "note": "Half holds. The Vrtba core is the same (7360, 7361, 7366), but Wallenstein is gone, all three frames held or sheet-2★ in run 2's first look, and 7370 (the ironwork gate) was never seen. A first-look miss, not a judgement."
+  },
+  {
+   "slug": "the-old-town",
+   "a": "The Old Town",
+   "b": "The Old Town",
+   "note": "Holds in shape: tower view, crowd, lift shaft, then the last sun, then night. Run 2 keeps six of the nine. 7129 (the window) and 7156 (Týn under cloud) became 7133 and nothing; the night became 7274 and 7282 instead of 7266 and 7283; Charles IV (6868) and St Giles (6871) came in."
+  },
+  {
+   "slug": "vinohrady-and-zizkov",
+   "a": "Vinohrady and Žižkov",
+   "b": "Vinohrady and Žižkov",
+   "note": "Holds as a place with a different walk: run 2 drops the cemetery, the station and St Ludmila's apse, and builds the evening as three silhouette frames (6500, 6502, 6509) to the sunset crowd and a walker. It's the weakest chapter in both runs (3.4 → 3.2), and run 2's closer, 6511, has the lamp post through it that run 1 parked it for."
+  }
+ ],
+ "themes": [
+  {
+   "slug": "landmark-records",
+   "title": "Straight landmark records lost a star",
+   "text": "The largest movement. Run 1 described these by what's in them ('the rose window and the stone lace', 'the shields of Bohemia, Moravia and Silesia') and gave 4s. Run 2 judged them with the new rules: a landmark shown straight in good light is a record (6585, 6688, 7156), a frame with everything at equal weight has no line (6649), and the vault gets half the frame (6704). Most of this is what the rules ask. Two places where run 2 may have overcorrected: 6654, where a window glowing in a dark wall is light doing something to the frame, and 6659, your castle cover, which taste.md says should be judged as a possible series cover, not only by its stars. Run 2 didn't ask that question.",
+   "frames": [
+    "6659",
+    "6585",
+    "6654",
+    "6649",
+    "6704",
+    "6688",
+    "7156",
+    "6598",
+    "6545"
+   ]
+  },
+  {
+   "slug": "line-and-shape",
+   "title": "Line, shape and minimal frames gained one",
+   "text": "The other side of the same rules. Frames run 1 called 'small as a photo' (6851) or 'puzzling' (6852) became 4s because run 2 named what the shapes and the space do. Four of these were never rated in run 1 at all (6597, 6638, 6868 sat in the reserve or lost a twin at the sheet), which is the strongest evidence the second run found something. 6762 and 6958 aren't blind. The one to watch is 6851: you kept it at 3 at review, and run 2 pushed it to 4.",
+   "frames": [
+    "6851",
+    "6852",
+    "6706",
+    "6597",
+    "6638",
+    "6868",
+    "7274",
+    "6762",
+    "6958"
+   ]
+  },
+  {
+   "slug": "nice-light",
+   "title": "Nice light: one frame runs against the rules",
+   "text": "Run 2 cut facades in golden light from the castle and the Old Town, then gave 6849, Kampa's row of houses in the last sun, a 4 and a page slot. Its critique argues the light is the subject and the cobbles give it room. That's a defensible reading, but it's the kind of frame taste.md calls a nice-light photo, and run 1 had it at 3. 6888 too: run 2 calls it a facade record and keeps it anyway. 6811 and 6874 are the golden-light frames both runs agree have a composition.",
+   "frames": [
+    "6849",
+    "6888",
+    "6811",
+    "6874"
+   ]
+  },
+  {
+   "slug": "held-pile",
+   "title": "The held pile hid twelve approved frames",
+   "text": "Run 2's first look shortlisted 125 and held 206: frames that were candidates but never viewed at size unless a scene looked thin. Twelve of your 54 approved frames were in that pile (or, for 6791, a sheet 2★). Seen now, five are 4★ (6683, 7370, 6844, 6949, and 6942 as a toss-up) and the rest 3★. So the close look wasn't wrong about what it saw; the first look decided too much. That's a process finding: the held pile needs its own pass by scene before the close look ends, and it's the one thing to fix before the next album.",
+   "frames": [
+    "6683",
+    "7370",
+    "6844",
+    "6949",
+    "6942",
+    "6782",
+    "6788",
+    "6791",
+    "7129",
+    "7266",
+    "7283",
+    "6430"
+   ]
+  },
+  {
+   "slug": "same-stars-new-role",
+   "title": "Same stars, different role",
+   "text": "Many changes aren't ratings at all. 7428, 6836, 6835, 7378, 7133 and 6500 are 3 in both runs: run 1 parked them, run 2 needed them for its walk or its opener. 6528 and 7366 dropped a star in run 2 but kept their places as the ritual frame and the closer. 6927, the ICM, is a 3 in both runs: run 1 used it as the river's one abstract frame, run 2 calls ICM a trip-page frame. These are sequence calls, and they're yours to make.",
+   "frames": [
+    "7428",
+    "6925",
+    "6836",
+    "6835",
+    "7378",
+    "7133",
+    "6500",
+    "6528",
+    "7366",
+    "6927"
+   ]
+  },
+  {
+   "slug": "non-blind",
+   "title": "What the non-blind frames contributed",
+   "text": "Seven of run 2's 51 frames were named somewhere it could see: the re-read picks (6762, 6958), re-cull recoveries (6964, 7368) and taste.md (6853, 6509, 7253). Leave them out and run 2's page is 44 frames chosen blind. The re-read agreed with run 2 on two of its five (6740, 6838, 7457 stay 3). The re-cull's 13 gave two page frames and four 2★s: worth having in selects/, not hidden heroes.",
+   "frames": [
+    "6762",
+    "6958",
+    "6964",
+    "7368",
+    "6853",
+    "6509",
+    "7253"
+   ]
+  }
+ ],
+ "twins": [
+  {
+   "slug": "6942-6944",
+   "a": "6942",
+   "b": "6944",
+   "text": "The lit castle from Charles Bridge. Run 1 took 6942 at the first look; run 2 settled the run side by side at 1000px and took 6944. Seen now at 1400px, it's a toss-up: 6942 has the lamp lit as a second warm point and the richer horizon glow, 6944 the tighter vertical and the parapet's diagonal. You chose 6942 at review."
+  },
+  {
+   "slug": "7665-7669",
+   "a": "7665",
+   "b": "7669",
+   "text": "Strahov. You picked 7665 at review ('two is too much'). Run 2, blind, preferred 7669: the visitor in white in 7665's corner is the brightest thing in the lower half. Both runs rate the rooms 4; they differ only on what the figure costs."
+  },
+  {
+   "slug": "6704-6706",
+   "a": "6704",
+   "b": "6706",
+   "text": "Vladislav Hall, both posted. Run 1: 6704 at 4 carries the room, 6706 'pairs with it'. Run 2 the reverse: 6706 makes the vault the subject, 6704 gives the bottom 35% to floor and ropes. Looking straight up is a motif you named; run 2 leaned on that."
+  },
+  {
+   "slug": "6962-6964",
+   "a": "6962",
+   "b": "6964",
+   "text": "The tram at Malostranské at night. 6964 wasn't in run 1's source: the re-cull recovered it, and its notes name it, so run 2's choice isn't blind. The rails make 6964's composition; 6962 is a portrait of the tram."
+  },
+  {
+   "slug": "6688-6683",
+   "a": "6688",
+   "b": "6683",
+   "text": "The city from the cathedral tower. Run 1 opened the page with 6688 and you added 6683 at review. Run 2 rated 6688 a 3 and never saw 6683 (held). Seen now, 6683's weathercock gives the wide what 6688 lacks: a near point."
+  },
+  {
+   "slug": "7392-7393",
+   "a": "7392",
+   "b": "7393",
+   "text": "The Čertovka. Run 1 used both, 7392 at your preference over 7453. Run 2 used only 7393, the arch, and rated 7392 the expected view at 3."
+  },
+  {
+   "slug": "7129-7130",
+   "a": "7129",
+   "b": "7130",
+   "text": "Through the tower's window. Run 1 opened the Old Town with 7129 (the square and its gables); run 2 had only 7130 (Týn) at size, rated it 3, and opened with the roofs instead. 7129 is the better window frame."
+  },
+  {
+   "slug": "7400-7401",
+   "a": "7400",
+   "b": "7401",
+   "text": "The narrowest lane. Both runs rate 7400 a 3. You said 7401, the family under the lit lamp, is the better frame; run 2's first look grouped them with 7400 as the likely winner and never viewed 7401. Your call still stands untested."
+  }
+ ],
+ "questions": [
+  {
+   "slug": "the-castle-cover-6659",
+   "title": "The castle cover, 6659",
+   "text": "Run 2 rated it a 3 and never asked whether it could front the chapter as a series cover. Is it the cover, whatever its stars?"
+  },
+  {
+   "slug": "6851-at-3-or-4",
+   "title": "6851 at 3 or 4",
+   "text": "You kept it at 3 after run 1. Run 2 made it 4 on the minimal rule. Which is it?"
+  },
+  {
+   "slug": "6849-and-the-nice-light-rule",
+   "title": "6849 and the nice-light rule",
+   "text": "Run 2 rated Kampa's facades in the last sun a 4. Is the light composition enough here, or is it the nice-light frame the rule warns about?"
+  },
+  {
+   "slug": "strahov-7665-or-7669",
+   "title": "Strahov: 7665 or 7669",
+   "text": "You chose 7665 at review; run 2, blind, chose 7669 because of the visitor in 7665's corner."
+  },
+  {
+   "slug": "the-lit-castle-6942-or-6944",
+   "title": "The lit castle: 6942 or 6944",
+   "text": "Side by side now, it's orientation and lamp against diagonal. You chose 6942."
+  },
+  {
+   "slug": "the-castle-s-two-wides",
+   "title": "The castle's two wides",
+   "text": "Run 2 rated 6688 a 3 and never saw 6683. 6683 has the weathercock as a foreground; would you open with it instead of 6688?"
+  },
+  {
+   "slug": "mala-strana-at-11",
+   "title": "Malá Strana at 11",
+   "text": "Run 2's biggest change. Does the walk into night (6958, 6964) earn the length, or is it two chapters?"
+  },
+  {
+   "slug": "the-river-first",
+   "title": "The river first?",
+   "text": "Run 2 opens the page with the river; you approved the Castle first. 'A city opens with the city' fits both readings."
+  },
+  {
+   "slug": "vinohrady-s-closer",
+   "title": "Vinohrady's closer",
+   "text": "Run 2 closes on 6511, which has a lamp post dead centre; run 1 parked it for that. 6528 or the station (6545) would close it more cleanly."
+  }
+ ],
+ "nonBlind": {
+  "re-read pick": [
+   "6762",
+   "6740",
+   "6958",
+   "6838",
+   "7457"
+  ],
+  "re-cull recovery": [
+   "6827",
+   "6828",
+   "6953",
+   "7200",
+   "7368",
+   "6830",
+   "6964",
+   "6850",
+   "7313",
+   "6750",
+   "6834",
+   "6744",
+   "6755"
+  ],
+  "named in taste.md": [
+   "6853",
+   "6509",
+   "6897",
+   "7400",
+   "7253",
+   "7353",
+   "7456",
+   "6760",
+   "6764"
+  ],
+  "dust spot in the vault edit queue": [
+   "7226"
+  ]
+ },
+ "notInSource": {
+  "1": [
+   "6827",
+   "6828",
+   "6953",
+   "7200",
+   "7368",
+   "6830",
+   "6964",
+   "6850",
+   "7313",
+   "6750",
+   "6834",
+   "6744",
+   "6755"
+  ]
+ },
+ "review": {
+  "7253": "5★. A trip like this should have one, and more than one is fine.",
+  "7665": "7665 alone for Strahov (7669 parked: two is too much in a packed chapter).",
+  "7669": "7665 alone for Strahov (7669 parked: two is too much in a packed chapter).",
+  "6942": "6942 for the lit Castle.",
+  "6683": "6683 into the Castle chapter, after the chevet.",
+  "7392": "7392 over 7453, the better take.",
+  "7400": "7400 is a fun concept, not a 4. 7401, a family squeezing down under the lit lamp, is the better frame if it comes back.",
+  "6832": "6832 is fine, but it's a 3 and not an opener, so 7393 opens.",
+  "6853": "6853 up to 4: the minimal frames were undervalued.",
+  "6788": "6788 comes in from the reserve: the dripstone wall whole, before 6791's detail of it.",
+  "6509": "6509 over 6506 (the single gable through the trees).",
+  "6343": "6343 is in as the walk's first frame, my pick at 3★."
+ },
+ "neither": [
+  "6349",
+  "6362",
+  "6389",
+  "6368",
+  "6484",
+  "6562",
+  "6567",
+  "6581",
+  "6637",
+  "6670",
+  "6722",
+  "6915",
+  "7154",
+  "7183",
+  "7299",
+  "7353",
+  "7395",
+  "7431",
+  "7648",
+  "7654",
+  "7659",
+  "7668"
+ ],
+ "frames": {
+  "6442": {
+   "why": "Stable because both runs judged the composition, not the oddity: run 1 'graphic block', run 2 'converging lines, babies as pattern'. Same frame, same reasons in better words."
+  },
+  "6509": {
+   "why": "Named in taste.md (you raised it over 6506), so not a blind agreement. Run 2 settled 6509 › 6505 › 6506 side by side and arrived at the same call, for the same reason: one lit shape held in darkness."
+  },
+  "6528": {
+   "why": "Kept by both for its role, not its stars. Run 2 dropped it a star: the crowd is a dense mass and the castle small. It's the Riegrovy sady ritual, and both runs needed one frame that says it."
+  },
+  "6568": {
+   "why": "Both found the light at the end of the passage. Run 1 'quiet, ordered'; run 2 'built on light at the end of a passage'. The one flaw, the manhole, noted by both."
+  },
+  "6674": {
+   "why": "Posted (#7) and one of the castle post's frames that run 2 didn't mark down: the apse is rhythm and repetition, not a record. That's the line run 2 drew through your castle post."
+  },
+  "6733": {
+   "why": "Same 4, same reasoning in different words: run 1 'full of the place, well balanced'; run 2 names the shadow diagonal leading to the climber. Run 2's version is the reason it holds."
+  },
+  "6811": {
+   "why": "Posted cover and a 4 both times. Loreta in the last sun is the one 'facade in golden light' both runs agree has a composition: the tower and dome as a shape against deep blue."
+  },
+  "6832": {
+   "why": "Both a 3. Run 1 proposed it as Malá Strana's opener and you moved it ('fine, but not an opener'); run 2, blind, put it fifth and called it a landmark portrait lifted by the light. Run 2 matched your review here."
+  },
+  "6851": {
+   "why": "Up a star (3→4), and that's against your approved 3. Run 1 called it 'small as a photo'; run 2 'minimal and exact'. This is the minimal-frames rule pushing past where you set it. Worth your eye: is it a 3 or a 4?"
+  },
+  "6853": {
+   "why": "Named in taste.md (your 3→4 at review). Not a blind agreement."
+  },
+  "6874": {
+   "why": "Posted (#3). Kept at 4 by both: the tower's two temperatures against teal is light doing something to a form, not just warm light on a facade."
+  },
+  "6885": {
+   "why": "4 in both, scaffold noted in both. The spires bristling against teal fill the frame as a shape."
+  },
+  "6888": {
+   "why": "Posted (#8). Both a 3 and both used it, and run 2 is the less consistent of the two: it calls it 'a facade straight on … records the building', which is the documentary rule, yet keeps it for the Old Town's golden hour sequence. Role over stars, but it's the frame most like the ones run 2 cut."
+  },
+  "7134": {
+   "why": "A 4 both times: straight down, the crowd becomes pattern. The vantage only counts because of what it does to the people."
+  },
+  "7159": {
+   "why": "4 both times. Looking up the lift shaft: line and spiral, built on geometry. Exactly the kind of frame both rule sets reward."
+  },
+  "7226": {
+   "why": "4 both times, but run 2 nearly missed it: it sat in the held pile and was pulled only because the dusk river looked thin. The dust spot is still for the edit queue."
+  },
+  "7253": {
+   "why": "Named in taste.md as the trip's 5★. Run 2 confirmed it against the fives sheet; not blind."
+  },
+  "7258": {
+   "why": "4 both times. Warm against cool with a foreground diagonal (the weir steps): run 2 credits the diagonal, run 1 the 'unexpected subject'."
+  },
+  "7360": {
+   "why": "4 both times: the garden as one design, grey light suiting it. Run 2's grey-light rule and run 1's instinct agree."
+  },
+  "7361": {
+   "why": "4 both times: pattern, made for flat light. The soft leaves in the corners noted by both."
+  },
+  "7366": {
+   "why": "Down a star (4→3) and still the Vrtba closer. Run 2 sees a wide with a third of sky and no line; it keeps it for the job (Malá Strana's roofs to close the garden). Run 1 never saw 7370, which you approved as the better closer."
+  },
+  "7393": {
+   "why": "4 both times and opener of Malá Strana in both (yours after review). Frame within a frame where the frame is the composition."
+  },
+  "7436": {
+   "why": "4 both times and the river chapter's opener both times. Line carries a grey day."
+  },
+  "6688": {
+   "why": "4→3. The city from the tower, run 1's page opener. Run 2: 'the view everyone takes … flat midday light, a large sky'. The wide-view rule cost it. What run 2 didn't know: 6683 (the weathercock) does the same view with a foreground, and it sat unseen in the held pile."
+  },
+  "6659": {
+   "why": "4→3, the posted castle cover. Run 1 read it as 'wry and placed'; run 2 as the man merging into the tower's dark base, with the crowd spreading the frame. The bigger miss: taste.md says a series cover is a different thing from a 5★ and wants it flagged, and run 2 never asked whether it could front the castle chapter."
+  },
+  "6585": {
+   "why": "4→3, posted (#2). Run 2: the standard looking-up view of the cathedral, the left spire crowded, the portal cut. Run 1 called it 'strong'. Here the critiques disagree on the frame itself, not the rule."
+  },
+  "6654": {
+   "why": "4→3, posted (#5). Run 2 likes the spilled colour on the wall more than the window and says the window is centred with the glow squeezed right. Debatable: the window glowing in a dark wall is light doing something. One to look at."
+  },
+  "6649": {
+   "why": "4→3, posted (#6). Run 2: 'everything with equal weight, no line organises it', the inventory problem, and it prefers 6638, which makes the building one shape. That's the How-to-critique rule applied to a frame run 1 described by inventory."
+  },
+  "6704": {
+   "why": "4→3, posted (#9). Run 2 wants the vault: the bottom 35% is floor and ropes. 6706 (straight up, posted #10) went the other way, 3→4. Run 2 swapped which of your two Vladislav Hall frames carries the room."
+  },
+  "6683": {
+   "why": "Unseen by run 2 (held). You added it at review. Seen now: a 4, better than 6688 because the weathercock gives the wide a near point.",
+   "seenNow": {
+    "rating": 4,
+    "text": "A strong frame run 2 should have pulled. From the cathedral tower, the green weathercock in the bottom left is a real foreground, the stacked red roofs of St George's and the castle wings fall away on a diagonal, and the river with its bridges runs out to the top right. Layered, warm and the sky has texture. It overlaps 6688 (the city from the tower), and it beats it: it has a near point and a line. Run 2 held it behind 6688 and never looked."
+   }
+  },
+  "6598": {
+   "why": "4→3. Golden Lane in raking light. Run 2 found 6597 (Kafka's No. 22, never rated in run 1) a stronger single frame and called 6598 a street with no clear subject and a bin. Same lane, different idea of it."
+  },
+  "7665": {
+   "why": "4→3. Run 1 noted the visitor in white and kept it; you chose it over 7669. Run 2 judged the cut, bright figure in the corner the thing that pulls the eye out of the room, and took 7669 at 4. A direct reversal of your review call, made blind."
+  },
+  "7666": {
+   "why": "4→3. The bark books: run 2 calls it a detail that adds to a chapter, not one that stands alone. With 7669 as the closer, there was no room for a detail."
+  },
+  "7392": {
+   "why": "4→3. You preferred it to 7453 ('the better take'). Run 2 had 7393 from the same spot and called 7392 the good, expected view. Run 1 used both; run 2 one."
+  },
+  "6962": {
+   "why": "4→3. The tram at night. Run 2 had 6964 from the re-cull (run 1 never had it): the rails sweep in from the corners. Not a fault of 6962 so much as a better twin."
+  },
+  "6782": {
+   "why": "Unseen by run 2: held at the first look as part of 6785's run. Seen now: a 3, a well-lit establishing frame of Wallenstein, not run 1's 4. The garden chapter lost Wallenstein entirely because of the first look, not the close look.",
+   "seenNow": {
+    "rating": 3,
+    "text": "Wallenstein's sala terrena on its axis: the fountain in the foreground, the bronze statues lining the walk, St Vitus over the roof, a big cumulus sky. Classic garden symmetry, well lit. But the fountain basin takes the bottom third as a heavy dark shape, the walk is full of visitors standing about, and it's a postcard of the garden. A 3 here, not run 1's 4; it does the establishing job well."
+   }
+  },
+  "6788": {
+   "why": "Unseen by run 2 (held). You brought it in from the reserve. Seen now: a 3, the dripstone wall whole with two visitors for scale.",
+   "seenNow": {
+    "rating": 3,
+    "text": "The dripstone wall whole: the grotesque texture fills the frame on a diagonal, the hydrangeas run along its foot, and the two visitors give it scale. The wall is the subject and the frame says so; the sky top left is the weak corner. A good 3 and a fine opener for the wall before 6791's detail, as you said at review."
+   }
+  },
+  "6791": {
+   "why": "Sheet 2★ in run 2, never looked at again. Seen now: a 3, colour against texture. Exactly the README's warning: a 2 from the sheet means nobody looks again.",
+   "seenNow": {
+    "rating": 3,
+    "text": "Hydrangeas against the dripstone: blue and cream heads in the foreground, the wall's texture behind as a backdrop. Colour and texture against each other, calm, close. The sheet 2★ in run 2 was too low: nothing is wrong with it but it's a flower detail, and it works as a pair with 6788. A 3."
+   }
+  },
+  "7370": {
+   "why": "Unseen by run 2 (held). Seen now: a 4, St Nicholas through Vrtba's ironwork, frame within a frame. Run 1 was right; run 2 had to close Vrtba on the weaker 7366.",
+   "seenNow": {
+    "rating": 4,
+    "text": "St Nicholas through Vrtba's iron gate: the scrolls of the ironwork frame the dome and belfry, the red roofs and the garden below layer into it. Frame within a frame that is the composition, like 7393 under the bridge. Run 2 never saw it; it's a better closer for Vrtba than 7366, and run 1 was right to take it."
+   }
+  },
+  "6844": {
+   "why": "Unseen by run 2 (held). Seen now: a 4, the Old Town waterfront in low sun with its reflections. Run 2's river chapter has no daylight-sun frame; this is the one it was missing.",
+   "seenNow": {
+    "rating": 4,
+    "text": "The Old Town waterfront in low evening sun across the Vltava: the bridge tower, the water tower and the Smetana museum lit gold, their reflections in the water, Charles Bridge's arches running in from the left. Warm light that does something, on a scene with a clear horizontal structure. A leaf intrudes at the right edge. Run 2's river chapter has nothing in daylight sun; this is the frame it lacked."
+   }
+  },
+  "6846": {
+   "why": "4→3. The penguins: run 2 says the row marches nicely but the water's empty middle half holds it back. A fun scene rated as a frame, the unicorn rule from Český Krumlov."
+  },
+  "6942": {
+   "why": "Unseen at size by run 2: it lost the side-by-side twin settle at 1000px to 6944. Seen now: a real toss-up. 6942 has the lit lamp and a richer grade; 6944 is tighter, with the parapet's diagonal.",
+   "seenNow": {
+    "rating": 4,
+    "text": "The landscape twin of run 2's 6944: the lamp lit, the statue and the parapet dark on the left, the castle lit across the water, the sky grading from deep blue to a warm band at the horizon, people on the bridge as silhouettes. The lit lamp is a second warm point that 6944 doesn't have, and the grade is richer; 6944 is tighter and has the parapet's diagonal. A genuine toss-up by orientation. Run 2 settled the pair at 1000px for 6944; seen at 1400px it's closer than that."
+   }
+  },
+  "6927": {
+   "why": "3 in both. The ICM frame. Run 1 kept it as the river chapter's one abstract frame; run 2 says ICM is a trip-page frame, not a portfolio one, and the bottom third is muddy. Same rating, different role."
+  },
+  "6949": {
+   "why": "Unseen by run 2 (held). Seen now: a 4, the embankment at night with gold reflections. Run 2 had only 6915 (a 3) of this view.",
+   "seenNow": {
+    "rating": 4,
+    "text": "The embankment at night from the bridge: the water tower on the left, the lit fronts of Smetanovo nábřeží across the middle, the National Theatre's dome glowing at the end, and the reflections running as gold columns down a black river under a deep blue sky. Warm against cool, a clear horizontal structure, the weir's line across the water. Run 2 held it and had no frame like it; 6915 (rated 3 in run 2) is the weaker take of this view."
+   }
+  },
+  "7129": {
+   "why": "Unseen by run 2 (held). Seen now: a 3 and a better window frame than run 2's 7130, which looks at Týn. A fair Old Town opener, as run 1 had it.",
+   "seenNow": {
+    "rating": 3,
+    "text": "The Old Town Square through the tower's window: the mullions frame pastel gables, the umbrellas and the people on the chequered paving below, a crane on the skyline. The window does real work here: it reads as 'from inside the tower', and the bars divide the frame into views. But the black frame takes a lot of space and the crane sits in the top strip. Better than run 2's 7130 of the same idea, which looks at Týn; a 3, and a fair chapter opener."
+   }
+  },
+  "7156": {
+   "why": "4→3. Run 2 credits the heavy sky ('the grey works for the frame') but calls it a landmark shown straight, with the van in the middle of the plinth. Run 1: 'dramatic and complete; the van is the blemish'. The documentary rule cost it."
+  },
+  "7266": {
+   "why": "Unseen by run 2 (held). Seen now: a 3, the neon club. Fun and modern, but the neon is the subject; the interesting-thing rule.",
+   "seenNow": {
+    "rating": 3,
+    "text": "The Karlovy Lázně club's neon stacked up a lit facade between dark walls, blue against the warm building on the right. Colour and a vertical rhythm of words; an odd, fun frame of night Prague. But the neon is the subject and the walls are a slot around it; the 'interesting thing' rule applies. A 3 that gives the Old Town night a modern note."
+   }
+  },
+  "7283": {
+   "why": "Unseen by run 2 (held). Seen now: a 3 on a par with run 2's 7274. 7274 has the cool sky as a counterpoint, 7283 the lamp in the ivy, plus a bin under the light.",
+   "seenNow": {
+    "rating": 3,
+    "text": "A lamp in the ivy lights a bend of lane at night, a figure at the far end under a second lamp, the cobbles leading in. Warm, atmospheric, a real destination. The bin with spilling rubbish on the right is a blemish that sits right under the light, and the bottom quarter is dark pavement. Similar strength to run 2's 7274, which has the cool sky as a counterpoint; either can close the night."
+   }
+  },
+  "6343": {
+   "why": "3→2. Your pick for the walk's first frame. Run 2 rated it on its own: 'the bottom third is road furniture … the flaw the sheet flagged is the frame's weight'. The rating is the frame's; the place on the page was yours."
+  },
+  "6345": {
+   "why": "3 in both. Run 2 likes the geometry more ('triangles that point to one apex') but kept it out for space: Vinohrady's daytime has four frames already."
+  },
+  "6430": {
+   "why": "Unseen by run 2 (held). Seen now: a 3, the villa's red bay. A facade straight on.",
+   "seenNow": {
+    "rating": 3,
+    "text": "The villa's red wooden bay with geraniums in the middle of a yellow Art Nouveau front, the eagle and the copper spire against blue. Colour and detail, a cheerful frame. But it's a facade shown straight, the trees crowd the bottom, and the drainpipe cuts through. A pleasant 3, the Vinohrady villa record."
+   }
+  },
+  "6422": {
+   "why": "3 in both, out for a different reason: run 2 left it out because of the naked toddler (toss-up in the log). The frame itself has the same rating."
+  },
+  "6456": {
+   "why": "3→2. The cemetery in black and white. Run 2: the mono gives weight but the bottom third is a dead strip of tarmac. Run 1 noted the same strip and kept it at 3."
+  },
+  "6545": {
+   "why": "4→3. The main station at dusk. Run 1 called it one of the best frames of the trip; run 2 agrees on the lines but marks it down for being busy with catenary poles. Still the Prague nobody posts; it might deserve its place on role, as in run 1."
+  },
+  "7428": {
+   "why": "3 in both. Run 1 parked it; run 2 used it as the river's second frame: people looking at the view the opener shows. Same stars, new role."
+  },
+  "6925": {
+   "why": "Never rated in run 1 (lost to 6942 as a twin). A 3 in run 2, used as the castle across the water as the light goes. Sequence, not stars."
+  },
+  "6944": {
+   "why": "Never rated in run 1: it lost the twin run to 6942 at the first look. A 4 in run 2 after a side-by-side settle. See the twins section: this is a toss-up, not a clear win."
+  },
+  "6638": {
+   "why": "Never rated in run 1 (held in reserve). A 4 in run 2, 'the best of the cathedral interiors': the nave's lines converge on the rose window. A blind find."
+  },
+  "6706": {
+   "why": "3→4, posted (#10). Run 1 'pairs with 6704 rather than standing alone'; run 2 'makes the vault the whole subject'. Looking straight up is one of your stated motifs."
+  },
+  "6682": {
+   "why": "4 in both, parked by run 1, a page frame in run 2. Run 1's toss-up note offered it to you; run 2 took it."
+  },
+  "6597": {
+   "why": "Never rated in run 1 (lost to 6621 as a twin). A 4 in run 2: Kafka's No. 22 as a colour field, flat-on and balanced. A blind find, and a minimal frame."
+  },
+  "7669": {
+   "why": "4 in both. You chose 7665 over it in run 1 ('two is too much in a packed chapter'); run 2, blind, took 7669 and dropped 7665. If you still prefer 7665, run 2's reason is the visitor."
+  },
+  "6762": {
+   "why": "3→4. Named in the re-read slip, so not blind. Thunovská under the sgraffito arch: line doing the work in flat light."
+  },
+  "6836": {
+   "why": "3 in both, posted (#5). Parked by run 1, used by run 2 as one of two streets leading to towers. Role, not stars."
+  },
+  "6835": {
+   "why": "3 in both, posted (#4). Same as 6836: run 2 needed the arrival frame at the bridge tower for its walk."
+  },
+  "6849": {
+   "why": "3→4, posted (#6). Run 2 says 'the light is the subject and the composition gives it room'. This is the frame where run 2 is most open to the charge it makes elsewhere: a row of facades in golden light. Look at it against taste.md's 'nice light alone'."
+  },
+  "6852": {
+   "why": "3→4. Run 1 found the umbrella tops puzzling; run 2 calls them oddities, not distractions, and sees a dark-framed slot with a lit statue. A blind upgrade by composition."
+  },
+  "6958": {
+   "why": "3→4. Named in the re-read slip, not blind. The arcade's lamps at night: repeated arches on a diagonal, warm against blue."
+  },
+  "6964": {
+   "why": "Not in run 1's source at all: a re-cull recovery (not blind, the cull notes name it). A 4 in run 2: the rails sweep from the corners to the tram. It replaced 6962."
+  },
+  "7378": {
+   "why": "3 in both. Parked by run 1; opener of Vrtba in run 2 because it places the garden under the castle in one vertical."
+  },
+  "7368": {
+   "why": "Not in run 1's source: a re-cull recovery (not blind). A 3, used for its diagonal of tiles to the city."
+  },
+  "7133": {
+   "why": "3 in both. Parked by run 1 (7129 took the slot); run 2 opened the Old Town with it. Without 7129 in view, this was run 2's best roof frame."
+  },
+  "6871": {
+   "why": "3 in both, posted (#9). Run 2 kept it despite the 'Real Burger' sign, for the tower in the light at the end of a dark street."
+  },
+  "6868": {
+   "why": "Never rated in run 1 (reserve). A 4 in run 2: Charles IV dark and near against the lit dome, 'two shapes in tension'. Stronger than the posted 6864. A blind find."
+  },
+  "7274": {
+   "why": "3→4. Run 1 'the best of the night lanes for its light'; run 2 adds the destination and the cool sky as a counterpoint. It was in run 2's held pile and only pulled because the Old Town night looked thin."
+  },
+  "7282": {
+   "why": "Never rated in run 1. A 3, the terrace at night, used to end on warm lights (taste.md: warm lights at night). Toss-up in the log."
+  },
+  "6416": {
+   "why": "Never rated in run 1 (lost to 6422 as a twin). A 3 in run 2: Plečnik's church leaning back, untidy at the base."
+  },
+  "6386": {
+   "why": "Never rated in run 1 (reserve). A 3: the T3 against the ochre school, colour doing the work, a loose bottom."
+  },
+  "6463": {
+   "why": "2→3. A sheet 2★ in run 1, raised to 3 at size in run 2: the functionalist corner. Architecture as subject, but 'a portrait of a facade'."
+  },
+  "6500": {
+   "why": "3 in both. Parked by run 1, used by run 2 as the start of the evening's 'framing by silhouette' run."
+  },
+  "6502": {
+   "why": "Never rated in run 1 (lost to 6501 as a twin). A 3: the tower squeezed between black trees. Run 2 uses three silhouette frames in a row (6500, 6502, 6509); that may be one too many."
+  },
+  "6511": {
+   "why": "3 in both. Run 1 parked it for the lamp post; run 2 notes the same lamp post and uses it as the closer anyway. Run 2's weakest choice of closer."
+  },
+  "6349": {
+   "why": "2→3: the tilted tower. Run 2 reads the tilt as the point."
+  },
+  "6362": {
+   "why": "2→3: the grotto fountain from above, a pattern frame."
+  },
+  "6389": {
+   "why": "2→3: rails and wires converging on the tram."
+  },
+  "6368": {
+   "why": "3→2: the vineyard wide, flat light, the city as a band."
+  },
+  "6484": {
+   "why": "3→2: St Ludmila front-on. Nice light on a frontal record, which taste.md's rules now cost."
+  },
+  "6562": {
+   "why": "2→3: Nový Svět's curving cobbles."
+  },
+  "6567": {
+   "why": "2→3: the lane bending past stepped lanterns."
+  },
+  "6581": {
+   "why": "2→3: the Titans at the gate, the dagger's diagonal."
+  },
+  "6637": {
+   "why": "3→2: the choir's windows, scaffolding taking the right side."
+  },
+  "6670": {
+   "why": "3→2, posted (#3): the Old Deanery gable. A well-lit record."
+  },
+  "6722": {
+   "why": "2→3: Malá Strana's roofs on a diagonal from the castle steps."
+  },
+  "6915": {
+   "why": "4→3: the embankment at blue hour; the sky takes 40% with nothing in it."
+  },
+  "7154": {
+   "why": "3→2: blank white sky over the roof sea."
+  },
+  "7183": {
+   "why": "3→2: the Powder Tower, soft at 100%, white sky, a documentary frame."
+  },
+  "7299": {
+   "why": "2→3: a square from above at night, the trees' shadows a pattern."
+  },
+  "7353": {
+   "why": "3→2: on the site before, soft at 100% (taste.md). Not blind."
+  },
+  "7395": {
+   "why": "3→2: the bookshop door with two bins."
+  },
+  "7431": {
+   "why": "3→2: the parapet facing Žižkov; 7428 is the frame of that scene."
+  },
+  "7648": {
+   "why": "2→3: Sts Peter and Paul's spires against cumulus."
+  },
+  "7654": {
+   "why": "2→3: the Cubist house under Vyšehrad, held back by netting and a sign."
+  },
+  "7659": {
+   "why": "2→3: Charles Bridge and the castle at noon, the classic done cleanly."
+  },
+  "7668": {
+   "why": "3→2: the celestial globe, soft at 100%."
+  }
+ }
+}

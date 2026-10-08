@@ -175,11 +175,11 @@ Town, Vinohrady and Žižkov. What differs:
 
 ### Frames in and out
 
-- **Out of run 2's page, in run 1's (31).** Fourteen run 2 rated a star lower: the Castle
+- **Out of run 2's page, in run 1's (31).** Sixteen run 2 rated a star lower: the Castle
   post (6659, 6585, 6654, 6649, 6704) and 6688, 6598, 7665, 7666, 7392, 6962, 6846, 7156,
-  6545. Twelve run 2 never saw at size because its first look held them: 6683, 6782, 6788,
-  6791, 7370, 6844, 6942, 6949, 7129, 7266, 7283, 6430. Five at the same rating, left out
-  for the sequence (6345, 6422, 6927, 6343 at 2, 6456 at 2).
+  6545, 6343, 6456. Twelve run 2 never saw at size because its first look held them: 6683, 6782, 6788,
+  6791, 7370, 6844, 6942, 6949, 7129, 7266, 7283, 6430. Three at the same rating, left out
+  for the sequence (6345, 6422, 6927).
 - **In run 2's page, not run 1's (28):** 6638, 6597, 6706, 6682, 7669 (Castle); 6762,
   6836, 6835, 6849, 6852, 6958, 6964 (Malá Strana); 7378, 7368 (Vrtba); 7428, 6925, 6944
   (river); 7133, 6871, 6868, 7274, 7282 (Old Town); 6416, 6386, 6463, 6500, 6502, 6511
@@ -189,12 +189,12 @@ Town, Vinohrady and Žižkov. What differs:
 
 48 frames rated in both runs moved. The pattern is two-sided:
 
-- **Down (25):** landmarks shown straight in good light, which "a documentary frame of a
+- **Down (29):** landmarks shown straight in good light, which "a documentary frame of a
   landmark is a 2" and "nice light alone" now cost: the posted Castle frames 6659, 6585,
   6654, 6649, 6704 and 6688, 6598, 7156, 7366 (4→3); 7665 and 7666 (4→3, the cut visitor;
   the bark books as a detail); 6528, 6545, 6846, 6915, 6962, 7392 (4→3); and 3→2 on 6343,
   6368, 6456, 6484, 6637, 6670, 7154, 7183, 7395, 7431, 7668, 7353.
-- **Up (23):** frames built on line, shape or light falling somewhere: 6849, 6851, 6852,
+- **Up (19):** frames built on line, shape or light falling somewhere: 6849, 6851, 6852,
   6706, 6762, 6958, 7274 (3→4), and 2→3 on 6349, 6362, 6389, 6463, 6562, 6567, 6581, 6722,
   7299, 7648, 7654, 7659.
 

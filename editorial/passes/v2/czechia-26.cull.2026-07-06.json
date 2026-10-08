@@ -1,0 +1,259 @@
+{
+ "album": "Czechia 2026",
+ "day": "2026-07-06",
+ "folder": "raw/2026-07-06 Prague",
+ "place": "prague-26",
+ "keep": [
+  "7320",
+  "7321",
+  "7323",
+  "7324",
+  "7325",
+  "7330",
+  "7334",
+  "7335",
+  "7340",
+  "7341",
+  "7345",
+  "7350",
+  "7351",
+  "7352",
+  "7353",
+  "7355",
+  "7360",
+  "7361",
+  "7364",
+  "7366",
+  "7367",
+  "7369",
+  "7370",
+  "7378",
+  "7379",
+  "7380",
+  "7382",
+  "7383",
+  "7385",
+  "7387",
+  "7392",
+  "7393",
+  "7395",
+  "7397",
+  "7400",
+  "7401",
+  "7403",
+  "7409",
+  "7414",
+  "7415",
+  "7428",
+  "7431",
+  "7433",
+  "7436",
+  "7441",
+  "7443",
+  "7446",
+  "7447",
+  "7448",
+  "7450",
+  "7453",
+  "7455",
+  "7457",
+  "7458"
+ ],
+ "groups": [
+  [
+   "7320",
+   "7319"
+  ],
+  [
+   "7324",
+   "7323"
+  ],
+  [
+   "7325",
+   "7326"
+  ],
+  [
+   "7335",
+   "7334",
+   "7333"
+  ],
+  [
+   "7341",
+   "7340",
+   "7342"
+  ],
+  [
+   "7345",
+   "7346"
+  ],
+  [
+   "7350",
+   "7348",
+   "7349"
+  ],
+  [
+   "7353",
+   "7354"
+  ],
+  [
+   "7355",
+   "7356",
+   "7381"
+  ],
+  [
+   "7360",
+   "7358"
+  ],
+  [
+   "7366",
+   "7365",
+   "7372",
+   "7376"
+  ],
+  [
+   "7367",
+   "7371",
+   "7368",
+   "7373",
+   "7375"
+  ],
+  [
+   "7369",
+   "7374"
+  ],
+  [
+   "7378",
+   "7379"
+  ],
+  [
+   "7392",
+   "7453"
+  ],
+  [
+   "7395",
+   "7396"
+  ],
+  [
+   "7397",
+   "7398",
+   "7399"
+  ],
+  [
+   "7403",
+   "7402"
+  ],
+  [
+   "7409",
+   "7405"
+  ],
+  [
+   "7415",
+   "7417",
+   "7416",
+   "7418",
+   "7419",
+   "7420"
+  ],
+  [
+   "7436",
+   "7438",
+   "7439",
+   "7437",
+   "7434",
+   "7435",
+   "7444",
+   "7424",
+   "7422",
+   "7423",
+   "7411",
+   "7412",
+   "7413"
+  ],
+  [
+   "7428",
+   "7427",
+   "7426"
+  ],
+  [
+   "7431",
+   "7430",
+   "7429"
+  ],
+  [
+   "7441",
+   "7440"
+  ],
+  [
+   "7443",
+   "7442"
+  ],
+  [
+   "7448",
+   "7449"
+  ]
+ ],
+ "prior": [
+  "7324",
+  "7353",
+  "7355",
+  "7360",
+  "7366",
+  "7392",
+  "7428",
+  "7431",
+  "7436"
+ ],
+ "notes": {
+  "7320": "Karlín, St Cyril and Methodius across the lawn with the fountain; 7319 without",
+  "7321": "the nave to the painted apse",
+  "7323": "the nave back to the rose window, symmetric down the aisle: a variation of the prior 7324",
+  "7325": "the bishop statue in warm light; 7326 the monk",
+  "7330": "a Vespa by the round green office block: weak, kept generously",
+  "7335": "the Lyčkovo náměstí school, horizontal; 7334 the vertical over the roses, both kept",
+  "7341": "the giant steel figure climbing the copper flats, a yellow tram passing; 7340 the clean vertical, both kept",
+  "7345": "the Powder Tower and the Municipal House, flat overcast; 5 Jul has the tower too",
+  "7350": "Vrtba Garden: the parterre and the ivy over the glasshouse",
+  "7351": "the parterre under St Nicholas's domes",
+  "7352": "Malá Strana roofs over the railing, hedge foreground: marginal",
+  "7353": "prior; the hydrangea arch and the bench",
+  "7355": "prior; the ivy-covered house over the arcades",
+  "7360": "prior; the parterre and the courtyard from the stairs",
+  "7361": "the parterre's scrolls from straight above, graphic",
+  "7364": "St Nicholas over the lawn, vertical: marginal",
+  "7366": "prior; St Nicholas over the roofs from the top terrace",
+  "7367": "roofs down to the garden, vertical",
+  "7369": "the castle and St Nicholas over the roofs, horizontal; 7374 has the castle bigger and a hedge in front",
+  "7370": "St Nicholas through the wrought-iron gate",
+  "7378": "stair, statues, parterre and the castle above, vertical: layered; 7379 the horizontal with the statue, both kept",
+  "7380": "St Nicholas's towers over the courtyard parterre",
+  "7382": "the courtyard parterre straight on: against 7360 at the first look",
+  "7383": "a tram under St Nicholas in daylight, Malostranské; 3 and 5 Jul have it at night",
+  "7385": "the orange palace on Maltese Square; parked cars a blemish",
+  "7387": "the white house with a Vespa on the cobbles",
+  "7392": "prior; Čertovka. 7453 is the same canal at 20:06 with the lamps lit, both kept",
+  "7393": "Čertovka through the Charles Bridge arch",
+  "7395": "the Shakespeare & synové doorway, warm inside; 7396 the wider street",
+  "7397": "an empty curving Malá Strana street; 7398 the same crowded",
+  "7400": "the narrowest lane at Vinárna Čertovka: green man, lamps down the slot",
+  "7401": "its stairs, lamp and graffiti, people coming down",
+  "7403": "red light, stairs, the Čertovka sign; 7402 has children's faces",
+  "7409": "a swan on the Vltava; 7405's duck lost. Kept for animals, marginal",
+  "7414": "the Hanavský pavilion's tower from below: tilt, marginal",
+  "7415": "Letná: the bridges stacked behind the Straka Academy domes, boats",
+  "7428": "prior; strangers along the graffitied parapet at the metronome, the bridges beyond",
+  "7431": "prior; the parapet and the Žižkov tower",
+  "7433": "a wood pigeon taking off in the tree: check focus",
+  "7436": "prior; the cleanest of the Letná bridges run (19:02 to 19:48, grey throughout)",
+  "7441": "two trunks framing a bench, the pond and the pillars; 7440 cooler",
+  "7443": "the Straka Academy under Petřín with St Nicholas",
+  "7446": "the old T3 tram 12 coming downhill at Klárov",
+  "7447": "a blue Korean Air tram and a red one, the castle above",
+  "7448": "blue and red trams under the castle across the lawn; 7449 empty",
+  "7450": "Egyptian geese by a pontoon: animals, marginal",
+  "7455": "the Malá Strana bridge tower, tight vertical",
+  "7457": "the orange house and a lamp from the bridge stairs",
+  "7458": "Bruncvík over the river",
+  "7356": "dropped: the vertical of 7355",
+  "7388": "dropped with 7389, 7404, 7406-7408, 7451, 7452: Charles Bridge under grey cloud, 3 and 5 Jul have it in better light"
+ }
+}

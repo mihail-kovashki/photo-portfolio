@@ -1,0 +1,338 @@
+{
+ "album": "Czechia 2026",
+ "day": "2026-07-04",
+ "folder": "raw/2026-07-04 Kutna Hora",
+ "place": "kutna-hora-26",
+ "keep": [
+  "6967",
+  "6969",
+  "6973",
+  "6975",
+  "6976",
+  "6977",
+  "6979",
+  "6980",
+  "6984",
+  "6985",
+  "6987",
+  "6990",
+  "6992",
+  "6994",
+  "6995",
+  "6997",
+  "7000",
+  "7004",
+  "7005",
+  "7006",
+  "7007",
+  "7009",
+  "7012",
+  "7014",
+  "7015",
+  "7016",
+  "7017",
+  "7018",
+  "7019",
+  "7025",
+  "7026",
+  "7028",
+  "7031",
+  "7032",
+  "7036",
+  "7037",
+  "7038",
+  "7044",
+  "7045",
+  "7049",
+  "7050",
+  "7051",
+  "7054",
+  "7055",
+  "7056",
+  "7058",
+  "7062",
+  "7065",
+  "7068",
+  "7071",
+  "7072",
+  "7074",
+  "7076",
+  "7079",
+  "7081",
+  "7084",
+  "7085",
+  "7086",
+  "7089",
+  "7090",
+  "7094",
+  "7096",
+  "7099",
+  "7100",
+  "7101",
+  "7102",
+  "7103",
+  "7104",
+  "7105",
+  "7109",
+  "7110",
+  "7112",
+  "7116",
+  "7118",
+  "7120",
+  "7121",
+  "7122",
+  "7123",
+  "7124",
+  "7125",
+  "7126"
+ ],
+ "groups": [
+  [
+   "6967",
+   "6968"
+  ],
+  [
+   "6977",
+   "6978",
+   "7046"
+  ],
+  [
+   "7045",
+   "6976",
+   "6981",
+   "6983",
+   "7047"
+  ],
+  [
+   "6979",
+   "7023"
+  ],
+  [
+   "6987",
+   "6986",
+   "6988"
+  ],
+  [
+   "6990",
+   "7033"
+  ],
+  [
+   "6992",
+   "7034",
+   "7035",
+   "6989",
+   "6991",
+   "6993"
+  ],
+  [
+   "6994",
+   "7036"
+  ],
+  [
+   "7038",
+   "6996",
+   "7039"
+  ],
+  [
+   "6997",
+   "6998",
+   "6999",
+   "7040",
+   "7041",
+   "7042"
+  ],
+  [
+   "7000",
+   "7001"
+  ],
+  [
+   "7004",
+   "7003",
+   "7005"
+  ],
+  [
+   "7007",
+   "7016"
+  ],
+  [
+   "7009",
+   "7008"
+  ],
+  [
+   "7014",
+   "7013"
+  ],
+  [
+   "7018",
+   "7002"
+  ],
+  [
+   "7044",
+   "7022",
+   "7021",
+   "7020",
+   "7043"
+  ],
+  [
+   "7032",
+   "7024"
+  ],
+  [
+   "7025",
+   "7027",
+   "7029",
+   "7030",
+   "7026",
+   "7028"
+  ],
+  [
+   "7049",
+   "7048"
+  ],
+  [
+   "7054",
+   "7052",
+   "7055"
+  ],
+  [
+   "7056",
+   "7057"
+  ],
+  [
+   "7062",
+   "7061",
+   "7060"
+  ],
+  [
+   "7065",
+   "7063"
+  ],
+  [
+   "7105",
+   "7070",
+   "6970"
+  ],
+  [
+   "7074",
+   "7075",
+   "7073",
+   "7077"
+  ],
+  [
+   "7081",
+   "7080",
+   "7082",
+   "7083"
+  ],
+  [
+   "7085",
+   "7084"
+  ],
+  [
+   "7086",
+   "7087",
+   "7088"
+  ],
+  [
+   "7090",
+   "7091"
+  ],
+  [
+   "7094",
+   "7096",
+   "7092",
+   "7093",
+   "7095",
+   "7097",
+   "7098"
+  ],
+  [
+   "7102",
+   "7101"
+  ],
+  [
+   "7109",
+   "7108"
+  ],
+  [
+   "7112",
+   "7114"
+  ],
+  [
+   "7123",
+   "7115"
+  ],
+  [
+   "7121",
+   "7117"
+  ],
+  [
+   "7120",
+   "7118",
+   "7119"
+  ]
+ ],
+ "prior": [
+  "6977",
+  "6984",
+  "6987",
+  "6990",
+  "6992",
+  "6995",
+  "7004",
+  "7009",
+  "7014",
+  "7015",
+  "7017",
+  "7031",
+  "7045",
+  "7050",
+  "7062",
+  "7068",
+  "7076",
+  "7079",
+  "7081",
+  "7085",
+  "7086",
+  "7091",
+  "7094",
+  "7099",
+  "7102",
+  "7124",
+  "7125",
+  "7126"
+ ],
+ "notes": {
+  "6967": "the sgraffito house with a lamp in silhouette; beats 6968, where the neighbour cuts in",
+  "6969": "the Italian Court from outside: cars and café umbrellas a blemish",
+  "6975": "a statue on Barborská with the cathedral far off: the approach",
+  "6976": "vineyard to St James, horizontal; 7045 (prior) is the vertical. 6981 and 7047 lost (less vine), 6983 has none",
+  "6985": "black-and-white flying buttresses, a different angle from 6984",
+  "7091": "prior pick, lost to 7090: the vertical has the red bench as the subject",
+  "6994": "toss-up with 7036: the west front through the trees with a lamp; 7036 has a bluer sky and the college tower",
+  "7035": "lost to 6992 (prior), but has the bluer sky and the whole flowerbed: look again at the first look",
+  "6997": "St James from the cathedral terrace, framed by a tree and a lamp; the other five frames of that view are plainer",
+  "7005": "a second window, with coloured light thrown on the wall; 7003 has the pulpit cutting in",
+  "7016": "the miner statue and the tabernacle down the aisle, a stranger photographing from behind; 7007 is the miner alone",
+  "7012": "from the cathedral gallery: buttress edge and the green valley",
+  "7019": "a vaulted room with one window: pools of light",
+  "7020": "dropped with 7043: the speaker pole on the terrace; 7044 is the clean one",
+  "7026": "black-and-white of the side view, two walkers at the right",
+  "7028": "the side view over a flowering bush",
+  "7032": "the Jesuit college tower; small strangers on the terrace",
+  "7051": "pink and yellow street with tourists mid-frame: check faces at 1000px",
+  "7055": "Stone Fountain detail, the spout and basin; 7054 is the whole fountain",
+  "7056": "Šultysova downhill with a cyclist; parked cars a blemish",
+  "7070": "dropped: St James with cars along the bottom; 7105 has the tower clean",
+  "7074": "panorama across the valley from below; 7094 (prior) is the same hill from the Italian Court, 7096 its vertical",
+  "7084": "the oriel at full height, a variation on 7085 (prior)",
+  "7089": "park lawn with the star flowerbed under leaves",
+  "7101": "the red heraldic window, partner to 7102 (prior)",
+  "7104": "the arcade through the window edge, a dark blur at the left: intended or a blemish, decide at the first look",
+  "7107": "dropped: a stranger's head in the corner",
+  "7110": "Sedlec from here on (14:51): the place mapping should decide whether Sedlec is a chapter of kutna-hora-26",
+  "7118": "toss-up with 7120, its black-and-white: arches from the gallery, one visitor in the pews",
+  "7120": "black-and-white of 7118; 7119 lost (two figures)",
+  "7122": "the Sedlec nave from the gallery down to the altar"
+ }
+}

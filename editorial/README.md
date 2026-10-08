@@ -114,6 +114,32 @@ thumbnail size soft focus doesn't show (Hokkaido's 3184 was "largely out of focu
 still got proposed for 5★), so no rating above 2★ comes from a thumbnail any more. The
 images come from [`scripts/review.mjs`](../scripts/review.mjs).
 
+0. **Cull, for an uncut album only.** Added 2026-10-08 for Czechia 2026: about 1,350
+   straight-out-of-camera frames that nobody had filtered, where the steps below assume a
+   finished export. The album's folder splits in two:
+   ```
+   portfolio-source/Czechia 26/
+     raw/2026-07-02 Prague/     camera JPEGs as downloaded, read-only, never ingested
+     selects/Prague/            copies of the survivors, one folder per place
+   ```
+   Day folders are named by date and place, never "Day 1": the date and place do half of
+   step 2's mapping. File names stay as the camera wrote them (`DSCF6334.JPG`), since
+   ingest and `--refresh` match on the number.
+
+   Cull one day per session from contact sheets (`review.mjs sheets`): collapse
+   near-duplicate runs to one pick, then keep or drop, nothing finer. Keep generously;
+   the first look tightens it. Frames I picked or posted earlier (an old selection,
+   Instagram) are evidence, not automatic keeps. Save the day as
+   `passes/v2/<album>.cull.<date>.json`:
+   ```
+   {"album": "Czechia 2026", "day": "2026-07-02", "folder": "raw/2026-07-02 Prague",
+    "place": "prague-26", "keep": ["6343", "6367"], "groups": [["6345", "6344", "6346"]],
+    "prior": ["6343", "6345"], "notes": {"6367": "keep for the light, check focus"}}
+   ```
+   Anything not in `keep` is out, and nothing is deleted from `raw/`. After the day is
+   saved, its keeps are copied into `selects/<Place>/`. Once every day is culled, each
+   place in `selects/` is an album for the steps below, its files named by the place id
+   (`prague-26.firstlook.json`).
 1. **Instagram first.** Find the trip's posts: which frames I published, which fronted a
    post, how I grouped them. That is the best evidence of what I think matters.
 2. **Map the album** to trip and places from contact sheets and dates (`review.mjs
@@ -188,7 +214,8 @@ splits in two:
 - **Session B:** steps 4–7, starting from the first-look file. Stops for my review after
   step 6; step 7 can follow in the same session.
 
-A small album runs as one session.
+A small album runs as one session. A cull (step 0) is one session per day, before any of
+these.
 
 **Cost.** Measured on the second passes, the 1568px views cost far more than anything
 else and caught nothing that 1000px wouldn't; Instagram fingerprints cost almost nothing

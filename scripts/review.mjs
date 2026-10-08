@@ -7,13 +7,20 @@
 //       which 450px missed; dust and soft focus need `view` and `crop` at any size.
 //   node scripts/review.mjs view <folder> <out> <n> [<n>...]
 //   node scripts/review.mjs view <folder> <out> --shortlist <album>.firstlook.json
-//       One image per photo at 1000px on the long edge, for judging the frame. Enough to
-//       see distractions, glass and near-twins; focus is the crop's job. --shortlist reads
-//       the numbers from the first look's file instead of the command line.
+//       One image per photo at 1400px on the long edge, for judging the frame: distractions,
+//       glass, the light, whether a flaw seen on the sheet matters. Focus is the crop's job.
+//       --shortlist reads the numbers from the first look's file instead of the command line.
+//   node scripts/review.mjs twins <folder> <out> <n>,<n>[,<n>...] [...]
+//   node scripts/review.mjs twins <folder> <out> --groups <album>.firstlook.json
+//       Near-twin runs side by side at 1000px each, one image per run (four landscape or
+//       three portrait frames to an image; a longer run continues on the next). For choosing
+//       between twins, which a contact sheet is too small for. --groups reads the "groups"
+//       of a first-look or cull file.
 //   node scripts/review.mjs crop <folder> <out> <n>@<x>,<y> [...]
 //       A 500px window at 100% of the export, centred on x,y (fractions of width and
 //       height), for judging focus where the photo is meant to be sharp. Four crops per
-//       output image, labelled, to keep a pass cheap.
+//       output image, labelled, to keep a pass cheap. Give a frame two spots when its
+//       subject is spread out or small (6390@0.3,0.6 6390@0.7,0.4).
 //   node scripts/review.mjs chapters <folder> <selection.json> <out>
 //       One sheet per chapter: {"ratings": {"6390": 4}, "sets": [[id, name, [n...]]]}.
 //   node scripts/review.mjs fives <out>
@@ -27,7 +34,10 @@ import path from "path";
 import sharp from "sharp";
 import { exiftool } from "exiftool-vendored";
 
-const VIEW_EDGE = 1000;
+// Every output image stays within 2000px on the long edge: Claude Code shows larger images
+// to the model downscaled to that, so pixels beyond it cost time and buy nothing.
+const VIEW_EDGE = 1400;
+const TWIN_EDGE = 1000;
 const CROP_SIZE = 500;
 
 function keyOf(fileName) {
@@ -110,6 +120,38 @@ async function view(folder, out, nums) {
   }
 }
 
+async function twins(folder, out, groups) {
+  const files = index(folder);
+  const L = 28;
+  for (const group of groups) {
+    const first = await sharp(find(files, group[0])).metadata();
+    const turned = (first.orientation ?? 1) >= 5;
+    const portrait = (turned ? first.width : first.height) > (turned ? first.height : first.width);
+    const w = portrait ? Math.floor((TWIN_EDGE * 2) / 3) : TWIN_EDGE;
+    const h = portrait ? TWIN_EDGE : Math.floor((TWIN_EDGE * 2) / 3);
+    const cols = portrait ? 3 : 2;
+    const perImage = portrait ? 3 : 4;
+    for (let p = 0; p * perImage < group.length; p++) {
+      const part = group.slice(p * perImage, p * perImage + perImage);
+      const comps = [];
+      for (const [k, n] of part.entries()) {
+        const img = await sharp(find(files, n)).rotate().resize(w, h, { fit: "contain", background: "#111" }).toBuffer();
+        const x = (k % cols) * w, y = Math.floor(k / cols) * (h + L);
+        comps.push({ input: img, left: x, top: y });
+        comps.push({ input: label(`${p * perImage + k + 1}. ${n}`, w), left: x, top: y + h });
+      }
+      const rows = Math.ceil(part.length / cols);
+      const suffix = p > 0 ? `_${p + 1}` : "";
+      const name = path.join(out, `twins_${group[0]}${suffix}.jpg`);
+      await sharp({ create: { width: Math.min(part.length, cols) * w, height: rows * (h + L), channels: 3, background: "#000" } })
+        .composite(comps)
+        .jpeg({ quality: 88 })
+        .toFile(name);
+      console.log(name, part.join(" "));
+    }
+  }
+}
+
 async function crop(folder, out, specs) {
   const files = index(folder);
   const tiles = [];
@@ -159,6 +201,12 @@ function shortlistFrom(file) {
   return shortlist.map(String);
 }
 
+function groupsFrom(file) {
+  const { groups } = JSON.parse(fs.readFileSync(file, "utf8"));
+  if (!Array.isArray(groups) || groups.length === 0) throw new Error(`No "groups" array in ${file}`);
+  return groups.map((g) => g.map(String));
+}
+
 async function chapters(folder, selectionFile, out) {
   const files = index(folder);
   const { ratings = {}, sets } = JSON.parse(fs.readFileSync(selectionFile, "utf8"));
@@ -180,6 +228,10 @@ try {
     fs.mkdirSync(rest[0], { recursive: true });
     const nums = rest[1] === "--shortlist" ? shortlistFrom(rest[2]) : rest.slice(1);
     await view(folder, rest[0], nums);
+  } else if (cmd === "twins") {
+    fs.mkdirSync(rest[0], { recursive: true });
+    const groups = rest[1] === "--groups" ? groupsFrom(rest[2]) : rest.slice(1).map((g) => g.split(","));
+    await twins(folder, rest[0], groups);
   } else if (cmd === "crop") {
     fs.mkdirSync(rest[0], { recursive: true });
     await crop(folder, rest[0], rest.slice(1));

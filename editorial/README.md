@@ -60,6 +60,10 @@ differently from culling (`taste.md`):
 - **5★ is measured against the portfolio, not the session.** Several in a great session
   are fine, none in a weak one. Check each against the existing 5★ frames; the home page
   (20–30 photos) is the natural ceiling.
+- **Rate the photo, not its subject or idea.** Czechia 2026 showed one bias in both
+  directions: interesting subjects and clever concepts were rated too high (the Český
+  Krumlov castle, Prague's tram blur), and quiet minimal frames too low (6853, 6509).
+  `taste.md`'s "What costs a frame" has the cases; read it before rating.
 - **Stars rank frames; the sequence decides roles.** A frame can hold a position its
   stars alone wouldn't give it: a wide establishing shot can open a chapter at 3★, and a
   quiet favourite can close one.
@@ -137,7 +141,16 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
    Cull one day per session from contact sheets (`review.mjs sheets`): collapse
    near-duplicate runs to one pick, then keep or drop, nothing finer. Keep generously;
    the first look tightens it. Frames I picked or posted earlier (an old selection,
-   Instagram) are evidence, not automatic keeps. Save the day as
+   Instagram) are evidence, not automatic keeps.
+
+   A run's pick is made side by side at size, not on the sheet: write the runs down while
+   the sheets are in view, then `review.mjs twins <day folder> <out> <n>,<n>,...` for any
+   run whose winner isn't obvious, and always for a run holding a posted or earlier pick.
+   When it's still close, keep both and let the first look decide. On Czechia 2026 the
+   sheet-size choice dropped posted Kutná Hora 7034 for a worse twin, and some Malá
+   Strana frames I remember never reached `selects/`.
+
+   Save the day as
    `passes/v2/<album>.cull.<date>.json`:
    ```
    {"album": "Czechia 2026", "day": "2026-07-02", "folder": "raw/2026-07-02 Prague",
@@ -160,6 +173,17 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
    foreground, which 600px shows; 900px added nothing more; dust and soft focus never
    show on a sheet, which is what step 4 is for.
 
+   **One flaw on the sheet is a reason to look, not a 2★.** A frame that would be a
+   candidate but for a single thing (a white sky, a cloud shadow, someone at the edge)
+   goes on the shortlist with that flaw in `notes`; step 4 decides what it costs. On
+   Czechia 2026, two such frames (Kutná Hora 7110, Český Krumlov 7584) were the better
+   photos at size, and a 2★ from the sheet means nobody looks again. 2★ is for frames
+   with nothing to hold them, not for good frames with one problem.
+
+   Near-twin runs whose winner isn't obvious on the sheet are settled side by side
+   (`review.mjs twins <folder> <out> --groups <file>`, 1000px each), not by time order or
+   by which was posted.
+
    Save the result as `passes/v2/<album>.firstlook.json`, so the close look can start in
    another session without redoing the sheets (Vietnam's first look was lost that way):
    ```
@@ -172,11 +196,13 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
    ```
    `groups` are near-twin runs, the likely winner first; `shortlist` uses the names
    `review.mjs` takes, and `review.mjs view <folder> <out> --shortlist <file>` reads it.
-4. **Close look at the shortlist** (`review.mjs view`, 1000px): about 1.5× the final set,
+4. **Close look at the shortlist** (`review.mjs view`, 1400px): about 1.5× the final set,
    chosen generously from the sheets, since photos that only show their worth up close
    are the main risk of a tight list. Then 100% crops, four to an image (`review.mjs
    crop`), where the photo is meant to be sharp: the person, the building, the flower,
-   not the centre of the frame. Spot-check smooth skies for dust. For each candidate
+   not the centre of the frame. When the subject is spread out or small, give the frame
+   two crops rather than one guess (Český Krumlov 7519's single crop landed on the floor
+   and missed the figures). Spot-check smooth skies for dust. For each candidate
    record:
    - **focus**: `sharp`, `soft-intended` (shallow focus that is clearly the point) or
      `soft` (a miss, shake or motion blur), with where it was checked;
@@ -230,6 +256,17 @@ these.
 else and caught nothing that 1000px wouldn't; Instagram fingerprints cost almost nothing
 and changed the most selections. (Changed 2026-10-02; the earlier passes used 1568px views
 and 1000px crops.)
+
+Raised again on 2026-10-08, after Czechia 2026 ran a whole trip of camera JPEGs at the
+cheap sizes and the cost was reasonable, but the misses were upstream: frames marked down
+on the sheet, twins chosen at sheet size. Views went to 1400px (about twice the image
+tokens of 1000px, four-fifths of 1568px), twins got their own side-by-side image, and the
+flaw and twin rules above make more frames reach those sizes. Sheets stayed at 600px and
+crops at 500px windows. Image tokens grow with area, about one per 28×28 pixels: a sheet
+is about 460 per photo, a 1400px view about 1,700, a crop about 340. Claude Code shows the
+model any image larger than 2000px on the long edge downscaled to that, so `review.mjs`
+keeps every output within it. The test of the change: re-cull Prague's Malá Strana days
+and see whether it finds the frames I remember.
 
 ## Pass logs
 

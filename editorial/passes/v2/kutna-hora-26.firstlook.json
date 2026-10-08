@@ -1,0 +1,187 @@
+{
+ "album": "Czechia 2026: Kutná Hora",
+ "date": "2026-10-08",
+ "source": "Czechia 26/selects/Kutna Hora (81 from the 4 Jul cull, plus 7034 and 7002 copied back from raw/ because they were posted)",
+ "places": {
+  "kutna-hora-26": "4 Jul 2026, Kutná Hora, with Sedlec (14:51–15:13) as a chapter, not its own place"
+ },
+ "instagram": {
+  "DbklSq9Ags-": [
+   "6977",
+   "7034",
+   "7031",
+   "7002",
+   "7015",
+   "7004",
+   "7005",
+   "7014",
+   "7017",
+   "7076"
+  ]
+ },
+ "rejects": {
+  "1": [],
+  "2": [
+   "6969",
+   "6975",
+   "6980",
+   "7028",
+   "7032",
+   "7037",
+   "7055",
+   "7058",
+   "7084",
+   "7089",
+   "7103"
+  ]
+ },
+ "groups": [
+  [
+   "7034",
+   "6992"
+  ],
+  [
+   "7018",
+   "7002"
+  ],
+  [
+   "6994",
+   "7036"
+  ],
+  [
+   "7026",
+   "7025",
+   "7028"
+  ],
+  [
+   "7031",
+   "7037"
+  ],
+  [
+   "7016",
+   "7007",
+   "7006"
+  ],
+  [
+   "7076",
+   "7074"
+  ],
+  [
+   "7094",
+   "7096"
+  ],
+  [
+   "7045",
+   "6976"
+  ],
+  [
+   "7102",
+   "7101"
+  ],
+  [
+   "7118",
+   "7120"
+  ],
+  [
+   "7126",
+   "7123"
+  ],
+  [
+   "7054",
+   "7055"
+  ],
+  [
+   "7085",
+   "7084"
+  ],
+  [
+   "6977",
+   "6975"
+  ],
+  [
+   "7104",
+   "7100",
+   "7103"
+  ]
+ ],
+ "shortlist": [
+  "6967",
+  "6973",
+  "6977",
+  "6976",
+  "7045",
+  "6984",
+  "6985",
+  "6987",
+  "6990",
+  "6992",
+  "7034",
+  "6994",
+  "7036",
+  "6995",
+  "7025",
+  "7026",
+  "7031",
+  "7000",
+  "7004",
+  "7005",
+  "7007",
+  "7016",
+  "7009",
+  "7012",
+  "7014",
+  "7015",
+  "7017",
+  "7018",
+  "7002",
+  "7019",
+  "6997",
+  "7044",
+  "7051",
+  "7054",
+  "7062",
+  "7068",
+  "7072",
+  "7079",
+  "7105",
+  "7074",
+  "7076",
+  "7081",
+  "7085",
+  "7090",
+  "7094",
+  "7099",
+  "7101",
+  "7102",
+  "7104",
+  "7112",
+  "7116",
+  "7118",
+  "7120",
+  "7122",
+  "7124",
+  "7125",
+  "7126"
+ ],
+ "notes": {
+  "7034": "posted (slide 2); lost to 6992 in the cull, back for the close look",
+  "7002": "posted (slide 4); lost to 7018 in the cull, back for the close look",
+  "7015": "posted rotated (slide 5): the star vault",
+  "6979": "candidate, not shortlisted: the chevet from the gate with a tour group; 6977 and 7025 say it better",
+  "7006": "candidate, not shortlisted: the tabernacle; 7016 has it with the miner",
+  "7038": "candidate, not shortlisted: a third side view, walkers",
+  "7049": "candidate, not shortlisted: St James tower over a yellow house, people and a dog",
+  "7050": "candidate, not shortlisted: lane to the Jesuit tower, cars and an A-board",
+  "7056": "candidate, not shortlisted: Šultysova downhill, cyclist, parked cars",
+  "7065": "candidate, not shortlisted: Palackého square and the plague column, cars",
+  "7071": "candidate, not shortlisted: St James's organ; 7072 is the stronger interior",
+  "7086": "candidate, not shortlisted (on the site): a plain courtyard corner",
+  "7096": "candidate, not shortlisted: vertical of 7094, the beech fills the bottom",
+  "7109": "candidate, not shortlisted: neo-Baroque yellow facade, a car roof along the bottom",
+  "7110": "candidate, not shortlisted: Sedlec from the side under a white sky",
+  "7121": "candidate, not shortlisted: Sedlec's organ wall",
+  "7123": "candidate, not shortlisted: twin of 7126 without the window",
+  "7104": "the dark band at the left is the window edge: decide at 1000px whether it frames or intrudes",
+  "7100": "candidate, not shortlisted: the arcade wide and level; 7104 is the same arcade from the window"
+ }
+}

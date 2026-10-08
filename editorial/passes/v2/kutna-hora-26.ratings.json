@@ -1,0 +1,573 @@
+{
+ "album": "Czechia 2026: Kutná Hora",
+ "places": [
+  "kutna-hora-26"
+ ],
+ "pass": 2,
+ "date": "2026-10-08",
+ "method": "83 frames: the 81 cull survivors in selects/Kutna Hora plus 7034 and 7002, posted but lost to twins in the cull. 600px sheets for all; 57 at 1000px; 100% crops on 28 subjects, sky dust checked on three. Instagram: one post matched by dHash in the browser, two by eye.",
+ "instagram": {
+  "Can you tell I have a thing for Gothic architecture? (DbklSq9Ags-, 3 Aug)": [
+   "6977 cover (0 bits)",
+   "7034 (7)",
+   "7031 (3)",
+   "7002 (8, checked by eye against 7018)",
+   "7015 (4, rotated to vertical)",
+   "7004 (0)",
+   "7005 (1)",
+   "7014 (1)",
+   "7017 (0)",
+   "7076 (1)"
+  ]
+ },
+ "frames": [
+  {
+   "n": "6967",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "St Wenceslas house, lamp in silhouette: the lamp works; but a black building edge cuts in top left and a traffic mirror on a pole sits bottom centre. Half sky.",
+   "focusAt": "0.72,0.62 lettering"
+  },
+  {
+   "n": "6969",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) cars/umbrellas, postcard"
+  },
+  {
+   "n": "6973",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "lane, warm walls, cobbles lead to the pink house and one walker. Quiet, well built; nothing remarkable. Mihail at review: too much dead space without a tighter crop; out.",
+   "focusAt": "0.52,0.60 figure/pink house"
+  },
+  {
+   "n": "6975",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) market stalls, beaten by 6977"
+  },
+  {
+   "n": "6976",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "horizontal vineyard view: vines fill the bottom third, blank white sky; left house cut. 7045 is cleaner.",
+   "focusAt": "0.37,0.40 tower"
+  },
+  {
+   "n": "6977",
+   "v2": 4,
+   "focus": "sharp (statue drapery, cathedral tower)",
+   "critique": "IG cover. Statue line leads to St Barbara, the college on the right, blue sky. Red scaffolding at the cathedral's base is a blemish. Best establishing frame.",
+   "focusAt": "0.22,0.30 statue face; 0.55,0.55 cathedral"
+  },
+  {
+   "n": "6979",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) the chevet from the gate with a tour group; 6977 and 7025 say it better"
+  },
+  {
+   "n": "6980",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) empty paving"
+  },
+  {
+   "n": "6984",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "buttresses in warm light, tree lower left. Same framing as 6985.",
+   "focusAt": "0.65,0.55 tower"
+  },
+  {
+   "n": "6985",
+   "v2": 4,
+   "focus": "sharp (tower window)",
+   "critique": "B&W of the same view; darker sky makes the spires bite. Takes the pair (edit-twins).",
+   "focusAt": "0.65,0.55"
+  },
+  {
+   "n": "6987",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "sunstar over the apse, buttresses as ribs. Flare haze lowers contrast and a green ghost sits on the balustrade; tree left. On the site.",
+   "focusAt": "0.55,0.45 window"
+  },
+  {
+   "n": "6990",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "west front, horizontal, centred; tourists across the bottom edge, flat light on the shaded front. Prior. A record.",
+   "focusAt": "0.5,0.35 rose window"
+  },
+  {
+   "n": "6992",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "vertical over the flowerbed; a pram bottom left, tree at right edge. Loses to 7034."
+  },
+  {
+   "n": "6994",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "west front through trees, lamp; tower of the college left; white sky. Toss-up with 7036."
+  },
+  {
+   "n": "6995",
+   "v2": 4,
+   "focus": "sharp (pinnacle)",
+   "critique": "pinnacles marching diagonally into a soft blue sky, warm stone. Graphic; the strongest exterior detail. Prior.",
+   "focusAt": "0.45,0.35 pinnacles"
+  },
+  {
+   "n": "6997",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "St James framed by trees and a lamp, from the cathedral terrace. Bottom third is lawn; grey sky. Mihail at review: slightly better than 7045 with the same subject; takes its place.",
+   "focusAt": "0.51,0.55 tower"
+  },
+  {
+   "n": "7000",
+   "v2": 4,
+   "focus": "sharp, heavy noise in the vault",
+   "critique": "the apse straight up: heraldic star vault, glass, the tabernacle's tips at the bottom. Rich and ordered. Clear panes near white, fine.",
+   "focusAt": "0.50,0.15 heraldic vault; 0.45,0.45 window"
+  },
+  {
+   "n": "7002",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "posted twin of 7018; loses on the lamp and the cut vault."
+  },
+  {
+   "n": "7004",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "posted. The pictorial window glowing in a dark wall, altar silhouette right. Handsome, but every visitor takes this.",
+   "focusAt": "0.40,0.55 faces in the glass"
+  },
+  {
+   "n": "7005",
+   "v2": 4,
+   "focus": "sharp (glass)",
+   "critique": "posted. The window throws its colour onto the painted wall at right: a moment of light, not just a window. Takes the pair over 7004.",
+   "focusAt": "0.40,0.45 glass; 0.85,0.45 light on the wall"
+  },
+  {
+   "n": "7006",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) the tabernacle; 7016 has it with the miner"
+  },
+  {
+   "n": "7007",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "the miner statue alone, the fresco behind. Good character; parked behind 7016.",
+   "focusAt": "0.47,0.29 face"
+  },
+  {
+   "n": "7009",
+   "v2": 4,
+   "focus": "acceptable: the altar is dark and noisy",
+   "critique": "the nave to the altar, tabernacle at left, star vault above. Hanging lamps at right a small blemish. Prior.",
+   "focusAt": "0.66,0.80 altar; 0.62,0.20 vault"
+  },
+  {
+   "n": "7012",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "from the gallery: buttress edge against the green valley. Nice contrast of stone and woods; white sky is half the right side.",
+   "focusAt": "0.37,0.57 statue on buttress"
+  },
+  {
+   "n": "7014",
+   "v2": 4,
+   "focus": "sharp at 1000px (crop missed the fresco)",
+   "critique": "posted. Side chapel: medieval angels on the wall, coloured glass at left, pews leading in. Warm, quiet, layered.",
+   "focusAt": "0.72,0.45 angel fresco; 0.10,0.40 glass"
+  },
+  {
+   "n": "7015",
+   "v2": 4,
+   "focus": "sharp (boss)",
+   "critique": "posted (rotated to vertical). The star vault flat-on, heraldry in the cells. Pure pattern; two tie-rods cross it, a small blemish. Post it the same way up as on Instagram.",
+   "focusAt": "0.50,0.50 boss; 0.66,0.10 statue"
+  },
+  {
+   "n": "7016",
+   "v2": 4,
+   "focus": "sharp on the miner; the man with the phone slightly soft",
+   "critique": "the miner, the choir stalls and the tabernacle in one view, a stranger photographing from the pew. Tells the place and its visitors.",
+   "focusAt": "0.18,0.40 miner; 0.36,0.58 man with phone"
+  },
+  {
+   "n": "7017",
+   "v2": 4,
+   "focus": "sharp, noisy (heraldic shields)",
+   "critique": "posted. The apse vault on a diagonal, red lamp hanging in at the left. More drama than 7000; same subject. Pick 7017, 7000 a strong park/toss-up.",
+   "focusAt": "0.45,0.35 heraldic vault; 0.12,0.80 red lamp"
+  },
+  {
+   "n": "7018",
+   "v2": 4,
+   "focus": "sharp (organ gilding)",
+   "critique": "the organ under the west window, tabernacle at right, vault above. Wins the pair: 7002 (posted) is tighter, darker and adds a hanging lamp.",
+   "focusAt": "0.45,0.55 organ; 0.45,0.38 glass"
+  },
+  {
+   "n": "7019",
+   "v2": 4,
+   "focus": "sharp (window bars)",
+   "critique": "a vaulted room, one window, light pooling on the paving. Mood and geometry. Little floor lights a small blemish.",
+   "focusAt": "0.50,0.40 window; 0.25,0.75 floor"
+  },
+  {
+   "n": "7025",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "side view in colour: grey sky, a woman with a baby cut by the right edge."
+  },
+  {
+   "n": "7026",
+   "v2": 3,
+   "focus": "sharp (walkers)",
+   "critique": "B&W of the side view; the couple with a pram adds scale; sky goes blank white. Takes the pair.",
+   "focusAt": "0.86,0.88 walkers"
+  },
+  {
+   "n": "7028",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) side view over bush, busier, beaten by 7025/7026"
+  },
+  {
+   "n": "7031",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "posted. Pinnacles marching away; the low wall and brick steps fill the bottom quarter, white sky top left. 6995 says the pinnacles better; this one says \"walking round it\".",
+   "focusAt": "0.55,0.30 pinnacles"
+  },
+  {
+   "n": "7032",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) Jesuit college, tourists, flat"
+  },
+  {
+   "n": "7034",
+   "v2": 3,
+   "focus": "sharp (window tracery; in-camera noise reduction smears the glass a little)",
+   "critique": "posted. Same view, flowerbed whole and centred, edges clean. The best frontal; still the classic view in shade. Establishing, strong 3.",
+   "focusAt": "0.48,0.40 window; 0.66,0.78 walkers"
+  },
+  {
+   "n": "7036",
+   "v2": 3,
+   "focus": "sharp (window tracery)",
+   "critique": "tighter, bluer sky, lamp centred; the tree on the right is heavy. Takes the toss-up by a hair (sky); 6994 parked.",
+   "focusAt": "0.5,0.42 window"
+  },
+  {
+   "n": "7037",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) apse from below, beaten by 7031"
+  },
+  {
+   "n": "7038",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) a third side view, walkers"
+  },
+  {
+   "n": "7044",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "the statue balustrade with St James beyond; grey sky, muted. Ties to 6977's terrace.",
+   "focusAt": "0.30,0.33 statue; 0.47,0.47 tower"
+  },
+  {
+   "n": "7045",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "vertical: wall and path give depth, but 45% grey sky. Prior. Wins over 6976.",
+   "focusAt": "0.37,0.45 tower"
+  },
+  {
+   "n": "7049",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) St James tower over a yellow house, people and a dog"
+  },
+  {
+   "n": "7050",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) lane to the Jesuit tower, cars and an A-board"
+  },
+  {
+   "n": "7051",
+   "v2": 3,
+   "focus": "sharp (walkers)",
+   "critique": "pink and yellow lane down to the old town, tourists from behind, a man at a café table. Busy, but it's the town alive; flat white sky. Strangers, all small.",
+   "focusAt": "0.62,0.66 walkers"
+  },
+  {
+   "n": "7054",
+   "v2": 2,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "the Stone Fountain's tracery; a blue van and a car at right, a yellow road line along the bottom. Blemishes, not fatal. Mihail at review: a documentary shot of the fountain, not a 3.",
+   "focusAt": "0.30,0.45 tracery"
+  },
+  {
+   "n": "7055",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) fountain detail, van again; 7054 says it"
+  },
+  {
+   "n": "7056",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) Šultysova downhill, cyclist, parked cars"
+  },
+  {
+   "n": "7058",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) street of houses, flat, cars"
+  },
+  {
+   "n": "7062",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "the Stone House, looking up: converging verticals, grey sky top left, a \"Kingdom Come\" banner at the bottom. Prior. A record of a fine facade.",
+   "focusAt": "0.47,0.40 statues"
+  },
+  {
+   "n": "7065",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) Palackého square and the plague column, cars"
+  },
+  {
+   "n": "7068",
+   "v2": 4,
+   "focus": "sharp (lamp)",
+   "critique": "the red alley: lamp, arch, a second arch beyond, strong colour and a clean line. A police car and restaurant signs at the end, small. Prior.",
+   "focusAt": "0.37,0.15 lamp; 0.50,0.66 police car"
+  },
+  {
+   "n": "7071",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) St James's organ; 7072 is the stronger interior"
+  },
+  {
+   "n": "7072",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "St James inside: symmetric nave to the Baroque altar, warm. Well made; one interior too many next to St Barbara's.",
+   "focusAt": "0.48,0.58 altarpiece"
+  },
+  {
+   "n": "7074",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "St Barbara and the college over the vineyard: the classic view. A dark house cuts in at right; half sky.",
+   "focusAt": "0.36,0.48 cathedral"
+  },
+  {
+   "n": "7076",
+   "v2": 3,
+   "focus": "sharp (roofs)",
+   "critique": "posted. St Barbara and the college through the gate's railings; frame within a frame, cobbles below, a lot of sky. Wins the trio for the frame; 7094 is the open view.",
+   "focusAt": "0.47,0.45 cathedral"
+  },
+  {
+   "n": "7079",
+   "v2": 4,
+   "focus": "sharp (painted king)",
+   "critique": "the painted house on Palackého: kings and saints under a blue sky, lamp at right. Colour and character. Prior.",
+   "focusAt": "0.14,0.55 king; 0.45,0.60 bishop"
+  },
+  {
+   "n": "7081",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "the Italian Court garden: round flowerbed, fountain, statue, café umbrellas. Blue sky; a postcard. Prior.",
+   "focusAt": "0.36,0.60 statue"
+  },
+  {
+   "n": "7084",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) courtyard oriel, barrier/bin clutter; 7085 says it"
+  },
+  {
+   "n": "7085",
+   "v2": 4,
+   "focus": "sharp (oriel window)",
+   "critique": "the oriel and the stair in the courtyard: warm walls, strong shapes, a bench and planter. Prior.",
+   "focusAt": "0.73,0.35 oriel tracery; 0.30,0.85 steps"
+  },
+  {
+   "n": "7086",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) a plain courtyard corner"
+  },
+  {
+   "n": "7089",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) park lawn star bed, leaf intrudes top right, plain"
+  },
+  {
+   "n": "7090",
+   "v2": 4,
+   "focus": "sharp (bench)",
+   "critique": "the red bench with green ironwork under pink hydrangeas against the stone wall. A quiet favourite: colour and calm. Drain cover bottom left a blemish.",
+   "focusAt": "0.60,0.75 bench"
+  },
+  {
+   "n": "7094",
+   "v2": 3,
+   "focus": "sharp (spires)",
+   "critique": "the open valley view from the Italian Court: St Barbara and the college over the park, blue sky; people tiny in the park. Better light than 7074. Prior.",
+   "focusAt": "0.40,0.32 cathedral"
+  },
+  {
+   "n": "7096",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) vertical of 7094, the beech fills the bottom"
+  },
+  {
+   "n": "7099",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "hydrangeas along the wall, horizontal. Pretty and plain; 7090 says it with the bench. Prior."
+  },
+  {
+   "n": "7100",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) the courtyard arcade, wide and level; 7104 and 7085 say the courtyard better"
+  },
+  {
+   "n": "7101",
+   "v2": 2,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "heraldic window, red crest among roundels. Bolder than 7102. Mihail at review: too crooked, and the concept sits apart from the rest of the set.",
+   "focusAt": "0.50,0.53 crest"
+  },
+  {
+   "n": "7102",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "the crescent crest; darker. Prior. A pair with 7101; one is enough. Out with 7101: the window concept sits apart from the set.",
+   "focusAt": "0.50,0.55 crescent"
+  },
+  {
+   "n": "7103",
+   "v2": 2,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) courtyard from window, plain"
+  },
+  {
+   "n": "7104",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "the courtyard arcade, a dark blurred window edge down the left: reads as peeking, but stacked green chairs sit in the courtyard. Not worth its place over 7085."
+  },
+  {
+   "n": "7105",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "St James's tower against cirrus; clean, a road-sign tip in the bottom right corner.",
+   "focusAt": "0.66,0.50 clock"
+  },
+  {
+   "n": "7109",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) neo-Baroque yellow facade, a car roof along the bottom"
+  },
+  {
+   "n": "7110",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only, after review)",
+   "critique": "Sedlec from the side: the red roofs and the run of windows make a strong diagonal; white sky, but less of it than 7112. The better exterior (Mihail, confirmed at 1000px after review); parked, as Sedlec stays interior-only."
+  },
+  {
+   "n": "7112",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "Sedlec's west front from below, symmetric, under a white-grey sky. The establishing frame for Sedlec, nothing more. Mihail at review: not an opener; Sedlec stays interior-only.",
+   "focusAt": "0.50,0.20 statue"
+  },
+  {
+   "n": "7116",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "Sedlec nave from the choir: depth, red carpet, a black pulpit filling the left; the west window burns out.",
+   "focusAt": "0.58,0.62 window"
+  },
+  {
+   "n": "7118",
+   "v2": 4,
+   "focus": "sharp (the seated woman)",
+   "critique": "from the gallery: arch inside arch down the aisle, one woman alone in the pews. The yellow is Sedlec. Railing edge bottom left, red rope bottom right.",
+   "focusAt": "0.23,0.82 seated woman; 0.48,0.55 arches"
+  },
+  {
+   "n": "7120",
+   "v2": 4,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "the B&W of 7118: more graphic, loses the yellow that is the building's signature. A real toss-up; I lean colour."
+  },
+  {
+   "n": "7121",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) Sedlec's organ wall"
+  },
+  {
+   "n": "7122",
+   "v2": 4,
+   "focus": "acceptable: the altar is dark and noisy",
+   "critique": "the nave from the gallery down to the altar: the ribbed vault and the long yellow walls, pews below.",
+   "focusAt": "0.44,0.82 altar; 0.45,0.20 vault"
+  },
+  {
+   "n": "7123",
+   "v2": 3,
+   "focus": "not checked at 100%",
+   "critique": "(sheet only) twin of 7126 without the window"
+  },
+  {
+   "n": "7124",
+   "v2": 4,
+   "focus": "sharp treads; soft-intended foreground rail",
+   "critique": "the spiral stair from above: wood, cream, iron. The foreground rail is soft (soft-intended). Prior.",
+   "focusAt": "0.40,0.30 treads; 0.70,0.85 rail"
+  },
+  {
+   "n": "7125",
+   "v2": 3,
+   "focus": "not checked at 100% (1000px only)",
+   "critique": "the fresco in its ribbed frame, flat-on. Good, but 7126 and 7122 do the vaults better. Prior.",
+   "focusAt": "0.50,0.45 fresco"
+  },
+  {
+   "n": "7126",
+   "v2": 4,
+   "focus": "sharp (capital)",
+   "critique": "straight up the nave to the west window: Santini's ribs as a net, two tiny figures on the gallery. Prior.",
+   "focusAt": "0.33,0.50 rib boss; 0.45,0.89 people on balcony"
+  }
+ ]
+}

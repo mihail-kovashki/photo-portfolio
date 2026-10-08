@@ -2532,46 +2532,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2026-07-04"
-  },
-  {
-    "id": "kutna-hora-26-dscf6984",
-    "series": "Kutná Hora 26",
-    "fileNumber": "DSCF6984",
-    "displayUrl": "/photos/display/kutna-hora-26-dscf6984.37621fd9.jpg",
-    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf6984.1c366cbf.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgME/8QAIBAAAQMEAgMAAAAAAAAAAAAAAQIDEQAEEjEFkSFBUf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECEiH/2gAMAwEAAhEDEQA/ANDXMM3YVk2pCxAjcmYPXirZNn71Q/hrtKrhtDsk5wDO53SO5trpLxDTrpRAg5R6qV3HBUUtP//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1500s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "streets"
+    ],
+    "rating": 4
   },
   {
     "id": "kutna-hora-26-dscf6987",
@@ -2610,85 +2577,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-04"
-  },
-  {
-    "id": "kutna-hora-26-dscf6990",
-    "series": "Kutná Hora 26",
-    "fileNumber": "DSCF6990",
-    "displayUrl": "/photos/display/kutna-hora-26-dscf6990.0e97cd3b.jpg",
-    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf6990.12b46303.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEG/8QAIxAAAgEDAgcBAAAAAAAAAAAAAQIDAAQRBSEGEhQiMUFhUf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8Aa3FLXlqot0EXMCsjE5IPykWOuStG8EzQgJF2PI2MnYY+7ZrI6cxmnkSQkqCcDx7q62OmhjMJZCSBsx/KhWPIf//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/900s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-04"
-  },
-  {
-    "id": "kutna-hora-26-dscf6992",
-    "series": "Kutná Hora 26",
-    "fileNumber": "DSCF6992",
-    "displayUrl": "/photos/display/kutna-hora-26-dscf6992.44686c80.jpg",
-    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf6992.cc2446ab.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAUG/8QAIRAAAgICAgEFAAAAAAAAAAAAAQIDEQAEBRIxBjJBUWL/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABcRAQEBAQAAAAAAAAAAAAAAAAEAAiH/2gAMAwEAAhEDEQA/ALW16i09XaSJCZaciYqPaBfj7N4pOV4+ZRImynVv1WYCOCdo0dmVOwB6tZYA+LoYVuS2NdjEtUp+GrIml4Scl//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1600s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "looking-up"
+    ],
+    "rating": 3
   },
   {
     "id": "kutna-hora-26-dscf6995",
@@ -2727,46 +2622,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-04"
-  },
-  {
-    "id": "kutna-hora-26-dscf7004",
-    "series": "Kutná Hora 26",
-    "fileNumber": "DSCF7004",
-    "displayUrl": "/photos/display/kutna-hora-26-dscf7004.56950dd9.jpg",
-    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7004.af932acc.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQb/xAAjEAABAwMCBwAAAAAAAAAAAAABAgMRAAQFElETFSEiMWHR/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAAMBAQAAAAAAAAAAAAAAAAABEQIx/9oADAMBAAIRAxEAPwCc5U0rEvXmvubV43AIH2ilLb1GEmKXbv7QYRy3U4eMpJ6FBiZ3oKfdFiu0bTS4f//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/2.2",
-    "shutterSpeed": "1/180s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "looking-up"
+    ],
+    "rating": 4
   },
   {
     "id": "kutna-hora-26-dscf7009",
@@ -2805,7 +2667,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "interiors"
+    ],
+    "rating": 4
   },
   {
     "id": "kutna-hora-26-dscf7014",
@@ -2844,7 +2712,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "interiors"
+    ],
+    "rating": 4
   },
   {
     "id": "kutna-hora-26-dscf7015",
@@ -2883,7 +2757,14 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "interiors",
+      "looking-up"
+    ],
+    "rating": 4
   },
   {
     "id": "kutna-hora-26-dscf7017",
@@ -2922,7 +2803,14 @@
       "iso": "ISO 500",
       "exposureCompensation": "-0.33 EV"
     },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "interiors",
+      "looking-up"
+    ],
+    "rating": 4
   },
   {
     "id": "kutna-hora-26-dscf7031",
@@ -2961,85 +2849,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-04"
-  },
-  {
-    "id": "kutna-hora-26-dscf7045",
-    "series": "Kutná Hora 26",
-    "fileNumber": "DSCF7045",
-    "displayUrl": "/photos/display/kutna-hora-26-dscf7045.765352c3.jpg",
-    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7045.d8d678fb.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQGB//EAB8QAQACAgICAwAAAAAAAAAAAAECAwARIUEEEhRCkf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERAv/aAAwDAQACEQMRAD8ApY31EgjOO5Gzk5w256D9zOvJ+VVXF0iaPaLzF7xc19rrB7BdZFaoof/Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1800s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-04"
-  },
-  {
-    "id": "kutna-hora-26-dscf7050",
-    "series": "Kutná Hora 26",
-    "fileNumber": "DSCF7050",
-    "displayUrl": "/photos/display/kutna-hora-26-dscf7050.6f5c286a.jpg",
-    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7050.e1311c40.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAIBAAAgEEAgMBAAAAAAAAAAAAAQIDAAQhQQUREhMxYf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGBEBAAMBAAAAAAAAAAAAAAAAAQACESH/2gAMAwEAAhEDEQA/AI298Lbn50chBNB4YBJ+arYtqswLlDkkY60eqMe3guPKeT2pch1KOMgqB861ndKWfIxxWqRsmR3r9qV3CPU6z//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/2.0",
-    "shutterSpeed": "1/4000s",
-    "iso": "ISO 500",
-    "focalLength": "35mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches"
+    ],
+    "rating": 3
   },
   {
     "id": "kutna-hora-26-dscf7062",
@@ -3078,7 +2893,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "streets",
+      "looking-up"
+    ],
+    "rating": 3
   },
   {
     "id": "kutna-hora-26-dscf7068",
@@ -3117,7 +2938,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "streets"
+    ],
+    "rating": 4
   },
   {
     "id": "kutna-hora-26-dscf7076",
@@ -3156,7 +2982,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches"
+    ],
+    "rating": 3
   },
   {
     "id": "kutna-hora-26-dscf7079",
@@ -3195,7 +3026,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "streets"
+    ],
+    "rating": 4
   },
   {
     "id": "kutna-hora-26-dscf7081",
@@ -3234,7 +3070,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "palaces-and-castles",
+      "parks-and-gardens"
+    ],
+    "rating": 3
   },
   {
     "id": "kutna-hora-26-dscf7085",
@@ -3273,202 +3115,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-04"
-  },
-  {
-    "id": "kutna-hora-26-dscf7086",
-    "series": "Kutná Hora 26",
-    "fileNumber": "DSCF7086",
-    "displayUrl": "/photos/display/kutna-hora-26-dscf7086.60039ef3.jpg",
-    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7086.827305fc.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQF/8QAIxAAAgIBBAAHAAAAAAAAAAAAAQIDEQQAEiFBBQYVMVGB0f/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAECIf/aAAwDAQACEQMRAD8AvwvEvTzcChlcAGNmquOK+tHL5udJWU40Zo++/WRHPnz0wxmZb5O3quj83oZcTNeQsYZFJ63j91MqpYLUp6f/2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/850s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-04"
-  },
-  {
-    "id": "kutna-hora-26-dscf7091",
-    "series": "Kutná Hora 26",
-    "fileNumber": "DSCF7091",
-    "displayUrl": "/photos/display/kutna-hora-26-dscf7091.5573a432.jpg",
-    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7091.bbf8915c.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQT/xAAhEAABAwMEAwAAAAAAAAAAAAABAgMRAAQFEhMhMUFRYf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAEhEUH/2gAMAwEAAhEDEQA/AJ7XMMITytSCkAxHiaTymTsMji32ydam2w4gFJnUfX0UBZWzMA7YJjs80mgloBSISR0YqNyiren/2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/4.5",
-    "shutterSpeed": "1/640s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-04"
-  },
-  {
-    "id": "kutna-hora-26-dscf7094",
-    "series": "Kutná Hora 26",
-    "fileNumber": "DSCF7094",
-    "displayUrl": "/photos/display/kutna-hora-26-dscf7094.d0e1f559.jpg",
-    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7094.a0600f52.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFBv/EAB8QAAIBBAMBAQAAAAAAAAAAAAECAwAEBREGEiFBUf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGBEBAQADAAAAAAAAAAAAAAAAAQACERL/2gAMAwEAAhEDEQA/AHhySzaINbrKz9ezJrWh9oEvJMe5ABcvrZ2vmqz3Go0nzYWVe6lGJB/as5/HWdvAJIYERmHpXz5UXJGXBq//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1400s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-04"
-  },
-  {
-    "id": "kutna-hora-26-dscf7099",
-    "series": "Kutná Hora 26",
-    "fileNumber": "DSCF7099",
-    "displayUrl": "/photos/display/kutna-hora-26-dscf7099.1fd1a524.jpg",
-    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7099.1ff4a92b.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAiEAACAQMEAgMAAAAAAAAAAAABAgMABBEFEyFBEiIxYfD/xAAVAQEBAAAAAAAAAAAAAAAAAAABBP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAAhH/2gAMAwEAAhEDEQA/ACtrbphzGkgf1OD8Y+qQmtgzLFJCGjkUEqT1+6qBZsb1M3J3CvAz1VG0Rd3xwMc1GoPJNN//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/4.5",
-    "shutterSpeed": "1/350s",
-    "iso": "ISO 500",
-    "focalLength": "35mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-04"
-  },
-  {
-    "id": "kutna-hora-26-dscf7102",
-    "series": "Kutná Hora 26",
-    "fileNumber": "DSCF7102",
-    "displayUrl": "/photos/display/kutna-hora-26-dscf7102.ae09d606.jpg",
-    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7102.6c02e43e.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQG/8QAIxAAAQMDAwUBAAAAAAAAAAAAAQIEEQADBRIhMhUiMUFxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEhAv/aAAwDAQACEQMRAD8AiZP7dlm0trmVoAkCQNvJ/KzeZ7sq4O/L38pvFtEvW9vWso0oAIjkKLzaD1dzMcvnqp5dG1D/2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/900s",
-    "iso": "ISO 500",
-    "focalLength": "35mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "palaces-and-castles"
+    ],
+    "rating": 4
   },
   {
     "id": "kutna-hora-26-dscf7124",
@@ -3507,46 +3159,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-04"
-  },
-  {
-    "id": "kutna-hora-26-dscf7125",
-    "series": "Kutná Hora 26",
-    "fileNumber": "DSCF7125",
-    "displayUrl": "/photos/display/kutna-hora-26-dscf7125.c53fd960.jpg",
-    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7125.4c39f501.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBf/EAB8QAAIBBAIDAAAAAAAAAAAAAAECIQADBBESMQUiQf/EABQBAQAAAAAAAAAAAAAAAAAAAAX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAQWH/2gAMAwEAAhEDEQA/AD5LJuLaVi0k6JP2o4GXcewWOt7iIrQykVuQKrpTA11S41q3wA4L7GY7onCEf//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/3.2",
-    "shutterSpeed": "1/300s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "interiors"
+    ],
+    "rating": 4
   },
   {
     "id": "kutna-hora-26-dscf7126",
@@ -3585,7 +3203,14 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-04"
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "interiors",
+      "looking-up"
+    ],
+    "rating": 4
   },
   {
     "id": "cesky-krumlov-26-dscf7465",
@@ -14520,5 +14145,548 @@
       "people"
     ],
     "rating": 3
+  },
+  {
+    "id": "kutna-hora-26-dscf6985",
+    "series": "Kutná Hora 26",
+    "fileNumber": "DSCF6985",
+    "displayUrl": "/photos/display/kutna-hora-26-dscf6985.dbe7ba13.jpg",
+    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf6985.8ec7b35d.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgIE/8QAIRAAAQQBBAMBAAAAAAAAAAAAAQIDBBEABSExYRIiUcH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AprXmZgV5sqQ4KASN73pX5mkONEXSh1XGCtMkASWkuC/cDn7ziOXp0kyCWXHS2QKtfQwP/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/1000s",
+    "iso": "ISO 250",
+    "focalLength": "23mm",
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "looking-up",
+      "black-and-white"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "kutna-hora-26-dscf6997",
+    "series": "Kutná Hora 26",
+    "fileNumber": "DSCF6997",
+    "displayUrl": "/photos/display/kutna-hora-26-dscf6997.7492a08a.jpg",
+    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf6997.1807c212.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIhAAAgEDBAIDAAAAAAAAAAAAAQIDABEhBAUGFRJBYbHR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAwDAQACEQMRAD8AtxndJNRt7QMpeWDAAAyvoUaTirTyPK88cbOxJVVwM1h6TcBpVtHI0RsLlLZt90nupDns5h8eI/ahS//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/2200s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "kutna-hora-26-dscf7005",
+    "series": "Kutná Hora 26",
+    "fileNumber": "DSCF7005",
+    "displayUrl": "/photos/display/kutna-hora-26-dscf7005.7d18899a.jpg",
+    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7005.059d6752.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQMEBv/EACAQAAEDBAIDAAAAAAAAAAAAAAECAwQABRESISIxQWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAECQf/aAAwDAQACEQMRAD8AykW2pft8yQVEFnwMfM0HLSdzosFPGCBTYVwYZtD8dby0rc36hPByMDmpkTOidlkHHqhbrBpU6f/Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/3.2",
+    "shutterSpeed": "1/300s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "interiors"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "kutna-hora-26-dscf7016",
+    "series": "Kutná Hora 26",
+    "fileNumber": "DSCF7016",
+    "displayUrl": "/photos/display/kutna-hora-26-dscf7016.b8398cc9.jpg",
+    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7016.00729596.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAgEAACAwABBAMAAAAAAAAAAAABAgMEEQASExQhUcHR/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwBfHry0RG84jCOX0nAWzM5GtOO6PId8aQkkFh+8nq0BOkq2JW7BbqjQH3vyT9cGSu6yMEsnp31qg8DC3//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/1.8",
+    "shutterSpeed": "1/90s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "interiors",
+      "people"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "kutna-hora-26-dscf7018",
+    "series": "Kutná Hora 26",
+    "fileNumber": "DSCF7018",
+    "displayUrl": "/photos/display/kutna-hora-26-dscf7018.341f9829.jpg",
+    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7018.27db527d.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIBAAAQQCAgMBAAAAAAAAAAAAAQIDBBEAEiEiFDKRwf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAFhEBAQEAAAAAAAAAAAAAAAAAAiEA/9oADAMBAAIRAxEAPwAwhl8IdSAUkCzt+ZjyZTSpLhJN7EcZET1JdBF0Na7fcJJU15Dh78qv2GTEW50pv//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/2.5",
+    "shutterSpeed": "1/200s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "-0.33 EV"
+    },
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "interiors"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "kutna-hora-26-dscf7019",
+    "series": "Kutná Hora 26",
+    "fileNumber": "DSCF7019",
+    "displayUrl": "/photos/display/kutna-hora-26-dscf7019.06f99cfb.jpg",
+    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7019.cea28836.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAUG/8QAIBAAAQQBBAMAAAAAAAAAAAAAAQACAwQRBRIhQRMUMf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAYEQEBAAMAAAAAAAAAAAAAAAABAAIRIf/aAAwDAQACEQMRAD8AyVLTZrcU8keB4Wlzge0MgZ5Cv0rlSvFKHQNeXEnO8jg9fURnpluZK4c4kkncUJk77Khf/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/2.5",
+    "shutterSpeed": "1/180s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "-1 EV"
+    },
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "interiors"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "kutna-hora-26-dscf7026",
+    "series": "Kutná Hora 26",
+    "fileNumber": "DSCF7026",
+    "displayUrl": "/photos/display/kutna-hora-26-dscf7026.03ae2c57.jpg",
+    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7026.7b3aa304.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQMH/8QAIhAAAQIGAgMBAAAAAAAAAAAAAQIRAAMEBSExBhJhcaGx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AHL5ymltazTELVU9HIAwlxgv7ids5TJr6aumqlmWKVBmZO05b8+xn29knyS8JWeWlapyVOxR1LKIcHYxAf/Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/850s",
+    "iso": "ISO 250",
+    "focalLength": "23mm",
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "people",
+      "black-and-white"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "kutna-hora-26-dscf7034",
+    "series": "Kutná Hora 26",
+    "fileNumber": "DSCF7034",
+    "displayUrl": "/photos/display/kutna-hora-26-dscf7034.31b8e2c0.jpg",
+    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7034.1359ecc2.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQG/8QAIxAAAgMAAQEJAAAAAAAAAAAAAQMCBBEABQYSITFBUWGBsf/EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAECEf/aAAwDAQACEQMRAD8AXf2iVBwhXjKS4Eicvc/HF6nUFWq0HL0xluaM8jnMKmq0oW17DXkyOhZhpA8c9fvORuuXUNkpU2GETgI7w/OTq9eDcn//2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/950s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "parks-and-gardens"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "kutna-hora-26-dscf7051",
+    "series": "Kutná Hora 26",
+    "fileNumber": "DSCF7051",
+    "displayUrl": "/photos/display/kutna-hora-26-dscf7051.f4c27286.jpg",
+    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7051.5bdc9845.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAE/8QAIRAAAQMDBAMAAAAAAAAAAAAAAQIDEQAEEgUTFCFRUrH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAETH/2gAMAwEAAhEDEQA/AGHdT4ILSlby1yW5gYkGIJ8Vm59+e+Q0J9WJH2q80q2uJU4VZyTkDHZM0TcXRt31NI3cU9CUVPq8mQv/2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF35mmF2 R WR",
+    "aperture": "ƒ/2.0",
+    "shutterSpeed": "1/8000s",
+    "iso": "ISO 500",
+    "focalLength": "35mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "streets"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "kutna-hora-26-dscf7090",
+    "series": "Kutná Hora 26",
+    "fileNumber": "DSCF7090",
+    "displayUrl": "/photos/display/kutna-hora-26-dscf7090.1e2c82f0.jpg",
+    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7090.0558162f.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQIE/8QAHxAAAgAGAwEAAAAAAAAAAAAAAQIAAwURITEEEoET/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAWEQEBAQAAAAAAAAAAAAAAAAABACL/2gAMAwEAAhEDEQA/AIl1LjES1Mwg7zr2FVr1NAs/IUMMEWMBpRGaUHSW7ds6uTGgUlkHVjYjBHwVrexEpLq//9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/4.5",
+    "shutterSpeed": "1/550s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "flowers"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "kutna-hora-26-dscf7116",
+    "series": "Kutná Hora 26",
+    "fileNumber": "DSCF7116",
+    "displayUrl": "/photos/display/kutna-hora-26-dscf7116.0dcf13df.jpg",
+    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7116.8e03afa4.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAgEAABBAIBBQAAAAAAAAAAAAABAgMFEQAEIRIUUXKh/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABgRAQEAAwAAAAAAAAAAAAAAAAEAAhEh/9oADAMBAAIRAxEAPwA8Zrd1rNSD56nTSyQKo5EXw4r2J+46LlNhmPdYaYLlNUokcJFcnJy12onycEYosvfL/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/3.6",
+    "shutterSpeed": "1/350s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "interiors"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "kutna-hora-26-dscf7118",
+    "series": "Kutná Hora 26",
+    "fileNumber": "DSCF7118",
+    "displayUrl": "/photos/display/kutna-hora-26-dscf7118.23e6651f.jpg",
+    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7118.e0034ba8.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQb/xAAiEAABAwMDBQAAAAAAAAAAAAABAgMRAAQSBRMxISJBgZH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECESH/2gAMAwEAAhEDEQA/ACWdNyYKlNlQxyjiB490U9bpQ8pMKMHmq6yui7aFQS3gOwEGZQAev2gXtsukmKDNUn0W5WH/2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/2.5",
+    "shutterSpeed": "1/180s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "interiors",
+      "people"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "kutna-hora-26-dscf7122",
+    "series": "Kutná Hora 26",
+    "fileNumber": "DSCF7122",
+    "displayUrl": "/photos/display/kutna-hora-26-dscf7122.6b817564.jpg",
+    "thumbUrl": "/photos/thumb/kutna-hora-26-dscf7122.10b94889.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQMEBf/EAB8QAAEDBAMBAAAAAAAAAAAAAAEAAgMEBREhEjGRMv/EABUBAQEAAAAAAAAAAAAAAAAAAAQF/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8AZdGgVUTcEmTQ0qo6eBrA1wyR2Vk366vpKyCNhHEjL/dIi7a+T6FPjWjLcP/Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/4.0",
+    "shutterSpeed": "1/600s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-04",
+    "place": "kutna-hora-26",
+    "tags": [
+      "churches",
+      "interiors"
+    ],
+    "rating": 4
   }
 ]

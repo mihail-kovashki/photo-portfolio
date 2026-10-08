@@ -64,19 +64,9 @@ differently from culling (`taste.md`):
   directions: interesting subjects and clever concepts were rated too high (the Český
   Krumlov castle, Prague's tram blur), and quiet minimal frames too low (6853, 6509).
   `taste.md`'s "What costs a frame" has the cases; read it before rating.
-- **Critique in photographic terms, not an inventory.** "Tiled floor, sun at the edge,
-  two figures in the arch" describes a frame; it doesn't judge it, and it can't compare
-  two. Say what the frame does with line and direction, shape and negative space,
-  balance, layering and separation, and how the light serves it. A minimal frame has as
-  much to say for it as a busy one: the strength of its lines and the space around them.
-  When the critique only has facts, the simpler frame loses by default (Malá Strana
-  re-cull: 6760 chosen over 6764, whose vaults have the stronger lines).
-- **Judge light by what it does for the frame, not by its category.** Blue hour, golden
-  hour and night aren't automatically good, and grey isn't automatically bad: overcast
-  can suit the mood and still have detail in the sky.
-- **Composition before subject.** Famous buildings that stack and clip each other, with
-  no space between them, are a composition fault, whatever the landmark (Malá Strana
-  re-cull: 7456, the bridge towers, statue and lamp merged into one mass).
+- **Critique in photographic terms; judge light by what it does; composition before
+  subject.** These live in `taste.md` ("How to critique", "What costs a frame"), shared
+  with the cull and Instagram picks; read them before rating.
 - **Stars rank frames; the sequence decides roles.** A frame can hold a position its
   stars alone wouldn't give it: a wide establishing shot can open a chapter at 3★, and a
   quiet favourite can close one.

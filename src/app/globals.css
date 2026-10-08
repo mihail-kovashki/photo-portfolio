@@ -255,13 +255,9 @@ body {
 }
 
 /* Opening animation (src/lib/intro.ts): hidden unless the inline script chose to play
-   it on this load. An overlay intro also holds the page still underneath. */
+   it on this load */
 html:not([data-intro="play"]) .intro-root {
   display: none;
-}
-
-html[data-intro="play"]:has(.intro-overlay) {
-  overflow: hidden;
 }
 
 /* Photo wall: the line under "Scroll to enter" runs downwards, like a hint to follow */

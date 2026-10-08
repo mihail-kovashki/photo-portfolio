@@ -49,11 +49,18 @@ don't spread the device into body copy.
 
 ## Motion
 
-One showpiece, the rest functional. `prefers-reduced-motion` is honoured everywhere
-(CSS in `globals.css`, `MotionConfig reducedMotion="user"`, and the morph and flipper
-check it themselves); every new animation must too.
+Two showpieces, the rest functional. `prefers-reduced-motion` is honoured everywhere
+(CSS in `globals.css`, `MotionConfig reducedMotion="user"`, and the morph, flipper and
+intro check it themselves); every new animation must too.
 
 - **Showpiece:** thumbnail-to-lightbox morph (`src/lib/photoMorph.ts`, 420 ms).
+- **Showpiece, on arrival:** the photo wall (`src/components/Intro.tsx`). Unbroken rows of
+  the best frames run off both screen edges like strips of film, with "Come *wander*"
+  over a fade in the middle. Scrolling drives it: rows slide apart in alternating
+  directions while the page rises behind them; "Enter" plays the same thing. Home page
+  only, once per session (`?intro` replays it), never under reduced motion, and removed
+  once passed. Its own layouts for phones upright and sideways. Fades sit behind the
+  text only; the edges stay bright.
 - **Card reveal:** photos "develop" from their blurred preview, sweeping left to right by
   column (`.photo-develop`, 700 ms).
 - **Hero flipper:** place names only, one pass, settles on the latest trip.
@@ -61,7 +68,8 @@ check it themselves); every new animation must too.
 - Sheets and modals: 200–250 ms, ease `[0.16, 1, 0.3, 1]`; lightbox slides on a spring
   (stiffness 350, damping 30–35). Sheets close on X, tap outside, Back and swipe down.
 
-No scroll-triggered fade-ups on sections, no animated gradients, no parallax.
+No scroll-triggered fade-ups on sections, no animated gradients, no parallax. The intro
+is the one scroll-driven exception, and it is gone once passed.
 
 ## Tried and rejected
 
@@ -70,6 +78,10 @@ No scroll-triggered fade-ups on sections, no animated gradients, no parallax.
 - A hover arrow or underline on the hero flipper.
 - Zoom on card hover.
 - A row of collection buttons for navigation (replaced by the trip index and pills).
+- Intro: frames scattered at random around the welcome (read as disjointed, too small,
+  and clumped on phones), and a middle row split around the text (a black box that broke
+  the rows). Other intros are parked, not rejected, on the `intro/darkroom`,
+  `intro/viewfinder` and `intro/board` branches.
 
 ## Quality floor
 

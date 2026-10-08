@@ -7,9 +7,9 @@
 // to see it again in the same session.
 //
 // Markup contract: the intro's root carries .intro-root, which CSS shows only while
-// <html data-intro="play">. An .intro-overlay inside it also locks page scrolling.
+// <html data-intro="play">.
 
-import { useEffect, useSyncExternalStore } from "react";
+import { useSyncExternalStore } from "react";
 import { photos, type Photo } from "@/data/photos";
 
 const SEEN_KEY = "intro-seen";
@@ -33,46 +33,11 @@ export function useIntroPlaying() {
   return useSyncExternalStore(subscribe, isPlaying, () => false);
 }
 
-/** Hands the page over: hides the intro and unlocks scrolling. */
+/** Hands the page over: hides the intro for the rest of the visit. */
 export function endIntro() {
   delete document.documentElement.dataset.intro;
   listeners.forEach((l) => l());
 }
 
-/** Any tap, click, key or scroll attempt calls onSkip, while active. */
-export function useSkipOnInput(active: boolean, onSkip: () => void) {
-  useEffect(() => {
-    if (!active) return;
-    const events = ["pointerdown", "keydown", "wheel", "touchmove"] as const;
-    events.forEach((e) => window.addEventListener(e, onSkip, { passive: true }));
-    return () => events.forEach((e) => window.removeEventListener(e, onSkip));
-  }, [active, onSkip]);
-}
-
 /** The best frames (5★), in display order. */
 export const featuredPhotos: Photo[] = photos.filter((p) => p.featured);
-
-/** A featured frame that suits the screen's orientation, preferring the ids given. */
-export function introPhoto(portrait: boolean, prefer: string[] = []): Photo | undefined {
-  const fits = (p: Photo) => (portrait ? p.aspectRatio < 1 : p.aspectRatio > 1);
-  const preferred = prefer.map((id) => photos.find((p) => p.id === id)).find((p) => p && fits(p));
-  return preferred ?? featuredPhotos.find(fits) ?? featuredPhotos[0];
-}
-
-/** Resolves once an image URL has loaded, or rejects on error or after a timeout. Uses
- * the load event rather than decode(), which stalls in background tabs. */
-export function preloadImage(src: string, timeoutMs = 2500): Promise<void> {
-  return new Promise((resolve, reject) => {
-    const img = new Image();
-    const timer = setTimeout(() => reject(new Error("timeout")), timeoutMs);
-    img.onload = () => {
-      clearTimeout(timer);
-      resolve();
-    };
-    img.onerror = () => {
-      clearTimeout(timer);
-      reject(new Error(`could not load ${src}`));
-    };
-    img.src = src;
-  });
-}

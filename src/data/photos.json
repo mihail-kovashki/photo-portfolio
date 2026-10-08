@@ -3213,84 +3213,6 @@
     "rating": 4
   },
   {
-    "id": "cesky-krumlov-26-dscf7465",
-    "series": "Český Krumlov 26",
-    "fileNumber": "DSCF7465",
-    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7465.bdd54e8a.jpg",
-    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7465.e6d1c3cc.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQG/8QAIhABAQACAQEJAAAAAAAAAAAAAQIABBEFAxITISMxQVFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAXEQADAQAAAAAAAAAAAAAAAAAAAhJR/9oADAMBAAIRAxEAPwAq65tNBXYa5PHNeouVHVpqSp1++PwWA/nOY7xLmKCvc88SVNaEeH7MnbaCVw//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/2000s",
-    "iso": "ISO 500",
-    "focalLength": "35mm",
-    "profile": "Classic Color · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -0.5,
-      "shadow": -2,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -2,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "5300K (R:+0, B:-6)",
-      "wbShift": [
-        0,
-        -6
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-07"
-  },
-  {
-    "id": "cesky-krumlov-26-dscf7468",
-    "series": "Český Krumlov 26",
-    "fileNumber": "DSCF7468",
-    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7468.106fd7d2.jpg",
-    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7468.d5911a69.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQG/8QAJBAAAQMDAgcBAAAAAAAAAAAAAQIDBAAFERIhIjEyQVFjodH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERAhL/2gAMAwEAAhEDEQA/AJrRHCYqFOuoOvBCSrkPNJqca1cLsNI7A4zWaTcmpLrbUdkR1Z6gg/tJGC6rcXKNv7QPhFBacgeM2n//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/2200s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Classic Color · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -0.5,
-      "shadow": -2,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -2,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "5300K (R:+0, B:-6)",
-      "wbShift": [
-        0,
-        -6
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-07"
-  },
-  {
     "id": "cesky-krumlov-26-dscf7469",
     "series": "Český Krumlov 26",
     "fileNumber": "DSCF7469",
@@ -3327,7 +3249,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-07"
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "churches",
+      "palaces-and-castles"
+    ],
+    "rating": 4
   },
   {
     "id": "cesky-krumlov-26-dscf7473",
@@ -3366,124 +3294,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-07"
-  },
-  {
-    "id": "cesky-krumlov-26-dscf7481",
-    "series": "Český Krumlov 26",
-    "fileNumber": "DSCF7481",
-    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7481.f485a094.jpg",
-    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7481.4c0158fe.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAID/8QAJRAAAgEDAgUFAAAAAAAAAAAAAQIDAAQREiEFExQiMTJBYYGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAYEQADAQEAAAAAAAAAAAAAAAAAAhESAf/aAAwDAQACEQMRAD8AuKzjWRUWRQGfA+Fx5/dqBcx2vUScyB2cNgkMd6yueIx34XQWidfV3YBz75owvo4hoV2IH3UdNILiLqn/2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/2200s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Classic Color · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -0.5,
-      "shadow": -2,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -2,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "5300K (R:+0, B:-6)",
-      "wbShift": [
-        0,
-        -6
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-07"
-  },
-  {
-    "id": "cesky-krumlov-26-dscf7488",
-    "series": "Český Krumlov 26",
-    "fileNumber": "DSCF7488",
-    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7488.3f016c52.jpg",
-    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7488.0800d45b.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAIG/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIDAAQREiFxBjFhodH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAA//EABYRAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEQMRAD8AYt5b2MYypdpGyADz8qB1daKNMlpdqw2ICg491np7mOUKxEiOpONL7d+KHIVZyxkkyfNTFiZv/9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1500s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Classic Color · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -0.5,
-      "shadow": -2,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -2,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "5300K (R:+0, B:-6)",
-      "wbShift": [
-        0,
-        -6
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-07"
-  },
-  {
-    "id": "cesky-krumlov-26-dscf7492",
-    "series": "Český Krumlov 26",
-    "fileNumber": "DSCF7492",
-    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7492.f1451e41.jpg",
-    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7492.116d8ce9.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBv/EACIQAAEDAwMFAAAAAAAAAAAAAAECBBEAAzEFBhITIVGx4f/EABUBAQEAAAAAAAAAAAAAAAAAAAED/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oADAMBAAIRAxEAPwBre5XaxluYySn7VzuFwhA52m6vJCiJ91ltPg21kgTGY70HJNrUOmgkIGBkVLWQL//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1900s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Classic Color · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -0.5,
-      "shadow": -2,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -2,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "5300K (R:+0, B:-6)",
-      "wbShift": [
-        0,
-        -6
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-07"
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "streets",
+      "palaces-and-castles"
+    ],
+    "rating": 4
   },
   {
     "id": "cesky-krumlov-26-dscf7498",
@@ -3522,7 +3339,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-07"
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "city-from-above"
+    ],
+    "rating": 4
   },
   {
     "id": "cesky-krumlov-26-dscf7511",
@@ -3561,46 +3383,13 @@
       "iso": "ISO 640",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-07"
-  },
-  {
-    "id": "cesky-krumlov-26-dscf7519",
-    "series": "Český Krumlov 26",
-    "fileNumber": "DSCF7519",
-    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7519.c5cd8989.jpg",
-    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7519.f4257f84.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAIF/8QAHxAAAgEEAgMAAAAAAAAAAAAAAQIEAAMRIQYSFFFT/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABgRAQADAQAAAAAAAAAAAAAAAAEAAhFB/9oADAMBAAIRAxEAPwAfKIMKPLxakdHZhm31OBobJrL8JfvR5MsyJDXLjdmKjZ3UrNvKoUEED3QytsAitOz/2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/1.4",
-    "shutterSpeed": "1/34s",
-    "iso": "ISO 400",
-    "focalLength": "23mm",
-    "profile": "Reggie's Portra · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "Auto (DR200)",
-      "highlight": -1,
-      "shadow": -1,
-      "color": 2,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": 0,
-      "grainEffect": "Weak, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "Auto (R:+2, B:-4)",
-      "wbShift": [
-        2,
-        -4
-      ],
-      "iso": "ISO 400",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-07"
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "palaces-and-castles",
+      "interiors"
+    ],
+    "rating": 4
   },
   {
     "id": "cesky-krumlov-26-dscf7523",
@@ -3639,46 +3428,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-07"
-  },
-  {
-    "id": "cesky-krumlov-26-dscf7529",
-    "series": "Český Krumlov 26",
-    "fileNumber": "DSCF7529",
-    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7529.4c7ef2b2.jpg",
-    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7529.6232f471.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAP/xAAhEAABAwQBBQAAAAAAAAAAAAABAAIRAwQFMSETIiNCkf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQACA//aAAwDAQACEQMRAD8AuzPXw4fQoCDz3HSPe5/Ig+O1pAETuSR9QOq9tR0O2DKRu2LvYuMkKd2kpzG//9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/6.4",
-    "shutterSpeed": "1/2200s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Classic Color · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -0.5,
-      "shadow": -2,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -2,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "5300K (R:+0, B:-6)",
-      "wbShift": [
-        0,
-        -6
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-07"
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "city-from-above"
+    ],
+    "rating": 4
   },
   {
     "id": "cesky-krumlov-26-dscf7576",
@@ -3717,7 +3472,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-07"
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "waterfront",
+      "churches"
+    ],
+    "rating": 3
   },
   {
     "id": "cesky-krumlov-26-dscf7579",
@@ -3756,7 +3517,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-07"
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "palaces-and-castles",
+      "people"
+    ],
+    "rating": 3
   },
   {
     "id": "cesky-krumlov-26-dscf7586",
@@ -3795,46 +3562,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-07"
-  },
-  {
-    "id": "cesky-krumlov-26-dscf7591",
-    "series": "Český Krumlov 26",
-    "fileNumber": "DSCF7591",
-    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7591.cce86091.jpg",
-    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7591.03446ddb.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMG/8QAIRAAAQQCAQUBAAAAAAAAAAAAAQIDBBEABSEGEjFBocH/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAMAwEAAhEDEQA/AIQ+oNkXmUPGO53GjwPzGbHfTIoBSw2U3RsHn7mehiloPseMdIcUqMsFRIydSMf/2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1600s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Classic Color · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -0.5,
-      "shadow": -2,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -2,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "5300K (R:+0, B:-6)",
-      "wbShift": [
-        0,
-        -6
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-07"
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "streets"
+    ],
+    "rating": 4
   },
   {
     "id": "cesky-krumlov-26-dscf7593",
@@ -3873,7 +3606,14 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-07"
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "waterfront",
+      "palaces-and-castles",
+      "flowers"
+    ],
+    "rating": 4
   },
   {
     "id": "cesky-krumlov-26-dscf7602",
@@ -3912,85 +3652,14 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-07"
-  },
-  {
-    "id": "cesky-krumlov-26-dscf7604",
-    "series": "Český Krumlov 26",
-    "fileNumber": "DSCF7604",
-    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7604.0dd4770d.jpg",
-    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7604.75fcd8a0.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAED/8QAJRAAAgEDAQgDAAAAAAAAAAAAAQIRAAMEBRITFCExMzRBUXGh/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABYRAAMAAAAAAAAAAAAAAAAAAAACEf/aAAwDAQACEQMRAD8Aq6vmMvcsWz8bE1nkaxnIrOj2GVeg3fM/tCfyFWBHDqYj3FHzL1xMkhGIEgQPugrCRD//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1900s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Classic Color · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -0.5,
-      "shadow": -2,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -2,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "5300K (R:+0, B:-6)",
-      "wbShift": [
-        0,
-        -6
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-07"
-  },
-  {
-    "id": "cesky-krumlov-26-dscf7611",
-    "series": "Český Krumlov 26",
-    "fileNumber": "DSCF7611",
-    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7611.07434ae1.jpg",
-    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7611.e6f4896c.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQMFBv/EACQQAAEDAgQHAAAAAAAAAAAAAAECAxEABBIVIUEFIzFhk6HR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREC/9oADAMBAAIRAxEAPwCnnlonTA9O/LmPdNza0ImXPEr5WFZulgnAsHqIOkTvRPEXwYLTSu5OpqVYzJ//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1600s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Classic Color · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -0.5,
-      "shadow": -2,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -2,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "5300K (R:+0, B:-6)",
-      "wbShift": [
-        0,
-        -6
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-07"
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "waterfront",
+      "palaces-and-castles",
+      "people"
+    ],
+    "rating": 4
   },
   {
     "id": "seoul-25-dscf2062",
@@ -14686,6 +14355,771 @@
     "tags": [
       "churches",
       "interiors"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7490",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7490",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7490.c39ed4e0.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7490.0222bb55.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBv/EACEQAAIBAwQDAQAAAAAAAAAAAAECAwAREgQFEzEhQXHB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREh/9oADAMBAAIRAxEAPwBm3azg25YZGUCdAqezciw+dVSDyjJ9wijboozgEW8VmNNMxSJsrcZBW37QzyvJPI+IGTFrL0LmpnYNlP/Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/1100s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "streets",
+      "churches"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7526",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7526",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7526.86219000.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7526.54ec0de7.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAb/xAAiEAACAgEEAQUAAAAAAAAAAAABAgMEAAUREiEiFTFxgbH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABgRAAMBAQAAAAAAAAAAAAAAAAABEgIR/9oADAMBAAIRAxEAPwA9LUJA+899y248JEAHePs3LK1XkSRBxXkSV9vkZPU4k9TC8fEP0PvKN4kkoagrqCNj+ZNTrgiypbP/2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/6.4",
+    "shutterSpeed": "1/2500s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "palaces-and-castles",
+      "city-from-above"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7528",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7528",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7528.bcef61c1.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7528.73b53088.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAgT/xAAiEAACAQQCAQUAAAAAAAAAAAABAgMAERIhBAVBEzFRYYH/xAAVAQEBAAAAAAAAAAAAAAAAAAACBP/EABcRAQADAAAAAAAAAAAAAAAAAAABEUH/2gAMAwEAAhEDEQA/AJh1nGjjykDFV8M1j+fJqYejDlNDd1IAOahhfevqkoDcdHO2eXBm82t7U+zRYua8cahUUaUDQqY5rH//2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/1900s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "city-from-above",
+      "waterfront"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7533",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7533",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7533.229cb91b.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7533.18e13d09.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAeEAACAgIDAQEAAAAAAAAAAAABAgMRAAUEEiFhcf/EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oADAMBAAIRAxEAPwAzsOYAix7CU34KJJx12GxCec4v1JU2gOQGJBriwWmsGx+YMUsjiTs5PVvPmT6kwFy//9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/1900s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "city-from-above",
+      "churches"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7537",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7537",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7537.4b8591d0.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7537.7503b388.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwX/xAAfEAEAAgICAgMAAAAAAAAAAAABAhEAAwQSITFywfD/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIRAxEAPwCRp1xIhCcVrxF/XiPE1reymT7ewYb2luISnFsFQvxdZRjwdJEHa38g+8CjKNF//9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/1.4",
+    "shutterSpeed": "1/34s",
+    "iso": "ISO 640",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 640",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "palaces-and-castles",
+      "interiors",
+      "looking-up"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7542",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7542",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7542.ffe00163.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7542.0b4f25dc.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEF/8QAIRAAAgICAgEFAAAAAAAAAAAAAQIDEQAEBRMhIjFBcaH/xAAVAQEBAAAAAAAAAAAAAAAAAAACBP/EABgRAAIDAAAAAAAAAAAAAAAAAAABAiJR/9oADAMBAAIRAxEAPwCLy2wCRHuNfwAFN/mLLy3JRx2s0LePdkqszF9Cda+FYWfusLXPbsTCQBwGFBhdZOpNirh//9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/1900s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "city-from-above"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7562",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7562",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7562.f444e070.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7562.52d77d10.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAABP/EACEQAAIBAwMFAAAAAAAAAAAAAAECAwAEEQUSUSExMmFx/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABgRAAIDAAAAAAAAAAAAAAAAAAABAhES/9oADAMBAAIRAxEAPwAkdmi24Zn8+qezxR2tI1OHI3dz9o66wUsbKOPLNAxkY8kmgTzNNO8qk7WORk0NQdidH//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/2.0",
+    "shutterSpeed": "1/140s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "churches",
+      "interiors"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7567",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7567",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7567.95d1dce3.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7567.5bf55c1b.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgEF/8QAJBAAAgICAQEJAAAAAAAAAAAAAQIDEQAEIUEFEhMUIzEyUWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AL2RKEhZVmCOD6asPkL9vzGkECIBNLEJDywY82eczgve2PEWqU2tEYNvT81stMzMC1dB0FfeTEf/2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/1400s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "streets"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7578",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7578",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7578.709a3ab0.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7578.862bff20.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAF/8QAIhAAAgEDAwUBAAAAAAAAAAAAAQIDAAQREiExBRVBQmGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQT/xAAWEQADAAAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/AFXXVphs1zIzc6Q+P2i9xt/aaQN55NYEgkDpqcIM7g7nFSHCjN2w+BaldGs//9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.0",
+    "shutterSpeed": "1/850s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "waterfront",
+      "palaces-and-castles",
+      "people"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7584",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7584",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7584.921f9a21.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7584.86e9353f.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAP/xAAgEAACAQMEAwAAAAAAAAAAAAABAhEAAwQFEiGBBhMx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAMAwEAAhEDEQA/AFNqeJill9gLqJKg8VB/I1ZiltFRomWaY6omUxtgbABP3gUG7Fyd4B6qIrOF/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/6.4",
+    "shutterSpeed": "1/2500s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "streets",
+      "people"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7587",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7587",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7587.ad72e27d.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7587.6c837bae.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFBv/EAB8QAAICAgEFAAAAAAAAAAAAAAECAxEABCESMWKR8P/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAXEQEBAQEAAAAAAAAAAAAAAAABAgAD/9oADAMBAAIRAxEAPwAmpvxtH1bbmOaMGwi2H8h9xkjQnVdRFscE17OMrMdWOQyLYoEEGyO95mhsMtgE1ZwEbM/KiFd//9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/6.4",
+    "shutterSpeed": "1/2000s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "streets",
+      "churches"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7589",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7589",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7589.d84dac63.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7589.1d322239.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQIE/8QAIBAAAgEDBAMAAAAAAAAAAAAAAQIDAAQSBRETMRShsf/EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEhEf/aAAwDAQACEQMRAD8APgZi/L5twrqwZWUEncdequ5n1a8kwjvLx8OiTj8pSGGISqAg2yFaLqGNVAC7Dkap3KJLYf/Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/850s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "waterfront"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7595",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7595",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7595.64537456.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7595.9866ba97.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFBv/EACIQAAIABQMFAAAAAAAAAAAAAAECAAMEBRESITEUIlGB4f/EABUBAQEAAAAAAAAAAAAAAAAAAAED/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERIUH/2gAMAwEAAhEDEQA/AF7Pf5vXNIdSZLk6VO+j5FGbfMIxp6cTH2wC2PcZm19tRMKkgrxvxB60lpTZPiJR8Gq6j//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/1900s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "waterfront",
+      "palaces-and-castles"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7598",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7598",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7598.fdf87d1b.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7598.b459dd08.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBv/EACEQAAIBAwMFAAAAAAAAAAAAAAECAwAEEQUSYQYhMUFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAP/xAAYEQACAwAAAAAAAAAAAAAAAAAAUQERIf/aAAwDAQACEQMRAD8ATpfUm+3RLhC0ijG4++SavudegiUoApkChsnIX5yaysTFLeMrgEnHijkZmXaT2AqdSxiP/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/2000s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "waterfront",
+      "palaces-and-castles"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7603",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7603",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7603.78c87f43.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7603.a3d5319d.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIEBv/EACIQAAIABQMFAAAAAAAAAAAAAAECAAMEERIFIWEGMUKRsf/EABUBAQEAAAAAAAAAAAAAAAAAAAED/8QAGBEAAgMAAAAAAAAAAAAAAAAAABEBAkH/2gAMAwEAAhEDEQA/AL06mpnp1fEBz4ZfdoYa1OYXSgLKexEwWMZFsKRxMBDqb4m2w4gjVQRdhc8Gw9RB2FRp/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/1100s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "city-from-above",
+      "waterfront",
+      "palaces-and-castles"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7605",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7605",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7605.f3f7cbf1.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7605.28799aa8.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIEBv/EACQQAAIBAgQHAQAAAAAAAAAAAAECEQADBAUSYQYTISIxM0Gh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAWEQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhEDEQA/ADb4kW7PLw+uPPfFM+c3yfXh1XdiTWfymGe2hA06k6RvVCKDEj635NRdJMyN/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/2000s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "city-from-above",
+      "palaces-and-castles"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "cesky-krumlov-26-dscf7609",
+    "series": "Český Krumlov 26",
+    "fileNumber": "DSCF7609",
+    "displayUrl": "/photos/display/cesky-krumlov-26-dscf7609.6854eaf4.jpg",
+    "thumbUrl": "/photos/thumb/cesky-krumlov-26-dscf7609.b618ab05.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIRAAAwACAQMFAAAAAAAAAAAAAQIDBBEAEiFBBRMxUWH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABcRAAMBAAAAAAAAAAAAAAAAAAABIRH/2gAMAwEAAhEDEQA/AETy+nHW87wIfYUhTM7HjsSPP1zDpMtRjkZtTYnb9LEDfB4ebnQeTWf3JFyGQoNINfP5ytPVAaMUrIL42O/J8agkP//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.0",
+    "shutterSpeed": "1/800s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-07",
+    "place": "cesky-krumlov-26",
+    "tags": [
+      "palaces-and-castles",
+      "people"
     ],
     "rating": 4
   }

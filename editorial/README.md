@@ -210,7 +210,7 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
    `index.ts`), then the tags file `passes/v2/<album>.tags.json` (format in the header of
    [`scripts/keyword.mjs`](../scripts/keyword.mjs)). Run `keyword.mjs` without `--write`
    first and show me the tags: they're the one thing I haven't seen in the log. Then
-   `--write`, `npm run ingest -- "<source folder>" "<Place 24>" --keyworded` once per
+   `--write`, `npm run ingest -- "<full path to the source folder>" "<Place 24>" --keyworded` (a path relative to `portfolio-source/` fails) once per
    place, check that every chapter entry was ingested, commit, push, and update the vault.
 
 **Sessions.** Images stay in the conversation, so a long session gets expensive fast and

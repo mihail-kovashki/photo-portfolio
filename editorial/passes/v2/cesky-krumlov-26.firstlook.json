@@ -1,0 +1,59 @@
+{
+ "album": "Czechia 2026: Český Krumlov",
+ "date": "2026-10-08",
+ "source": "Czechia 26/selects/Cesky Krumlov (96 from the 7 Jul cull)",
+ "places": {
+  "cesky-krumlov-26": "7 Jul 2026, Český Krumlov, one day (09:54–17:29): the town, the castle and its tower, the river"
+ },
+ "instagram": {},
+ "rejects": {
+  "1": [],
+  "2": ["7474", "7477", "7486", "7494", "7500", "7505", "7527", "7534", "7557", "7584", "7585", "7592"]
+ },
+ "groups": [
+  ["7476", "7477", "7584"],
+  ["7611", "7493"],
+  ["7498", "7499", "7542"],
+  ["7511", "7508"],
+  ["7522", "7530"],
+  ["7533", "7534"],
+  ["7604", "7546"],
+  ["7602", "7555", "7557", "7580"],
+  ["7564", "7622"],
+  ["7469", "7566"],
+  ["7598", "7597"],
+  ["7609", "7496"],
+  ["7613", "7612"],
+  ["7553", "7552"]
+ ],
+ "shortlist": [
+  "7465", "7467", "7468", "7469", "7473", "7476", "7481", "7482", "7483", "7488", "7490",
+  "7491", "7492", "7493", "7496", "7498", "7503", "7508", "7511", "7514", "7516", "7519",
+  "7522", "7523", "7525", "7526", "7528", "7529", "7533", "7535", "7536", "7537", "7540",
+  "7541", "7542", "7546", "7549", "7550", "7553", "7554", "7555", "7562", "7564", "7566",
+  "7567", "7568", "7575", "7576", "7578", "7579", "7586", "7587", "7589", "7591", "7593",
+  "7595", "7598", "7599", "7602", "7603", "7604", "7605", "7609", "7611", "7612", "7613",
+  "7616", "7619", "7622"
+ ],
+ "notes": {
+  "instagram": "No Český Krumlov post; the trip's three posts are Kutná Hora (DbklSq9Ags-) and Prague (DbK67DCgp8F, DbBIUk8giGZ). Prior evidence is the 20 frames on the site, all shortlisted.",
+  "7465": "the classic view; the lamp post right of centre cuts the town: check at 1000px",
+  "7503": "a couple from behind in the castle garden: who?",
+  "7590": "St Vitus with green scaffold netting: left out of the shortlist; 7605 and 7604 show the church without it",
+  "7499": "left out for 7498 (the arch vertical, prior) and 7542 (13:58, clouds)",
+  "7552": "left out for 7553 (the roses with the café garden behind)",
+  "7489": "left out: half the frame is empty cobbles",
+  "7480": "left out for 7481 (the same street, the tower on its rock)",
+  "7570": "left out: a white van in the Budějovice Gate",
+  "7580": "left out for 7602 and 7555 (the same view, boats landing)",
+  "7512": "left out: the auditorium wall, 7516 says it better",
+  "7524": "left out: the courtyard from the tower, pale sky; 7525 is the better courtyard",
+  "7560": "left out: the rail across the bottom, grey sky",
+  "7581": "left out: an ordinary street",
+  "7583": "left out: half the frame a blank wall and a no-entry sign",
+  "7615": "left out: Nepomuk behind a wooden railing",
+  "7597": "left out for 7598",
+  "7530": "left out for 7522",
+  "7534": "left out for 7533"
+ }
+}

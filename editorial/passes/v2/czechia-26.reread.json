@@ -1,0 +1,112 @@
+{
+ "album": "Czechia 2026",
+ "kind": "re-read of the three ratings files against taste.md's new rules (How to critique; light by its effect; composition before subject). Nothing changed on the site or in the ratings files.",
+ "date": "2026-10-08",
+ "method": "All 290 close-look critiques read (Kutná Hora 58, Český Krumlov 70, Prague 162). A keyword count, so mentions rather than faults: 79 name the light by its category (white, grey, pale or flat sky; blue, gold or teal), 46 value a frame for what it shows ('a record', 'documentary', 'explains', 'complete', 'classic'), 27 mark a quiet frame down ('plain', 'quiet', 'nothing to hold'). 28 frames where those reasons seemed to decide the rating were viewed again at 1400px.",
+ "changes": [
+  {
+   "n": "7012",
+   "place": "kutna-hora-26",
+   "was": 3,
+   "now": 4,
+   "on_site": false,
+   "reason": "Rated 3 for the white sky over half the right. That sky is the frame's open half: the buttress is a hard vertical wall of stone at left, the valley and its horizon open beside it, and the paths curve away at the bottom. The soft overcast suits the scale, and the monk statue sits at the seam between the two. A candidate for St Barbara's."
+  },
+  {
+   "n": "7105",
+   "place": "kutna-hora-26",
+   "was": 3,
+   "now": "3, candidate",
+   "on_site": "parked",
+   "reason": "Rated only as 'clean', with a road sign at the corner. The tower stands on the right third and the apse's dark gables rise to it from bottom left, a diagonal from mass to point; the cirrus gives the sky texture rather than leaving it blank. The road-sign tip crops out. Worth a place in The old town over 7062."
+  },
+  {
+   "n": "7503",
+   "place": "cesky-krumlov-26",
+   "was": 3,
+   "now": 4,
+   "on_site": false,
+   "reason": "Marked down for 'the bottom third is empty gravel'. The gravel, dappled with shade, is the lead-in: the clipped domes and globe lamps repeat down both sides to the fountain, and the couple walk at the vanishing point. Symmetry and rhythm, and the strongest garden frame of the day. Strangers from behind. A candidate for The castle, which was cut to five."
+  },
+  {
+   "n": "7482",
+   "place": "cesky-krumlov-26",
+   "was": 3,
+   "now": "3, candidate",
+   "on_site": false,
+   "reason": "'Quiet, little to hold the eye.' The lane's walls converge; the shadow edge runs down the cobbles on a diagonal to the bend, and the lane turns out of sight. Light and line do the work. Parked cars at the end are the blemish. A candidate for The old town."
+  },
+  {
+   "n": "6762",
+   "place": "prague-26",
+   "was": 3,
+   "now": 4,
+   "on_site": false,
+   "reason": "'Flat light, not as alive as 6568.' The walls and the striped pavements converge hard on the sgraffito arch, which frames the lane beyond: a frame within a frame on a strong symmetric perspective. The light is even daylight under broken cloud, not flat. The car at the far end is tiny. A candidate for Malá Strana."
+  },
+  {
+   "n": "6740",
+   "place": "prague-26",
+   "was": 3,
+   "now": 4,
+   "on_site": false,
+   "reason": "Marked down because 'the figure is small; it reads as an aside'. Being small is the point: the vaulted tunnel is dark, the lamps step down in size toward the bright doorway, and the man reading sits framed in the light at the end. The motorbike balances the right. A candidate for Malá Strana."
+  },
+  {
+   "n": "6958",
+   "place": "prague-26",
+   "was": 3,
+   "now": "3, candidate",
+   "on_site": false,
+   "reason": "Marked down for 'the road surface is a big dull area'. The dark road is the negative space the arcade needs: lit piers and two lamps step into depth on a diagonal, with the lane markings echoing it and a corner of blue sky. A candidate for Malá Strana at night."
+  },
+  {
+   "n": "7457",
+   "place": "prague-26",
+   "was": 3,
+   "now": "toss-up with 6853",
+   "on_site": false,
+   "reason": "Lost to 6853 because 'the light is flat; 6853 has the sky'. Overcast suits the ochre wall and keeps the geraniums saturated. The lamp post and the stair rail's diagonal layer the gable without covering it. 6853 is the cleaner graphic and 7457 the more composed. Keep both, as the README allows for a toss-up."
+  },
+  {
+   "n": "6838",
+   "place": "prague-26",
+   "was": 3,
+   "now": "3, candidate",
+   "on_site": false,
+   "reason": "'A good subject in grey evening light; the wheel is a dark mass.' The wheel's dark mass frames the left. The boardwalk and the canal curve away together, and the sprite sits where they meet. Soft light suits the wet wood. The boardwalk is heavy at bottom left. A candidate for Malá Strana, Čertovka's alternative to 7392."
+  },
+  {
+   "n": "6432",
+   "place": "prague-26",
+   "was": 3,
+   "now": "3, toss-up with 6422",
+   "on_site": false,
+   "reason": "Called 'clean and correct; documentary'. Plečnik's church square-on is pure form: the paving plane, tiny walkers for scale, and the red benches as the one note of colour. 6422 has the life, 6432 the form; the critique said so and still marked it down."
+  }
+ ],
+ "reason_was_wrong_rating_holds": {
+  "7469": "Holds at 4 on its leading lines: the roofs climb diagonally from the bottom to the towers. But St Jošt's dome overlaps the castle tower's base, a merger under the new rule. 7566 has the same overlap.",
+  "7566": "'The sky is the only change' undersells it: the heavy cloud gives the view the weight that 7469's blue lacks. Still 3, because of the merger above and the dark roofs at the bottom.",
+  "7511": "Rated on rarity ('a rare thing, cleanly shown'). It holds at 4 for the composition: symmetric perspective down the stage wings, the dark proscenium framing the lit stage, two red costumes as the focal point. Heads at the bottom edge.",
+  "7526": "'Explains the castle in one frame' is a subject reason. It holds on the dormered roof, a strong diagonal leading into the castle's mass.",
+  "7605": "'The most complete view of the town' is a subject reason. It holds on the three verticals spaced across the frame (castle tower, St Jošt, St Vitus) over the roof texture. No path leads through the roofs; a weaker 4 than 7542.",
+  "7366": "'The view that says this is Prague' is a subject reason. It holds on St Nicholas's dome and tower anchoring the left against the bridge tower far right, with the roof texture between. The ivy wing and trees crowd the bottom.",
+  "7081": "Called 'a postcard'. The fountain's ring is a strong foreground ellipse under the centred tower, framed by trees either side. Static and centred, umbrellas at mid-right: a 3 for that, not for being a postcard.",
+  "7062": "'A record of a fine facade.' The gable's triangle over the two arches is a strong shape; the white house cuts in at left and a lamp at right. 3 holds.",
+  "6823": "'Emptier and flatter; the noon frame has the life.' Emptiness isn't the fault; the cyan cast in the shade and the blank pale slot of sky are. 3 holds.",
+  "7099": "'Pretty and plain.' The flowers run as a band against the stone, and the lawn's curve is a good line, but there's no point to rest on, and the pole and window cut the top. 3 holds."
+ },
+ "held_up": [
+  "6977",
+  "7542",
+  "6782",
+  "6674",
+  "6874",
+  "6688",
+  "6836",
+  "6966"
+ ],
+ "malá_strana": "The chapter is six and was the weak one at review. Four frames here (6762, 6740, 6958, 6838) and 7457 beside 6853 join the 13 the re-cull put back in selects/. Enough to reopen the chapter rather than edit it.",
+ "not_looked_at": "The other 262 close-look critiques weren't viewed again. The interiors weren't looked at, and only one frame each of the gardens (6782) and the Old Town (6874); their critiques already read more on composition."
+}

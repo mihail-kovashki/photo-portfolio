@@ -36,7 +36,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2026-07-02"
+    "dateTaken": "2026-07-02",
+    "place": "prague-26",
+    "tags": [
+      "streets"
+    ],
+    "rating": 3
   },
   {
     "id": "prague-26-dscf6345",
@@ -75,46 +80,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2026-07-02"
-  },
-  {
-    "id": "prague-26-dscf6367",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6367",
-    "displayUrl": "/photos/display/prague-26-dscf6367.6954d001.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6367.b67825b9.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEG/8QAIhAAAgIBAQkAAAAAAAAAAAAAAQIAEQMGBAUhMTJBUmHR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAMAwEAAhEDEQA/AGJq7dddOYmvEfZG1ZsN2uDIfdiYWg+Ni3EjlCqxNWe8gVjC/9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/2200s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.67 EV"
-    },
-    "dateTaken": "2026-07-02"
+    "dateTaken": "2026-07-02",
+    "place": "prague-26",
+    "tags": [
+      "churches",
+      "looking-up"
+    ],
+    "rating": 3
   },
   {
     "id": "prague-26-dscf6422",
@@ -153,7 +125,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-02"
+    "dateTaken": "2026-07-02",
+    "place": "prague-26",
+    "tags": [
+      "churches"
+    ],
+    "rating": 3
   },
   {
     "id": "prague-26-dscf6430",
@@ -192,7 +169,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2026-07-02"
+    "dateTaken": "2026-07-02",
+    "place": "prague-26",
+    "tags": [
+      "flowers"
+    ],
+    "rating": 3
   },
   {
     "id": "prague-26-dscf6442",
@@ -231,163 +213,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2026-07-02"
-  },
-  {
-    "id": "prague-26-dscf6453",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6453",
-    "displayUrl": "/photos/display/prague-26-dscf6453.d8ad8897.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6453.bff11ace.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQEC/8QAHBABAAIDAQEBAAAAAAAAAAAAAQIDABEiBRJB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQT/xAAXEQADAQAAAAAAAAAAAAAAAAAAAQMS/9oADAMBAAIRAxEAPwAqjwr2yUeYED6JG+h/M1Hzb6L7JFkThCKOtJj0OQ0GS1WKOSOg5R//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/3.6",
-    "shutterSpeed": "1/500s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.67 EV"
-    },
-    "dateTaken": "2026-07-02"
-  },
-  {
-    "id": "prague-26-dscf6484",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6484",
-    "displayUrl": "/photos/display/prague-26-dscf6484.3543d68f.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6484.fc7ad85f.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEG/8QAIhAAAgEDAgcAAAAAAAAAAAAAAQIDABEhBUEEBhITFVFx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABkRAAEFAAAAAAAAAAAAAAAAAAIAAQMREv/aAAwDAQACEQMRAD8AkaKyNICO2EVwfdzbFN8fLsot9FZXS9ZSGBYpo+oKAAb5FNPMzKxUcKjAGwNzkbURkK30iUQ02V//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/800s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-02"
-  },
-  {
-    "id": "prague-26-dscf6500",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6500",
-    "displayUrl": "/photos/display/prague-26-dscf6500.b05bf878.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6500.22a43c8b.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFBv/EACAQAAIBAwQDAAAAAAAAAAAAAAEDAgAEBRESIlEhMUH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABgRAQADAQAAAAAAAAAAAAAAAAEAETFB/9oADAMBAAIRAxEAPwBXFPxL8LBN0yDCmG4hp5R7A++6l5CWMs1hVteOuN3LYs6RHg6anus9RU0rsSjk/9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/400s",
-    "iso": "ISO 500",
-    "focalLength": "35mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-02"
-  },
-  {
-    "id": "prague-26-dscf6506",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6506",
-    "displayUrl": "/photos/display/prague-26-dscf6506.9f144a14.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6506.b67f4b1b.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAG/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDBAARIjEFElFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIxEv/aAAwDAQACEQMRAD8ARssqKxVk9hrYY/czl+YvKDG7B0JBYdj8BwGLyFuWWJJLEjKg4gnrK3NIFbmdljs5KlTejjmVh//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/750s",
-    "iso": "ISO 500",
-    "focalLength": "35mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-02"
+    "dateTaken": "2026-07-02",
+    "place": "prague-26",
+    "tags": [
+      "new-architecture",
+      "looking-up"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf6528",
@@ -426,163 +258,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-02"
-  },
-  {
-    "id": "prague-26-dscf6535",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6535",
-    "displayUrl": "/photos/display/prague-26-dscf6535.fd7f97a1.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6535.eaccda1b.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgUH/8QAIRAAAgEDBAMBAAAAAAAAAAAAAQIRAAMEEhQhQQYTIrH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABcRAAMBAAAAAAAAAAAAAAAAAAABEQL/2gAMAwEAAhEDEQA/AEeV5FiLZ1ba7eB60/tZPklWybzIsIXYqD0J4pA+1KlfWRzPwSJqK+IS5IYRNQtUFT//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/14.0",
-    "shutterSpeed": "1/52s",
-    "iso": "ISO 6400",
-    "focalLength": "35mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 6400",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-02"
-  },
-  {
-    "id": "prague-26-dscf6541",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6541",
-    "displayUrl": "/photos/display/prague-26-dscf6541.8dacab1a.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6541.bdc306a6.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQF/8QAHxAAAgEEAwEBAAAAAAAAAAAAAQIDAAQRIQUSEzFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREh/9oADAMBAAIRAxEAPwCDgZvO9N1IksiBSHZUJ65rOueQnF1N4zTefdiuM/M6oFdQpUhg2fobVKzNnez+kVCsOQ//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/2.5",
-    "shutterSpeed": "1/100s",
-    "iso": "ISO 500",
-    "focalLength": "35mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-02"
-  },
-  {
-    "id": "prague-26-dscf6586",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6586",
-    "displayUrl": "/photos/display/prague-26-dscf6586.70163bca.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6586.27e0c23c.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQG/8QAIhAAAgECBgMBAAAAAAAAAAAAAQIDABEEBRIhMVETIkHw/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAP/xAAZEQACAwEAAAAAAAAAAAAAAAAAAgMRIQH/2gAMAwEAAhEDEQA/AFMLnUkuYNhwFAX037AuT+6qwySXNnI3+cVjIYplgUeVdchvrLEEEjkmnUzuVI0U4JJSqgF1msGNt6mknNsPG2Uf/9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1000s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.67 EV"
-    },
-    "dateTaken": "2026-07-03"
-  },
-  {
-    "id": "prague-26-dscf6595",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6595",
-    "displayUrl": "/photos/display/prague-26-dscf6595.7bd563d6.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6595.a380b3bf.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIhAAAgEEAQQDAAAAAAAAAAAAAQIDAAQFESESEyJRFDGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAXEQEBAQEAAAAAAAAAAAAAAAABEQAx/9oADAMBAAIRAxEAPwBk96yZJpLNkj0gYkg+eveqPJlBkrn5DO0aRoB234A9n9qWSdoFQREL1r5cfdYV8Sp2Do6qYKTNxu//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/950s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.67 EV"
-    },
-    "dateTaken": "2026-07-03"
+    "dateTaken": "2026-07-02",
+    "place": "prague-26",
+    "tags": [
+      "people",
+      "golden-hour"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf6598",
@@ -621,85 +303,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2026-07-03"
-  },
-  {
-    "id": "prague-26-dscf6635",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6635",
-    "displayUrl": "/photos/display/prague-26-dscf6635.46ab53f6.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6635.1e4ab79a.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBv/EAB4QAAICAgIDAAAAAAAAAAAAAAECAxEABAUhEhRh/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABgRAQEAAwAAAAAAAAAAAAAAAAEAERIh/9oADAMBAAIRAxEAPwB+5raQm9eQGwFUS/LN9YFdUGmlsjq1YgGsz45JHnd2l7LEi8ml3lMrHyJs3Ywuq8k5C//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/1.8",
-    "shutterSpeed": "1/90s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Copenhagen Negative · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Negative",
-      "dynamicRange": "DR400",
-      "highlight": 2.5,
-      "shadow": -2,
-      "color": 4,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Weak",
-      "colorChromeFXBlue": "Strong",
-      "whiteBalance": "5700K (R:+1, B:+1)",
-      "wbShift": [
-        1,
-        1
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-03"
-  },
-  {
-    "id": "prague-26-dscf6637",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6637",
-    "displayUrl": "/photos/display/prague-26-dscf6637.4e55a033.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6637.cb557d42.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgMF/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIDEQAEBTESYdH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQACEv/aAAwDAQACEQMRAD8AzNTUmkaKZRaVd31iBdpAKLAEGu8Ga+82vBH4PRAoj19yz8jbWHwjhk9F/9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/2.0",
-    "shutterSpeed": "1/110s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Copenhagen Negative · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Negative",
-      "dynamicRange": "DR400",
-      "highlight": 2.5,
-      "shadow": -2,
-      "color": 4,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Weak",
-      "colorChromeFXBlue": "Strong",
-      "whiteBalance": "5700K (R:+1, B:+1)",
-      "wbShift": [
-        1,
-        1
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-03"
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "streets",
+      "palaces-and-castles"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf6654",
@@ -738,7 +348,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-03"
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "churches",
+      "interiors"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf6659",
@@ -777,46 +393,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-03"
-  },
-  {
-    "id": "prague-26-dscf6670",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6670",
-    "displayUrl": "/photos/display/prague-26-dscf6670.dac763dc.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6670.39dff39b.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAC/8QAIRAAAgAFBAMAAAAAAAAAAAAAAQIAAwQREhMhMUEFUXH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABcRAQADAAAAAAAAAAAAAAAAAAEAAgP/2gAMAwEAAhEDEQA/AM60rX0w18SMyOieF+xPXUUtyjVCqwNiCDtAviqmoEt3QMxaaubL735h5ZNM2RKITkwO1uzEu1hgYVSf/9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1900s",
-    "iso": "ISO 500",
-    "focalLength": "35mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-03"
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "churches",
+      "people"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf6688",
@@ -855,46 +438,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-03"
-  },
-  {
-    "id": "prague-26-dscf6697",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6697",
-    "displayUrl": "/photos/display/prague-26-dscf6697.4d46b0b0.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6697.0d2d7e53.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAfEAACAgICAwEAAAAAAAAAAAABAgMRAAQSQSEiMUL/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABURAQEAAAAAAAAAAAAAAAAAAAAx/9oADAMBAAIRAxEAPwCBY5lWpNiOMn8rZONwZQBzifwPZjROLBHBrIqAUW+X3hS70CSMpIsHsZOSv//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1000s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-03"
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "city-from-above",
+      "waterfront"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf6704",
@@ -933,202 +483,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-03"
-  },
-  {
-    "id": "prague-26-dscf6706",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6706",
-    "displayUrl": "/photos/display/prague-26-dscf6706.4042ecf7.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6706.79c7d9e2.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAhEAACAQQBBQEAAAAAAAAAAAABAgMABBESIRNBUYGhwf/EABQBAQAAAAAAAAAAAAAAAAAAAAT/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAMAwEAAhEDEQA/AJqW6iLs5xg6kDHs/lBeydnJWLI8jgH7TIJeopiChSq5IB5ojWc7naNlKnkHahCkzL//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/1.6",
-    "shutterSpeed": "1/100s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-03"
-  },
-  {
-    "id": "prague-26-dscf6734",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6734",
-    "displayUrl": "/photos/display/prague-26-dscf6734.f7986afd.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6734.a4ea4d65.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgEF/8QAIBAAAgEEAQUAAAAAAAAAAAAAAQIDAAQREgUTMUGB0f/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAVEQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEQMRAD8AHDwxvGx3O+oGB5zn7Ume4EzhIGZQxALShSfVYEHKXdk4FqQVHfK5yacvLyvKz9ArsScBqBFkEL//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/2200s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-03"
-  },
-  {
-    "id": "prague-26-dscf6741",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6741",
-    "displayUrl": "/photos/display/prague-26-dscf6741.4fb82cf5.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6741.d89ab79a.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQP/xAAhEAACAQQBBQEAAAAAAAAAAAABAgMABAUREhMUISJBUf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAFhEBAQEAAAAAAAAAAAAAAAAAASEA/9oADAMBAAIRAxEAPwCWaysmPyLwdy6aVSNknj4+nVLLZzSqskLu8bgMGM2idj81QWc7S/vpJor/AKLOnBtISrD4CaVtM3ZWtrFAPbpoF5KfBqVJM43f/9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1600s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-03"
-  },
-  {
-    "id": "prague-26-dscf6751",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6751",
-    "displayUrl": "/photos/display/prague-26-dscf6751.105f83ca.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6751.74c3568b.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwUG/8QAIBAAAgICAgIDAAAAAAAAAAAAAQIDEQAEEiITIUGRwf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECQRL/2gAMAwEAAhEDEQA/AKjbcEURkmilbj7bsKGOuzDIoddQcSLFuB+Zi3aeRvMu07x3aqLP3iCbcrr1X4FgVknVPRcSsP/Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/950s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-03"
-  },
-  {
-    "id": "prague-26-dscf6771",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6771",
-    "displayUrl": "/photos/display/prague-26-dscf6771.1031d9fe.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6771.66817ff9.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQAD/8QAIRAAAQMDBAMAAAAAAAAAAAAAAQACAwQRIQUGIjEkcYH/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABcRAQADAAAAAAAAAAAAAAAAAAEAAlH/2gAMAwEAAhEDEQA/AKn3LO6TytP49hwNj9C2qNxue+OOjpxYnkS7r0mE2KZ2tLRcDBxhQbW2AmT/2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1250s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.67 EV"
-    },
-    "dateTaken": "2026-07-03"
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "palaces-and-castles",
+      "interiors"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf6791",
@@ -1167,46 +528,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.67 EV"
     },
-    "dateTaken": "2026-07-03"
-  },
-  {
-    "id": "prague-26-dscf6801",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6801",
-    "displayUrl": "/photos/display/prague-26-dscf6801.6b1cbaf6.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6801.8b3befd3.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFBv/EACQQAAIBAwMDBQAAAAAAAAAAAAECAwAEEQUGIRMWQVFUYYHR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAP/xAAaEQACAgMAAAAAAAAAAAAAAAAAARESEyFB/9oADAMBAAIRAxEAPwAduatE9iI55QksAwC/IZfH3VLuOy91CfnB/Kx+gWcN7dPBcMVVkwrBsEHxj1pyXa1ysrBAHUHhupjNSyRpinUf/9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/2000s",
-    "iso": "ISO 500",
-    "focalLength": "35mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-03"
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "flowers",
+      "parks-and-gardens"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf6811",
@@ -1245,7 +573,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-03"
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "churches",
+      "golden-hour"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf6844",
@@ -1284,7 +618,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-03"
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "waterfront",
+      "golden-hour"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf6853",
@@ -1323,46 +663,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-03"
-  },
-  {
-    "id": "prague-26-dscf6882",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6882",
-    "displayUrl": "/photos/display/prague-26-dscf6882.35154adc.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6882.15f5edc7.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAiEAACAQQBBAMAAAAAAAAAAAABAgMAERIhQQQFMVEicYH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABgRAAIDAAAAAAAAAAAAAAAAAAACAQMR/9oADAMBAAIRAxEAPwBGMfyVXUsEztfj39UDtsr9VMVdhYR+LWuQfP7UHoJpEY4OV0Ro8eqVOcYhjrfGqWsnSVqXJP/Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/3.6",
-    "shutterSpeed": "1/220s",
-    "iso": "ISO 125",
-    "focalLength": "35mm",
-    "profile": "Reggie's Portra · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "Auto (DR100)",
-      "highlight": -1,
-      "shadow": -1,
-      "color": 2,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": 0,
-      "grainEffect": "Weak, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "Auto (R:+2, B:-4)",
-      "wbShift": [
-        2,
-        -4
-      ],
-      "iso": "ISO 125",
-      "exposureCompensation": "+0.33 EV"
-    },
-    "dateTaken": "2026-07-03"
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "streets",
+      "golden-hour"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf6927",
@@ -1401,124 +708,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-03"
-  },
-  {
-    "id": "prague-26-dscf6959",
-    "series": "Prague 26",
-    "fileNumber": "DSCF6959",
-    "displayUrl": "/photos/display/prague-26-dscf6959.4426324f.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf6959.b64181cd.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIFBv/EAB8QAQABBAIDAQAAAAAAAAAAAAECAAMEEQUSITFRcv/EABQBAQAAAAAAAAAAAAAAAAAAAAT/xAAZEQACAwEAAAAAAAAAAAAAAAAAAQIDEzH/2gAMAwEAAhEDEQA/AMbe43IsyjCVuTJPIHqmOJzEEsOk37qtZ5AYzLz2UeunWn7QMnHTzKe/20TaxLgrGB//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/1.4",
-    "shutterSpeed": "1/34s",
-    "iso": "ISO 800",
-    "focalLength": "23mm",
-    "profile": "Reggie's Portra · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "Auto (DR200)",
-      "highlight": -1,
-      "shadow": -1,
-      "color": 2,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": 0,
-      "grainEffect": "Weak, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "Auto (R:+2, B:-4)",
-      "wbShift": [
-        2,
-        -4
-      ],
-      "iso": "ISO 800",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-03"
-  },
-  {
-    "id": "prague-26-dscf7133",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7133",
-    "displayUrl": "/photos/display/prague-26-dscf7133.f5f7b022.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7133.eed0411c.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIF/8QAIhAAAgECBQUAAAAAAAAAAAAAAQIDABEEBhIhURMjQWGS/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAAIDAAAAAAAAAAAAAAAAAAACESFB/9oADAMBAAIRAxEAPwA1zDKiHsoo9Em9E2YAWJ0p9msWIyvhntJYHbRyeajpxjZ5jq87gUNiwun/2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1600s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-05"
-  },
-  {
-    "id": "prague-26-dscf7154",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7154",
-    "displayUrl": "/photos/display/prague-26-dscf7154.7c1f3106.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7154.cca155a7.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBf/EACEQAQABAwIHAAAAAAAAAAAAAAECAAMRBjEEBRITIWGx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAAMBAQAAAAAAAAAAAAAAAAARMQEC/9oADAMBAAIRAxEAPwCsNVcYpGPZtm2WGT7RLUfM5L0zs4N5xtCFY4DBcHnBt6Kd2TC8WYuLYZI0T2jLmH//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1100s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Copenhagen Negative · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Negative",
-      "dynamicRange": "DR400",
-      "highlight": 2.5,
-      "shadow": -2,
-      "color": 4,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Weak",
-      "colorChromeFXBlue": "Strong",
-      "whiteBalance": "5700K (R:+1, B:+1)",
-      "wbShift": [
-        1,
-        1
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "-0.33 EV"
-    },
-    "dateTaken": "2026-07-05"
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "blue-hour"
+    ],
+    "rating": 3
   },
   {
     "id": "prague-26-dscf7159",
@@ -1557,241 +752,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "-0.33 EV"
     },
-    "dateTaken": "2026-07-05"
-  },
-  {
-    "id": "prague-26-dscf7189",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7189",
-    "displayUrl": "/photos/display/prague-26-dscf7189.6cf4f481.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7189.f5f83d48.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgUG/8QAIhAAAgAEBgMAAAAAAAAAAAAAAQIAAxEhBAUGEjFhIzJR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABYRAQEBAAAAAAAAAAAAAAAAAAASIf/aAAwDAQACEQMRAD8ApNqDBupG5i4YjbSlb83gnOpcpSFV6A3KreMxMPmmce3zqCCaHuDpU//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/5.6",
-    "shutterSpeed": "1/1100s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Copenhagen Negative · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Negative",
-      "dynamicRange": "DR400",
-      "highlight": 2.5,
-      "shadow": -2,
-      "color": 4,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Weak",
-      "colorChromeFXBlue": "Strong",
-      "whiteBalance": "5700K (R:+1, B:+1)",
-      "wbShift": [
-        1,
-        1
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-05"
-  },
-  {
-    "id": "prague-26-dscf7199",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7199",
-    "displayUrl": "/photos/display/prague-26-dscf7199.ef031364.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7199.a28cd734.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgED/8QAIBABAAICAgEFAAAAAAAAAAAAAQIDABEFIQQSIzGRwf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIRIf/aAAwDAQACEQMRAD8A0u5qiny6vTaO1Ja7E7/dZOS5eu9JxQke0I9Ot/Xzg+Vk53BKWzeJ+CjGVdkZRETaJhNcFmtZ/9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/4.5",
-    "shutterSpeed": "1/550s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Copenhagen Negative · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Negative",
-      "dynamicRange": "DR400",
-      "highlight": 2.5,
-      "shadow": -2,
-      "color": 4,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Weak",
-      "colorChromeFXBlue": "Strong",
-      "whiteBalance": "5700K (R:+1, B:+1)",
-      "wbShift": [
-        1,
-        1
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-05"
-  },
-  {
-    "id": "prague-26-dscf7201",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7201",
-    "displayUrl": "/photos/display/prague-26-dscf7201.c2752bf9.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7201.41448d74.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwX/xAAiEAACAQMEAgMAAAAAAAAAAAABAgQAAxEGFCIxM0FhkbH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8AeHqtZMG819ESRZtluPTfOPXdQbmo5zXCd44z6GAPypqxsKw3BIZcHjQGEc+YfVRMNf/Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/4.0",
-    "shutterSpeed": "1/600s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-05"
-  },
-  {
-    "id": "prague-26-dscf7208",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7208",
-    "displayUrl": "/photos/display/prague-26-dscf7208.58a2c046.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7208.a80d609c.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAgEAACAgIBBQEAAAAAAAAAAAABAgMRAAQhBRITFEFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAT/xAAYEQACAwAAAAAAAAAAAAAAAAAAARESIf/aAAwDAQACEQMRAD8AhQ9Hjkm3IRsIXjCMhB4exzgttfSHheNe8/RiYQLJoWeLxDRo6U6hv3JrudB//9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/2.2",
-    "shutterSpeed": "1/80s",
-    "iso": "ISO 500",
-    "focalLength": "35mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-05"
-  },
-  {
-    "id": "prague-26-dscf7221",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7221",
-    "displayUrl": "/photos/display/prague-26-dscf7221.febfff16.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7221.62a2ba9e.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQMG/8QAIRAAAgEEAgIDAAAAAAAAAAAAAQIDAAQREiExBRMiQVH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABYRAAMAAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8AmfKyC4Vki1iBzqW7GPv8pa38laPAjTSxxyEfJc9GslHc6g7kKcYHI5oaa9naZz7GXnoHApWSI//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/3.2",
-    "shutterSpeed": "1/160s",
-    "iso": "ISO 500",
-    "focalLength": "35mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-05"
-  },
-  {
-    "id": "prague-26-dscf7245",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7245",
-    "displayUrl": "/photos/display/prague-26-dscf7245.695c67f6.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7245.10c640d3.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQQF/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIAAwURBDESRHH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFhEAAwAAAAAAAAAAAAAAAAAAACFR/9oADAMBAAIRAxEAPwCIZkKAE4lx3G3NKnrXkfNTPV28ezC1212YjoSh/9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/2.0",
-    "shutterSpeed": "1/52s",
-    "iso": "ISO 1600",
-    "focalLength": "35mm",
-    "profile": "Reggie's Portra · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "Auto (DR100)",
-      "highlight": -1,
-      "shadow": -1,
-      "color": 2,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": 0,
-      "grainEffect": "Weak, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "Auto (R:+2, B:-4)",
-      "wbShift": [
-        2,
-        -4
-      ],
-      "iso": "ISO 1600",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-05"
+    "dateTaken": "2026-07-05",
+    "place": "prague-26",
+    "tags": [
+      "looking-up"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf7253",
@@ -1830,85 +796,14 @@
       "iso": "ISO 2000",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-05"
-  },
-  {
-    "id": "prague-26-dscf7268",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7268",
-    "displayUrl": "/photos/display/prague-26-dscf7268.5a0ebdbd.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7268.4dab69c3.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAgEAACAQQBBQAAAAAAAAAAAAABAgQAAxEhEgUTUWGB/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABgRAAMBAQAAAAAAAAAAAAAAAAABQQIi/9oADAMBAAIRAxEAPwCI3Tpkhh2bFy4HJ4kDR+0yHFKRUVwQwzkeNmp6yZSqALrAA5AzoUyLMZI6q7nlvO/dEb3RPEP/2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/2.0",
-    "shutterSpeed": "1/52s",
-    "iso": "ISO 2500",
-    "focalLength": "35mm",
-    "profile": "Copenhagen Negative · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Negative",
-      "dynamicRange": "DR400",
-      "highlight": 2.5,
-      "shadow": -2,
-      "color": 4,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Weak",
-      "colorChromeFXBlue": "Strong",
-      "whiteBalance": "5700K (R:+1, B:+1)",
-      "wbShift": [
-        1,
-        1
-      ],
-      "iso": "ISO 2500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-05"
-  },
-  {
-    "id": "prague-26-dscf7275",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7275",
-    "displayUrl": "/photos/display/prague-26-dscf7275.27c6d589.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7275.3e29dc04.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAgEAACAgEDBQAAAAAAAAAAAAABAgMEAAURQRITMVFx/8QAFQEBAQAAAAAAAAAAAAAAAAAABAX/xAAZEQACAwEAAAAAAAAAAAAAAAAAEQECAyL/2gAMAwEAAhEDEQA/ACJoUVqWqDMsQlJUk8H1kS1WSC1LErhwjFeoc469c71XYMQUK+D9yOTud8n4xddSNumf/9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/2.0",
-    "shutterSpeed": "1/52s",
-    "iso": "ISO 800",
-    "focalLength": "35mm",
-    "profile": "Fluorescent Night · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Nostalgic Neg",
-      "dynamicRange": "DR200",
-      "highlight": -1,
-      "shadow": -1.5,
-      "color": 4,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "Day White Fluorescent (R:-8, B:-1)",
-      "wbShift": [
-        -8,
-        -1
-      ],
-      "iso": "ISO 800",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-05"
+    "dateTaken": "2026-07-05",
+    "place": "prague-26",
+    "tags": [
+      "palaces-and-castles",
+      "waterfront",
+      "blue-hour"
+    ],
+    "rating": 5
   },
   {
     "id": "prague-26-dscf7283",
@@ -1947,163 +842,13 @@
       "iso": "ISO 1000",
       "exposureCompensation": "+0.33 EV"
     },
-    "dateTaken": "2026-07-05"
-  },
-  {
-    "id": "prague-26-dscf7311",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7311",
-    "displayUrl": "/photos/display/prague-26-dscf7311.01d67240.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7311.4beaf7a5.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwUG/8QAHhAAAgICAgMAAAAAAAAAAAAAARECBAADBRQhUlP/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGREAAgMBAAAAAAAAAAAAAAAAAAMBESEC/9oADAMBAAIRAxEAPwDJWOKsV9ZM4SbSWB0rHyllQ357QpEyRYB84fase4wkMZWipXzeH//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/1.4",
-    "shutterSpeed": "1/15s",
-    "iso": "ISO 320",
-    "focalLength": "23mm",
-    "profile": "Fluorescent Night · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Nostalgic Neg",
-      "dynamicRange": "DR200",
-      "highlight": -1,
-      "shadow": -1.5,
-      "color": 4,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "Day White Fluorescent (R:-7, B:-1)",
-      "wbShift": [
-        -7,
-        -1
-      ],
-      "iso": "ISO 320",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-05"
-  },
-  {
-    "id": "prague-26-dscf7324",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7324",
-    "displayUrl": "/photos/display/prague-26-dscf7324.2732494c.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7324.2bb1bfc2.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQID/8QAHxAAAgEEAwEBAAAAAAAAAAAAAQIDAAQREiEiMVFx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABYRAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEQMRAD8AMuYbKK7mw6qumy5Ge3wYoeTVpGbJ5NW13bvEw7b+qR5+GsyTnhTQAk2kv//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/1.4",
-    "shutterSpeed": "1/58s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Copenhagen Negative · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Negative",
-      "dynamicRange": "DR400",
-      "highlight": 2.5,
-      "shadow": -2,
-      "color": 4,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Weak",
-      "colorChromeFXBlue": "Strong",
-      "whiteBalance": "5700K (R:+1, B:+1)",
-      "wbShift": [
-        1,
-        1
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-06"
-  },
-  {
-    "id": "prague-26-dscf7353",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7353",
-    "displayUrl": "/photos/display/prague-26-dscf7353.012d9d6e.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7353.9ff01a9a.jpg",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.667,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAABf/EACEQAAMAAQMEAwAAAAAAAAAAAAECAwQAERIFITFRMmFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAP/xAAXEQEBAQEAAAAAAAAAAAAAAAABAAIR/9oADAMBAAIRAxEAPwAPovScHIwL5GW7mg7TRW4j9PvQtkVbOF8BiBvp2ThZVjWhjJCF4qgPY+/vxorMlJMqgTIFBv8ALgRvqOXSvY3/2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/2.8",
-    "shutterSpeed": "1/250s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Classic Color · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -0.5,
-      "shadow": -2,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -2,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "5300K (R:+0, B:-6)",
-      "wbShift": [
-        0,
-        -6
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-06"
-  },
-  {
-    "id": "prague-26-dscf7355",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7355",
-    "displayUrl": "/photos/display/prague-26-dscf7355.f397fa3c.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7355.852498ac.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAiEAACAgEDBAMAAAAAAAAAAAABAgMRBAAFEgYTIWEiUVL/xAAVAQEBAAAAAAAAAAAAAAAAAAAABP/EABYRAAMAAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8AgHVO4uKkyGUH8LR0jbtHkY88M0k0XcWuUr8lv6IrSNg4z7fhuYhydPkQSLo+tQ5ESLlxKBasRYJu/PvU1FaP/9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/3.6",
-    "shutterSpeed": "1/480s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Classic Color · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -0.5,
-      "shadow": -2,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -2,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "5300K (R:+0, B:-6)",
-      "wbShift": [
-        0,
-        -6
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-06"
+    "dateTaken": "2026-07-05",
+    "place": "prague-26",
+    "tags": [
+      "streets",
+      "night"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf7360",
@@ -2142,7 +887,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-06"
+    "dateTaken": "2026-07-06",
+    "place": "prague-26",
+    "tags": [
+      "parks-and-gardens",
+      "overcast"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf7366",
@@ -2181,7 +932,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-06"
+    "dateTaken": "2026-07-06",
+    "place": "prague-26",
+    "tags": [
+      "city-from-above",
+      "churches"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf7392",
@@ -2220,85 +977,13 @@
       "iso": "ISO 500",
       "exposureCompensation": "-0.33 EV"
     },
-    "dateTaken": "2026-07-06"
-  },
-  {
-    "id": "prague-26-dscf7428",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7428",
-    "displayUrl": "/photos/display/prague-26-dscf7428.e5e5ac1e.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7428.d618083b.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBf/EACIQAAEDAwMFAAAAAAAAAAAAAAECAwQAESEGE3ESFCJBYf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/AC3qaO6kq2l2Az5DFKdSxtou9uvo9WcFz8tWSxAjOtEraBPJqzcKMRloHm9RTH//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/4.0",
-    "shutterSpeed": "1/220s",
-    "iso": "ISO 500",
-    "focalLength": "35mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-06"
-  },
-  {
-    "id": "prague-26-dscf7431",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7431",
-    "displayUrl": "/photos/display/prague-26-dscf7431.b79e1d9b.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7431.20beb102.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEF/8QAHhAAAgICAwEBAAAAAAAAAAAAAQIDEQAhBAUGMRL/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ACT1UpiDycREB1f6vK3qWQNcKaF/Dhnr+IzUYEoH4NZmdlBHHO4RSAVs7O95Bf/Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF35mmF2 R WR",
-    "aperture": "ƒ/3.6",
-    "shutterSpeed": "1/240s",
-    "iso": "ISO 500",
-    "focalLength": "35mm",
-    "profile": "Kodak Portra 800 v3 · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -2,
-      "shadow": -0.5,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -3,
-      "grainEffect": "Strong, Large",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Off",
-      "whiteBalance": "6600K (R:-1, B:-3)",
-      "wbShift": [
-        -1,
-        -3
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-06"
+    "dateTaken": "2026-07-06",
+    "place": "prague-26",
+    "tags": [
+      "waterfront",
+      "overcast"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf7436",
@@ -2337,46 +1022,14 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-06"
-  },
-  {
-    "id": "prague-26-dscf7661",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7661",
-    "displayUrl": "/photos/display/prague-26-dscf7661.ec7ccc4b.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7661.54d8b7af.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFBv/EACIQAAIBAwMFAQAAAAAAAAAAAAECAwAEEQUTIRIxQVGBkf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAXEQADAQAAAAAAAAAAAAAAAAABAhEA/9oADAMBAAIRAxEAPwA0vWrZ98xRNESQQuM+OR+5p724hlUbzyhM9ugHn4aymiyuLxlDEBlJI91YlYnHNEE3BlWTf//Z",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/6.4",
-    "shutterSpeed": "1/2400s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Classic Color · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -0.5,
-      "shadow": -2,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -2,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "5300K (R:+0, B:-6)",
-      "wbShift": [
-        0,
-        -6
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-08"
+    "dateTaken": "2026-07-06",
+    "place": "prague-26",
+    "tags": [
+      "city-from-above",
+      "waterfront",
+      "overcast"
+    ],
+    "rating": 4
   },
   {
     "id": "prague-26-dscf7666",
@@ -2415,85 +1068,12 @@
       "iso": "ISO 500",
       "exposureCompensation": "0 EV"
     },
-    "dateTaken": "2026-07-08"
-  },
-  {
-    "id": "prague-26-dscf7668",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7668",
-    "displayUrl": "/photos/display/prague-26-dscf7668.7fe631d1.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7668.8e28d006.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwX/xAAfEAACAQMFAQAAAAAAAAAAAAABAgMABBEFEhNBgSH/xAAVAQEBAAAAAAAAAAAAAAAAAAAEBf/EABkRAAIDAQAAAAAAAAAAAAAAAAERAAIhUf/aAAwDAQACEQMRAD8An6ItuiCW6OVOcDqm1F4g+6AniYZAPVRhI9vHbmFiu84bsHynu5He0idmyxH0+1MNCbPsdiU//9k=",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/1.8",
-    "shutterSpeed": "1/80s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Classic Color · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -0.5,
-      "shadow": -2,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -2,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "5300K (R:+0, B:-6)",
-      "wbShift": [
-        0,
-        -6
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-08"
-  },
-  {
-    "id": "prague-26-dscf7669",
-    "series": "Prague 26",
-    "fileNumber": "DSCF7669",
-    "displayUrl": "/photos/display/prague-26-dscf7669.3ae48e28.jpg",
-    "thumbUrl": "/photos/thumb/prague-26-dscf7669.2cfaaa8c.jpg",
-    "width": 2048,
-    "height": 1365,
-    "aspectRatio": 1.5,
-    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAgT/xAAjEAACAAMIAwAAAAAAAAAAAAABAgARIQMEBRITFDFhQYGx/8QAFAEBAAAAAAAAAAAAAAAAAAAABf/EABgRAAMBAQAAAAAAAAAAAAAAAAABERIi/9oADAMBAAIRAxEAPwADFrUMyXpNYsayMiKcDqI7bFbHaZNs6F1YZnPjqIbk7a6mdSDX1DxFibukzwx+GDotpQRa5p//2Q==",
-    "camera": "FUJIFILM X-T5",
-    "lens": "XF23mmF1.4 R LM WR",
-    "aperture": "ƒ/1.6",
-    "shutterSpeed": "1/85s",
-    "iso": "ISO 500",
-    "focalLength": "23mm",
-    "profile": "Classic Color · SOOC",
-    "recipeDetails": {
-      "filmSimulation": "Classic Chrome",
-      "dynamicRange": "DR400",
-      "highlight": -0.5,
-      "shadow": -2,
-      "color": 3,
-      "noiseReduction": -4,
-      "sharpening": -2,
-      "clarity": -2,
-      "grainEffect": "Strong, Small",
-      "colorChromeEffect": "Strong",
-      "colorChromeFXBlue": "Weak",
-      "whiteBalance": "5300K (R:+0, B:-6)",
-      "wbShift": [
-        0,
-        -6
-      ],
-      "iso": "ISO 500",
-      "exposureCompensation": "0 EV"
-    },
-    "dateTaken": "2026-07-08"
+    "dateTaken": "2026-07-08",
+    "place": "prague-26",
+    "tags": [
+      "interiors"
+    ],
+    "rating": 4
   },
   {
     "id": "kutna-hora-26-dscf6977",
@@ -15120,6 +13700,1328 @@
     "tags": [
       "palaces-and-castles",
       "people"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6456",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6456",
+    "displayUrl": "/photos/display/prague-26-dscf6456.9fecc15c.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6456.788e2344.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQID/8QAIBAAAgEEAgMBAAAAAAAAAAAAAQIDAAQRIQUxEiJB8P/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwAPj+PhaBZGkYtn51j8amaytI5iokdV0d+xNbhFSJfEY1R95rY7oP/Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/3.2",
+    "shutterSpeed": "1/400s",
+    "iso": "ISO 250",
+    "focalLength": "23mm",
+    "dateTaken": "2026-07-02",
+    "place": "prague-26",
+    "tags": [
+      "black-and-white"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "prague-26-dscf6509",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6509",
+    "displayUrl": "/photos/display/prague-26-dscf6509.64bc48e8.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6509.cd8b0119.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQP/xAAiEAACAQMDBQEAAAAAAAAAAAABAgMABBEFIYEGEzFBYZH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABgRAAIDAAAAAAAAAAAAAAAAAAECABEx/9oADAMBAAIRAxEAPwCmn3IbRFuWUu0MQLqg3443oGbqGKSVn7F0M+knwPzFHRarc2MJgt7hgrEMWQ+PgzRzSszEljk1IZ7N5Aooyf/Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF35mmF2 R WR",
+    "aperture": "ƒ/5.0",
+    "shutterSpeed": "1/450s",
+    "iso": "ISO 500",
+    "focalLength": "35mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-02",
+    "place": "prague-26",
+    "tags": [
+      "golden-hour"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6545",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6545",
+    "displayUrl": "/photos/display/prague-26-dscf6545.fff75f3d.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6545.ac77c4bd.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEEBv/EACMQAAIBAgQHAAAAAAAAAAAAAAECAwARBAYSURYhMUFSYnH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8AOL8XqJREceLL0+UznCYrZoow3rzrHB2Z7FjbaqYRaFm771Nwf//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF35mmF2 R WR",
+    "aperture": "ƒ/2.8",
+    "shutterSpeed": "1/105s",
+    "iso": "ISO 500",
+    "focalLength": "35mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-02",
+    "place": "prague-26",
+    "tags": [
+      "blue-hour"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6568",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6568",
+    "displayUrl": "/photos/display/prague-26-dscf6568.2566c3b3.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6568.bd94a371.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAhEAACAQQCAgMAAAAAAAAAAAABAgMABREhBBITMTJBYf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAECMf/aAAwDAQACEQMRAD8AXa3kN3YKoIwev1jW6ny+SOV0XpgMfl7P7Q4LvJw+UJIXDNvZGRQpbhI0rMxBJOTUnNYNUtP/2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/4.0",
+    "shutterSpeed": "1/550s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.67 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "streets"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6585",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6585",
+    "displayUrl": "/photos/display/prague-26-dscf6585.447b94f5.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6585.fd16385e.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAUG/8QAIxAAAgEDBAEFAAAAAAAAAAAAAQIEAAMRBRIhMRMiI0Fh0f/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGREBAAIDAAAAAAAAAAAAAAAAAgABAxES/9oADAMBAAIRAxEAPwC9rWrCMjxbDkScKysOcc/gpUbXojx0a+/juEepcE4NZG/caVqEkoNx8hHfwBjulrGubV9wngdr9VMsnNxiNmf/2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.0",
+    "shutterSpeed": "1/680s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.67 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "churches",
+      "looking-up"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6649",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6649",
+    "displayUrl": "/photos/display/prague-26-dscf6649.1c337e91.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6649.43628773.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABBESIWEFEzGh8P/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECETH/2gAMAwEAAhEDEQA/ACFgt40jZXJJfB1DnY0/PbiWZnFy6ht8DVge6krqZu+SmkoCcDj7emYOpskKq5VmHk1NK9Q8axn/2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/2.0",
+    "shutterSpeed": "1/120s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Copenhagen Negative · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Negative",
+      "dynamicRange": "DR400",
+      "highlight": 2.5,
+      "shadow": -2,
+      "color": 4,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Weak",
+      "colorChromeFXBlue": "Strong",
+      "whiteBalance": "5700K (R:+1, B:+1)",
+      "wbShift": [
+        1,
+        1
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "churches",
+      "interiors",
+      "looking-up"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6674",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6674",
+    "displayUrl": "/photos/display/prague-26-dscf6674.86b028fb.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6674.e199099e.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAED/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIDABESITFhBRMyUeH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABcRAAMBAAAAAAAAAAAAAAAAAAACAxL/2gAMAwEAAhEDEQA/ANR1zuyrnEwicWFjrf3UaBJGzj1U7XFBEsmYAy0vH47KMeKWkpVAFdbcp9qS1yJpaP/Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF35mmF2 R WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/2400s",
+    "iso": "ISO 500",
+    "focalLength": "35mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "churches"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6683",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6683",
+    "displayUrl": "/photos/display/prague-26-dscf6683.bbd490d1.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6683.42c2c76e.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMG/8QAIxAAAgECBAcAAAAAAAAAAAAAAQIDABEEBTFBEiEjUXGh4f/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAZEQEAAgMAAAAAAAAAAAAAAAABAAISMUH/2gAMAwEAAhEDEQA/AFRZ9ii3UgVF3OvqrHPZb8liI73+1nC8z4dJU4CrmwBtcb6URkkLG8Yv5AoSz2JgOp//2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF35mmF2 R WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/1600s",
+    "iso": "ISO 500",
+    "focalLength": "35mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "city-from-above",
+      "churches"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6733",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6733",
+    "displayUrl": "/photos/display/prague-26-dscf6733.11b229d9.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6733.302f10c8.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAID/8QAIBAAAgIBBAMBAAAAAAAAAAAAAQIDBAARITGRBRJRsf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAwDAQACEQMRAD8AuzCli/OSygLGAdD+YAmMHQNYYfdeezmPtbHlpYa4QAbyMy7EHENVYtyO8mXgTBm3/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/2500s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "palaces-and-castles",
+      "streets"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6782",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6782",
+    "displayUrl": "/photos/display/prague-26-dscf6782.dc9cebf7.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6782.12c583d3.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwUG/8QAIhAAAgICAQMFAAAAAAAAAAAAAQIDBAAhBRESEyIxUZGh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREC/9oADAMBAAIRAxEAPwCk/K1q8xSNG8jgeoDoN+2NHYllQP1Tfy+8zlOylGs0axxThye8DZ+2OOnGVWQHtfe9SsPzJnvVEih//9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/1700s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.67 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "parks-and-gardens"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6788",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6788",
+    "displayUrl": "/photos/display/prague-26-dscf6788.6dd55e9e.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6788.1ce8fd65.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQP/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAURMXESIUFh4f/EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oADAMBAAIRAxEAPwBXJ5o3kLQQgrGe5Y7kUF0N41A4qk2MvcQXRi06gEh0Go143oaW8vVkIALewPlTqrPcv//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/4.0",
+    "shutterSpeed": "1/500s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.67 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "parks-and-gardens",
+      "flowers"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "prague-26-dscf6832",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6832",
+    "displayUrl": "/photos/display/prague-26-dscf6832.97a01664.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6832.f46f2475.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIEBv/EACAQAAICAgICAwAAAAAAAAAAAAIRAQMABCExBRITUaH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAGBEAAwEBAAAAAAAAAAAAAAAAAQIRABL/2gAMAwEAAhEDEQA/ADr6QGasglMIVHc5Mfw1bZaxkrIS+icPM3f5Db2bXdsWEuO1H5i02nBQUGXtCKJfLwhntJxKJzAN/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/1300s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "churches",
+      "looking-up",
+      "golden-hour"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "prague-26-dscf6846",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6846",
+    "displayUrl": "/photos/display/prague-26-dscf6846.c80231ae.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6846.07da7f56.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwUG/8QAJBAAAgECAwkAAAAAAAAAAAAAAQIRAAMEBQYSFiEjMUGBgrH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABcRAQADAAAAAAAAAAAAAAAAAAABEXH/2gAMAwEAAhEDEQA/AKbZnioIGFRTHAm6PkUtzMmVyERGUdDtRWKt6kcnmIfBp94bfeR6GpoTj//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF35mmF2 R WR",
+    "aperture": "ƒ/5.0",
+    "shutterSpeed": "1/500s",
+    "iso": "ISO 500",
+    "focalLength": "35mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "waterfront"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6851",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6851",
+    "displayUrl": "/photos/display/prague-26-dscf6851.0435a1ef.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6851.7558e128.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQIE/8QAIBAAAgICAgIDAAAAAAAAAAAAAQIEEQADBSESMRNhgf/EABQBAQAAAAAAAAAAAAAAAAAAAAT/xAAZEQACAwEAAAAAAAAAAAAAAAABAgARIjL/2gAMAwEAAhEDEQA/ANIiR4yN8Wu93dM3ZJH2cKk8tuEjYFLKA1UGy9nMayLVyWAJr1f7hMokyXPkDZv3gFWzoRpauTP/2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF35mmF2 R WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/750s",
+    "iso": "ISO 500",
+    "focalLength": "35mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "animals",
+      "golden-hour"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "prague-26-dscf6874",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6874",
+    "displayUrl": "/photos/display/prague-26-dscf6874.ced8fd04.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6874.1cb0a1be.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgME/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDEQAEIWEFEzFB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAaEQACAgMAAAAAAAAAAAAAAAABAgASAxEh/9oADAMBAAIRAxEAPwCbyt64pBHaMAzH6AOs1iBa5OHNPyLxJJDw0JcXfJUX+dYlk3NSORkeSmBojEjntpB8YGqz/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF35mmF2 R WR",
+    "aperture": "ƒ/5.0",
+    "shutterSpeed": "1/340s",
+    "iso": "ISO 500",
+    "focalLength": "35mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "looking-up",
+      "golden-hour"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6885",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6885",
+    "displayUrl": "/photos/display/prague-26-dscf6885.010ef02a.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6885.72f780d0.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAIF/8QAIhAAAgEEAQQDAAAAAAAAAAAAAQMCAAQREjEFISJBMmLw/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQMREiEx/9oADAMBAAIRAxEAPwCrq6KGtUIeQXlf2l+xTUxLEwmY6mUQSD6NYz9Lq4k/ON/j7144pEOqNTELE14j2GRmpUrvYOFYqun/2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF35mmF2 R WR",
+    "aperture": "ƒ/4.5",
+    "shutterSpeed": "1/350s",
+    "iso": "ISO 500",
+    "focalLength": "35mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "churches",
+      "golden-hour"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6888",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6888",
+    "displayUrl": "/photos/display/prague-26-dscf6888.eede3585.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6888.dffc65da.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIF/8QAIhAAAQMDAwUAAAAAAAAAAAAAAQIDEQAEIRITMRRBYZGh/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABkRAQADAQEAAAAAAAAAAAAAAAEAAhESIf/aAAwDAQACEQMRAD8Ady6QQooOBwdP33V9QhIALC3DAOpPBrAN3oeflXcATBECmevmy5jbVgZ3PFB7ZdYpzUMJ/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF35mmF2 R WR",
+    "aperture": "ƒ/4.5",
+    "shutterSpeed": "1/320s",
+    "iso": "ISO 500",
+    "focalLength": "35mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "+0.33 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "golden-hour"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "prague-26-dscf6942",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6942",
+    "displayUrl": "/photos/display/prague-26-dscf6942.bdec6edf.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6942.f2b6af18.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQG/8QAIRAAAgEEAQUBAAAAAAAAAAAAAQIRAAMEIQUTIiQxkdH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFhEBAQEAAAAAAAAAAAAAAAAAAgEA/9oADAMBAAIRAxEAPwAjFbiwJfLtqAs7n5FVs/ClB59oSJ9H8rMcdvLCkAhlMgiabNm0LYHSSF2O0apxLCkzf//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/1.4",
+    "shutterSpeed": "1/34s",
+    "iso": "ISO 320",
+    "focalLength": "23mm",
+    "profile": "Reggie's Portra · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "Auto (DR200)",
+      "highlight": -1,
+      "shadow": -1,
+      "color": 2,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": 0,
+      "grainEffect": "Weak, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "Auto (R:+2, B:-4)",
+      "wbShift": [
+        2,
+        -4
+      ],
+      "iso": "ISO 320",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "palaces-and-castles",
+      "waterfront",
+      "blue-hour"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6949",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6949",
+    "displayUrl": "/photos/display/prague-26-dscf6949.8d920339.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6949.ff363f85.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUG/8QAHRABAAICAgMAAAAAAAAAAAAAAQACAxEEMUFxgf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAYEQADAQEAAAAAAAAAAAAAAAAAAlEBEv/aAAwDAQACEQMRAD8Ay/FpTPZKuvm45GOuMuKbq69yWWTpSG1nyx47UHCw/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/1.4",
+    "shutterSpeed": "1/8s",
+    "iso": "ISO 320",
+    "focalLength": "23mm",
+    "profile": "Reggie's Portra · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "Auto (DR200)",
+      "highlight": -1,
+      "shadow": -1,
+      "color": 2,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": 0,
+      "grainEffect": "Weak, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "Auto (R:+2, B:-4)",
+      "wbShift": [
+        2,
+        -4
+      ],
+      "iso": "ISO 320",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "waterfront",
+      "night"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf6962",
+    "series": "Prague 26",
+    "fileNumber": "DSCF6962",
+    "displayUrl": "/photos/display/prague-26-dscf6962.d5e50206.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf6962.8a0dc119.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQQFBv/EACAQAAIBAwQDAAAAAAAAAAAAAAECAwAEEQUhMVESYWL/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGREBAAMBAQAAAAAAAAAAAAAAAQACAyEx/9oADAMBAAIRAxEAPwDMXWhSW6EK6yuWwviee9qUOl3I5Cg9E1RE7mNQjEY9bUGlZmJMqgn5zRK6aB1i3Kj4T//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/1.4",
+    "shutterSpeed": "1/34s",
+    "iso": "ISO 640",
+    "focalLength": "23mm",
+    "profile": "Reggie's Portra · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "Auto (DR200)",
+      "highlight": -1,
+      "shadow": -1,
+      "color": 2,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": 0,
+      "grainEffect": "Weak, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "Auto (R:+2, B:-4)",
+      "wbShift": [
+        2,
+        -4
+      ],
+      "iso": "ISO 640",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-03",
+    "place": "prague-26",
+    "tags": [
+      "streets",
+      "night"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf7129",
+    "series": "Prague 26",
+    "fileNumber": "DSCF7129",
+    "displayUrl": "/photos/display/prague-26-dscf7129.071e774a.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf7129.17724213.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwX/xAAgEAABBAIDAAMAAAAAAAAAAAABAgMFEQAxBBIhFTJB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAYEQEBAAMAAAAAAAAAAAAAAAARAAECIf/aAAwDAQACEQMRAD8ACMmOf8ewEqR0Q2B2LegBW7yVLSvMEi6FupCvNCvwYka6HIhpBfLdJKSEpGrOycjSgcekXl9lOWr7VvyslqvZ5C//2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.0",
+    "shutterSpeed": "1/850s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-05",
+    "place": "prague-26",
+    "tags": [
+      "city-from-above",
+      "streets"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf7134",
+    "series": "Prague 26",
+    "fileNumber": "DSCF7134",
+    "displayUrl": "/photos/display/prague-26-dscf7134.12da17db.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf7134.47c8bf7f.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAgT/xAAiEAACAgIABgMAAAAAAAAAAAABAgMRAAQSIjEyQVGRwdH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERAv/aAAwDAQACEQMRAD8Anh0QsJE1EkUpvtv7yeTX143KPrOWHWq/cM29JM3AynlYkewD4v1iV1Ci1b4GAlBnqn//2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.0",
+    "shutterSpeed": "1/850s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Kodak Portra 800 v3 · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -2,
+      "shadow": -0.5,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Large",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Off",
+      "whiteBalance": "6600K (R:-1, B:-3)",
+      "wbShift": [
+        -1,
+        -3
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-05",
+    "place": "prague-26",
+    "tags": [
+      "city-from-above",
+      "people"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf7156",
+    "series": "Prague 26",
+    "fileNumber": "DSCF7156",
+    "displayUrl": "/photos/display/prague-26-dscf7156.50263ef4.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf7156.a4f145d0.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIFBv/EACgQAAECAwQLAAAAAAAAAAAAAAECEQADEgQFITETFBUiMkFhY3GR4f/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/AKNtv4JaVXLmhWRQshsR08+obaFG7rVkDdz5GWQZNDzONuSixgp0pDhIAOIyyg7Tf//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/5.6",
+    "shutterSpeed": "1/1100s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Copenhagen Negative · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Negative",
+      "dynamicRange": "DR400",
+      "highlight": 2.5,
+      "shadow": -2,
+      "color": 4,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Weak",
+      "colorChromeFXBlue": "Strong",
+      "whiteBalance": "5700K (R:+1, B:+1)",
+      "wbShift": [
+        1,
+        1
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "-0.33 EV"
+    },
+    "dateTaken": "2026-07-05",
+    "place": "prague-26",
+    "tags": [
+      "city-from-above",
+      "churches"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf7226",
+    "series": "Prague 26",
+    "fileNumber": "DSCF7226",
+    "displayUrl": "/photos/display/prague-26-dscf7226.403589f9.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf7226.c82ba70d.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgMF/8QAIBAAAQQBBAMAAAAAAAAAAAAAAQACAxEEBiExUSJBcf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAECEv/aAAwDAQACEQMRAD8ALNSZoNswwXHl1NBKb9UZ7I3E4pofNliRTSWfL10rBxMJuuOlTkFUz//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF35mmF2 R WR",
+    "aperture": "ƒ/2.8",
+    "shutterSpeed": "1/140s",
+    "iso": "ISO 500",
+    "focalLength": "35mm",
+    "profile": "Copenhagen Negative · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Negative",
+      "dynamicRange": "DR400",
+      "highlight": 2.5,
+      "shadow": -2,
+      "color": 4,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Weak",
+      "colorChromeFXBlue": "Strong",
+      "whiteBalance": "5700K (R:+1, B:+1)",
+      "wbShift": [
+        1,
+        1
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-05",
+    "place": "prague-26",
+    "tags": [
+      "waterfront",
+      "blue-hour"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf7258",
+    "series": "Prague 26",
+    "fileNumber": "DSCF7258",
+    "displayUrl": "/photos/display/prague-26-dscf7258.cb9f032c.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf7258.4922e11c.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAHRAAAgEFAQEAAAAAAAAAAAAAAQIDAAQREiETQf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGREBAAMBAQAAAAAAAAAAAAAAAQACBBIR/9oADAMBAAIRAxEAPwAuK5cgrFGCAOkCptPGGIZe/e0ZbXU6Tp4Ft84Ubfa0+98xJ3YdORk8Oaqabi9BA56Icr7P/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF35mmF2 R WR",
+    "aperture": "ƒ/2.0",
+    "shutterSpeed": "1/52s",
+    "iso": "ISO 2500",
+    "focalLength": "35mm",
+    "profile": "Copenhagen Negative · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Negative",
+      "dynamicRange": "DR400",
+      "highlight": 2.5,
+      "shadow": -2,
+      "color": 4,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Weak",
+      "colorChromeFXBlue": "Strong",
+      "whiteBalance": "5700K (R:+1, B:+1)",
+      "wbShift": [
+        1,
+        1
+      ],
+      "iso": "ISO 2500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-05",
+    "place": "prague-26",
+    "tags": [
+      "waterfront",
+      "night"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf7266",
+    "series": "Prague 26",
+    "fileNumber": "DSCF7266",
+    "displayUrl": "/photos/display/prague-26-dscf7266.9496b10d.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf7266.e8dbff0a.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwb/xAAgEAACAgIABwAAAAAAAAAAAAABAgMRABIEFCExUWOR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAP/xAAXEQEBAQEAAAAAAAAAAAAAAAACAQAR/9oADAMBAAIRAxEAPwCekhWSRr2FLYI83h8n7B8xo3QzhHetgBdCh1xV4aWQbKLBJ7MMN0E8uoRFb2b/2Q==",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF35mmF2 R WR",
+    "aperture": "ƒ/2.0",
+    "shutterSpeed": "1/52s",
+    "iso": "ISO 3200",
+    "focalLength": "35mm",
+    "profile": "Copenhagen Negative · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Negative",
+      "dynamicRange": "DR400",
+      "highlight": 2.5,
+      "shadow": -2,
+      "color": 4,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Weak",
+      "colorChromeFXBlue": "Strong",
+      "whiteBalance": "5700K (R:+1, B:+1)",
+      "wbShift": [
+        1,
+        1
+      ],
+      "iso": "ISO 3200",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-05",
+    "place": "prague-26",
+    "tags": [
+      "streets",
+      "night"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf7361",
+    "series": "Prague 26",
+    "fileNumber": "DSCF7361",
+    "displayUrl": "/photos/display/prague-26-dscf7361.29847755.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf7361.c4ead603.jpg",
+    "width": 2048,
+    "height": 1365,
+    "aspectRatio": 1.5,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIDABESBAUiITFBUYH/xAAVAQEBAAAAAAAAAAAAAAAAAAAABf/EABgRAAMBAQAAAAAAAAAAAAAAAAABAhEh/9oADAMBAAIRAxEAPwAdWxV1RcERSq3AJK+/t6oZZrxrHJIz24gHtWWDmGVjcAUzoI0j29JEUB3JybyetT7rOhPT/9k=",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/3.6",
+    "shutterSpeed": "1/340s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-06",
+    "place": "prague-26",
+    "tags": [
+      "parks-and-gardens",
+      "flowers"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf7370",
+    "series": "Prague 26",
+    "fileNumber": "DSCF7370",
+    "displayUrl": "/photos/display/prague-26-dscf7370.68b59bfd.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf7370.31ecdb8e.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwX/xAAgEAADAAICAQUAAAAAAAAAAAABAgMAEQQSIQUxUWGx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAXEQEBAQEAAAAAAAAAAAAAAAABAAJR/9oADAMBAAIRAxEAPwBj6s4tfuqA7BRSPYaHzk/l861+VSs7CaM3hNqev1vJc6o5obIe5IIdaaOsB+TVnYkoSSfJJH5kBZLnl//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/4.0",
+    "shutterSpeed": "1/480s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-06",
+    "place": "prague-26",
+    "tags": [
+      "parks-and-gardens",
+      "churches"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf7393",
+    "series": "Prague 26",
+    "fileNumber": "DSCF7393",
+    "displayUrl": "/photos/display/prague-26-dscf7393.a0cab404.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf7393.54a254f3.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQT/xAAhEAACAQQBBQEAAAAAAAAAAAABAgMABAURISIyQWGB0f/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAVEQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEQMRAD8AlPXbO8MYIRQWLHt/aHbMSxsU0BrwKXx8lquKnl2jXGyy88n0aEOQkLEvpmJJJZQSftAJLf/Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/3.6",
+    "shutterSpeed": "1/400s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Copenhagen Negative · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Negative",
+      "dynamicRange": "DR400",
+      "highlight": 2.5,
+      "shadow": -2,
+      "color": 4,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -3,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Weak",
+      "colorChromeFXBlue": "Strong",
+      "whiteBalance": "5700K (R:+1, B:+1)",
+      "wbShift": [
+        1,
+        1
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "-0.33 EV"
+    },
+    "dateTaken": "2026-07-06",
+    "place": "prague-26",
+    "tags": [
+      "waterfront"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "prague-26-dscf7665",
+    "series": "Prague 26",
+    "fileNumber": "DSCF7665",
+    "displayUrl": "/photos/display/prague-26-dscf7665.d2ac5783.jpg",
+    "thumbUrl": "/photos/thumb/prague-26-dscf7665.64deaa5e.jpg",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.667,
+    "blurDataUrl": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQMEBv/EACIQAAIBAwQCAwAAAAAAAAAAAAECAwAEERIhMUEFUWFxgf/EABQBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQADAAMAAAAAAAAAAAAAAAAAARETIUH/2gAMAwEAAhEDEQA/AD4W6gFo8Ej4AOVPH2Pyq3v4Y3KASEDteKyUjSatVuCBpAJYc7fNOUzxqFcAtjOzjvf3RuO7og2un//Z",
+    "camera": "FUJIFILM X-T5",
+    "lens": "XF23mmF1.4 R LM WR",
+    "aperture": "ƒ/1.6",
+    "shutterSpeed": "1/80s",
+    "iso": "ISO 500",
+    "focalLength": "23mm",
+    "profile": "Classic Color · SOOC",
+    "recipeDetails": {
+      "filmSimulation": "Classic Chrome",
+      "dynamicRange": "DR400",
+      "highlight": -0.5,
+      "shadow": -2,
+      "color": 3,
+      "noiseReduction": -4,
+      "sharpening": -2,
+      "clarity": -2,
+      "grainEffect": "Strong, Small",
+      "colorChromeEffect": "Strong",
+      "colorChromeFXBlue": "Weak",
+      "whiteBalance": "5300K (R:+0, B:-6)",
+      "wbShift": [
+        0,
+        -6
+      ],
+      "iso": "ISO 500",
+      "exposureCompensation": "0 EV"
+    },
+    "dateTaken": "2026-07-08",
+    "place": "prague-26",
+    "tags": [
+      "interiors"
     ],
     "rating": 4
   }

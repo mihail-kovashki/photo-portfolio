@@ -20,6 +20,7 @@ import { malmo24 } from "./malmo-24";
 import { suwon25 } from "./suwon-25";
 import { kutnaHora26 } from "./kutna-hora-26";
 import { ceskyKrumlov26 } from "./cesky-krumlov-26";
+import { prague26 } from "./prague-26";
 
 export type { Chapter, PlaceCollection } from "./types";
 
@@ -46,6 +47,7 @@ export const collections: Record<string, PlaceCollection> = {
   [suwon25.id]: suwon25,
   [kutnaHora26.id]: kutnaHora26,
   [ceskyKrumlov26.id]: ceskyKrumlov26,
+  [prague26.id]: prague26,
 };
 
 export function findCollection(seriesId: string): PlaceCollection | undefined {
@@ -56,9 +58,7 @@ export function findCollection(seriesId: string): PlaceCollection | undefined {
  * Places not yet through the editorial pass: just enough to name them and file them
  * under their trip. A place moves out of here when it gets its collection file.
  */
-const unreviewedPlaces: Record<string, Pick<PlaceCollection, "name" | "trip">> = {
-  "prague-26": { name: "Prague", trip: "Czechia · Summer 2026" },
-};
+const unreviewedPlaces: Record<string, Pick<PlaceCollection, "name" | "trip">> = {};
 
 /** A place's display name and trip, whether or not it has been through the pass. */
 export function findPlace(seriesId: string): Pick<PlaceCollection, "name" | "trip"> | undefined {

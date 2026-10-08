@@ -72,7 +72,8 @@ differently from culling (`taste.md`):
 ## Chapters and selection
 
 - **Fewer, fuller chapters.** A chapter has about five photos or more; a place has three
-  to five chapters. A smaller set folds into a neighbour, decided by location or by one
+  to five chapters, five being a soft cap that a big city can pass (Prague 2026: a gardens
+  chapter beside Malá Strana). A smaller set folds into a neighbour, decided by location or by one
   continuous walk (Seoul: the Wall joined Gwanghwamun, the flower field joined the evening
   in Anguk). Tiny sections also read badly on the site.
 - **Order: weigh the story against the best photo.** Neither always wins; it depends on

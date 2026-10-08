@@ -43,6 +43,7 @@
   "7197",
   "7198",
   "7199",
+  "7200",
   "7201",
   "7202",
   "7204",
@@ -96,6 +97,7 @@
   "7309",
   "7311",
   "7312",
+  "7313",
   "7315",
   "7318"
  ],
@@ -352,6 +354,8 @@
   "7299": "the lamp-lit street from above",
   "7308": "tram as a blur at the Malostranské corner, horizontal; 7312 the vertical",
   "7311": "prior; tram 15 under St Nicholas. 3 Jul also ends with trams in Malostranské at night: the first look picks across both days",
-  "7318": "the old T3 tram 22 coming at the camera, blurred"
+  "7318": "the old T3 tram 22 coming at the camera, blurred",
+  "7200": "recovered in the Malá Strana re-cull (czechia-26.recull.mala-strana.json)",
+  "7313": "recovered in the Malá Strana re-cull (czechia-26.recull.mala-strana.json)"
  }
 }

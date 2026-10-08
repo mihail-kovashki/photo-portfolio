@@ -64,6 +64,19 @@ differently from culling (`taste.md`):
   directions: interesting subjects and clever concepts were rated too high (the Český
   Krumlov castle, Prague's tram blur), and quiet minimal frames too low (6853, 6509).
   `taste.md`'s "What costs a frame" has the cases; read it before rating.
+- **Critique in photographic terms, not an inventory.** "Tiled floor, sun at the edge,
+  two figures in the arch" describes a frame; it doesn't judge it, and it can't compare
+  two. Say what the frame does with line and direction, shape and negative space,
+  balance, layering and separation, and how the light serves it. A minimal frame has as
+  much to say for it as a busy one: the strength of its lines and the space around them.
+  When the critique only has facts, the simpler frame loses by default (Malá Strana
+  re-cull: 6760 chosen over 6764, whose vaults have the stronger lines).
+- **Judge light by what it does for the frame, not by its category.** Blue hour, golden
+  hour and night aren't automatically good, and grey isn't automatically bad: overcast
+  can suit the mood and still have detail in the sky.
+- **Composition before subject.** Famous buildings that stack and clip each other, with
+  no space between them, are a composition fault, whatever the landmark (Malá Strana
+  re-cull: 7456, the bridge towers, statue and lamp merged into one mass).
 - **Stars rank frames; the sequence decides roles.** A frame can hold a position its
   stars alone wouldn't give it: a wide establishing shot can open a chapter at 3★, and a
   quiet favourite can close one.
@@ -157,6 +170,11 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
     "place": "prague-26", "keep": ["6343", "6367"], "groups": [["6345", "6344", "6346"]],
     "prior": ["6343", "6345"], "notes": {"6367": "keep for the light, check focus"}}
    ```
+   Every frame not in `keep` is accounted for: it sits in a group under the frame that
+   beat it, or it has a note saying why it's out. A drop with neither is a frame nobody
+   decided on. The Malá Strana re-cull found two of those (6828, 6850) that neither the
+   twin rule nor the flaw rule would have caught.
+
    Anything not in `keep` is out, and nothing is deleted from `raw/`. After the day is
    saved, its keeps are copied into `selects/<Place>/`. Once every day is culled, each
    place in `selects/` is an album for the steps below, its files named by the place id

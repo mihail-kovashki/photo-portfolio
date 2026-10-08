@@ -1,0 +1,166 @@
+{
+ "album": "Czechia 2026",
+ "kind": "re-cull, Malá Strana only; nothing copied to selects/",
+ "date": "2026-10-08",
+ "place": "prague-26",
+ "rules": "26fae52: twins side by side at 1000px, one flaw is a reason to look, views at 1400px",
+ "windows": {
+  "2026-07-03": [
+   "6743-6766 lanes and Malostranské náměstí at noon (stops before Wallenstein)",
+   "6806-6869 Castle steps, Thunovská, Mostecká, Kampa",
+   "6895-6966 bridge at blue hour into the lanes and trams"
+  ],
+  "2026-07-05": [
+   "7185-7200 bridge tower, Kampa, Čertovka",
+   "7298-7318 the tower and trams at night"
+  ],
+  "2026-07-06": [
+   "7348-7410 Vrtba, the lanes, Čertovka",
+   "7446-7461 Klárov to the bridge"
+  ]
+ },
+ "reconsidered": {
+  "2026-07-03": 90,
+  "2026-07-05": 13,
+  "2026-07-06": 44
+ },
+ "recover": [
+  {
+   "n": "6827",
+   "day": "2026-07-03",
+   "how": "beside 6737, pick one at the first look",
+   "note": "the stepped lane in the evening: lamps lit, the lane in shade below the sunlit yellow house. A different light from 6737's harsh noon, not a twin"
+  },
+  {
+   "n": "6828",
+   "day": "2026-07-03",
+   "how": "new",
+   "note": "quiet frame: yellow wall, white window, red window box, dark arched door, evening glow in the top windows. Never grouped or noted, just dropped"
+  },
+  {
+   "n": "6953",
+   "day": "2026-07-03",
+   "how": "new",
+   "note": "Hotel Pod Věží at night: lamp, flags, two diners under the umbrella, deep blue sky. The CCTV camera top left is a blemish; the 'busy terrace' in the cull note is calm at size"
+  },
+  {
+   "n": "7200",
+   "day": "2026-07-05",
+   "how": "for consideration beside 7199",
+   "note": "Čertovka, symmetric, no sign. Mihail: 7199 beats every portrait frame of this spot from any day; 7200 is fine to consider"
+  },
+  {
+   "n": "7368",
+   "day": "2026-07-06",
+   "how": "beside 7367",
+   "note": "Vrtba: diagonal down over the roof tiles and cone yews to the terrace, little sky. 7367 is half grey sky"
+  },
+  {
+   "n": "6830",
+   "day": "2026-07-03",
+   "how": "toss-up with 6831",
+   "note": "the empty lane in sun, blue sky, deeper perspective; the AMBIX restaurant lettering is a blemish. 6831 has a white sky"
+  },
+  {
+   "n": "6964",
+   "day": "2026-07-03",
+   "how": "toss-up with 6965",
+   "note": "tram 22 tighter and bigger, its red lights across the wet cobbles"
+  },
+  {
+   "n": "6850",
+   "day": "2026-07-03",
+   "how": "new",
+   "note": "Kampa square at dusk: three trunks divide the frame into panels under a canopy ceiling, the lit terrace a warm band behind against cool cobbles, benches repeating the rhythm. Costs: the woman in blue walking out of the right edge, the half bench along the bottom, the road signs. Passed over on the sheet for having no landmark; found by Mihail"
+  },
+  {
+   "n": "7313",
+   "day": "2026-07-05",
+   "how": "toss-up with 7312",
+   "note": "the tram blurred closer, lit inside and red; more energy, hides more of the street"
+  },
+  {
+   "n": "6750",
+   "day": "2026-07-03",
+   "how": "variation of 6751",
+   "note": "lamp in front, the red car, the castle over the plague column, more sky; busier than 6751"
+  },
+  {
+   "n": "6834",
+   "day": "2026-07-03",
+   "how": "marginal, beside 6835",
+   "note": "the bridge tower down Mostecká reflected in a black car's bonnet; the car fills the bottom. A clever idea, which this album has rated too high before"
+  },
+  {
+   "n": "6744",
+   "day": "2026-07-03",
+   "how": "marginal",
+   "note": "St Nicholas's flank, the triple lamp, the street to a dome: an establishing frame. Bin at the left corner"
+  },
+  {
+   "n": "6755",
+   "day": "2026-07-03",
+   "how": "marginal",
+   "note": "the oriel corner house on the square under cloud. Parked cars and strangers' faces bottom right"
+  }
+ ],
+ "held": {
+  "6764": "over 6760 (Mihail): stronger lines, the vaults and piers leading in; not to be marked down for being simpler",
+  "6956": "over 6955 (Mihail): 6955's couple is a weak subject, the frame is tilted and cuts too much on the left; 6956 is emptier. Neither is a great photo, and the recipes differ, which makes colour hard to compare",
+  "6751": "over 6749 (busier lamp version)",
+  "6757": "over 6756",
+  "6822": "over 6819, 6821",
+  "6823": "over 6824 (blown sky)",
+  "6835": "over 6834 as the main frame",
+  "6846": "over 6848 (weir and sign)",
+  "6855": "over 6854 (faces large)",
+  "6951": "over 6950 (crowd heavy)",
+  "6962": "over 6961",
+  "7311": "over 7306",
+  "7353": "over 7354 (the hydrangeas are the subject; 7354 adds people)",
+  "7360": "over 7358 (railing across the bottom)",
+  "7369": "over 7374 (St Nicholas cut, hedge)",
+  "7455": "over 7454 (cars)"
+ },
+ "looked_and_stays_out": {
+  "6765": "ivy houses: a car bonnet fills the bottom",
+  "6863": "the bridge crowd in silhouette: faces large at the right",
+  "7363": "Vrtba terrace to the roofs: grey, repeats 7366",
+  "7456": "composition (Mihail): the towers, the statue and the lamp stack and clip each other with no space between them. The grey light suits the mood and the sky has detail; light wasn't the problem"
+ },
+ "out_of_scope": "Strahov and Hradčany (6806-6814), Wallenstein Garden (6766-6805), Old Town and its riverfront from the bridge, the ICM run, Letná (7411-7445), Charles Bridge under grey cloud (a deliberate drop)",
+ "people": {
+  "6953": "two diners, small: assumed strangers, check",
+  "6955": "a couple from behind: assumed strangers",
+  "6755": "a woman photographing, face at the bottom right edge: assumed stranger, check",
+  "6850": "diners and a walker at the right edge, middle distance: assumed strangers, check"
+ },
+ "how_they_were_lost": {
+  "twin chosen at sheet size": [
+   "6827",
+   "7200",
+   "7368",
+   "6830",
+   "6964",
+   "7313",
+   "6750"
+  ],
+  "dropped for one flaw": [
+   "6953"
+  ],
+  "dropped with no group or note": [
+   "6828",
+   "6850"
+  ]
+ },
+ "review": {
+  "date": "2026-10-08",
+  "by": "Mihail",
+  "verdicts": "6760, 6955 and 7456 rejected; 7200 kept for consideration only; 6850 added; everything else agreed, including the held and stays-out calls",
+  "lessons": [
+   "Critique stated facts (tiled floor, sun at the edge, two figures) instead of photographic reasons, so it can't compare frames and leaves minimal frames with nothing to say for them",
+   "Light was judged by category (blue hour, golden hour, night good; grey bad) instead of whether it suits the frame",
+   "Composition was judged too little: famous buildings that clip each other are a composition fault"
+  ]
+ }
+}

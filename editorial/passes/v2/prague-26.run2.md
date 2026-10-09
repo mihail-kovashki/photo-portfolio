@@ -267,8 +267,8 @@ for the compare page, with the changes below and the 13 frames run 2 never saw a
 **Ratings** (against run 2):
 
 - Up to 4: 6688, 6654, 6598, 6962, 7156. Up to 3: 6670, 6343.
-- Down to 3: 6852, 6964, 6944.
-- Confirmed: 6851, 6853, 6706, 6597 at 4; 6659 (cover), 6585, 6649, 6704, 6849, 6927, 6846,
+- Down to 3: 6849, 6852, 6964, 6944.
+- Confirmed: 6851, 6853, 6706, 6597 at 4; 6659 (cover), 6585, 6649, 6704, 6927, 6846,
   7392, 7366, 6545, 7665 at 3; 6456 at 2.
 - Seen now, not blind: 6683, 6942, 6844, 6949, 7370 and **7199** at 4; 6782, 6788, 6791,
   7129, 7266, 7283, 6430 at 3. Against run 1's approved ratings, that takes 6782, 6791, 7129,

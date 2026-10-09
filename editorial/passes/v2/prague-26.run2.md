@@ -235,3 +235,77 @@ approved were never viewed at size, and the 206-frame held pile is where they sa
 look that holds a third of the album needs a pass through the held pile by scene, at sheet
 size, before the close look ends; this sitting did that for 5–8 Jul and pulled two 4s
 (7226, 7274), but sitting 1 pulled only by thin scene and missed Wallenstein.
+
+## After my review (2026-10-09)
+
+Reviewed on the compare page: 69 notes in `prague-26.compare.notes.json`, 13 of them
+questions, answered in the session. Applied: the Prague page becomes a merge of the two runs,
+**63 frames in six chapters**, run 1's order (the Castle first: 6688 is the whole city in one
+frame; the river's opener is a grey-day frame and its strength is at the end). Ratings after
+review are in `prague-26.reviewed.ratings.json`: run 2's file, which stays blind and unchanged
+for the compare page, with the changes below and the 13 frames run 2 never saw at size
+(`"seenNow": true`). The collection file, keywords and ingest wait for my go.
+
+**The page**
+
+1. **The Castle and Hradčany** (15): 6688 · 6659 (cover) · 6585 · 6638 · 6654 · 6704 · 6706 ·
+   6674 · 6683 · 6598 · 6597 · 6733 · 6568 · 6811 · 7669. From run 1, plus run 2's 6638, 6706
+   and 6597; 6649 parked (6638 is the interior as one shape), 7666 parked, 7669 for 7665.
+2. **Malá Strana and Kampa** (12): 7199 · 7393 · 6762 · 6836 · 6835 · 6832 · 6849 · 6851 ·
+   6853 · 6852 · 6958 · 6962. Run 2's walk, opened by 7199; 6962 for 6964. 7392 parked as
+   7199's other-orientation take.
+3. **Wallenstein and Vrtba gardens** (7): 6782 · 6788 · 6791 · 7378 · 7360 · 7361 · 7370.
+   Run 1's chapter plus 7378 as Vrtba's opener; 7370 closes. 7366 and 7368 parked.
+4. **On the Vltava** (9): 7436 · 7428 · 6844 · 7226 · 6942 · 6927 · 6949 · 7258 · 7253. Run 1
+   with 7428 for 6846. 6846, 6925 (repeats 6942) and 6915 (6949 is the view at its best) parked.
+5. **The Old Town** (11): 7129 · 7134 · 7156 · 7159 · 6874 · 6885 · 6888 · 6868 · 7274 · 7266 ·
+   7283. Run 1 plus 6868 and 7274; 6871, 7133 and 7282 parked.
+6. **Vinohrady and Žižkov** (9): 6343 · 6345 · 6422 · 6442 · 6430 · 6502 · 6509 · 6528 · 6545.
+   Run 1 with 6502 for 6456; 6511 parked (the lamp post is handled well, but 6528 and 6545
+   close the evening as run 1 had it).
+
+**Ratings** (against run 2):
+
+- Up to 4: 6688, 6654, 6598, 6962, 7156. Up to 3: 6670, 6343.
+- Down to 3: 6852, 6964, 6944.
+- Confirmed: 6851, 6853, 6706, 6597 at 4; 6659 (cover), 6585, 6649, 6704, 6849, 6927, 6846,
+  7392, 7366, 6545, 7665 at 3; 6456 at 2.
+- Seen now, not blind: 6683, 6942, 6844, 6949, 7370 and **7199** at 4; 6782, 6788, 6791,
+  7129, 7266, 7283, 6430 at 3. Against run 1's approved ratings, that takes 6782, 6791, 7129,
+  7266 and 7283 from 4 to 3; they keep their places on role.
+
+**What the review settled**
+
+- **Landmarks.** Run 2's 29 downgrades leaned on two rules written about the subject ("a
+  documentary frame of a landmark is a 2", "nice light alone"), and they fired on category:
+  6670's critique ends with "the 2 the standard gives a documentary facade". Fame now counts
+  for nothing either way and breaks a tie at most; "documentary" describes the frame, not the
+  building (`taste.md`).
+- **Wide views.** "The view everyone takes" isn't a photographic reason, and 6688's light was
+  read as flat when it renders the colour. A wide is judged by its structure and by "what
+  could have been done better from here?" (README).
+- **Devices.** Run 2 ranked twins by which had a named device (6964's rails over 6962's tram)
+  and leaned on the minimal motif (6852, 6597). A device or motif is a reason to look harder,
+  not a star.
+- **Objects.** Bins, signs and street furniture belong to a lived-in place; they cost only
+  when they take the eye. 6598's bin doesn't, 7283's sits in the lamp's pool and does a
+  little, 7199's sign was read as making the frame a record.
+- **Trip pages.** 6927, the ICM, was cut by the portfolio standard. A trip page asks what a
+  frame adds to its chapter.
+- **Stars and the page.** 6849 is a 3 on the page; a frame doesn't need a 4 to be shown.
+- **The first look lost frames by decision, not resolution.** 7199, 6942, 6683, 7370, 6844
+  and 6949 are all legible at 600px. They went to other-orientation takes grouped as twins
+  (7199, 6942, 6681), one frame per scene with the rest held behind it (6683, 6949, 7129), and
+  whole scenes judged enough (Wallenstein). 7199 was lost three times, once in each run and
+  once from the old site, though I'd said at the re-cull that it beats every portrait frame
+  of the spot. Fixed in the README's step 3.
+- **Crops.** These are camera JPEGs, never cropped. Rate as shown, record a suggested crop
+  (`crop` in the ratings), and send crops that would earn a star to the edit queue: 7226
+  (16:9), 6915 (16:9, the sky), 6844 (the leaf), 6456 and 6836 (tighter).
+- **Chapters need a brief.** Mixing roles in a chapter reads as random; each chapter gets one
+  line saying what it's for before frames are chosen (README step 5).
+- **`taste.md` names concepts, not frames.** Frame numbers move out of the rule sections into
+  the calibration log, so a blind run doesn't read my verdicts.
+
+**People:** 7199 adds two café guests at the rail, small at display size, faces readable at
+100%: assumed strangers, check. 6788's two visitors are seen from the side, not identifiable.

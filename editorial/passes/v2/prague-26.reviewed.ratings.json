@@ -1,0 +1,1302 @@
+{
+ "album": "Czechia 2026: Prague (run 2, after review)",
+ "places": [
+  "prague-26"
+ ],
+ "pass": 2,
+ "run": 2,
+ "date": "2026-10-09",
+ "method": "Run 2, session B, sitting 1 of 2: the close look for 2–3 Jul (6340–6966). All 80 shortlisted frames of those days at 1400px with a 100% crop each (two where the subject was split); 11 held frames pulled in where a scene looked thin, at 1000px side by side (6505, 6510, 6520, 6521, 6538 for the Riegrovy sady evening; 6740, 6762, 6838, 6958, 6921, 6962 for Malá Strana's lanes, the Čertovka, the night and the ICM and tram alternatives), 6762 and 6958 also at 1400px with crops. Pulled frames carry \"pulled\": true. 6760, 6764's twin, is not in selects/Prague. Instagram 6706 confirmed by eye. Sitting 2: the remaining 45 shortlisted frames of 5, 6 and 8 Jul (7130–7669) at 1400px with 100% crops (two where the subject was split, a second spot on 7353, 7668 and 7669, sky dust checks on 7436, 7643, 7648 and 7659); a 600px sheet of the 58 held frames of those days that weren't settled twins, and 7 of them pulled at 1400px with crops (7226, 7274, 7282, 7457, 7637, 7654, 7672). 7253 checked against the site's fives.",
+ "instagram": {
+  "DbBIUk8giGZ": {
+   "theme": "the castle: St Vitus outside and in, the tower, Vladislav Hall",
+   "cover": "6659",
+   "frames": [
+    "6659",
+    "6585",
+    "6670",
+    "6635",
+    "6654",
+    "6649",
+    "6674",
+    "6668",
+    "6704",
+    "6706"
+   ],
+   "check": "6706 (slide 10, 16 bits) confirmed by eye on 2026-10-08: same vantage, the same bosses in the same places and the doorway canopy at the foot; the post is a 4:5 centre crop with a darker, more contrasty edit, which accounts for the distance"
+  },
+  "DbK67DCgp8F": {
+   "theme": "Malá Strana and the Old Town at golden hour",
+   "cover": "6811",
+   "frames": [
+    "6811",
+    "6876",
+    "6874",
+    "6835",
+    "6836",
+    "6849",
+    "6853",
+    "6888",
+    "6871",
+    "6864"
+   ]
+  }
+ },
+ "frames": [
+  {
+   "n": "6340",
+   "v2": 2,
+   "focus": "sharp (tympanum relief, 100%)",
+   "technical": "Verticals converge from the low angle, uncorrected; added grain from the edit",
+   "critique": "The stair rail is a good diagonal into the portal, but the lamp post rises dead centre through the door and the tympanum, so the one line that should lead to the doorway cuts it in half instead. The gable and rose window above are lit evenly with nothing to shape them. A record of the portal with a pole through it.",
+   "focusAt": "0.47,0.62 tympanum"
+  },
+  {
+   "n": "6343",
+   "v2": 3,
+   "focus": "sharp (balcony, 100%)",
+   "technical": "Clean; a tight right edge cuts the neighbouring building",
+   "critique": "The corner itself is well placed under a clean blue sky and the morning light gives the stucco relief. But the bottom third is road furniture: two crossing signs, a keep-left bollard with chevrons, vans and road markings, and they pull the eye away from a building that has no line leading to it. The flaw the sheet flagged is the frame's weight, not a blemish. Mihail at review: a 3 and my pick for the walk's first frame: the road furniture is playful to me and I still go to the building.",
+   "focusAt": "0.55,0.5 balcony"
+  },
+  {
+   "n": "6345",
+   "v2": 3,
+   "focus": "sharp (lantern, 100%)",
+   "technical": "Slight lean from the upward angle; a branch pokes in at the right edge",
+   "critique": "Geometry carries it: the chapel's pyramid roof, the two nave roofs and the spire stack as triangles that point to one apex, slate planes against warm stone with the hard sun modelling each face. The branch on the right and the half door bottom right loosen the edges; a clean frame would be strong. Good, not more: the sky is a plain wedge and nothing moves.",
+   "focusAt": "0.53,0.25 lantern"
+  },
+  {
+   "n": "6349",
+   "v2": 3,
+   "focus": "sharp (clock, 100%)",
+   "technical": "Deliberate tilt",
+   "critique": "The tower leans hard into a deep blue sky and the second spire answers it on the right, a dynamic pair. The tree takes the left quarter as a dark mass that frames but also weighs, and the right side is crowded by the nave wall and a pinnacle at the edge, so the tower has little room to rise into. A good looking-up frame, a sibling of 6345 from the same church.",
+   "focusAt": "0.5,0.35 clock"
+  },
+  {
+   "n": "6362",
+   "v2": 3,
+   "focus": "sharp (fountain, 100%)",
+   "technical": "Clean",
+   "critique": "A top-down frame built from curves: the arc of the mosaic floor, the balustrade and the green oval of the pool sit inside each other, and the walkers with their shadows give scale and a little life. The corners cost it: the pavilion's roof fills the bottom left and a pier the right, heavy shapes that aren't part of the pattern, and the dappled light makes the gravel busy. A pattern frame that is nearly clean.",
+   "focusAt": "0.57,0.48 fountain"
+  },
+  {
+   "n": "6368",
+   "v2": 2,
+   "focus": "sharp (Pankrác towers, 100%)",
+   "technical": "Hazy distance, flat midday light",
+   "critique": "An establishing view: vineyard rows, the park, Vinohrady's roofs and the towers of Pankrác under cumulus. The light is flat and the city is a band across the middle with nothing to hold it; the vineyard is the one foreground and it is pushed into the corner, with a stone wall clipping the bottom right. Usable to say where we are; not a photo on its own.",
+   "focusAt": "0.84,0.34 towers"
+  },
+  {
+   "n": "6386",
+   "v2": 3,
+   "focus": "sharp (tram window, 100%)",
+   "technical": "Wires cross the sky",
+   "critique": "Colour does the work: the red-and-cream T3 and its yellow pantograph against the ochre school, under a sky with good cloud. The tram runs out of the right edge, so it reads as leaving, and the bottom fifth is empty cobbles while the lamp post splits the building. A strong Prague colour frame with a loose bottom; the passengers in the window are small but readable at 100%.",
+   "focusAt": "0.73,0.64 window"
+  },
+  {
+   "n": "6389",
+   "v2": 3,
+   "focus": "sharp (tram front, 100%)",
+   "technical": "Glare in the windscreen; strong grain",
+   "critique": "Lines converge well: the rails curve from the bottom left, the wires web overhead and both lead to tram 22 coming round the corner, with the green-domed tower above it as the second subject. It is a busy street frame, with parked cars on the right and a sign pole, but the busyness is the tram's world and the cloud gives the sky weight. More life than 6386, less clarity.",
+   "focusAt": "0.44,0.63 tram"
+  },
+  {
+   "n": "6416",
+   "v2": 3,
+   "focus": "sharp (clock, 100%)",
+   "technical": "Strong keystone from the low angle, left as is; noise in the sky from the grain",
+   "critique": "Plečnik's church as graphic bands: the dark brick with its white studs, the pale cornice, the tower's slab with the giant clock, all against blue with cloud closing both sides. The low angle makes the tower lean back and the nave lean out, which energises it. The bottom is untidy: a lamp post on the left, a sapling, a tree and white hoarding along the base, so the building has no clean footing.",
+   "focusAt": "0.65,0.5 clock"
+  },
+  {
+   "n": "6422",
+   "v2": 3,
+   "focus": "sharp (clock, 100%)",
+   "technical": "Clean; bright midday",
+   "critique": "The square with a story in it: the fountain's jets break the sky against the church tower, people and a naked toddler cross the paving, Vinohrady's fronts on the left. It says where we are and has life. The bottom third is empty pale paving that does nothing, and the scene is split between fountain and church with no line joining them. An establishing frame for Vinohrady, at its best as that.",
+   "focusAt": "0.68,0.38 clock"
+  },
+  {
+   "n": "6430",
+   "v2": 3,
+   "seenNow": true,
+   "focus": "sharp at 0.48,0.56 (geraniums and baskets)",
+   "critique": "The villa's red wooden bay with geraniums in the middle of a yellow Art Nouveau front, the eagle and the copper spire against blue. Colour and detail, a cheerful frame. But it's a facade shown straight, the trees crowd the bottom, and the drainpipe cuts through. A pleasant 3, the Vinohrady villa record.",
+   "focusAt": "0.48,0.56 bay"
+  },
+  {
+   "n": "6442",
+   "v2": 4,
+   "focus": "sharp (pod surface and babies, 100%)",
+   "technical": "Visible noise in the pale sky and concrete; low contrast by nature",
+   "critique": "The tower's strangeness made into a composition: from the foot of the shaft the pods cantilever out and up on converging lines, and the black babies climb the column on a diagonal that walks the eye to the top. Grey on pale sky could be flat, but the forms carry it and the one sunlit cloud on the right gives a second tone. Tighter and more odd than 6467; the subject helps, but the geometry is doing the work.",
+   "focusAt": "0.5,0.45 pod; 0.63,0.46 baby"
+  },
+  {
+   "n": "6456",
+   "v2": 2,
+   "focus": "sharp (headstone, 100%)",
+   "technical": "B&W conversion; the rope barrier runs across the stones",
+   "critique": "The mono gives the packed stones weight and the trees close the top dark, a good mood. But the bottom third is a strip of tarmac and verge with nothing in it, the rope barrier draws a white line straight through the front row, and there is no stone or path that leads in, so the eye wanders over a field of shapes. The texture is the frame's strength and it isn't enough. Mihail at review: agreed, a 2 as shown; a tighter crop could bring it out (edit queue).",
+   "focusAt": "0.35,0.55 headstone",
+   "crop": "tighter, losing the tarmac strip at the bottom"
+  },
+  {
+   "n": "6463",
+   "v2": 3,
+   "focus": "sharp (lettering, 100%)",
+   "technical": "Hard noon light, deep shadow across the street",
+   "critique": "The functionalist corner is a good subject handled straight: the curved bays and their pink and teal bands sweep around the corner, the lettering centred, cloud above. The diagonal shadow across the bottom gives the base weight, though the zebra stripes in the corner pull. A good building portrait; the light is hard rather than shaping, and it stays a portrait of a facade.",
+   "focusAt": "0.47,0.6 lettering"
+  },
+  {
+   "n": "6467",
+   "v2": 3,
+   "focus": "sharp (pod, 100%)",
+   "technical": "Heavily deepened blue in the edit; trees fill both bottom corners",
+   "critique": "The whole tower, symmetric, against a saturated blue with the cumulus banking on the right: punchy and clear. It is the postcard view of the tower, and the symmetry centres it with nothing to tension it; the babies are too small to read as the point and the tree masses crowd the corners. 6442 says more about the tower from closer.",
+   "focusAt": "0.45,0.62 pod"
+  },
+  {
+   "n": "6484",
+   "v2": 2,
+   "focus": "sharp (rose window, 100%)",
+   "technical": "Clean; lower third falls into shade",
+   "critique": "St Ludmila front-on in low evening sun, the cumulus parked between the spires. The light is lovely on the stone, but the frame is the frontal record of the landmark: centred, symmetric because the building is, the bottom third in shadow and the trees cutting both sides. Nice light on a documentary composition, which the standard makes a 2.",
+   "focusAt": "0.5,0.66 rose window"
+  },
+  {
+   "n": "6495",
+   "v2": 3,
+   "focus": "sharp (balconies, 100%)",
+   "technical": "Clean",
+   "critique": "The street's fronts recede on a diagonal from the right edge, every balcony and bracket modelled by the low sun, against a clean blue; the dark tree and lamp post on the left are the counterweight and the shade. The diagonal and the light carry it. The dark left third is heavy and the lamp post a hard vertical in it, and the vanishing point on the left has nothing to land on.",
+   "focusAt": "0.75,0.45 balconies"
+  },
+  {
+   "n": "6500",
+   "v2": 3,
+   "focus": "sharp (facade relief, 100%)",
+   "technical": "Clean; the lower 40% is near-black by design",
+   "critique": "Framing by silhouette: the canopy closes the top, the trees fill the bottom, and between them a band of gilded gables and turrets lit by the last sun, one red spire as the accent. The idea is strong and the light does exactly what it should. The black lower 40% is more than the frame needs, the lamp post stands in it on the right, and the band of facade is long and even with no single shape to land on; 6509 does the same thing with one shape.",
+   "focusAt": "0.6,0.42 facade"
+  },
+  {
+   "n": "6502",
+   "v2": 3,
+   "focus": "sharp (window, 100%)",
+   "technical": "Clean",
+   "critique": "The corner tower glows between two black tree masses that squeeze it from both sides, its spire and domes clear against the teal. Warm against dark, the compression works. But the tower's lower half is busy with branches and keeps going out of the bottom, so it reads as a lit building seen through trees rather than one shape in darkness; 6509, the same evening's idea, is cleaner. 6501, the wider corner, stays held.",
+   "focusAt": "0.45,0.55 window"
+  },
+  {
+   "n": "6505",
+   "v2": 2,
+   "pulled": true,
+   "focus": "not checked at 100% (1000px twin view only)",
+   "critique": "Held; viewed because the evening looked thin. The turreted corner in full warm light against teal, the spire high in the frame. Lovely light on a straight building portrait: no frame, no shadow shape, a lamp post on the left edge. 6509 and 6502 make the light do something; this one only shows it."
+  },
+  {
+   "n": "6509",
+   "v2": 4,
+   "focus": "sharp (gable wall, 100%)",
+   "technical": "A small lamp glare at bottom left",
+   "critique": "The best of the evening's silhouette frames: the stepped gable is one warm shape, its curves and relief figures picked out by the low sun, held in a cup of dark trees with a third of clean teal sky above it as room. The negative space is the point and it is well judged: the gable sits just above centre, the dark rises to meet it. Only the lamp's spot of light bottom left pulls the eye. Quiet and strong; it gives more than its twin 6506.",
+   "focusAt": "0.43,0.6 gable"
+  },
+  {
+   "n": "6510",
+   "v2": 3,
+   "pulled": true,
+   "focus": "not checked at 100% (1000px twin view only)",
+   "critique": "Held; pulled in because the Riegrovy sady evening had sunsets and no life up close. The beer garden under the chestnuts: string lights sag across the frame and lead back with the path, the crowd and a barrel in the middle ground, the canopy lit green above. It is the evening's atmosphere in one frame. The bottom third is empty tarmac and the people are a dense middle band; several faces are recognisable, assumed strangers."
+  },
+  {
+   "n": "6511",
+   "v2": 3,
+   "focus": "sharp (walker, 100%; the castle is soft in the haze, as distance)",
+   "technical": "Sun flare at upper right; haze flattens the castle",
+   "critique": "Backlit evening in Riegrovy sady: the path curves in from the bottom, a woman walks up it with a rim of light, the castle is a faint shape on the horizon and the sun flares through the tree on the right. A lot of mood. The lamp post stands dead centre and splits the view in two, the castle is too small and hazy to be the destination the path promises, and the walker is a recognisable stranger mid-frame.",
+   "focusAt": "0.27,0.8 walker; 0.58,0.42 castle"
+  },
+  {
+   "n": "6520",
+   "v2": 2,
+   "pulled": true,
+   "focus": "not checked at 100% (1000px twin view only)",
+   "critique": "Held. The horizontal sunset with the crowd as a strip along the bottom: the sun sits over the castle and the trees on both sides crowd in, the people too small and dark to tell the story 6528 tells. The sheet's call stands."
+  },
+  {
+   "n": "6521",
+   "v2": 3,
+   "pulled": true,
+   "focus": "not checked at 100% (1000px twin view only)",
+   "critique": "Held; viewed as 6528's variation. The people's frame: the crowd on picnic blankets lit and readable in the foreground, the hillside stepping down to the city, the castle and the sun small near the top. It tells the ritual better than 6528 but the sunset is weaker and the composition is a stack of bands. A real alternative to 6528 if the chapter wants people over light."
+  },
+  {
+   "n": "6525",
+   "v2": 2,
+   "focus": "sharp for the distance (castle, 100%)",
+   "technical": "Lower half falls to black; noisy in the shadows",
+   "critique": "The sun sets beside the castle on a long horizon with leaves closing the top right. The sun and the castle are both small and the dark lower half is just dark: trees with nothing lit in them and a few people cut at the bottom right. A sunset over a city with the landmark as a speck; 6528 gives the same moment a reason.",
+   "focusAt": "0.29,0.45 castle"
+  },
+  {
+   "n": "6528",
+   "v2": 3,
+   "focus": "sharp for the distance (castle, 100%)",
+   "technical": "Underexposed crowd; recoverable",
+   "critique": "The vertical turns the dark half into the subject: the hillside crowd sits in silhouette facing the sun as it drops beside the castle, an audience for the sunset, with the leaves closing the top left. The story is clear and it is Prague's evening ritual. The crowd is a dense mass in the bottom third, some backs lit, a few heads at the edge, and the castle is small. A good people-and-place frame rather than a strong composition.",
+   "focusAt": "0.33,0.38 castle"
+  },
+  {
+   "n": "6538",
+   "v2": 2,
+   "pulled": true,
+   "focus": "not checked at 100% (1000px twin view only)",
+   "critique": "Held. People scattered on the lawn, the city and a tiny castle on the horizon: a pleasant record with nothing to organise it, a broad green band and a pale sky band."
+  },
+  {
+   "n": "6541",
+   "v2": 3,
+   "focus": "sharp (sign, 100%)",
+   "technical": "Clean",
+   "critique": "One red shape in a field of green: the enamelled street sign half swallowed by the Virginia creeper, which runs as a texture over the bottom two thirds. A clean graphic idea and a good Vinohrady detail. The top third undoes some of it: a pale chimney, a ladder, a fence and a tangle of leaves, all brighter than the sign's surroundings.",
+   "focusAt": "0.46,0.47 sign"
+  },
+  {
+   "n": "6545",
+   "v2": 3,
+   "focus": "sharp (station hall lettering and the locomotive, 100%)",
+   "technical": "Something out of focus intrudes at the left edge twice (railing or lamp); a crane top right",
+   "critique": "The station from above: tracks fan out from the bottom right and converge on the twin arches of the hall, the blue locomotive anchors the bottom left, the Art Nouveau tower and the dusk sky close the top. Lines everywhere lead in, and the soft dusk light keeps it even. It is busy with catenary poles, and the blurred shapes on the left edge are a blemish. A good frame of a place most visitors don't see from here. Mihail at review: agreed, a 3; keeps its place as the closer of Vinohrady.",
+   "focusAt": "0.42,0.33 hall; 0.16,0.8 locomotive"
+  },
+  {
+   "n": "6562",
+   "v2": 3,
+   "focus": "sharp (balcony, 100%)",
+   "technical": "Clean",
+   "critique": "Nový Svět in the morning: the cobbles curve down and away, the ochre house with its red window frames on the left and the plain wall with two lanterns on the right lead into it, the ivy and the cloud close it. A good S-curve and a quiet light. The green construction netting sits right at the vanishing point, where the eye ends up, and the right wall is a large blank strip.",
+   "focusAt": "0.45,0.55 balcony"
+  },
+  {
+   "n": "6567",
+   "v2": 3,
+   "focus": "sharp (lantern, 100%)",
+   "technical": "Clean",
+   "critique": "A lane bending round to the right past a row of lanterns that step down in size to the white building at the end; the pale wall and the spruce close the right. Good perspective and a clear path for the eye. The light is soft and even, so nothing shapes it, and the lower third is a large field of cobbles; it is a well-made lane frame without a reason to stop on it. 6568 does the same thing with light.",
+   "focusAt": "0.32,0.4 lantern"
+  },
+  {
+   "n": "6568",
+   "v2": 4,
+   "focus": "sharp (gate, 100%)",
+   "technical": "Clean; a manhole cover low centre",
+   "critique": "Built on light at the end of a passage: the walls in soft shade close in from both sides, the lane curves, and at the end the sunlit pink-and-white building with its arched gate is the destination. The lantern on the left is a vertical in the left third that sets the scale; the sgraffito on the left wall adds texture without noise. The manhole sits where the eye crosses the cobbles, a small pull. One of the strongest lane frames of the morning.",
+   "focusAt": "0.58,0.57 gate"
+  },
+  {
+   "n": "6581",
+   "v2": 3,
+   "focus": "sharp (giant's head, 100%)",
+   "technical": "Clean",
+   "critique": "The Titans at the castle gate: the giant's raised dagger is a strong diagonal against open blue, the victim's arm answers it, and the striped sentry box at the foot is good punctuation. The rest is crowded: the palace facade, a second statue group and the gate fill the left, a gilded scroll is cut by the right edge, and the statue's pedestal is a dark block in the bottom right. A dynamic subject in a busy frame.",
+   "focusAt": "0.62,0.4 giant"
+  },
+  {
+   "n": "6585",
+   "v2": 3,
+   "focus": "sharp (spire tracery, 100%)",
+   "technical": "Strong convergence by design",
+   "critique": "Posted (castle post #2). St Vitus's west front from the foot, the spires driving up into cloud on a steep diagonal, warm light on the stone. The angle is the drama and it works; the textured cloud gives it a sky. But the facade fills nearly all the frame, the left spire is small and crowded against the right one, and the bottom is cut through the portal arches. The standard looking-up view of the cathedral, done with energy. Mihail at review: agreed, a 3; on the page.",
+   "focusAt": "0.6,0.35 tower"
+  },
+  {
+   "n": "6597",
+   "v2": 4,
+   "focus": "sharp (window, 100%)",
+   "technical": "Clean",
+   "critique": "No. 22 on Golden Lane as a colour field: pale blue wall, the green window full of books, the salmon pilaster on the right, the tile roof as a band on top and the rough plinth as a band below. The eave's curved shadow crosses the wall like a line drawn over it. Flat-on and balanced, the window and the plaque weighing each other. A quiet frame with every element placed; the plaque's 'Here lived Franz Kafka' is the only story it needs. Mihail at review: a 4 is generous, but better than missing it; on the page after 6598.",
+   "focusAt": "0.32,0.6 window"
+  },
+  {
+   "n": "6598",
+   "v2": 4,
+   "focus": "sharp (door, 100%)",
+   "technical": "Clean",
+   "critique": "Golden Lane's pastel houses, the eaves' shadows cutting a jagged diagonal across the cobbles and the light falling on the pink and blue fronts, the lantern on the left. A well-lit street frame. A rubbish bin stands in the left foreground, a café arrow sits on the wall, and the frame has no clear subject among the houses; 6597 gives the lane one. Mihail at review: a 4: the eaves' jagged shadow across the cobbles is the composition, a diagonal into the lane. The bin takes no eye (not bright, not on a strong point). 6597 is its detail, not its rival; both on the page.",
+   "focusAt": "0.66,0.6 door"
+  },
+  {
+   "n": "6635",
+   "v2": 3,
+   "focus": "sharp (gilded statue, 100%)",
+   "technical": "Haze and scaffolding at the left edge; warm cast",
+   "critique": "Posted (castle #4). The transept wall rising in warm light: the high windows burn, the gilded statues step up the piers, the coat of arms in the middle. Layered and rich. The scaffolding fogs the left edge, the crowd and the pews fill the bottom fifth, and the frame has no single line through it; it reads as an inventory of a beautiful wall.",
+   "focusAt": "0.86,0.55 statue"
+  },
+  {
+   "n": "6637",
+   "v2": 2,
+   "focus": "sharp (apse window tracery, 100%)",
+   "technical": "Scaffolding fills the right 40%",
+   "critique": "The choir's windows burn with colour under a warm vault and the light is beautiful, but the scaffolding tower takes the whole right side, a grid of steel brighter than anything else in the frame, and the pulpit is a dark mass on the left. The flaw flagged on the sheet is most of the photo: the cathedral's best light, half hidden.",
+   "focusAt": "0.37,0.55 window"
+  },
+  {
+   "n": "6638",
+   "v2": 4,
+   "focus": "sharp (rose window, 100%)",
+   "technical": "Clean; the axis sits a little left of centre",
+   "critique": "The nave's verticals rise on both sides to the vault, whose ribs converge on the rose window, and the organ's silver pipes hang under it like a fringe, the strongest shape in the interior. The gilded statue at the top right is a warm foreground accent that makes the off-centre axis read as a choice, and the right pier's mass balances the open left. Even, warm light that the stone holds. The best of the cathedral interiors. Mihail at review: a good find; on the page.",
+   "focusAt": "0.45,0.5 rose window"
+  },
+  {
+   "n": "6649",
+   "v2": 3,
+   "focus": "sharp (organ case, 100%)",
+   "technical": "Clean; low light noise",
+   "critique": "Posted (castle #6). The north transept as layers: tall windows, the gilded Baroque organ, the gallery, the coats of arms and the gilded saints on the piers. Rich and well exposed. It shows everything with equal weight and no line organises it, the same inventory problem as 6635; 6638 turns the same building into one shape. Mihail at review: agreed, a 3; parked, 6638 is the interior as one shape.",
+   "focusAt": "0.55,0.38 organ"
+  },
+  {
+   "n": "6654",
+   "v2": 4,
+   "focus": "sharp (glass, 100%)",
+   "technical": "A hanging light fitting crosses the top centre",
+   "critique": "Posted (castle #5). The window glows red and blue in a dark wall and spills colour onto the mosaic on the right, a second light that makes the frame. The dark surround concentrates it. The hanging lamp drops into the window's top, the statue cuts the bottom-left corner, and the window is centred with the glow squeezed to the right edge; the spill on the wall is the more interesting part and has the least room. Mihail at review: a 4: the red spill on the wall is light doing something; a symmetric window can sit centred.",
+   "focusAt": "0.45,0.55 glass"
+  },
+  {
+   "n": "6659",
+   "v2": 3,
+   "focus": "sharp (clock, 100%; the man too)",
+   "technical": "A hard shadow band across the bottom",
+   "critique": "Posted cover (castle #1). The great tower in sun with cloud on the right, and in the foreground a man from behind holding his phone up to it, his dark vertical echoing the tower's. It says what the castle is on a summer day: a sight being photographed. He is mid-size and dark against the building's dark base, so he merges rather than stands out, and the crowd and the pink palace on the left spread the frame. A story frame more than a strong one; not identifiable. Mihail at review: a 3, the castle chapter's cover. The figure merges with the tower's base, but the frame is a sight being photographed, which is what a cover says.",
+   "focusAt": "0.36,0.8 man; 0.53,0.36 clock",
+   "cover": true
+  },
+  {
+   "n": "6668",
+   "v2": 3,
+   "focus": "sharp (clock, 100%)",
+   "technical": "Clean",
+   "critique": "Posted (castle #8). The tower centred against a clean deep blue, clock and lantern, the warm stone well lit. The cleanest view of the tower, but a record: centred with nothing to tension it, the rose window's tracery and a roof cut into the right side, the base cut through the gilded portal.",
+   "focusAt": "0.47,0.55 clock"
+  },
+  {
+   "n": "6670",
+   "v2": 3,
+   "focus": "sharp (crest, 100%)",
+   "technical": "Clean",
+   "critique": "Posted (castle #3). The Old Deanery's gable in good side light, the weathervane, gable, balcony and arches stacked on a vertical axis under blue. Well made, and only a facade: nothing frames or crosses it, the lamp and a parasol nick the bottom left. Nice light on architecture, the 2 the standard gives a documentary facade. Mihail at review: a 3, not 2: side light models the gable against the blue, so it isn't documentary; nothing frames or crosses it and the building is cut at an arbitrary line, so not a 4.",
+   "focusAt": "0.55,0.53 crest"
+  },
+  {
+   "n": "6674",
+   "v2": 4,
+   "focus": "sharp (apse tracery, 100%)",
+   "technical": "Clean",
+   "critique": "Posted (castle #7). The apse as rhythm: three copper pyramid roofs below the stone pyramid, the flying buttresses and a forest of pinnacles rising into a textured cloud. Repeated triangles and verticals carry it, with the copper green as the one colour against warm stone and a blue break in the sky. It is cut at the bottom and the left on purpose and the frame holds; the strongest exterior of the cathedral.",
+   "focusAt": "0.5,0.42 tracery"
+  },
+  {
+   "n": "6682",
+   "v2": 4,
+   "focus": "sharp (walkers, 100%)",
+   "technical": "A dark stain on the paving below the well; a roof edge cuts the right side",
+   "critique": "Straight down from the tower onto the third courtyard: the paving's grid is the frame, and the walkers are dots each with a long shadow pointing the same way, so the shadows, not the people, make the pattern. The well with its ring sits on a third and casts its own shadow; the spilled water trails from it like a brushstroke. The roof and cornice on the right edge break the abstraction, and the walkers clump in the middle band. A graphic frame unlike anything else from the castle.",
+   "focusAt": "0.42,0.46 walkers"
+  },
+  {
+   "n": "6683",
+   "v2": 4,
+   "seenNow": true,
+   "focus": "sharp at 0.40,0.45 (St George's towers); the weathercock is slightly soft at 100%, fine at display size (checked 2026-10-09)",
+   "critique": "A strong frame run 2 should have pulled. From the cathedral tower, the green weathercock in the bottom left is a real foreground, the stacked red roofs of St George's and the castle wings fall away on a diagonal, and the river with its bridges runs out to the top right. Layered, warm and the sky has texture. It overlaps 6688 (the city from the tower), and it beats it: it has a near point and a line. Run 2 held it behind 6688 and never looked. Mihail at review: a 4 and on the page, after the chevet; different from 6688, not a replacement.",
+   "focusAt": "0.15,0.80 rooster"
+  },
+  {
+   "n": "6688",
+   "v2": 4,
+   "focus": "sharp (river and weir, 100%)",
+   "technical": "Hazy distance; grain",
+   "critique": "The establishing view from the tower: Malá Strana's red roofs fill the foreground, St Nicholas's green dome on the right, the river bends through the middle third with Charles Bridge on a diagonal and the weir, the city runs to the horizon under cumulus. It has layers and a clear lead along the bridge. It is also the view everyone takes from up there, with flat midday light and a large sky that adds texture but no drama. The chapter's one wide, at 3. Mihail at review: a 4. The river curves through the middle third, the bridge runs on a diagonal and St Nicholas's dome anchors the middle ground; mid-morning light renders the roofs, the water and the cloud. \"The view everyone takes\" isn't a photographic reason, and nothing much could be done better from here. Opens the page.",
+   "focusAt": "0.33,0.55 bridge"
+  },
+  {
+   "n": "6704",
+   "v2": 3,
+   "focus": "sharp (chandelier, 100%)",
+   "technical": "Window light blows on the left; rope barriers line both sides",
+   "critique": "Posted (castle #9). Vladislav Hall on its axis: the rib vault's curving ribs knot overhead and the three chandeliers drop down the middle to the far wall, the floorboards run away to it. Symmetric and calm, the warm light from the left windows. The bottom 35% is empty floor, and the rope barriers and the tourists at the far end are a busy line where the eye arrives. The vault is the best part and gets only the top half. Mihail at review: agreed, a 3; on the page before 6706.",
+   "focusAt": "0.62,0.4 chandelier"
+  },
+  {
+   "n": "6706",
+   "v2": 4,
+   "focus": "sharp (boss, 100%)",
+   "technical": "Clean",
+   "critique": "Posted (castle #10; see the Instagram check). Straight up into Vladislav Hall's vault: the ribs loop and cross as a warm net, the star bosses mark the knots, and the top of a carved doorway at the foot gives the one point of scale. Pure pattern, the curves moving diagonally across the frame with nothing to interrupt them, and the warm monochrome holds it together. It does what 6704 can't: makes the vault the whole subject. Mihail at review: agreed, a 4; both Vladislav Hall frames on the page, the room (6704) then straight up.",
+   "focusAt": "0.57,0.37 boss"
+  },
+  {
+   "n": "6722",
+   "v2": 3,
+   "focus": "sharp (Old Town tower, 100%)",
+   "technical": "Clean",
+   "critique": "Malá Strana's roofs from the castle steps: chimneys and dormers step down on a diagonal from the right corner into the frame, St Nicholas's dome and the Žižkov tower on the left horizon, cumulus over the whole city. The roofs are a good, dense texture with a direction. The left side drifts: trees and the side of St Thomas's are a heavy block, and the city beyond is a hazy band. A strong city-from-above frame that is a second wide beside 6688.",
+   "focusAt": "0.28,0.38 city"
+  },
+  {
+   "n": "6733",
+   "v2": 4,
+   "focus": "sharp (climber, 100%)",
+   "technical": "Clean",
+   "critique": "The Castle Steps: the shadow line cuts a diagonal across the stair from the left and leads up to the climber on the right, the stair rises to the sunlit sgraffito tower and the café umbrellas at the top, and St John of Nepomuk stands at the left edge as the counterweight. The light shapes the whole frame and the figure gives it scale and purpose. The statue's plinth is a heavy block in the bottom left. A strong, complete frame. The climber is seen from behind.",
+   "focusAt": "0.85,0.73 climber"
+  },
+  {
+   "n": "6737",
+   "v2": 3,
+   "focus": "sharp (lamp, 100%)",
+   "technical": "Clean",
+   "critique": "Down the cobbled lane: the light pools on the stones and the shadow from the right wall rakes across, the lamp stands in the middle, and the yellow palace at the bottom of the hill fills the end under a hill of green and a cloud. Depth and colour. The middle is busy: the lamp post, a man at a barrel, a bar stool, a bistro sign and parked cars where the lane opens, and the lamp is placed so it cuts the palace in half.",
+   "focusAt": "0.5,0.52 lamp"
+  },
+  {
+   "n": "6740",
+   "v2": 3,
+   "pulled": true,
+   "focus": "sharp (passage pier, 100%; the man at the table is small)",
+   "critique": "Held; pulled with 6762. A vaulted passage whose hanging lamps step down towards a bright courtyard where a man reads at a café table; a motorbike leans in the shade on the right. The lamps make a good diminishing rhythm and the light at the end is a clear destination. The bottom half is a dark worn floor, the bike is a heavy shape, and the courtyard at the end is bright but plain. A good mood frame for a lane chapter."
+  },
+  {
+   "n": "6744",
+   "v2": 2,
+   "focus": "sharp (dome, 100%)",
+   "technical": "Grey-green cast",
+   "critique": "Recovered in the re-cull. St Nicholas's curved flank on the left, the street running away to a domed building, the arcaded houses on the right, a big cloud over the middle. The cloud is the best of it. Below, the street is parked cars, a recycling bin in the left foreground and a parking sign, and the light is flat grey on the stone; the church is a wall at the edge, not a subject. A street record.",
+   "focusAt": "0.42,0.57 dome"
+  },
+  {
+   "n": "6750",
+   "v2": 2,
+   "focus": "sharp (cathedral tower, 100%)",
+   "technical": "Clean",
+   "critique": "Malostranské square with the cathedral up on the hill, the plague column and two lanterns in the foreground. Layered on paper, but the middle third is a car park: vans, SUVs, the red vintage cars for tourists, planters, people standing among them. The lantern post runs from the bottom edge to the top third and splits the frame. The cathedral is placed well; nothing leads to it through the clutter.",
+   "focusAt": "0.6,0.35 tower"
+  },
+  {
+   "n": "6755",
+   "v2": 3,
+   "focus": "sharp (oriel windows, 100%)",
+   "technical": "Strong keystone, the building leans back; a road sign and tourists bottom right",
+   "critique": "Recovered in the re-cull. The palace's corner oriel rising in a slot of sky between the dark walls of the street, cumulus behind; the converging lines and the walls framing both sides give it a strong shape and the facade's green-and-ochre is handsome. The bottom fifth is parked cars, a no-entry sign and three tourists cut by the edge, and the lean makes it look fallen-back rather than soaring. A good building, framed well at the top, crowded at the bottom.",
+   "focusAt": "0.55,0.45 oriel"
+  },
+  {
+   "n": "6762",
+   "v2": 4,
+   "pulled": true,
+   "focus": "sharp (sgraffito, 100%)",
+   "technical": "A drainpipe runs the right edge; slight lean",
+   "critique": "Held; pulled in because the Malá Strana lanes had no frame with a clear destination in grey light. Named as a re-read pick in the contamination note, so this view is not blind. Thunovská climbs between two pale walls whose windows and cornices converge on the arch, and the arch's sgraffito panel is the one patterned surface in a plain street, framing a lit facade beyond. The cobbles and the chequered kerbs run straight into it, and the sky with its cloud closes the top. Symmetry with a slight rise, the line doing the work rather than light. The drainpipe and its wire on the right and the car under the arch are small costs.",
+   "focusAt": "0.62,0.43 sgraffito"
+  },
+  {
+   "n": "6764",
+   "v2": 3,
+   "focus": "sharp (end arch, 100%)",
+   "technical": "Clean; warm even light",
+   "critique": "The arcade recedes in a long run of groin vaults to a bright door at the far end: repeated arches, a strong vanishing point, the shadowed piers stepping down the right side. Minimal and calm, the warm plaster in soft light. The near half is a lot of plain floor and wall, the vanishing point sits a little left with a 'POZOR AUTO' sign near it, and the light is even, so the depth is all line. A good quiet frame; whether it's a 4 depends on its twin 6760, which is held.",
+   "focusAt": "0.55,0.52 end arch"
+  },
+  {
+   "n": "6782",
+   "v2": 3,
+   "seenNow": true,
+   "focus": "sharp at 0.45,0.42 (the loggia's stucco), grainy",
+   "critique": "Wallenstein's sala terrena on its axis: the fountain in the foreground, the bronze statues lining the walk, St Vitus over the roof, a big cumulus sky. Classic garden symmetry, well lit. But the fountain basin takes the bottom third as a heavy dark shape, the walk is full of visitors standing about, and it's a postcard of the garden. A 3 here, not run 1's 4; it does the establishing job well.",
+   "focusAt": "0.45,0.42 loggia"
+  },
+  {
+   "n": "6785",
+   "v2": 3,
+   "focus": "sharp (archer's arm, 100%)",
+   "technical": "Clean",
+   "critique": "Wallenstein Garden: the bronze archer large in the foreground draws his bow across the frame, the sala terrena and the parterre's box hedges behind, the cathedral's tower over the roofs. A strong foreground figure and a layered depth. The archer's head reaches the roof line and his bow crosses the palace, so foreground and background touch rather than separate; the plinth is a heavy block at the bottom and the gravel path a pale strip on the left.",
+   "focusAt": "0.75,0.35 archer"
+  },
+  {
+   "n": "6788",
+   "v2": 3,
+   "seenNow": true,
+   "focus": "sharp at 0.45,0.40 (the wall) and 0.30,0.75 (the visitor)",
+   "critique": "The dripstone wall whole: the grotesque texture fills the frame on a diagonal, the hydrangeas run along its foot, and the two visitors give it scale. The wall is the subject and the frame says so; the sky top left is the weak corner. A good 3 and a fine opener for the wall before 6791's detail, as you said at review. Checked at 100% on 2026-10-09: sharp on the wall and the visitor.",
+   "focusAt": "0.45,0.40 wall"
+  },
+  {
+   "n": "6791",
+   "v2": 3,
+   "seenNow": true,
+   "focus": "sharp at 0.40,0.65 (the hydrangea florets)",
+   "critique": "Hydrangeas against the dripstone: blue and cream heads in the foreground, the wall's texture behind as a backdrop. Colour and texture against each other, calm, close. The sheet 2★ in run 2 was too low: nothing is wrong with it but it's a flower detail, and it works as a pair with 6788. A 3.",
+   "focusAt": "0.40,0.65 hydrangea"
+  },
+  {
+   "n": "6811",
+   "v2": 4,
+   "focus": "sharp (clock, 100%)",
+   "technical": "Clean",
+   "critique": "Posted cover (Malá Strana #1). Loreta in the last sun: the tower and its copper dome stand against a deep blue with small cloud, the facade glows, and the shadow from across the square lies diagonally over the lower third and the row of statues, so they read as dark silhouettes against lit stone. The light builds the frame: warm against blue, lit against shade. The right edge is a little busy with the angel on the cornice and branches, and a sign pole at the bottom. Strong.",
+   "focusAt": "0.6,0.44 clock"
+  },
+  {
+   "n": "6812",
+   "v2": 2,
+   "focus": "sharp (window grille, 100%)",
+   "technical": "Clean",
+   "critique": "The pink arcaded house on Loretánská in low sun, the shadow line cutting across the cobbles. The light is lovely on the arches and the colour pairs well with the cream houses beyond. But the middle of the frame is roadworks: a red skip, striped barriers, a digger, mesh fences along the whole arcade; the flaw from the sheet is the frame's centre. The light can't carry it.",
+   "focusAt": "0.65,0.45 wall"
+  },
+  {
+   "n": "6828",
+   "v2": 3,
+   "focus": "sharp (geraniums, 100%)",
+   "technical": "Clean",
+   "critique": "Recovered in the re-cull. A quiet facade: pale yellow wall, white window frames, the white pilaster dividing the frame, the arched door bottom left and one box of red geraniums as the only colour. The cobbles and the grey plinth make a dark base band. The pilaster gives it structure and the red is placed off-centre against the door, a good balance. It is a minimal frame and the light is soft; it holds as a breath between busier frames, not on its own.",
+   "focusAt": "0.65,0.53 geraniums"
+  },
+  {
+   "n": "6830",
+   "v2": 2,
+   "focus": "sharp (lantern, 100%)",
+   "technical": "Clean",
+   "critique": "Recovered in the re-cull. A narrow lane receding between pale facades to a far gap of sky, a lantern on the left, the cobbles running away. Good perspective, but the 'AMBIX GYPSY-RESTAURANT' lettering in black takes the right side and reads first, and the light is flat in the canyon. Another lane frame that the morning lanes (6568) do better.",
+   "focusAt": "0.29,0.43 lantern"
+  },
+  {
+   "n": "6832",
+   "v2": 3,
+   "focus": "sharp (bishop statue, 100%)",
+   "technical": "Clean; the base falls into shadow",
+   "critique": "St Nicholas in low gold sun against a clean teal sky: the Baroque front's curves catch the light, the dome and the belfry rise on the right, and a shadow cuts diagonally across the lower third. The colour contrast is strong and the façade's movement reads. But it is a landmark portrait, the shadow band at the bottom is a heavy dark base without shape, and the belfry is squeezed against the right edge. Good light on a documentary angle, lifted to a 3 by the curves the light picks out.",
+   "focusAt": "0.4,0.3 bishop"
+  },
+  {
+   "n": "6835",
+   "v2": 3,
+   "focus": "sharp (tower tracery, 100%)",
+   "technical": "A con-trail crosses the top; the pedestrian-zone sign is large at right",
+   "critique": "Posted (Malá Strana #4). Mostecká running up to the bridge tower: the street's two walls frame it, the tower lit warm against blue with the gate arch showing the houses beyond, a gull over it. The crowd fills the bottom as a lively band. The 'PĚŠÍ ZÓNA' sign and its pole stand big in the right foreground, the left houses are a busy wall of shopfronts, and the shadow covers the tower's lower half. A good arrival frame with one sizeable blemish.",
+   "focusAt": "0.48,0.4 tower"
+  },
+  {
+   "n": "6836",
+   "v2": 3,
+   "focus": "sharp (flag, 100%)",
+   "technical": "Clean; dark lower half",
+   "critique": "Posted (Malá Strana #5). Lázeňská closing on the Maltese church tower: the street curves in from the bottom, the two dark walls converge, and the tower's red roof and the red Maltese flag sit in the light at the end. The red echoes from roof to flag. The lower half is in deep shade with walkers and a parasol, the left house is a large flat wall, and the sky is a big plain wedge. A well-built street frame that the light rewards only at the top. Mihail at review: a 3 on the page; a tighter crop someday (edit queue).",
+   "focusAt": "0.57,0.5 flag",
+   "crop": "tighter"
+  },
+  {
+   "n": "6838",
+   "v2": 3,
+   "pulled": true,
+   "focus": "not checked on the sprite (the crop landed on the wall roof)",
+   "critique": "Held; pulled because Kampa had no frame of the Čertovka. The mill-race from the bridge: the black paddles of the water wheel on the left, the green water sprite sitting on a rail over the stream, the channel running away between pale houses and a willow. The wheel and the stream give depth and a story. The light is flat evening shade, the boardwalk takes the bottom left, the sky is a white wedge. A place frame more than a strong one."
+  },
+  {
+   "n": "6844",
+   "v2": 4,
+   "seenNow": true,
+   "focus": "sharp at 0.56,0.40 (the bridge tower)",
+   "critique": "The Old Town waterfront in low evening sun across the Vltava: the bridge tower, the water tower and the Smetana museum lit gold, their reflections in the water, Charles Bridge's arches running in from the left. Warm light that does something, on a scene with a clear horizontal structure. A leaf intrudes at the right edge. Run 2's river chapter has nothing in daylight sun; this is the frame it lacked.",
+   "focusAt": "0.56,0.40 bridge tower",
+   "crop": "trim the right edge: the leaf"
+  },
+  {
+   "n": "6846",
+   "v2": 3,
+   "focus": "sharp (penguin, 100%)",
+   "technical": "Crane at top left",
+   "critique": "Kampa's yellow penguins in a row along the rail, lit from inside and by the sun, the river and Charles Bridge, the Old Town tower and the Smetana museum beyond. The row is the composition: seven repeated shapes march across the bottom on a diagonal, pointing the eye up to the tower. The water takes the middle half with nothing in it, and the city is a thin band at the top. A fun scene that is mostly a frame, held back by the empty middle. Mihail at review: agreed, a 3; parked (7428 takes the slot).",
+   "focusAt": "0.43,0.75 penguin"
+  },
+  {
+   "n": "6849",
+   "v2": 4,
+   "focus": "sharp (window, 100%)",
+   "technical": "Clean",
+   "critique": "Posted (Malá Strana #6). Na Kampě's houses in the last sun: the light falls across the salmon, mint and cream fronts at an angle, so each house is a different temperature, and below, the light comes through gaps and lies on the cobbles as long gold strokes. The lamp and the café umbrella sit in the middle as a small human scale. The tree at the left edge frames. A quiet frame in which the light is the subject and the composition gives it room: the dark cobbles, the lit fronts, the soft sky. Mihail at review: a 3 on the page: the light lands evenly across the row; the gold strokes on the cobbles are its best part. A frame doesn't need a 4 to be on the page.",
+   "focusAt": "0.45,0.55 window"
+  },
+  {
+   "n": "6850",
+   "v2": 2,
+   "focus": "sharp (diners, 100%)",
+   "technical": "Clean",
+   "critique": "Recovered in the re-cull. A café terrace under trees on Kampa: diners under a lit awning, tree trunks dividing the frame into bays, a woman in blue walking out of the right edge. The light is soft and the scene is pleasant, but the trunks cut the terrace into pieces, the empty bench back in the bottom foreground blocks the view, and the cut-off walker pulls to the edge. Several diners are recognisable; assumed strangers.",
+   "focusAt": "0.5,0.6 diners"
+  },
+  {
+   "n": "6851",
+   "v2": 4,
+   "focus": "sharp (pigeon, 100%)",
+   "technical": "Clean",
+   "critique": "Minimal and exact: an orange wall lit almost flat by the low sun, white window frames placed as a grid, and the shadow of a lamp post and a tree falling across it, soft and diagonal. On the cornice a single pigeon with its own shadow beside it is the one point of life, placed where the shadows meet. Colour, light and a small moment, nothing else; the sliver of roof and sky at the top left gives it a corner of context. Mihail at review: a 4; the light-and-shadow reading convinced me.",
+   "focusAt": "0.53,0.62 pigeon"
+  },
+  {
+   "n": "6852",
+   "v2": 3,
+   "focus": "sharp (statue, 100%)",
+   "technical": "Umbrellas peek over the bridge parapet at the top left",
+   "critique": "A slot between Charles Bridge's dark stone and an orange house corner: inside it, a bridge statue lit gold stands against a clean sky with a lantern beside it, and far below the Old Town river front is lit. Strong contrast and depth, the dark masses on both sides framing a lit centre, and the lamp and statue reading as a pair. The umbrella tops poking over the parapet and the shadow figure on the right wall are oddities rather than distractions. A frame that only exists from this spot. Mihail at review: a 3: the lit statue in the dark slot works, the left third (umbrellas, lamp, bridge wall) competes. On the page.",
+   "focusAt": "0.45,0.47 statue"
+  },
+  {
+   "n": "6853",
+   "v2": 4,
+   "focus": "sharp (balcony ironwork, 100%)",
+   "technical": "Clean; a TV aerial on the roof line at left",
+   "critique": "Posted (Malá Strana #7). A single gable in the last warm light against a soft blue: the triangle of the roof, the oculus, the curved hood over the window and the wrought-iron balcony stack on one axis, the three lanterns and the geraniums giving it a small, domestic richness. Half the frame is plain sky above the apex and plain wall below the balcony, and the space is what makes the ornament read. The window corner bottom right and the aerial are small leaks. A quiet frame that holds its place by restraint. Mihail at review: a 4.",
+   "focusAt": "0.5,0.62 balcony"
+  },
+  {
+   "n": "6864",
+   "v2": 3,
+   "focus": "sharp (statue, 100%)",
+   "technical": "Clean; pigeons along the cornice",
+   "critique": "Posted (Malá Strana #10). St Francis's green dome and its pink-and-white drum glow against a pale sky, the statues on the drum lit; below, Charles IV stands in front of the church in shade. The dome is the strongest shape and it is lit well. The bottom half is dark stonework where the statue merges with the facade behind it, and the cream building on the left is a flat block. A good dome frame with a lower half that doesn't add.",
+   "focusAt": "0.58,0.78 statue"
+  },
+  {
+   "n": "6868",
+   "v2": 4,
+   "focus": "sharp (statue's face, 100%)",
+   "technical": "Clean; dark statue, recoverable",
+   "critique": "Charles IV large on the left, his patinated bronze dark against blue, his face catching a touch of light; behind him the lit pink drum and green dome curve away to the right. Two shapes in tension across the frame: dark and near on the left, warm and far on the right, both against the same clean sky. The statue's base and the cornice are busy at the bottom and the pigeons dot it. A stronger frame than the posted 6864: the statue is a subject here, not a merge.",
+   "focusAt": "0.3,0.38 face"
+  },
+  {
+   "n": "6871",
+   "v2": 3,
+   "focus": "sharp (clock, 100%)",
+   "technical": "Clean; dark lower half",
+   "critique": "Posted (Malá Strana #9). Down a dark Old Town street to St Giles's tower in full gold light, the spire against a soft blue. The street walls are a dark frame, the lit tower and the cream building below it the light at the end. Good structure. The 'Real Burger' sign is the first thing at the left, the bottom is crowded with signs, a no-entry disc and heads, and the dark sides are heavy. A good light-at-the-end frame dragged down by its foreground.",
+   "focusAt": "0.4,0.48 clock"
+  },
+  {
+   "n": "6874",
+   "v2": 4,
+   "focus": "sharp (clock, 100%)",
+   "technical": "Clean",
+   "critique": "Posted (Malá Strana #3). The Old Town Hall tower lit copper on its sunlit face, the shadow side cool, against a deep teal sky with a wisp of cloud; the houses at the left and the Týn spires small at bottom right are in the same warm light. The tower stands just left of centre with room to rise, and the Týn spires answer it diagonally across the frame, a small echo that makes the composition. The lower left is busy with the sgraffito house and flags. Strong light doing structural work.",
+   "focusAt": "0.45,0.44 clock"
+  },
+  {
+   "n": "6876",
+   "v2": 3,
+   "focus": "sharp (Madonna, 100%)",
+   "technical": "Scaffold netting on the right tower",
+   "critique": "Posted (Malá Strana #2). Týn over the square, the towers lit, the arcaded houses in front, and the crowd filling the bottom fifth as a dark band of heads. The crowd says Old Town Square on a summer evening, which is true and alive; it is also a wall of backs that ends the frame abruptly, two blonde heads large in the left corner. The sky takes a big plain third. The towers are smaller and less lit than in 6885.",
+   "focusAt": "0.5,0.47 Madonna"
+  },
+  {
+   "n": "6885",
+   "v2": 4,
+   "focus": "sharp (Madonna, 100%)",
+   "technical": "Scaffold netting on the right tower",
+   "critique": "Týn's towers in the last copper light, close and tall: the spires bristle against a clean blue, the gilded Madonna glows in the gable, and the pale gables of the houses below make a quiet base. Nothing else in the frame: the light carves the stone and the cluster of spires is the shape. The scaffold net on the right tower is a blemish that shows at size, and the bottom edge cuts the house fronts at their windows. Better than the posted 6876: the towers are the subject, not the crowd.",
+   "focusAt": "0.48,0.45 Madonna"
+  },
+  {
+   "n": "6888",
+   "v2": 3,
+   "focus": "sharp (painted saint, 100%)",
+   "technical": "Clean",
+   "critique": "Posted (Malá Strana #8). The Storch house's painted front in the last light: St Wenceslas on horseback, the lettering, the oriel with its spire, the stepped gable against blue. The painting is rich and the warm light suits it. It is a facade straight on, cut at the bottom, a cream neighbour taking the right quarter; the light and the painting carry it, but it records the building rather than composing it.",
+   "focusAt": "0.45,0.6 saint"
+  },
+  {
+   "n": "6897",
+   "v2": 2,
+   "focus": "soft (motion blur on the tram, intended; the arch is sharp; the passenger's face blurred, 100%)",
+   "technical": "Window glare top; a sticker on the pier",
+   "critique": "The tram slides through the arch: the voussoirs radiate over it and the lit interior glows yellow. The idea is good and the arch is a real frame. But the tram fills the lower half big and only half blurred, so it reads as a tram parked in an arch rather than one passing through; the blur is too little to be motion and too much to be sharp, and the upper half is the building's plain wall and windows. The concept carries more than the execution delivers.",
+   "focusAt": "0.2,0.62 passenger"
+  },
+  {
+   "n": "6915",
+   "v2": 3,
+   "focus": "sharp (water tower clocks, 100%)",
+   "technical": "Noise in the sky; a no-entry sign at the waterline left",
+   "critique": "Blue hour from the bridge: the Smetana museum and the water tower on the left, the red-brick house in the middle, the lamps' reflections lying across the water as gold strokes, the National Theatre's dome at the far right. The blue and the gold are the frame, and the reflections give the lower half a pattern. The sky takes the top 40% as an even blue with nothing in it, and the buildings sit in a thin strip; the reflections are the stronger part and could have had more of the frame. Mihail at review: a 3 as shown; the sky is the problem, a crop to 16:9 from the top (edit queue).",
+   "focusAt": "0.24,0.33 clocks",
+   "crop": "16:9 from the top: the empty blue sky"
+  },
+  {
+   "n": "6921",
+   "v2": 3,
+   "pulled": true,
+   "focus": "soft-intended (ICM)",
+   "critique": "Held as 6927's alternative. The lamps sweep diagonally into the frame as light trails along the bridge, the tower and the dome readable against blue, a ghost of a walker on the left. More movement and direction than 6927; the stroke at the bottom left is loose and the lower right is a dark smear. Use one ICM at most; this one has more energy, 6927 more legibility."
+  },
+  {
+   "n": "6925",
+   "v2": 3,
+   "focus": "sharp for dusk (cathedral reasonably crisp at 100%, noisy)",
+   "technical": "High-ISO noise; the statue is a dark mass, recoverable",
+   "critique": "The castle lit gold across the river at dusk, a bridge statue large in silhouette on the left, the reflections in the water, the sky fading from blue to pale. The silhouette gives the frame a foreground and a scale and the lit castle is placed well on the horizon. It is the bridge's classic view, the bottom left is a black block of parapet and sitting people, and the sky is a big empty gradient. A good version of a postcard; 6944 does it with more direction.",
+   "focusAt": "0.4,0.43 cathedral; 0.15,0.35 statue"
+  },
+  {
+   "n": "6927",
+   "v2": 3,
+   "focus": "soft-intended (ICM, the tower legible)",
+   "technical": "Intentional camera movement",
+   "critique": "Prior. An ICM of the bridge's end: the lamps pull into vertical gold strokes in a row across the frame, the Old Town tower stays readable in the middle against a deep blue, the crowd dissolves into a dark smear below. The strokes have rhythm and the tower gives the blur a subject. The bottom third is a muddy blur of people with nothing to hold, and ICM depends on taste; it is an interesting frame for a trip page, not a portfolio one. 6921 (the diagonal sweep) is held as the alternative. Mihail at review: a 3 on the page: a trip page asks what a frame adds to its chapter; the portfolio standard is for the home page.",
+   "focusAt": "0.5,0.45 tower (intended blur)"
+  },
+  {
+   "n": "6942",
+   "v2": 4,
+   "seenNow": true,
+   "focus": "sharp at 0.49,0.55 (St Vitus lit)",
+   "critique": "The landscape twin of run 2's 6944: the lamp lit, the statue and the parapet dark on the left, the castle lit across the water, the sky grading from deep blue to a warm band at the horizon, people on the bridge as silhouettes. The lit lamp is a second warm point that 6944 doesn't have, and the grade is richer; 6944 is tighter and has the parapet's diagonal. A genuine toss-up by orientation. Run 2 settled the pair at 1000px for 6944; seen at 1400px it's closer than that. Mihail at review: clearly better than 6944, not a toss-up; 6925 repeats it and is out.",
+   "focusAt": "0.49,0.55 castle"
+  },
+  {
+   "n": "6944",
+   "v2": 3,
+   "focus": "sharp (cathedral, 100%)",
+   "technical": "Clean for blue hour",
+   "critique": "The vertical with the statue on its parapet in the left third, lit warm, the parapet running down into the corner as a diagonal; across the water the castle and cathedral lit gold on the horizon under a sky that fades from deep blue to pale; the river takes the bottom with the lights' reflections. The diagonal leads in, the warm statue answers the warm castle across a band of cool blue, and the water gives depth. The sky is a large empty upper half, but it carries the colour transition. The strongest of the bridge-and-castle frames. Mihail at review: a 3: 6942 is clearly the better take (two warm points, the long graded sky); here the castle is a thin strip and half the frame is water. Other-orientation take, a star below.",
+   "focusAt": "0.43,0.45 cathedral"
+  },
+  {
+   "n": "6949",
+   "v2": 4,
+   "seenNow": true,
+   "focus": "sharp at 0.75,0.40 (the National Theatre's roof and statues)",
+   "critique": "The embankment at night from the bridge: the water tower on the left, the lit fronts of Smetanovo nábřeží across the middle, the National Theatre's dome glowing at the end, and the reflections running as gold columns down a black river under a deep blue sky. Warm against cool, a clear horizontal structure, the weir's line across the water. Run 2 held it and had no frame like it; 6915 (rated 3 in run 2) is the weaker take of this view.",
+   "focusAt": "0.75,0.40 National Theatre"
+  },
+  {
+   "n": "6953",
+   "v2": 3,
+   "focus": "sharp (diner, 100%)",
+   "technical": "A floodlight blows at the top; a CCTV camera on the left wall",
+   "critique": "Recovered in the re-cull. Night on a lane corner: the pink hotel front lit softly, flags over the arcade, a café terrace under a parasol with two diners, the cobbles curving in from the bottom, the dark stone of the bridge tower on the right. Warm and quiet, the curve leads to the people. The CCTV camera on the left wall, the floodlight hot at the top and the café chalkboard pull at the edges. The diners are recognisable; assumed strangers.",
+   "focusAt": "0.65,0.63 diner"
+  },
+  {
+   "n": "6958",
+   "v2": 4,
+   "pulled": true,
+   "focus": "sharp (lamp and door, 100%)",
+   "technical": "Night noise; the castle on the hill is near-black, recoverable",
+   "critique": "Held; pulled because the 3 Jul night had only St Nicholas and the tram; also named in the contamination note. The arcade at night: the gas lamps light the vaults from inside so each arch glows and the piers stand out as warm blocks, the arcade recedes on a diagonal to the lit street far right, and the deep blue sky closes the top-right corner. Warm against blue, repeated arches, a clean diagonal. The bottom third is empty asphalt with road markings, which is plain but leads in. A quiet night frame with real structure.",
+   "focusAt": "0.34,0.45 lamp"
+  },
+  {
+   "n": "6962",
+   "v2": 4,
+   "pulled": true,
+   "focus": "not checked at 100% (1000px twin view only)",
+   "critique": "Held as 6964's alternative. The T3 tram large and sharp coming round the curve, the checkered paving bottom right, the arcaded square and a dome behind against black. A literal portrait of the tram, well placed; the no-entry sign and traffic lights stand in the middle left, and it lacks 6964's rails leading in. 6964 stays the pick. Mihail at review: a 4 and the tram frame: the tram fills a third, the headlights and destination board are the bright points, and the black sky and dark paving vignette it. Run 2 ranked the twins by which had the leading line."
+  },
+  {
+   "n": "6964",
+   "v2": 3,
+   "focus": "sharp (tram front, 100%)",
+   "technical": "Yellow-green sodium cast, recoverable",
+   "critique": "Recovered in the re-cull. The rails sweep in two long curves from the bottom corners to tram 22, small and lit red in the middle distance between two corners of the street, its tail lights throwing red onto the cobbles. The rails are the composition: they carry the eye from the bottom edge to the tram. The black sky and the warm buildings make a gateway, and a few small figures at the café and the stop give life. The cast is strong and the sky a hard black wedge. The best tram frame of the day, where 6897's idea fails. Mihail at review: a 3, a star below 6962: the cleaner structure, but the tram is small and the bright corner block on the right competes with it.",
+   "focusAt": "0.44,0.55 tram"
+  },
+  {
+   "n": "6966",
+   "v2": 3,
+   "focus": "sharp (dome, 100%)",
+   "technical": "Strong orange cast from sodium light; the sky is pure black",
+   "critique": "St Nicholas's tower and dome floodlit against a total black sky, the square's houses in amber below. The church's two shapes rise cleanly above the roofline, and the black gives them weight. But the whole frame is one warm orange with no other colour or tone to separate the church from the houses, the bottom half is a facade wall, and the black sky is 40% of the frame. A night record of the church with strong shapes.",
+   "focusAt": "0.6,0.42 dome"
+  },
+  {
+   "n": "7129",
+   "v2": 3,
+   "seenNow": true,
+   "focus": "sharp at 0.45,0.50 (gutter, tiles, window boxes)",
+   "critique": "The Old Town Square through the tower's window: the mullions frame pastel gables, the umbrellas and the people on the chequered paving below, a crane on the skyline. The window does real work here: it reads as 'from inside the tower', and the bars divide the frame into views. But the black frame takes a lot of space and the crane sits in the top strip. Better than run 2's 7130 of the same idea, which looks at Týn; a 3, and a fair chapter opener.",
+   "focusAt": "0.45,0.50 gables"
+  },
+  {
+   "n": "7130",
+   "v2": 3,
+   "focus": "sharp (Týn gable, 100%)",
+   "technical": "Scaffold wrap on the right tower; the window frame's black is crushed",
+   "critique": "A frame within a frame that half works: the pane isolates Týn, its spires against a textured grey sky that suits the dark stone. But the window's lower mullion cuts across the square and its arcades, and the bottom quarter is solid black wall with nothing in it, so the frame is top-heavy and the frame-within-frame costs more space than it gives back. 7156 shows the same building better; this one says 'from inside the tower'.",
+   "focusAt": "0.5,0.33 Týn clock"
+  },
+  {
+   "n": "7133",
+   "v2": 3,
+   "focus": "sharp (pavilion roof, 100%)",
+   "technical": "Clean; the grey is the edit's warm-red cast against a neutral sky",
+   "critique": "The roofs as a field: the pastel gables and the green-roofed pavilion in the bottom right are a real foreground, and the red planes recede from them up to St Gall's dome and the skyline, so the eye travels the depth. The grey sky is kept to a fifth and has texture. What holds it at 3 is the middle: no line organises the roofs between the pavilion and the horizon, so it reads as a pattern of red rather than a composition with a direction.",
+   "focusAt": "0.4,0.82 pavilion"
+  },
+  {
+   "n": "7134",
+   "v2": 4,
+   "focus": "sharp (crowd and facade, 100%)",
+   "technical": "Clean",
+   "critique": "Straight down on the crowd waiting for the astronomical clock, and it becomes a pattern: the gables run on a diagonal across the top, the cream umbrellas are big geometric shapes at the seam, and below them hundreds of heads, all turned the same way, dot the chequered paving. Busy by nature, but the busyness is the point and the diagonal organises it. The best people-as-theme frame of the day, and a vantage that is only worth it because of what it does to the crowd.",
+   "focusAt": "0.5,0.75 crowd; 0.5,0.4 pavilion windows"
+  },
+  {
+   "n": "7154",
+   "v2": 2,
+   "focus": "sharp (St James tower, 100%)",
+   "technical": "Pale, textureless sky across the top quarter",
+   "critique": "East from the tower over the roof sea to St James. The domed roof with its eyebrow dormers is a good foreground shape, but the sky above is blank white and the middle is dense without a line through it; it says what 7133 says with less depth.",
+   "focusAt": "0.6,0.35 St James"
+  },
+  {
+   "n": "7156",
+   "v2": 4,
+   "focus": "sharp (Týn gable, 100%)",
+   "technical": "A white delivery van in the square; scaffold wrap on the right tower",
+   "critique": "Týn rising out of its square under a sky that has real weight: the dark cloud presses down on the spires and the stone, so the grey works for the frame instead of flattening it. Symmetric, the arcaded houses as a plinth, the square below with the column. Still a landmark shown straight, with the van parked in the middle of the plinth, so a strong record rather than more. Better than 7130 and 7136. Mihail at review: a 4: the heavy sky presses on the spires and the square, arcades and towers stack top to bottom. The landmark neither adds nor costs; the dark spires against dark cloud and the van are the cost.",
+   "focusAt": "0.5,0.4 Týn gable"
+  },
+  {
+   "n": "7159",
+   "v2": 4,
+   "focus": "sharp (lattice, 100%)",
+   "technical": "High ISO in the shadows, clean enough at display size",
+   "critique": "Looking up the Old Town Hall tower's lift shaft: the steel hoops spiral up the middle as a cage of curves, the stair landings step up around it as zigzag lines, and the copper-lit dome at the top is the one warm shape, so the whole frame pulls the eye upwards. Graphic, almost abstract, and built on line rather than on knowing what it is.",
+   "focusAt": "0.45,0.4 lattice top"
+  },
+  {
+   "n": "7183",
+   "v2": 2,
+   "focus": "soft (tower relief mushy at 100%, noise and haze)",
+   "technical": "White sky fills the gaps; bollards and signs at the foot",
+   "critique": "The Powder Tower at the end of Celetná. The street walls frame it, but the sky is white, the foot of the frame is crowd, bollards, a no-turn sign and a red jeep, and the tower is shown straight on in flat light: a documentary frame of a landmark.",
+   "focusAt": "0.5,0.45 tower"
+  },
+  {
+   "n": "7189",
+   "v2": 3,
+   "focus": "sharp (St Vitus, 100%)",
+   "technical": "Slight tilt to the right? horizon looks level; the lamp and statue cut at the left edge",
+   "critique": "The classic view from Charles Bridge under a heavy sky: the cloud has real structure and darkens the frame into a mood, and the castle and Malá Strana sit as a warm band across the middle with the boat as a small accent on the water. But the castle is small, the sky takes half and the parapet, lamp and a cut statue crowd the left edge without framing anything. An establishing wide, and a good one for a grey day.",
+   "focusAt": "0.42,0.45 St Vitus"
+  },
+  {
+   "n": "7199",
+   "v2": 4,
+   "seenNow": true,
+   "focus": "sharp at 0.85,0.62 (geraniums and sign) and 0.60,0.45 (the far balcony), checked 2026-10-09",
+   "focusAt": "0.85,0.62 sign; 0.60,0.45 far houses",
+   "critique": "The Čertovka in landscape on the grey noon of 5 Jul: the canal bends away between the pastel fronts, the ivy and roses on the left and the geraniums and lamps on the right making two walls that hold it, the houses stepping back in layers to a white strip of sky. Landscape gives the bend room that the portrait takes (7392, 7453) squeeze. The café sign is a dark disc beside the brightest red and pulls the eye a little: a blemish, not a record. Two café guests at the rail, small. Lost three times (run 1's first look, the old site's drop list, run 2's twin group with the portrait takes). Mihail at review: my favourite of the spot; a 4, and it opens Malá Strana."
+  },
+  {
+   "n": "7208",
+   "v2": 3,
+   "focus": "sharp (group, 100%)",
+   "technical": "Clean; flat light under the canopy",
+   "critique": "A quiet park frame on Slovanský ostrov: the big trunk anchors the left third and its branches roof the frame, the yellow palace is a pale band behind, and the students sitting in a circle on the lawn are the small human centre. Calm and well balanced, the green lit evenly. The lawn's bottom third is empty and the light does nothing in particular, so it stays a quiet 3, the kind that holds a chapter rather than leads it.",
+   "focusAt": "0.47,0.6 group"
+  },
+  {
+   "n": "7213",
+   "v2": 3,
+   "focus": "sharp (St Vitus and pedalos, 100%)",
+   "technical": "Clean; dock clutter bottom left",
+   "critique": "Layered down the river: the dark tree mass on the left, the moored boats and pedalos, the Legion Bridge's arches across the middle and the castle on the skyline, under a grey sky with enough texture. The pedalos out on the water give it summer life. The dock is a jumble at the bottom left and the castle is small, so it's a good river frame, not a strong one.",
+   "focusAt": "0.46,0.27 St Vitus; 0.6,0.6 pedalos"
+  },
+  {
+   "n": "7222",
+   "v2": 3,
+   "focus": "sharp (neon, 100%)",
+   "technical": "Graffitied post at the right edge",
+   "critique": "A found scene: the rose heart and the neon 'Will you marry me?' against the grey river, the Šítkov water tower in the right third. The red is the only saturated thing in a cool dusk, and the heart sits low and left with the river through it, a decent placement. But the frame is the object; the pavement and red carpet take the bottom fifth and the graffitied post cuts the right edge. Fun, and the unicorn rule applies: a 3 at most.",
+   "focusAt": "0.34,0.65 neon"
+  },
+  {
+   "n": "7226",
+   "v2": 4,
+   "focus": "sharp (towers, pedalo; noisy)",
+   "technical": "Dust spot in the sky left of the Old Town water tower (also in the vault's edit queue, seen before this run); noisy blue",
+   "critique": "Pulled; held, viewed because the river at dusk had only the proposal heart and the tram. Deep twilight on the Vltava: a storm-blue sky with a band of pale cloud, the Old Town's towers and Charles Bridge in silhouette across the middle, and one pedalo with its wake in the open water below them as the single near point. Cool on cool, the shapes dark and readable, the boat giving the empty water a reason. The lower half is a lot of water, but it's the colour of the sky and it holds the mood. Quiet, and better than its subject. Mihail at review: a 4; better in 16:9 (edit queue).",
+   "focusAt": "0.66,0.35 tower and dust; 0.5,0.75 pedalo",
+   "pulled": true,
+   "crop": "16:9: about 12% off the bottom (empty water), 3% off the top; keeps the pedalo and its wake"
+  },
+  {
+   "n": "7234",
+   "v2": 3,
+   "focus": "sharp (theatre and cobbles; tram blur intended)",
+   "technical": "Lamp post and wires crowd the top left; a pedestrian cut at the left edge",
+   "critique": "Motion against a sharp setting at dusk: the tram streaks across the right half in red and lit yellow, the rails curve through the wet cobbles in the foreground, the National Theatre with its flags and the glass Nová scéna are still behind. Here the concept is executed: the static parts are sharp and the curves lead into the blur. What costs it is the top left, a lamp, a traffic light and wires piling up, and a figure cut at the edge.",
+   "focusAt": "0.75,0.3 theatre columns; 0.4,0.78 cobbles"
+  },
+  {
+   "n": "7253",
+   "v2": 5,
+   "focus": "sharp (St Vitus and arch, 100%)",
+   "technical": "Clean; the ice-breakers in front of the piers are dark shapes in the water",
+   "critique": "Named in taste.md as the trip's 5★ (seen before this run), so judged against the fives sheet. The castle lit gold sits above the lit arches of Charles Bridge, the bridge runs out of the frame on the right as one warm line, and the reflections drop from each arch into deep blue water under a deep blue sky with cloud texture. Warm against cool, balanced: the castle a little left, the bridge's weight right. It stops a scroll on its own.",
+   "focusAt": "0.4,0.32 St Vitus; 0.65,0.6 bridge arch"
+  },
+  {
+   "n": "7258",
+   "v2": 4,
+   "focus": "sharp (tower, 100%)",
+   "technical": "Lamp glare; fine",
+   "critique": "Warm against cool, used: the red Neo-Renaissance block on the embankment glows under the streetlamps against a storm-blue sky with texture, its corner tower central. The dark weir steps sweep in from the bottom left as a diagonal and the lamps' reflections drop into the black water at the bottom right, so the frame has a foreground and a direction, not only a lit building.",
+   "focusAt": "0.5,0.4 tower"
+  },
+  {
+   "n": "7266",
+   "v2": 3,
+   "seenNow": true,
+   "focus": "sharp at 0.50,0.47 (the neon)",
+   "critique": "The Karlovy Lázně club's neon stacked up a lit facade between dark walls, blue against the warm building on the right. Colour and a vertical rhythm of words; an odd, fun frame of night Prague. But the neon is the subject and the walls are a slot around it; the 'interesting thing' rule applies. A 3 that gives the Old Town night a modern note.",
+   "focusAt": "0.50,0.47 neon"
+  },
+  {
+   "n": "7274",
+   "v2": 4,
+   "focus": "soft (facade at 100%, slow shutter)",
+   "technical": "Graffiti on the left wall; soft at 100% on the facade (slow shutter)",
+   "critique": "Pulled; held, viewed because the Old Town night had few lane frames. A lane at night that has a destination: the walls converge on a lit Baroque palace, the lamps step in from both sides, the cobbles shine, and the sky over it is a deep blue that sets the sodium gold against cool. Small walkers at the far end give it life. The left wall's graffiti and the soft facade at 100% are blemishes; the warm-against-cool and the depth carry it. Better than 7284, which has no end and no second colour.",
+   "focusAt": "0.52,0.45 palace facade",
+   "pulled": true
+  },
+  {
+   "n": "7277",
+   "v2": 3,
+   "focus": "sharp (left tower, 100%)",
+   "technical": "Blue scaffold wrap on the right tower, bright in the floodlight; crowd heads at the foot",
+   "critique": "Týn floodlit against a near-black sky, the arcaded houses amber below: the white stone against the dark is a strong contrast and the spires bristle. But the scaffold wrap catches the light and pulls the eye, the black sky is a heavy empty top third, and the bottom edge is heads. A good night record of Týn; 6885 in the last sun is the better frame of it.",
+   "focusAt": "0.4,0.35 left tower"
+  },
+  {
+   "n": "7282",
+   "v2": 3,
+   "focus": "sharp enough (diners, noisy)",
+   "technical": "High ISO; faces at the tables recognisable at 100%",
+   "critique": "Pulled; held. A restaurant terrace at night under fairy-lit umbrellas, the triple lamp and the signpost dark on the left, diners and two women standing in the warm light. Warm lights at night, which is what taste.md says to keep, and the lamp gives a strong foreground shape. But it's square on and busy, the top third is dark wall, and the people are a crowd rather than a moment. A 3 that fits a night chapter.",
+   "focusAt": "0.55,0.65 diners",
+   "pulled": true
+  },
+  {
+   "n": "7283",
+   "v2": 3,
+   "seenNow": true,
+   "focus": "sharp at 0.60,0.36 around the lamp; the lamp itself is clipped white, as lamps are",
+   "critique": "A lamp in the ivy lights a bend of lane at night, a figure at the far end under a second lamp, the cobbles leading in. Warm, atmospheric, a real destination. The bin with spilling rubbish on the right is a blemish that sits right under the light, and the bottom quarter is dark pavement. Similar strength to run 2's 7274, which has the cool sky as a counterpoint; either can close the night. Mihail at review: the bin is part of a lived-in place. It costs a little here only because it sits in the lamp's pool of light.",
+   "focusAt": "0.60,0.36 lamp"
+  },
+  {
+   "n": "7284",
+   "v2": 3,
+   "focus": "sharp (lamp, 100%), heavy noise",
+   "technical": "Sodium light makes every surface the same orange; no cool counterpoint but the slit of sky",
+   "critique": "A lamp-lit lane at night: the walls converge, the cobbles glow, and the two lamps step towards the far wall, so the lines all point the right way. The grilles on the right repeat into the distance. What holds it back is that the whole frame is one colour, and the lane ends on a blank wall without a destination; the cobbles fill the bottom third with texture but nothing else. Atmospheric, and one of the night's lane frames rather than its best.",
+   "focusAt": "0.42,0.47 lamp"
+  },
+  {
+   "n": "7299",
+   "v2": 3,
+   "focus": "soft (the group at 100%, slow shutter)",
+   "technical": "High ISO; sodium cast",
+   "critique": "Looking down on a Malá Strana square at night from above: the lamps pool light on the cobbles and the trees throw long shadows across it, the chequered pavements run in from both corners, and a small group stands in the light by the café terrace. The shadows give the open ground a pattern, and the group a reason. But the square's centre and the bottom third are mostly empty orange cobble and the top is black, so the frame is a strong vantage with a weak middle.",
+   "focusAt": "0.7,0.62 group"
+  },
+  {
+   "n": "7301",
+   "v2": 3,
+   "focus": "sharp (bridge tower and St Vitus, 100%)",
+   "technical": "High ISO in the black sky",
+   "critique": "Down Charles Bridge at night to the lit Malá Strana towers, St Vitus glowing on the right, walkers as silhouettes on the cobbles. The towers stack well, the figures give scale and a family's movement. But the top 40% is flat black sky and the bottom fifth empty cobble, so the subject lives in a band across the middle of a tall frame; a landscape crop or a different framing would have been the photo.",
+   "focusAt": "0.5,0.45 bridge tower; 0.9,0.43 St Vitus"
+  },
+  {
+   "n": "7321",
+   "v2": 4,
+   "focus": "sharp (apse mosaic, 100%)",
+   "technical": "Grey box (speaker or bin) at the foot left of centre",
+   "critique": "Karlín's Sts Cyril and Methodius on its axis: the painted vault's ribs converge on the apse, where the Christ in mandorla sits gold in a warm half-dome above the red-backed baldachin, and the pews lead in from the bottom. Symmetric, rich in colour that stays harmonious (teal vault, warm gold, red), and the depth reads clearly. The grey box at the foot is the one blemish.",
+   "focusAt": "0.5,0.45 Christ in the apse"
+  },
+  {
+   "n": "7323",
+   "v2": 4,
+   "focus": "sharp (rose window and doors, 100%)",
+   "technical": "The rose window is near clipped but holds its tracery",
+   "critique": "The same nave turned back to the entrance: the rose window burns at the top of the axis, the organ's silver pipes fan out under it, and below the portal frames a backlit door whose light runs down the aisle between the pews. Perfectly symmetric, every element stacked on the centre line, and the backlight gives it a direction 7321 doesn't have. Paired with 7321, it's the stronger of the two.",
+   "focusAt": "0.5,0.37 rose window; 0.5,0.82 doors"
+  },
+  {
+   "n": "7351",
+   "v2": 3,
+   "focus": "sharp (dome, 100%)",
+   "technical": "Flat grey sky; the leaves at the bottom are a soft green mass",
+   "critique": "Vrtba's parterre with St Nicholas's dome and tower rising over the yellow wing: the layering places the garden in Malá Strana, which is its job. The hedges' scrolls lead in, the red roofs and green copper answer each other. The bottom fifth is an undefined mass of leaves and the sky is blank, so it's a good establishing frame for the garden, not more.",
+   "focusAt": "0.4,0.25 dome"
+  },
+  {
+   "n": "7353",
+   "v2": 2,
+   "focus": "soft (cone and bench; focus on near leaves)",
+   "technical": "Focus to check (taste.md says soft at 100%)",
+   "critique": "The hydrangea arch frames the bench and the cone yews, with the ivy house behind: framing by the arch, pink in the foreground, layers into the garden. It's pretty, and that's the trouble: the hydrangeas fill the bottom third as a soft mass, the bench is half hidden, and nothing in the frame is crisp enough to hold the eye. Liked as a scene more than as a photo. At 100% nothing is sharp: the cone and the bench are soft and the focus sits on hydrangea leaves near the lens, so the frame's one crisp thing is the least important. A soft frame with nothing to hold it.",
+   "focusAt": "0.55,0.68 bench; 0.6,0.48 cone"
+  },
+  {
+   "n": "7355",
+   "v2": 3,
+   "focus": "sharp (windows, 100%)",
+   "technical": "A clump of iris leaves fills the right foreground",
+   "critique": "Three bands: the parterre's cones in front, the ivy-covered arcade in the middle and the ivy-clad house with its red roof above, the ivy as a texture binding the lot. A pleasing garden frame. The iris clump in the right foreground is large and soft and blocks the parterre, and the house is shown square on; it's the frame 7360 makes better from above.",
+   "focusAt": "0.55,0.3 windows"
+  },
+  {
+   "n": "7360",
+   "v2": 4,
+   "focus": "sharp (parterre and tower, 100%)",
+   "technical": "Grey sky, kept to a fifth",
+   "critique": "The garden as a whole design, from the stairs: the parterre's curved hedges with red begonias fill the foreground as pattern, the cone yews step down, the lower courtyard opens with its own parterre and a figure on the bench, and the roofs climb to the Malá Strana bridge tower on the skyline. Grey light suits it: the greens are rich and the sky is small. Strongly layered, the best of the garden.",
+   "focusAt": "0.55,0.8 parterre; 0.45,0.2 bridge tower"
+  },
+  {
+   "n": "7361",
+   "v2": 4,
+   "focus": "sharp (cone yew, 100%)",
+   "technical": "Soft green leaves in the bottom corners",
+   "critique": "Straight down on the parterre and it becomes a drawing: the box hedges curl into scrolls and blades, the cone yews punctuate them, and the red and white begonias fill the gaps as colour. Minimal in idea, rich in line, and grey light is exactly right for it: no hard shadows to break the pattern. The out-of-focus leaves in the bottom corners are the blemish; a step forward would have lost them.",
+   "focusAt": "0.48,0.55 centre cone and begonias"
+  },
+  {
+   "n": "7366",
+   "v2": 3,
+   "focus": "sharp (dome, 100%)",
+   "technical": "Grey sky a third of the frame; the bridge tower cut at the right edge",
+   "critique": "Malá Strana from Vrtba's top terrace: St Nicholas's dome and belfry anchor the left, the red roofs and dormers fill the rest down to the ivy-covered wing. A good roofscape and it places the garden, but it's a wide with the sky taking a third and no line through the roofs, so it does what an establishing frame does and no more. Mihail at review: agreed, a 3; parked, 7370 closes the gardens.",
+   "focusAt": "0.18,0.25 dome"
+  },
+  {
+   "n": "7368",
+   "v2": 3,
+   "focus": "sharp (figures, 100%)",
+   "technical": "Patchy, browned lawn bottom left",
+   "critique": "Layered from the top terrace: the old tiles in the foreground run in on a diagonal, the cone yews step down beside them, the terrace with its statue and a few visitors sits in the middle, and the city spreads to Týn and the Žižkov tower on the horizon. The diagonal carries the eye down and out, and the sky is small. The browned lawn takes the bottom left quarter as dead space, which is what keeps it from 7360's level.",
+   "focusAt": "0.5,0.55 figures and statue"
+  },
+  {
+   "n": "7370",
+   "v2": 4,
+   "seenNow": true,
+   "focus": "sharp at 0.50,0.25 (St Nicholas behind the iron)",
+   "critique": "St Nicholas through Vrtba's iron gate: the scrolls of the ironwork frame the dome and belfry, the red roofs and the garden below layer into it. Frame within a frame that is the composition, like 7393 under the bridge. Run 2 never saw it; it's a better closer for Vrtba than 7366, and run 1 was right to take it.",
+   "focusAt": "0.50,0.25 dome (and 0.30,0.55 iron)"
+  },
+  {
+   "n": "7378",
+   "v2": 3,
+   "focus": "sharp (St Vitus and parterre, 100%)",
+   "technical": "White sky, about a third of the frame, textureless",
+   "critique": "Everything stacks: the carved urns and the stair in the foreground, the parterre and fountain below, the ivy wall and house, and St Vitus on the skyline above, the garden placed under the castle in one vertical. The stair's diagonal leads in. The top third is a blank white sky, which a grey day can't help, and it weighs on a frame whose strength is the bottom two thirds.",
+   "focusAt": "0.5,0.27 St Vitus; 0.55,0.75 parterre"
+  },
+  {
+   "n": "7392",
+   "v2": 3,
+   "focus": "sharp (far houses, 100%)",
+   "technical": "White sky strip at the top",
+   "critique": "Čertovka from the bridge: the canal runs into the frame between the pastel houses, the far end closes on geraniums and a balcony, and the Malostranská sign and red flowers make a foreground on the right. The lines converge well; the sky is a white strip. A good, expected view; 7393 does the Čertovka with more invention. Mihail at review: agreed, a 3; parked as 7199's other-orientation take.",
+   "focusAt": "0.5,0.55 far houses"
+  },
+  {
+   "n": "7393",
+   "v2": 4,
+   "focus": "sharp (boat and houses, 100%)",
+   "technical": "Clean",
+   "critique": "The Čertovka through Charles Bridge's arch: the arch's curve sweeps across the top as a heavy dark frame, and in the bright gap the canal leads to the white houses and the mill wheel, with the boat drifting on the right. The weight of the stone makes the opening glow, and the water's sheen carries light down to the bottom. Frame within a frame, done properly: the frame is the composition, not a border.",
+   "focusAt": "0.8,0.62 boat; 0.48,0.45 houses"
+  },
+  {
+   "n": "7395",
+   "v2": 2,
+   "focus": "soft (shop interior at 100%)",
+   "technical": "Two wheelie bins across the bottom; the sign cut at the right",
+   "critique": "The Shakespeare bookshop's door, warm inside with globe lamps and shelves receding. The warm interior against the cool facade works, but two black bins fill the bottom edge, the sign is cut, and the frame is the shop front square on: a record of a nice shop.",
+   "focusAt": "0.55,0.6 interior"
+  },
+  {
+   "n": "7400",
+   "v2": 3,
+   "focus": "soft (walker, motion; light box sharp)",
+   "technical": "The light box at the top is a heavy dark mass",
+   "critique": "Taste.md names it ('a fun concept, not a 4'), seen before this run. The narrowest lane's slot: the walls close in, the lamps step down to a figure descending, and the green man glows teal against the warm walls. The colour contrast and the slot's depth work, and the walker gives scale. But the traffic light box and its bracket dominate the top, and the frame relies on the joke. At 100% the walker is soft from motion in the low light.",
+   "focusAt": "0.6,0.3 green man; 0.57,0.72 walker"
+  },
+  {
+   "n": "7415",
+   "v2": 3,
+   "focus": "sharp (Charles Bridge, 100%)",
+   "technical": "Dark edit; grey sky 40% of the frame",
+   "critique": "From Letná the bridges stack down the river: Čechův, Mánesův, Charles and the far ones beyond, each arch row a line across the frame, with the Straka Academy's green domes as foreground. The stacking is the composition and it reads. But the sky is a large flat grey band and the dark roofs and domes at the foot are heavy; 7436 might do the stack more cleanly.",
+   "focusAt": "0.55,0.55 Charles Bridge"
+  },
+  {
+   "n": "7428",
+   "v2": 3,
+   "focus": "sharp (figures and bridge, 100%)",
+   "technical": "Grey sky 35%; dark, grainy edit",
+   "critique": "People as the theme: a row of strangers on the graffitied parapet at Letná, their backs to us, facing the bridges, one holding up a phone, one standing with a green bag. The graffiti and the loose line of bodies make it Prague's young side rather than its postcard, and the bridges beyond say where. The sky is a broad flat band and the cobbled strip at the foot is dead; the people carry it.",
+   "focusAt": "0.3,0.6 figures; 0.75,0.5 Charles Bridge"
+  },
+  {
+   "n": "7431",
+   "v2": 2,
+   "focus": "sharp (tower, 100%)",
+   "technical": "Chain post at the right edge; a notice taped to the wall",
+   "critique": "The same parapet facing the Žižkov tower. The people are scattered rather than a row, a man in denim is cut at the right edge, the chain post and its bollard intrude in the corner, and the view behind is the flattest part of the city. 7428 is the frame of this scene.",
+   "focusAt": "0.4,0.25 Žižkov tower"
+  },
+  {
+   "n": "7436",
+   "v2": 4,
+   "focus": "sharp (bridge arches, 100%)",
+   "technical": "Low-contrast, dark edit; grey sky 35%",
+   "critique": "The cleanest of the Letná bridges: the river enters at the bottom left and curves away, and the bridges cross it one behind another, each a row of arches, Charles in the middle with the Old Town tower at its end. Line does everything here: the river's sweep, the stacked horizontals. Grey suits it, the water silvering. The sky is large and the trees at the bottom right are a heavy mass, but the composition is strong enough to carry a dull day.",
+   "focusAt": "0.6,0.48 Charles Bridge arches"
+  },
+  {
+   "n": "7457",
+   "v2": 3,
+   "focus": "soft-ish (shrine at 100%, low light)",
+   "technical": "Grey sky a third of the frame, blank; soft-ish at the shrine at 100%",
+   "critique": "Pulled; named in the contamination note as a re-read toss-up with 6853, so not blind. The ochre gable from the bridge steps: the shrine and its flower boxes sit under the oculus on the centre axis, the lamp is a dark vertical on the left, and the stair rails cut diagonals across the bottom. Line and shape are good, and the orange against the grey roofs is calm. But the top third is a blank grey sky, the white houses on the right clutter the gable's edge, and the parapet at the bottom is a heavy blur. A good quiet frame; 6853 is the stronger single gable.",
+   "focusAt": "0.55,0.48 shrine",
+   "pulled": true
+  },
+  {
+   "n": "7637",
+   "v2": 3,
+   "focus": "sharp (angel, 100%)",
+   "technical": "Floodlight pole behind the angel; bright sky patches",
+   "critique": "Pulled; held, viewed because Vyšehrad had only views and the basilica. The cemetery path runs straight in on the left, the tombs, urns and ironwork step down the right in a long diagonal, the angel stands against the sky, and the trees close the top. Layered and dense with texture. The floodlight pole sits right behind the angel and the path leads to nothing much; a good document of the place.",
+   "focusAt": "0.75,0.25 angel",
+   "pulled": true
+  },
+  {
+   "n": "7643",
+   "v2": 3,
+   "focus": "sharp (motorboat, 100%)",
+   "technical": "Clean",
+   "critique": "South from Vyšehrad's ramparts: the Vltava runs as a broad diagonal into the hills under a big cumulus sky with blue in it, and a motorboat's wake is the one small mark of movement. A good landscape with real sky, but the boatyard in the bottom left is a clutter and the frame is a wide view with nothing near the camera.",
+   "focusAt": "0.51,0.65 motorboat"
+  },
+  {
+   "n": "7648",
+   "v2": 3,
+   "focus": "sharp (spire, 100%)",
+   "technical": "Small lens flare at the right spire; a sign pole at the bottom left",
+   "critique": "Sts Peter and Paul from the foot: the two spires converge into a blue sky with cumulus, the dark Neo-Gothic stone strong against it, and the tree softens the left edge. Clean and graphic, but frontal, a record of the facade made better by the sky; the flare and the pole are small blemishes.",
+   "focusAt": "0.34,0.25 left spire"
+  },
+  {
+   "n": "7652",
+   "v2": 3,
+   "focus": "sharp (castle, 100%)",
+   "technical": "Clean",
+   "critique": "From the Vyšehrad bastion over Nové Město's roofs to the castle on the horizon, under cumulus. The bastion's brick and the curving path give a foreground on the left and the big tiled roof on the right is bold. But the castle is tiny, the middle is a field of roofs without a line, and the sky takes a third. Better layered than 7650, a 3 all the same.",
+   "focusAt": "0.3,0.35 castle"
+  },
+  {
+   "n": "7654",
+   "v2": 3,
+   "focus": "sharp (reliefs, 100%)",
+   "technical": "Green safety netting along the roofline; a no-parking sign and a car",
+   "critique": "Pulled; held. A Cubist apartment block under Vyšehrad: the prism reliefs under each window and the folded corner bay make a facade of light and shade, and the low angle lets the corner lead up. Architecture worth a frame, but the green netting runs along the top, the sign stands in front of the door and a car cuts the bottom left; the building is better than the photo.",
+   "focusAt": "0.5,0.45 prism reliefs",
+   "pulled": true
+  },
+  {
+   "n": "7659",
+   "v2": 3,
+   "focus": "sharp (St Vitus and arch, 100%)",
+   "technical": "Harsh noon; gulls as small white flecks",
+   "critique": "Charles Bridge and the castle at noon from Smetanovo nábřeží: the bridge is a strong horizontal across the frame, its arches and ice-breakers rhythmic, the castle above it, cumulus with blue behind. Classic and clean, but the water takes the bottom 40% with nothing in it and the light flattens the stone; the postcard view, done well.",
+   "focusAt": "0.32,0.35 St Vitus; 0.7,0.5 arches"
+  },
+  {
+   "n": "7661",
+   "v2": 3,
+   "focus": "sharp (statue, 100%)",
+   "technical": "Noon; the pier's lower half is a dark block",
+   "critique": "A bridge statue and the pier in silhouette on the left, the castle and Malá Strana across the water, a tour boat, and a sky of big cumulus. The silhouette gives the view a foreground and a scale, and the clouds have weight. But the pier's dark mass fills the left third down to the bottom, more block than frame, and the noon light leaves the town flat; good, not more.",
+   "focusAt": "0.17,0.18 statue"
+  },
+  {
+   "n": "7665",
+   "v2": 3,
+   "focus": "sharp (far shelves, fresco; noisy)",
+   "technical": "High ISO; a visitor large and cut at the bottom right",
+   "critique": "Strahov's Philosophical Hall: the painted ceiling sweeps up and away, the gilded galleries run down both walls to the far door, and the warm walnut and gold carry the whole frame. The depth and the ceiling are great. But a visitor in a white jacket fills the bottom right corner, large and cut, the brightest thing in the lower half; she pulls the eye out of the room. A great interior with a figure in the wrong place. Mihail at review: a 3: the visitor in white is the brightest thing in the lower half. 7669 for Strahov; one hall is enough.",
+   "focusAt": "0.45,0.75 far wall shelves; 0.6,0.5 fresco figures"
+  },
+  {
+   "n": "7666",
+   "v2": 3,
+   "focus": "soft-intended (middle spines sharp, falloff by design)",
+   "technical": "Glass reflection at the top right; shallow focus by intent",
+   "critique": "The bark-bound volumes of the natural-history cabinet in a row: lichen, bark and the red labels make a rhythm across the frame, the focus on the middle spines and falling off to both sides. Texture and repetition, warm and close. The glass reflection at the top right and the flat back wall are weak; a detail that adds to a chapter rather than stands alone.",
+   "focusAt": "0.55,0.5 Taxus spine"
+  },
+  {
+   "n": "7668",
+   "v2": 2,
+   "focus": "soft (engraving, two spots)",
+   "technical": "Reflections of the glass case as lines on the right",
+   "critique": "The celestial globe from above in its brass horizon ring: a strong round shape, the engraved constellations warm in the light. The circle sits well in the frame. The case's reflections slice the right side and the background is a murky olive; a good detail, not a hero. At 100% the engraving is soft everywhere checked, so the detail that makes it a close-up isn't there.",
+   "focusAt": "0.5,0.45 constellations"
+  },
+  {
+   "n": "7669",
+   "v2": 4,
+   "focus": "sharp (far wall, 100%); foreground desk and statue soft",
+   "technical": "High ISO, clean at display size",
+   "critique": "The Theological Hall in depth: the white stucco vault with its painted cartouches rolls away overhead, the red-and-gold shelves run down both sides to the far wall, the floorboards lead in, and the reading desk on the left and the saint on the right are foreground anchors either side of the axis. Warm, deep and balanced, with no people to break it. The best of the library. Mihail at review: 7669 for Strahov over 7665 (the visitor).",
+   "focusAt": "0.55,0.22 stucco vault; 0.88,0.5 statue"
+  },
+  {
+   "n": "7672",
+   "v2": 3,
+   "focus": "sharp (fresco, 100%)",
+   "technical": "Clean; high ISO",
+   "critique": "Pulled; held, a looking-up frame from Strahov. The painted vault rises over two oval windows set symmetrically in stucco frames, the illusionistic arch at the centre of the fresco drawing the eye up. Warm and ornate, the symmetry holds; but the bottom quarter is plain wall and doors, and the fresco is cut at the top, so neither the ceiling nor the room is complete. A good companion to 7669, not a lead.",
+   "focusAt": "0.5,0.45 fresco",
+   "pulled": true
+  }
+ ],
+ "review": "Run 2 (prague-26.run2.ratings.json, blind and unchanged) with the review of 2026-10-09 applied: changed ratings carry \"Mihail at review\" in the critique, frames run 2 never viewed at size are added with \"seenNow\": true (looked at after the comparison, not blind; focus from run 1's crops where it had one). This is the ratings file for keywords. Log: prague-26.run2.md, \"After my review\"."
+}

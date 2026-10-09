@@ -54,6 +54,11 @@ differently from culling (`taste.md`):
 
 - **Judge what the viewer sees.** The edit is part of the photo: colour, contrast and
   exposure count as shown. The crop is final; no credit for what a crop could do.
+  **Except camera JPEGs** (an uncut album like Czechia 2026), which never had an edit:
+  rate as shown, and where a crop would change the frame, write it in the ratings as
+  `crop` (the ratio and what it removes). Crops that would earn a star go on the edit
+  queue in the vault note, like dust; the rating changes only when the cropped export
+  exists.
   Near-duplicates can differ by their edit as well as the moment.
 - **Everything here already passed a first filter** when I chose to export it. Ratings
   are relative to that: a 2 means "less strong here", not "bad".
@@ -61,18 +66,26 @@ differently from culling (`taste.md`):
   are fine, none in a weak one. Check each against the existing 5★ frames; the home page
   (20–30 photos) is the natural ceiling.
 - **Rate the photo, not its subject or idea.** Czechia 2026 showed one bias in both
-  directions: interesting subjects and clever concepts were rated too high (the Český
-  Krumlov castle, Prague's tram blur), and quiet minimal frames too low (6853, 6509).
-  `taste.md`'s "What costs a frame" has the cases; read it before rating.
+  directions: interesting subjects and clever concepts were rated too high, and quiet
+  minimal frames too low; Prague's second run then overcorrected on both (landmarks lost a
+  star for being landmarks, a leading line won twins on its own). `taste.md`'s "How to
+  critique" and "What costs a frame" have the rules, its calibration log the cases; read
+  them before rating.
 - **Critique in photographic terms; judge light by what it does; composition before
   subject.** These live in `taste.md` ("How to critique", "What costs a frame"), shared
   with the cull and Instagram picks; read them before rating.
 - **Stars rank frames; the sequence decides roles.** A frame can hold a position its
   stars alone wouldn't give it: a wide establishing shot can open a chapter at 3★, and a
   quiet favourite can close one.
-- **One establishing shot per chapter, at most.** Wide city views rarely earn a 4 on
-  their own (everyone's phone takes them), but one can say "here's where we are" before
-  the tighter frames.
+- **One establishing shot per chapter, at most.** A wide earns its stars by structure
+  (a line through it, layers, an anchor, light that renders the colour), not by being
+  rare; "the view everyone takes" is no reason to mark it down (`taste.md`, "Wide views").
+  A plain one can still open a chapter at 3 and say "here's where we are" before the
+  tighter frames.
+- **A trip page is generous; the portfolio is not.** On a place's page a frame is judged
+  by what it adds to its chapter: a 3 that does a job belongs there, and so does a playful
+  frame (Prague's ICM). "Not a portfolio frame" is a question for the home page and 5★,
+  never a reason to cut a frame from a trip page.
 - **Near-duplicate runs collapse to one pick,** plus a real variation only if it adds a
   different moment, framing or light.
 
@@ -192,6 +205,24 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
    (`review.mjs twins <folder> <out> --groups <file>`, 1000px each), not by time order or
    by which was posted.
 
+   **What a first look may not decide.** Added 2026-10-09, after Prague's second run lost
+   six 4★ frames that were all legible at 600px. None was lost to resolution; each was lost
+   to a decision the sheet shouldn't make:
+   - **The other orientation is never a twin.** A landscape and a portrait take of one view
+     are two candidates (`taste.md`, "Same scene, many frames"), not a group with a loser.
+     Prague 7199, the favourite of its spot, lost to portrait takes in both runs.
+   - **One frame per scene is not a rule.** A second frame of a scene with a different
+     framing, foreground or light stays a candidate (the city from the tower with and
+     without its weathercock, 6688 and 6683).
+   - **A prior can't be held without a reason written at size.** A frame posted, on the
+     site or picked earlier is shortlisted or settled in a twins image, with the reason it
+     lost.
+   - **A held list is not a decision.** When the shortlist is trimmed to keep the close look
+     affordable, the trimmed candidates go in `held`, by scene. Before chapters are drawn
+     (step 5), each scene's held frames are looked at in one `twins` image beside the
+     scene's best shortlisted frame, and any that would change the scene are rated. A
+     whole scene is never held (Prague run 2 held all of Wallenstein).
+
    Save the result as `passes/v2/<album>.firstlook.json`, so the close look can start in
    another session without redoing the sheets (Vietnam's first look was lost that way):
    ```
@@ -240,6 +271,12 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
 5. **Select and present**: chapters, order, names, under the rules above. Judge the page as
    a viewer meets it: what opens, what closes, whether names say something, whether a
    chapter repeats itself.
+
+   **Each chapter gets a brief first:** one line, written before its frames are chosen,
+   saying what it's for: a mood or one stretch of light ("Kampa's last sun into night"), or
+   a deliberate mix ("the Castle as a visitor meets it"). Frames are chosen to serve it,
+   and the brief is what puts a 3★ on the page or leaves a 4★ parked. Without one, a
+   chapter collects different roles at random. The briefs go in the log.
 6. **Write the pass log** (below) and stop for my review.
 7. **After I approve:** collection files in `src/data/collections/` (registered in
    `index.ts`), then the tags file `passes/v2/<album>.tags.json` (format in the header of
@@ -304,6 +341,11 @@ history in each run and a line on why it moved.
   reads them to write the log's "After my review" and answers the questions there. A note
   whose section has gone from the page is shown at the top, never dropped, so slugs in the
   compare file shouldn't be renamed once notes exist.
+- **After the review, the second run's ratings file stays as it was:** the page reads it
+  as the blind run. The reviewed ratings go to `<album>.reviewed.ratings.json`, a copy with
+  the review applied ("Mihail at review" in the critique) and the frames seen afterwards
+  added with `"seenNow": true`. That file, not either run's, is the one the tags file
+  points at.
 
 ## Pass logs
 

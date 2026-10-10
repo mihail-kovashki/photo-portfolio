@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/data/site";
 import { INTRO_SCRIPT } from "@/lib/intro";
+import SiteAnalytics from "@/components/SiteAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +42,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased min-h-screen bg-[#09090b] text-[#f4f4f5] film-grain selection:bg-[#d93829]/30 selection:text-white`}
       >
         {children}
+        <SiteAnalytics />
       </body>
     </html>
   );

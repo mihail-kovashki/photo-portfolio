@@ -168,9 +168,9 @@ export function chaptersFor(seriesId: string): ResolvedChapter[] | undefined {
   return resolveCollection(seriesId)?.chapters;
 }
 
-/** Path for a collection: "/" for everything, "/prague-26" for one collection. */
+/** Path for a collection: "/all" for everything, "/prague-26" for one collection. */
 export function seriesPath(seriesId: string): string {
-  return seriesId === ALL_SERIES_ID ? "/" : `/${seriesId}`;
+  return `/${seriesId}`;
 }
 
 /**

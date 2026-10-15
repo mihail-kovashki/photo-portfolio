@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { Camera, Instagram, ChevronDown } from "lucide-react";
 import { trips, tripOf, ALL_SERIES_ID } from "@/data/photos";
 
@@ -17,7 +18,8 @@ const tripsLitUntil = [
 
 interface NavbarProps {
   onOpenGear: () => void;
-  activeSeries: string;
+  /** The collection on screen; left out on the home page, where nothing is lit. */
+  activeSeries?: string;
   onSelectSeries: (seriesId: string) => void;
   /** Opens the index of every trip. */
   onOpenTrips: () => void;
@@ -34,8 +36,9 @@ export function Navbar({ onOpenGear, activeSeries, onSelectSeries, onOpenTrips }
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const isHome = activeSeries === ALL_SERIES_ID;
-  const activeTripId = tripOf(activeSeries)?.id;
+  const isAll = activeSeries === ALL_SERIES_ID;
+  const isHomePage = activeSeries === undefined;
+  const activeTripId = activeSeries ? tripOf(activeSeries)?.id : undefined;
   const highlightIndex = highlightedTrips.findIndex((t) => t.id === activeTripId);
   const navButton = (isActive: boolean) =>
     `px-3 py-1.5 rounded-full transition-all duration-200 whitespace-nowrap flex items-center gap-1.5 ${
@@ -53,8 +56,12 @@ export function Navbar({ onOpenGear, activeSeries, onSelectSeries, onOpenTrips }
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-2 sm:gap-4">
-        {/* Brand & Photographer Signature */}
-        <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
+        {/* Brand & Photographer Signature: the way home */}
+        <Link
+          href="/"
+          aria-label="Mihail Kovashki, home"
+          className="flex items-center gap-2.5 sm:gap-3 shrink-0 rounded-full outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-4 focus-visible:ring-offset-[#09090b]"
+        >
           <div className="relative flex items-center justify-center w-8 h-8 rounded-full bg-white/5 border border-white/15 shrink-0">
             <span className="w-2.5 h-2.5 rounded-full bg-[#d93829] shadow-[0_0_8px_#d93829]" />
           </div>
@@ -73,11 +80,11 @@ export function Navbar({ onOpenGear, activeSeries, onSelectSeries, onOpenTrips }
               <span className="hidden xl:inline text-zinc-400">Film recipes</span>
             </span>
           </div>
-        </div>
+        </Link>
 
-        {/* Site navigation from md: home, the latest trips, and the trip index for everything */}
+        {/* Site navigation from md: every photo, the latest trips, and the trip index; the brand is the way home */}
         <nav className="hidden md:flex items-center gap-1 bg-white/5 p-1 rounded-full border border-white/10 text-xs font-mono shrink-0">
-          <button onClick={() => onSelectSeries(ALL_SERIES_ID)} className={navButton(isHome)}>
+          <button onClick={() => onSelectSeries(ALL_SERIES_ID)} className={navButton(isAll)}>
             All Works
           </button>
           {highlightedTrips.map((trip, i) => (
@@ -93,7 +100,7 @@ export function Navbar({ onOpenGear, activeSeries, onSelectSeries, onOpenTrips }
           <button
             onClick={onOpenTrips}
             aria-haspopup="dialog"
-            className={navButton(!isHome && highlightIndex !== 0) + (highlightIndex > 0 ? ` ${tripsLitUntil[highlightIndex]}` : "")}
+            className={navButton(!isAll && !isHomePage && highlightIndex !== 0) + (highlightIndex > 0 ? ` ${tripsLitUntil[highlightIndex]}` : "")}
           >
             <span>Trips</span>
             <ChevronDown className="w-3 h-3" />

@@ -9,7 +9,7 @@ export default function NotFound() {
         href="/"
         className="px-5 py-2.5 rounded-full bg-zinc-100 text-zinc-900 font-medium text-sm hover:bg-zinc-200 transition-colors"
       >
-        Return to Gallery
+        Back to the home page
       </Link>
     </div>
   )

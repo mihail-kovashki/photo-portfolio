@@ -12,6 +12,7 @@ import {
 } from "framer-motion";
 import { photos, type Photo } from "@/data/photos";
 import { useIntroPlaying, endIntro, featuredPhotos } from "@/lib/intro";
+import { homeCover } from "@/data/home";
 
 // Photo wall: the first screen is a wall of the best frames, hung in unbroken rows that
 // run off both edges of the screen like strips of film, with the welcome over a fade in
@@ -93,10 +94,12 @@ const getLayoutName = () =>
 
 const LAYOUTS = { wide: WIDE, tall: TALL, short: SHORT };
 
-// The best frames first, then the 4★ ones, at most two per place so the wall shows range
+// The best frames first, then the 4★ ones, at most two per place so the wall shows range.
+// The home page's cover is left out: the wall parts onto it, so it should arrive fresh.
 function candidates(): Photo[] {
   const perPlace = new Map<string, number>();
   return [...featuredPhotos, ...photos.filter((p) => !p.featured && (p.rating ?? 0) >= 4)].filter((p) => {
+    if (p.id === homeCover.id) return false;
     const n = perPlace.get(p.series) ?? 0;
     perPlace.set(p.series, n + 1);
     return n < 2;

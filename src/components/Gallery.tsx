@@ -4,7 +4,6 @@ import { useState, useMemo, useCallback, useEffect, useSyncExternalStore } from 
 import { MotionConfig } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { Intro } from "@/components/Intro";
 import { SeriesFilter } from "@/components/SeriesFilter";
 import { PhotoGrid } from "@/components/PhotoGrid";
 import { Lightbox } from "@/components/Lightbox";
@@ -107,6 +106,18 @@ export function Gallery({ initialSeries }: GalleryProps) {
     [handleSelectSeries]
   );
 
+  // A chapter link (/prague-26#chapter-on-the-vltava) opens at that chapter. The browser
+  // does this on a full load, but not when the home page links here in-app, where the
+  // router keeps the page at the top. Two frames, so it runs after the router's scroll.
+  useEffect(() => {
+    const id = decodeURIComponent(window.location.hash.slice(1));
+    if (!id) return;
+    let frame = requestAnimationFrame(() => {
+      frame = requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: "start", behavior: "instant" }));
+    });
+    return () => cancelAnimationFrame(frame);
+  }, []);
+
   // Metadata only sets the title on load; keep it in step with in-page switches
   useEffect(() => {
     document.title = collectionTitle(activeSeries);
@@ -150,9 +161,6 @@ export function Gallery({ initialSeries }: GalleryProps) {
             onSelectSeries={handleNavigate}
             onOpenTrips={openTrips}
           />
-
-          {/* Opening animation, once per session on the home page */}
-          <Intro />
 
           {/* Hero & Camera Introduction */}
           <Hero onSelectSeries={handleSelectSeries} />

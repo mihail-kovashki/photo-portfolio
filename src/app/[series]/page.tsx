@@ -13,24 +13,20 @@ import {
 } from "@/data/photos";
 import { collectionTitle, SITE_DESCRIPTION } from "@/data/site";
 
-// "/" shows everything, "/prague-26" one collection. All pages are pre-rendered;
-// any other path is a 404.
+// "/all" shows every photo, "/prague-26" one collection; the home page is its own
+// route. All pages are pre-rendered; any other path is a 404.
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return [
-    { series: [] },
-    ...seriesList.filter((s) => s.id !== ALL_SERIES_ID).map((s) => ({ series: [s.id] })),
-  ];
+  return seriesList.map((s) => ({ series: s.id }));
 }
 
-type Params = Promise<{ series?: string[] }>;
+type Params = Promise<{ series: string }>;
 
 async function resolveSeriesId(params: Params): Promise<string> {
-  const { series = [] } = await params;
-  if (series.length === 0) return ALL_SERIES_ID;
-  if (series.length > 1 || !findSeries(series[0])) notFound();
-  return series[0];
+  const { series } = await params;
+  if (!findSeries(series)) notFound();
+  return series;
 }
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
@@ -43,7 +39,9 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const context = placeContext(seriesId);
   const description = place
     ? `${list.length} photographs from ${place.place}${context ? `, ${context}` : ""}.`
-    : SITE_DESCRIPTION;
+    : seriesId === ALL_SERIES_ID
+      ? `All ${list.length} photographs from the journal, newest trip first.`
+      : SITE_DESCRIPTION;
 
   return {
     title,

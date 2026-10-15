@@ -13,6 +13,17 @@ around them.** Spend boldness on how photos appear and move, not on chrome.
 - Fujifilm is content, not branding: recipe and settings detail sits behind the lightbox
   info panel, the gear modal and (later) recipe pages, never on thumbnails.
 
+## Home page
+
+A portfolio front and a gateway, not the archive (`src/components/Home.tsx`,
+`HomeTrips.tsx`, choices in `src/data/home.ts`). After the opening wall, one full-screen
+cover from the latest trip with its name, a line of text and "View the trip"; nothing
+rotates. Then every trip, newest first, as the same unit: name with season, places and
+count, a large cover, its places as small covers, and each place's chapters as a line of
+links, so trip → place → chapter is learnt by looking. It ends with "All N photos"
+(`/all`, the full grid) and the trip index. Covers come from a hand-picked list of home
+frames; no photo appears twice on the page.
+
 ## Palette
 
 Dark only (`color-scheme: dark`), so photos read against a neutral ground.
@@ -57,7 +68,9 @@ intro check it themselves); every new animation must too.
 - **Showpiece, on arrival:** the photo wall (`src/components/Intro.tsx`). Unbroken rows of
   the best frames run off both screen edges like strips of film, with "Come *wander*"
   over a fade in the middle. Scrolling drives it: rows slide apart in alternating
-  directions while the page rises behind them; "Enter" plays the same thing. Home page
+  directions while the home page's cover rises behind them, out of the dark rather than
+  with a hard top edge; "Enter" plays the same thing. The wall leaves out the cover's
+  frame, so the cover arrives fresh. Home page
   only, once per session (`?intro` replays it), never under reduced motion, and removed
   once passed. Its own layouts for phones upright and sideways. Fades sit behind the
   text only; the edges stay bright.
@@ -78,6 +91,10 @@ is the one scroll-driven exception, and it is gone once passed.
 - A hover arrow or underline on the hero flipper.
 - Zoom on card hover.
 - A row of collection buttons for navigation (replaced by the trip index and pills).
+- An endless grid of every photo as the home page (it lives at `/all` now). Other home
+  pages were prototyped side by side and are parked on the `landing/lab` branch (`/lab`):
+  a photobook sequence, a typographic index, a "how to wander" walkthrough, contact
+  strips and a highlights grid. The highlights grid repeated the wall's frames.
 - Intro: frames scattered at random around the welcome (read as disjointed, too small,
   and clumped on phones), and a middle row split around the text (a black box that broke
   the rows). Other intros are parked, not rejected, on the `intro/darkroom`,

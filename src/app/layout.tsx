@@ -33,8 +33,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // The intro script marks <html> before hydration, so React must accept that attribute
-    <html lang="en" className="dark" suppressHydrationWarning>
+    // The intro script marks <html> before hydration, so React must accept that attribute.
+    // data-scroll-behavior: globals.css scrolls smoothly, but moving to another page
+    // should start it at its top at once, not glide there through the old page's height
+    <html lang="en" className="dark" data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: INTRO_SCRIPT }} />
       </head>

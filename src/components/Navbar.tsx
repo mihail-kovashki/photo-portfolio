@@ -82,11 +82,12 @@ export function Navbar({ onOpenGear, activeSeries, onSelectSeries, onOpenTrips }
           </div>
         </Link>
 
-        {/* Site navigation from md: every photo, the latest trips, and the trip index; the brand is the way home */}
+        {/* Site navigation from md: home, the latest trips, and the trip index for everything,
+            every photo included. Lit where you are; nothing is lit on all photos */}
         <nav className="hidden md:flex items-center gap-1 bg-white/5 p-1 rounded-full border border-white/10 text-xs font-mono shrink-0">
-          <button onClick={() => onSelectSeries(ALL_SERIES_ID)} className={navButton(isAll)}>
-            All Works
-          </button>
+          <Link href="/" aria-current={isHomePage ? "page" : undefined} className={navButton(isHomePage)}>
+            Home
+          </Link>
           {highlightedTrips.map((trip, i) => (
             <button
               key={trip.id}

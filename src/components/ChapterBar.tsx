@@ -118,13 +118,17 @@ export function ChapterBar({ chapters }: ChapterBarProps) {
             {chapters.length} chapters
           </span>
         )}
-        <span className="ml-auto flex items-center gap-2 shrink-0 font-mono text-[11px] text-zinc-500">
+        <span className="ml-auto flex items-center gap-3 shrink-0">
           {active && (
-            <span>
+            <span className="hidden sm:inline font-mono text-[11px] text-zinc-400">
               {current + 1}/{chapters.length}
             </span>
           )}
-          <ChevronDown className={`w-4 h-4 text-zinc-400 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
+          {/* Says what the bar does, since a chevron alone reads as decoration */}
+          <span className="flex items-center gap-1 rounded-full border border-white/20 bg-white/5 pl-3 pr-2 py-1 text-sm text-zinc-200">
+            {active ? "Chapters" : "Show"}
+            <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
+          </span>
         </span>
       </button>
 
@@ -161,7 +165,7 @@ export function ChapterBar({ chapters }: ChapterBarProps) {
                     type="button"
                     onClick={() => close()}
                     aria-label="Close chapters"
-                    className="p-1.5 rounded-full text-zinc-400 hover:text-white hover:bg-white/10 transition-colors"
+                    className="relative tap p-2 rounded-full text-zinc-300 hover:text-white hover:bg-white/10 transition-colors"
                   >
                     <X className="w-4 h-4" />
                   </button>

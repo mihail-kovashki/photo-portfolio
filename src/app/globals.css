@@ -149,6 +149,21 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Touch targets: a control answers to at least 44px around its centre, whatever size it
+   draws at, so small pills stay small on screen without being hard to hit. Needs a
+   positioned element (relative, absolute or fixed) */
+@utility tap {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: max(100%, 44px);
+    height: max(100%, 44px);
+    transform: translate(-50%, -50%);
+  }
+}
+
 /* Responsive HUD adaptation:
    Default: compact on phones (portrait & landscape) or short viewports.
    Expanded: desktop & tablet viewports with adequate height.

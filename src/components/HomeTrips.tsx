@@ -121,7 +121,7 @@ function Cover() {
               <button
                 type="button"
                 onClick={openTrips}
-                className={`${FOCUS} rounded-sm text-sm text-zinc-300 underline decoration-zinc-500 underline-offset-4 hover:text-white hover:decoration-white transition-colors`}
+                className={`${FOCUS} relative tap rounded-sm text-sm text-zinc-200 underline decoration-zinc-400 underline-offset-4 hover:text-white hover:decoration-white transition-colors`}
               >
                 or browse every trip
               </button>
@@ -196,10 +196,10 @@ function SolePlace({ place, cover }: { place: PlaceSummary; cover: Photo }) {
               <li key={c.id} className="border-b border-white/10">
                 <Link
                   href={c.href}
-                  className={`${FOCUS} group flex items-baseline justify-between gap-4 rounded-sm py-2.5 text-sm text-zinc-400 hover:text-zinc-100 transition-colors`}
+                  className={`${FOCUS} group flex items-baseline justify-between gap-4 rounded-sm py-2.5 pointer-coarse:py-3 text-sm text-zinc-300 hover:text-white transition-colors`}
                 >
                   <span>{c.name}</span>
-                  <span className="font-mono text-[11px] text-zinc-600 group-hover:text-zinc-400 tabular-nums">{c.count}</span>
+                  <span className="font-mono text-[11px] text-zinc-500 group-hover:text-zinc-300 tabular-nums">{c.count}</span>
                 </Link>
               </li>
             ))}
@@ -217,7 +217,7 @@ function ChapterLines({ trip }: { trip: TripSummary }) {
   return (
     <div className="mt-8 border-t border-white/10 pt-5">
       <h4 className="sr-only">Chapters</h4>
-      <ul className="space-y-2.5">
+      <ul className="space-y-2.5 pointer-coarse:space-y-4">
         {withChapters.map((place) => {
           const shown = place.chapters.slice(0, limit);
           const more = place.chapters.length - shown.length;
@@ -229,7 +229,7 @@ function ChapterLines({ trip }: { trip: TripSummary }) {
                   {i > 0 && <span aria-hidden className="text-zinc-700 mx-1.5">·</span>}
                   <Link
                     href={c.href}
-                    className={`${FOCUS} rounded-sm text-zinc-500 hover:text-zinc-100 underline-offset-4 hover:underline transition-colors`}
+                    className={`${FOCUS} relative tap inline-block rounded-sm text-zinc-400 hover:text-zinc-100 underline-offset-4 hover:underline pointer-coarse:underline decoration-zinc-600 hover:decoration-zinc-300 transition-colors`}
                   >
                     {c.name}
                   </Link>
@@ -240,7 +240,7 @@ function ChapterLines({ trip }: { trip: TripSummary }) {
                   <span aria-hidden className="text-zinc-700 mx-1.5">·</span>
                   <Link
                     href={place.href}
-                    className={`${FOCUS} rounded-sm font-mono text-[11px] text-zinc-600 hover:text-zinc-200 transition-colors`}
+                    className={`${FOCUS} relative tap inline-block rounded-sm text-zinc-400 hover:text-zinc-100 underline-offset-4 hover:underline pointer-coarse:underline decoration-zinc-600 hover:decoration-zinc-300 transition-colors`}
                     aria-label={`${more} more chapters in ${place.name}`}
                   >
                     +{more} more

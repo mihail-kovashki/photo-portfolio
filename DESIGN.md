@@ -44,11 +44,34 @@ No new hues without a reason in this file. Never tint photos or frame them in co
 - **Playfair Display** (`font-serif`): names of things — hero, place, chapter and trip
   names, photo titles. Tracking tight at display sizes.
 - **Geist Mono** (`font-mono`): metadata — dates, counts, EXIF, small uppercase labels.
-- **Geist Sans**: everything else (body, buttons).
+- **Geist Sans**: everything else, controls included (body, buttons, pills, nav).
 
 Uppercase tracked mono is reserved for metadata, not for a label above every heading.
 Titles join context with middle dots ("Funchal · Madeira · Spring 2025") on purpose;
 don't spread the device into body copy.
+
+## Controls
+
+The interface stays quiet, but anything you can press must look pressable at rest. Older
+visitors on a tablet couldn't spot the controls: on touch there is no hover, so they only
+ever saw the dimmest state, and the buttons were set in the metadata mono, so they read
+as captions.
+
+- **Sans, `text-sm`**, never the mono. Counts inside a control (a place pill's 63) stay
+  mono, as metadata.
+- **A visible edge at rest:** unselected pills and buttons get `border-white/20` (the
+  header nav group `/15`) and `zinc-200…300` text. Selected is filled white. Text links
+  are underlined, or at least underlined on touch (`pointer-coarse:underline`).
+- **44 px to hit.** The `tap` utility (`globals.css`) widens the hit area to 44 px
+  without changing how the control draws, so header pills stay compact. Where there is
+  room, touch also draws them taller (`pointer-coarse:py-2.5`). Tune for touch with
+  `pointer-coarse:`, not breakpoints: an iPad mini held upright is under `md`.
+- **Say what it does.** Icon buttons get a word next to them from `sm` (Details, Close),
+  and a bar that opens a menu carries a "Chapters ⌄" chip, not just a chevron.
+- **Over photos,** controls sit on `bg-black/40…45` with a blur and a `white/25` edge.
+  The `white/5` ghost fill disappears there.
+- **Don't count on gestures.** The lightbox shows arrows from `sm` up, touch included, and
+  its first-open hint mentions the swipe.
 
 ## Surfaces and texture
 
@@ -102,7 +125,7 @@ is the one scroll-driven exception, and it is gone once passed.
 
 ## Quality floor
 
-Responsive from a 375 px phone (portrait and landscape) up; visible keyboard focus;
+Responsive from a 375 px phone (portrait and landscape) up; 44 px touch targets; visible keyboard focus;
 dialogs behave as dialogs; check changes in the browser pane at phone and desktop sizes
 before calling them done.
 

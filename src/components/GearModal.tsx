@@ -67,7 +67,7 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
             <button
               onClick={onClose}
               aria-label="Close"
-              className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white transition-colors border border-white/10"
+              className="relative tap p-2.5 rounded-full bg-white/5 hover:bg-white/10 text-zinc-200 hover:text-white transition-colors border border-white/20"
             >
               <X className="w-4 h-4" />
             </button>
@@ -205,7 +205,7 @@ export function GearModal({ isOpen, onClose }: GearModalProps) {
 
             <button
               onClick={onClose}
-              className="w-full sm:w-auto px-5 py-2 rounded-full text-xs font-mono bg-white text-zinc-950 font-medium hover:bg-zinc-200 transition-colors"
+              className="w-full sm:w-auto px-5 py-2.5 rounded-full text-sm bg-white text-zinc-950 font-medium hover:bg-zinc-200 transition-colors"
             >
               Close
             </button>

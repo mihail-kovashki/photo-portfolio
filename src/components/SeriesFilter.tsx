@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
+import Link from "next/link";
 import { LayoutGrid, GalleryVerticalEnd, ChevronDown } from "lucide-react";
 import { trips, tripOf, ALL_SERIES_ID } from "@/data/photos";
 
@@ -123,22 +124,22 @@ export function SeriesFilter({
     <div id="gallery" className="max-w-7xl mx-auto px-4 sm:px-6 mb-6 sm:mb-10 scroll-mt-24">
       {/* Where you are, and the way to everywhere else */}
       <div className="flex items-center justify-between gap-3 mb-2.5 sm:mb-3">
-        <p className="min-w-0 truncate font-mono text-[11px] uppercase tracking-[0.12em] text-zinc-500">
+        <p className="min-w-0 truncate font-mono text-xs text-zinc-400">
+          {/* The root of the trail goes home; every photo stays in the trip index */}
           {isHome ? (
-            <span>Latest trip</span>
+            <span className="uppercase tracking-[0.12em]">Latest trip</span>
           ) : (
-            <button
-              type="button"
-              onClick={() => onSelectSeries(ALL_SERIES_ID)}
-              className="uppercase hover:text-white transition-colors"
+            <Link
+              href="/"
+              className="relative tap font-sans text-sm text-zinc-200 underline decoration-white/30 underline-offset-4 hover:text-white hover:decoration-white transition-colors"
             >
-              All works
-            </button>
+              Home
+            </Link>
           )}
           {trip && (
             <>
-              <span className="mx-2 text-zinc-700">/</span>
-              <span className="text-zinc-300 normal-case tracking-normal">
+              <span className="mx-2 text-zinc-600">/</span>
+              <span className="text-zinc-300">
                 {trip.year} · {trip.name}
               </span>
             </>
@@ -148,10 +149,10 @@ export function SeriesFilter({
           type="button"
           onClick={onOpenTrips}
           aria-haspopup="dialog"
-          className="shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-mono bg-white/5 hover:bg-white/10 border border-white/10 text-zinc-300 hover:text-white transition-colors"
+          className="relative tap shrink-0 flex items-center gap-1.5 px-3.5 py-1.5 pointer-coarse:py-2.5 rounded-full text-sm bg-white/5 hover:bg-white/10 border border-white/20 text-zinc-200 hover:text-white transition-colors"
         >
           <span>All trips</span>
-          <ChevronDown className="w-3.5 h-3.5" />
+          <ChevronDown className="w-4 h-4" />
         </button>
       </div>
 
@@ -185,16 +186,16 @@ export function SeriesFilter({
                   }
                 }}
                 aria-current={isActive ? "page" : undefined}
-                className={`px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs font-mono whitespace-nowrap transition-all duration-200 flex items-center gap-2 shrink-0 select-none ${
+                className={`px-4 py-1.5 sm:py-2 pointer-coarse:py-2.5 rounded-full text-sm border whitespace-nowrap transition-all duration-200 flex items-center gap-2 shrink-0 select-none ${
                   isActive
-                    ? "bg-white text-zinc-950 font-semibold shadow-md"
-                    : "bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white border border-white/5"
+                    ? "bg-white text-zinc-950 font-semibold shadow-md border-white"
+                    : "bg-white/5 hover:bg-white/10 text-zinc-200 hover:text-white border-white/20"
                 }`}
               >
                 <span>{item.place}</span>
                 <span
-                  className={`text-[10px] px-1.5 py-0.5 rounded-full ${
-                    isActive ? "bg-zinc-200 text-zinc-900" : "bg-white/10 text-zinc-400"
+                  className={`font-mono text-[11px] font-normal px-1.5 py-0.5 rounded-full ${
+                    isActive ? "bg-zinc-200 text-zinc-900" : "bg-white/10 text-zinc-300"
                   }`}
                 >
                   {item.count}
@@ -206,14 +207,14 @@ export function SeriesFilter({
 
         {/* Layout Mode Switcher (Desktop & Tablet only) */}
         <div className="hidden sm:flex items-center justify-end shrink-0">
-          <div className="flex items-center bg-white/5 p-1 rounded-lg border border-white/10">
+          <div className="flex items-center gap-0.5 bg-white/5 p-1 rounded-lg border border-white/15">
             <button
               onClick={() => onToggleLayout("masonry")}
               title="Masonry Gallery"
-              className={`p-1.5 rounded-md transition-colors flex items-center gap-1.5 text-xs font-mono ${
+              className={`relative tap px-2.5 py-1.5 pointer-coarse:py-2 rounded-md transition-colors flex items-center gap-1.5 text-sm ${
                 layoutMode === "masonry"
                   ? "bg-white/15 text-white"
-                  : "text-zinc-400 hover:text-white"
+                  : "text-zinc-300 hover:text-white"
               }`}
             >
               <LayoutGrid className="w-4 h-4" />
@@ -222,10 +223,10 @@ export function SeriesFilter({
             <button
               onClick={() => onToggleLayout("story")}
               title="Editorial Story Flow"
-              className={`p-1.5 rounded-md transition-colors flex items-center gap-1.5 text-xs font-mono ${
+              className={`relative tap px-2.5 py-1.5 pointer-coarse:py-2 rounded-md transition-colors flex items-center gap-1.5 text-sm ${
                 layoutMode === "story"
                   ? "bg-white/15 text-white"
-                  : "text-zinc-400 hover:text-white"
+                  : "text-zinc-300 hover:text-white"
               }`}
             >
               <GalleryVerticalEnd className="w-4 h-4" />

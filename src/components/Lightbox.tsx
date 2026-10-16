@@ -530,23 +530,25 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
               onClick={() => setShowInfo(!showInfo)}
               aria-label="Photo details"
               aria-pressed={showInfo}
-              className={`p-2.5 rounded-full border transition-colors ${
+              className={`relative tap flex items-center gap-2 p-2.5 sm:px-4 rounded-full border text-sm backdrop-blur-md transition-colors ${
                 showInfo
                   ? "bg-white text-zinc-950 border-white"
-                  : "bg-white/5 text-zinc-400 hover:text-white border-white/10"
+                  : "bg-black/40 text-zinc-100 hover:bg-black/60 border-white/25"
               }`}
               title="Toggle EXIF & Recipe Info (Press 'i')"
             >
               <Info className="w-4 h-4" />
+              <span className="hidden sm:inline">Details</span>
             </button>
             <button
               onClick={onClose}
               data-autofocus
               aria-label="Close"
-              className="p-2.5 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 text-white transition-colors"
+              className="relative tap flex items-center gap-2 p-2.5 sm:px-4 rounded-full bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/25 text-sm text-white transition-colors"
               title="Close (Escape)"
             >
               <X className="w-4 h-4" />
+              <span className="hidden sm:inline">Close</span>
             </button>
           </div>
         </div>
@@ -559,11 +561,11 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.3 }}
-              className="flex absolute top-14 sm:top-20 left-1/2 -translate-x-1/2 z-40 items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/70 backdrop-blur-md border border-white/10 text-xs font-mono text-zinc-400 pointer-events-none select-none shadow-lg"
+              className="flex absolute top-14 sm:top-20 left-1/2 -translate-x-1/2 z-40 items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/70 backdrop-blur-md border border-white/15 text-xs font-mono text-zinc-300 pointer-events-none select-none shadow-lg"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#e59866] animate-pulse" />
               <span className="pointer-fine-only">Double-click to zoom</span>
-              <span className="pointer-coarse-only">Pinch or double-tap to zoom</span>
+              <span className="pointer-coarse-only whitespace-nowrap">Swipe for more · pinch to zoom</span>
             </motion.div>
           )}
         </AnimatePresence>
@@ -596,27 +598,27 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
           )}
         </AnimatePresence>
 
-        {/* Previous Navigation Button (Desktop, hidden when zoomed) */}
+        {/* Previous Navigation Button (from sm, tablets too: not everyone knows to swipe; hidden when zoomed) */}
         {hasPrev && !isZoomed && (
           <button
             onClick={handlePrev}
             aria-label="Previous photo"
-            className="hidden md:flex absolute left-6 top-1/2 -translate-y-1/2 z-40 p-3 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 text-white transition-all duration-200 hover:scale-110"
+            className="hidden sm:flex absolute left-3 md:left-6 top-1/2 -translate-y-1/2 z-40 p-3.5 rounded-full bg-black/45 hover:bg-black/70 backdrop-blur-md border border-white/25 text-white shadow-lg transition-all duration-200 hover:scale-110"
             title="Previous (Left Arrow)"
           >
-            <ChevronLeft className="w-5 h-5" />
+            <ChevronLeft className="w-6 h-6" />
           </button>
         )}
 
-        {/* Next Navigation Button (Desktop, hidden when zoomed) */}
+        {/* Next Navigation Button (from sm, hidden when zoomed) */}
         {hasNext && !isZoomed && (
           <button
             onClick={handleNext}
             aria-label="Next photo"
-            className="hidden md:flex absolute right-6 top-1/2 -translate-y-1/2 z-40 p-3 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 text-white transition-all duration-200 hover:scale-110"
+            className="hidden sm:flex absolute right-3 md:right-6 top-1/2 -translate-y-1/2 z-40 p-3.5 rounded-full bg-black/45 hover:bg-black/70 backdrop-blur-md border border-white/25 text-white shadow-lg transition-all duration-200 hover:scale-110"
             title="Next (Right Arrow)"
           >
-            <ChevronRight className="w-5 h-5" />
+            <ChevronRight className="w-6 h-6" />
           </button>
         )}
 
@@ -713,7 +715,7 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                 {/* Close Info Button */}
                 <button
                   onClick={() => setShowInfo(false)}
-                  className="absolute top-2.5 right-2.5 sm:top-4 sm:right-4 p-1.5 sm:p-2 rounded-full bg-white/5 hover:bg-white/15 text-zinc-400 hover:text-white border border-white/5 hover:border-white/10 transition-colors"
+                  className="tap absolute top-2.5 right-2.5 sm:top-4 sm:right-4 p-1.5 sm:p-2 rounded-full bg-white/10 hover:bg-white/20 text-zinc-200 hover:text-white border border-white/15 transition-colors"
                   title="Hide Info (Press 'i')"
                   aria-label="Hide info panel"
                 >

@@ -19,14 +19,14 @@ export function Footer() {
               href="https://www.instagram.com/mi_ko.jpg"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-zinc-300 hover:text-white transition-colors"
+              className="flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-white/5 border border-white/20 font-sans text-sm text-zinc-200 hover:text-white transition-colors"
             >
               <Instagram className="w-3.5 h-3.5 text-zinc-400" />
               <span>@mi_ko.jpg</span>
             </a>
             <a
               href="mailto:mihail.kovashki@proton.me"
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-zinc-300 hover:text-white transition-colors"
+              className="flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-white/5 border border-white/20 font-sans text-sm text-zinc-200 hover:text-white transition-colors"
               title="Get in touch via Proton Mail"
             >
               <Mail className="w-3.5 h-3.5 text-zinc-400" />
@@ -34,7 +34,7 @@ export function Footer() {
             </a>
             <button
               onClick={scrollToTop}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-zinc-400 hover:text-white transition-colors"
+              className="flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-white/5 border border-white/20 font-sans text-sm text-zinc-200 hover:text-white transition-colors"
               aria-label="Scroll to top"
             >
               <span>Top</span>
@@ -58,12 +58,12 @@ export function Footer() {
           </div>
 
           {/* Center: Social & Contact */}
-          <div className="flex items-center justify-center gap-4 text-zinc-400">
+          <div className="flex items-center justify-center gap-4 text-zinc-300">
             <a
               href="https://www.instagram.com/mi_ko.jpg"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 hover:text-white transition-colors group"
+              className="relative tap flex items-center gap-1.5 hover:text-white transition-colors group"
             >
               <Instagram className="w-3.5 h-3.5 text-zinc-500 group-hover:text-[#e1306c] transition-colors" />
               <span>@mi_ko.jpg</span>
@@ -71,7 +71,7 @@ export function Footer() {
             <span className="text-zinc-700">·</span>
             <a
               href="mailto:mihail.kovashki@proton.me"
-              className="flex items-center gap-1.5 hover:text-white transition-colors group"
+              className="relative tap flex items-center gap-1.5 hover:text-white transition-colors group"
               title="Get in touch via Proton Mail"
             >
               <Mail className="w-3.5 h-3.5 text-zinc-500 group-hover:text-[#6d4aff] transition-colors" />
@@ -82,7 +82,7 @@ export function Footer() {
           {/* Right: Scroll to top */}
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors px-3 py-1.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/10"
+            className="relative tap flex items-center gap-2 font-sans text-sm text-zinc-200 hover:text-white transition-colors px-3.5 py-1.5 rounded-full bg-white/5 border border-white/20 hover:bg-white/10"
           >
             <span>Top</span>
             <ArrowUp className="w-3.5 h-3.5" />

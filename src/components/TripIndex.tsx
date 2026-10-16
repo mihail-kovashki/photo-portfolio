@@ -55,10 +55,10 @@ export function TripIndex({ isOpen, onClose, activeSeries, onSelectSeries }: Tri
   const select = (seriesId: string) => onClose(() => onSelectSeries(seriesId));
 
   const pill = (isActive: boolean) =>
-    `px-3 py-1.5 rounded-full text-xs font-mono whitespace-nowrap transition-colors flex items-center gap-2 ${
+    `px-3.5 py-1.5 pointer-coarse:py-2.5 rounded-full text-sm border whitespace-nowrap transition-colors flex items-center gap-2 ${
       isActive
-        ? "bg-white text-zinc-950 font-semibold"
-        : "bg-white/5 hover:bg-white/10 text-zinc-300 hover:text-white border border-white/5"
+        ? "bg-white text-zinc-950 font-semibold border-white"
+        : "bg-white/5 hover:bg-white/10 text-zinc-200 hover:text-white border-white/20"
     }`;
 
   return (
@@ -101,13 +101,13 @@ export function TripIndex({ isOpen, onClose, activeSeries, onSelectSeries }: Tri
                     className={pill(activeSeries === ALL_SERIES_ID)}
                   >
                     <span>All works</span>
-                    <span className="text-[10px] opacity-60">{photos.length}</span>
+                    <span className="font-mono text-[11px] font-normal opacity-60">{photos.length}</span>
                   </button>
                   <button
                     type="button"
                     onClick={() => onClose()}
                     aria-label="Close"
-                    className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white transition-colors border border-white/10"
+                    className="relative tap p-2.5 rounded-full bg-white/5 hover:bg-white/10 text-zinc-200 hover:text-white transition-colors border border-white/20"
                   >
                     <X className="w-4 h-4" />
                   </button>
@@ -135,7 +135,7 @@ export function TripIndex({ isOpen, onClose, activeSeries, onSelectSeries }: Tri
                           </span>
                           <span className="ml-auto font-mono text-[11px] text-zinc-600">{trip.count}</span>
                         </div>
-                        <div className="flex flex-wrap gap-1.5">
+                        <div className="flex flex-wrap gap-1.5 pointer-coarse:gap-2">
                           {trip.places.map((place) => {
                             const isActive = place.id === activeSeries;
                             return (
@@ -147,7 +147,7 @@ export function TripIndex({ isOpen, onClose, activeSeries, onSelectSeries }: Tri
                                 className={pill(isActive)}
                               >
                                 <span>{place.place}</span>
-                                <span className="text-[10px] opacity-60">{place.count}</span>
+                                <span className="font-mono text-[11px] font-normal opacity-60">{place.count}</span>
                               </button>
                             );
                           })}

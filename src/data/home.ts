@@ -13,6 +13,7 @@ const HOME_FRAME_IDS = [
   "pico-ruivo-25-dscf0049",
   "seoul-25-dscf2212",
   "prague-26-dscf7253",
+  "mutianyu-25-dscf4002",
   "kutna-hora-26-dscf7124",
   "tam-coc-24-dscf8441",
   "biei-and-furano-25-dscf2859",

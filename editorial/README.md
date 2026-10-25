@@ -96,19 +96,21 @@ differently from culling (`taste.md`):
   chapter beside Malá Strana). A smaller set folds into a neighbour, decided by location or by one
   continuous walk (Seoul: the Wall joined Gwanghwamun, the flower field joined the evening
   in Anguk). Tiny sections also read badly on the site.
-- **Order: weigh the story against the best photo.** Neither always wins; it depends on
-  how strong the story is and how far the best photos stand above the rest. The same
-  question applies to the chapters of a place and to the photos in a chapter.
-  - **The story wins** when the sequence is the point: one evening as the light changes,
-    one walk, an arrival. Keep it in order, as long as the opening photo can hold the
-    first screen (Seoul 24 runs from the light on Namsan to Yeouido after sunset; Yeosu
-    by dusk runs from sunset to night).
-  - **The best photo wins** when the days or scenes are unrelated, or when one chapter
-    clearly outclasses the rest (Seoul 25: Achasan, averaging 4.1 with two 5★, had come
-    last by date).
-  - Either way, the opener should say where we are, and the closer matters as much as
-    the opener: a strong frame buried in the middle of a weak run is the thing to fix.
-- **A city opens with the city.** On a city page, people expect the city first, so the
+- **Order: group by time, lead with strength.** Changed 2026-10-25 after Beijing 2025.
+  - **Chapters** follow the trip's timeline roughly, since a place is met in that order,
+    but the stronger chapters come first. A weak set doesn't open a page because it came
+    first (Beijing: Tiananmen at noon, all 3★, moved to the end; Seoul 25: Achasan,
+    averaging 4.1 with two 5★, had come last by date).
+  - **Photos in a chapter** go strongest first, not in capture order, even when the whole
+    chapter is one walk or a few hours: "we shouldn't be ordering based on the time of
+    capture ... We should be highlighting the stronger photos first." Time order is kept
+    only where the change of light across the chapter is its subject (Yeosu by dusk runs
+    from sunset to night), and then the opener still has to hold the first screen.
+  - The opener should say where we are, and the closer matters as much as the opener: a
+    strong frame buried in the middle of a weak run is the thing to fix. Within the
+    strongest-first order, break up runs of the same kind of frame (four roof details in a
+    row).
+- **A city opens with the city, if that chapter can hold the first screen.** On a city page, people expect the city first, so the
   chapter that shows it leads even if a more specific one scores higher; the specific
   places follow (Sapporo: the city before the Hill of the Buddha).
 - **Chapter names say where we are.** The site's space is limited, so a name places the
@@ -214,6 +216,9 @@ images come from [`scripts/review.mjs`](../scripts/review.mjs).
    - **One frame per scene is not a rule.** A second frame of a scene with a different
      framing, foreground or light stays a candidate (the city from the tower with and
      without its weathercock, 6688 and 6683).
+   - **Read the stars already in the files.** Lightroom exports carry my cull rating
+     (`XMP-xmp:Rating`); a 4★ there is a prior, and a 3★ marked 2 on the sheet is too.
+     Beijing 2025's first look didn't read them and held two of my 4★s.
    - **A prior can't be held without a reason written at size.** A frame posted, on the
      site or picked earlier is shortlisted or settled in a twins image, with the reason it
      lost.
@@ -393,6 +398,7 @@ bulk keyword rewrite.
 | `waterfalls` | Seoraksan (Biryong, Towangseong), Madeira (Véu da Noiva, 0083), probably Hokkaido, Vietnam | DSCF3618 fits no tag today |
 | `fireworks` | Seoul 2025 (the festival from Seoraeseom, 2589) | An event, one trip so far |
 | `boats` | Vietnam (Ha Long, Ninh Binh), Copenhagen, Hokkaido (Otaru) | Might be a chapter rather than a tag |
+| `fortifications` | Seoul 2025 (Suwon's Hwaseong), Beijing 2025 (the Great Wall at Mutianyu, 4091) | City and frontier walls as the subject; two trips so far |
 
 ### Log
 

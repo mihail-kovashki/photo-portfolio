@@ -21,6 +21,8 @@ import { suwon25 } from "./suwon-25";
 import { kutnaHora26 } from "./kutna-hora-26";
 import { ceskyKrumlov26 } from "./cesky-krumlov-26";
 import { prague26 } from "./prague-26";
+import { beijing25 } from "./beijing-25";
+import { mutianyu25 } from "./mutianyu-25";
 
 export type { Chapter, PlaceCollection } from "./types";
 
@@ -48,6 +50,8 @@ export const collections: Record<string, PlaceCollection> = {
   [kutnaHora26.id]: kutnaHora26,
   [ceskyKrumlov26.id]: ceskyKrumlov26,
   [prague26.id]: prague26,
+  [beijing25.id]: beijing25,
+  [mutianyu25.id]: mutianyu25,
 };
 
 export function findCollection(seriesId: string): PlaceCollection | undefined {

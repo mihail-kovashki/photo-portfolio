@@ -1,0 +1,291 @@
+{
+ "source": "Beijing 25",
+ "ratings": "beijing-25.ratings.json",
+ "places": [
+  "beijing-25",
+  "mutianyu-25"
+ ],
+ "tags": {
+  "DSCF3780": [
+   "palaces-and-castles",
+   "interiors",
+   "looking-up"
+  ],
+  "DSCF3812": [
+   "palaces-and-castles",
+   "interiors",
+   "looking-up"
+  ],
+  "DSCF3786": [
+   "people",
+   "palaces-and-castles"
+  ],
+  "DSCF3774": [
+   "people",
+   "palaces-and-castles"
+  ],
+  "DSCF3767": [
+   "palaces-and-castles",
+   "people"
+  ],
+  "DSCF3791": [
+   "palaces-and-castles"
+  ],
+  "DSCF3833": [
+   "palaces-and-castles",
+   "autumn",
+   "mist-and-fog"
+  ],
+  "DSCF3832": [
+   "waterfront",
+   "autumn",
+   "mist-and-fog"
+  ],
+  "DSCF3802": [
+   "parks-and-gardens",
+   "autumn"
+  ],
+  "DSCF3816": [
+   "parks-and-gardens",
+   "palaces-and-castles"
+  ],
+  "DSCF3778": [
+   "parks-and-gardens",
+   "people"
+  ],
+  "DSCF3726": [
+   "palaces-and-castles"
+  ],
+  "DSCF3713": [
+   "people",
+   "palaces-and-castles"
+  ],
+  "DSCF3737": [
+   "palaces-and-castles"
+  ],
+  "DSCF3700": [
+   "palaces-and-castles"
+  ],
+  "DSCF3747": [
+   "palaces-and-castles",
+   "looking-up"
+  ],
+  "DSCF3759": [
+   "palaces-and-castles",
+   "looking-up"
+  ],
+  "DSCF3735": [
+   "palaces-and-castles",
+   "people"
+  ],
+  "DSCF3742": [
+   "people",
+   "palaces-and-castles"
+  ],
+  "DSCF3705": [
+   "palaces-and-castles",
+   "overcast"
+  ],
+  "DSCF3717": [
+   "palaces-and-castles"
+  ],
+  "DSCF3721": [
+   "palaces-and-castles"
+  ],
+  "DSCF3900": [
+   "people",
+   "waterfront",
+   "mist-and-fog"
+  ],
+  "DSCF3899": [
+   "animals",
+   "mist-and-fog"
+  ],
+  "DSCF3851": [
+   "temples-and-shrines",
+   "overcast"
+  ],
+  "DSCF3873": [
+   "temples-and-shrines",
+   "parks-and-gardens"
+  ],
+  "DSCF3871": [
+   "temples-and-shrines",
+   "waterfront",
+   "overcast"
+  ],
+  "DSCF3845": [
+   "temples-and-shrines",
+   "people"
+  ],
+  "DSCF3852": [
+   "parks-and-gardens",
+   "mist-and-fog"
+  ],
+  "DSCF3858": [
+   "waterfront",
+   "mist-and-fog"
+  ],
+  "DSCF3885": [
+   "forests-and-trees",
+   "looking-up",
+   "overcast"
+  ],
+  "DSCF3888": [
+   "people",
+   "animals"
+  ],
+  "DSCF3662": [
+   "streets"
+  ],
+  "DSCF3688": [
+   "streets",
+   "people"
+  ],
+  "DSCF3683": [
+   "palaces-and-castles"
+  ],
+  "DSCF3687": [
+   "streets",
+   "palaces-and-castles"
+  ],
+  "DSCF3678": [
+   "streets",
+   "people"
+  ],
+  "DSCF3669": [
+   "streets",
+   "people"
+  ],
+  "DSCF3691": [
+   "palaces-and-castles"
+  ],
+  "DSCF4002": [
+   "mountains",
+   "mist-and-fog",
+   "autumn"
+  ],
+  "DSCF4085": [
+   "mountains",
+   "mist-and-fog"
+  ],
+  "DSCF3980": [
+   "mountains",
+   "mist-and-fog",
+   "autumn"
+  ],
+  "DSCF3986": [
+   "mountains",
+   "mist-and-fog"
+  ],
+  "DSCF3992": [
+   "mountains",
+   "mist-and-fog"
+  ],
+  "DSCF3982": [
+   "mountains",
+   "mist-and-fog",
+   "autumn"
+  ],
+  "DSCF4108": [
+   "mountains",
+   "golden-hour",
+   "autumn"
+  ],
+  "DSCF3970": [
+   "mountains",
+   "autumn"
+  ],
+  "DSCF4066": [
+   "mountains",
+   "autumn"
+  ],
+  "DSCF4038": [
+   "mountains"
+  ],
+  "DSCF4059": [
+   "mountains"
+  ],
+  "DSCF4070": [
+   "mountains",
+   "autumn"
+  ],
+  "DSCF3941": [
+   "mountains",
+   "autumn"
+  ],
+  "DSCF3946": [
+   "mountains",
+   "mist-and-fog",
+   "autumn"
+  ],
+  "DSCF3914": [
+   "mountains",
+   "mist-and-fog"
+  ],
+  "DSCF3926": [
+   "mountains",
+   "autumn"
+  ],
+  "DSCF3910": [
+   "mountains",
+   "autumn"
+  ],
+  "DSCF4076": [
+   "people",
+   "mist-and-fog"
+  ],
+  "DSCF4095": [
+   "interiors",
+   "autumn"
+  ],
+  "DSCF4091": [
+   "people"
+  ],
+  "DSCF4003": [
+   "people",
+   "mountains"
+  ],
+  "DSCF4094": [
+   "mountains"
+  ],
+  "DSCF4025": [
+   "people"
+  ],
+  "DSCF4093": [
+   "people"
+  ],
+  "DSCF3952-2": [
+   "black-and-white"
+  ],
+  "DSCF3945": [
+   "animals",
+   "people"
+  ],
+  "DSCF4049": [
+   "animals"
+  ],
+  "DSCF4107": [
+   "mountains"
+  ],
+  "DSCF4057": [
+   "mountains",
+   "mist-and-fog"
+  ],
+  "DSCF4098": [
+   "mountains",
+   "mist-and-fog"
+  ],
+  "DSCF4102": [
+   "mountains",
+   "mist-and-fog"
+  ],
+  "DSCF4101": [
+   "mist-and-fog"
+  ],
+  "DSCF4114": [
+   "mountains",
+   "autumn"
+  ]
+ }
+}

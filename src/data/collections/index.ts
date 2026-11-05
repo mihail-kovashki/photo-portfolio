@@ -23,6 +23,7 @@ import { ceskyKrumlov26 } from "./cesky-krumlov-26";
 import { prague26 } from "./prague-26";
 import { beijing25 } from "./beijing-25";
 import { mutianyu25 } from "./mutianyu-25";
+import { summerPalace25 } from "./summer-palace-25";
 
 export type { Chapter, PlaceCollection } from "./types";
 
@@ -52,6 +53,7 @@ export const collections: Record<string, PlaceCollection> = {
   [prague26.id]: prague26,
   [beijing25.id]: beijing25,
   [mutianyu25.id]: mutianyu25,
+  [summerPalace25.id]: summerPalace25,
 };
 
 export function findCollection(seriesId: string): PlaceCollection | undefined {

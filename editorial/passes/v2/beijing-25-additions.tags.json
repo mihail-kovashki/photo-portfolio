@@ -1,0 +1,397 @@
+{
+ "source": "Beijing 25",
+ "ratings": [
+  "beijing-25.ratings.json",
+  "beijing-25-additions.ratings.json"
+ ],
+ "places": [
+  "beijing-25",
+  "summer-palace-25"
+ ],
+ "tags": {
+  "DSCF3780": [
+   "palaces-and-castles",
+   "interiors",
+   "looking-up"
+  ],
+  "DSCF3812": [
+   "palaces-and-castles",
+   "interiors",
+   "looking-up"
+  ],
+  "DSCF3786": [
+   "people",
+   "palaces-and-castles"
+  ],
+  "DSCF3774": [
+   "people",
+   "palaces-and-castles"
+  ],
+  "DSCF3767": [
+   "palaces-and-castles",
+   "people"
+  ],
+  "DSCF3791": [
+   "palaces-and-castles"
+  ],
+  "DSCF3833": [
+   "palaces-and-castles",
+   "autumn",
+   "mist-and-fog"
+  ],
+  "DSCF3832": [
+   "waterfront",
+   "autumn",
+   "mist-and-fog"
+  ],
+  "DSCF3802": [
+   "parks-and-gardens",
+   "autumn"
+  ],
+  "DSCF3816": [
+   "parks-and-gardens",
+   "palaces-and-castles"
+  ],
+  "DSCF3778": [
+   "parks-and-gardens",
+   "people"
+  ],
+  "DSCF3726": [
+   "palaces-and-castles"
+  ],
+  "DSCF3713": [
+   "people",
+   "palaces-and-castles"
+  ],
+  "DSCF3737": [
+   "palaces-and-castles"
+  ],
+  "DSCF3700": [
+   "palaces-and-castles"
+  ],
+  "DSCF3747": [
+   "palaces-and-castles",
+   "looking-up"
+  ],
+  "DSCF3759": [
+   "palaces-and-castles",
+   "looking-up"
+  ],
+  "DSCF3735": [
+   "palaces-and-castles",
+   "people"
+  ],
+  "DSCF3742": [
+   "people",
+   "palaces-and-castles"
+  ],
+  "DSCF3705": [
+   "palaces-and-castles",
+   "overcast"
+  ],
+  "DSCF3717": [
+   "palaces-and-castles"
+  ],
+  "DSCF3721": [
+   "palaces-and-castles"
+  ],
+  "DSCF3900": [
+   "people",
+   "waterfront",
+   "mist-and-fog"
+  ],
+  "DSCF3899": [
+   "animals",
+   "mist-and-fog"
+  ],
+  "DSCF3851": [
+   "temples-and-shrines",
+   "overcast"
+  ],
+  "DSCF3873": [
+   "temples-and-shrines",
+   "parks-and-gardens"
+  ],
+  "DSCF3871": [
+   "temples-and-shrines",
+   "waterfront",
+   "overcast"
+  ],
+  "DSCF3845": [
+   "temples-and-shrines",
+   "people"
+  ],
+  "DSCF3852": [
+   "parks-and-gardens",
+   "mist-and-fog"
+  ],
+  "DSCF3858": [
+   "waterfront",
+   "mist-and-fog"
+  ],
+  "DSCF3885": [
+   "forests-and-trees",
+   "looking-up",
+   "overcast"
+  ],
+  "DSCF3888": [
+   "people",
+   "animals"
+  ],
+  "DSCF3662": [
+   "streets"
+  ],
+  "DSCF3688": [
+   "streets",
+   "people"
+  ],
+  "DSCF3683": [
+   "palaces-and-castles"
+  ],
+  "DSCF3687": [
+   "streets",
+   "palaces-and-castles"
+  ],
+  "DSCF3678": [
+   "streets",
+   "people"
+  ],
+  "DSCF3669": [
+   "streets",
+   "people"
+  ],
+  "DSCF3691": [
+   "palaces-and-castles"
+  ],
+  "DSCF4209": [
+   "people",
+   "temples-and-shrines"
+  ],
+  "DSCF4177": [
+   "temples-and-shrines",
+   "looking-up"
+  ],
+  "DSCF4155": [
+   "temples-and-shrines",
+   "looking-up"
+  ],
+  "DSCF4175": [
+   "people",
+   "temples-and-shrines"
+  ],
+  "DSCF4167": [
+   "temples-and-shrines",
+   "people"
+  ],
+  "DSCF4169": [
+   "temples-and-shrines",
+   "people"
+  ],
+  "DSCF4143": [
+   "temples-and-shrines"
+  ],
+  "DSCF4136": [
+   "temples-and-shrines"
+  ],
+  "DSCF4133": [
+   "temples-and-shrines"
+  ],
+  "DSCF4141": [
+   "temples-and-shrines"
+  ],
+  "DSCF4470": [
+   "palaces-and-castles",
+   "city-from-above",
+   "blue-hour"
+  ],
+  "DSCF4465": [
+   "people",
+   "palaces-and-castles",
+   "blue-hour"
+  ],
+  "DSCF4485": [
+   "city-from-above",
+   "blue-hour"
+  ],
+  "DSCF4496": [
+   "city-from-above",
+   "blue-hour"
+  ],
+  "DSCF4499": [
+   "parks-and-gardens",
+   "looking-up",
+   "night"
+  ],
+  "DSCF4507": [
+   "parks-and-gardens",
+   "looking-up",
+   "night"
+  ],
+  "DSCF4515": [
+   "city-from-above",
+   "blue-hour"
+  ],
+  "DSCF4522": [
+   "palaces-and-castles",
+   "people",
+   "night"
+  ],
+  "DSCF4531": [
+   "autumn",
+   "looking-up",
+   "night"
+  ],
+  "DSCF4536-2": [
+   "palaces-and-castles",
+   "waterfront",
+   "night"
+  ],
+  "DSCF4545": [
+   "palaces-and-castles",
+   "night"
+  ],
+  "DSCF4556": [
+   "palaces-and-castles",
+   "waterfront",
+   "night"
+  ],
+  "DSCF3646": [
+   "churches",
+   "night"
+  ],
+  "DSCF4334": [
+   "palaces-and-castles"
+  ],
+  "DSCF4320": [
+   "palaces-and-castles",
+   "waterfront"
+  ],
+  "DSCF4307": [
+   "palaces-and-castles",
+   "looking-up"
+  ],
+  "DSCF4304": [
+   "people",
+   "palaces-and-castles",
+   "waterfront"
+  ],
+  "DSCF4315": [
+   "mountains",
+   "autumn"
+  ],
+  "DSCF4276": [
+   "palaces-and-castles"
+  ],
+  "DSCF4318": [
+   "palaces-and-castles",
+   "people"
+  ],
+  "DSCF4321": [
+   "people"
+  ],
+  "DSCF4313": [
+   "waterfront"
+  ],
+  "DSCF4274": [
+   "palaces-and-castles",
+   "parks-and-gardens"
+  ],
+  "DSCF4309": [
+   "waterfront"
+  ],
+  "DSCF4329": [
+   "palaces-and-castles",
+   "looking-up"
+  ],
+  "DSCF4444": [
+   "waterfront",
+   "golden-hour"
+  ],
+  "DSCF4416": [
+   "waterfront",
+   "palaces-and-castles"
+  ],
+  "DSCF4432": [
+   "people",
+   "waterfront"
+  ],
+  "DSCF4420": [
+   "palaces-and-castles",
+   "golden-hour"
+  ],
+  "DSCF4450": [
+   "waterfront",
+   "golden-hour"
+  ],
+  "DSCF4454": [
+   "waterfront",
+   "golden-hour"
+  ],
+  "DSCF4414": [
+   "waterfront",
+   "golden-hour"
+  ],
+  "DSCF4370": [
+   "waterfront"
+  ],
+  "DSCF4399": [
+   "people",
+   "waterfront"
+  ],
+  "DSCF4397": [
+   "waterfront",
+   "palaces-and-castles"
+  ],
+  "DSCF4386": [
+   "waterfront"
+  ],
+  "DSCF4345": [
+   "people",
+   "waterfront"
+  ],
+  "DSCF4378": [
+   "parks-and-gardens",
+   "autumn"
+  ],
+  "DSCF4349": [
+   "waterfront",
+   "parks-and-gardens"
+  ],
+  "DSCF4367": [
+   "autumn",
+   "waterfront"
+  ],
+  "DSCF4405": [
+   "people",
+   "waterfront"
+  ],
+  "DSCF4280": [
+   "interiors",
+   "palaces-and-castles",
+   "looking-up"
+  ],
+  "DSCF4236": [
+   "palaces-and-castles",
+   "people"
+  ],
+  "DSCF4261": [
+   "flowers"
+  ],
+  "DSCF4245": [
+   "interiors",
+   "people"
+  ],
+  "DSCF4233": [
+   "waterfront"
+  ],
+  "DSCF4254": [
+   "parks-and-gardens"
+  ],
+  "DSCF4257": [
+   "autumn"
+  ],
+  "DSCF4248": [
+   "interiors"
+  ]
+ }
+}

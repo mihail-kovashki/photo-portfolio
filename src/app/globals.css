@@ -289,6 +289,37 @@ html:not([data-intro="play"]) .intro-root {
   }
 }
 
+/* Recipe dials (RecipeDials.tsx): on arrival each dial turns from its neutral stop to
+   the recipe's setting, once, and the white balance dot settles onto the grid. The
+   final positions are the elements' own styles, so without the animation (reduced
+   motion, no CSS) the dials simply show the setting. */
+@keyframes dial-turn {
+  from {
+    transform: rotate(var(--dial-from));
+  }
+}
+
+@keyframes dial-drop {
+  from {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dial-turn {
+    animation: dial-turn 1400ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+    animation-delay: calc(250ms + var(--dial-delay, 0ms));
+  }
+
+  .dial-drop {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: dial-drop 700ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+    animation-delay: calc(450ms + var(--dial-delay, 0ms));
+  }
+}
+
 /* Reduced motion: with the OS setting on, CSS transitions and animations finish at
    once and scrolling jumps instead of gliding. Framer Motion follows the same setting
    through <MotionConfig reducedMotion="user">; the photo morph and hero flipper check

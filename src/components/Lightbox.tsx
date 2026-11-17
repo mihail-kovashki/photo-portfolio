@@ -12,9 +12,15 @@ import {
   Aperture,
   Clock,
   Zap,
-  RotateCcw
+  RotateCcw,
+  ChevronDown,
+  SlidersHorizontal,
+  ArrowRight
 } from "lucide-react";
-import type { Photo, RecipeDetails } from "@/data/photos";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import type { Photo } from "@/data/photos";
+import { lookOf, recipeSettings, hasRecipePage, recipePath } from "@/data/looks";
 import { formatSeasonYear, shortLensName, exposureSummary } from "@/lib/utils";
 import { useBodyScrollLock, useDialogFocus } from "@/lib/dialog";
 import { morphIntoLightbox, morphIntoGrid } from "@/lib/photoMorph";
@@ -50,31 +56,11 @@ const slideVariants: Variants = {
   }),
 };
 
-const signed = (n: number) => (n > 0 ? `+${n}` : `${n}`);
-
-// Recipe dial settings in display order; unknown values and defaults not worth showing are skipped
-function recipeSettings(recipe: RecipeDetails): [string, string][] {
-  const tone =
-    recipe.highlight !== undefined && recipe.shadow !== undefined
-      ? `H${signed(recipe.highlight)} / S${signed(recipe.shadow)}`
-      : undefined;
-  const settings: [string, string | undefined][] = [
-    ["DR", recipe.dynamicRange],
-    ["Tone", tone],
-    ["Color", recipe.color !== undefined ? signed(recipe.color) : undefined],
-    ["Grain", recipe.grainEffect],
-    ["Chrome", recipe.colorChromeEffect],
-    ["FX Blue", recipe.colorChromeFXBlue !== "Off" ? recipe.colorChromeFXBlue : undefined],
-    ["WB", recipe.whiteBalance],
-    ["Clarity", recipe.clarity ? String(recipe.clarity) : undefined],
-    ["NR", recipe.noiseReduction !== undefined ? String(recipe.noiseReduction) : undefined],
-    ["Exp", recipe.exposureCompensation !== "0 EV" ? recipe.exposureCompensation : undefined],
-  ];
-  return settings.filter((entry): entry is [string, string] => entry[1] !== undefined);
-}
-
 export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) {
   const [showInfo, setShowInfo] = useState(true);
+  // The look (recipe or edit) is the expert path: closed by default, and once opened it
+  // stays open from photo to photo, since whoever opened it wants it
+  const [showLook, setShowLook] = useState(false);
   const [showDesktopHint, setShowDesktopHint] = useState(false);
 
   const isOpen = photo !== null;
@@ -495,6 +481,8 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
   }, [isOpen, handlePrev, handleNext, onClose, resetZoom]);
 
   const displayTitle = photo ? photo.title || photo.placeName : "";
+  const look = photo ? lookOf(photo) : undefined;
+  const pathname = usePathname();
 
   // The early return lives inside AnimatePresence so the closing fade can play
   return (
@@ -725,8 +713,28 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-2.5 sm:gap-4 pr-7 sm:pr-10">
                   {/* Title & Series */}
                   <div>
-                    <div className="flex items-center gap-1.5 sm:gap-2 mb-0.5 sm:mb-1 landscape-compact-meta">
-                      {photo.profile && (
+                    <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-0.5 sm:mb-1 landscape-compact-meta">
+                      {look ? (
+                        <button
+                          type="button"
+                          onClick={() => setShowLook((v) => !v)}
+                          aria-expanded={showLook}
+                          aria-controls="lightbox-look"
+                          title={`How this photo got its look: the ${look.kind === "recipe" ? "camera recipe" : "Lightroom edit"}`}
+                          className={`relative tap inline-flex items-center gap-1.5 px-2.5 py-0.5 pointer-coarse:py-1 rounded-full border text-[13px] sm:text-sm transition-colors ${
+                            showLook
+                              ? "bg-white text-zinc-950 border-white"
+                              : "bg-black/40 text-zinc-200 border-white/20 hover:border-white/40 hover:text-white"
+                          }`}
+                        >
+                          <SlidersHorizontal className={`w-3.5 h-3.5 ${showLook ? "text-zinc-700" : "text-[#e59866]"}`} />
+                          <span>{look.name}</span>
+                          <span className={showLook ? "text-zinc-600" : "text-zinc-400"}>
+                            {look.kind === "recipe" ? "recipe" : "edit"}
+                          </span>
+                          <ChevronDown className={`w-3.5 h-3.5 transition-transform ${showLook ? "rotate-180" : ""}`} />
+                        </button>
+                      ) : photo.profile && (
                         <span className="text-[9px] sm:text-[10px] font-mono tracking-wider uppercase px-1.5 sm:px-2 py-0.5 rounded bg-white/10 text-zinc-300 landscape-compact-profile">
                           {photo.profile}
                         </span>
@@ -795,15 +803,50 @@ export function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) 
                   </div>
                 </div>
 
-                {/* Recipe Dial Settings (SOOC JPEGs) */}
-                {photo.recipeDetails && (
-                  <div className="pt-2 sm:pt-2.5 landscape-compact-recipe border-t border-white/5 flex flex-wrap items-center gap-x-2.5 sm:gap-x-3.5 gap-y-0.5 sm:gap-y-1 text-[9.5px] sm:text-[11px] font-mono text-zinc-400">
-                    <span className="text-[#e59866] uppercase tracking-wider text-[8px] sm:text-[9px] font-semibold">Recipe:</span>
-                    {recipeSettings(photo.recipeDetails).map(([label, value]) => (
-                      <span key={label}>
-                        {label}: <span className="text-zinc-200">{value}</span>
+                {/* The look, when opened: the recipe's settings or the edit's develop settings
+                    in one line, and the way to the recipe's page where there is one */}
+                {look && showLook && (
+                  <div
+                    id="lightbox-look"
+                    className="pt-2 sm:pt-2.5 landscape-compact-recipe border-t border-white/10 flex flex-col gap-1.5 sm:gap-2"
+                  >
+                    <p className="flex flex-wrap items-baseline gap-x-2.5 sm:gap-x-3.5 gap-y-0.5 sm:gap-y-1 text-[10.5px] sm:text-xs font-mono text-zinc-400">
+                      <span className="text-[#e59866] uppercase tracking-wider text-[9px] sm:text-[10px] font-semibold">
+                        {look.kind === "recipe" ? "In camera" : "Lightroom"}
                       </span>
-                    ))}
+                      {look.kind === "recipe" ? (
+                        recipeSettings(look.details).map(([label, value]) => (
+                          <span key={label || value}>
+                            {label && `${label} `}<span className="text-zinc-100">{value}</span>
+                          </span>
+                        ))
+                      ) : (
+                        <>
+                          <span className="text-zinc-100">{look.edit.base}</span>
+                          {look.edit.settings.map(([label, value]) => (
+                            <span key={label}>
+                              {label} <span className="text-zinc-100">{value}</span>
+                            </span>
+                          ))}
+                          {look.edit.more.map((m) => (
+                            <span key={m} className="text-zinc-500">{m}</span>
+                          ))}
+                        </>
+                      )}
+                    </p>
+                    {look.kind === "recipe" && hasRecipePage(look.recipe) && pathname !== recipePath(look.recipe.id) ? (
+                      <Link
+                        href={recipePath(look.recipe.id)}
+                        className="self-start inline-flex items-center gap-1.5 text-sm text-zinc-200 underline decoration-white/30 underline-offset-4 hover:text-white hover:decoration-white"
+                      >
+                        The recipe, dial by dial, and all its photos
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    ) : look.kind === "edit" ? (
+                      <span className="text-[10px] sm:text-[11px] font-mono text-zinc-500">
+                        Read from the export&apos;s develop settings; only what moved from a fresh import
+                      </span>
+                    ) : null}
                   </div>
                 )}
               </div>

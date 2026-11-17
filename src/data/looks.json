@@ -1,0 +1,55 @@
+{
+  "mutianyu-25-dscf4002": {
+    "base": "Reala Ace",
+    "settings": [
+      [
+        "WB",
+        "5100K +10"
+      ],
+      [
+        "Contrast",
+        "+6"
+      ],
+      [
+        "Highlights",
+        "−84"
+      ],
+      [
+        "Shadows",
+        "+47"
+      ],
+      [
+        "Whites",
+        "+21"
+      ],
+      [
+        "Blacks",
+        "−33"
+      ],
+      [
+        "Clarity",
+        "−5"
+      ],
+      [
+        "Dehaze",
+        "+16"
+      ],
+      [
+        "Vibrance",
+        "+20"
+      ],
+      [
+        "Saturation",
+        "+5"
+      ],
+      [
+        "Vignette",
+        "−18"
+      ]
+    ],
+    "more": [
+      "HSL: orange, yellow, green, aqua, blue, magenta"
+    ],
+    "source": "Beijing 25/DSCF4002.jpg"
+  }
+}

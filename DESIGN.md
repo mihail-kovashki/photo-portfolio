@@ -24,6 +24,21 @@ links, so trip → place → chapter is learnt by looking. It ends with "All N p
 (`/all`, the full grid) and the trip index. Covers come from a hand-picked list of home
 frames; no photo appears twice on the page.
 
+## Looks (prototype, `looks-pages` branch)
+
+The look of a photo is the recipe set in camera (SOOC) or the RAW edit set in Lightroom.
+It is the expert path, so it stays out of the default view (`src/data/looks.ts`).
+
+- **In the lightbox,** the profile badge becomes a "look" chip ("Kodak Portra 800 v3
+  recipe ⌄", "Reala Ace edit ⌄"), closed by default. Opened, it shows the settings in one
+  line and stays open from photo to photo. A recipe with a page links to it. The recipe
+  line used to show on every SOOC photo; it now waits behind the chip.
+- **Recipe pages** (`/recipes/<id>`): the settings drawn as Fujifilm-style dials that turn
+  once into place on arrival (CSS only, never under reduced motion), the source credited,
+  then the photos grouped by place. Amber marks the setting, as everywhere recipes show.
+- **Edit looks** come from the export's XMP (`scripts/looks.mjs`): only values that moved
+  from a fresh import, the rest (curves, HSL, masks) named, not spelled out.
+
 ## Palette
 
 Dark only (`color-scheme: dark`), so photos read against a neutral ground.

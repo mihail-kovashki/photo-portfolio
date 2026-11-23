@@ -10,6 +10,7 @@ import { photos, trips, chaptersFor, type Photo, type Trip } from "./photos";
  * in the lightbox. The 5★ frames plus 4★ ones so every trip has some.
  */
 const HOME_FRAME_IDS = [
+  "kiyomizu-dera-25-dscf5588",
   "pico-ruivo-25-dscf0049",
   "seoul-25-dscf2212",
   "prague-26-dscf7253",

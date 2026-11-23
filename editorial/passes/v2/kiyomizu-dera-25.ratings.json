@@ -1,0 +1,630 @@
+{
+ "album": "Japan 25 (Kiyomizu-dera, 12 Nov 2025, 16:19–17:16)",
+ "places": [
+  "kiyomizu-dera-25"
+ ],
+ "pass": 2,
+ "date": "2026-11-23",
+ "method": "One session: first look from nine contact sheets, twins at 1000px for nineteen runs, the 47 shortlisted frames at 1400px, the 13 held frames side by side with their scene's best at 1000px (\"held\": true; 5600, which changed its scene, \"pulled\": true), and 100% crops on every frame at 4 and on the 3s that might go on the page (second spots on 5510 and 5609). \"cull\" is Mihail's Lightroom star from the export's XMP rating. No 5★ proposed, so no fives sheet.",
+ "frames": [
+  {
+   "n": "5507",
+   "place": "kiyomizu-dera-25",
+   "v2": 2,
+   "cull": 3,
+   "focus": "not checked (held)",
+   "technical": "",
+   "critique": "The landscape of 5509: the roof small, the trees a dark band.",
+   "held": true
+  },
+  {
+   "n": "5509",
+   "place": "kiyomizu-dera-25",
+   "v2": 2,
+   "cull": 3,
+   "focus": "not checked (2)",
+   "technical": "flat sky over a third",
+   "critique": "Down over a big maple to a temple roof, the city and the hills. The maple is a dark mass with no shape, the light is flat and the roof is small; nothing organises it."
+  },
+  {
+   "n": "5510",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 4,
+   "focus": "sharp on the city and the near pillars; the shaded ceiling is noisy and a touch soft (checked the gilded crest and the city)",
+   "technical": "black railing across the bottom ninth",
+   "critique": "Gate within gate: the Saimon's gilded, painted ceiling over the top, the vermilion pillars stepping inward, and the city and hills framed small at the far end. Exact symmetry and three frames nested in each other. The black railing across the bottom is the one thing in the way (4:5 from the bottom would lose it).",
+   "onPage": true
+  },
+  {
+   "n": "5512",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "",
+   "critique": "The landscape of the gate: symmetrical, the city in its frame, but the dark floor takes the bottom and the frame has less depth than the portrait. The other orientation, not a twin, and weaker."
+  },
+  {
+   "n": "5513",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "sharp (bracket)",
+   "technical": "",
+   "critique": "The same passage lower and cleaner: the worn stone floor leads to the opening and the city is larger. It loses the gilded ceiling, the colour that makes 5510, and the top third is dark. A good alt."
+  },
+  {
+   "n": "5514",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "phone and hand at bottom-left edge",
+   "critique": "The Saimon's eave and pillar frame the Niomon roof, the city and the mountains: three good layers and a textured sky. The man raising his phone at the bottom left is the brightest thing there and takes the eye from the corner; the portrait take (5515) leaves him out."
+  },
+  {
+   "n": "5515",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 4,
+   "focus": "sharp (gilded brackets)",
+   "technical": "black parapet bottom-left takes about a sixth of the frame",
+   "critique": "The portrait of the same view and the better one. The eave sweeps down from the top left to the pillar, which holds the right edge; the Niomon's roof sits under it, then the city and the mountains. Gold brackets and the dragon head give the eave detail at size. The black wall across the bottom left is heavy, but it reads as where you stand.",
+   "onPage": true
+  },
+  {
+   "n": "5517",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked (held)",
+   "technical": "",
+   "critique": "The 16:9 of the city over the maples: more city, Kyoto Tower placed better, but the lamp post with its globes is right in the middle. 5520's maple frame does more.",
+   "held": true
+  },
+  {
+   "n": "5520",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "flat sky over the top half; lamp post bottom right",
+   "critique": "A red maple at the left in front of the city, with Kyoto Tower small at the centre and the mountains behind. The maple gives depth, but half the frame is a flat grey sky and the city band is thin. The lamp post with four globes sits in the lower right foliage and catches the eye."
+  },
+  {
+   "n": "5521",
+   "place": "kiyomizu-dera-25",
+   "v2": 2,
+   "cull": 2,
+   "focus": "not checked (held)",
+   "technical": "",
+   "critique": "Portrait: the maple fills the left, the city a sliver. Nothing holds it.",
+   "held": true
+  },
+  {
+   "n": "5524",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 4,
+   "focus": "sharp (brackets of the second tier)",
+   "technical": "",
+   "critique": "Three tiers of the pagoda's eaves stack diagonally out of the right side against a clear blue, each with its wind bell, and the Niomon's thatched roof closes the bottom left. The vermilion against blue is what renders the colour; the diagonal is the composition. The base of the pagoda and a railing are cut at the bottom right, which is fine for a looking-up frame.",
+   "onPage": true
+  },
+  {
+   "n": "5528",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "sharp (pagoda)",
+   "technical": "blank sky top right",
+   "critique": "The hillside as a tapestry: reds, yellows and dark cedars, with the Koyasu pagoda small in the middle as the one red shape. The moody, low-contrast edit suits it. The flat white sky in the top right takes a quarter of the frame and the pagoda is too small to anchor it.",
+   "onPage": true
+  },
+  {
+   "n": "5529",
+   "place": "kiyomizu-dera-25",
+   "v2": 2,
+   "cull": 2,
+   "focus": "not checked (held)",
+   "technical": "",
+   "critique": "Portrait of the hillside, the pagoda a speck, a third of white sky and a bare branch across the bottom.",
+   "held": true
+  },
+  {
+   "n": "5533",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 4,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "white awning mid-frame",
+   "critique": "Down onto the roofs over the Otowa queue, the path leading up the hill to the Koyasu pagoda in daylight. The roofs make a good line, but the white awning in the middle is the brightest thing in the frame and the light is flat. The same view at dusk (5613) has the lanterns and does it better. Your 4; I'd keep it for the 5613 comparison only."
+  },
+  {
+   "n": "5534",
+   "place": "kiyomizu-dera-25",
+   "v2": 2,
+   "cull": 2,
+   "focus": "not checked (held)",
+   "technical": "",
+   "critique": "Portrait of the stage with half the frame white sky.",
+   "held": true
+  },
+  {
+   "n": "5535",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "person cut at left edge",
+   "critique": "The stage from the north side, jutting over a sea of maples with the city and Kyoto Tower behind. The stage reads well, the colour is there, but a stranger's arm and body cut into the left edge beside the finial, and the sky is grey and blank."
+  },
+  {
+   "n": "5537",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked (held)",
+   "technical": "",
+   "critique": "Cleaner than 5535 (no arm at the left, the finial frames the edge), but the stage is smaller and the sky bigger. A toss-up with 5535; neither goes on the page.",
+   "held": true
+  },
+  {
+   "n": "5538",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "people at the right edge; grey sky",
+   "critique": "The main hall from the side, the pagoda's spire peeking over, the stage packed, maples in front. A full frame, but two people with a phone at the right edge, and a big grey sky. Says where we are; does little else."
+  },
+  {
+   "n": "5540",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "bare twigs top right",
+   "critique": "The classic wide: pagoda against the mountain's notch, the stone wall, the hall at the right, the city behind. The layers are all there but the light is flat and the bare twigs at top right scratch the sky. The later frames of this view (5587, 5588) have the lanterns and the colour."
+  },
+  {
+   "n": "5541",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 1,
+   "focus": "sharp (pagoda roof), despite the crop",
+   "technical": "heavy crop",
+   "critique": "A square crop of the same view, tighter and better balanced than 5540: the pagoda on the left third against the mountain, the hall at the right edge. Still flat daylight. Cropped to 3991px, so check focus."
+  },
+  {
+   "n": "5544",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 4,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "bare tree crosses the hall",
+   "critique": "The view a little later with a pink cast in the sky and pampas grass at the bottom. The bare tree trunk on the right crosses the hall's roof and cuts the frame; it's the thing the eye lands on after the pagoda. Your 4; I'd take it to 3 because the later, lit frames of the same view are stronger."
+  },
+  {
+   "n": "5546",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "right trunk cuts the hall",
+   "critique": "Framed by two dark trunks in 16:9: a real variation of the view. The left trunk frames well; the right one runs through the hall's roof edge and the foreground is busy. Pretty, not as clean as 5549's cedar frame."
+  },
+  {
+   "n": "5549",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 3,
+   "focus": "sharp (pagoda)",
+   "technical": "",
+   "critique": "The pagoda in the gap between two cedar trunks, a pale pink sky behind it, red maples below. The trunks take half the frame on purpose and make it a window; the pagoda is the one bright shape. The tree at the right edge softens the right trunk's frame a little.",
+   "onPage": true
+  },
+  {
+   "n": "5557",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "sharp (railings)",
+   "technical": "fence across the bottom",
+   "critique": "The Koyasu pagoda from below, its three tiers in saturated vermilion against a blue-grey sky and dark pines. The colour is strong and the proportions hold. The wooden fence across the bottom crowds the base, and the frame is centred and static."
+  },
+  {
+   "n": "5558",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 3,
+   "focus": "sharp (hall roof)",
+   "technical": "",
+   "critique": "From the valley floor: the main hall on its stilts small in the middle, framed by a red maple top left and the hillside's colour all round, pampas heads catching light in the soft foreground. The layers separate by colour, not only distance, and the hall is placed where the slopes meet.",
+   "onPage": true
+  },
+  {
+   "n": "5560",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "",
+   "critique": "The landscape take of 5558: wider, with a side hall at the left and more hillside. Good colour, but the hall is smaller and the frame has less of a shape; the portrait does more."
+  },
+  {
+   "n": "5562",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 2,
+   "focus": "not checked (held)",
+   "technical": "",
+   "critique": "From the valley, wider than 5558: the pagoda and the stage both in, framed by trees left and right. Low and dark at the bottom. A real variation, parked.",
+   "held": true
+  },
+  {
+   "n": "5563",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "sharp (maple branch, hall)",
+   "technical": "man cut at the right edge",
+   "critique": "The path under a canopy of red maples to the stage, people walking up from behind. The maples are glorious and the stage reads through them, but the man in beige at the bottom right (face in profile, cut by the edge) pulls the eye. Crop candidate.",
+   "onPage": true
+  },
+  {
+   "n": "5565",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "sharp (the children on the stair)",
+   "technical": "",
+   "critique": "The long stone stair under the trees, rails and steps leading up to a few schoolchildren at the top, little lanterns at the step edges. Quiet and well built on its leading lines; the near railing on the right is large and the colour is muted."
+  },
+  {
+   "n": "5566",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 3,
+   "focus": "sharp enough (the jizo in the middle row)",
+   "technical": "the pillar at left is heavy",
+   "critique": "The hall of jizo statues: rows of red bibs and caps, two lanterns with the shrine's name, and the twisted pink-and-green bell rope down the middle. The rope's colours echo the bibs and the lanterns balance it either side. A detail frame that tells you where you are without a roof in it.",
+   "onPage": true
+  },
+  {
+   "n": "5568",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 2,
+   "focus": "sharp (lantern)",
+   "technical": "",
+   "critique": "The vermilion corridor: pillars receding to the right, the gilded lantern glowing under the eave, visitors walking towards the camera. The pillars and beam make strong lines, warm against the cool paving. Faces are readable (strangers).",
+   "onPage": true
+  },
+  {
+   "n": "5571",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked (held)",
+   "technical": "",
+   "critique": "The richest red of the three stage takes, but the same people at the right. 5572 shows more of the stilts.",
+   "held": true
+  },
+  {
+   "n": "5572",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "people at the right",
+   "critique": "The stage with its stilts, the gable lit, red maples below, chosen over 5570/5571. The man on the right facing the camera and the group with a phone take the right third."
+  },
+  {
+   "n": "5574",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "",
+   "critique": "The pagoda, hall and stage in portrait at dusk, an orange tree glowing in the foreground. A good version of the view, but 5587, ten minutes later, has the lanterns lit and the violet sky."
+  },
+  {
+   "n": "5577",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "",
+   "critique": "Portrait, the stage and hall big on the right, the pagoda small at the left, pampas grass at the bottom. Darker and busier at the bottom than 5574."
+  },
+  {
+   "n": "5579",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "",
+   "critique": "The pagoda framed by one cedar trunk and a dark tree, a lilac sky. 5549 does the cedar frame better with two trunks."
+  },
+  {
+   "n": "5586",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 2,
+   "focus": "not checked (held)",
+   "technical": "railing across the bottom",
+   "critique": "The cedar window brighter and wider, the pagoda lit and larger, the mountains and city in the gap; a railing crosses the bottom fifth. Cropped above the rail it could rival 5549 (edit queue).",
+   "held": true
+  },
+  {
+   "n": "5587",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 3,
+   "focus": "sharp (pagoda), some noise",
+   "technical": "",
+   "critique": "The pagoda lit vermilion against a violet sky, the stone wall and hall's lanterns below it, the mountains in blue behind and the red maples falling away. The sky has texture and colour and takes the top half for a reason. The best frame of the classic view. The yellow tree bottom right is bright but sits at the edge. Proposed 5★ checked below.",
+   "onPage": true
+  },
+  {
+   "n": "5588",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 3,
+   "focus": "sharp (pagoda roof)",
+   "technical": "",
+   "critique": "The landscape take of the dusk view: pagoda left, the hall's interior glowing with lanterns, the stage full of people, an orange tree bottom right. More of the temple in one frame than any other; the sky is pink and plain.",
+   "onPage": true
+  },
+  {
+   "n": "5591",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 2,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "person at the right edge",
+   "critique": "The main hall's roof filling the frame above a band of red maples and a crowd. The roof's curves are good, but the woman in a pink headscarf with a phone at the right edge, and the crowd, make it busy."
+  },
+  {
+   "n": "5592",
+   "place": "kiyomizu-dera-25",
+   "v2": 2,
+   "cull": 2,
+   "focus": "not checked (held)",
+   "technical": "",
+   "critique": "Landscape of 5591 with more people at the right.",
+   "held": true
+  },
+  {
+   "n": "5594",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 3,
+   "focus": "acceptable: heavy grain in the edit, detail holds (bracket)",
+   "technical": "gutter and hooks bottom left",
+   "critique": "A painted bracket cluster under the eave: teal, orange and brown against the vermilion rafters and white plaster. Graphic, and the colour sings. The gutter and its hooks across the bottom left are the one thing out of place.",
+   "onPage": true
+  },
+  {
+   "n": "5595",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 2,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "dark crowd fills the bottom half",
+   "critique": "Kyoto Tower lit purple far off, a phone raised in front of it, the crowd in silhouette below a dramatic sky. A good idea, and the phone echoing the tower is nice, but the crowd is a dark mass across the bottom half and the tower is small. Your 2; a 3 for the idea's execution."
+  },
+  {
+   "n": "5596",
+   "place": "kiyomizu-dera-25",
+   "v2": 2,
+   "cull": 2,
+   "focus": "not checked (held)",
+   "technical": "",
+   "critique": "Landscape of 5595; the crowd is a black band and the phone is gone, which was the idea.",
+   "held": true
+  },
+  {
+   "n": "5597",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 4,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "",
+   "critique": "The Koyasu pagoda in the dusk, a violet sky over a third of the frame, the path lights coming on below. Pretty, but the roofs are small at the bottom and 5613, a few minutes later, does the line of roofs better."
+  },
+  {
+   "n": "5598",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 3,
+   "focus": "sharp (faces on the stage)",
+   "technical": "many faces, all small",
+   "critique": "The stage from the front, packed with people holding up phones, the vermilion and white hall above, red maples below. The crowd is the subject: a wall of visitors all doing the same thing in a frame of colour.",
+   "onPage": true
+  },
+  {
+   "n": "5599",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 2,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "",
+   "critique": "From the stage at dusk: the eave in silhouette at the right, Kyoto Tower lit across the valley, a crowd in front. The eave's shape is strong, but the people at the bottom left (faces, one laughing) are a muddle. At the held check, 5600 is the cleaner take."
+  },
+  {
+   "n": "5600",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 2,
+   "focus": "not checked (held)",
+   "technical": "",
+   "critique": "From the stage at dusk, cleaner than 5599: the floorboards' diagonal leads to the eave and the tower, with fewer people. The woman's back at the left is heavy. Takes 5599's place.",
+   "held": true,
+   "pulled": true,
+   "onPage": true
+  },
+  {
+   "n": "5601",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 3,
+   "focus": "sharp (roof, shrine)",
+   "technical": "",
+   "critique": "Straight down onto the Otowa spring: the red shrine in the wall, the three streams, the queue at the rail, the warm lamp at right and the tiled roof at the bottom right. A plan view that shows how the place works, with a little human moment at the bottom.",
+   "onPage": true
+  },
+  {
+   "n": "5604",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 2,
+   "focus": "sharp (lantern)",
+   "technical": "",
+   "critique": "One gilded lantern in the dark, a second one soft below. Minimal and warm; it depends on its focus. 5607 does the lantern with a person under it."
+  },
+  {
+   "n": "5605",
+   "place": "kiyomizu-dera-25",
+   "v2": 2,
+   "cull": 2,
+   "focus": "not checked (held)",
+   "technical": "",
+   "critique": "Portrait of 5606: the pillar and the photographers fill it.",
+   "held": true
+  },
+  {
+   "n": "5606",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 2,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "pillar mid-frame; photographers in front",
+   "critique": "The stage at dusk with lit lanterns under the eaves, warm against the blue roofs. The big dark pillar splits the frame and the photographers in front with a blue backpack are the nearest thing."
+  },
+  {
+   "n": "5607",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 3,
+   "focus": "sharp (lantern openwork); the kneeling figure is in deep shadow and noisy",
+   "technical": "",
+   "critique": "A gilded lantern glowing in the dark hall, a smaller one below, and at the bottom a worshipper kneeling in a dark robe. The dark pillars frame the lantern on both sides. The kneeling figure gives it the quiet the lantern alone doesn't have.",
+   "onPage": true
+  },
+  {
+   "n": "5608",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "not checked at 100% (3, not on the page)",
+   "technical": "",
+   "critique": "The amulet counter lit in the dark hall: the price boards, the attendant, a young man buying, a couple waiting at the right. A nice everyday moment; the fluorescent tube at the top is the brightest thing."
+  },
+  {
+   "n": "5609",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 3,
+   "focus": "sharp (faces)",
+   "technical": "",
+   "critique": "Schoolchildren taking a selfie on the stage at dusk, a pink sky and the city's first lights behind, the eave's silhouette top right. A real moment in good light, framed by the eave and the finials. Faces readable, minors.",
+   "onPage": true
+  },
+  {
+   "n": "5611",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "sharp (the omikuji box)",
+   "technical": "",
+   "critique": "The omikuji counter at night: two young people from behind shaking the box, a man at the right. Warm light; better than 5608 because the gesture is the moment. The man cut at the right edge and the CCTV dome in the window.",
+   "onPage": true
+  },
+  {
+   "n": "5613",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 4,
+   "focus": "slightly soft and noisy on the pagoda at 100% (dusk, far); fine at screen size",
+   "technical": "",
+   "critique": "Down the line of roofs at dusk to the Koyasu pagoda: the path lit with lanterns curving up past a red maple, the hill dark above. The roofs lead the eye from the bottom left straight to the pagoda, and the lit path does the rest. The awning at the bottom is lit, which is better than 5533's white one.",
+   "onPage": true
+  },
+  {
+   "n": "5616",
+   "place": "kiyomizu-dera-25",
+   "v2": 3,
+   "cull": 3,
+   "focus": "sharp (ema)",
+   "technical": "",
+   "critique": "The ema board side-lit at dusk, the plaques glowing, a red hall behind. Warm and tidy; the bollard light at the left is bright and the gravel foreground is plain.",
+   "onPage": true
+  },
+  {
+   "n": "5617",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 3,
+   "focus": "sharp, noisy",
+   "technical": "",
+   "critique": "A vermilion hall glowing among dark trees after sunset, half hidden by maples. The red and the warm lamps against the dark green make it; the hiding is the point.",
+   "onPage": true
+  },
+  {
+   "n": "5618",
+   "place": "kiyomizu-dera-25",
+   "v2": 4,
+   "cull": 3,
+   "focus": "sharp (lanterns)",
+   "technical": "woman in white, bottom left",
+   "critique": "The red hall and its two lanterns at blue hour, deep blue sky against the vermilion beams. The woman in white with her camera at the bottom left is the nearest thing and readable; she gives scale but takes the eye.",
+   "onPage": true
+  }
+ ],
+ "chapters": [
+  [
+   "stage-over-the-maples",
+   "The stage over the maples",
+   [
+    "5587",
+    "5558",
+    "5549",
+    "5598",
+    "5528",
+    "5588",
+    "5563"
+   ]
+  ],
+  [
+   "gates-and-pagoda",
+   "Gates and the pagoda in the last daylight",
+   [
+    "5515",
+    "5524",
+    "5510",
+    "5594",
+    "5566",
+    "5568"
+   ]
+  ],
+  [
+   "dusk-and-lanterns",
+   "The stage at dusk, lanterns in the halls",
+   [
+    "5613",
+    "5607",
+    "5609",
+    "5601",
+    "5617",
+    "5618",
+    "5600",
+    "5611",
+    "5616"
+   ]
+  ]
+ ],
+ "review": "2026-11-23: Mihail approved the chapters as proposed and 5588 as a home frame, so it's the home page's cover (kiyomizu-dera-25.md, 'After my review')."
+}

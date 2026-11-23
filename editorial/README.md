@@ -363,6 +363,13 @@ From the second pass on, a log also has a ratings file next to it
 critique, so the reasoning can be checked photo by photo. The first-pass logs stay as
 they were, for comparison; the re-runs live in [`passes/v2/`](passes/v2/).
 
+`keyword.mjs` reads the ratings file, so its shape is fixed: top-level `album`, `places`,
+`pass`, `date`, `method`, `review`, and a `frames` list, one entry per rated frame with `n`
+(the number, `5587`), `place`, `v2` (the stars), `cull` (my Lightroom star), `focus`,
+`technical`, `critique`, and `held`, `pulled` or `onPage` where they apply. Write it in this
+shape from the start; Kiyomizu-dera's was first written as a map keyed by number and had to be
+converted before the keywords could be written.
+
 Since Vietnam, an album also leaves `<album>.firstlook.json` (step 3) and
 `<album>.tags.json` (step 7) beside them. Frames added to an album that already has a pass
 get their own files (`seoul-25-additions.*`); the tags file then covers every place they

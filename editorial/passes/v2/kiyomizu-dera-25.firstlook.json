@@ -1,0 +1,256 @@
+{
+  "album": "Japan 25",
+  "date": "2026-11-23",
+  "trip": "Japan · Autumn 2025",
+  "places": {
+    "kiyomizu-dera-25": "12 Nov 2025, 16:19–17:16: Kiyomizu-dera, Kyoto, late afternoon through dusk into the lanterns"
+  },
+  "source": "Japan 25/ (82 Lightroom exports, DSCF5502–5618, all of them this hour; the rest of the evening isn't exported yet)",
+  "rejects": {
+    "1": [],
+    "2": [
+      "5502",
+      "5503",
+      "5548",
+      "5564",
+      "5567",
+      "5567-2"
+    ]
+  },
+  "groups": [
+    [
+      "5510",
+      "5513"
+    ],
+    [
+      "5507",
+      "5522"
+    ],
+    [
+      "5509",
+      "5523",
+      "5526"
+    ],
+    [
+      "5520",
+      "5517"
+    ],
+    [
+      "5524",
+      "5506"
+    ],
+    [
+      "5529",
+      "5531"
+    ],
+    [
+      "5535",
+      "5537"
+    ],
+    [
+      "5534",
+      "5536"
+    ],
+    [
+      "5544",
+      "5544-2"
+    ],
+    [
+      "5546",
+      "5546-2",
+      "5550"
+    ],
+    [
+      "5541",
+      "5551"
+    ],
+    [
+      "5549",
+      "5586"
+    ],
+    [
+      "5557",
+      "5553"
+    ],
+    [
+      "5560",
+      "5554"
+    ],
+    [
+      "5572",
+      "5571",
+      "5570"
+    ],
+    [
+      "5574",
+      "5575"
+    ],
+    [
+      "5611",
+      "5612"
+    ],
+    [
+      "5613",
+      "5597",
+      "5614"
+    ]
+  ],
+  "shortlist": [
+    "5509",
+    "5510",
+    "5512",
+    "5513",
+    "5514",
+    "5515",
+    "5520",
+    "5524",
+    "5528",
+    "5533",
+    "5535",
+    "5538",
+    "5540",
+    "5541",
+    "5544",
+    "5546",
+    "5549",
+    "5557",
+    "5558",
+    "5560",
+    "5563",
+    "5565",
+    "5566",
+    "5568",
+    "5572",
+    "5574",
+    "5577",
+    "5579",
+    "5587",
+    "5588",
+    "5591",
+    "5594",
+    "5595",
+    "5597",
+    "5598",
+    "5599",
+    "5601",
+    "5604",
+    "5606",
+    "5607",
+    "5608",
+    "5609",
+    "5611",
+    "5613",
+    "5616",
+    "5617",
+    "5618"
+  ],
+  "held": {
+    "Saimon trees and roof": [
+      "5507"
+    ],
+    "city over the maples": [
+      "5517",
+      "5521"
+    ],
+    "hillside to the Koyasu pagoda": [
+      "5529"
+    ],
+    "the stage from the north": [
+      "5537",
+      "5534"
+    ],
+    "the stage from the Okunoin": [
+      "5571"
+    ],
+    "pagoda between cedars": [
+      "5586"
+    ],
+    "the valley to the stage": [
+      "5562"
+    ],
+    "the stage over red maples, people right": [
+      "5592"
+    ],
+    "Kyoto Tower over the crowd": [
+      "5596"
+    ],
+    "from the stage at dusk": [
+      "5600"
+    ],
+    "through the pillars to the hall": [
+      "5605"
+    ]
+  },
+  "cull": {
+    "4": [
+      "5510",
+      "5515",
+      "5524",
+      "5533",
+      "5544",
+      "5544-2",
+      "5597",
+      "5613"
+    ],
+    "1": [
+      "5541",
+      "5612"
+    ]
+  },
+  "notes": {
+    "5502": "your 2: the pagoda over the Saimon, but crowd heads fill the bottom and a roof corner cuts in top left",
+    "5503": "your 2: the Niomon from below with the flag; documentary",
+    "5548": "your 2: square, a heavy tree takes the right third",
+    "5564": "your 2: the Otowa spring and its queue, documentary",
+    "5512": "landscape take of the Saimon framing the city; the other orientation of 5510/5513, not a twin",
+    "5514": "landscape of the eave, pillar and city; a phone and hand at the left edge",
+    "5515": "your 4: portrait of 5514's view, clean",
+    "5517": "the city and Kyoto Tower over maples in warm light; a lamp post mid-frame",
+    "5521": "portrait of 5517/5520",
+    "5528": "the hillside of colour to the Koyasu pagoda; white sky over a third",
+    "5529": "portrait of 5528; more white sky",
+    "5533": "your 4: down onto the Otowa roofs and the queue, the pagoda on the hill, daylight. Same view as 5597 later in the dusk: different light, not twins",
+    "5538": "the hall from the side with the pagoda tip; a head and a post at the right",
+    "5540": "the classic wide: pagoda, hall and city",
+    "5541": "your 1, a square crop at 3991px: beat 5551 (pagoda smaller, more foreground). Check sharpness",
+    "5549": "the pagoda between two cedar trunks, clean; 5586 sets it brighter and centred but a railing crosses the bottom (crop candidate)",
+    "5562": "wider from the valley: pagoda and hall over a willow, dimmer",
+    "5563": "the path under red maples to the hall, the crowd; a man cut at the right edge",
+    "5567": "your 2: the hall behind a heavy railing and finial that take the lower half; 5567-2 the same with a cooler edit",
+    "5568": "the red-pillared corridor, people walking (faces)",
+    "5570": "the hall from the Okunoin, lanterns lit; people at the right edge",
+    "5579": "the pagoda beside one cedar trunk; a different framing from 5549",
+    "5587": "portrait, pink-violet sky, the lanterns lit: the light has turned",
+    "5588": "landscape of 5587",
+    "5591": "your 2: portrait of the stage over red maples; a woman in a pink headscarf at the right edge",
+    "5592": "your 2: landscape of 5591, more people at the right",
+    "5594": "a bracket in teal and orange against white",
+    "5595": "your 2: Kyoto Tower lit purple over silhouettes with phones raised",
+    "5596": "your 2: landscape of 5595",
+    "5598": "the stage from the front, packed, over red maples",
+    "5599": "your 2: from the stage at dusk, the eave in silhouette, the tower lit; people",
+    "5600": "your 2: portrait of 5599, a woman's back in the foreground",
+    "5601": "down onto the Otowa spring, people",
+    "5604": "your 2: one lantern in the dark",
+    "5605": "your 2: through the pillars to the lit hall; backpacks in front",
+    "5606": "your 2: landscape of 5605",
+    "5607": "a lantern in the dark hall, a worshipper kneeling below",
+    "5608": "the amulet counter, lit, people from behind",
+    "5609": "schoolchildren taking selfies on the stage at dusk (minors, faces)",
+    "5611": "the omikuji counter, two kids shaking the box (faces hidden); 5612 your 1 is its twin",
+    "5613": "your 4: the lit roofs lead up the path to the pagoda; beat 5614 (pagoda tiny, courtyard busy). 5597 kept as its own frame: violet sky, roofs small",
+    "5616": "the ema board lit at dusk",
+    "5617": "a red hall glowing among the trees at night",
+    "5618": "the red corridor and lanterns at blue hour; a woman in white in front",
+    "5510": "your 4: gate within gate under the painted ceiling, the city small at the end; a black railing across the bottom. 5513 is a different framing (cleaner, the floor leads in, the city larger), both to the close look",
+    "5513": "the gate's stone floor leading to the city; no ceiling, cleaner than 5510",
+    "5520": "beat 5517 at twins: the maple in front gives depth. Lamp post mid-frame, big flat sky",
+    "5524": "your 4: the pagoda's eaves from below on blue; beat 5506 (grey sky, heads at the bottom)",
+    "5535": "beat 5537 at twins: the stage reads larger and its roof edge is strong; an arm and body cut at the left edge. 5537 is cleaner but small with a blank sky",
+    "5544": "your 4: beat 5544-2 at twins, whose darker edit muddies the foreground. A bare tree across the right",
+    "5546": "the same view framed by two trunks; beat 5546-2 (darker) and 5550 (dead foreground, a wall at the right)",
+    "5572": "beat 5570 and 5571 at twins: shows the stage's stilts. A branch at the left, people at the right. 5571 has the richest red",
+    "5597": "your 4: wider than 5613, with the violet sky; the roofs small at the bottom",
+    "twins": "Settled at twins: 5510/5513, 5524/5506, 5544/5544-2, 5546/5546-2/5550, 5613/5597/5614, 5572/5571/5570, 5535/5537, 5541/5551, 5520/5517, 5549/5586. Settled on the sheet as obvious: 5557 over 5553 (people), 5611 over 5612 (your 1), 5560 over 5554, 5574 over 5575, 5509 over 5523/5526, 5507 over 5522, 5528 over 5529/5531"
+  }
+}
